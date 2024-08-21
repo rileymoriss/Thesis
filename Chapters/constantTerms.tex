@@ -23,7 +23,7 @@ The constant term itself is of central importance. One reason for this is that i
         Then \(\phi\) can be analytically continued to a holomorphic function on \(D\) iff \(\psi_P\) can be continued to a holomorphic function on \(D\).
     \end{Theorem}
     
-    Unpacking this a bit we see that an Eisenstein series satisfies the hypothesis on \(\phi\) by \cite[IV.1.9]{moeglinSpectralDecompositionEisenstein1995} \todo{make this more precise}, we think of \(D'\) as the positive open cone on which the Eisenstein series conveges, and then \(D = \C^n \setminus S \) as the rest of the cuspidal datum \(\mathfrak{P}\) on which the Eisenstein series is holomorphic (\(S\) is its set of singularities). Therefore the domain on which the Eisenstein series is holomorphic is the same as the domain on which (roughly) its constant term is holomorphic.
+    Unpacking this a bit we see that an Eisenstein series satisfies the hypothesis on \(\phi\) by \cite[IV.1.9]{moeglinSpectralDecompositionEisenstein1995} \todo[inline]{make this more precise}, we think of \(D'\) as the positive open cone on which the Eisenstein series conveges, and then \(D = \C^n \setminus S \) as the rest of the cuspidal datum \(\mathfrak{P}\) on which the Eisenstein series is holomorphic (\(S\) is its set of singularities). Therefore the domain on which the Eisenstein series is holomorphic is the same as the domain on which (roughly) its constant term is holomorphic.
 
 \section{Integration Lemmas}
 \begin{Theorem}
@@ -46,7 +46,7 @@ The constant term itself is of central importance. One reason for this is that i
 \section{Constant Terms of Eisenstein Series}
 This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. I give more detail here then I could find anywhere else. 
 
-Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic. \todo{is it true}
+Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic. \todo[inline]{is it true}
 
 \subsection{In General}
 We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MN\) and \(P' = M'N'\) two standard parabolics of suitable group G over F, with \(E(x, \phi, \lambda)\) defined via  parabolic induction from P.
@@ -81,7 +81,7 @@ We will use the following Lemmas to give a simplified expression of the constant
         \end{equation*}
     }
     Taking the contrapositive of this lemma will be used below. This is becuase our sums will be over quotients like \(A\setminus B\) and therefore summing over the "elements" in B that are not in A; by our lemma would be the same as summing over two different such quotients.
-    Now consider the computation:\todo{I have lost the lambda in the below computation}
+    Now consider the computation:\todo[inline]{I have lost the lambda in the below computation}
     \begin{equation*}
         \begin{aligned}
             E_{P'}(x, \phi, \lambda) &= \int_{N'(F)\setminus N'(\A)} E(nx, \phi, \lambda) dn\\
@@ -130,7 +130,7 @@ We will use the following Lemmas to give a simplified expression of the constant
     This was all in complete generality as well. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesnt exist (its over a point).
 
     \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}
-    If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \todo{put this in the Eisenstein series section} we can use the following 
+    If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \todo[inline]{put this in the Eisenstein series section} we can use the following 
     \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
         \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv\]
     \end{Lemma}
@@ -142,12 +142,12 @@ We will use the following Lemmas to give a simplified expression of the constant
              &=  \sum_{ w} \sum_{m'} \int_{N'(k) \cap wN(k)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn \\
              &= \sum_{ w} \sum_{m'} M(w, \pi)(\phi)(x)
         \end{aligned}
-    \end{equation*}\todo{I have mixed up my N's and U's too much...}
+    \end{equation*}\todo[inline]{I have mixed up my N's and U's too much...}
     In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series. 
 
     
 \section{Siegel Phi Operator}
-Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. \todo{give references for the other interpretations of the constant term, there must be some} We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
+Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. \todo[inline]{give references for the other interpretations of the constant term, there must be some} We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
 
 Because we are trying to connect this to the classical picture it is most convenient to think of thinks in the archimedian places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the archimedian places, and the constant term will be taken only on the archemedian part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
 \[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n\]
@@ -229,7 +229,7 @@ We have chosen normalisation to remove the usual factor of \(1/2\pi\) in the con
 \[\Phi(f)= \lim_{t\to \infty} f(it) =\lim_{t\to \infty} \sum_{n\geq 0} a_ne^{-2\pi nt }  =  a_0\]
 
 \subsection{Simplifying the Constant Term}
-As we saw in \todo{reference the maximal parabolic section} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+As we saw in \todo[inline]{reference the maximal parabolic section} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
 \[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
 which can be given the explicit matrix representations 
     \[m(\gamma, A) \defeq \begin{pmatrix}
@@ -244,7 +244,7 @@ which can be given the explicit matrix representations
 
     and unipotent 
     \[ n(s;h,k) \defeq \begin{pmatrix} 1 & 0 & 0 & h\\ -k^t & 1 & h^t & s+h^t k\\ 0 & 0 & 1 & k\\ 0 & 0 & 0 & 1 \end{pmatrix}, \;\;\; h, k\in\mathrm{Mat}_{(g-r)\times r}(\R)\; s\in\mathrm{Sym}_{r}(\R)\]
-We have the following short exact sequence \todo{prove it}
+We have the following short exact sequence \todo[inline]{prove it}
 \[ 1\to \mathrm{Sym}_{r}(\R)\to N_r(\R)\to \mathrm{Mat}_{(g-r)\times r}(\R)\times\mathrm{Mat}_{(g-r)\times r}(\R) \to 1. \]
 which we will use to unfold our integral below, for compacness we define \(H_r \defeq \mathrm{Mat}_{(g-r)\times r}\). We will now denote \([G] \defeq G(\Z)\backslash G(\R)\) and compute the constant term
 \begin{align}
@@ -313,7 +313,7 @@ So we have shown that
 
 Again lets focus on this integrand \(f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}\) and compute its Fourier expansion, see \cite[3.4]{bruinier123ModularForms2008}. Recall that a symmetric matrix \(n\in \GL_g(\Q)\) is called half integral if \(2n\) is integral with even diagonal entries, then a Siegel modular form has a Fourier expansion of the form
 \[f(z) = \sum_{n \text{ half integral}}a(n) e^{2\pi i \mathrm{Tr}(nz)} \]
-First the space of half integral \(g\times g\) matricies, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism \todo{prove it}
+First the space of half integral \(g\times g\) matricies, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism \todo[inline]{prove it}
 \[ \mathrm{HI}_{g-r} \oplus \tfrac{ 1}{ 2} \mathrm{Mat}_{ r\times (g-r)}(\Z) \oplus \mathrm{HI}_{r}\to\mathrm{HI}_g, \qquad (n, m, l)\mapsto \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}, \]
 thus unfolding the (discrete) integral we get 
 \begin{align*}
@@ -331,9 +331,9 @@ putting this into our Fourier expansion
     &\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))) \right)  \\
 \end{align*}
 
-If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo{my Tm differs from Chengjing}
+If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo[inline]{my Tm differs from Chengjing}
 \[T_{m} \defeq \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) = \mathrm{Tr}(-mk^t\tau - m^t\tau k) + \mathrm{Tr}(mh^t + m^th) \defeq T_{m,k} + T_{m,h}\]
-we can sub this back into our constant term\todo{Converges uniformly a priori on compact sets, well I dont know if I can swap all these sums haha}
+we can sub this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I dont know if I can swap all these sums haha}
 \begin{align*}
     \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
      &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{ \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  T_m + T_l) \right)
@@ -345,7 +345,7 @@ we can sub this back into our constant term\todo{Converges uniformly a priori on
      &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
      \intof{[H_r]}{e^{2\pi iT_{m,k}}\intof{[H_r]}{e^{2\pi i T_{m,h}} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
 \end{align*}
-Now we use that integrating unitary characters is very controlled \todo{ref the lemma} and the fact that 
+Now we use that integration unitary characters lemma \todo[inline]{ref the lemma} and the fact that 
 \[s\mapsto  e^{2\pi iT_l} \]
 is a non-trivial unitary character of \(\mathrm{Sym}_{g-r}\) whenerver \(l\neq 0\) to get that 
 \[\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s} = \begin{cases}

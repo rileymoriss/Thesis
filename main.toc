@@ -25,19 +25,19 @@
 \contentsline {chapter}{\numberline {4}Constant Terms}{16}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Definition and Role}{16}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Integration Lemmas}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Constant Terms of Eisenstein Series}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Constant Terms of Eisenstein Series}{18}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}In General}{18}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Constant Terms of Cuspidal Eisenstein Series}{19}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Constant Term Of Eisenstein Series for Conjugate Levis}{20}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Siegel Phi Operator}{20}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Siegel Phi Operator}{21}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Siegel Modular Forms}{21}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Automorphising}{22}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Base Case}{22}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}Simplifying the Constant Term}{23}{subsection.4.4.4}%
-\contentsline {chapter}{\numberline {5}Poles of Residual Eisenstein Series}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Their Results}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Our Results}{28}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Setup}{28}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Lemma 1}{29}{section.5.4}%
-\contentsline {chapter}{\numberline {A}Motivation}{31}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Reminders ---- Remove Later}{31}{subsection.A.0.1}%
+\contentsline {chapter}{\numberline {5}Poles of Residual Eisenstein Series}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Their Results}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Our Results}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Setup}{29}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Lemma 1}{30}{section.5.4}%
+\contentsline {chapter}{\numberline {A}Motivation}{32}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Reminders ---- Remove Later}{32}{subsection.A.0.1}%
