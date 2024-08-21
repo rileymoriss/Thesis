@@ -1,0 +1,371 @@
+Here we will explain the role of the constant term in our calculation of poles.
+
+\section{Definition and Role}
+The constant term is an operation defined on a large class of functions and is supposed to generalise the constant term of a fourier expansion, we will see this later, although one may consult \cite[1.6]{bumpAutomorphicFormsRepresentations1997} for some examples as well. In particular \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995} give the definition as follows: We consider \(P=MU\) a standard parabolic of \(G\) and \(\phi: U(k)\setminus \mathbf{G} \to \C\) a measurable and locally \(L^1\) function then its constant term along \(P\) is 
+\[\phi_P :  U(\A)\setminus \mathbf{G} \to \C\]
+\[\phi(g)_P \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u\]
+which inherits many of the properties of \(\phi\) such as smoothness and moderate growth. For instance if \(\phi\) is an automorphic form on \(\mathbf{G}\) then its constant term is an automorphic form on \(M\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
+
+This allows us to recal the definition of cuspidal automorphic forms or "cusp forms". Let \(\phi\) be a an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that 
+\[\phi_{P'} = 0\]
+Cusp forms have a central role in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and finally they just make formulas easier to work with.
+
+The constant term itself is of central importance. One reason for this is that it controls the growth of the automorphic forms. More precisely we have the following theorem \cite[I.4.10]{moeglinSpectralDecompositionEisenstein1995}
+
+\begin{Theorem}
+        Let \(P = MU\) be a standard parabolic of \(G\), \(V_P\subseteq \mathcal{A}_0(U(\A)M(k)\setminus G)\) a finite dimensional subspace, \(\Gamma_P\subseteq X_M\) a compact subset and \(N_P\) an integer. Let \(n\in \Z\), \(D\subseteq \C^n\) open and connected, \(f: D\to \C\) holomorphic and not identically zero. Let \(D' = \{x\in D : f(x)\neq 0\}\).
+
+        If \(\phi: D' \to L^2_{loc}(G)\) is a function such that for all \(z\in D', \phi(z)\in \mathcal{A}((V_P, \Gamma_P, N_P)_{P_0\subset P \subset G})\) and for all P 
+        \[\psi_P: D' \to L^2_{loc}(G)\]
+        \[z \mapsto \psi_P(z) = \phi_P^{cusp}(z)\]
+        is a holomorphic function. 
+
+        Then \(\phi\) can be analytically continued to a holomorphic function on \(D\) iff \(\psi_P\) can be continued to a holomorphic function on \(D\).
+    \end{Theorem}
+    
+    Unpacking this a bit we see that an Eisenstein series satisfies the hypothesis on \(\phi\) by \cite[IV.1.9]{moeglinSpectralDecompositionEisenstein1995} \todo{make this more precise}, we think of \(D'\) as the positive open cone on which the Eisenstein series conveges, and then \(D = \C^n \setminus S \) as the rest of the cuspidal datum \(\mathfrak{P}\) on which the Eisenstein series is holomorphic (\(S\) is its set of singularities). Therefore the domain on which the Eisenstein series is holomorphic is the same as the domain on which (roughly) its constant term is holomorphic.
+
+\section{Integration Lemmas}
+\begin{Theorem}
+	If \(G\) is a locally compact Hausdorff group with a left Haar measure \(\mu\) and if \(\chi\colon G\to \mathbf C^\times\) is a non-trivial character on \(G\), then
+	\[ \intof{G}{\chi(g)}{\mu(g)} = 0. \]
+\end{Theorem}
+\begin{proof}
+	Pick an element \(h\) of \(G\) such that \(\chi(h)\neq 1\).
+	The equation above then follows from
+	\[ \intof{G}{\chi(g)}{\mu(g)} = \intof{G}{\chi(hg)}{\mu(g)} = \intof{G}{\chi(h)\chi(g)}{\mu(g)} = \chi(h) \intof{G}{\chi(g)}{\mu(g)}. \square\]
+\end{proof}
+Integrating trivial characters gives the volume of the measure space which we typically normalize to be one.
+
+\begin{Theorem}[\cite{garrettModernAnalysisAutomorphic} 5.2, \cite{follandCourseAbstractHarmonic2016} Thm 2.49]
+        Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H)then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
+        \[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg\]
+    \end{Theorem}
+    Note that this quotient may not be a group, becuase H is not required to be normal.
+
+\section{Constant Terms of Eisenstein Series}
+This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. I give more detail here then I could find anywhere else. 
+
+Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic. \todo{is it true}
+
+\subsection{In General}
+We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MN\) and \(P' = M'N'\) two standard parabolics of suitable group G over F, with \(E(x, \phi, \lambda)\) defined via  parabolic induction from P.
+
+    \begin{Lemma}\label{lem:1}
+        \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)\]
+    \end{Lemma}
+    \proofbar{
+        Consider the Bruhat decomposition:
+        \[G(F) =\coprod_{w\in W_{M'}\setminus W_G / W_{M}} P(F)w\inv P'(F) \]
+        then becuase the action of \(P(F)\) keeps the disjoint sets disjoint we can move the quotient through and get
+        \[P(F)\setminus G(F) = \coprod_w  P(F) \setminus P(F)w\inv P'(F)\]
+        so we analyse the summands, by the second isomorphism theorem we have a bijection
+        \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap P'(F) \setminus w\inv P'(F) \]
+        now if \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its \(pw\inv p'\) for some \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
+        \[w(P(F)\cap P'(F) \setminus w\inv P'(F)) \cong wP(F)w\inv \cap P'(F) \setminus P'(F)\]
+    }
+
+    \begin{Lemma}\label{lem:2}
+        Let \(m', n'\in M'(F)\times N'(F)\) then 
+        \[m'n' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; n'\in (m')\inv wP(F)w\inv m'\]
+    \end{Lemma}
+    \proofbar{
+        The forward implication is stated in \cite{getzIntroductionAutomorphicRepresentations2024}, the converse follows from some algebra:
+        First let \(m' = wp_1w\inv\) and \(n' = (m')\inv wp_2w\inv m'\) then 
+        \begin{equation*}
+            \begin{aligned}
+                m'n' &= (wp_1w\inv)\inv wp_2w\inv wp_1w\inv\\
+                     &= wp_1\inv w\inv wp_2w\inv wp_1w\inv\\
+                     &= wp_1\inv p_2p_1w\inv \in wP(F)w\inv\\
+            \end{aligned}
+        \end{equation*}
+    }
+    Taking the contrapositive of this lemma will be used below. This is becuase our sums will be over quotients like \(A\setminus B\) and therefore summing over the "elements" in B that are not in A; by our lemma would be the same as summing over two different such quotients.
+    Now consider the computation:\todo{I have lost the lambda in the below computation}
+    \begin{equation*}
+        \begin{aligned}
+            E_{P'}(x, \phi, \lambda) &= \int_{N'(F)\setminus N'(\A)} E(nx, \phi, \lambda) dn\\
+                                    ([N']\defeq N'(F)\setminus N'(\A)) \;\;\; &= \int_{[N']} \sum_{\delta\in P(F)\setminus G(F)} \phi(\delta nx)  dn\\
+                                    (\text{Lemma 1}) \;\;\; &= \int_{[N']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \phi(\delta nx)  dn\\
+                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[N']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \phi( w\inv p'nx)  dn\\
+                                    (\text{Lemma 2}) \;\;\; &= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[N']} \sum_{n'\in N'(F)\cap (m')\inv wP(F)w\inv m' \setminus N'(F)} \phi( w\inv m'n'nx)  dn\\
+                                    (\text{Change Var}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{[N']} \sum_{n'\in N'(F)\cap wP(F)w\inv\setminus N'(F) } \phi( w\inv n'nm'x)  dn\\
+                                    (\text{Unfold}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn\\
+        \end{aligned}
+    \end{equation*}
+    The change of variables is \((m', n') \mapsto ((m')\inv n' m', (m')\inv n' m')\).
+    Again we assume that our x is sufficiently large so all the integrals converge.
+
+\subsection{Constant Terms of Cuspidal Eisenstein Series}
+\begin{Lemma}[4]
+        For \(w\in W_{M'}\setminus W_G / W_{M} \) we have that \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv N'w\cap M\).
+    \end{Lemma}
+    \proofbar{
+        This is \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} stated without proof. They give the reference \cite[V.4.6]{renardREPRESENTATIONSGROUPESREDUCTIFS} which is in French. We will return to this if we have time / energy.
+    }
+    \begin{Lemma}[5]
+        \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U)\]
+    \end{Lemma}
+    \proofbar{
+        \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} has some decompositions, as well as the standard decomposition of \(P=MU\) I think I could prove this...
+    }
+    \begin{Lemma}[6]
+        \[c\setminus (b\setminus a )= (bc)\setminus a\]
+    \end{Lemma}
+
+    Continuing the computation of the constant term above, we will focus purely on the inner integral now
+    \begin{equation*}
+        \begin{aligned}
+            \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn &= \int_{w\inv N'(F)w \cap P(F) \setminus w\inv N'(\A)w} \phi( nw\inv m' x)  dn \\
+            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv N'(\A)w} \phi( nw\inv m' x)  dn \\
+            (\text{Unfold + Lemma 6})  &= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2 \\
+        \end{aligned}
+    \end{equation*}
+    the first equality is the change of variables \(w\inv n w\mapsto n \) and \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv N'(\A)w \). Now look at the inner integral here more closely 
+    \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2\]
+    applying Lemma (6) we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m n_2 w\inv m' x)\). 
+    \begin{Lemma}
+        \(n_2 w\inv m' x \in K\) with variables as above.
+    \end{Lemma}
+    This was all in complete generality as well. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesnt exist (its over a point).
+
+    \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}
+    If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \todo{put this in the Eisenstein series section} we can use the following 
+    \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
+        \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv\]
+    \end{Lemma}
+    to see that 
+    \[\]
+    \begin{equation*}
+        \begin{aligned}
+             E_{P'}(x, \phi, \lambda) &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn \\
+             &=  \sum_{ w} \sum_{m'} \int_{N'(k) \cap wN(k)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn \\
+             &= \sum_{ w} \sum_{m'} M(w, \pi)(\phi)(x)
+        \end{aligned}
+    \end{equation*}\todo{I have mixed up my N's and U's too much...}
+    In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series. 
+
+    
+\section{Siegel Phi Operator}
+Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. \todo{give references for the other interpretations of the constant term, there must be some} We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
+
+Because we are trying to connect this to the classical picture it is most convenient to think of thinks in the archimedian places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the archimedian places, and the constant term will be taken only on the archemedian part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
+\[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n\]
+We assume here for simplicity (and becuase it will apply to the examples below) that our groups are unimodular.
+
+\subsection{Siegel Modular Forms}
+We collect some definitions from \cite{bruinier123ModularForms2008} to fix notation. Let the Siegal upper half plane be defined as 
+\begin{equation*}
+    \begin{aligned}
+        \mathcal{H}_g &\defeq \{\tau \in \mathrm{M}_{g\times g}(\C) : \tau \text{ is symetric and has positive definite imaginary part}\} \\
+        & \cong \Sp_{2g}(\R) / U(g)
+    \end{aligned}
+\end{equation*}
+where the isomorphism is as analytic manifolds  and 
+\[U(g) \defeq \left\{\begin{pmatrix}
+    A & B\\
+    -B & D
+\end{pmatrix}\in \Sp_{2g}(\R) : AA^t + BB^t = 1\right\}\]
+
+For every \(\gamma= (A \; B; \; C\; D) \in \Sp_{2g}(\Z)\) and \(\tau \in \mathcal{H}_g\) we have the action
+\[\gamma.\tau = (A\tau + B)(C\tau + D)\inv \]
+
+We say that a holomorphic function \(f: \mathcal{H}_g \to \C\) is a (classical) Siegel modular form of weight \(k\) if 
+\[f(\gamma.\tau) = \det(C\tau + D)^kf(\tau)\]
+with the extra condition that if \(g = 1\) it must be holomorphic at \(\infty\). Becuase \(\Sp_2 = \SL_2\) this is a strict generalisation of an (elliptic) modular form.
+
+The space of Siegel modular forms of weight \(k\) and genus g is denoted \(\mathcal{M}_k(\Sp_{2g}(\Z))\). There is a useful operator know as the Siegel Phi Operator which allows you to lift known modular forms from lower genus to higher genus \cite[5]{bruinier123ModularForms2008}
+\[\mathcal{M}_k(\Sp_{2g}(\Z)) \xrightarrow{\Phi} \mathcal{M}_{k}(\Sp_{2(g-1)}(\Z))\]
+defined by the limit for \(\tau\in \mathcal{H}_{g-1}\)
+\[\Phi(f)(\tau) \defeq \lim_{t\to \infty} f\begin{pmatrix}
+    \tau & \\
+    & it 
+\end{pmatrix}\]
+in this context a cusp form is defined to be a Siegel modular form in the kernel of the Siegel \(\Phi\) operator and so it is natural to wonder if there is a constant term that is being taken here. 
+
+\subsection{Automorphising}
+Given a Siegel modular form \(f\in \mathcal{M}_k(\Sp_{2g}(\Z))\) we can associate an automorphic form
+\[\tilde{f} : \Sp_{2g}(\R)\to\C, \qquad \begin{pmatrix} a & b\\ c & d\end{pmatrix}\mapsto \det(ci+d)^{-k} f\Bigl((ai+b)(ci+d)\inv\Bigr), \]
+where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatrix} a & b\\ c & d\end{smallmatrix}\bigr)\in\Sp_{2g}(\R)\).Fiz the Borel of upper triangular matricies. Now for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+\[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
+
+\begin{Theorem}[Zhang]
+	If \(f\) is a classical Siegel modular form of weight \(k\) and degree \(g\), then
+	\begin{equation} 
+		\tilde f_{P_r}(u\gamma) = \det u^k\cdot (\Phi^{r} f)^\sim(\gamma)
+	\end{equation}
+	for every element \(\gamma\) of \(\Sp_{2(g-r)}(\R)\) and every element \(u\) of \(\GL_{r}(\R)\).
+
+ In particular 
+ \[\tilde{f}_{P_{g-1}}\begin{pmatrix} a & 0 & b & 0\\ 0 & 1 & 0 & 0\\ c & 0 & d & 0\\ 0 & 0 & 0 & 1\end{pmatrix} = (\Phi f)^\sim\begin{pmatrix}
+     a & b\\
+     c& d
+ \end{pmatrix}\]
+\end{Theorem}
+
+This shows that perhaps the correct generalisation of the Siegel Phi function is just the constant term that we all know and love. It would be interesting to compare this with the work done in \cite{grenierANALOGUESIEGELXOPERATOR2024}. We could also attempt to expand this to Siegel modular forms that are vector valued or not of full level.
+
+\subsection{Base Case}
+The base case is very instructive, it deals with modular forms. So consider \(f\) a (elliptic) modular form of full level and weight k, which has a fourier expansion given by 
+\[f(z) = \sum_{n\geq 0} a_ne^{2\pi i nz }\]
+Then one can verify that
+\[\tilde f \begin{pmatrix}
+    a & b\\
+    c & d
+\end{pmatrix} = (ci+d)^{-k} f\Bigl(\frac{ai+b}{ci+d}\Bigr)\]
+is an automorphic form on \(\Sp_2\). The only non-trivial parabolic P is the one of upper triangular matricies, with Levi and unipotant given respectively 
+\[M = \begin{pmatrix} m & 0\\ 0 & m^{-1}\end{pmatrix}\cong \GL_1 , \;\;\; N = \begin{pmatrix} 1 & b\\ 0 & 1\end{pmatrix} \cong \mathbb{G}_a\]
+along which we can now compute the constant term 
+\begin{equation*}
+    \begin{aligned}
+		\tilde f_P(m)
+		& = \int_{N(\Z)\backslash N(\R)}\tilde f (mb) \mathrm{d}b\\
+		& =  \int_{\Z\backslash\R}\tilde f \begin{pmatrix} m & mb\\ 0 & m^{-1}\end{pmatrix}\mathrm{d}b\\
+		& = \int_{\Z\backslash\R} m^k f(m^2i+m^2b) \mathrm{d}b\\
+            & = m^k a_0 \\
+	\end{aligned}
+\end{equation*}
+We have chosen normalisation to remove the usual factor of \(1/2\pi\) in the constant term of the Fourier series. Moreover we see that
+\[\Phi(f)= \lim_{t\to \infty} f(it) =\lim_{t\to \infty} \sum_{n\geq 0} a_ne^{-2\pi nt }  =  a_0\]
+
+\subsection{Simplifying the Constant Term}
+As we saw in \todo{reference the maximal parabolic section} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+\[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
+which can be given the explicit matrix representations 
+    \[m(\gamma, A) \defeq \begin{pmatrix}
+        A &&& \\
+         &a&&b \\
+         &&(A^t)\inv& \\
+         &c&&d \\
+    \end{pmatrix}, \;\;\; A\in \GL_r(F), \; \gamma = \begin{pmatrix}
+        a & b\\
+        c & d \\
+    \end{pmatrix} \in \Sp_{2(g-r)}(F) \]
+
+    and unipotent 
+    \[ n(s;h,k) \defeq \begin{pmatrix} 1 & 0 & 0 & h\\ -k^t & 1 & h^t & s+h^t k\\ 0 & 0 & 1 & k\\ 0 & 0 & 0 & 1 \end{pmatrix}, \;\;\; h, k\in\mathrm{Mat}_{(g-r)\times r}(\R)\; s\in\mathrm{Sym}_{r}(\R)\]
+We have the following short exact sequence \todo{prove it}
+\[ 1\to \mathrm{Sym}_{r}(\R)\to N_r(\R)\to \mathrm{Mat}_{(g-r)\times r}(\R)\times\mathrm{Mat}_{(g-r)\times r}(\R) \to 1. \]
+which we will use to unfold our integral below, for compacness we define \(H_r \defeq \mathrm{Mat}_{(g-r)\times r}\). We will now denote \([G] \defeq G(\Z)\backslash G(\R)\) and compute the constant term
+\begin{align}
+		\tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+		& = \intof{[N_r]}{\tilde f\bigl(n m(\gamma, A)\bigr)}{n} \notag\\
+		& = \intof{[H_r\times H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{\tilde f\bigl(n(s; h, k) m(\gamma, A)\bigr)}{s}}{(h,k)} \notag\\
+		& = \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{\tilde f\bigl(n(s; h, k) m(\gamma, A)\bigr)}{s}}{h}}{k}.
+\end{align} 
+
+Now we focus on simplyfing the integrand. We want an explicit form of the matrix so we can relate it back to the value of the un-lifted Siegel modular form \(f\); simply multiply the matricies gives, where (all rings are commutative) \(A^{-t} \defeq (A^t)\inv\)
+\[
+		n(s; h, k) m(\gamma, A) =
+		\begin{pmatrix}
+			a & 0 & b & h A^{-t}\\
+			-k^t a + h^t c & A & -k^t b + h^t d & s A^{-t} + h^t k A^{-t}\\
+			c & 0 & d & k A^{-t}\\
+			0 & 0 & 0 & A^{-t}
+		\end{pmatrix}.
+	\]
+because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\times r}\) we see that the \(g\times g\) blocks that we now need to take the determinant of are the \(4\times 4\) conrners of this picture, hence the matricies below should all be in \(\mathcal{H}_g\subseteq \mathrm{Mat}_{g\times g}\)
+
+\begin{align*}
+    \tilde{f}(n(s; h, k) m(\gamma, A) ) &= \det\left(\begin{pmatrix}
+    c & 0 \\
+    0 & 0
+\end{pmatrix}i+ \begin{pmatrix}
+    d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix} \right)^{-k} \cdot \\
+&f\left(         \left(\begin{pmatrix}
+    a & 0\\
+    -k^ta + h^tc & A
+\end{pmatrix}i+\begin{pmatrix}
+    b & hA^{-t} \\
+    -k^tb + h^td & sA^{-t} + h^tkA^{-t}
+\end{pmatrix}\right)   \left(\begin{pmatrix}
+    c & 0 \\
+    0 & 0
+\end{pmatrix}i+ \begin{pmatrix}
+    d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix} \right)\inv      \right) \\
+&= \det\left( \begin{pmatrix}
+    ic + d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix}\right)^{-k} \cdot \\
+&f\left( \begin{pmatrix}
+    ia + b &  hA^{-t}\\
+    -k^t(ia +b) + h^t(d + ic) & iA + sA^{-t} + h^tkA^{-t}
+\end{pmatrix}  \begin{pmatrix}
+    ic + d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix}\inv      \right) \\
+&=\left(\frac{\det(ic + d)}{\det(A)}\right)^{-k} \cdot \\ &f\left( \begin{pmatrix}
+    ia + b &  hA^{-t}\\
+    -k^t(ia +b) + h^t(d + ic) & iA + sA^{-t} + h^tkA^{-t}
+\end{pmatrix}   \begin{pmatrix}(ci+d)^{-1} & -(ci+d)^{-1} k\\ 0 & A^t \end{pmatrix} \right) \\
+&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}, \;\;\; \tau \defeq (ai+b)(ci + d)\inv \\
+%&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\bigl(n(s; h, k) m(\gamma,A )(i 1_g)\bigr) I think g here should be 2g but then the multiplication seems wrong IDK what he meant by this..
+\end{align*} 
+So we have shown that 
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr) &= \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
+\end{align*}
+
+Again lets focus on this integrand \(f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}\) and compute its Fourier expansion, see \cite[3.4]{bruinier123ModularForms2008}. Recall that a symmetric matrix \(n\in \GL_g(\Q)\) is called half integral if \(2n\) is integral with even diagonal entries, then a Siegel modular form has a Fourier expansion of the form
+\[f(z) = \sum_{n \text{ half integral}}a(n) e^{2\pi i \mathrm{Tr}(nz)} \]
+First the space of half integral \(g\times g\) matricies, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism \todo{prove it}
+\[ \mathrm{HI}_{g-r} \oplus \tfrac{ 1}{ 2} \mathrm{Mat}_{ r\times (g-r)}(\Z) \oplus \mathrm{HI}_{r}\to\mathrm{HI}_g, \qquad (n, m, l)\mapsto \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}, \]
+thus unfolding the (discrete) integral we get 
+\begin{align*}
+    f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &=   \sum_{n\in\mathrm{HI}_{g-r}} \sum_{m\in\frac{1}{2} \mathrm{Mat}_{ r\times (g-r)}(\Z)} \sum_{l\in\mathrm{HI}_{r}} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \\
+    &\exp \left(2\pi i \mathrm{Tr} \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} \right)  \\
+\end{align*}
+because all the block sizes are compatible we can "block multiply" the inner matricies and because we are taking the trace we can forget about off diagonal entries
+\begin{align*}
+    \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= 
+    \begin{pmatrix} n\tau + m(-k^t \tau + h^t ) & \ast\\ \ast & m^t(-\tau k + h) + l( k^t \tau k + A A^t i + s) \end{pmatrix}
+\end{align*}
+putting this into our Fourier expansion
+\begin{align*}
+    f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \\
+    &\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))) \right)  \\
+\end{align*}
+
+If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo{my Tm differs from Chengjing}
+\[T_{m} \defeq \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) = \mathrm{Tr}(-mk^t\tau - m^t\tau k) + \mathrm{Tr}(mh^t + m^th) \defeq T_{m,k} + T_{m,h}\]
+we can sub this back into our constant term\todo{Converges uniformly a priori on compact sets, well I dont know if I can swap all these sums haha}
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{ \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  T_m + T_l) \right)
+     }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+     \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi i(T_m + T_l)}  }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+     \intof{[H_r]}{\intof{[H_r]}{e^{2\pi iT_m} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+     \intof{[H_r]}{e^{2\pi iT_{m,k}}\intof{[H_r]}{e^{2\pi i T_{m,h}} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
+\end{align*}
+Now we use that integrating unitary characters is very controlled \todo{ref the lemma} and the fact that 
+\[s\mapsto  e^{2\pi iT_l} \]
+is a non-trivial unitary character of \(\mathrm{Sym}_{g-r}\) whenerver \(l\neq 0\) to get that 
+\[\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s} = \begin{cases}
+    1, & l=0 \\
+    0, & l\neq 0
+\end{cases}\]
+we repeat this trick with the second integral, which enforces that \(m = 0\) and end up with 
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+     &=\left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n\in\mathrm{HI}_{g-r}} a\begin{pmatrix} n & 0\\ 0 & 0 \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}\\
+\end{align*}
+but by \cite[3.5]{bruinier123ModularForms2008} we know that the Fourier expansion of the Siegel Phi operator is 
+\[(\Phi^{r} f)(\tau) = \sum_{n\in\mathrm{HI}_{g-r}} a\begin{pmatrix} n & 0\\ 0 & 0 \end{pmatrix} e^{2\pi i\mathrm{Tr}(n \tau)}.\]
+hence 
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+     &=\left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \Phi^r(f)(\tau)\\
+     &= \det(A)^k (\Phi^r(f))^{\sim}(\gamma)
+\end{align*}
+which concludes the proof.
+\begin{FlushRight}
+     \(\square\)
+\end{FlushRight}

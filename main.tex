@@ -1,0 +1,144 @@
+\documentclass[10pt, openany]{book}
+
+%\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{soul}
+\usepackage{ stmaryrd }
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{extarrows}
+\usepackage{interval}
+\usepackage{bbm}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{romannum}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\title{A Paraphrase of a Paraphrase}
+\author{Riley Moriss}
+\input{./minipreamble}
+%No title page.
+\makeatletter
+\newcommand*{\toccontents}{\@starttoc{toc}}
+\makeatother
+
+\let\oldphi\phi 
+\let\phi\varphi 
+\let\varphi\oldphi
+
+% As an example:
+%   \intof[0]{1}{x^2}{x}
+\newcommand*\intof[4][]{\int^{#1}_{#2}#3\,d#4}
+
+% As an example:
+%   \setof[\Big]{ n\in\N \st n < \binom n 2 }
+\newcommand\setof[2][]{\mathord{\mathopen#1\{\,#2\,\mathclose#1\}}}
+
+%\usepackage{multicol}
+%\usepackage{geometry}
+%\usepackage{soul}
+%\usepackage{ stmaryrd }
+%\geometry{ margin=3cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{1}%%%%% Stops subsections in TOC
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\numberwithin{equation}{section}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\renewcommand{\baselinestretch}{1.25}
+\geometry{
+ left=30mm,
+ right=30mm,
+ top=30mm,
+ bottom=30mm,
+ includefoot
+}
+\allowdisplaybreaks
+\geometry{ margin=3cm}
+
+%%%%%%%%%%%%%% 
+%Type Writer Font
+%\usepackage{courier}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+%\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BEGIN
+\begin{document}
+\begin{comment}%Front page stuff
+    \begin{titlepage}
+    \begin{center}
+    \vspace*{1cm}
+    \huge
+    \textbf{A Paraphrase of a Paraphrase}\\
+    \vspace{2cm}
+    \Large
+    \text{Riley Moriss}\\
+    \vspace{0.5cm}
+    \text{Supervisor: Dr. Chenyan Wu }\\    
+ 
+    A thesis submitted in partial fulfillment of the\\
+    requirements for the degree of\\
+    Master of Science\\
+    in the\\
+    School of Mathematics and Statistics\\
+    at\\
+    The University of Melbourne\\
+    \vspace{1,5cm}
+    October 2024
+\end{center}
+\end{titlepage}
+
+\pagebreak
+\end{comment}
+\pagenumbering{roman}
+
+\chapter*{Acknowledgements}
+\input{Chapters/acknowledgements}
+
+\tableofcontents
+\pagenumbering{arabic}
+
+\chapter*{Notation}
+
+\chapter{Classical Groups}
+\input{Chapters/classicalGroups}
+\chapter{Automorphic Representations}
+\input{Chapters/automorphicReps}
+\chapter{Constant Terms}
+\input{Chapters/constantTerms}
+\chapter{Poles of Residual Eisenstein Series}
+\input{Chapters/polesOfEisensteinSeries}
+
+\appendix
+\chapter{Motivation}
+\input{Chapters/motivation}
+
+
+
+
+\listoftodos
+\newpage
+\bibliographystyle{alpha}
+\bibliography{./NumberTheory}
+\end{document}

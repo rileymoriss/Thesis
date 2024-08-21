@@ -1,0 +1,107 @@
+		\author{Riley Moriss}
+	
+		%images
+		\usepackage{graphicx}
+		\usepackage{quiver} %Tikz diagram generator
+		\usetikzlibrary{fit}
+		
+		
+		%Bibliography
+		\usepackage{hyperref} %Content is clickable
+		
+		%Math
+		\usepackage{amsmath}
+		
+		%Formatting
+		\usepackage{comment} %comment out code blocks
+		\usepackage{csquotes} %Quote environment
+		\usepackage{amsfonts}
+		\usepackage{mathrsfs} %Script fonts
+
+		%Todos	
+		\usepackage[colorinlistoftodos,prependcaption,textsize=scriptsize, color=red!40, shadow]{todonotes}
+			
+		%Math shortcuts
+		%Sets
+		\newcommand{\R}{\ensuremath{\mathbb{R}}\phantom{ }}
+		\newcommand{\C}{\ensuremath{\mathbb{C}}\phantom{ }}
+		\newcommand{\Z}{\ensuremath{\mathbb{Z}}\phantom{ }}
+		\newcommand{\N}{\ensuremath{\mathbb{N}}\phantom{ }}
+		\newcommand{\Q}{\ensuremath{\mathbb{Q}}\phantom{ }}
+		\newcommand{\F}{\ensuremath{\mathbb{F}}\phantom{ }}
+		\newcommand{\G}{\ensuremath{\mathbb{G}}\phantom{ }}
+
+		%Symbols
+		\newcommand{\hilb}{\ensuremath{\mathfrak{h}}\phantom{ }}
+		\newcommand{\tensor}{\ensuremath{\otimes}}
+		\newcommand{\inner}[1]{\ensuremath{\langle #1\rangle}}
+		\newcommand{\norm}[1]{\lVert #1 \rVert}
+		\newcommand{\inv}{^{-1}}
+		\newcommand{\model}[1]{\llbracket #1\rrbracket}
+		\newcommand{\Par}{\rotatebox[origin=c]{180}{\&}}
+		\newcommand{\Dif}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}}
+		\newcommand{\comp}{\circ}
+		\newcommand*{\defeq}{\hspace{2mm}\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+					\hbox{\scriptsize.}\hbox{\scriptsize.}}}%
+			=\hspace{2mm}}
+
+		%Operators
+		\DeclareMathOperator{\Ind}{Ind}
+		\DeclareMathOperator{\Spec}{Spec}
+		\DeclareMathOperator{\Res}{Res}
+		\DeclareMathOperator{\Hom}{Hom}
+		\DeclareMathOperator{\Maps}{Maps}
+		\usepackage{mathtools}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+		\DeclareMathOperator{\dif}{d}
+		\newcommand{\A}{\ensuremath{\mathbb{A}}\phantom{ }}
+		\renewcommand{\P}{\ensuremath{\mathbb{P}}\phantom{ }}
+		\newcommand{\Struc}{\ensuremath{\mathcal{O}}\phantom{ }}
+		\newcommand{\Gcov}{\ensuremath{\mathbf{G}}\phantom{ }}
+		
+		\DeclareMathOperator{\Sp}{Sp}
+		\DeclareMathOperator{\SL}{SL}
+		\DeclareMathOperator{\GL}{GL}
+		\DeclareMathOperator{\Mp}{Mp}
+
+		%Fonts
+		\newcommand{\Cal}[1]{\ensuremath{\mathcal{#1}}}
+		\newcommand{\Cat}[1]{\ensuremath{\mathscr{#1}}}
+		%Format
+		\newcommand{\gap}{\vspace{4mm}}
+		\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+		\usepackage{ragged2e}
+
+
+		
+		%Environments
+		\usepackage{amsthm} %No numbering
+		\newtheorem*{Lemma}{Lemma}
+		\newtheorem*{Theorem}{Theorem}
+		\newtheorem*{Remark}{Remark}
+		\newtheorem*{Exercise}{Exercise}
+		\newtheorem*{Notation}{Notation}
+		\newtheorem*{Definition}{Definition}
+		\newtheorem*{example}{Example}	
+		\newtheorem*{cor}{Corollary}
+		\newtheorem*{Prop}{Proposition}
+
+		\usepackage{framed}
+		%\usepackage{mdframed}
+		\newcommand{\proofbar}[1]{
+			\begin{leftbar}
+				\textit{\textbf{Proof.}} 	#1
+			\end{leftbar}
+			}
+
+		%Highlighting
+		\newcommand{\notice}[1]{\hl{\textbf{\textit{#1}}}}
+		\DeclareRobustCommand{\hlcyan}[1]{{\sethlcolor{cyan}\hl{#1}}}
+		\DeclareRobustCommand{\hlgreen}[1]{{\sethlcolor{green}\hl{#1}}}
+			
+			
+			
+			
+			

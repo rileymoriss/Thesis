@@ -1,0 +1,94 @@
+Our goal here is to exposit and survey the work in papers such as \cite{brennerNotesAnalyticProperties2009}\cite{jiangPolesCertainResidual2013}, we were going to generalise some of these results to metaplectic covers however we found these results in \cite{ginzburgTopFourierCoefficients2021}.
+
+\section{Their Results}
+\cite{brennerNotesAnalyticProperties2009} gave an analysis of the residual poles of Eisenstein series attached to \(\Sp_{2n}\), there were some minor errors that were corrected in \cite{jiangPolesCertainResidual2013} where they give esssentially the same proof; theirs however works for the other classical groups. For our purposes, the case of \(\Sp_{2n}\), as a group defined over \(F\) a number field, is most relevant, and we shall therefore focus exclusively on this case, however it should be noted that this limitation in the non-covering case is artificial, although it does simplify things a little by removing some casework, and we hope also in the covering case to be able to remove it in future work. 
+
+We fix an \(n\in \N\) and the Borel of upper triangular matricies in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \todo{what are the ranges of these}. Then as we saw in \todo{write this up in the classical group section} ---- there corresponds a maximal standard parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rN_r\), such that the Levi component is 
+\[\GL_r\times \Sp_{2m} \]
+As we saw in \todo{explain this in the Eisenstein series section}---- the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). If we look at the divisors of \(r = ab\) \todo{check the exact ranges, will depend on the range of r} and fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_a\), then from \todo{link to the residual representation section} ---- we know that \(\Delta(\tau, b)\) is a residual representation of \(\GL_{ab} = \GL_r\). Now we take an irreducible generic cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), and so their tensor product \(\Delta(\tau, b) \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
+\[\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Sp_{2n}(\A) )_{\Delta(\tau, b)\tensor \sigma}\] 
+then we have the Eisenstein series
+\[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g)\]
+\todo{explain the s action in Eisenstein series section.}
+for \(g\in \Sp_{2n}(F) \setminus \Sp_{2n}(\A)\). Becuase it is induced from the residual representation \(\Delta(\tau, b)\) we call these residual Eisenstein series. The main theorem is then a statement that after some normalisation the poles of this Eisenstein series are limited to a particular set and that they are simple. Details will be given later.
+
+
+\section{Our Results}
+We consider an almost identical setup but we deal with the metaplectic cover of \(\Sp_{2n}\), again over a number field \(F\), \(\Mp_{2n}\)\todo{reference the section I discuss this in.}. We again fix the Borel of upper triangular matricies, consider partitions of \(n = r+m\) and look at maximal standard parabolics of \(\Sp_{2n}\), \(P_r = M_rN_r\) such that 
+\[M_r = \GL_r \times \Sp_{2m}\]
+then if \(r = ab\) we still have that \(\Delta(\tau, b)\tensor \sigma\), for \(\tau\) irreducible unitary cuspidal automorphic representation of \(\GL_a\) and \(\sigma\) irreducible generic cuspidal automorphic representation of \(\Sp_{2m}\), is a representation of \(M_r\). The difference is in the parabolic induction as we now consider 
+\[\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Mp_{2n}(\A) )_{\Delta(\tau, b)\tensor \sigma}\] 
+and then the Eisenstein series is defined in the same way
+\[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g)\]
+for \(g\in \Sp_{2n}(F) \setminus \Mp_{2n}(\A)\) and \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\).
+
+\begin{Lemma}
+When \(b = 1\) we have the constant term
+    \[E(\phi,s)(g)_{P_a} = \phi(g)_{P_a} + M(\omega, \tau\tensor\sigma)(\phi)(g)\]
+\end{Lemma}
+
+\todo{fill in here as theorems or whatever anything that I end up actually checking....}
+
+\section{Setup}
+In the setup we used that \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\) the first step is to make sure that this is actually true
+\begin{Lemma}
+        \( X_{M_r}^{\Mp_{2n}(\A)}\) is at most a one dimensional \C vector space. 
+    \end{Lemma}
+    \proofbar{
+         First of all we have that \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}
+         \[ X_{M_r}^{\Mp_{2n}(\A)} \subseteq X_{M_r} \cong \mathfrak{a}_{M_r}^*\defeq Rat(M_r) \tensor_\Z \C\]
+        thus it is clearly sufficent to bound the dimension of \(\mathfrak{a}_{M_r}^*\) as a \C vector space, moreover this dimension agrees with the dimension of \(Rat(M_r)\) as a free \Z module. 
+
+        Thus we compute \(\dim_\Z(Rat(M_r))\):
+        \begin{equation*}
+            \begin{aligned}
+                Rat(M_r) &= Rat(\GL_r \times \Sp_{2m}) \\
+                         &= \Hom(\GL_r \times \Sp_{2m}, \mathbb{G}_m) \\
+                         (2)&\cong \Hom(\mathrm{Ab}(\GL_r \times \Sp_{2m}), \mathbb{G}_m) \\
+                         (1)&\cong \Hom(\mathrm{Ab}(\GL_r) \times \mathrm{Ab}(\Sp_{2m}), \mathbb{G}_m) \\
+                         (3)&\cong \Hom(\mathbb{G}_m \times 1, \mathbb{G}_m) \\
+                         &\cong \Z
+            \end{aligned}
+        \end{equation*}
+        in (2) we have used the universal property of the abelianization \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is abelian. (1) is that the abelianization commutes with direct products (citation as comment in Tex). (3) is because \(\Sp\) is a perfect group.
+        %https://groupprops.subwiki.org/wiki/Symplectic_group_is_perfect
+        %https://mathoverflow.net/questions/35713/abelianization-of-a-semidirect-product
+}\todo{I havent shown that it is not trivial...}
+
+
+\section{Lemma 1}
+\todo[inline]{The representation is supposed to be of the covering of the Levi///? need to fix this}
+We here consider the case that \(b=1\), hence \(n = a + m\). Then fixing a standard parabolic of \(\Sp_{2n}\) we have the maximal standard parabolic \(P_a = M_aN_a\) where \(M_a = \GL_a \times \Sp_{2m}\).  Now if \(\tau\) is irreducible unitary cuspidal automorphic representation of \(\GL_a\) then by definition \todo{Brenner..}
+\[\Delta(\tau, 1)(\phi)(g) = E(\phi,s)(g) = s.\phi(g)\]
+where the Eisenstein series is defined via the parabolic induction from the Levi \((\GL_a)^{\times b} \) to \(\GL_{ab}\). Thus we have \(\Delta(\tau, 1) = \tau\). So for the appropriate \(\sigma \) a rep of \(\Sp_{2m}\) we get a rep of the Levi of \(\Sp_{2n}\), \(M_r = M_a = \GL_a\times \Sp_{2m}\) given by \(\tau\tensor \sigma\). To this we associate the Eisenstein series for \(\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Mp_{2n}(\A))_{\tau\tensor \sigma}\) \(E(\phi,s)\) as usual. Now we proceed to calculate the constant term of this Eisenstein series along the parabolic \(P_a = MN\). \todo{M+W II.1.7, all others are zero..?}
+
+By our calculations\todo{red}, the cuspidality of the tensor\todo{ref} and \cite{jiangPolesCertainResidual2013} we know that 
+     \[E(\phi, s)_{P} = \sum_{ w} \sum_{m'} \int_{(w\inv N(\A)w \cap M(\A)) \setminus A} \int_{w\inv N(F) w \cap M(F) \setminus w\inv N(\A)w \cap M(\A)} \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2\] 
+     and the inner integral vanishes for all \(w\neq id, \omega\) (\(\omega\) as in \cite{jiangPolesCertainResidual2013}). Hence the first sum becomes over two elements and we have 
+
+     \[E(\phi, s)_{P} = E(\phi, s)_{P, id} + E(\phi, s)_{P, \omega}\]
+     where 
+     \[E(\phi, s)_{P, w} =  \sum_{m'\in M(F)\cap wP(F)w\inv\setminus M(F)} \int_{N(F)\cap wP(F)w\inv \setminus N(\A)} \phi( w\inv nm' x)  dn\]
+
+First the identity term simplifies
+
+     \begin{equation*}
+        \begin{aligned}
+            E(\phi, s)(x)_{P', id} &=  \sum_{m'\in M(F)\cap P(F)\setminus M(F)} \int_{N(F)\cap P(F) \setminus N(\A)} \phi( nm' x)  dn\\
+            &= \sum_{m'\in M(F)\setminus M(F)} \int_{N(F)\setminus N(\A)} \phi( nm' x)  dn \\
+            &=\int_{N(F)\setminus N(\A)} \phi( n x)  dn \\
+            &= \phi(x)_P
+        \end{aligned}
+     \end{equation*}
+     \todo{I really need to fix this s thing that I dropped in the constant term computations.}
+
+     Considering now the \(\omega\) term 
+     \[E(\phi, s)_{P, \omega} =  \sum_{m'\in M(F)\cap \omega P(F)\omega\inv\setminus M(F)} \int_{N(F)\cap \omega P(F)\omega\inv \setminus N(\A)} \phi( \omega\inv nm' x)  dn\]
+
+     by \cite[2C]{jiangPolesCertainResidual2013} \(M(F)\cap \omega P(F)\omega\inv \setminus M(F)\) is isomorphic to\todo{this is not clear in their paper im just guessing this is what they mean} \(P_0 \setminus \Sp_{2(n-a)}\) where \(P_0 \setminus \Sp_{2(n-a)}\) by defintion, but \(P_0\) has Levi \(M_0 = \Sp_{2(n-a)}\) by definition and hence is itself \(\Sp_{2(n-a)}\). Thus the sum is over \(\Sp_{2(n-a)}(F) \setminus \Sp_{2(n-a)}(F)\) and hence is over a point. Therefore we get by definintion of the intertwining operator
+     \[E(\phi, s)_{P, \omega} = \int_{N(F)\cap \omega P(F)\omega\inv \setminus N(\A)} \phi( \omega\inv n x)  dn = M(\omega, -)(\phi)(x)\]
+     becuase we took the constant term along the same parabolic as the definition of the Eisenstein series we know that the Levis are (the same) conjugate.
+    Thus we have shown that 
+    \[E(\phi, s)_P(x) = \phi(x)_P + M(\omega, - )(\phi)(x)\]
+
+    Notice that the computation takes place completely at the level of the terminals which are indupendent of the fact that we have taken a covering group, hence we have really only reused work from \cite{jiangPolesCertainResidual2013}.
