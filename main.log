@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  21 AUG 2024 10:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  21 AUG 2024 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -702,8 +702,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box71
-)
-No file main.aux.
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -724,6 +723,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -788,100 +788,49 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package hyperref Info: Link coloring OFF on input line 87.
+ (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
  Excluding 'comment' comment. (Chapters/acknowledgements.tex) [1
 
 
-{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-No file main.toc.
+{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (main.toc
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 3.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+LaTeX Font Info:    Trying to load font information for U+euf on input line 11.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+))
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-[1
+ [1
 
 ] [2
 
 ]
 Chapter 1.
-(Chapters/classicalGroups.tex
-
-LaTeX Warning: Citation `milneAlgebraicGroupsTheory2017' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `milneLieAlgebrasAlgebraic' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `milneBasicTheoryAffine' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `springerLinearAlgebraicGroups1998' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `BuildingsClassicalGroups' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `makisumiStructureTheoryReductive' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `malleLinearAlgebraicGroups' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `NotesClassAlgebraic' on page 3 undefined on input line 1.
-
-
-LaTeX Warning: Citation `borelAutomorphicFormsRepresentations1979' on page 3 undefined on input line 1.
-
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 1.
-(C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
- (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
- (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 1.
- (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-
-LaTeX Warning: Citation `springerLinearAlgebraicGroups1998' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Citation `mumfordRedBookVarieties1999' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Citation `milneAlgebraicGroupsTheory2017' on page 3 undefined on input line 7.
-
-
-LaTeX Warning: Citation `milneBasicTheoryAffine' on page 3 undefined on input line 8.
-
-
-LaTeX Warning: Citation `CliffordAlgebrasClassical' on page 3 undefined on input line 18.
-
-[3
+(Chapters/classicalGroups.tex [3
 
 ]
-
-LaTeX Warning: Citation `milneAlgebraicGroupsTheory2017' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Citation `milneAlgebraicGroupsTheory2017' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Citation `shahidiEisensteinSeriesAutomorphic2010' on page 4 undefined on input line 30.
-
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 30.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 30.
-
-Underfull \vbox (badness 1776) has occurred while \output is active []
-
- [4]
+[4]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 40.
 
@@ -893,42 +842,11 @@ Overfull \hbox (16.24191pt too wide) in paragraph at lines 200--201
 [][] 
  []
 
-
-LaTeX Warning: Citation `springerLinearAlgebraicGroups1998' on page 6 undefined on input line 202.
-
-
-LaTeX Warning: Citation `conradStandardParabolicSubgroups' on page 6 undefined on input line 202.
-
-
-LaTeX Warning: Citation `borelLinearAlgebraicGroups1991' on page 6 undefined on input line 213.
-
 [6]
-
-LaTeX Warning: Citation `EssaysHistoryLie' on page 7 undefined on input line 243.
-
-
-LaTeX Warning: Citation `godementGroupesLineairesAlgebriques' on page 7 undefined on input line 243.
-
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 243.
 
-
-LaTeX Warning: Citation `borelAutomorphicFormsSL21997' on page 7 undefined on input line 249.
-
-
-LaTeX Warning: Citation `borelAutomorphicFormsSL21997' on page 7 undefined on input line 272.
-
-
-LaTeX Warning: Citation `borelAutomorphicFormsSL21997' on page 7 undefined on input line 272.
-
 [7]
-
-LaTeX Warning: Citation `conradStandardParabolicSubgroups' on page 8 undefined on input line 278.
-
-
-LaTeX Warning: Citation `BuildingsClassicalGroups' on page 8 undefined on input line 278.
-
-
 Underfull \vbox (badness 1515) has occurred while \output is active []
 
  [8]
@@ -938,16 +856,9 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-
-LaTeX Warning: Citation `hallLieGroupsLie2015' on page 10 undefined on input line 409.
-
-[10]
+ [9] [10]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 423.
-
-
-LaTeX Warning: Citation `springerLinearAlgebraicGroups1998' on page 11 undefined on input line 437.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 437.
@@ -962,58 +873,15 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 445.
 
 
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 11 undefined on input line 445.
-
-
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 449.
 
 [11]
-
-LaTeX Warning: Citation `serreLieAlgebrasLie1992' on page 12 undefined on input line 460.
-
-
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 12 undefined on input line 467.
-
-
-LaTeX Warning: Citation `raoExplicitFormulasTheory1993' on page 12 undefined on input line 472.
-
-
-LaTeX Warning: Citation `kudlaNOTESLOCALTHETA' on page 12 undefined on input line 478.
-
-
-LaTeX Warning: Citation `ganLgroupsLanglandsProgram2017' on page 12 undefined on input line 481.
-
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 481.
 
 ) [12]
 Chapter 2.
 (Chapters/automorphicReps.tex
-
-LaTeX Warning: Citation `borelAutomorphicFormsRepresentations1979' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation `emertonCLASSICALMODULARFORMS' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation `bumpAutomorphicFormsRepresentations1997' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation `booherVIEWINGMODULARFORMS' on page 13 undefined on input line 1.
-
-
-LaTeX Warning: Citation `garrettTransitionEisensteinSeries2016' on page 13 undefined on input line 1.
-
-LaTeX Font Info:    Trying to load font information for U+euf on input line 3.
-(C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
@@ -1027,74 +895,25 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 LaTeX Warning: Marginpar on page 13 moved.
 
-
-LaTeX Warning: Citation `lapidPerspectivesEisensteinSeries2022' on page 13 undefined on input line 15.
-
-
-LaTeX Warning: Citation `arthurEisensteinSeriesTrace1979' on page 13 undefined on input line 15.
-
 ) [13
 
 ] [14]
 Chapter 3.
-(Chapters/constantTerms.tex
-
-LaTeX Warning: Citation `bumpAutomorphicFormsRepresentations1997' on page 15 undefined on input line 4.
-
-
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 15 undefined on input line 4.
-
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 15 undefined on input line 7.
-
-
-LaTeX Warning: Citation `serreProceedingsInternationalConference1977' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 15 undefined on input line 13.
-
-[15
+(Chapters/constantTerms.tex [15
 
 ]
 
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 16 undefined on input line 26.
-
-
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 26.
 
-Chapters/constantTerms.tex:37: Undefined control sequence.
-\qedsymbol ->\openbox 
-                      
-l.37 \end{proof}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Citation `garrettModernAnalysisAutomorphic' on page 16 undefined on input line 40.
-
-
-LaTeX Warning: Citation `follandCourseAbstractHarmonic2016' on page 16 undefined on input line 40.
-
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 16 undefined on input line 47.
-
-
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 16 undefined on input line 47.
-
-
-LaTeX Warning: Citation `shahidiEisensteinSeriesAutomorphic2010' on page 16 undefined on input line 47.
+Overfull \hbox (7.9179pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/n/10 This com-pu-ta-tion forms the heart of a well known the-o-rem, [[], Prop 10.4.2][[], II.1.7][[],
+ []
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 49.
 
 [16]
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 17 undefined on input line 82.
-
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 84.
 
@@ -1103,20 +922,7 @@ Overfull \hbox (81.67474pt too wide) detected at line 95
 [][]
  []
 
-
-Underfull \vbox (badness 3514) has occurred while \output is active []
-
- [17]
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 18 undefined on input line 105.
-
-
-LaTeX Warning: Citation `renardREPRESENTATIONSGROUPESREDUCTIFS' on page 18 undefined on input line 105.
-
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 18 undefined on input line 111.
-
-
+[17]
 Overfull \hbox (93.733pt too wide) detected at line 123
 [][]
  []
@@ -1126,44 +932,15 @@ Overfull \hbox (93.733pt too wide) detected at line 123
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 133.
 
 
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 19 undefined on input line 134.
-
-
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 145.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 150.
 
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 19 undefined on input line 152.
-
-
-LaTeX Warning: Citation `emertonCLASSICALMODULARFORMS' on page 19 undefined on input line 152.
-
-
-LaTeX Warning: Citation `bumpAutomorphicFormsRepresentations1997' on page 19 undefined on input line 152.
-
-
-LaTeX Warning: Citation `booherVIEWINGMODULARFORMS' on page 19 undefined on input line 152.
-
-
-LaTeX Warning: Citation `getzIntroductionAutomorphicRepresentations2024' on page 19 undefined on input line 152.
-
 [19]
-
-LaTeX Warning: Citation `bruinier123ModularForms2008' on page 20 undefined on input line 157.
-
-
-LaTeX Warning: Citation `bruinier123ModularForms2008' on page 20 undefined on input line 177.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6995) has occurred while \output is active []
 
  [20]
-
-LaTeX Warning: Citation `grenierANALOGUESIEGELXOPERATOR2024' on page 21 undefined on input line 206.
-
-
 Underfull \vbox (badness 3482) has occurred while \output is active []
 
  [21]
@@ -1177,9 +954,6 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 Overfull \hbox (74.5519pt too wide) detected at line 307
 []
  []
-
-
-LaTeX Warning: Citation `bruinier123ModularForms2008' on page 23 undefined on input line 314.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1222,9 +996,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 348.
 
 
-LaTeX Warning: Citation `bruinier123ModularForms2008' on page 25 undefined on input line 360.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 370--371
  []$\U/msa/m/n/10 ^^C$
  []
@@ -1232,21 +1003,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--371
 ) [25]
 Chapter 4.
 (Chapters/polesOfEisensteinSeries.tex
-
-LaTeX Warning: Citation `brennerNotesAnalyticProperties2009' on page 26 undefined on input line 1.
-
-
-LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page 26 undefined on input line 1.
-
-
-LaTeX Warning: Citation `ginzburgTopFourierCoefficients2021' on page 26 undefined on input line 1.
-
-
-LaTeX Warning: Citation `brennerNotesAnalyticProperties2009' on page 26 undefined on input line 4.
-
-
-LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page 26 undefined on input line 4.
-
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 6.
 
@@ -1284,9 +1040,6 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 30.
 
 
-LaTeX Warning: Citation `moeglinSpectralDecompositionEisenstein1995' on page 27 undefined on input line 56.
-
-
 Underfull \vbox (badness 1275) detected at line 56
  []
 
@@ -1313,16 +1066,10 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 65.
 
 
-LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page 28 undefined on input line 65.
-
-
 LaTeX Warning: Marginpar on page 28 moved.
 
 
 LaTeX Warning: Marginpar on page 28 moved.
-
-
-LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page 28 undefined on input line 67.
 
 
 Underfull \vbox (badness 2970) has occurred while \output is active []
@@ -1332,13 +1079,7 @@ Underfull \vbox (badness 2970) has occurred while \output is active []
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 83.
 
 
-LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page 29 undefined on input line 88.
-
-
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 88.
-
-
-LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page 29 undefined on input line 94.
 
 ) [29]
 Appendix A.
@@ -1379,34 +1120,21 @@ Overfull \hbox (502.91623pt too wide) in paragraph at lines 169--172
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  ADE87784F26A7743D9F2678CE989A350;3030.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: ADE87784F26A7743D9F2678CE989A350;3030.
  ) 
 Here is how much of TeX's memory you used:
- 29240 strings out of 475551
- 558591 string characters out of 5762554
- 1963238 words of memory out of 5000000
- 49708 multiletter control sequences out of 15000+600000
+ 29272 strings out of 475551
+ 559123 string characters out of 5762554
+ 1965238 words of memory out of 5000000
+ 49732 multiletter control sequences out of 15000+600000
  576347 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,16n,103p,1247b,1139s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,16n,103p,1207b,1139s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (36 pages, 462203 bytes).
+Output written on main.pdf (36 pages, 494095 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
+ 673 PDF objects out of 1000 (max. 8388607)
  171 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: alpha.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Database file #1: ./NumberTheory.bib
+Warning--to sort, need author or key in BuildingsClassicalGroups
+Warning--to sort, need author or key in NotesClassAlgebraic
+Warning--to sort, need author or key in CliffordAlgebrasClassical
+Warning--to sort, need author or key in EssaysHistoryLie
+Warning--empty journal in booherVIEWINGMODULARFORMS
+Warning--empty year in booherVIEWINGMODULARFORMS
+Warning--can't use both author and editor fields in bruinier123ModularForms2008
+Warning--empty journal in emertonCLASSICALMODULARFORMS
+Warning--empty year in emertonCLASSICALMODULARFORMS
+Warning--empty journal in garrettModernAnalysisAutomorphic
+Warning--empty year in garrettModernAnalysisAutomorphic
+Warning--empty journal in garrettTransitionEisensteinSeries2016
+Warning--empty journal in godementGroupesLineairesAlgebriques
+Warning--empty year in godementGroupesLineairesAlgebriques
+Warning--empty journal in grenierANALOGUESIEGELXOPERATOR2024
+Warning--empty journal in kudlaNOTESLOCALTHETA
+Warning--empty year in kudlaNOTESLOCALTHETA
+Warning--empty journal in makisumiStructureTheoryReductive
+Warning--empty year in makisumiStructureTheoryReductive
+Warning--empty journal in milneBasicTheoryAffine
+Warning--empty year in milneBasicTheoryAffine
+Warning--empty journal in milneLieAlgebrasAlgebraic
+Warning--empty year in milneLieAlgebrasAlgebraic
+Warning--empty journal in malleLinearAlgebraicGroups
+Warning--empty year in malleLinearAlgebraicGroups
+Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
+Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
+You've used 39 entries,
+            2543 wiz_defined-function locations,
+            778 strings with 11422 characters,
+and the built_in function-call counts, 11635 in all, are:
+= -- 1082
+> -- 433
+< -- 35
++ -- 132
+- -- 127
+* -- 758
+:= -- 1896
+add.period$ -- 105
+call.type$ -- 39
+change.case$ -- 193
+chr.to.int$ -- 38
+cite$ -- 70
+duplicate$ -- 562
+empty$ -- 961
+format.name$ -- 187
+if$ -- 2362
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 45
+newline$ -- 180
+num.names$ -- 108
+pop$ -- 327
+preamble$ -- 1
+purify$ -- 245
+quote$ -- 0
+skip$ -- 406
+stack$ -- 0
+substring$ -- 366
+swap$ -- 52
+text.length$ -- 35
+text.prefix$ -- 25
+top$ -- 0
+type$ -- 252
+warning$ -- 27
+while$ -- 89
+width$ -- 45
+write$ -- 450
+(There were 27 warnings)

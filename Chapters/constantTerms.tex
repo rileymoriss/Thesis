@@ -30,12 +30,12 @@ The constant term itself is of central importance. One reason for this is that i
 	If \(G\) is a locally compact Hausdorff group with a left Haar measure \(\mu\) and if \(\chi\colon G\to \mathbf C^\times\) is a non-trivial character on \(G\), then
 	\[ \intof{G}{\chi(g)}{\mu(g)} = 0. \]
 \end{Theorem}
-\begin{proof}
+\proofbar{
 	Pick an element \(h\) of \(G\) such that \(\chi(h)\neq 1\).
 	The equation above then follows from
 	\[ \intof{G}{\chi(g)}{\mu(g)} = \intof{G}{\chi(hg)}{\mu(g)} = \intof{G}{\chi(h)\chi(g)}{\mu(g)} = \chi(h) \intof{G}{\chi(g)}{\mu(g)}. \square\]
-\end{proof}
-Integrating trivial characters gives the volume of the measure space which we typically normalize to be one.
+}
+    Integrating trivial characters gives the volume of the measure space which we typically normalize to be one.
 
 \begin{Theorem}[\cite{garrettModernAnalysisAutomorphic} 5.2, \cite{follandCourseAbstractHarmonic2016} Thm 2.49]
         Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H)then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
