@@ -82,11 +82,6 @@ Paul Garrett.
 \newblock Transition: {{Eisenstein}} series on adele groups.
 \newblock 2016.
 
-\bibitem[GGW17]{ganLgroupsLanglandsProgram2017}
-Wee~Teck Gan, Fan Gao, and Martin~H. Weissman.
-\newblock L-groups and the {{Langlands}} program for covering groups: A
-  historical introduction, May 2017.
-
 \bibitem[GH24]{getzIntroductionAutomorphicRepresentations2024}
 Jayce~R. Getz and Heekyoung Hahn.
 \newblock {\em An {{Introduction}} to {{Automorphic Representations}}: {{With}}
@@ -121,10 +116,6 @@ Brian~C. Hall.
 Dihua Jiang, Baiying Liu, and Lei Zhang.
 \newblock Poles of certain residual {{Eisenstein}} series of classical groups.
 \newblock {\em Pacific Journal of Mathematics}, 264(1):83--123, July 2013.
-
-\bibitem[Kud]{kudlaNOTESLOCALTHETA}
-Stephen~S Kudla.
-\newblock {{NOTES ON THE LOCAL THETA CORRESPONDENCE}}.
 
 \bibitem[Lap22]{lapidPerspectivesEisensteinSeries2022}
 Erez Lapid.
@@ -169,11 +160,6 @@ C.~Moeglin and J.~L. Waldspurger.
 Notes for class on algebraic groups.pdf.
 \newblock
   https://users.math.msu.edu/users/ruiterj2/Math/Documents/Summer\%202019/Algebraic\%20Groups/Notes\%20for\%20class\%20on\%20algebraic\%20groups.pdf.
-
-\bibitem[Rao93]{raoExplicitFormulasTheory1993}
-R.~Ranga Rao.
-\newblock On some explicit formulas in the theory of {{Weil}} representation.
-\newblock {\em Pacific Journal of Mathematics}, 157(2):335--371, January 1993.
 
 \bibitem[RS]{renardREPRESENTATIONSGROUPESREDUCTIFS}
 David Renard and Laurent Schwartz.

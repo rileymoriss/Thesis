@@ -15,29 +15,29 @@ As Milne points out \cite[Abstract]{milneAlgebraicGroupsTheory2017} these are su
     \end{itemize}
 \end{Theorem}
 
-The exact groups that an author might mean by classical may vary. Here we will follow \cite[\S 13]{CliffordAlgebrasClassical} or indeed many other places as defining them as the automorphisms of a vector space with a bilinear form. First let V be an F vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in Aut(V)\) such that 
+The exact groups that an author might mean by classical may vary. Here we will follow \cite[\S 13]{CliffordAlgebrasClassical} or indeed many other places as defining them as the automorphisms of a vector space with a bilinear form. First let V be a finite dimensional F vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}\]
-Therefore we can consider the space of automorphisms of \(Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form will define our classical groups. 
+Therefore we can consider the space of automorphisms of \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form will define our classical groups. 
 
-If the form is degenerate, \(\forall x,y \;\; \inner{x, y} = 0\) then we define 
-\[\GL(V) \defeq Aut(V, \inner{,}) = Aut(V)\]
+If the form is trivial, by which we mean, \(\forall x,y \;\; \inner{x, y} = 0\) then we define 
+\[\GL(V) \defeq \Aut(V, \inner{,}) = \Aut(V)\]
 If the form is non-degenerate and symmetric \(\forall x,y \;\; \inner{x, y} = \inner{y,x}\) then we define
-\[\mathrm{O}(V) \defeq Aut(V, \inner{,})\]
+\[\mathrm{O}(V) \defeq \Aut(V, \inner{,})\]
 Finally if the form is non-degenerate and skew symmetric \(\forall x,y \;\; \inner{x, y} = -\inner{y,x}\) then 
-\[\Sp(V) \defeq Aut(V, \inner{,})\]
+\[\Sp(V) \defeq \Aut(V, \inner{,})\]
 There are the further classical groups given by the determinant one subgroups, \(\SL(V), \mathrm{SO}(V)\) respectively (\(\Sp(V)\) one can show already implies that the determinant is one). Moreover every \(F\) algebra is an \(F\) vector space and so we have defined a functor from \(F\)-algebras to groups. This is what we will refer to as "classical groups" although we should note the omission of what the unitary groups that  would usually be included.
 
-Another way of motivating the importance of these groups is to consider the classification theory of the split reductive groups. Reductive is a representation theoretic condition that means, worse than semi-simple but still manageable, for more detail see \cite[22.138]{milneAlgebraicGroupsTheory2017}, this is only for motivation. (Split) Reductive groups over fields have a classification in terms of root datum \cite[22.48]{milneAlgebraicGroupsTheory2017} which is a strong parallel of the classification of semi-simple Lie algebras, and in fact is proved largely by bootstrapping from that theory to a more general setting. These correspond to Dynkin diagrams that are listed in \cite[Appendix A,B]{shahidiEisensteinSeriesAutomorphic2010}\todo{is this right} and of which there are four infinite families, which correspond to the classical groups (plus the unitary groups). This is in the way of motivating the notion of classical groups as "almost all" reductive groups.
+Another way of motivating the importance of these groups is to consider the classification theory of the split reductive groups. Reductive is a representation theoretic condition that means, worse than semi-simple but still manageable, for more detail see \cite[22.138]{milneAlgebraicGroupsTheory2017}, this is only for motivation. (Split) Reductive groups over fields have a classification in terms of root datum \cite[22.48]{milneAlgebraicGroupsTheory2017} which is a strong parallel of the classification of semi-simple Lie algebras, and in fact is proved largely by bootstrapping from that theory to a more general setting. These correspond to Dynkin diagrams that are listed in \cite[Appendix A,B]{shahidiEisensteinSeriesAutomorphic2010}\todo[inline]{is this right} and of which there are four infinite families, which correspond to the classical groups (plus the unitary groups). This is in the way of motivating the notion of classical groups as "almost all" reductive groups.
 
 
 \section{Subgroups}
 From now on we restrict to split reductive LAG because these are the natural adjectives for our classical groups over a number field (in particular characteristic 0)
 
-Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups, with a particular eye on those of \(\Sp\). The point of these subgroups is two fold. Some of them will help us perform "induction" from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we will have the decomposition's (not direct)
+Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups, with a particular eye on those of \(\Sp\). The point of these subgroups is two fold. Some of them will help us perform "induction" from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we will come to understand the following decomposition's (not direct)
 \[G(\A) = M(\A)U(\A) K = T(\A)U(\A)K\]
 
 \subsection{Parabolics, Levis and Unipotents}
-Parabolic subgroups have two equivalent formulations, both useful.\todo{Do I need to give a reference for definitions?}
+Parabolic subgroups have two equivalent formulations, both useful.\todo[inline]{Do I need to give a reference for definitions?}
 \begin{definition}
     A subgroup \(P\subseteq G\) is called parabolic if the following equivalent conditions hold
     \begin{itemize}
@@ -46,28 +46,28 @@ Parabolic subgroups have two equivalent formulations, both useful.\todo{Do I nee
     \end{itemize}
 \end{definition}
 
-Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic "parametrisation" of these subgroups, in the case of the classical groups through the use of flags. 
+Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic "parametrisation" of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms, as we will want to compare the values along some parabolics.
 
 \begin{example}[\(\GL_n\)]
+    The parabolic subgroups of \(\GL\) are given by stabilisers of flags, \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}\cite{conradStandardParabolicSubgroups}.
     A flag for \(F^n\) is a sequence of subspaces
     \[0\subset W_1 \subset \cdots \subset W_r = F^n\]
     note the strict inclusion. When \(n = r\) it is a complete flag. \(\GL_n(F)\) acts on a flag component wise i.e. 
     \[g.(W_1, ..., W_r) \defeq (g.W_1, ..., g.W_r)\]
-    \todo{check that this is an action, g is a bijection but why does the inclusion still hold?}
     If \(F^n\) is given the standard basis of \(e_i = (\delta_i^j)_j\) then the standard (complete) flag is 
     \[0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset \cdots \subset \oplus_i Fe_i = F^n\]
-    From now on we consider only sub-flags of the standard flag. 
+    Because the stabiliser of a flag is always conjugate to a stabiliser of a sub-flag of the standard flag we allow ourselves from now on to only consider sub-flags of the standard flag. 
+    
     \begin{Remark}
-        This is because the stabiliser of a flag is always conjugate to a stabiliser of a sub-flag of the standard flag. i.e. stabilisers of flags are up to conjugacy stabilisers of the standard flag.
-
         It is worth noting that what we do here by fixing a basis of \(F\) is the same as fixing a Borel and then considering only standard parabolics. Thus when we are talking about standard parabolics we are really working up "up to conjugacy".
     \end{Remark}
-     Stabilisers of such sub-flags are "staircases":
+    
+    Stabilisers of such sub-flags are (possibly upside down) ``staircases'':
     \[\begin{pmatrix}
         A_{11} && \ast\\
          & \ddots & \\
          && A_{rr} 
-    \end{pmatrix}\]
+    \end{pmatrix}   \;\;\;\;\; \uparrow \text{ gravity }\uparrow \]
 
     \begin{example}
         Consider the flag
@@ -199,7 +199,6 @@ Completeness is the algebro-geometric analogue of compact, which is always a des
     
     \end{tikzpicture}
 
-    It is a fact that these are the parabolic subgroups of \(\GL\) up to conjugacy, \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}\cite{conradStandardParabolicSubgroups}
 \end{example}
 
 Parabolics also have the nice property that they split into a semi-direct product 
@@ -224,7 +223,7 @@ Then we have the following fact / definition:
          && A_{rr}
     \end{pmatrix}\]
     has unipotent \(N\) and Levi \(M\) given by 
-    \[U = \begin{pmatrix}
+    \[N = \begin{pmatrix}
         I_{11} && \ast\\
          & \ddots & \\
          && I_{rr}
@@ -240,7 +239,7 @@ Then we have the following fact / definition:
 Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. 
 
 \begin{Remark}[Bad Etymology]
-    The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo{this is probably known by now.} He says that 
+    The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo[inline]{this is probably known by now.} He says that 
     \begin{quote}
         Lorsque n'est pas compact, il est non moins facile de conjecturer qu’on doit pouvoir définir quelque chose d’analogue aux classiques "pointes paraboliques", lesquelles doivent correspondre à des  sous-groupes unipotents non triviaux de \(G_\Q\)
     \end{quote}
@@ -275,96 +274,46 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
 \end{Remark}
 
 \subsubsection{\(\Sp_{2n}\)}
-The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use this later and so we present the details here. Following \cite{conradStandardParabolicSubgroups} and the very explicit calculations in  \cite[\S 8]{BuildingsClassicalGroups}. We let \((V, \inner{,})\) be a symplectic space, hence \(Sp(V)\) is the automorphisms preserving the form. A subspace is said to be isotropic if the form is constantly zero on it (in both variables). A flag is isotropic if the proper subspaces in it are isotropic subspaces. A maximal isotropic flag is one with exactly \(n\) components (we elaborate later). The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag to an isotropic flag. Stabilisers of isotropic flags give parabolics of \(\Sp\) and moreover all parabolics arise in this way (see the above exercises in Springer).
-
+The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use this later and so we present the details here. Following \cite{conradStandardParabolicSubgroups} and the very explicit calculations in  \cite[\S 8]{BuildingsClassicalGroups}. We let \((V, \inner{,})\) be a symplectic space, hence \(Sp(V)\) is the automorphisms preserving the form.
 \begin{example}
-        First we remind ourselves why the two notions of the symplectic group agree
-        \[\Sp_{2n} = \{M\in \GL_{2n} :\forall a,b \;\; \inner{Ma, Mb} = \inner{a,b}\}\]
-        if we make the form into a matrix (by setting the entries to be \(A_{ij} = \inner{e_i, e_j}\)) then we get 
+    \[\Sp_{2n} = \{M\in \GL_{2n} :\forall a,b \;\; \inner{Ma, Mb} = \inner{a,b}\}\]
+    then fixing a basis of the vector space \(V\), \(e_i\) allows us to create a matrix from this form, by setting the entries to be \(A_{ij} = \inner{e_i, e_j}\). Then we get 
         \[\forall a,b \;\; \inner{Ma, Mb} = (Ma)^T A (Mb) = a^T M^T A M b= a^TAb \]
         and because this is so for all \(a,b\) we get that 
         \[M^T A M = A\]
 
-        So if we fix a basis of V such that the form is given by the matrix
+        So if we fix a basis of V, where \(e_i = (\delta_i^j)_j\), such that the form is given by the matrix
         \[\begin{pmatrix}
             0 & I_n \\
             -I_n & 0\\
         \end{pmatrix}\]
-        then we can see what the form does on the standard basis vectors
+\end{example}
+
+A subspace is said to be isotropic if the form is constantly zero on it (in both variables). A flag is isotropic if the proper subspaces in it are isotropic subspaces. A maximal isotropic flag is one with exactly \(n\) components (we elaborate later).
+
+\begin{example}
+    Continuing the previous example we can see what the form does on the standard basis vectors as above \(e_i = (\delta_i^j)_{j}\)
         \[(e_{n+1})^T\begin{pmatrix}
             0 & I_n \\
             -I_n & 0\\
-        \end{pmatrix}e_{n+1} = (e_{n+1})^T\begin{pmatrix}
-            0 & I_n \\
-            -I_n & 0\\
-        \end{pmatrix}\begin{pmatrix}
-            0\\
-            \vdots\\
-            0\\
-            1\\
-            0\\
-            \vdots\\
-            0\\
-        \end{pmatrix} = (e_{n+1})^T\begin{pmatrix}
-            0\\
-            \vdots\\
-            0\\
-            1\\
-            0\\
-            \vdots\\
-            0\\
-        \end{pmatrix} = 1\]
-        \[ (e_1)^T\begin{pmatrix}
-            0 & I_n \\
-            -I_n & 0\\
-        \end{pmatrix}e_1 = (e_1)^T\begin{pmatrix}
-            0 & I_n \\
-            -I_n & 0\\
-        \end{pmatrix}\begin{pmatrix}
-            1\\
-            0\\
-            \vdots\\
-            0\\
-        \end{pmatrix} = (e_1)^T\begin{pmatrix}
-            -1\\
-            0\\
-            \vdots\\
-            0\\
-        \end{pmatrix} = -1\]
-        hence 
-        \begin{equation*}
-            \begin{aligned}
-                (e_1+e_{n+1})^T\begin{pmatrix}
-                    0 & I_n \\
-                    -I_n & 0\\
-                \end{pmatrix}(e_1+e_{n+1}) &=(e_1+e_{n+1})^T\left(\begin{pmatrix}
-                    0 & I_n \\
-                    -I_n & 0\\
-                \end{pmatrix}e_1 + \begin{pmatrix}
-                    0 & I_n \\
-                    -I_n & 0\\
-                \end{pmatrix}e_{n+1}\right) \\
-                &= (e_1+e_{n+1})^T(-e_1+e_{n+1})  \\
-                &=0 \\
-            \end{aligned}
-        \end{equation*} 
-        so the vectors \(e_i^+ \defeq e_i + e_{n+i}\) give a basis for an \(n\) dimensional isotropic subspace. In our reference it is stated more abstractly that an \(n\) dimensional isotropic subspace is maximal and that any flag of isotropic subspaces can be considered as a sub-flag of a complete flag of a maximal isotropic subspace (it is beleivable from inspecting the matrix of the form that if your space has a dimension of greater than n then it cannot be isotropic).
-        \todo{This might all be wrong, garretts book is giving something different.}
+        \end{pmatrix}e_{n+1} = 0\] 
+        so the first \(n\) standard basis vectors give a basis for an \(n\) dimensional isotropic subspace, this is called the standard isotropic subspace. An \(n\) dimensional isotropic subspace is maximal and any flag of isotropic subspaces can be considered as a sub-flag of a complete flag of a maximal isotropic subspace (by inspecting the matrix of the form, if your space has a dimension of greater than n then it cannot be isotropic) \cite[\S 8]{BuildingsClassicalGroups}.
+\end{example}
 
+The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag to an isotropic flag. Stabilisers of isotropic flags give parabolics of \(\Sp\) and moreover all parabolics arise in this way (see the above exercises in Springer).
+
+\begin{example}
         Now we have a maximal isotropic flag we can consider sub-flags and find their stabiliser. Lets look at \(\Sp_4\) and the following flag
         \[0 \subset Fe_1^+ \subset Fe_1^+ \oplus Fe^+_2 \subset F^4\]
 
-        If we change our basis to these \(e_i^+\) then we can re-use our \(\GL\) computations to see that the stabiliser is matrices in \(\Sp\) of the form (in this basis)
+        Re-use our \(\GL\) computations to see that the stabiliser is matrices in \(\Sp\) of the form
         \[\begin{pmatrix}
             *&*&*&* \\
              &*&*&* \\
-             && *&* \\
+             && *&x \\
              && *& *
         \end{pmatrix}\]
-        \begin{Remark}
-            Note that the fact that we change basis here doesn't change that the subspaces are isotypic, this is basis independent. What it does change is the representation of the form, it will no longer be represented by the matrix given above. 
-        \end{Remark}
-        Because these are in \(\Sp\) we can find more relations among the entries than in the \(\GL\) case, we will pursue this further in the maximal case below. 
+        Because these are in \(\Sp\) we can find more relations among the entries than in the \(\GL\) case, we will pursue this further in the maximal case below, but to placate some we remark that \(x = 0\) and this emphasises the duality between the upper left block and bottom right block.
     \end{example}
 
     In particular maximal parabolics of \(\Sp\) are stabilizers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces.
@@ -389,13 +338,10 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
          &a&&b \\
          &&(A^T)\inv& \\
          &c&&d \\
-    \end{pmatrix}\]
-    such that \(A\in \GL_\ell(F)\) and 
-    \[\begin{pmatrix}
+    \end{pmatrix}, \;\;\; A\in \GL_\ell(F), \;\;\; \begin{pmatrix}
         a & b\\
         c & d \\
     \end{pmatrix} \in \Sp_{2(n-\ell)}(F)\]
-
     and unipotent 
     \[\begin{pmatrix}
         1 &*&*&* \\
@@ -403,24 +349,31 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
         && 1& \\
         &&*&1
     \end{pmatrix}\]
-    with relations among the entries. 
+    with relations among the entries.
 
     \subsection{Borel and Torus}
     One may find it helpful to understand these subgroups to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}, however it is not necessary. 
 
     \begin{definition}
-        A split torus is an algebraic group that is isomorphic to some products of \(\GL_1^b\).
+        A split torus is an algebraic group that is isomorphic to \(\GL_1^b\) for some \(b\in\N\).
     \end{definition}
 
     \begin{example}[Bad Etymology]
         \(\GL^2_1\) is a split torus. Notice that 
         \[\GL^2_1(\C) = \C^\ast\times \C^\ast\]
         is isomorphic as abstract groups to \(U(1)\times U(1)\) which when \(U(1)\) is realised as \(\{z\in \C : |z| = 1\}\) is topologically equivalent to \(\mathbb{T}^2 = \mathbb{S}^1\times \mathbb{S}^1 \) which is a torus. Note that it is clear that 
-        \[\GL^2_1(\C) \not\cong T^2 \]
+        \[\GL^2_1(\C) \not\cong \mathbb{T}^2 \]
         as topological groups, as the right had side is compact whilst the left is not.
+
+        It was pointed out to me that as algebraic groups over \(\C\) we have the following isomorphism
+        \[\GL_1 \cong U(1)\tensor_\R \C\]
+        \todo[inline]{Proof}
     \end{example}
     
-     Perhaps a more compelling reason to call these Tori is that they play the same role in the classification as the genuine tori in the theory of Lie groups. \todo{example maybe idk}
+     Perhaps a more compelling reason to call these Tori is that they play the same role in the classification as the genuine tori, \(\mathbb{T}^2\), in the theory of Lie groups. \todo[inline]{example maybe idk} A subgroup that is isomorphic to a split torus and is maximal in this respect is called a maximal split torus. 
+     \begin{example}
+        The classic example of a maximal split torus is the diagonal matricies in \(\GL_n\).
+     \end{example}
 
     \begin{definition}
         A Borel is a maximal closed solvable connected subgroup of \(G\).
@@ -428,25 +381,79 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
 
     \begin{example}
         The standard Borel of \(\GL_n\) is the one given by upper triangular matrices. If \(n\) is even and one intersects this with \(\Sp_{2(\frac{1}{2}n)}\) then we get the standard Borel of \(\Sp_{2(\frac{1}{2}n)}\).
+
+        Lets prove this in \(\GL_2\) and then beleive that the only complication to going to larger \(n\) is keeping track of indecies. So let 
+        \[B = \begin{pmatrix}
+            \ast & \ast \\
+             & \ast
+        \end{pmatrix}\]
+        we need to show that the derived series terminates for it to be solvable. So let 
+        \[g = \begin{pmatrix}
+            x & y\\
+             & z
+        \end{pmatrix}, \;\;\; h = \begin{pmatrix}
+            a & b \\
+            & c
+        \end{pmatrix}\]
+        be arbitrary in \(\GL_2\), there commutator is then 
+        \[g\inv h\inv gh = (hg)\inv gh = \begin{pmatrix}
+        ax & ay + cz \\ & cz
+        \end{pmatrix}\inv \begin{pmatrix}
+            ax & bx + cz\\ & cz
+        \end{pmatrix} = \begin{pmatrix}
+            1 & \frac{bx - ay}{ax} \\ & 1
+        \end{pmatrix} \]
+        Hence
+        \[[B, B] = \begin{pmatrix}
+            1 & \ast \\ & 1
+        \end{pmatrix}\]
+        Commutate two arbitrary elements again 
+        \[\begin{pmatrix}
+            1 & a \\ & 1
+        \end{pmatrix}\inv\begin{pmatrix}
+            1 & x \\ & 1
+        \end{pmatrix}\inv \begin{pmatrix}
+            1 & a \\ & 1
+        \end{pmatrix}\begin{pmatrix}
+            1 & x \\ & 1
+        \end{pmatrix} = \begin{pmatrix}
+            1 & a + x \\ & 1
+        \end{pmatrix}\inv \begin{pmatrix}
+            1 & x+a \\ & 1
+        \end{pmatrix} = 1\]
+        Hence 
+    \[[[B, B], [B, B]] = 1\]
+    For the other conditions, it is clear that this is a closed subgroup because it is itself a linear algebraic group, moreover for LAG we have the algebraic criterion of connectedness given by having the only idempotents in the representing algebra being \(0, 1\) \cite[1.5]{getzIntroductionAutomorphicRepresentations2024}. Because \(B = \Spec \Z[x_{i,j}: 1\leq i,j\leq 2][y] / (\det(x_{ij})y - 1, x_{2,1})\) we can look for idempotents in \(\Z[x_{i,j}: 1\leq i,j\leq 2][y] / (\det(x_{ij})y - 1, x_{2,1})\), clearly \(0\) is idempotent, so assume that \(\begin{pmatrix}
+        a & b \\ & c
+    \end{pmatrix}\neq 0\) then we have that  
+    \[\begin{pmatrix}
+        a & b \\ & c
+    \end{pmatrix}^2 = \begin{pmatrix}
+        a^2 & ab + bc \\ & c^2
+    \end{pmatrix} = \begin{pmatrix}
+        a & b \\ & c
+    \end{pmatrix}\in B(\Z)\]
+    so \(a^2 = a, c^2 = c\) implies that \(a = c = 1\) and \(ab + bc = 2b = b\) implies that \(b=0\), hence \(\begin{pmatrix}
+        a & b \\ & c
+    \end{pmatrix} = 1\). Thus this group is connected. 
+    
+    Finally it is clear that if a subgroup contains this one then it is in fact all of \(\GL_2\) and hence this is maximal. Therefore this is a Borel.
     \end{example}
+    
+    \todo[inline]{put a proof of something being a Borel}
     
     A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
     \[B = TU\]
     for a maximal torus \(T\) and unipotent \(U\).
 
-    We saw that fixing a minimal parabolic is like fixing a basis in the case of classifying parabolics of classical groups. If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the standard Levi. This gives some intuition as to their important in the classification of reductive groups via root datum\cite[8]{springerLinearAlgebraicGroups1998}, as they correspond to fixing a collection of simple roots.\todo{ref} Above also suggests that Borels are "the same data" as maximal tori from which the root datum is constructed.
-
-    \begin{example}
-        \todo[inline]{what is easy to find is definitions, whaat is hard to find is long drawn out matrix algebra that has been latexed.}
-    \todo[inline]{maybe put the whole thing in the appendix.}
-    \end{example}
+    We saw that fixing a minimal parabolic is like fixing a basis in the case of classifying parabolics of classical groups. If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the standard Levi.
 
     \subsection{Maximal Compact Subgroups}
-    Let our group be defined over the global field \(k\)\todo{fix a global convention}. We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\). These are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
+    Let our group be defined over the global field \(k\)\todo[inline]{fix a global convention}. We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\). These are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
     \begin{itemize}
         \item First require that 
         \[K = \prod_\nu K_\nu\]
-        where the product is over all places of \(k\) and \(K_\nu\subseteq k_\nu\) is maximal compact. \todo{But is the converse true?}
+        where the product is over all places of \(k\) and \(K_\nu\subseteq k_\nu\) is maximal compact. \todo[inline]{But is the converse true?}
         \item For almost all places \(\nu\) of \(k\) \(G(\mathcal{O}_{k_\nu})\) is defined and is maximal compact in \(G(k_\nu)\) hence we can require \(K_\nu = G(\mathcal{O}_{k_\nu})\) at these places. 
         \item We require 
         \[G(\A) = B(\A)K\]
@@ -460,22 +467,3 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
         It is a classical result that the maximal compact subgroup of \(\GL_n(\R) = \GL_n(\Q_\infty)\) is the orthogonal group \(O(\R)\). By \cite[II.IV.A1]{serreLieAlgebrasLie1992} we have that \(\GL_n(\Q_p)\) for \(p<\infty\) is \(\GL_n(\Z_p)\) and hence the maximal compact subgroup of \(\GL_n(\A)\) is the product
         \[K = O(\R) \times \prod_p \GL_n(\Z_p) = O(\R) \times \GL_n(\hat{\Z})\]
     \end{example}
-
-   
- 
-\section{Coverings}
-We are also be interested in certain covering groups of these LAG's. In particular \cite[I.1.1]{moeglinSpectralDecompositionEisenstein1995} we will be interested in \(\mathbf{G}\) some topological group given as a finite central cover of \(G(\A)\). If \(\mathrm{pr}: \mathbf{G} \to G(\A)\) is the projection then to the subgroups listed above we can associate their "lifts" (preimages under \(\mathrm{pr}\)). 
-
-\begin{example}[Metaplectic Group]
-    If \(G = \Sp_{2n}\) then there is a unique non-trivial double cover 
-    \[0\to \mu_2 = \{\pm 1\} \to \Mp_{2n} \to \Sp_{2n} \to 0\]
-    such group extensions are classified by their second group cohomology, for this extension the relevant co-cycle is called the Rao cocycle \cite{raoExplicitFormulasTheory1993}, \(c\).
-    As a set we can think of 
-    \[\Mp_{2n} = \Sp_{2n} \times \mu_2\]
-    with the group operation 
-    \[(a,b)(x,y) = (ax, byc(a,x))\]
-    
-    There is a rich history and representation theory of this group, which we make no pretense of understanding, however some hints can be found in \cite{kudlaNOTESLOCALTHETA} and the references therein.
-\end{example}
-
-There is an analogue of the Langlands program being developed for such groups a nice introduction to which can be found in \cite{ganLgroupsLanglandsProgram2017}. \todo{perhaps a first natural question is whether or not these things can be given the structure of LAG's. That paper mentions representability. Look into it. }

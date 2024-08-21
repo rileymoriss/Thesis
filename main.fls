@@ -409,10 +409,13 @@ INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tf
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
-INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1000.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
-INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
-INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1000.tfm
+INPUT .\Chapters\automorphicForms.tex
+INPUT .\Chapters\automorphicForms.tex
+INPUT .\Chapters\automorphicForms.tex
+INPUT .\Chapters\automorphicForms.tex
+INPUT Chapters\automorphicForms.tex
 INPUT .\Chapters\automorphicReps.tex
 INPUT .\Chapters\automorphicReps.tex
 INPUT .\Chapters\automorphicReps.tex
@@ -437,8 +440,6 @@ INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
-INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT C:\Users\riley\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\riley\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\riley\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
@@ -459,6 +460,8 @@ INPUT .\Chapters\constantTerms.tex
 INPUT .\Chapters\constantTerms.tex
 INPUT .\Chapters\constantTerms.tex
 INPUT Chapters\constantTerms.tex
+INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
 INPUT .\Chapters\polesOfEisensteinSeries.tex
 INPUT .\Chapters\polesOfEisensteinSeries.tex

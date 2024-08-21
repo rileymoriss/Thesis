@@ -20,8 +20,6 @@ Warning--empty journal in garrettTransitionEisensteinSeries2016
 Warning--empty journal in godementGroupesLineairesAlgebriques
 Warning--empty year in godementGroupesLineairesAlgebriques
 Warning--empty journal in grenierANALOGUESIEGELXOPERATOR2024
-Warning--empty journal in kudlaNOTESLOCALTHETA
-Warning--empty year in kudlaNOTESLOCALTHETA
 Warning--empty journal in makisumiStructureTheoryReductive
 Warning--empty year in makisumiStructureTheoryReductive
 Warning--empty journal in milneBasicTheoryAffine
@@ -32,45 +30,45 @@ Warning--empty journal in malleLinearAlgebraicGroups
 Warning--empty year in malleLinearAlgebraicGroups
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 39 entries,
+You've used 36 entries,
             2543 wiz_defined-function locations,
-            778 strings with 11422 characters,
-and the built_in function-call counts, 11635 in all, are:
-= -- 1082
-> -- 433
-< -- 35
-+ -- 132
-- -- 127
-* -- 758
-:= -- 1896
-add.period$ -- 105
-call.type$ -- 39
-change.case$ -- 193
-chr.to.int$ -- 38
-cite$ -- 70
-duplicate$ -- 562
-empty$ -- 961
-format.name$ -- 187
-if$ -- 2362
+            761 strings with 10903 characters,
+and the built_in function-call counts, 10659 in all, are:
+= -- 989
+> -- 392
+< -- 33
++ -- 119
+- -- 114
+* -- 688
+:= -- 1734
+add.period$ -- 98
+call.type$ -- 36
+change.case$ -- 176
+chr.to.int$ -- 35
+cite$ -- 65
+duplicate$ -- 523
+empty$ -- 886
+format.name$ -- 169
+if$ -- 2170
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 45
-newline$ -- 180
-num.names$ -- 108
-pop$ -- 327
+missing$ -- 43
+newline$ -- 167
+num.names$ -- 99
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 245
+purify$ -- 225
 quote$ -- 0
-skip$ -- 406
+skip$ -- 376
 stack$ -- 0
-substring$ -- 366
-swap$ -- 52
-text.length$ -- 35
-text.prefix$ -- 25
+substring$ -- 320
+swap$ -- 50
+text.length$ -- 33
+text.prefix$ -- 23
 top$ -- 0
-type$ -- 252
-warning$ -- 27
-while$ -- 89
-width$ -- 45
-write$ -- 450
-(There were 27 warnings)
+type$ -- 228
+warning$ -- 25
+while$ -- 80
+width$ -- 40
+write$ -- 418
+(There were 25 warnings)

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1724225199 "main.aux" "main.bbl" "main" 1724225314 0
+["bibtex main"] 1724222193 "main.aux" "main.bbl" "main" 1724222193 2
   "./NumberTheory.bib" 1724165152 564853 ecd4bf74d261051cf2141af3693adc17 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291861136 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1724225313 22618 c351979c84e03007fc5a15a49e5bd681 "pdflatex"
+  "main.aux" 1724222193 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1724225311 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1724225314 0
+["pdflatex"] 1724222189 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1724222192 2
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1692676729 11548 78bef0057cba8f6fe11199e7e5d8f077 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk" 1711930929 14064 2b636b917c6dd2a843da53de5aeddea9 ""
@@ -37,7 +37,9 @@
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136761453 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136761453 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx5.tfm" 1136761453 1332 f817c21a1ba54560425663374f1b651a ""
+  "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx6.tfm" 1136761453 1344 8a0be4fe4d376203000810ad4dc81558 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx7.tfm" 1136761453 1336 3125ccb448c1a09074e3aa4a9832f130 ""
+  "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx8.tfm" 1136761453 1332 1fde11373e221473104d6cc5993f046e ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbxti10.tfm" 1136761453 1532 9162035f4e7176612125649e348e2195 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136761453 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136761453 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -257,18 +259,18 @@
   "Chapters/acknowledgements.tex" 1724165152 340 962c80283f9b91840fee9bc0a18e5b0b ""
   "Chapters/automorphicForms.tex" 1724209109 0 d41d8cd98f00b204e9800998ecf8427e ""
   "Chapters/automorphicReps.tex" 1724209462 1707 28872daa3352ef6f40adc082ca4dd04c ""
-  "Chapters/classicalGroups.tex" 1724225196 28264 9525d85b105ff1d642b2a6d4db236108 ""
-  "Chapters/constantTerms.tex" 1724225309 27925 22f61fd57917c6dc7b098fd93d6b90be ""
+  "Chapters/classicalGroups.tex" 1724222188 27584 36797551f6d73acffe94803ab3e41ff0 ""
+  "Chapters/constantTerms.tex" 1724201380 27925 87ab92e9ed3b5ae937f08a738743254f ""
   "Chapters/motivation.tex" 1724165152 920 7b0f80249d912893f7a6d9334f9e6a27 ""
   "Chapters/polesOfEisensteinSeries.tex" 1724165152 9795 77d19898b3f0e85c816791c80db12a8c ""
   "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1724214122 3382 d80480ebd7053bf92f5231b6d1579f6f ""
-  "main.aux" 1724225313 22618 c351979c84e03007fc5a15a49e5bd681 "pdflatex"
-  "main.bbl" 1724225200 7893 edecb8a549c7c1451c54d7787a2356e9 "bibtex main"
-  "main.out" 1724225313 3062 55ee9d70ca972262c3a3cf3a67ba3b1d "pdflatex"
-  "main.tdo" 1724225313 4959 f6c20f04e51ec9ba383ee6f1a6c68c1e "pdflatex"
+  "main.aux" 1724222193 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1724222193 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.tdo" 1724222191 5609 7d3c3a2ce8b7d39589934b5da493e51d "pdflatex"
   "main.tex" 1724214122 3382 d80480ebd7053bf92f5231b6d1579f6f ""
-  "main.toc" 1724225313 3648 bdada011bf4d5e084612b53dc4125921 "pdflatex"
-  "minipreamble.tex" 1724222339 3237 84987033c286c23ca08d81c68478a0fb ""
+  "main.toc" 0 -1 0 "pdflatex"
+  "minipreamble.tex" 1724214383 3203 98e6fa8ab7e12145f7e9a07c9b45bd0b ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)
   "main.aux"

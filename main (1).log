@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  21 AUG 2024 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  21 AUG 2024 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -810,7 +810,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+euf on input line 11.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 12.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ))
@@ -834,35 +834,48 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 40.
 
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 57.
+
 [5]
-Overfull \hbox (16.24191pt too wide) in paragraph at lines 200--201
+Overfull \hbox (16.24191pt too wide) in paragraph at lines 201--202
 [][] 
  []
 
 [6]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 242.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 243.
 
 [7] [8]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 352.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 370.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 373.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 423.
 
 [10]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 443.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 437.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 440.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 441.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 445.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 449.
 
 [11]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 452.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 456.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 481.
 
 ) [12]
 Chapter 2.
@@ -1100,7 +1113,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
 [34
 
 ]
-Overfull \hbox (502.91623pt too wide) in paragraph at lines 160--163
+Overfull \hbox (502.91623pt too wide) in paragraph at lines 169--172
 []\OT1/cmr/m/n/10 Notes for class on al-ge-braic groups.pdf.  https://users.math.msu.edu/users/ruiterj2/Math/Documents/Summer%202019/Algebraic%20Groups/Notes%20for%20class%20on%20algebraic%20groups.pdf. 
  []
 
@@ -1110,20 +1123,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 55EE9D70CA972262C3A3CF3A67BA3B1D;3062.
+(rerunfilecheck)             Checksum: 1BFEAC1E9BF75F2297C486A1E5855DCE;3162.
  ) 
 Here is how much of TeX's memory you used:
- 29201 strings out of 475551
- 557514 string characters out of 5762554
+ 29283 strings out of 475551
+ 559456 string characters out of 5762554
  1963238 words of memory out of 5000000
- 49666 multiletter control sequences out of 15000+600000
- 575726 words of font info for 106 fonts, out of 8000000 for 9000
+ 49738 multiletter control sequences out of 15000+600000
+ 576347 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,16n,103p,1207b,1033s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,16n,103p,1207b,1139s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (37 pages, 488667 bytes).
+Output written on main.pdf (37 pages, 495862 bytes).
 PDF statistics:
- 663 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 173 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
