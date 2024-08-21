@@ -56,13 +56,13 @@ Completeness is the algebro-geometric analogue of compact, which is always a des
     \todo{check that this is an action, g is a bijection but why does the inclusion still hold?}
     If \(F^n\) is given the standard basis of \(e_i = (\delta_i^j)_j\) then the standard (complete) flag is 
     \[0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset \cdots \subset \oplus_i Fe_i = F^n\]
-    From now on we consider only subflags of the standard flag. 
+    From now on we consider only sub-flags of the standard flag. 
     \begin{Remark}
-        This is becuase the stabiliser of a flag is always conjugate to a stabiliser of a sub-flag of the standard flag. i.e. stabilisers of flags are up to conjugacy stabilisers of the standard flag.
+        This is because the stabiliser of a flag is always conjugate to a stabiliser of a sub-flag of the standard flag. i.e. stabilisers of flags are up to conjugacy stabilisers of the standard flag.
 
         It is worth noting that what we do here by fixing a basis of \(F\) is the same as fixing a Borel and then considering only standard parabolics. Thus when we are talking about standard parabolics we are really working up "up to conjugacy".
     \end{Remark}
-     Stabilisers of such subflags are "staircases":
+     Stabilisers of such sub-flags are "staircases":
     \[\begin{pmatrix}
         A_{11} && \ast\\
          & \ddots & \\
@@ -140,7 +140,7 @@ Completeness is the algebro-geometric analogue of compact, which is always a des
         \end{pmatrix}\]
 
     \end{example}
-    So what is happening here, for each peice of the flag you complete the diagonal that the basis vectors are in into the box that they span and you say that everything \textit{directly} below that box must be zero. 
+    So what is happening here, for each piece of the flag you complete the diagonal that the basis vectors are in into the box that they span and you say that everything \textit{directly} below that box must be zero. 
     
 
 
@@ -254,7 +254,7 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
         \text{Hyperbolic} & \frac{1}{2}|tr(g)| > 1 \\
     \end{cases}
     \]
-    Being parabolic is equivilent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
+    Being parabolic is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
     \[\begin{pmatrix}
         1 & 1\\
         0 & 1
@@ -267,7 +267,7 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
         a & b \\
          & a\inv
     \end{pmatrix} \subseteq \SL_2(\R)\]
-    contains these matricies, and moreover all parabolics are \textit{conjugate} to this parabolic. Hence all parabolic elements are contained in a parabolic subgroup. This classification it seems relies entrirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity.
+    contains these matrices, and moreover all parabolics are \textit{conjugate} to this parabolic. Hence all parabolic elements are contained in a parabolic subgroup. This classification it seems relies entrirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity.
 
     To connect this to Godements concept we have two facts from classical geometry. Proper parabolic subgroups of \(\SL_2(\R)\) can be realised as the stabilisers of lines in \(\R^2\) under the standard action of \(\SL_2\) on \(\R^2\) \cite[2.6]{borelAutomorphicFormsSL21997} and moreover some an element of \(\SL_2(\R)\) is parabolic if and only if it has one fixed point on \(\partial\bar{\mathcal{H}}\) and none on \(\mathcal{H}\) \cite[3.5]{borelAutomorphicFormsSL21997}. 
 
@@ -282,7 +282,7 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
         \[\Sp_{2n} = \{M\in \GL_{2n} :\forall a,b \;\; \inner{Ma, Mb} = \inner{a,b}\}\]
         if we make the form into a matrix (by setting the entries to be \(A_{ij} = \inner{e_i, e_j}\)) then we get 
         \[\forall a,b \;\; \inner{Ma, Mb} = (Ma)^T A (Mb) = a^T M^T A M b= a^TAb \]
-        and becuase this is so for all \(a,b\) we get that 
+        and because this is so for all \(a,b\) we get that 
         \[M^T A M = A\]
 
         So if we fix a basis of V such that the form is given by the matrix
@@ -348,13 +348,13 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
                 &=0 \\
             \end{aligned}
         \end{equation*} 
-        so the vectors \(e_i^+ \defeq e_i + e_{n+i}\) give a basis for an \(n\) dimensional isotropic subspace. In our reference it is stated more abstractly that an \(n\) dimensional isotropic subspace is maximal and that any flag of isotropic subspaces can be considered as a subflag of a complete flag of a maximal isotropic subspace (it is beleivable from inspecting the matrix of the form that if your space has a dimension of greater than n then it cannot be isotropic).
+        so the vectors \(e_i^+ \defeq e_i + e_{n+i}\) give a basis for an \(n\) dimensional isotropic subspace. In our reference it is stated more abstractly that an \(n\) dimensional isotropic subspace is maximal and that any flag of isotropic subspaces can be considered as a sub-flag of a complete flag of a maximal isotropic subspace (it is beleivable from inspecting the matrix of the form that if your space has a dimension of greater than n then it cannot be isotropic).
         \todo{This might all be wrong, garretts book is giving something different.}
 
-        Now we have a maximal isotropic flag we can consider subflags and find their stabiliser. Lets look at \(\Sp_4\) and the following flag
+        Now we have a maximal isotropic flag we can consider sub-flags and find their stabiliser. Lets look at \(\Sp_4\) and the following flag
         \[0 \subset Fe_1^+ \subset Fe_1^+ \oplus Fe^+_2 \subset F^4\]
 
-        If we change our basis to these \(e_i^+\) then we can re-use our \(\GL\) computations to see that the stabiliser is matricies in \(\Sp\) of the form (in this basis)
+        If we change our basis to these \(e_i^+\) then we can re-use our \(\GL\) computations to see that the stabiliser is matrices in \(\Sp\) of the form (in this basis)
         \[\begin{pmatrix}
             *&*&*&* \\
              &*&*&* \\
@@ -362,9 +362,9 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
              && *& *
         \end{pmatrix}\]
         \begin{Remark}
-            Note that the fact that we change basis here doesnt change that the subspaces are isotypic, this is basis independent. What it does change is the representation of the form, it will no longer be represented by the matrix given above. 
+            Note that the fact that we change basis here doesn't change that the subspaces are isotypic, this is basis independent. What it does change is the representation of the form, it will no longer be represented by the matrix given above. 
         \end{Remark}
-        Because these are in \(\Sp\) we can find more relations among the entries than in the \(\GL\) case, we will persue this further in the maximal case below. 
+        Because these are in \(\Sp\) we can find more relations among the entries than in the \(\GL\) case, we will pursue this further in the maximal case below. 
     \end{example}
 
     In particular maximal parabolics of \(\Sp\) are stabilizers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces.
@@ -406,7 +406,7 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
     with relations among the entries. 
 
     \subsection{Borel and Torus}
-    One may find it helpful to understand these subgroups to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}, however it is not necissary. 
+    One may find it helpful to understand these subgroups to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}, however it is not necessary. 
 
     \begin{definition}
         A split torus is an algebraic group that is isomorphic to some products of \(\GL_1^b\).
@@ -415,7 +415,7 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
     \begin{example}[Bad Etymology]
         \(\GL^2_1\) is a split torus. Notice that 
         \[\GL^2_1(\C) = \C^\ast\times \C^\ast\]
-        is isomorphic as abstract groups to \(U(1)\times U(1)\) which when \(U(1)\) is realised as \(\{z\in \C : |z| = 1\}\) is topologically equivilent to \(\mathbb{T}^2 = \mathbb{S}^1\times \mathbb{S}^1 \) which is a torus. Note that it is clear that 
+        is isomorphic as abstract groups to \(U(1)\times U(1)\) which when \(U(1)\) is realised as \(\{z\in \C : |z| = 1\}\) is topologically equivalent to \(\mathbb{T}^2 = \mathbb{S}^1\times \mathbb{S}^1 \) which is a torus. Note that it is clear that 
         \[\GL^2_1(\C) \not\cong T^2 \]
         as topological groups, as the right had side is compact whilst the left is not.
     \end{example}
@@ -437,7 +437,7 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
     We saw that fixing a minimal parabolic is like fixing a basis in the case of classifying parabolics of classical groups. If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the standard Levi. This gives some intuition as to their important in the classification of reductive groups via root datum\cite[8]{springerLinearAlgebraicGroups1998}, as they correspond to fixing a collection of simple roots.\todo{ref} Above also suggests that Borels are "the same data" as maximal tori from which the root datum is constructed.
 
     \begin{example}
-        \todo[inline]{what is easy to find is definitions, whaat is hard to find is long drawnout matrix algebra that has been latexed.}
+        \todo[inline]{what is easy to find is definitions, whaat is hard to find is long drawn out matrix algebra that has been latexed.}
     \todo[inline]{maybe put the whole thing in the appendix.}
     \end{example}
 
@@ -464,12 +464,12 @@ The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use t
    
  
 \section{Coverings}
-We are also be interested in certain covering groups of these LAG's. In particular \cite[I.1.1]{moeglinSpectralDecompositionEisenstein1995} we will be intereseted in \(\mathbf{G}\) some topological group given as a finite central cover of \(G(\A)\). If \(\mathrm{pr}: \mathbf{G} \to G(\A)\) is the projection then to the subgroups listed above we can associate their "lifts" (preimages under \(\mathrm{pr}\)). 
+We are also be interested in certain covering groups of these LAG's. In particular \cite[I.1.1]{moeglinSpectralDecompositionEisenstein1995} we will be interested in \(\mathbf{G}\) some topological group given as a finite central cover of \(G(\A)\). If \(\mathrm{pr}: \mathbf{G} \to G(\A)\) is the projection then to the subgroups listed above we can associate their "lifts" (preimages under \(\mathrm{pr}\)). 
 
 \begin{example}[Metaplectic Group]
     If \(G = \Sp_{2n}\) then there is a unique non-trivial double cover 
     \[0\to \mu_2 = \{\pm 1\} \to \Mp_{2n} \to \Sp_{2n} \to 0\]
-    such group extensions are classified by their second group cohomology, for this extension the relevant cocycle is called the Rao cocycle \cite{raoExplicitFormulasTheory1993}, \(c\).
+    such group extensions are classified by their second group cohomology, for this extension the relevant co-cycle is called the Rao cocycle \cite{raoExplicitFormulasTheory1993}, \(c\).
     As a set we can think of 
     \[\Mp_{2n} = \Sp_{2n} \times \mu_2\]
     with the group operation 
