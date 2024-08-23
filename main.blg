@@ -5,6 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
+Warning--I didn't find a database entry for "terrasHarmonicAnalysisSymmetric2016"
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
 Warning--to sort, need author or key in CliffordAlgebrasClassical
@@ -30,45 +31,45 @@ Warning--empty journal in malleLinearAlgebraicGroups
 Warning--empty year in malleLinearAlgebraicGroups
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 36 entries,
+You've used 37 entries,
             2543 wiz_defined-function locations,
-            761 strings with 10903 characters,
-and the built_in function-call counts, 10659 in all, are:
-= -- 989
-> -- 392
-< -- 33
-+ -- 119
-- -- 114
-* -- 688
-:= -- 1734
-add.period$ -- 98
-call.type$ -- 36
-change.case$ -- 176
-chr.to.int$ -- 35
-cite$ -- 65
-duplicate$ -- 523
-empty$ -- 886
-format.name$ -- 169
-if$ -- 2170
+            769 strings with 11203 characters,
+and the built_in function-call counts, 11017 in all, are:
+= -- 1027
+> -- 400
+< -- 34
++ -- 122
+- -- 116
+* -- 715
+:= -- 1790
+add.period$ -- 101
+call.type$ -- 37
+change.case$ -- 181
+chr.to.int$ -- 36
+cite$ -- 66
+duplicate$ -- 538
+empty$ -- 916
+format.name$ -- 173
+if$ -- 2242
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 43
-newline$ -- 167
-num.names$ -- 99
-pop$ -- 302
+missing$ -- 44
+newline$ -- 172
+num.names$ -- 102
+pop$ -- 305
 preamble$ -- 1
-purify$ -- 225
+purify$ -- 231
 quote$ -- 0
-skip$ -- 376
+skip$ -- 387
 stack$ -- 0
-substring$ -- 320
-swap$ -- 50
-text.length$ -- 33
-text.prefix$ -- 23
+substring$ -- 353
+swap$ -- 51
+text.length$ -- 34
+text.prefix$ -- 24
 top$ -- 0
-type$ -- 228
+type$ -- 236
 warning$ -- 25
-while$ -- 80
-width$ -- 40
-write$ -- 418
-(There were 25 warnings)
+while$ -- 84
+width$ -- 41
+write$ -- 431
+(There were 26 warnings)

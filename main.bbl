@@ -93,6 +93,13 @@ Jayce~R. Getz and Heekyoung Hahn.
 Roger Godement.
 \newblock {Groupes lin{\'e}aires alg{\'e}briques sur un corps parfait}.
 
+\bibitem[Gre92]{grenierAnalogueSiegelFOperator1992}
+Douglas Grenier.
+\newblock An {{Analogue}} of {{Siegel}}'s {$\varphi$}-{{Operator}} for
+  {{Automorphic Forms}} for {{GLn}}( {{Z}}).
+\newblock {\em Transactions of the American Mathematical Society},
+  333(1):463--477, 1992.
+
 \bibitem[Gre24]{grenierANALOGUESIEGELXOPERATOR2024}
 Douglas Grenier.
 \newblock {{AN ANALOGUE OF SIEGEL}}'{{S X-OPERATOR FOR AUTOMORPHIC FORMS FOR
