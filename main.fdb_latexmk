@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1724406791 "main.aux" "main.bbl" "main" 1724406870 0
+["bibtex main"] 1724637454 "main.aux" "main.bbl" "main" 1724637457 0
   "./NumberTheory.bib" 1724165152 564853 ecd4bf74d261051cf2141af3693adc17 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291861136 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1724406869 21945 39533670a19b83066c1477ca6540c402 "pdflatex"
+  "main.aux" 1724637456 20611 09b0f45270295dc70beab52e1aa9b87a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1724406866 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1724406870 0
+["pdflatex"] 1724637455 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1724637457 0
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1692676729 11548 78bef0057cba8f6fe11199e7e5d8f077 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk" 1711930929 14064 2b636b917c6dd2a843da53de5aeddea9 ""
@@ -261,15 +261,15 @@
   "Chapters/classicalGroups.tex" 1724225196 28264 9525d85b105ff1d642b2a6d4db236108 ""
   "Chapters/constantTerms.tex" 1724406865 29186 3eac6cef5acf33d71261096c2139c54d ""
   "Chapters/motivation.tex" 1724165152 920 7b0f80249d912893f7a6d9334f9e6a27 ""
-  "Chapters/polesOfEisensteinSeries.tex" 1724165152 9795 77d19898b3f0e85c816791c80db12a8c ""
+  "Chapters/polesOfEisensteinSeries.tex" 1724634065 9915 7fef363d2a0d785d0afae9e3022504f6 ""
   "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1724214122 3382 d80480ebd7053bf92f5231b6d1579f6f ""
-  "main.aux" 1724406869 21945 39533670a19b83066c1477ca6540c402 "pdflatex"
-  "main.bbl" 1724406791 8178 c6cc83f5105a57f003981aca577d11de "bibtex main"
-  "main.out" 1724406869 3341 bf59c79d6689e1fa44337a09cf4e6075 "pdflatex"
-  "main.tdo" 1724406869 4959 6b1f3093006b7120ab7d6a50ccfdef21 "pdflatex"
+  "main.aux" 1724637456 20611 09b0f45270295dc70beab52e1aa9b87a "pdflatex"
+  "main.bbl" 1724637455 8178 c6cc83f5105a57f003981aca577d11de "bibtex main"
+  "main.out" 1724637456 3341 bf59c79d6689e1fa44337a09cf4e6075 "pdflatex"
+  "main.tdo" 1724637456 4959 c6e808a77ed18821a77265e222ce769a "pdflatex"
   "main.tex" 1724214122 3382 d80480ebd7053bf92f5231b6d1579f6f ""
-  "main.toc" 1724406869 3802 c85990c1119a434a5fcfc05b3dbca70c "pdflatex"
-  "minipreamble.tex" 1724222339 3237 84987033c286c23ca08d81c68478a0fb ""
+  "main.toc" 1724637456 3802 0f1d22506d578bd500dc18c16fb5071f "pdflatex"
+  "minipreamble.tex" 1724637452 3237 84987033c286c23ca08d81c68478a0fb ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)
   "main.aux"
