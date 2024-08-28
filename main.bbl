@@ -7,6 +7,10 @@ James Arthur.
   {{Symposia}} in {{Pure Mathematics}}}, volume 33.1, pages 253--274. American
   Mathematical Society, Providence, Rhode Island, 1979.
 
+\bibitem[Arz05]{arzhantsevInvariantIdealsMatsushima2005}
+Ivan~V. Arzhantsev.
+\newblock Invariant {{Ideals}} and {{Matsushima}}'s {{Criterion}}, June 2005.
+
 \bibitem[BC79]{borelAutomorphicFormsRepresentations1979}
 Armand Borel and W.~Casselman.
 \newblock {\em Automorphic Forms, Representations, and {{L-functions}}}.
@@ -65,6 +69,12 @@ Brian Conrad.
 \newblock Weil and {{Grothendieck}} approaches to adelic points.
 \newblock {\em L'Enseignement Math{\'e}matique}, 58(1):61--97, June 2012.
 
+\bibitem[DS05]{diamondFirstCourseModular2005}
+Fred Diamond and Jerry~Michael Shurman.
+\newblock {\em A First Course in Modular Forms}.
+\newblock Number 228 in Graduate Texts in Mathematics. Springer, New York,
+  2005.
+
 \bibitem[Eme]{emertonCLASSICALMODULARFORMS}
 Matthew Emerton.
 \newblock {{CLASSICAL MODULAR FORMS AS AUTOMORPHIC FORMS}}.
@@ -81,6 +91,11 @@ Gerald~B. Folland.
 \bibitem[Gar]{garrettModernAnalysisAutomorphic}
 Paul Garrett.
 \newblock Modern analysis of automorphic forms by examples.
+
+\bibitem[Gar10]{garrettInvariantDifferentialOperators2010}
+Paul Garrett.
+\newblock Invariant differential operators.
+\newblock 2010.
 
 \bibitem[Gar16]{garrettTransitionEisensteinSeries2016}
 Paul Garrett.

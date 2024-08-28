@@ -39,7 +39,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 
 	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\) module is \(K_\infty\) finite if its orbit is a finite dimensional \todo[inline]{vector space over what??} space.
 
-	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the left regular action.  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by 
+	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action.  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by 
 	\[z.F(g) = \Dif{}{t}F(ge^{tz})\] 
 
 	\begin{Definition}
@@ -49,8 +49,10 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 
 	\end{Definition}
 
+    \todo[inline]{Borel 1.6 gives a good explination of the growth condition. }
+
 \subsection{Adelic Automorphic Form}
-Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup satisfying the conditions laid out in \todo[inline]{reference the previous section}
+Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out in \todo[inline]{reference the previous section}
 \begin{definition}
     A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an automorphic form if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. 
 \end{definition}
@@ -68,16 +70,182 @@ For \(v\notin \infty\) a non-archimedian place then we say that a function \(f: 
 	\[C^\infty(G(F_\infty)) \defeq C^\infty\left(\prod_{\nu|\infty} G(F_\nu)\right)\]
 	
 	For the full Adele we define 
-	\[C^\infty(\mathbb{A}_F) \defeq C^\infty(G(F_\infty)) \otimes C^\infty(G(\mathbb{A}_F^\infty))\]
+	\[C^\infty(\mathbb{A}_F) \defeq C^\infty(G(F_\infty)) \otimes C^\infty(G(\mathbb{A}_f))\]
 	
 	A function on the adeles is smooth if it is in this set. Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
+
+    The action of the center of the Lie algebra is given by linearly extending the following to the whole space
+    \[z.(f\tensor g) = (z.f)\tensor g\]
+    i.e. it acts on the archimedian places as in the setting of archimedian automorphic forms. 
 	
 	The definition of moderate growth carries over verbatim, however we change the set of places multiplied over to be all of them now.
     
     \begin{remark}[\cite{borelAutomorphicFormsRepresentations1979}, 1.II.3]
         The collection of moderate growth functions is independent of the choices of embedding. 
     \end{remark}
-    
-    We know what it means for a general module to be \(Z(\mathfrak{g})\) and \(K\) finite, so to complete the definition we need only specify the module structure for these algebras on the set of smooth functions. 
 
 \section{Modular Forms}
+One might ask if there is a special case in which automorphic forms yeild modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the litterature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necissary to present the details here. To be clear we explain modular forms as archimedian automorphic forms as we think it is where the connection is clearest. 
+
+	Recall the definition of a modular form 
+	\begin{Definition}[\cite{diamondFirstCourseModular2005} 1.1.2]
+		A function
+		\[\phi: \mathcal{H} \to \C,\]
+		where \(\mathcal{H}\) is the upper half plane in \C, that is holomorphic, satisfies 
+		\[\phi(\gamma.z) = (cz+d)^k\phi(z), \quad \gamma = \begin{pmatrix}
+			a &b \\
+			c &d
+		\end{pmatrix}\in \SL_2(\Z)\]
+		and extends holomorphically to \(\infty\) is called a modular form of weight k.
+	\end{Definition}
+	These are modular forms with trivial character and full level.
+
+
+	Now give a function on a set \(X\) and an action of a group \(G\) on X, there is a general way of associating to \(\Hom(X, Y)\) a family of maps \(\Hom(G, Y)\) indexed by \(X\). This is a manifestation of the tensor-hom adjunction. Effectively if \(f: X\to Y\) the we get a map for each \(x\in X\) defined on \(f_x : G \to Y\) given by \(g\mapsto f(g.x)\).
+
+	So for our purposes we are trying to take some subset of functions \(\mathcal{H} \to \C\) and shift their domain to the \(\Q_\infty = \R\) points of some reductive group. In particular it would be sufficient to find a reductive group with a well defined action on the upper half plane and in particular we would want to quotient to be transitive.
+
+	\begin{Theorem}
+		\[\mathcal{H} \cong  \SL_2(\R) / SO_2(\R) \]
+		as topological spaces.
+	\end{Theorem}
+	\proofbar{
+		Consider the action 
+		\[\SL_2(\R) \curvearrowright \mathcal{H}: \;\; \begin{pmatrix}
+			a & b\\
+			c & d
+		\end{pmatrix}.z = \frac{az + b}{cz + d}\]
+		Then look at the orbit of \(i\), namely 
+		\[\begin{pmatrix}
+			a & b\\
+			 & d
+		\end{pmatrix}.i = \frac{ai + b}{d} = a^2i + ab\]
+		which letting \(a, b\in \R\) vary is clearly surjective onto the whole upper half plane. So there is one orbit, and hence by the orbit stabiliser we know that 
+		\[\mathcal{H} \cong \SL_2(\R) /stab(i) \]
+		so we want to find
+		\[stab(i) = \left\{ g = \begin{pmatrix}
+			a & b\\
+			c & d
+		\end{pmatrix}\in \SL_2(\R) : g.i = i   \right\}\]
+		in particular we solve 
+		\begin{equation*}
+			\begin{aligned}
+				i &= g.i \\
+				  &= \frac{ai + b}{ci + d} \\
+				  &= (c^2 + d^2)\inv (ai+b)(d-ci) \\
+				  &= (c^2 + d^2)\inv (ac + bd  + i\det(g)) \\
+			\end{aligned}
+		\end{equation*}
+		So equating coefficients we have 
+		\[\det g (c^2 + d^2)\inv  = 1 \implies c^2 +  d^2 = \det g = 1\] 
+		on the other hand 
+		\[ac + bd = 0\]
+		Now the pairs \(c^2 + d^2 = \det g\) are parametrised by \(\theta\in [0, 2\pi)\) using \(c = \sin \theta, d =  \cos\theta\) hence subbing this into the above equation
+		\[\frac{-b}{a} = \tan\theta\]
+		and so \(b = -k\sin\theta, a = k\cos\theta\) for some  \(k\in \R\) but the determinant must be \(1\) so \(k = 1\).
+		Hence 
+		\[stab(i) = \left\{ \begin{pmatrix}
+			\cos\theta & -\sin\theta \\
+			\sin\theta & \cos\theta
+		\end{pmatrix} : \theta \in [0, 2\pi)\right\} = SO_2(\R)\]
+		One then has to check that this is all continuous. 
+	}
+    \begin{remark}
+        Sometimes for \todo[inline]{what reasons...} this is exhibited as 
+        \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R)\]
+        this obscures the connection with the reductive group setting however becuase it is not obvious that 
+        \todo[inline]{and probably not even true}
+        \begin{Lemma}
+            \(\GL_2^+\) is a reductive group over \Q. 
+        \end{Lemma}
+        \proofbar{
+            It is the connected component of the identity and therefore a closed subgroup.
+            \todo[inline]{references for these bold claims?} Therefore by Matsushima's criterion (\cite{arzhantsevInvariantIdealsMatsushima2005} for references) we have that \(\GL_2/\GL_2^+ \) is affine iff \(\GL_2^+ \) is reductive. But the thing on the left is the constant group scheme \(\Z/2\Z\) which is affine. 
+        }
+    \end{remark}
+
+
+	
+	
+	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upperhalf plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\). Indeed if we were to push our modular forms along this isomorphism it would, with the construction that we outlined earlier in terms of a group action on a set, excibit this invariance. This is merely \textit{evidence} that if we were to change our modular forms to functions on the reductive group \(\SL_2\) they may preserve \textit{some} of that invariance and indeed be K-finite.
+    
+		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGJlZ2lue3BtYXRyaXh9eV57MS8yfSAmIHggeV57LTEvMn1cXFxcICYgeV57LTEvMn1cXGVuZHtwbWF0cml4fVNPXzIoXFxSKT1cXFNsXzIoXFxSKSJdLFsyLDAsIlxcU2xfMihcXFIpL1NPXzIoXFxSKSJdLFsyLDIsIlxcU2xfMihcXFopXFxzZXRtaW51c1xcU2xfMihcXFIpIl0sWzQsMCwiXFxtYXRoY2Fse0h9Il0sWzEsMywiXFxzaW0iXSxbMCwxLCJwcm9qIl0sWzEsMywieFxcbWFwc3RvIHguaSIsMl0sWzAsMiwiXFx0ZXh0e2Rlc2NlbmQ/Pz99IiwyXV0=
+	\[\begin{tikzcd}[cramped]
+		{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}SO_2(\R)=\SL_2(\R)} && {\SL_2(\R)/SO_2(\R)} && {\mathcal{H}} \\
+		\\
+		&& {\SL_2(\Z)\setminus\SL_2(\R)}
+		\arrow["\sim", from=1-3, to=1-5]
+		\arrow["\mathrm{project}", from=1-1, to=1-3]
+		\arrow["{x\mapsto x.i}"', from=1-3, to=1-5]
+		\arrow["{\text{descend}}"', from=1-1, to=3-3]
+	\end{tikzcd}\]
+
+    Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a prefactor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.
+
+
+	Finally for \(f\) be a modular form of weight k then we associate the following function on \(\SL_2(\R)\)
+	\[F(g) \defeq  (ci + d)^{-k}f(g.i)\]
+	We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition.
+
+	It remains to show the three other properties:
+
+	\begin{Lemma}
+		\(F(g)\) is of moderate growth.
+	\end{Lemma}
+	\proofbar{
+		Unraveling the definitions we require two constants such that 
+		\[|F(g)| = |ci+ d|^{-k}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r\]
+		A direct computation shows that 
+		\[Im(g.i) = |ci+ d|^{-2}\]
+		hence we require to show
+		\[ \mathrm{Im}(g.i)^{k/2}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r\]
+		\textcolor{red}{Somehow invoke polynomial growth...?}
+        but the modularity condition has the growth condition that \(\lim_{x\to \infty}f(xi)\) be bounded. 
+	}
+
+	\begin{Lemma}
+		\(SO_2(\R)\) is a maximal compact subgroup inside \(\SL_2(\R)\). \(F\) is an \(SO_2(\R)\) finite function.
+	\end{Lemma}
+	\proofbar{
+		First take \(\kappa = \begin{pmatrix}
+			\cos\theta & -\sin\theta \\
+			\sin\theta & \cos\theta
+		\end{pmatrix} \in K = SO_2(\R)\) then 
+		\[\kappa.i = \frac{i\cos\theta - \sin\theta}{i\sin\theta + \cos\theta} = \frac{-i(-\cos\theta - i\sin\theta)}{e^{i\theta}} = i\]
+		hence for \(g = \begin{pmatrix}
+			a & b \\
+			c & d
+		\end{pmatrix} \in \SL_2(\R)\) we have that 
+		\begin{equation*}
+			\begin{aligned}
+				F(g\kappa) &= ((c\cos\theta + d\sin\theta)i - c\sin\theta + d\cos\theta)^{-k}f(g.\kappa.i) \\
+						   &= ((c\cos\theta + d\sin\theta)i - c\sin\theta + d\cos\theta)^{-k}f(gi) \\
+						   &= (ci\cos\theta - c\sin\theta + d\cos\theta + di\sin\theta)^{-k}f(gi) \\
+						   &= (-i^2(ci\cos\theta - c\sin\theta) + de^{i\theta})^{-k}f(gi) \\
+						   &= (ice^{i\theta} + de^{i\theta})^{-k}f(gi) \\
+						   &= (ic + d)^{-k}e^{-ik\theta}f(gi) \\
+						   &= e^{-ik\theta}F(g) \\
+			\end{aligned}
+		\end{equation*}
+		Now this shows that \(F(g)\) is acted on by \(K\) via a one dimensional irreducible representation. In particular it is finite dimensional.
+		}
+
+	\begin{Lemma}
+		\(F\) is a \(Z(\mathfrak{sl}_2)\) finite function.
+	\end{Lemma}
+	\proofbar{ Only a sketch. 
+
+		The center of the universal enveloping algebra of the complexified Lie algebra is generated by the Casimir operators. From \cite{garrettInvariantDifferentialOperators2010} we know that the casimir is 
+		\[\Omega = \frac{1}{2}H^2 + XY + YX\]
+		we have the coordinates on \(\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}SO_2(\R)=\SL_2(\R)\) from \cite{bumpAutomorphicFormsRepresentations1997}[1.19 pg 139] in which 
+		 the casimir acts as the differential operator
+		\[\Delta = y^2\left(\left(\Dif{}{x}\right)^2 +\left(\Dif{}{y}\right)^2\right) - y\Dif{^2}{x\partial \theta}\] 
+		\cite{bumpAutomorphicFormsRepresentations1997}[1.29 pg 143 ,Prop 2.2.5 pg 155]. Now we claim that F is an eigenfunction for this operator. 
+		An element \((x,y,\theta) \defeq \begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}\kappa_\theta \in \SL_2(\R)\) acts on \(i\) by sending it to \(x+ iy\) (elementary computation). The bottom row of the product is \(y^{-1/2}\sin\theta ;y^{-1/2}\cos\theta \) which results in 
+		\[F(x,y,\theta) = y^{k/2}e^{-ik\theta}f(x + iy)\]
+		It is then a calculus exercise to apply \(\Delta\) to this, using the holomorphicity we also get that \(f_{xx} - f_{yy} = 0\) and \(f_y = if_x\) which cancels away terms and we get that 
+		\[\Delta F(x,y,\theta) = \frac{k}{2}\left(\frac{k}{2} - 1\right) F(x,y,\theta)\]
+		
+		Therefore the dimension of \(Z(\mathfrak{g})F\) is simply one.
+	}
+    this example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
