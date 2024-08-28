@@ -1,25 +1,25 @@
-There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalise the classical modular forms. Although this has been done in several places, none suit my taste to a tee, and so we briefly present our own take on this. We intend to be terse as this material is somewhat standard.
+There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms. Although this has been done in several places, none suit my taste to a tee, and so we briefly present our own take on this. We intend to be terse as this material is somewhat standard.
 \todo[inline]{references}
 
 \section{Definition and Role}
 The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maas form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
 \todo[inline]{reference or more detail for the history}
 
-We still do not have a good answer as to why the definition below is "the right" definition, from a mathematical perspective, as there are many places in which it could be extended or restricted and we are unable to motivate why one shouldnt consider such things. Indeed there are varying notions of automorphic form that appear for this reason and I think it is important to stress that this is "the right definition" only in so far as people have been able to prove nice theorems about them, and that when functions appear "in nature" this concept has sufficed to encompass and explain their behaviour. It is the represntation theoretic properties more than anything that suggest the current definition as is mentioned in \cite[1.II.3]{borelAutomorphicFormsRepresentations1979}.
+We still do not have a good answer as to why the definition below is "the right" definition, from a mathematical perspective, as there are many places in which it could be extended or restricted and we are unable to motivate why one shouldn't consider such things. Indeed there are varying notions of automorphic form that appear for this reason and I think it is important to stress that this is "the right definition" only in so far as people have been able to prove nice theorems about them, and that when functions appear "in nature" this concept has sufficed to encompass and explain their behavior. It is the representation theoretic properties more than anything that suggest the current definition as is mentioned in \cite[1.II.3]{borelAutomorphicFormsRepresentations1979}.
 
-For concreteness we want to provide one, certainly a-historical, reason to be interested in them. It was proved by Jacquet-Langlands that all representations of reductive groups appear as subquotients of the regular represtntation on a space of automorphic forms:
+For concreteness we want to provide one, certainly a-historical, reason to be interested in them. It was proved by Jacquet-Langlands that all representations of reductive groups appear as sub-quotients of the regular representation on a space of automorphic forms:
 
 \begin{Theorem}[\cite{getzIntroductionAutomorphicRepresentations2024} 4.9, 8.3.5, 10.6.1]
     Let \(G\) be a connected reductive LAG over a field \(F\).
     \todo[inline]{actually check hypothesis on G here}
-    All smooth irreducible representations of \(G(F)\) are a subquotient of a parabolically induced representation from a Levi. Any irreducible subquotient of such a parabolically induced representation is an automorphic representation and moreover all automorphic representations appear in this way. 
+    All smooth irreducible representations of \(G(F)\) are a sub-quotient of a parabolically induced representation from a Levi. Any irreducible sub-quotient of such a parabolically induced representation is an automorphic representation and moreover all automorphic representations appear in this way. 
 \end{Theorem}
 Thus if one is interested in reductive group representations then automorphic representations and hence automorphic forms are unavoidable.
 
 We will present three notions of automorphic form here. In the literature they are all called ``automorphic forms'' however here we will distinguish them with our own terminology for clarity.
 
-\subsection{Archimedian Automorphic Form}
-Fix a global (number) field \(F\). Let \(\nu\) be an archimedian place and let \(\infty\) denote the set of archimedian places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textit{smooth}  if it is smooth in the sense of manifolds.
+\subsection{Archimedean Automorphic Form}
+Fix a global (number) field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textit{smooth}  if it is smooth in the sense of manifolds.
 
 
 Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to SL_{2n}\) via
@@ -32,7 +32,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v|\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r\]
 	this is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
 
-    \todo[inline]{there is a nice characterisation over Q for representations and norms as traces of blah in Borel. I like it a lot just need to check its fine for other number fields.  }
+    \todo[inline]{there is a nice characterization over Q for representations and norms as traces of blah in Borel. I like it a lot just need to check its fine for other number fields.  }
 
     From \todo[inline]{reference the Lie algebra section} we know how to define the Lie algebra of \(G\) and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\) module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textit{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
@@ -49,7 +49,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 
 	\end{Definition}
 
-    \todo[inline]{Borel 1.6 gives a good explination of the growth condition. }
+    \todo[inline]{Borel 1.6 gives a good explanation of the growth condition. }
 
 \subsection{Adelic Automorphic Form}
 Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out in \todo[inline]{reference the previous section}
@@ -61,7 +61,7 @@ Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(
     It is important that \(M(F)\) is treated as a subgroup of \(M(\A)\) via the diagonal embedding.
 \end{remark}
 
-For \(v\notin \infty\) a non-archimedian place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\).
+For \(v\notin \infty\) a non-archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\).
 	
 	For the non-archimedian places we define smooth functions on the ``finite adeles'' \(\A_f\) as 
 	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)) \]
@@ -76,7 +76,7 @@ For \(v\notin \infty\) a non-archimedian place then we say that a function \(f: 
 
     The action of the center of the Lie algebra is given by linearly extending the following to the whole space
     \[z.(f\tensor g) = (z.f)\tensor g\]
-    i.e. it acts on the archimedian places as in the setting of archimedian automorphic forms. 
+    i.e. it acts on the archimedean places as in the setting of archimedean automorphic forms. 
 	
 	The definition of moderate growth carries over verbatim, however we change the set of places multiplied over to be all of them now.
     
@@ -85,7 +85,7 @@ For \(v\notin \infty\) a non-archimedian place then we say that a function \(f: 
     \end{remark}
 
 \section{Modular Forms}
-One might ask if there is a special case in which automorphic forms yeild modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the litterature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necissary to present the details here. To be clear we explain modular forms as archimedian automorphic forms as we think it is where the connection is clearest. 
+One might ask if there is a special case in which automorphic forms yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necessary to present the details here. To be clear we explain modular forms as archimedean automorphic forms as we think it is where the connection is clearest. 
 
 	Recall the definition of a modular form 
 	\begin{Definition}[\cite{diamondFirstCourseModular2005} 1.1.2]
@@ -140,7 +140,7 @@ One might ask if there is a special case in which automorphic forms yeild modula
 		\[\det g (c^2 + d^2)\inv  = 1 \implies c^2 +  d^2 = \det g = 1\] 
 		on the other hand 
 		\[ac + bd = 0\]
-		Now the pairs \(c^2 + d^2 = \det g\) are parametrised by \(\theta\in [0, 2\pi)\) using \(c = \sin \theta, d =  \cos\theta\) hence subbing this into the above equation
+		Now the pairs \(c^2 + d^2 = \det g\) are parameterized by \(\theta\in [0, 2\pi)\) using \(c = \sin \theta, d =  \cos\theta\) hence subbing this into the above equation
 		\[\frac{-b}{a} = \tan\theta\]
 		and so \(b = -k\sin\theta, a = k\cos\theta\) for some  \(k\in \R\) but the determinant must be \(1\) so \(k = 1\).
 		Hence 
@@ -153,7 +153,7 @@ One might ask if there is a special case in which automorphic forms yeild modula
     \begin{remark}
         Sometimes for \todo[inline]{what reasons...} this is exhibited as 
         \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R)\]
-        this obscures the connection with the reductive group setting however becuase it is not obvious that 
+        this obscures the connection with the reductive group setting however because it is not obvious that 
         \todo[inline]{and probably not even true}
         \begin{Lemma}
             \(\GL_2^+\) is a reductive group over \Q. 
@@ -167,7 +167,7 @@ One might ask if there is a special case in which automorphic forms yeild modula
 
 	
 	
-	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upperhalf plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\). Indeed if we were to push our modular forms along this isomorphism it would, with the construction that we outlined earlier in terms of a group action on a set, excibit this invariance. This is merely \textit{evidence} that if we were to change our modular forms to functions on the reductive group \(\SL_2\) they may preserve \textit{some} of that invariance and indeed be K-finite.
+	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upper half plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\). Indeed if we were to push our modular forms along this isomorphism it would, with the construction that we outlined earlier in terms of a group action on a set, exhibit this invariance. This is merely \textit{evidence} that if we were to change our modular forms to functions on the reductive group \(\SL_2\) they may preserve \textit{some} of that invariance and indeed be K-finite.
     
 		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGJlZ2lue3BtYXRyaXh9eV57MS8yfSAmIHggeV57LTEvMn1cXFxcICYgeV57LTEvMn1cXGVuZHtwbWF0cml4fVNPXzIoXFxSKT1cXFNsXzIoXFxSKSJdLFsyLDAsIlxcU2xfMihcXFIpL1NPXzIoXFxSKSJdLFsyLDIsIlxcU2xfMihcXFopXFxzZXRtaW51c1xcU2xfMihcXFIpIl0sWzQsMCwiXFxtYXRoY2Fse0h9Il0sWzEsMywiXFxzaW0iXSxbMCwxLCJwcm9qIl0sWzEsMywieFxcbWFwc3RvIHguaSIsMl0sWzAsMiwiXFx0ZXh0e2Rlc2NlbmQ/Pz99IiwyXV0=
 	\[\begin{tikzcd}[cramped]
@@ -180,7 +180,7 @@ One might ask if there is a special case in which automorphic forms yeild modula
 		\arrow["{\text{descend}}"', from=1-1, to=3-3]
 	\end{tikzcd}\]
 
-    Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a prefactor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.
+    Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.
 
 
 	Finally for \(f\) be a modular form of weight k then we associate the following function on \(\SL_2(\R)\)
