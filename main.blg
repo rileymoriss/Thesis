@@ -31,45 +31,45 @@ Warning--empty journal in malleLinearAlgebraicGroups
 Warning--empty year in malleLinearAlgebraicGroups
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 37 entries,
+You've used 38 entries,
             2543 wiz_defined-function locations,
-            769 strings with 11203 characters,
-and the built_in function-call counts, 11017 in all, are:
-= -- 1027
-> -- 400
-< -- 34
-+ -- 122
-- -- 116
-* -- 715
-:= -- 1790
-add.period$ -- 101
-call.type$ -- 37
-change.case$ -- 181
-chr.to.int$ -- 36
-cite$ -- 66
-duplicate$ -- 538
-empty$ -- 916
-format.name$ -- 173
-if$ -- 2242
+            775 strings with 11369 characters,
+and the built_in function-call counts, 11357 in all, are:
+= -- 1063
+> -- 408
+< -- 35
++ -- 124
+- -- 118
+* -- 742
+:= -- 1844
+add.period$ -- 104
+call.type$ -- 38
+change.case$ -- 186
+chr.to.int$ -- 37
+cite$ -- 67
+duplicate$ -- 553
+empty$ -- 944
+format.name$ -- 177
+if$ -- 2310
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 44
-newline$ -- 172
-num.names$ -- 102
-pop$ -- 305
+missing$ -- 45
+newline$ -- 177
+num.names$ -- 105
+pop$ -- 308
 preamble$ -- 1
-purify$ -- 231
+purify$ -- 237
 quote$ -- 0
-skip$ -- 387
+skip$ -- 398
 stack$ -- 0
-substring$ -- 353
-swap$ -- 51
-text.length$ -- 34
-text.prefix$ -- 24
+substring$ -- 379
+swap$ -- 52
+text.length$ -- 35
+text.prefix$ -- 25
 top$ -- 0
-type$ -- 236
+type$ -- 244
 warning$ -- 25
-while$ -- 84
-width$ -- 41
-write$ -- 431
+while$ -- 88
+width$ -- 42
+write$ -- 444
 (There were 26 warnings)
