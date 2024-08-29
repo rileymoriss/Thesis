@@ -34,7 +34,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 
     \todo[inline]{there is a nice characterization over Q for representations and norms as traces of blah in Borel. I like it a lot just need to check its fine for other number fields.  }
 
-    From \todo[inline]{reference the Lie algebra section} we know how to define the Lie algebra of \(G\) and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
+    Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\) module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textit{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
 
 	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\) module is \(K_\infty\) finite if its orbit is a finite dimensional \todo[inline]{vector space over what??} space.
@@ -47,6 +47,8 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 		\[\phi: G(F_\infty) \to \C\]
 		that is \(K_\infty\) and \(Z(\mathfrak{g})\) finite with a (left) \(\Gamma\) invariance. 
 
+		Denote the set of these archimedian automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\)
+
 	\end{Definition}
 
     \todo[inline]{Borel 1.6 gives a good explanation of the growth condition. }
@@ -55,6 +57,8 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out in \todo[inline]{reference the previous section}
 \begin{definition}
     A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an automorphic form if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. 
+
+	We will denote the set of these automorphic forms by \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\)
 \end{definition}
 
 \begin{remark}
@@ -74,7 +78,7 @@ For \(v\notin \infty\) a non-archimedean place then we say that a function \(f: 
 	
 	A function on the adeles is smooth if it is in this set. Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
 
-    The action of the center of the Lie algebra is given by linearly extending the following to the whole space
+    We still consider \(Z(\mathfrak{g})\) to be the center of the universal envelpoing algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
     \[z.(f\tensor g) = (z.f)\tensor g\]
     i.e. it acts on the archimedean places as in the setting of archimedean automorphic forms. 
 	
@@ -249,3 +253,5 @@ One might ask if there is a special case in which automorphic forms yield modula
 		Therefore the dimension of \(Z(\mathfrak{g})F\) is simply one.
 	}
     this example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
+
+	There is a nice explination of how to lift this to the adelic setting in several places, however it is stated quite clearly in \cite[2.1]{cogdellLecturesLfunctionsConverse}

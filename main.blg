@@ -5,6 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
+Warning--I didn't find a database entry for "cogdellLecturesLfunctionsConverse"
 Warning--I didn't find a database entry for "terrasHarmonicAnalysisSymmetric2016"
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
@@ -32,45 +33,45 @@ Warning--empty journal in malleLinearAlgebraicGroups
 Warning--empty year in malleLinearAlgebraicGroups
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 41 entries,
+You've used 40 entries,
             2543 wiz_defined-function locations,
-            791 strings with 11826 characters,
-and the built_in function-call counts, 12230 in all, are:
-= -- 1146
-> -- 443
-< -- 38
-+ -- 135
-- -- 128
-* -- 793
-:= -- 1989
-add.period$ -- 113
-call.type$ -- 41
-change.case$ -- 201
-chr.to.int$ -- 40
-cite$ -- 71
-duplicate$ -- 593
-empty$ -- 1014
-format.name$ -- 192
-if$ -- 2488
+            788 strings with 11789 characters,
+and the built_in function-call counts, 11940 in all, are:
+= -- 1121
+> -- 435
+< -- 36
++ -- 133
+- -- 126
+* -- 772
+:= -- 1942
+add.period$ -- 110
+call.type$ -- 40
+change.case$ -- 197
+chr.to.int$ -- 39
+cite$ -- 70
+duplicate$ -- 576
+empty$ -- 988
+format.name$ -- 188
+if$ -- 2429
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 48
-newline$ -- 191
-num.names$ -- 114
-pop$ -- 331
+missing$ -- 46
+newline$ -- 186
+num.names$ -- 111
+pop$ -- 324
 preamble$ -- 1
-purify$ -- 256
+purify$ -- 250
 quote$ -- 0
-skip$ -- 432
+skip$ -- 422
 stack$ -- 0
-substring$ -- 401
-swap$ -- 55
-text.length$ -- 38
-text.prefix$ -- 27
+substring$ -- 394
+swap$ -- 52
+text.length$ -- 36
+text.prefix$ -- 26
 top$ -- 0
-type$ -- 264
+type$ -- 260
 warning$ -- 26
-while$ -- 95
-width$ -- 45
-write$ -- 479
-(There were 27 warnings)
+while$ -- 93
+width$ -- 44
+write$ -- 465
+(There were 28 warnings)

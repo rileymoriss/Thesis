@@ -1,15 +1,112 @@
 The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and needed later. In particular we want to draw attention to what we think of as the "non-algebraic" nature of the representation theory.
 
-\section{\((\mathfrak{g}, K)\)-Modules}
+\section{At the Archimedean Places}
+What we have called automorphic forms are sometimes refered to as ``smooth K-finite automorphic forms'' \cite[2.2]{cogdellLecturesLfunctionsConverse}.
+We want to consider the right regular action of \(G(\A)\) on \(\mathcal{A}()\), unfortunately this space is not stable under this action. The problem is in the \(K\)-finiteness in the infinite places. 
 
-\section{Hecke Algebra}
+\begin{example}[\cite{cogdellLecturesLfunctionsConverse}, 2.3]
+    If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite, then \(g.\phi\) is \(gK_\infty g\inv\)-finite. This is still a maximal compact subgroup, however in the infinite place it will a priori have only the identity in common with the orginal \(K\).
+
+    Consider \(\SL_2\) where the maximal compact is \(SO_2\), if we conjugate we get 
+    \todo[inline]{fill}
+
+    Finally it is worth noting that this is not an issue at the finite places, namely if \(K = K_fK_\infty\) is our maximal compact subgroup of \(G(\A)\) then \(K_f\) is also open and hence \(K_f \cap gK_f g\inv\) is of finnite index in both \(K_f\) and \(gK_f g\inv\) and so their notions of \(K\)-finiteness will agree. 
+\end{example}
+
+For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules. This is the solution of Harish-Chandra that we do not yet understand the full significance of. 
+
+\begin{definition}[\cite{getzIntroductionAutomorphicRepresentations2024}, 4.4.6]
+    Let \(G\) be a Lie group (for example the analytification of the real or complex points of our favourite reductive LAG) and \(K\) be a maximal compact subgroup of \(G\). Let \(\mathfrak{g}\) be the complexified Lie algebra of \(G\) and \(\mathfrak{k}\) the real Lie algebra of \(K\). 
+    
+    A \((\mathfrak{g}, K)\)-module is a complex vector space \(V\) with two representations 
+    \[\tilde{\pi}: \mathfrak{g} \to End(V), \quad \pi: K\to \GL(V)\]
+    satisfying the following axioms
+    \begin{itemize}
+        \item \(V\) decomposes into a countable direct sum of finite dimensional \(K\) representations.
+        \item The representations should be compatible: For all \(X \in \mathfrak{k}\) and \(v\in V\)
+        \[\tilde{\pi}(X)(v) = \frac{\mathrm{d}}{\mathrm{d}t}\pi(e^{tX})(v)|_{t=0} = \lim_{t\to 0}\frac{\pi(e^{tX})(v) - v}{t}\]
+        In particular the right hand limit exists
+        \item And compatible with the adjoint representation: For \(k\in K\) and \(X\in \mathfrak{g}\) 
+         \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(Ad(k)(X))(v)\]
+    \end{itemize}
+\end{definition}
+
+\begin{remark}
+    It is common to use the same symbol for both of these representations in the \((\mathfrak{g}, K)\)-module.
+\end{remark}
+Now one can check \todo[inline]{reference} that the space of archimedean automorphic forms is in fact a \((\mathfrak{g}, K_\infty)\)-module, under the representations that we have already specified; namely the regular action given by \(K\) and the representation that we defined when talking about the center of the enveloping algebra.\todo[inline]{linnk to the other sections}
+
+\subsection{Hecke Algebra}
+Following \cite[as above..]{borelAutomorphicFormsRepresentations1979} \todo[inline]{fix}.
+The Hecke algebra \(\mathcal{H}(G(F_\infty), K)\) is the convolution algebra of distribitions on \(G(F_\infty)\) that are supported in \(K\)
+
+\begin{Theorem}
+    \todo[inline]{Make precise teh realtion between this hecke algebra and g,K modules...}
+\end{Theorem}
+
+\section{At the Non-Archimedean Places}
+As we noted above the right regular representation on the space of automorphic forms is well defined for the finite places i.e. 
+if \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-archimedean.
+
+From the theory of \(p\)-adic representations we now recall the definition of the local Hecke algebra. For \(G(F_\nu)\) the Hecke algebra \(\mathcal{H}(G(F_\nu))\) is the \C-algebra of locally constant compactly supported distributions. 
+\begin{theorem}[Bernstein - Representations of p-Adic groups, Thm 2(3)]
+    There is an equivilence of categories  
+    \[\text{Smooth representations of }G(F_\nu) \cong \text{Non-degenerate }\mathcal{H}(G(F_\nu)) \text{ modules}\]
+\end{theorem}
+It suffices to remark that, without defining smooth, the above representation is smooth on the local peices. We define the Hecke algebra of the finite Adeles as 
+\[\mathcal{H}(G(\A_f)) \defeq \bigotimes^{}_\nu \phantom{a}' \mathcal{H}(G(F_\nu))\]
+\todo[inline]{fix restricted tensor product}
+where the product is over the non-archimedean places. This is the restricted tensor product taken over a family of designated idempotents, for the details see
+\todo[inline]{reference}.
 
 \section{Automorphic Representations}
+Recall that if \(\)
+\todo[inline]{define subquotient}
+We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then an irreducible subquotient of this representation.
+\todo[inline]{should I make clear what a subquotient is of a g,K module..?}
+
+Because of the equivilences between such representations and the representations of the Hecke algebra we can also define an automorphic representation to be an irreducible subquotient of a representation of the \textit{global} Hecke algebra
+\[\mathcal{H}(G(\A)) \defeq \mathcal{H}(G(\A_f)) \tensor \mathcal{H}(G(F_\infty))\]
+
+It is always good to have multiple perspectives on such things. In particular we think that the \((\mathfrak{g}, K)\)- module perspective makes it more clear why these representations are interesting, as being the closest thing to the regular representation we can get. On the other hand the fact that the representations of the Hecke algebra are traditional representations makes definitions easier to state as we can import that language.
 
 \subsection{Cuspidal Representations}
-We will recal the definition of a cusp form \todo{reference the definition in the next chapter} in the next chapter.\todo{Chengjing example of isotypic subspaces}
+Recall that an automorphic form \(\phi\in \mathcal{A}(U(\A)M(F) \backslash G(\A))\) is called cuspidal  if all its constant terms vanish, see the next section for more detail.\todo[inline]{reference the definition in the next chapter}
+The space of such automorphic forms is denoted \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\). 
+
+An automorphic representation is called cuspidal if it is an irreducible subquotient of \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\).
+
+\begin{Remark}
+    This is an example of the non-algebraic nature of this theory. Here we really mean contained as sets, not as a subrepresentation. There are several more places where we really have to work up to equality, not isomorphism. If there is a way to recover this theory algebraically im interested.
+\end{Remark}
+\todo[inline]{what is meant though by all the subquotient stuff in this case though....}
+
+\subsection{Isotypic Components}
+Following the convention of \cite[II.1]{moeglinSpectralDecompositionEisenstein1995} we make two cases:
+Let \(\pi\) be an irreducible subquotient of the space \(\mathcal{A}(M(k) \backslash M(\A))\), that is \textit{not cuspidal}. Then we denote the \(\pi\) isotypic component of \(\mathcal{A}(M(k) \backslash M(\A))\) by \(\mathcal{A}(M(k) \backslash M(\A))_\pi\).
+
+If we will also need the space 
+\[\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \defeq \{\phi \in \mathcal{A}(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}(M(k) \backslash M(\A))_\pi \}\]
+where \(\phi_k: M(\A) \to \C\) is given by \(\phi_k(x) = \phi(xk)\).
+
+Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\) to be the isotypic component of \(\pi\) in \(\mathcal{A}_0(M(k) \backslash M(\A))\) and similarly we have 
+\[\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \defeq \{\phi \in \mathcal{A}_0(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}(M(k) \backslash M(\A))_{\textcolor{red}{\pi}} \}\]
+\todo[inline]{AHHHHHHHHH BUT DO I TAKE THE CUSPIDAL PART OF INSIDE HERE OR NOT AHHHHHH DEFINE YOU TERMSSSSSS AHHHH }
+\begin{Remark}
+    We cannot simply take the isotypic components (algebraic) we need to take the isotypic components after explicitly restricting the spaces. This is a knock on effect from our last remark.
+\end{Remark}
+
+There is a conjecture by Moeglin and Waldspurger that this is a superflous conventions \todo[inline]{reference Chenyan?}
+
+However Yamana has the following statement 
+\todo[inline]{Chengjing example of isotypic subspaces}
+
+
 
 \subsection{Tensor Products of Representations}
+Because a representation being cuspidal is not preserved by isomorphism of representations when we talk about tensor products of \textit{automorphic}  representations it is not enough to work with them up to isomorphism. We really need to give a set theoretic definition. We fix this convention now. 
+
+Here we will let \(\pi, \pi'\) be two automorphic representations of \(G(\A)\) though of as representations of \(\mathcal{H}(G(\A))\). Because the Hecke algbra is commutative \todo[inline]{reference} we can define a \(G(\A)\) module structure on their tensor product as follows
 
 \subsubsection{Boxed Tensors}
 
