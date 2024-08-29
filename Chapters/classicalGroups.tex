@@ -37,7 +37,7 @@ Subgroups with special properties allow us to reduce and break up problems into 
 \[G(\A) = M(\A)U(\A) K = T(\A)U(\A)K\]
 
 \subsection{Parabolics, Levis and Unipotents}
-Parabolic subgroups have two equivalent formulations, both useful.\todo[inline]{Do I need to give a reference for definitions?}
+Parabolic subgroups have two equivalent formulations, both useful.
 \begin{definition}
     A subgroup \(P\subseteq G\) is called parabolic if the following equivalent conditions hold
     \begin{itemize}
@@ -316,6 +316,7 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
         Because these are in \(\Sp\) we can find more relations among the entries than in the \(\GL\) case, we will pursue this further in the maximal case below, but to placate some we remark that \(x = 0\) and this emphasizes the duality between the upper left block and bottom right block.
     \end{example}
 
+    \label{maximal_parabolic}
     In particular maximal parabolics of \(\Sp\) are stabilizers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces.
     \[0 \subset V_\ell \subset V\]
     where \(V_\ell = span_F(e_1, ..., e_\ell)\). Then the stabilizer is 
@@ -370,7 +371,7 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
         \todo[inline]{Proof}
     \end{example}
     
-     Perhaps a more compelling reason to call these Tori is that they play the same role in the classification as the genuine tori, \(\mathbb{T}^2\), in the theory of Lie groups. \todo[inline]{example maybe idk} A subgroup that is isomorphic to a split torus and is maximal in this respect is called a maximal split torus. 
+     Perhaps a more compelling reason to call these Tori is that they play the same role in the classification as the genuine tori, \(\mathbb{T}^2\), in the theory of Lie groups. A subgroup that is isomorphic to a split torus and is maximal in this respect is called a maximal split torus. 
      \begin{example}
         The classic example of a maximal split torus is the diagonal matrices in \(\GL_n\).
      \end{example}
@@ -439,17 +440,15 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
     
     Finally it is clear that if a subgroup contains this one then it is in fact all of \(\GL_2\) and hence this is maximal. Therefore this is a Borel.
     \end{example}
-    
-    \todo[inline]{put a proof of something being a Borel}
-    
+        
     A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
     \[B = TU\]
     for a maximal torus \(T\) and unipotent \(U\).
 
     We saw that fixing a minimal parabolic is like fixing a basis in the case of classifying parabolics of classical groups. If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the standard Levi.
 
-    \subsection{Maximal Compact Subgroups}
-    Let our group be defined over the global field \(k\)\todo[inline]{fix a global convention}. We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\), note that the topology is not the Zariski topology but the one specified by \todo[inline]{give the reference. I have it somewhere later too}, this is someetimes known as the "Hausdorff" topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
+    \subsection{Maximal Compact Subgroups}\label{max_compact_subgroup}
+    Let our group be defined over the global field \(k\). We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\), note that the topology is not the Zariski topology but the one specified in \cite{conradWeilGrothendieckApproaches2012}, this is someetimes known as the "Hausdorff" topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
     \begin{itemize}
         \item First require that 
         \[K = \prod_\nu K_\nu\]

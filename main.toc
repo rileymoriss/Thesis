@@ -5,47 +5,51 @@
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
 \contentsline {subsubsection}{\(\Sp _{2n}\)}{8}{section*.7}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{10}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Maximal Compact Subgroups}{12}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Maximal Compact Subgroups}{11}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Metaplectic Covers}{12}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Automorphic Forms}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Definition and Role}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Archimedean Automorphic Form}{14}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Adelic Automorphic Form}{15}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Modular Forms}{16}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Automorphic Representations}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}At the Archimedean Places}{21}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Hecke Algebra}{22}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}At the Non-Archimedean Places}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Automorphic Representations}{23}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Cuspidal Representations}{23}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Isotypic Components}{24}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Tensor Products of Representations}{24}{subsection.3.3.3}%
-\contentsline {subsubsection}{Boxed Tensors}{24}{section*.39}%
-\contentsline {section}{\numberline {3.4}Eisenstein Series}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Spectral Decomposition}{25}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Definition and Role}{25}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}The Decomposition of the Spectrum}{25}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Residual Representations of \(\GL _n\)}{25}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}L-Functions}{25}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}In General}{25}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Standard L-Functions for Classical Groups}{25}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}L-Functions of Covering Groups}{25}{subsection.3.6.3}%
-\contentsline {chapter}{\numberline {4}Constant Terms}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Definition and Role}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Integration Lemmas}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Constant Terms of Eisenstein Series}{28}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}In General}{28}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Constant Terms of Cuspidal Eisenstein Series}{29}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Constant Term Of Eisenstein Series for Conjugate Levis}{30}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Siegel Phi Operator}{31}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Siegel Modular Forms}{31}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Automorphising}{32}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Base Case}{33}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Simplifying the Constant Term}{33}{subsection.4.4.4}%
-\contentsline {chapter}{\numberline {5}Poles of Residual Eisenstein Series}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Their Results}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Our Results}{39}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Setup}{40}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Lemma 1}{40}{section.5.4}%
+\contentsline {subsection}{\numberline {2.1.1}Archimedean Automorphic Form}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Adelic Automorphic Form}{14}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Modular Forms}{15}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Automorphic Representations}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}At the Archimedean Places}{20}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Hecke Algebra}{21}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}At the Non-Archimedean Places}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Automorphic Representations}{22}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Cuspidal Representations}{22}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Isotypic Components}{23}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Addition and Multiplication of Representations}{23}{subsection.3.3.3}%
+\contentsline {subsubsection}{Direct Sums}{24}{section*.22}%
+\contentsline {subsubsection}{Tensors}{24}{section*.23}%
+\contentsline {subsubsection}{Boxed Tensors}{24}{section*.25}%
+\contentsline {section}{\numberline {3.4}Automorphic L-Functions}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}In General}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Standard L-Functions for Classical Groups}{24}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}L-Functions of Covering Groups}{24}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Spectral Decomposition and Eisenstein Series}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Eisenstein Series}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Definition and Role}{25}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Spectral Decomposition}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Definition and Role}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}The Decomposition of the Spectrum}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Residual Representations of \(\GL _n\)}{25}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Constant Terms}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition and Role}{26}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Integration Lemmas}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Constant Terms of Eisenstein Series}{28}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}In General}{28}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constant Terms of Cuspidal Eisenstein Series}{29}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Constant Term Of Eisenstein Series for Conjugate Levis}{30}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Siegel Phi Operator}{31}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Siegel Modular Forms}{31}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Automorphising}{32}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Base Case}{33}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Simplifying the Constant Term}{33}{subsection.5.4.4}%
+\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Their Results}{38}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Our Results}{39}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Setup}{40}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Lemma 1}{40}{section.6.4}%
 \contentsline {chapter}{\numberline {A}Motivation}{43}{appendix.A}%
 \contentsline {subsection}{\numberline {A.0.1}Reminders ---- Remove Later}{43}{subsection.A.0.1}%

@@ -6,6 +6,7 @@ The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
 Warning--I didn't find a database entry for "cogdellLecturesLfunctionsConverse"
+Warning--I didn't find a database entry for "yamanaSiegelWeilFormulaQuaternionic2013"
 Warning--I didn't find a database entry for "terrasHarmonicAnalysisSymmetric2016"
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
@@ -35,7 +36,7 @@ Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
 You've used 40 entries,
             2543 wiz_defined-function locations,
-            788 strings with 11789 characters,
+            790 strings with 11867 characters,
 and the built_in function-call counts, 11940 in all, are:
 = -- 1121
 > -- 435
@@ -74,4 +75,4 @@ warning$ -- 26
 while$ -- 93
 width$ -- 44
 write$ -- 465
-(There were 28 warnings)
+(There were 29 warnings)

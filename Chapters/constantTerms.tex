@@ -1,6 +1,6 @@
 Here we will explain the role of the constant term in our calculation of poles.
 
-\section{Definition and Role}
+\section{Definition and Role} \label{cuspidal_form_definition}
 The constant term is an operation defined on a large class of functions and is supposed to generalise the constant term of a fourier expansion, we will see this later, although one may consult \cite[1.6]{bumpAutomorphicFormsRepresentations1997} for some examples as well. In particular \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995} give the definition as follows: We consider \(P=MU\) a standard parabolic of \(G\) and \(\phi: U(k)\setminus \mathbf{G} \to \C\) a measurable and locally \(L^1\) function then its constant term along \(P\) is 
 \[\phi_P :  U(\A)\setminus \mathbf{G} \to \C\]
 \[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u\]
@@ -26,7 +26,7 @@ The constant term itself is of central importance. One reason for this is that i
     Unpacking this a bit we see that an Eisenstein series satisfies the hypothesis on \(\phi\) by \cite[IV.1.9]{moeglinSpectralDecompositionEisenstein1995} \todo[inline]{make this more precise}, we think of \(D'\) as the positive open cone on which the Eisenstein series conveges, and then \(D = \C^n \setminus S \) as the rest of the cuspidal datum \(\mathfrak{P}\) on which the Eisenstein series is holomorphic (\(S\) is its set of singularities). Therefore the domain on which the Eisenstein series is holomorphic is the same as the domain on which (roughly) its constant term is holomorphic.
 
 \section{Integration Lemmas}
-\begin{Theorem}
+\begin{Theorem}\label{integrate_unitary_char}
 	If \(G\) is a locally compact Hausdorff group with a left Haar measure \(\mu\) and if \(\chi\colon G\to \mathbf C^\times\) is a non-trivial character on \(G\), then
 	\[ \intof{G}{\chi(g)}{\mu(g)} = 0. \]
 \end{Theorem}
@@ -130,7 +130,7 @@ We will use the following Lemmas to give a simplified expression of the constant
     This was all in complete generality as well. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesnt exist (its over a point).
 
     \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}
-    If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \todo[inline]{put this in the Eisenstein series section} we can use the following 
+    If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \ref{intertwining_operator} we can use the following 
     \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
         \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv\]
     \end{Lemma}
@@ -233,7 +233,7 @@ We have chosen normalisation to remove the usual factor of \(1/2\pi\) in the con
 \[\Phi(f)= \lim_{t\to \infty} f(it) =\lim_{t\to \infty} \sum_{n\geq 0} a_ne^{-2\pi nt }  =  a_0\]
 
 \subsection{Simplifying the Constant Term}
-As we saw in \todo[inline]{reference the maximal parabolic section} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+As we saw in \ref{maximal_parabolic} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
 \[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
 which can be given the explicit matrix representations 
     \[m(\gamma, A) \defeq \begin{pmatrix}
@@ -349,7 +349,7 @@ we can sub this back into our constant term\todo[inline]{Converges uniformly a p
      &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
      \intof{[H_r]}{e^{2\pi iT_{m,k}}\intof{[H_r]}{e^{2\pi i T_{m,h}} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
 \end{align*}
-Now we use that integration unitary characters lemma \todo[inline]{ref the lemma} and the fact that 
+Now we use that the integration of unitary characters is very simple \ref{integrate_unitary_char} and the fact that 
 \[s\mapsto  e^{2\pi iT_l} \]
 is a non-trivial unitary character of \(\mathrm{Sym}_{g-r}\) whenerver \(l\neq 0\) to get that 
 \[\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s} = \begin{cases}

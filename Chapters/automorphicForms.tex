@@ -1,5 +1,4 @@
 There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms. Although this has been done in several places, none suit my taste to a tee, and so we briefly present our own take on this. We intend to be terse as this material is somewhat standard.
-\todo[inline]{references}
 
 \section{Definition and Role}
 The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maas form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
@@ -7,16 +6,7 @@ The story starts with the classical modular forms, or functions on the upper hal
 
 We still do not have a good answer as to why the definition below is "the right" definition, from a mathematical perspective, as there are many places in which it could be extended or restricted and we are unable to motivate why one shouldn't consider such things. Indeed there are varying notions of automorphic form that appear for this reason and I think it is important to stress that this is "the right definition" only in so far as people have been able to prove nice theorems about them, and that when functions appear "in nature" this concept has sufficed to encompass and explain their behavior. It is the representation theoretic properties more than anything that suggest the current definition as is mentioned in \cite[1.II.3]{borelAutomorphicFormsRepresentations1979}.
 
-For concreteness we want to provide one, certainly a-historical, reason to be interested in them. It was proved by Jacquet-Langlands that all representations of reductive groups appear as sub-quotients of the regular representation on a space of automorphic forms:
-
-\begin{Theorem}[\cite{getzIntroductionAutomorphicRepresentations2024} 4.9, 8.3.5, 10.6.1]
-    Let \(G\) be a connected reductive LAG over a field \(F\).
-    \todo[inline]{actually check hypothesis on G here}
-    All smooth irreducible representations of \(G(F)\) are a sub-quotient of a parabolically induced representation from a Levi. Any irreducible sub-quotient of such a parabolically induced representation is an automorphic representation and moreover all automorphic representations appear in this way. 
-\end{Theorem}
-Thus if one is interested in reductive group representations then automorphic representations and hence automorphic forms are unavoidable.
-
-We will present three notions of automorphic form here. In the literature they are all called ``automorphic forms'' however here we will distinguish them with our own terminology for clarity.
+We will present two notions of automorphic form here. In the literature they are both called ``automorphic forms'' however here we will distinguish those that are defined only on the archimedean points as ``archimedean automorphic forms'' for clarity.
 
 \subsection{Archimedean Automorphic Form}
 Fix a global (number) field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textit{smooth}  if it is smooth in the sense of manifolds.
@@ -37,7 +27,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
     Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\) module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textit{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
 
-	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\) module is \(K_\infty\) finite if its orbit is a finite dimensional \todo[inline]{vector space over what??} space.
+	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\) module is \(K_\infty\) finite if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\) modules).
 
 	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action.  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by 
 	\[z.F(g) = \Dif{}{t}F(ge^{tz})\] 
@@ -54,7 +44,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
     \todo[inline]{Borel 1.6 gives a good explanation of the growth condition. }
 
 \subsection{Adelic Automorphic Form}
-Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out in \todo[inline]{reference the previous section}
+Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out earlier \ref{max_compact_subgroup}.
 \begin{definition}
     A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an automorphic form if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. 
 
@@ -74,12 +64,12 @@ For \(v\notin \infty\) a non-archimedean place then we say that a function \(f: 
 	\[C^\infty(G(F_\infty)) \defeq C^\infty\left(\prod_{\nu|\infty} G(F_\nu)\right)\]
 	
 	For the full Adele we define 
-	\[C^\infty(\mathbb{A}_F) \defeq C^\infty(G(F_\infty)) \otimes C^\infty(G(\mathbb{A}_f))\]
+	\[C^\infty(\mathbb{A}_F) \defeq   C^\infty(G(\mathbb{A}_f))   \otimes   C^\infty(G(F_\infty))\]
 	
 	A function on the adeles is smooth if it is in this set. Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
 
     We still consider \(Z(\mathfrak{g})\) to be the center of the universal envelpoing algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
-    \[z.(f\tensor g) = (z.f)\tensor g\]
+    \[z.(f\tensor g) = f\tensor (z.g)\]
     i.e. it acts on the archimedean places as in the setting of archimedean automorphic forms. 
 	
 	The definition of moderate growth carries over verbatim, however we change the set of places multiplied over to be all of them now.
@@ -158,13 +148,13 @@ One might ask if there is a special case in which automorphic forms yield modula
         Sometimes for \todo[inline]{what reasons...} this is exhibited as 
         \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R)\]
         this obscures the connection with the reductive group setting however because it is not obvious that 
-        \todo[inline]{and probably not even true}
+
         \begin{Lemma}
             \(\GL_2^+\) is a reductive group over \Q. 
         \end{Lemma}
         \proofbar{
             It is the connected component of the identity and therefore a closed subgroup.
-            \todo[inline]{references for these bold claims?} Therefore by Matsushima's criterion (\cite{arzhantsevInvariantIdealsMatsushima2005} for references) we have that \(\GL_2/\GL_2^+ \) is affine iff \(\GL_2^+ \) is reductive. But the thing on the left is the constant group scheme \(\Z/2\Z\) which is affine. 
+            Therefore by Matsushima's criterion  \cite{arzhantsevInvariantIdealsMatsushima2005} we have that \(\GL_2/\GL_2^+ \) is affine iff \(\GL_2^+ \) is reductive. But the thing on the left is the constant group scheme \(\Z/2\Z\) which is affine. 
         }
     \end{remark}
 
