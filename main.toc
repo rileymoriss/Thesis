@@ -30,22 +30,22 @@
 \contentsline {subsection}{\numberline {4.2.1}Definition and Role}{25}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}The Decomposition of the Spectrum}{25}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Residual Representations of \(\GL _n\)}{25}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Constant Terms}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Definition and Role}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Integration Lemmas}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Constant Terms of Eisenstein Series}{28}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}In General}{28}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Constant Terms of Cuspidal Eisenstein Series}{29}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Constant Term Of Eisenstein Series for Conjugate Levis}{30}{subsection.5.3.3}%
-\contentsline {section}{\numberline {5.4}Siegel Phi Operator}{31}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Siegel Modular Forms}{31}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Automorphising}{32}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Base Case}{33}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Simplifying the Constant Term}{33}{subsection.5.4.4}%
-\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Their Results}{38}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Our Results}{39}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Setup}{40}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Lemma 1}{40}{section.6.4}%
+\contentsline {chapter}{\numberline {5}Constant Terms}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition and Role}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Integration Lemmas}{28}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Constant Terms of Eisenstein Series}{29}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}In General}{29}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constant Terms of Cuspidal Eisenstein Series}{30}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Constant Term Of Eisenstein Series for Conjugate Levis}{31}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Siegel Phi Operator}{32}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Siegel Modular Forms}{32}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Automorphising}{33}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Base Case}{34}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Simplifying the Constant Term}{34}{subsection.5.4.4}%
+\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The Statements}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Computing the Constant Term}{40}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Analysing the Intertwining Operator}{42}{section.6.3}%
+\contentsline {section}{\numberline {6.4}The Metaplectic Generalisation}{42}{section.6.4}%
 \contentsline {chapter}{\numberline {A}Motivation}{43}{appendix.A}%
 \contentsline {subsection}{\numberline {A.0.1}Reminders ---- Remove Later}{43}{subsection.A.0.1}%

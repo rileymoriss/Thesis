@@ -11,3 +11,29 @@ This is another one of the tools that can be used to compartmentalise problems i
 \subsection{The Decomposition of the Spectrum}
 
 \subsection{Residual Representations of \(\GL_n\)}
+
+
+In the setup we used that \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\) the first step is to make sure that this is actually true
+\begin{Lemma}
+        \( X_{M_r}^{\Mp_{2n}(\A)}\) is at most a one dimensional \C vector space. 
+    \end{Lemma}
+    \proofbar{
+         First of all we have that \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}
+         \[ X_{M_r}^{\Mp_{2n}(\A)} \subseteq X_{M_r} \cong \mathfrak{a}_{M_r}^*\defeq Rat(M_r) \tensor_\Z \C\]
+        thus it is clearly sufficent to bound the dimension of \(\mathfrak{a}_{M_r}^*\) as a \C vector space, moreover this dimension agrees with the dimension of \(Rat(M_r)\) as a free \Z module. 
+
+        Thus we compute \(\dim_\Z(Rat(M_r))\):
+        \begin{equation*}
+            \begin{aligned}
+                Rat(M_r) &= Rat(\GL_r \times \Sp_{2m}) \\
+                         &= \Hom(\GL_r \times \Sp_{2m}, \mathbb{G}_m) \\
+                         (2)&\cong \Hom(\mathrm{Ab}(\GL_r \times \Sp_{2m}), \mathbb{G}_m) \\
+                         (1)&\cong \Hom(\mathrm{Ab}(\GL_r) \times \mathrm{Ab}(\Sp_{2m}), \mathbb{G}_m) \\
+                         (3)&\cong \Hom(\mathbb{G}_m \times 1, \mathbb{G}_m) \\
+                         &\cong \Z
+            \end{aligned}
+        \end{equation*}
+        in (2) we have used the universal property of the abelianization \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is abelian. (1) is that the abelianization commutes with direct products (citation as comment in Tex). (3) is because \(\Sp\) is a perfect group.
+        %https://groupprops.subwiki.org/wiki/Symplectic_group_is_perfect
+        %https://mathoverflow.net/questions/35713/abelianization-of-a-semidirect-product
+}\todo[inline]{I havent shown that it is not trivial...}
