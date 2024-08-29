@@ -23,10 +23,6 @@
 \contentsline {subsubsection}{Direct Sums}{24}{section*.22}%
 \contentsline {subsubsection}{Tensors}{24}{section*.23}%
 \contentsline {subsubsection}{Boxed Tensors}{24}{section*.25}%
-\contentsline {section}{\numberline {3.4}Automorphic L-Functions}{24}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}In General}{24}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Standard L-Functions for Classical Groups}{24}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}L-Functions of Covering Groups}{24}{subsection.3.4.3}%
 \contentsline {chapter}{\numberline {4}Spectral Decomposition and Eisenstein Series}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Eisenstein Series}{25}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Definition and Role}{25}{subsection.4.1.1}%
