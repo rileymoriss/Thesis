@@ -42,7 +42,7 @@ Parabolic subgroups have two equivalent formulations, both useful.
     A subgroup \(P\subseteq G\) is called \textbf{parabolic} if the following equivalent conditions hold
     \begin{itemize}
         \item \(G/P\) is a complete variety
-        \item \(P\) contains a Borel (see \todo{insert the reference to below}).
+        \item \(P\) contains a Borel (see \ref{borel_torus}).
     \end{itemize}
 \end{definition}
 
@@ -62,7 +62,7 @@ Then we have the following fact / definition:
     where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} (unique up to conjugacy).
 \end{Lemma}
 
-Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' \todo{ref getz and hahn} that we wont explicitly talk about here but which is happening secretly in the background in \todo{ref later section definig isotypic subspaces..}
+Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' \todo{ref for this name or more details?} that we wont explicitly talk about here but which is happening secretly in the background in \ref{automorphic_isotypic_subspaces}.
 
 \begin{Remark}[Bad Etymology]
     The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo[inline]{this is probably known by now.} He says that 
@@ -192,10 +192,8 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
     \end{example}
 
 
-    So what is happening here, for each piece of the flag you complete the diagonal that the basis vectors are in into the box that they span and you say that everything \textit{directly} below that box must be zero. 
-    \todo[inline]{refer to the figure in Latex}
-    
-
+    So what is happening here, for each piece of the flag you complete the diagonal that the basis vectors are in into the box that they span and you say that everything \textit{directly} below that box must be zero.
+    \vspace*{5mm}
 
 
     \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -249,6 +247,8 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
      &  &  &  & 
     \end{pmatrix}.$};
     \end{tikzpicture}
+    \[\text{Figure 1.}\]
+    %\vspace*{3mm}
 
     We can also ask what is the unipotent radical and Levi of these parabolics and we have that in general the staircase 
    \[\begin{pmatrix}
@@ -348,7 +348,7 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
     \end{pmatrix},\]
     with relations among the entries.
 
-    \subsection{Borel and Torus}
+    \subsection{Borel and Torus}\label{borel_torus}
     One may find it helpful to understand these subgroups to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}, however it is not necessary. 
 
     \begin{definition}

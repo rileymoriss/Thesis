@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {1.1}Definition}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(GL_n\)}{6}{section*.10}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{8}{section*.12}%
+\contentsline {subsubsection}{The Example of \(GL_n\)}{6}{section*.8}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{8}{section*.9}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{10}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Maximal Compact Subgroups}{12}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Metaplectic Covers}{12}{section.1.3}%
