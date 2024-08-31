@@ -48,7 +48,57 @@ Parabolic subgroups have two equivalent formulations, both useful.
 
 Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms, as we will want to compare the values along some parabolics.
 
-\begin{example}[\(\GL_n\)]
+Parabolics also have the nice property that they split into a semi-direct product 
+where one of the factors is a reductive group \(M\). For this recall the definition
+\begin{definition}\label{unipotent_radical_definition}
+    A subgroup is \textbf{unipotent} if all its elements are unipotent.
+    The maximal closed, connected, unipotent subgroup \(U\subseteq G\) is the \textbf{unipotent radical} of \(G\). A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial.
+\end{definition}
+Then we have the following fact / definition:
+
+\begin{Lemma}[\cite{borelLinearAlgebraicGroups1991} 11.22]
+    There is a split exact sequence (of algebraic groups)
+    \[0 \to U \to P \to M \to 0,\]
+    where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} (unique up to conjugacy).
+\end{Lemma}
+
+Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' \todo{ref getz and hahn} that we wont explicitly talk about here but which is happening secretly in the background in \todo{ref later section definig isotypic subspaces..}
+
+\begin{Remark}[Bad Etymology]
+    The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo[inline]{this is probably known by now.} He says that 
+    \begin{quote}
+        Lorsque n'est pas compact, il est non moins facile de conjecturer qu’on doit pouvoir définir quelque chose d’analogue aux classiques ``pointes paraboliques'', lesquelles doivent correspondre à des  sous-groupes unipotents non triviaux de \(G_\Q\)
+    \end{quote}
+    which roughly (google) translates to that one can also conjecture that non-trivial unipotent elements should correspond to ``parabolic points'' in a fundamental domain.
+
+    In the case of modular forms the fundamental domain is \(\mathcal{H} = \SL_2(\R)/SO_2(\R)\) (using orbit stabiliser theorem). We have the classification of elements of  \(\SL_2(\R) -\{\pm 1\}\) as in \cite[3.5]{borelAutomorphicFormsSL21997} via their trace
+    \[g\text{ is of type } \;\;\; 
+    \begin{cases}
+        \text{Elliptic if} & \frac{1}{2}|tr(g)| < 1 \\
+        \text{Parabolic if} & \frac{1}{2}|tr(g)| = 1 \\
+        \text{Hyperbolic if} & \frac{1}{2}|tr(g)| > 1 \\
+    \end{cases}
+    .\]
+    Being parabolic is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
+    \[\begin{pmatrix}
+        1 & 1\\
+        0 & 1
+    \end{pmatrix},\;\;\; \pm\begin{pmatrix}
+        1 & 0\\
+        0 & 1
+    \end{pmatrix}.\]
+    Clearly the standard parabolic 
+    \[\begin{pmatrix}
+        a & b \\
+         & a\inv
+    \end{pmatrix} \subseteq \SL_2(\R),\]
+    contains these matrices, and moreover all parabolics are \textit{conjugate} to this parabolic. Hence all parabolic elements are contained in a parabolic subgroup. This classification, it seems, relies entirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity.
+
+    To connect this to Godement's concept we have two facts from classical geometry. Proper parabolic subgroups of \(\SL_2(\R)\) can be realised as the stabilisers of lines in \(\R^2\) under the standard action of \(\SL_2\) on \(\R^2\) \cite[2.6]{borelAutomorphicFormsSL21997} and moreover some an element of \(\SL_2(\R)\) is parabolic if and only if it has one fixed point on \(\partial\bar{\mathcal{H}}\) and none on \(\mathcal{H}\) \cite[3.5]{borelAutomorphicFormsSL21997}. 
+
+    The take away is that perhaps the folklore of the name being for ``para-Borelic'', as in kind of a Borel, is probably a better way of thinking of them.
+\end{Remark}
+\subsubsection{The Example of \(GL_n\)}
     The parabolic subgroups of \(\GL\) are given by stabilisers of flags, \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}\cite{conradStandardParabolicSubgroups}.
     A flag for \(F^n\) is a sequence of subspaces
     \[0\subset W_1 \subset \cdots \subset W_r = F^n,\]
@@ -140,6 +190,8 @@ Completeness is the algebro-geometric analogue of compact, which is always a des
         \end{pmatrix}.\]
 
     \end{example}
+
+
     So what is happening here, for each piece of the flag you complete the diagonal that the basis vectors are in into the box that they span and you say that everything \textit{directly} below that box must be zero. 
     \todo[inline]{refer to the figure in Latex}
     
@@ -196,85 +248,28 @@ Completeness is the algebro-geometric analogue of compact, which is always a des
      &  &  &  & \\
      &  &  &  & 
     \end{pmatrix}.$};
-    
-    
     \end{tikzpicture}
 
-\end{example}
+    We can also ask what is the unipotent radical and Levi of these parabolics and we have that in general the staircase 
+   \[\begin{pmatrix}
+       A_{11} && \ast\\
+        & \ddots & \\
+        && A_{rr}
+   \end{pmatrix},\]
+   has unipotent \(N\) and Levi \(M\) given by 
+   \[N = \begin{pmatrix}
+       I_{11} && \ast\\
+        & \ddots & \\
+        && I_{rr}
+   \end{pmatrix}, \quad M = \begin{pmatrix}
+       A_{11} && 0\\
+        & \ddots & \\
+        && A_{rr}
+   \end{pmatrix}.\]
+   Then 
+   \[P = M\ltimes U.\]
 
-Parabolics also have the nice property that they split into a semi-direct product 
-where one of the factors is a reductive group \(M\). For this recall the definition
-\begin{definition}\label{unipotent_radical_definition}
-    A subgroup is \textbf{unipotent} if all its elements are unipotent.
-    The maximal closed, connected, unipotent subgroup \(U\subseteq G\) is the \textbf{unipotent radical} of \(G\). A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial.
-\end{definition}
-Then we have the following fact / definition:
-
-\begin{Lemma}[\cite{borelLinearAlgebraicGroups1991} 11.22]
-    There is a split exact sequence (of algebraic groups)
-    \[0 \to U \to P \to M \to 0,\]
-    where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} (unique up to conjugacy).
-\end{Lemma}
-
-\begin{example}
-     The staircase 
-    \[\begin{pmatrix}
-        A_{11} && \ast\\
-         & \ddots & \\
-         && A_{rr}
-    \end{pmatrix},\]
-    has unipotent \(N\) and Levi \(M\) given by 
-    \[N = \begin{pmatrix}
-        I_{11} && \ast\\
-         & \ddots & \\
-         && I_{rr}
-    \end{pmatrix}, \quad M = \begin{pmatrix}
-        A_{11} && 0\\
-         & \ddots & \\
-         && A_{rr}
-    \end{pmatrix}.\]
-    Then 
-    \[P = M\ltimes U.\]
-\end{example}
-
-Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' \todo{ref getz and hahn} that we wont explicitly talk about here but which is happening secretly in the background in \todo{ref later section definig isotypic subspaces..}
-
-\begin{Remark}[Bad Etymology]
-    The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo[inline]{this is probably known by now.} He says that 
-    \begin{quote}
-        Lorsque n'est pas compact, il est non moins facile de conjecturer qu’on doit pouvoir définir quelque chose d’analogue aux classiques ``pointes paraboliques'', lesquelles doivent correspondre à des  sous-groupes unipotents non triviaux de \(G_\Q\)
-    \end{quote}
-    which roughly (google) translates to that one can also conjecture that non-trivial unipotent elements should correspond to ``parabolic points'' in a fundamental domain.
-
-    In the case of modular forms the fundamental domain is \(\mathcal{H} = \SL_2(\R)/SO_2(\R)\) (using orbit stabiliser theorem). We have the classification of elements of  \(\SL_2(\R) -\{\pm 1\}\) as in \cite[3.5]{borelAutomorphicFormsSL21997} via their trace
-    \[g\text{ is of type } \;\;\; 
-    \begin{cases}
-        \text{Elliptic if} & \frac{1}{2}|tr(g)| < 1 \\
-        \text{Parabolic if} & \frac{1}{2}|tr(g)| = 1 \\
-        \text{Hyperbolic if} & \frac{1}{2}|tr(g)| > 1 \\
-    \end{cases}
-    .\]
-    Being parabolic is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
-    \[\begin{pmatrix}
-        1 & 1\\
-        0 & 1
-    \end{pmatrix},\;\;\; \pm\begin{pmatrix}
-        1 & 0\\
-        0 & 1
-    \end{pmatrix}.\]
-    Clearly the standard parabolic 
-    \[\begin{pmatrix}
-        a & b \\
-         & a\inv
-    \end{pmatrix} \subseteq \SL_2(\R),\]
-    contains these matrices, and moreover all parabolics are \textit{conjugate} to this parabolic. Hence all parabolic elements are contained in a parabolic subgroup. This classification, it seems, relies entirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity.
-
-    To connect this to Godement's concept we have two facts from classical geometry. Proper parabolic subgroups of \(\SL_2(\R)\) can be realised as the stabilisers of lines in \(\R^2\) under the standard action of \(\SL_2\) on \(\R^2\) \cite[2.6]{borelAutomorphicFormsSL21997} and moreover some an element of \(\SL_2(\R)\) is parabolic if and only if it has one fixed point on \(\partial\bar{\mathcal{H}}\) and none on \(\mathcal{H}\) \cite[3.5]{borelAutomorphicFormsSL21997}. 
-
-    The take away is that perhaps the folklore of the name being for ``para-Borelic'', as in kind of a Borel, is probably a better way of thinking of them.
-\end{Remark}
-
-\subsubsection{\(\Sp_{2n}\)}
+\subsubsection{The Example of \(\Sp_{2n}\)}
 The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use this later and so we present the details here. Following \cite{conradStandardParabolicSubgroups} and the very explicit calculations in  \cite[\S 8]{BuildingsClassicalGroups}. We let \((V, \inner{,})\) be a symplectic space as above and \(Sp(V)\) is the automorphisms preserving the form.
 \begin{example}
     \[\Sp_{2n} = \{M\in \GL_{2n} :\forall a,b \;\; \inner{Ma, Mb} = \inner{a,b}\},\]
