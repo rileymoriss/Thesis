@@ -1,24 +1,14 @@
-\cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}
 \section{Eisenstein Series}
-\subsection{Definition and Role}\label{intertwining_operator}
+As usual we fix a connected reductive group G defined over a number field F, with a Borel B, a standard parabolic with Levi decomposition \(P = MU\). 
 
+Following the setup in \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995} we denote \(\mathfrak{a}_M^* = X_M\) the set of ....\todo{}
 
-\section{Spectral Decomposition}\label{spectral_decomposition}
-\subsection{Definition and Role}
-This is another one of the tools that can be used to compartmentalise problems in automorphic forms, by dealing with representations that appear in different parts of the spectrum. 
-\todo[inline]{give shahidis conjecture on plancherel measures some time. Make sure to talk about his proof based on a reasonable hypothesis. }
+Then we define \(X_M^G\) as the ....
 
-\subsection{The Decomposition of the Spectrum}
+\begin{example}
+    For the maximal parabolic \(P_r\) with Levi \(M_r\) of \(\Sp_{2n}\) we have that \( X_{M_r}^{\Mp_{2n}(\A)}\) is at most a one dimensional \C vector space. 
 
-\subsection{Residual Representations of \(\GL_n\)}
-
-
-In the setup we used that \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\) the first step is to make sure that this is actually true
-\begin{Lemma}
-        \( X_{M_r}^{\Mp_{2n}(\A)}\) is at most a one dimensional \C vector space. 
-    \end{Lemma}
-    \proofbar{
-         First of all we have that \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}
+    First of all we have that \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}
          \[ X_{M_r}^{\Mp_{2n}(\A)} \subseteq X_{M_r} \cong \mathfrak{a}_{M_r}^*\defeq Rat(M_r) \tensor_\Z \C\]
         thus it is clearly sufficent to bound the dimension of \(\mathfrak{a}_{M_r}^*\) as a \C vector space, moreover this dimension agrees with the dimension of \(Rat(M_r)\) as a free \Z module. 
 
@@ -36,4 +26,37 @@ In the setup we used that \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\) the first step is
         in (2) we have used the universal property of the abelianization \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is abelian. (1) is that the abelianization commutes with direct products (citation as comment in Tex). (3) is because \(\Sp\) is a perfect group.
         %https://groupprops.subwiki.org/wiki/Symplectic_group_is_perfect
         %https://mathoverflow.net/questions/35713/abelianization-of-a-semidirect-product
-}\todo[inline]{I havent shown that it is not trivial...}
+\end{example}
+There is the natural map \(m_P\) ...\todo{}
+
+Now if we take the collection of irreducible automorphic representatinos of \(M\), call it \(\hat{\mathcal{A}}\), then there is an action of \(X_M^G\) on \(\hat{\mathcal{A}}\) given by tensoring. Then \(\hat{\mathcal{A}}\) decomposes as a disjoint union of its orbits. Consider the orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\), then by definition \(X_M^G\) acts transitively but it also acts freely \cite[II.1]{moeglinSpectralDecompositionEisenstein1995}. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the comoplex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
+
+Now we will define an Eisenstein series: Let \(\mathfrak{P}\) be as above, let \(\pi\in \mathfrak{P}\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\), then \(\lambda\in X_M^G\) acts on \(\phi_\pi\) by 
+\[\lambda.\phi_\pi = \lambda \comp m_P\phi_\pi\]
+which is then an element of \(\mathcal{A}(U(\A)M(k)\backslash G(\A))_{\pi\tensor \lambda}\). Finally we have the Eisenstein series which is defined by the following sum
+\[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi_\pi(\gamma g)\]
+whenever it is convergent. The fisrt thing to note is that for a fixed \(\phi\) there is an open set in \(X_M^G\) and a compact subset of \(G(k)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
+\todo[inline]{They say its an automorphic form here but the compact set isnt all of G(\A) so i dont know how to interpret that...>}
+
+If \(P = MU, P' = M'U'\) are two standard parabolics of \(G\) that are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\)
+Then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representaitons of \(M'\).
+
+Then the Eisenstein series is closely related (through its constant terms \ref{constant_conjugate_levi}) to the operator
+\[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(k)\cap wU(k)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du\]
+where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\).
+
+The key properties of both the Eisenstien series and this operator can be found in \cite[IV.1.8, IV.1.9, IV.1.10, IV.1.11]{moeglinSpectralDecompositionEisenstein1995}. Most importantly as a function of \(\mathfrak{P}\) it can be shown that in the sense of Frechet spaces they both have a meromorphic continuation to all of \(\mathfrak{P}\). This was also given a second ``soft proof'' more recently in \cite{bernsteinMeromorphicContinuationEisenstein2022}, with the spectral decomposition that follows from it also being worked out in \cite{delormeSpectralTheoremLanglands2021}.
+
+We are not really in a position to convey the true importance of these objects in the theory of automorphic forms, however we will make some comments. First some surveys are \cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}, \cite{kimEISENSTEINSERIESTHEIR}, \cite{jiangResiduesEisensteinSeries2008a}. To see the relation to the classical Eisenstein series there is \cite{garrettTransitionEisensteinSeries2016}. One thing that Eisenstein series do, as in the theory of modular forms, is that they furnish us with quasi-concrete examples. If we have an automorphic form then the Eisenstein series is on occassion also an automorphic form and so we can multiply our examples. Another reason that these functions are important is through their normalisation and constant terms, in which products of L functions appear. This has been a fruitful method for proving theorems about L-functions as in \cite{shahidiEisensteinSeriesAutomorphic2010}\cite{pollackRANKINSELBERGMETHODUSER}\cite{arthurEisensteinSeriesTrace1979}.
+
+\section{Spectral Decomposition}\label{spectral_decomposition}
+\subsection{The Decomposition of the Spectrum}
+This is another one of the tools that can be used to compartmentalise problems in automorphic forms, by dealing with representations that appear in different parts of the spectrum. 
+\todo[inline]{give shahidis conjecture on plancherel measures some time. Make sure to talk about his proof based on a reasonable hypothesis. }
+
+\cite{kimEISENSTEINSERIESTHEIR}
+
+
+\subsection{Residual Representations of \(\GL_n\)}
+
+\section{Normalisation and Automorphic L-Functions}

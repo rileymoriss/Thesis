@@ -17,6 +17,11 @@ Armand Borel and W.~Casselman.
 \newblock Number Volume 33 in Proceedings of Symposia in Pure Mathematics.
   American Mathematical Society, Providence (Rhode Island), 1979.
 
+\bibitem[BL22]{bernsteinMeromorphicContinuationEisenstein2022}
+Joseph Bernstein and Erez Lapid.
+\newblock On the meromorphic continuation of {{Eisenstein}} series, February
+  2022.
+
 \bibitem[Boo]{booherVIEWINGMODULARFORMS}
 Jeremy Booher.
 \newblock {{VIEWING MODULAR FORMS AS AUTOMORPHIC REPRESENTATIONS}}.
@@ -69,6 +74,10 @@ Brian Conrad.
 \newblock Weil and {{Grothendieck}} approaches to adelic points.
 \newblock {\em L'Enseignement Math{\'e}matique}, 58(1):61--97, June 2012.
 
+\bibitem[Del21]{delormeSpectralTheoremLanglands2021}
+Patrick Delorme.
+\newblock On the spectral {{Theorem}} of {{Langlands}}, April 2021.
+
 \bibitem[DS05]{diamondFirstCourseModular2005}
 Fred Diamond and Jerry~Michael Shurman.
 \newblock {\em A First Course in Modular Forms}.
@@ -101,6 +110,11 @@ Paul Garrett.
 Paul Garrett.
 \newblock Transition: {{Eisenstein}} series on adele groups.
 \newblock 2016.
+
+\bibitem[GGW17]{ganLgroupsLanglandsProgram2017}
+Wee~Teck Gan, Fan Gao, and Martin~H. Weissman.
+\newblock L-groups and the {{Langlands}} program for covering groups: A
+  historical introduction, May 2017.
 
 \bibitem[GH24]{getzIntroductionAutomorphicRepresentations2024}
 Jayce~R. Getz and Heekyoung Hahn.
@@ -139,10 +153,25 @@ Brian~C. Hall.
   {{Mathematics}}}.
 \newblock Springer International Publishing, Cham, 2015.
 
+\bibitem[Jia08]{jiangResiduesEisensteinSeries2008a}
+Dihua Jiang.
+\newblock Residues of {{Eisenstein Series}} and {{Related Problems}}.
+\newblock In Wee~Teck Gan, Stephen~S. Kudla, and Yuri Tschinkel, editors, {\em
+  Eisenstein {{Series}} and {{Applications}}}, volume 258, pages 187--204.
+  Birkh{\"a}user Boston, Boston, MA, 2008.
+
 \bibitem[JLZ13]{jiangPolesCertainResidual2013}
 Dihua Jiang, Baiying Liu, and Lei Zhang.
 \newblock Poles of certain residual {{Eisenstein}} series of classical groups.
 \newblock {\em Pacific Journal of Mathematics}, 264(1):83--123, July 2013.
+
+\bibitem[Kim]{kimEISENSTEINSERIESTHEIR}
+Henry~H Kim.
+\newblock {{EISENSTEIN SERIES AND THEIR APPLICATIONS}}.
+
+\bibitem[Kud]{kudlaNOTESLOCALTHETA}
+Stephen~S Kudla.
+\newblock {{NOTES ON THE LOCAL THETA CORRESPONDENCE}}.
 
 \bibitem[Lap22]{lapidPerspectivesEisensteinSeries2022}
 Erez Lapid.
@@ -187,6 +216,10 @@ C.~Moeglin and J.~L. Waldspurger.
 Notes for class on algebraic groups.pdf.
 \newblock
   https://users.math.msu.edu/users/ruiterj2/Math/Documents/Summer\%202019/Algebraic\%20Groups/Notes\%20for\%20class\%20on\%20algebraic\%20groups.pdf.
+
+\bibitem[Pol]{pollackRANKINSELBERGMETHODUSER}
+Aaron Pollack.
+\newblock {{THE RANKIN-SELBERG METHOD}}: {{A USER}}'{{S GUIDE}}.
 
 \bibitem[RS]{renardREPRESENTATIONSGROUPESREDUCTIFS}
 David Renard and Laurent Schwartz.

@@ -1,6 +1,6 @@
-The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and needed later. In particular we want to draw attention to what we think of as the "non-algebraic" nature of the representation theory.
-
-\section{At the Archimedean Places}
+The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and needed later. In particular we want to draw attention to what we think of as the ``non-algebraic'' nature of the representation theory.
+\section{Local Representation Theory}
+\subsection{At the Archimedean Places}
 What we have called automorphic forms are sometimes refered to as ``smooth K-finite automorphic forms'' \cite[2.2]{cogdellLecturesLfunctionsConverse}.
 We want to consider the right regular action of \(G(\A)\) on \(\mathcal{A}()\), unfortunately this space is not stable under this action. The problem is in the \(K\)-finiteness in the infinite places. 
 
@@ -36,6 +36,10 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules. This i
 \end{remark}
 Now one can check \todo[inline]{reference} that the space of archimedean automorphic forms is in fact a \((\mathfrak{g}, K_\infty)\)-module, under the representations that we have already specified; namely the regular action given by \(K\) and the representation that we defined when talking about the center of the enveloping algebra.\todo[inline]{linnk to the other sections}
 
+\subsection{At the Non-Archimedean Places}
+As we noted above the right regular representation on the space of automorphic forms is well defined for the finite places i.e. 
+if \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-archimedean.
+
 \subsection{Hecke Algebra}
 Following \cite[I.II]{borelAutomorphicFormsRepresentations1979}. The Hecke algebra \(\mathcal{H}(G(F_\infty), K)\) is the convolution algebra of distribitions on \(G(F_\infty)\) that are supported in \(K\)
 
@@ -43,11 +47,7 @@ Following \cite[I.II]{borelAutomorphicFormsRepresentations1979}. The Hecke algeb
     \todo[inline]{Make precise teh realtion between this hecke algebra and g,K modules...}
 \end{Theorem}
 
-\section{At the Non-Archimedean Places}
-As we noted above the right regular representation on the space of automorphic forms is well defined for the finite places i.e. 
-if \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-archimedean.
-
-From the theory of \(p\)-adic representations we now recall the definition of the local Hecke algebra. For \(G(F_\nu)\) the Hecke algebra \(\mathcal{H}(G(F_\nu))\) is the \C-algebra of locally constant compactly supported distributions. 
+From the theory of \(p\)-adic representations we now recall the definition of the local Hecke algebra when \(\nu\) is non-archemedean. For \(G(F_\nu)\) the Hecke algebra \(\mathcal{H}(G(F_\nu))\) is the \C-algebra of locally constant compactly supported distributions. 
 \begin{theorem}[Bernstein - Representations of p-Adic groups, Thm 2(3)]
     There is an equivilence of categories  
     \[\text{Smooth representations of }G(F_\nu) \cong \text{Non-degenerate }\mathcal{H}(G(F_\nu)) \text{ modules}\]
@@ -58,6 +58,8 @@ It suffices to remark that, without defining smooth, the above representation is
 where the product is over the non-archimedean places. This is the restricted tensor product taken over a family of designated idempotents, for the details see
 \todo[inline]{reference}.
 
+The point of the Hecke algebra, in the context of this work, isnt to ``look inside'' but simply know that the automorphic representations can be thought of as authentic representations of some commutative algebra. This is merely a convenience for stating definitons in later sections.
+
 \section{Automorphic Representations}
 Recall that if \(A\) is an \(R\) module and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then an irreducible subquotient of this representation.
 \begin{remark}
@@ -67,7 +69,7 @@ Recall that if \(A\) is an \(R\) module and we have the inclusions of \(R\) modu
 Because of the equivilences between such representations and the representations of the Hecke algebra we can also define an automorphic representation to be an irreducible subquotient of a representation of the \textit{global} Hecke algebra
 \[\mathcal{H}(G(\A)) \defeq \mathcal{H}(G(\A_f)) \tensor \mathcal{H}(G(F_\infty))\]
 
-It is always good to have multiple perspectives on such things. In particular we think that the \((\mathfrak{g}, K)\)- module perspective makes it more clear why these representations are interesting, as being the closest thing to the regular representation we can get. On the other hand the fact that the representations of the Hecke algebra are traditional representations makes definitions easier to state as we can import that language. We have been a bit terse with the Hecke algbera becuase in the context of this work the point of the Hecke algebra isnt to ``look inside'' but simply know that the automorphic representations can be thought of as authentic representations of some commutative algebra. This is merely a convenience for stating definitons in later sections.
+It is always good to have multiple perspectives on such things. In particular we think that the \((\mathfrak{g}, K)\)- module perspective makes it more clear why these representations are interesting, as being the closest thing to the regular representation we can get. On the other hand the fact that the representations of the Hecke algebra are traditional representations makes definitions easier to state as we can import that language. 
 
 \begin{example}
     It is very hard to really write down something explicit. One thing that we can do is take a modular form \(f\). Then we know how to associate a concrete automorphic form \(\tilde{f}\). To this (or any fixed automorphic form) we have an automorphic representation given by acting on this vector:
@@ -97,6 +99,8 @@ Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\)
 \todo[inline]{AHHHHHHHHH BUT DO I TAKE THE CUSPIDAL PART OF INSIDE HERE OR NOT AHHHHHH DEFINE YOU TERMSSSSSS AHHHH }
 \begin{Remark}
     We cannot simply take the isotypic components we need to take the isotypic components after explicitly restricting the spaces. This is a knock on effect from our last remark.
+
+    This is also true for things like taking tensor products, direct sums etc of representations. If one wants to say that the tensor of cuspidal representations is cuspidal then you really need to fix what you mean by the tensor, set theoretically. There is a usual construction of a tensor product that is indeed what is meant, but it is important becuase this thing is only unique \textit{up to isomorphism} which doesn not preserve cuspidality.
 \end{Remark}
 
 The point is that we want the isotypic component corresponding to a cuspidal representation to be cuspidal, however this just might not be the case. 
@@ -104,17 +108,3 @@ Yamana and Teck Gan have a counter example when one allows unitary groups over d
 
 If we restrict to the cases dealt with in for instance \cite{moeglinSpectralDecompositionEisenstein1995}, namely not dealing with quarternions, then we have been told that this is an open problem whether or not this restriction is superflous. 
 \todo[inline]{There is a conjecture by Moeglin and Waldspurger that this is a superflous conventions ?? reference Chenyan? }
-
-
-\subsection{Addition and Multiplication of Representations}
-Because a representation being cuspidal is not preserved by isomorphism of representations when we talk about constructions with \textit{automorphic}  representations it is not enough to work with them up to isomorphism. We really need to give a set theoretic definition. We fix these conventions now. 
-
-Here we will let \(\pi, \pi'\) be two automorphic representations of \(G(\A)\) though of as representations of \(\mathcal{H}(G(\A))\). 
-
-\subsubsection{Direct Sums}
-
-\subsubsection{Tensors}
-Because the Hecke algbra is commutative \todo[inline]{reference} we can define a \(G(\A)\) module structure on their tensor product as follows
-
-\subsubsection{Boxed Tensors}
-

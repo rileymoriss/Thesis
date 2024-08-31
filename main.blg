@@ -24,6 +24,10 @@ Warning--empty journal in garrettTransitionEisensteinSeries2016
 Warning--empty journal in godementGroupesLineairesAlgebriques
 Warning--empty year in godementGroupesLineairesAlgebriques
 Warning--empty journal in grenierANALOGUESIEGELXOPERATOR2024
+Warning--empty journal in kimEISENSTEINSERIESTHEIR
+Warning--empty year in kimEISENSTEINSERIESTHEIR
+Warning--empty journal in kudlaNOTESLOCALTHETA
+Warning--empty year in kudlaNOTESLOCALTHETA
 Warning--empty journal in makisumiStructureTheoryReductive
 Warning--empty year in makisumiStructureTheoryReductive
 Warning--empty journal in milneBasicTheoryAffine
@@ -32,47 +36,49 @@ Warning--empty journal in milneLieAlgebrasAlgebraic
 Warning--empty year in milneLieAlgebrasAlgebraic
 Warning--empty journal in malleLinearAlgebraicGroups
 Warning--empty year in malleLinearAlgebraicGroups
+Warning--empty journal in pollackRANKINSELBERGMETHODUSER
+Warning--empty year in pollackRANKINSELBERGMETHODUSER
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 40 entries,
+You've used 47 entries,
             2543 wiz_defined-function locations,
-            790 strings with 11867 characters,
-and the built_in function-call counts, 11940 in all, are:
-= -- 1121
-> -- 435
-< -- 36
-+ -- 133
-- -- 126
-* -- 772
-:= -- 1942
-add.period$ -- 110
-call.type$ -- 40
-change.case$ -- 197
-chr.to.int$ -- 39
-cite$ -- 70
-duplicate$ -- 576
-empty$ -- 988
-format.name$ -- 188
-if$ -- 2429
+            826 strings with 13018 characters,
+and the built_in function-call counts, 14205 in all, are:
+= -- 1332
+> -- 530
+< -- 43
++ -- 161
+- -- 154
+* -- 915
+:= -- 2303
+add.period$ -- 126
+call.type$ -- 47
+change.case$ -- 235
+chr.to.int$ -- 46
+cite$ -- 83
+duplicate$ -- 677
+empty$ -- 1168
+format.name$ -- 228
+if$ -- 2893
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 46
-newline$ -- 186
-num.names$ -- 111
-pop$ -- 324
+missing$ -- 50
+newline$ -- 215
+num.names$ -- 134
+pop$ -- 394
 preamble$ -- 1
-purify$ -- 250
+purify$ -- 295
 quote$ -- 0
-skip$ -- 422
+skip$ -- 507
 stack$ -- 0
-substring$ -- 394
-swap$ -- 52
-text.length$ -- 36
-text.prefix$ -- 26
+substring$ -- 475
+swap$ -- 66
+text.length$ -- 43
+text.prefix$ -- 31
 top$ -- 0
-type$ -- 260
-warning$ -- 26
-while$ -- 93
-width$ -- 44
-write$ -- 465
-(There were 29 warnings)
+type$ -- 316
+warning$ -- 32
+while$ -- 113
+width$ -- 52
+write$ -- 538
+(There were 35 warnings)

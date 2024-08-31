@@ -6,7 +6,7 @@ The constant term is an operation defined on a large class of functions and is s
 \[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u\]
 which inherits many of the properties of \(\phi\) such as smoothness and moderate growth. For instance if \(\phi\) is an automorphic form on \(\mathbf{G}\) then its constant term is an automorphic form on \(M\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
 
-This allows us to recal the definition of cuspidal automorphic forms or "cusp forms". Let \(\phi\) be a an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that 
+This allows us to recal the definition of cuspidal automorphic forms or ``cusp forms''. Let \(\phi\) be a an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that 
 \[\phi_{P'} = 0\]
 Cusp forms have a central role in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and finally they just make formulas easier to work with.
 
@@ -80,7 +80,7 @@ We will use the following Lemmas to give a simplified expression of the constant
             \end{aligned}
         \end{equation*}
     }
-    Taking the contrapositive of this lemma will be used below. This is becuase our sums will be over quotients like \(A\setminus B\) and therefore summing over the "elements" in B that are not in A; by our lemma would be the same as summing over two different such quotients.
+    Taking the contrapositive of this lemma will be used below. This is becuase our sums will be over quotients like \(A\setminus B\) and therefore summing over the ``elements'' in B that are not in A; by our lemma would be the same as summing over two different such quotients.
     Now consider the computation:\todo[inline]{I have lost the lambda in the below computation}
     \begin{equation*}
         \begin{aligned}
@@ -129,7 +129,7 @@ We will use the following Lemmas to give a simplified expression of the constant
     \end{Lemma}
     This was all in complete generality as well. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesnt exist (its over a point).
 
-    \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}
+    \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}\label{constant_conjugate_levi}
     If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \ref{intertwining_operator} we can use the following 
     \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
         \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv\]
@@ -206,7 +206,7 @@ where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatri
 This shows that perhaps the correct generalisation of the Siegel Phi function is just the constant term that we all know and love. We could also attempt to expand this to Siegel modular forms that are vector valued or not of full level. 
 
 The only other work on generalising the Siegel \(\Phi\) operator that we could find appears in \cite{grenierANALOGUESIEGELXOPERATOR2024}. 
-Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of "automorphic forms" in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definitie real matricies \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely his \cite[Thm. 2]{grenierAnalogueSiegelFOperator1992} shows that it sends an automorphic form for \(
+Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of ``automorphic forms'' in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definitie real matricies \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely his \cite[Thm. 2]{grenierAnalogueSiegelFOperator1992} shows that it sends an automorphic form for \(
 GL_n(\Z)\) to an automorphic form for \(\GL_{n-1}(\Z)\). The point is that the \(\Phi\) operator can be defined in the generality of symetric spaces and Grenier shows that at least in one other case it still preserves the relevant notion of automorphic form. This suggests two things that would be interesting to investigate; using the classification of symetric spaces is it possible to give a uniform definition of the \(\Phi\) operator following Grenier and does this definition agree with the constant term in the way that the Siegel \(\Phi\) operator does. With my limited knowledge of symmetric spaces this seems to be very tractable.
 
 \subsection{Base Case}
@@ -324,7 +324,7 @@ thus unfolding the (discrete) integral we get
     f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &=   \sum_{n\in\mathrm{HI}_{g-r}} \sum_{m\in\frac{1}{2} \mathrm{Mat}_{ r\times (g-r)}(\Z)} \sum_{l\in\mathrm{HI}_{r}} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \\
     &\exp \left(2\pi i \mathrm{Tr} \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} \right)  \\
 \end{align*}
-because all the block sizes are compatible we can "block multiply" the inner matricies and because we are taking the trace we can forget about off diagonal entries
+because all the block sizes are compatible we can ``block multiply'' the inner matricies and because we are taking the trace we can forget about off diagonal entries
 \begin{align*}
     \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= 
     \begin{pmatrix} n\tau + m(-k^t \tau + h^t ) & \ast\\ \ast & m^t(-\tau k + h) + l( k^t \tau k + A A^t i + s) \end{pmatrix}
