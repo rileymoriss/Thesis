@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1725072676 "main.aux" "main.bbl" "main" 1725072682 0
+["bibtex main"] 1725072936 "main.aux" "main.bbl" "main" 1725072943 0
   "./NumberTheory.bib" 1724165152 564853 ecd4bf74d261051cf2141af3693adc17 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291861136 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1725072681 26360 a7cea30f087c28fce36a3f6fb6d1424a "pdflatex"
+  "main.aux" 1725072941 26360 a7cea30f087c28fce36a3f6fb6d1424a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1725072677 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1725072682 0
+["pdflatex"] 1725072937 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1725072943 0
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1692676729 11548 78bef0057cba8f6fe11199e7e5d8f077 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk" 1711930929 14064 2b636b917c6dd2a843da53de5aeddea9 ""
@@ -265,12 +265,12 @@
   "Chapters/motivation.tex" 1724165152 920 7b0f80249d912893f7a6d9334f9e6a27 ""
   "Chapters/polesOfEisensteinSeries.tex" 1725062889 9353 2f69d8af2201fb46f27b553e020d2d36 ""
   "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1724927384 3622 4b9590c184bace356d1cbfc51502bded ""
-  "main.aux" 1725072681 26360 a7cea30f087c28fce36a3f6fb6d1424a "pdflatex"
-  "main.bbl" 1725072677 9926 7c3a5c3b65ff8e7c0989cf29f255ec3c "bibtex main"
-  "main.out" 1725072681 4231 7150f9880aec718976bbc03f93aab870 "pdflatex"
-  "main.tdo" 1725072681 6232 254de466b0528162f93a20a52c24aa31 "pdflatex"
+  "main.aux" 1725072941 26360 a7cea30f087c28fce36a3f6fb6d1424a "pdflatex"
+  "main.bbl" 1725072937 9926 7c3a5c3b65ff8e7c0989cf29f255ec3c "bibtex main"
+  "main.out" 1725072941 4231 7150f9880aec718976bbc03f93aab870 "pdflatex"
+  "main.tdo" 1725072941 6232 254de466b0528162f93a20a52c24aa31 "pdflatex"
   "main.tex" 1724927384 3622 4b9590c184bace356d1cbfc51502bded ""
-  "main.toc" 1725072681 4165 ae16ec765793168fc28a5e0990df4dc5 "pdflatex"
+  "main.toc" 1725072941 4165 ae16ec765793168fc28a5e0990df4dc5 "pdflatex"
   "minipreamble.tex" 1724637452 3237 84987033c286c23ca08d81c68478a0fb ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)
