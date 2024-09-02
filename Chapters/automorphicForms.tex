@@ -16,32 +16,29 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 	\[g\mapsto \begin{pmatrix}
 		\i (g) & \\
 		 & (\i (g))^{-t}
-	\end{pmatrix}\]
+	\end{pmatrix}.\]
 
 	A function \(\phi : G(F_\infty) = G(\prod_{v|\infty} F_\nu) \to \C \) is of \textit{moderate growth} if there are constants \((c,r)\in \R_{>0}\times \R\) such that 
-	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v|\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r\]
-	this is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
-
-    \todo[inline]{there is a nice characterization over Q for representations and norms as traces of blah in Borel. I like it a lot just need to check its fine for other number fields.  }
+	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v|\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r.\]
+	This is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
 
     Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\) module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textit{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
 
 	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\) module is \(K_\infty\) finite if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\) modules).
 
-	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action.  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by 
-	\[z.F(g) = \Dif{}{t}F(ge^{tz})\] 
+	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action.  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
+	\[z.F(g) = \Dif{}{t}F(ge^{tz}).\] 
 
 	\begin{Definition}
 		Let \(\Gamma\leq G(F_\infty)\) some arithmetic subgroup, an automorphic form for \(\Gamma\) is a smooth function of moderate growth 
-		\[\phi: G(F_\infty) \to \C\]
+		\[\phi: G(F_\infty) \to \C,\]
 		that is \(K_\infty\) and \(Z(\mathfrak{g})\) finite with a (left) \(\Gamma\) invariance. 
 
-		Denote the set of these archimedian automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\)
+		Denote the set of these archimedian automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\).
 
 	\end{Definition}
 
-    \todo[inline]{Borel 1.6 gives a good explanation of the growth condition. }
 
 \subsection{Adelic Automorphic Form}
 Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out earlier \ref{max_compact_subgroup}.

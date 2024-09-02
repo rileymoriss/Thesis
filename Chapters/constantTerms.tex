@@ -46,7 +46,7 @@ The constant term itself is of central importance. One reason for this is that i
 \section{Constant Terms of Eisenstein Series}
 This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. I give more detail here then I could find anywhere else. 
 
-Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic. \todo[inline]{is it true}
+Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
 
 \subsection{In General}
 We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MN\) and \(P' = M'N'\) two standard parabolics of suitable group G over F, with \(E(x, \phi, \lambda)\) defined via  parabolic induction from P.
@@ -84,27 +84,27 @@ We will use the following Lemmas to give a simplified expression of the constant
     Now consider the computation:\todo[inline]{I have lost the lambda in the below computation}
     \begin{equation*}
         \begin{aligned}
-            E_{P'}(x, \phi, \lambda) &= \int_{N'(F)\setminus N'(\A)} E(nx, \phi, \lambda) dn\\
-                                    ([N']\defeq N'(F)\setminus N'(\A)) \;\;\; &= \int_{[N']} \sum_{\delta\in P(F)\setminus G(F)} \phi(\delta nx)  dn\\
-                                    (\text{Lemma 1}) \;\;\; &= \int_{[N']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \phi(\delta nx)  dn\\
-                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[N']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \phi( w\inv p'nx)  dn\\
-                                    (\text{Lemma 2}) \;\;\; &= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[N']} \sum_{n'\in N'(F)\cap (m')\inv wP(F)w\inv m' \setminus N'(F)} \phi( w\inv m'n'nx)  dn\\
-                                    (\text{Change Var}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{[N']} \sum_{n'\in N'(F)\cap wP(F)w\inv\setminus N'(F) } \phi( w\inv n'nm'x)  dn\\
-                                    (\text{Unfold}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn\\
+            E_{P'}( \phi, \lambda, x) &= \int_{N'(F)\setminus N'(\A)} E( \phi, \lambda, nx) dn\\
+                                    ([N']\defeq N'(F)\setminus N'(\A)) \;\;\; &= \int_{[N']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  dn\\
+                                    (\text{Lemma 1}) \;\;\; &= \int_{[N']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta nx)  dn\\
+                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[N']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'nx)  dn\\
+                                    (\text{Lemma 2}) \;\;\; &= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[N']} \sum_{n'\in N'(F)\cap (m')\inv wP(F)w\inv m' \setminus N'(F)} \lambda.\phi( w\inv m'n'nx)  dn\\
+                                    (\text{Change Var}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{[N']} \sum_{n'\in N'(F)\cap wP(F)w\inv\setminus N'(F) } \lambda.\phi( w\inv n'nm'x)  dn\\
+                                    (\text{Unfold}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn.\\
         \end{aligned}
     \end{equation*}
     The change of variables is \((m', n') \mapsto ((m')\inv n' m', (m')\inv n' m')\).
-    Again we assume that our x is sufficiently large so all the integrals converge.
+    Again we assume that our x is sufficiently large so all the integrals converge.\todo[inline]{Maybe appologise for doing integrals naivelly lol.. clarify this.... is it even the x that I need to worry about here?}
 
 \subsection{Constant Terms of Cuspidal Eisenstein Series}
 \begin{Lemma}[4]
         For \(w\in W_{M'}\setminus W_G / W_{M} \) we have that \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv N'w\cap M\).
     \end{Lemma}
     \proofbar{
-        This is \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} stated without proof. They give the reference \cite[V.4.6]{renardREPRESENTATIONSGROUPESREDUCTIFS} which is in French. We will return to this if we have time / energy.
+        This is \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} stated without proof. They give the reference \cite[V.4.6]{renardREPRESENTATIONSGROUPESREDUCTIFS} which is in French..
     }
     \begin{Lemma}[5]
-        \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U)\]
+        \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]
     \end{Lemma}
     \proofbar{
         \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} has some decompositions, as well as the standard decomposition of \(P=MU\) I think I could prove this...
@@ -116,13 +116,13 @@ We will use the following Lemmas to give a simplified expression of the constant
     Continuing the computation of the constant term above, we will focus purely on the inner integral now
     \begin{equation*}
         \begin{aligned}
-            \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn &= \int_{w\inv N'(F)w \cap P(F) \setminus w\inv N'(\A)w} \phi( nw\inv m' x)  dn \\
-            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv N'(\A)w} \phi( nw\inv m' x)  dn \\
-            (\text{Unfold + Lemma 6})  &= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2 \\
+            \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn &= \int_{w\inv N'(F)w \cap P(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn \\
+            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn \\
+            (\text{Unfold + Lemma 6})  &= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( n_1 n_2 w\inv m' x)  dn_1 dn_2. \\
         \end{aligned}
     \end{equation*}
     the first equality is the change of variables \(w\inv n w\mapsto n \) and \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv N'(\A)w \). Now look at the inner integral here more closely 
-    \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2\]
+    \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2,\]
     applying Lemma (6) we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m n_2 w\inv m' x)\). 
     \begin{Lemma}
         \(n_2 w\inv m' x \in K\) with variables as above.
@@ -132,15 +132,14 @@ We will use the following Lemmas to give a simplified expression of the constant
     \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}\label{constant_conjugate_levi}
     If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator \ref{intertwining_operator} we can use the following 
     \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
-        \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv\]
+        \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv,\]
     \end{Lemma}
     to see that 
-    \[\]
     \begin{equation*}
         \begin{aligned}
-             E_{P'}(x, \phi, \lambda) &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn \\
-             &=  \sum_{ w} \sum_{m'} \int_{N'(k) \cap wN(k)w\inv \setminus N'(\A)} \phi( w\inv nm' x)  dn \\
-             &= \sum_{ w} \sum_{m'} M(w, \pi)(\phi)(x)
+             E_{P'}( \phi, \lambda, x) &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn \\
+             &=  \sum_{ w} \sum_{m'} \int_{N'(k) \cap wN(k)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn \\
+             &= \sum_{ w} \sum_{m'} M(w, \pi)(\lambda.\phi)(x)
         \end{aligned}
     \end{equation*}\todo[inline]{I have mixed up my N's and U's too much...}
     In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series. 
@@ -150,8 +149,8 @@ We will use the following Lemmas to give a simplified expression of the constant
 Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. \todo[inline]{give references for the other interpretations of the constant term, there must be some} We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
 
 Because we are trying to connect this to the classical picture it is most convenient to think of thinks in the archimedian places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the archimedian places, and the constant term will be taken only on the archemedian part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
-\[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n\]
-We assume here for simplicity (and becuase it will apply to the examples below) that our groups are unimodular.
+\[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
+We assume here for simplicity (and becuase it will apply to the examples below) that our groups are unimodular.\todo[inline]{is that true....}
 
 \subsection{Siegel Modular Forms}
 We collect some definitions from \cite{bruinier123ModularForms2008} to fix notation. Let the Siegal upper half plane be defined as 

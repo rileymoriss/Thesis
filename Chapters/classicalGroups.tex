@@ -11,10 +11,16 @@ As Milne points out \cite[Abstract]{milneAlgebraicGroupsTheory2017} these are su
         \item Group objects in \(\mathrm{Alg}_k^{op}\)
         \item Representable (in the category of groups) functors \(\mathrm{Alg}_k \to \mathrm{Group}\)
         \item Group object in the category of affine schemes over \(k\)
-        \item Commutative Hopf algebras
+        \item Commutative Hopf algebras.
     \end{itemize}
 \end{Theorem}
 
+\begin{example}[\(\mathbb{G}_m\)]
+    The first example that we will see again and again is the ``multiplicative group'' or \(\GL_1\) defined over the field \(K\). This is 
+    \[\mathbb{G}_m \defeq \Spec\Bigl( K[x,y]/(xy - 1)\Bigr).\]
+
+    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
+\end{example}
 The exact groups that an author might mean by classical may vary. Here we will follow \cite[\S 13]{CliffordAlgebrasClassical} or indeed many other places as defining them as the automorphisms of a vector space with a bilinear form. First let V be a finite dimensional F vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}.\]
 Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form will define our classical groups. 
@@ -33,7 +39,7 @@ Another way of motivating the importance of these groups is to consider the clas
 \section{Subgroups}
 From now on we restrict to split reductive LAG because these are the natural adjectives for our classical groups over a number field (in particular characteristic 0).
 
-Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups, with a particular eye on those of \(\Sp\). The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we will come to understand the following decomposition's (not direct)
+Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups, with a particular eye on those of \(\Sp\). The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we will come to understand the following decomposition's (not direct) \label{iwasawa_decomposition}
 \[G(\A) = M(\A)U(\A) K = T(\A)U(\A)K.\]
 
 \subsection{Parabolics, Levis and Unipotents}
@@ -62,7 +68,7 @@ Then we have the following fact / definition:
     where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} (unique up to conjugacy).
 \end{Lemma}
 
-Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' [Bernstein - Representations of p-Adic groups, Thm 10] \todo{fix ref}that we wont explicitly talk about here but which is happening secretly in the background in \ref{automorphic_isotypic_subspaces}.
+Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' \cite[Thm. 10]{bernsteinREPRESENTATIONSPADICGROUPS1992} that we wont explicitly talk about here but which is happening secretly in the background in \ref{automorphic_isotypic_subspaces}.
 
 \begin{Remark}[Bad Etymology]
     The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo[inline]{this is probably known by now.} He says that 
@@ -468,4 +474,4 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
     There is a rich history and representation theory of this group, which we make no pretense of understanding, however some hints can be found in \cite{kudlaNOTESLOCALTHETA} and the references therein.
 \end{example}
 
-There is an analogue of the Langlands program being developed for such groups a nice introduction to which can be found in \cite{ganLgroupsLanglandsProgram2017}. \todo{perhaps a first natural question is whether or not these things can be given the structure of LAG's. That paper mentions representability. Look into it. }
+There is an analogue of the Langlands program being developed for such groups a nice introduction to which can be found in \cite{ganLgroupsLanglandsProgram2017}. \todo[inline]{perhaps a first natural question is whether or not these things can be given the structure of LAG's. That paper mentions representability. Look into it. }

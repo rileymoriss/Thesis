@@ -2,13 +2,34 @@ The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRe
 \section{Local Representation Theory}
 \subsection{At the Archimedean Places}
 What we have called automorphic forms are sometimes refered to as ``smooth K-finite automorphic forms'' \cite[2.2]{cogdellLecturesLfunctionsConverse}.
-We want to consider the right regular action of \(G(\A)\) on \(\mathcal{A}()\), unfortunately this space is not stable under this action. The problem is in the \(K\)-finiteness in the infinite places. 
+We want to consider the right regular action of \(G(\A)\) on \(\mathcal{A}(U(\A)M(k)\backslash G(\A))\), unfortunately this space is not stable under this action. The problem is in the \(K\)-finiteness in the infinite places. 
 
 \begin{example}[\cite{cogdellLecturesLfunctionsConverse}, 2.3]
     If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite, then \(g.\phi\) is \(gK_\infty g\inv\)-finite. This is still a maximal compact subgroup, however in the infinite place it will a priori have only the identity in common with the orginal \(K\).
 
-    Consider \(\SL_2\) where the maximal compact is \(SO_2\), if we conjugate we get 
-    \todo[inline]{fill}
+    For example csonsider \(\SL_2\) where the maximal compact is \(SO_2\), if we conjugate we get \(gSO_2g\inv\)
+    \begin{align*}
+        \begin{pmatrix}
+            a & b\\
+            c & d
+        \end{pmatrix}
+        \begin{pmatrix}
+            \cos\theta & -\sin\theta \\
+            \sin\theta & \cos\theta
+        \end{pmatrix}
+        \begin{pmatrix}
+            d & -b\\
+            -c & a
+        \end{pmatrix} &=  \begin{pmatrix}
+            (da - cb)\cos\theta + (db  + ca)\sin\theta & -\sin\theta( a^2+b^2)\\
+            \sin\theta(d^2 + c^2) & ( ad  -bc)\cos\theta - (b d  + ac)\sin\theta
+        \end{pmatrix}\\
+        &=  \begin{pmatrix}
+            \cos\theta + (db  + ca)\sin\theta & -\sin\theta( a^2+b^2)\\
+            \sin\theta(d^2 + c^2) & \cos\theta - (b d  + ac)\sin\theta
+        \end{pmatrix}.\\
+    \end{align*}
+    This intersects with the \(SO_2\) if and only if \(bd+ac = 0\) and \(a^2 + b^2 = d^2 + c^2 = 1\) i.e. when \(g\in SO_2\).
 
     Finally it is worth noting that this is not an issue at the finite places, namely if \(K = K_fK_\infty\) is our maximal compact subgroup of \(G(\A)\) then \(K_f\) is also open and hence \(K_f \cap gK_f g\inv\) is of finnite index in both \(K_f\) and \(gK_f g\inv\) and so their notions of \(K\)-finiteness will agree. 
 \end{example}
@@ -19,57 +40,36 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules. This i
     Let \(G\) be a Lie group (for example the analytification of the real or complex points of our favourite reductive LAG) and \(K\) be a maximal compact subgroup of \(G\). Let \(\mathfrak{g}\) be the complexified Lie algebra of \(G\) and \(\mathfrak{k}\) the real Lie algebra of \(K\). 
     
     A \((\mathfrak{g}, K)\)-module is a complex vector space \(V\) with two representations 
-    \[\tilde{\pi}: \mathfrak{g} \to End(V), \quad \pi: K\to \GL(V)\]
+    \[\tilde{\pi}: \mathfrak{g} \to End(V), \quad \pi: K\to \GL(V),\]
     satisfying the following axioms
     \begin{itemize}
         \item \(V\) decomposes into a countable direct sum of finite dimensional \(K\) representations.
         \item The representations should be compatible: For all \(X \in \mathfrak{k}\) and \(v\in V\)
-        \[\tilde{\pi}(X)(v) = \frac{\mathrm{d}}{\mathrm{d}t}\pi(e^{tX})(v)|_{t=0} = \lim_{t\to 0}\frac{\pi(e^{tX})(v) - v}{t}\]
+        \[\tilde{\pi}(X)(v) = \frac{\mathrm{d}}{\mathrm{d}t}\pi(e^{tX})(v)|_{t=0} = \lim_{t\to 0}\frac{\pi(e^{tX})(v) - v}{t}.\]
         In particular the right hand limit exists
         \item And compatible with the adjoint representation: For \(k\in K\) and \(X\in \mathfrak{g}\) 
-         \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(Ad(k)(X))(v)\]
+         \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(Ad(k)(X))(v).\]
     \end{itemize}
 \end{definition}
 
 \begin{remark}
     It is common to use the same symbol for both of these representations in the \((\mathfrak{g}, K)\)-module.
 \end{remark}
-Now one can check \todo[inline]{reference} that the space of archimedean automorphic forms is in fact a \((\mathfrak{g}, K_\infty)\)-module, under the representations that we have already specified; namely the regular action given by \(K\) and the representation that we defined when talking about the center of the enveloping algebra.\todo[inline]{linnk to the other sections}
+Now one can check that the space of archimedean automorphic forms is in fact an (admissible) \((\mathfrak{g}, K_\infty)\)-module, under the representations that we have already specified; namely the regular action given by \(K\) and the representation that we defined \ref{lie_algebra_action} when talking about the center of the enveloping algebra \cite[Thm. 6.2.6]{getzIntroductionAutomorphicRepresentations2024}.
 
 \subsection{At the Non-Archimedean Places}
 As we noted above the right regular representation on the space of automorphic forms is well defined for the finite places i.e. 
 if \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-archimedean.
 
-\subsection{Hecke Algebra}
-Following \cite[I.II]{borelAutomorphicFormsRepresentations1979}. The Hecke algebra \(\mathcal{H}(G(F_\infty), K)\) is the convolution algebra of distribitions on \(G(F_\infty)\) that are supported in \(K\)
-
-\begin{Theorem}
-    \todo[inline]{Make precise teh realtion between this hecke algebra and g,K modules...}
-\end{Theorem}
-
-From the theory of \(p\)-adic representations we now recall the definition of the local Hecke algebra when \(\nu\) is non-archemedean. For \(G(F_\nu)\) the Hecke algebra \(\mathcal{H}(G(F_\nu))\) is the \C-algebra of locally constant compactly supported distributions. 
-\begin{theorem}[Bernstein - Representations of p-Adic groups, Thm 2(3)]
-    There is an equivilence of categories  
-    \[\text{Smooth representations of }G(F_\nu) \cong \text{Non-degenerate }\mathcal{H}(G(F_\nu)) \text{ modules}\]
-\end{theorem}
-It suffices to remark that, without defining smooth, the above representation is smooth on the local peices. We define the Hecke algebra of the finite Adeles as 
-\[\mathcal{H}(G(\A_f)) \defeq \bigotimes^{}_\nu \phantom{a}' \mathcal{H}(G(F_\nu))\]
-\todo[inline]{fix restricted tensor product}
-where the product is over the non-archimedean places. This is the restricted tensor product taken over a family of designated idempotents, for the details see
-\todo[inline]{reference}.
-
-The point of the Hecke algebra, in the context of this work, isnt to ``look inside'' but simply know that the automorphic representations can be thought of as authentic representations of some commutative algebra. This is merely a convenience for stating definitons in later sections.
-
 \section{Automorphic Representations}
-Recall that if \(A\) is an \(R\) module and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then an irreducible subquotient of this representation.
+Recall that if \(A\) is an \(R\) module and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then an irreducible subquotient of this representation.\todo[inline]{by definition its irreducible??}
 \begin{remark}
     This is the first place that I beleive we must remark that we really need a set theoretic definition here. The quotient of these modules cannot be considered up to isomorphism but must be the classical set theoretic realisation of this object, defined as equivilence classes of elements of the module.
 \end{remark}
 
-Because of the equivilences between such representations and the representations of the Hecke algebra we can also define an automorphic representation to be an irreducible subquotient of a representation of the \textit{global} Hecke algebra
-\[\mathcal{H}(G(\A)) \defeq \mathcal{H}(G(\A_f)) \tensor \mathcal{H}(G(F_\infty))\]
-
-It is always good to have multiple perspectives on such things. In particular we think that the \((\mathfrak{g}, K)\)- module perspective makes it more clear why these representations are interesting, as being the closest thing to the regular representation we can get. On the other hand the fact that the representations of the Hecke algebra are traditional representations makes definitions easier to state as we can import that language. 
+\begin{remark}
+    Automorphic representations can also be defined as representations of a commutative algebra \(\mathcal{H}\), the global Hecke algebra. This is the approach in \cite[I.II(4.6)]{borelAutomorphicFormsRepresentations1979}, and can be a helpful perspective to simplify definitions. 
+\end{remark}
 
 \begin{example}
     It is very hard to really write down something explicit. One thing that we can do is take a modular form \(f\). Then we know how to associate a concrete automorphic form \(\tilde{f}\). To this (or any fixed automorphic form) we have an automorphic representation given by acting on this vector:
@@ -78,9 +78,7 @@ It is always good to have multiple perspectives on such things. In particular we
 
 \subsection{Cuspidal Representations}
 Recall that an automorphic form \(\phi\in \mathcal{A}(U(\A)M(F) \backslash G(\A))\) is called cuspidal  if all its constant terms vanish, see the next section for more detail \ref{cuspidal_form_definition}.
-The space of such automorphic forms is denoted \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\). 
-
-An automorphic representation is called cuspidal if it is an irreducible subquotient of \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\).
+The space of such automorphic forms is denoted \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\). An automorphic representation is called cuspidal if it is an irreducible subquotient of \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\).
 
 \begin{Remark}
     Here we really mean contained as sets, not isomorphic as / to a subrepresentation.
@@ -99,12 +97,23 @@ Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\)
 \todo[inline]{AHHHHHHHHH BUT DO I TAKE THE CUSPIDAL PART OF INSIDE HERE OR NOT AHHHHHH DEFINE YOU TERMSSSSSS AHHHH }
 \begin{Remark}
     We cannot simply take the isotypic components we need to take the isotypic components after explicitly restricting the spaces. This is a knock on effect from our last remark.
-
-    This is also true for things like taking tensor products, direct sums etc of representations. If one wants to say that the tensor of cuspidal representations is cuspidal then you really need to fix what you mean by the tensor, set theoretically. There is a usual construction of a tensor product that is indeed what is meant, but it is important becuase this thing is only unique \textit{up to isomorphism} which doesn not preserve cuspidality.
 \end{Remark}
 
 The point is that we want the isotypic component corresponding to a cuspidal representation to be cuspidal, however this just might not be the case. 
 Yamana and Teck Gan have a counter example when one allows unitary groups over division algebras (non-commutative fields). It could be interesting to investigate this example more closely to see if the example can be pulled back to a unitary group over a field. In \cite{yamanaSiegelWeilFormulaQuaternionic2013} there is an automorphic representation of the quarternionic unitary group constructed, \(\Pi(V)\), that according to \cite[Rm. 7.12]{yamanaSiegelWeilFormulaQuaternionic2013} appears in both the cuspidal and residual spectrum (more details late \ref{spectral_decomposition}). By that Yamana means that up to isomorphism the representation can been seen in both residual and cuspidal spectrum. In particular if one were to take the component that is in the cuspidal spectrum and look at its isotypic component then the versions in the residual spectrum would also occur and hence by definition of residual spectrum would not be cuspidal.
 
 If we restrict to the cases dealt with in for instance \cite{moeglinSpectralDecompositionEisenstein1995}, namely not dealing with quarternions, then we have been told that this is an open problem whether or not this restriction is superflous. 
-\todo[inline]{There is a conjecture by Moeglin and Waldspurger that this is a superflous conventions ?? reference Chenyan? }
+
+\subsection{Tensor Products}
+This is also true for things like taking tensor products, direct sums etc of representations. If one wants to say that the tensor of cuspidal representations is cuspidal then you really need to fix what you mean by the tensor, set theoretically. There is a usual construction of a tensor product that is indeed what is meant, but it is important becuase this thing is only unique \textit{up to isomorphism} which doesn not preserve cuspidality.
+
+Lets make this explicit in the case of tensor products because we will use it later. First fix \((\pi, V), (\pi', V')\) to automorphic representations of \(G(\A)\). Then, if we think of these representations as \(\mathcal{H}(G(\A))\) modules, the space on which the tensor \(\pi\tensor \pi'\) would act is usually constructed as a set as 
+\[V\tensor V' \defeq V\times V' / \sim\]
+where the relation \(\sim\) is generated, \(\forall m,n\in V, x,y\in V', r\in \mathcal{H}(G(\A)) \), by
+\begin{itemize}
+    \item \((m,x) + (m,y) = (m,x+y)\)
+    \item \((m,x) + (n,x) = (m+n,x)\)
+    \item \((r.m, x) = (m,r.x)\).
+\end{itemize}
+This has the natural action from \(\mathcal{H}(G(\A))\) still by acting on the components. But now we need to somehow think of this as a subquotient of \(\mathcal{A}(U(\A)M(F) \backslash G(\A))\). From the above definition it would seem that \(f\tensor g\) is a function on \(G(\A)^2\) a priori. 
+\todo[inline]{yeah wtf}

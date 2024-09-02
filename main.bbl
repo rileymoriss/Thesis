@@ -1,3 +1,4 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{BVDGHZ08}
 
 \bibitem[Art79]{arthurEisensteinSeriesTrace1979}
@@ -16,6 +17,17 @@ Armand Borel and W.~Casselman.
 \newblock {\em Automorphic Forms, Representations, and {{L-functions}}}.
 \newblock Number Volume 33 in Proceedings of Symposia in Pure Mathematics.
   American Mathematical Society, Providence (Rhode Island), 1979.
+
+\bibitem[BCDS{\etalchar{+}}04]{bumpIntroductionLanglandsProgram2004}
+D.~Bump, J.~W. Cogdell, E.~De~Shalit, D.~Gaitsgory, E.~Kowalski, and S.~S.
+  Kudla.
+\newblock {\em An {{Introduction}} to the {{Langlands Program}}}.
+\newblock Birkh{\"a}user Boston, Boston, MA, 2004.
+
+\bibitem[Ber92]{bernsteinREPRESENTATIONSPADICGROUPS1992}
+Joseph Bernstein.
+\newblock {\em {{REPRESENTATIONS OF}} P-{{ADIC GROUPS}}}.
+\newblock 1992.
 
 \bibitem[BL22]{bernsteinMeromorphicContinuationEisenstein2022}
 Joseph Bernstein and Erez Lapid.
@@ -64,6 +76,15 @@ Jan~Hendrik Bruinier, Gerard Van Der~Geer, G{\"u}nter Harder, and Don Zagier.
 Clifford {{Algebras}} and the {{Classical Groups}}.
 \newblock
   https://www.cambridge.org/core/books/clifford-algebras-and-the-classical-groups/F14B7362F52D08E4F2118B28B7B22D30.
+
+\bibitem[Coga]{cogdellLecturesLfunctionsConverse}
+J~W Cogdell.
+\newblock Lectures on {{L-functions}}, {{Converse Theorems}}, and
+  {{Functoriality}} for {{GLn}}.
+
+\bibitem[Cogb]{cogdellLFUNCTIONSFUNCTORIALITY}
+James~W Cogdell.
+\newblock L-{{FUNCTIONS AND FUNCTORIALITY}}.
 
 \bibitem[Con]{conradStandardParabolicSubgroups}
 Brian Conrad.
@@ -244,5 +265,17 @@ Jean-Pierre Serre, Don Zagier, and {Sonderforschungsbereich Theoretische
   {{Bonn}}, {{Sonderforschungsbereich Theoretische Mathematik}}, {{July}} 2-14,
   1976: Ed. by {{J}}.-{{P}}. {{Serre}} and {{D}}. {{B}}. {{Zagier}}}.
 \newblock Number 601 in Lecture Notes in Mathematics. Springer, Berlin, 1977.
+
+\bibitem[Ter16]{terrasHarmonicAnalysisSymmetric2016}
+Audrey Terras.
+\newblock {\em Harmonic {{Analysis}} on {{Symmetric Spaces}}---{{Higher Rank
+  Spaces}}, {{Positive Definite Matrix Space}} and {{Generalizations}}}.
+\newblock Springer, New York, NY, 2016.
+
+\bibitem[Yam13]{yamanaSiegelWeilFormulaQuaternionic2013}
+Shunsuke Yamana.
+\newblock On the {{Siegel-Weil}} formula for quaternionic unitary groups.
+\newblock {\em American Journal of Mathematics}, 135(5):1383--1432, October
+  2013.
 
 \end{thebibliography}

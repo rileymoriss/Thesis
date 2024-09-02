@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  2 SEP 2024 11:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  31 AUG 2024 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -795,27 +795,21 @@ Package hyperref Info: Link coloring OFF on input line 87.
  Excluding 'comment' comment. (Chapters/acknowledgements.tex) [1
 
 
-{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Chapters/intro.tex
-Overfull \hbox (10.95016pt too wide) in paragraph at lines 7--8
-[]\OT1/cmr/m/n/10 Chapter two deals with au-to-mor-phic forms. We de-fine au-to-mor-phic forms in both the archemedean
- []
-
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11.
-(C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (main.toc
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 11.
- (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [2
-
-]) [3] (main.toc)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 3.
+ (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd))
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -826,56 +820,54 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 11
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 125.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 125.
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 126.
-
 [2
 
 ]
 Chapter 1.
-(Chapters/classicalGroups.tex [3
+(Chapters/classicalGroups.tex
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 19.
+
+[3
 
 ]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 36.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 34.
 
-[4] [5]
+[4]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 74.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 69.
 
 
-Underfull \vbox (badness 2027) has occurred while \output is active []
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 72.
 
- [6]
-Overfull \hbox (3.41394pt too wide) detected at line 189
+[5] [6]
+Overfull \hbox (3.41394pt too wide) detected at line 187
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x; y; z \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 F;   [] [] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 Span[] [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 :
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Overfull \hbox (19.81973pt too wide) in paragraph at lines 255--256
+Overfull \hbox (19.81973pt too wide) in paragraph at lines 253--254
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8] [9]
-Underfull \vbox (badness 1478) has occurred while \output is active []
+ [7] [8]
+Underfull \vbox (badness 1033) has occurred while \output is active []
 
- [10]
+ [9]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 373.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 371.
 
-[11]
+[10] [11]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 457.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 455.
 
 [12]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 477.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 475.
 
 ) [13]
 Chapter 2.
@@ -895,75 +887,112 @@ LaTeX Warning: Command \i invalid in math mode on input line 18.
 
 LaTeX Warning: Command \i invalid in math mode on input line 22.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 25.
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 25.
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 27.
 (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [15]
-Underfull \vbox (badness 2197) has occurred while \output is active []
+)
 
- [16]
-Underfull \vbox (badness 10000) detected at line 143
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 44.
+
+[15] [16]
+Underfull \vbox (badness 10000) detected at line 146
  []
 
 [17]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 145.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 148.
 
 
-Overfull \hbox (14.68439pt too wide) in paragraph at lines 174--175
+Overfull \hbox (14.68439pt too wide) in paragraph at lines 177--178
 []\OT1/cmr/m/n/10 Using some-thing like the uni-ver-sal prop-erty of the quo-tient we can lift a func-tion on $[][](\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =SO[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )$
  []
 
-[18] [19]) [20]
+[18] [19]
+
+LaTeX Warning: Citation `cogdellLecturesLfunctionsConverse' on page 20 undefined on input line 247.
+
+) [20]
 Chapter 3.
 (Chapters/automorphicReps.tex
-Overfull \hbox (41.70227pt too wide) detected at line 31
-[]
- []
+
+LaTeX Warning: Citation `cogdellLecturesLfunctionsConverse' on page 21 undefined on input line 4.
+
+
+LaTeX Warning: Citation `cogdellLecturesLfunctionsConverse' on page 21 undefined on input line 7.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 11.
 
 [21
 
 ]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 65.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 37.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 37.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 47.
 
 [22]
-Overfull \hbox (25.252pt too wide) in paragraph at lines 95--96
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 57.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 59.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 64.
+
+[23]
+Overfull \hbox (50.21077pt too wide) in paragraph at lines 83--84
+[]\OT1/cmr/m/n/10 An au-to-mor-phic rep-re-sen-ta-tion is called cus-p-i-dal if it is an ir-re-ducible sub-quo-tient of $\OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 U\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 n\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cmr/m/n/10 ))$. 
+ []
+
+
+Overfull \hbox (25.252pt too wide) in paragraph at lines 97--98
 []\OT1/cmr/m/n/10 Now if $\OML/cmm/m/it/10 ^^Y$ \OT1/cmr/m/n/10 is cus-p-i-dal, we de-fine $\OMS/cmsy/m/n/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 n\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cmr/m/n/10 ))[]$ to be the iso-typic com-po-nent of $\OML/cmm/m/it/10 ^^Y$ \OT1/cmr/m/n/10 in $\OMS/cmsy/m/n/10 A[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 n\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cmr/m/n/10 ))$
  []
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 97.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 99.
 
-[23]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 119.
+LaTeX Warning: Citation `yamanaSiegelWeilFormulaQuaternionic2013' on page 24 undefined on input line 105.
 
-) [24]
+
+LaTeX Warning: Citation `yamanaSiegelWeilFormulaQuaternionic2013' on page 24 undefined on input line 105.
+
+[24]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 121.
+
+) [25]
 Chapter 4.
-(Chapters/Eis.tex [25
+(Chapters/Eis.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26
 
 ]
-Overfull \hbox (22.98724pt too wide) in paragraph at lines 50--51
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 39.
+
+
+Overfull \hbox (22.98724pt too wide) in paragraph at lines 43--44
 []\OT1/cmr/m/n/10 Now we will de-fine an Eisen-stein se-ries: Let $\U/euf/m/n/10 P$ \OT1/cmr/m/n/10 be as above, let $\OML/cmm/m/it/10 ^^Y \OMS/cmsy/m/n/10 2 \U/euf/m/n/10 P$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 '[] \OMS/cmsy/m/n/10 2 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 U\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 n\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cmr/m/n/10 ))[]$,
  []
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 55.
-
-[26]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 78.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 79.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 90.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 48.
 
 [27]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 115.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 64.
 
 ) [28]
 Chapter 5.
@@ -983,18 +1012,18 @@ Underfull \vbox (badness 1248) has occurred while \output is active []
 
  [30]
 
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 49.
+
+
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 84.
 
 [31]
-Overfull \hbox (90.28589pt too wide) detected at line 95
+Overfull \hbox (81.67474pt too wide) detected at line 95
 [][]
  []
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 97.
-
-
-Overfull \hbox (113.73308pt too wide) detected at line 123
+Overfull \hbox (93.733pt too wide) detected at line 123
 [][]
  []
 
@@ -1003,24 +1032,27 @@ Overfull \hbox (113.73308pt too wide) detected at line 123
 LaTeX Warning: Reference `intertwining_operator' on page 33 undefined on input line 133.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 144.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 145.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 149.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 150.
 
-[33]
+[33] [34]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 153.
+LaTeX Warning: Citation `terrasHarmonicAnalysisSymmetric2016' on page 35 undefined on input line 209.
 
-[34] [35]
+
+LaTeX Warning: Citation `terrasHarmonicAnalysisSymmetric2016' on page 35 undefined on input line 209.
+
+[35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 250.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 251.
 
 
-Overfull \hbox (74.5519pt too wide) detected at line 310
+Overfull \hbox (74.5519pt too wide) detected at line 311
 []
  []
 
@@ -1029,34 +1061,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 319.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 320.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-Overfull \hbox (37.10341pt too wide) detected at line 330
+Overfull \hbox (37.10341pt too wide) detected at line 331
 []
  []
 
 
-Overfull \hbox (91.60994pt too wide) detected at line 335
+Overfull \hbox (91.60994pt too wide) detected at line 336
 []
  []
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 337.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 338.
 
 
-Overfull \hbox (4.80716pt too wide) detected at line 338
+Overfull \hbox (4.80716pt too wide) detected at line 339
 \OML/cmm/m/it/10 T[]  []\OT1/cmr/m/n/10 =  [](\OML/cmm/m/it/10 m\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 k[]^^\ \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 h[]\OT1/cmr/m/n/10 )) + [](\OML/cmm/m/it/10 m[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ^^\k \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 h\OT1/cmr/m/n/10 )) = [](\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 mk[]^^\ \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 m[]^^\k\OT1/cmr/m/n/10 ) + [](\OML/cmm/m/it/10 mh[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 m[]h\OT1/cmr/m/n/10 )  []=  \OML/cmm/m/it/10 T[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 T[]
  []
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 339.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 340.
 
 
-Overfull \hbox (81.13239pt too wide) detected at line 350
+Overfull \hbox (81.13239pt too wide) detected at line 351
 []
  []
 
@@ -1064,7 +1096,7 @@ Overfull \hbox (81.13239pt too wide) detected at line 350
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
  []$\U/msa/m/n/10 ^^C$
  []
 
@@ -1115,37 +1147,41 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 76.
 
-[43]) [44] (main.tdo [45
+[43]) [44]
+Appendix A.
+(Chapters/motivation.tex) [45
+
+] (main.tdo [46
 
 ])
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [46] (main.bbl
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 59.
+ [47] (main.bbl
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 47.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
 
-Overfull \hbox (37.88727pt too wide) in paragraph at lines 76--79
+Overfull \hbox (37.88727pt too wide) in paragraph at lines 64--67
 []\OT1/cmr/m/n/10 Clifford Al-ge-bras and the Clas-si-cal Groups.  https://www.cambridge.org/core/books/clifford-
  []
 
-[47
+[48
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 []\OT1/cmr/m/n/10 Essays in the His-tory of Lie Groups and Al-ge-braic Groups.
  []
 
-[48]
-Overfull \hbox (502.91623pt too wide) in paragraph at lines 237--240
+[49]
+Overfull \hbox (502.91623pt too wide) in paragraph at lines 216--219
 []\OT1/cmr/m/n/10 Notes for class on al-ge-braic groups.pdf.  https://users.math.msu.edu/users/ruiterj2/Math/Documents/Summer%202019/Algebraic%20Groups/Notes%20for%20class%20on%20algebraic%20groups.pdf. 
  []
 
-[49]) [50] (main.aux)
+) [50] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1155,20 +1191,20 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 62CA84A3BA2CFC755DD2437A31008977;4342.
+(rerunfilecheck)             Checksum: 7150F9880AEC718976BBC03F93AAB870;4231.
  ) 
 Here is how much of TeX's memory you used:
- 29184 strings out of 475551
- 557087 string characters out of 5762554
- 1945238 words of memory out of 5000000
- 49592 multiletter control sequences out of 15000+600000
+ 29240 strings out of 475551
+ 558138 string characters out of 5762554
+ 1949238 words of memory out of 5000000
+ 49653 multiletter control sequences out of 15000+600000
  574495 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,21n,103p,1209b,1067s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,21n,103p,1209b,1071s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (53 pages, 575980 bytes).
+Output written on main.pdf (51 pages, 567951 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
- 217 named destinations out of 1000 (max. 500000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 212 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

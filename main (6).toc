@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {1.1}Definition}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(GL_n\)}{7}{section*.11}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{8}{section*.12}%
+\contentsline {subsubsection}{The Example of \(GL_n\)}{7}{section*.8}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{8}{section*.9}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{10}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Maximal Compact Subgroups}{12}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Metaplectic Covers}{13}{section.1.3}%
@@ -27,7 +27,6 @@
 \contentsline {subsection}{\numberline {4.2.1}The Decomposition of the Spectrum}{27}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Residual Representations of \(\GL _n\)}{28}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Normalisation and Automorphic L-Functions}{28}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Normalization of Intertwiners}{28}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Constant Terms}{29}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Definition and Role}{29}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Integration Lemmas}{30}{section.5.2}%
@@ -45,3 +44,5 @@
 \contentsline {section}{\numberline {6.2}Computing the Constant Term}{42}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Analysing the Intertwining Operator}{44}{section.6.3}%
 \contentsline {section}{\numberline {6.4}The Metaplectic Generalisation}{44}{section.6.4}%
+\contentsline {chapter}{\numberline {A}Motivation}{45}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Reminders ---- Remove Later}{45}{subsection.A.0.1}%
