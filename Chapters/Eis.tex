@@ -9,7 +9,7 @@ Thus we can define
 \[X_M \defeq \Hom_{\textrm{TopGroup}}(M(\A)/M^1, \C^*) .\]
 i.e. characters of \(M(\A)\) that are trivial on \(M^1\).
 \begin{remark}
-    This group is one of the peices in the ``Langlands decomposition'' \cite[4.9]{getzIntroductionAutomorphicRepresentations2024} of the archimedean points of a parabolic. 
+    To make it seem less misterious this group has some importance in the more general theory, in particular it is one of the peices in the ``Langlands decomposition'' of the archimedean points of a parabolic and it has the property that \(M(\Q)\backslash M(\A)^1\) has finite measure.\cite[4.9]{getzIntroductionAutomorphicRepresentations2024} 
 \end{remark}
 If we have consider the set of complex characters of \(M\),
 \[\mathfrak{a}_M^* \defeq \Hom_{\mathrm{LAG}}(M, \mathbb{G}_m )\tensor_\Z \C,\]
@@ -67,40 +67,47 @@ We are not really in a position to convey the true importance of these objects i
 
 \section{Spectral Decomposition}\label{spectral_decomposition}
 \subsection{The Decomposition of the Spectrum}
-It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears. This still holds for compact groups. \cite[5.1]{follandCourseAbstractHarmonic2016}
-
-\begin{example}[Peter-Weyl + Fourier Transform]
-    
-\end{example}
-
-This line of investigation reaches its zenith in the Plancherel theorem \cite[7.44]{follandCourseAbstractHarmonic2016} which exibits the regular representation, of a general class of groups, as a direct integral of the irreducible unitary representations. 
+It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears. This still holds for compact groups \cite[5.1]{follandCourseAbstractHarmonic2016} and has a more general incarnation in the Plancherel theorem for type I, second countable and unimodular topological groups \cite[7.44]{follandCourseAbstractHarmonic2016}, which exibits the regular representation as a direct integral of the irreducible unitary representations. 
 
 \todo[inline]{does this apply to \(G(\A)\)}
 \todo[inline]{Example of direct integral}
 
 Thus what one wants to do is find a decomposition of the regular representation \(G(\A) \curvearrowright \mathrm{L}^2(G(\A))\).
-We call such decompositions "spectral", alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. So once accomplished this is another one of the tools that can be used to compartmentalise problems in automorphic forms, by dealing with representations that appear in different parts of the spectrum. 
+We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. So once accomplished this is another one of the tools that can be used to compartmentalise problems in automorphic forms, by dealing with representations that appear in different parts of the spectrum. 
 
 The key result in this theory is the following decomposition,
-\begin{Theorem}[Moeglin-Waldspurger]
-    
+\begin{Theorem}[\cite{arthurEisensteinSeriesTrace1979}, MAIN THEOREM (b)]
+    There is an orthogonal decomposition of the representation of \(G(\A)\) on \(L^2(G(\Q) \backslash G(\A))\) into 
+    \[L^2(G(\Q) \backslash G(\A)) = \bigoplus_{\mathscr{P}}L^2_\mathscr{P}(G(\Q) \backslash G(\A)),\]
+    where \(\mathscr{P}\) runs over certain ``associate classes'' of parabolics of \(G\) and the summands are the direct integrals 
+    \[L^2_\mathscr{P}(G(\Q) \backslash G(\A)) =\int_{i\mathfrak{a}_P^+}^\oplus \]
 \end{Theorem}
 
-\subsection{Residual Representations of \(\GL_n\)}
+---------------
+
 Moeglin and Waldspurger also acheived a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. We mention this only by way of motivating the results in the final chapter. \todo[inline]{Brenner details}
 
 \section{Normalisation and Automorphic L-Functions}
 We dont intent to define in great detail automorphic L-functions, as there are many other better sources to learn from \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}, we will recall the idea and then discuss some of the properties and relations with Eisenstein series and interwining operators that we will need later.
 
-The first thing is to recall the classification of connected reductive groups defined over an algebraically closed field via root datum. A root datum is a tuple \((X, \Phi, \check{X} X, \Phi\checkmark)\) where \(X\) and \(\check{X}\) are two .... 
+The first thing is to recall the classification of connected reductive groups defined over an algebraically closed field via root datum. A root datum is a tuple \((X, \Phi, \check{X} , \check{\Phi})\) where \(X\) and \(\check{X}\) are two free abelian groups of finite type, \(\Phi, \check{\Phi}\) are subgroups that are in duality via a perfect pairing on \(X, \check{X}\). Then each reductive group over a number field \(G\) has associated the root datum that is associated to its base change to \(\C\). Thus to a connected reductive group over a number field we associate a connected reductive group over \C, given by the dual root datum. We call this the dual group of \(G\) and denote it \(\hat{G}\). The Langlands dual group is then the dual group producted with the \(\mathrm{Gal}(\bar{k}/k)\)
+\[^L G \defeq \hat{G} \rtimes \mathrm{Gal}(\bar{k}/k).\]
 
-Then each reductive group over a number field \(G\) has associated the root datum that is associated to its base change to \(\C\). Thus to a connected reductive group over a number field we associate a connected reductive group over \C, given by the dual root datum. We call this the dual group of \(G\). The Langlands dual group is then the dual group producted with the \(Gal(....)\).
-
-\begin{example}[Classical Groups]
-    
+\begin{example}[Classical Groups, \cite{bumpIntroductionLanglandsProgram2004}, 11.1]
+    We have the following table
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{ll}
+        \(G\)         & \(\hat{G}\)   \\ \hline
+        \(\GL_n\)     & \(\GL_n\)     \\
+        \(SO_{2n+1}\) & \(\Sp_{2n}\)  \\
+        \(SO_{2n}\)   & \(SO_{2n}\)   \\
+        \(\Sp_{2n}\)  & \(SO_{2n+1}\)
+        \end{tabular}
+        \end{table}
 \end{example}
 
-Then, using the Satake isomorphism, to each ..... representation of \(G\) we can associate a conjugacy class of \(LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: LG \to \GL_n(\C)\) to representations of \(G\). Thus the automorphic L-functions are defined as follows: Let \(\rho\) be a representaion of \(G\), let \(\pi\) be a complex representation of \(LG\) and \(s\in \C\) then 
+Then, using the Satake isomorphism \cite[2.2]{shahidiEisensteinSeriesAutomorphic2010}, to each ..... representation of \(G\) we can associate a conjugacy class of \(LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: LG \to \GL_n(\C)\) to representations of \(G\). Thus the automorphic L-functions are defined as follows: Let \(\rho\) be a representaion of \(G\), let \(\pi\) be a complex representation of \(LG\) and \(s\in \C\) then 
 \[L(s, \rho, \pi) \defeq \]
 
 \begin{example}[Dirichlet L-functions]
