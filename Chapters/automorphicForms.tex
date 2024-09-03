@@ -6,7 +6,7 @@ The story starts with the classical modular forms, or functions on the upper hal
 
 We still do not have a good answer as to why the definition below is ``the right'' definition, from a mathematical perspective, as there are many places in which it could be extended or restricted and we are unable to motivate why one shouldn't consider such things. Indeed there are varying notions of automorphic form that appear for this reason and I think it is important to stress that this is ``the right definition'' only in so far as people have been able to prove nice theorems about them, and that when functions appear ``in nature'' this concept has sufficed to encompass and explain their behavior. It is the representation theoretic properties more than anything that suggest the current definition as is mentioned in \cite[1.II.3]{borelAutomorphicFormsRepresentations1979}.
 
-We will present two notions of automorphic form here. In the literature they are both called ``automorphic forms'' however here we will distinguish those that are defined only on the archimedean points as ``archimedean automorphic forms'' for clarity.
+We will present two notions of automorphic form here. In the literature they are both called ``automorphic forms'' however here we will distinguish those that are defined only on the Archimedean points as ``Archimedean automorphic forms'' for clarity.
 
 \subsection{Archimedean Automorphic Form}
 Fix a global (number) field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textit{smooth}  if it is smooth in the sense of manifolds.
@@ -35,7 +35,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 		\[\phi: G(F_\infty) \to \C,\]
 		that is \(K_\infty\) and \(Z(\mathfrak{g})\) finite with a (left) \(\Gamma\) invariance. 
 
-		Denote the set of these archimedian automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\).
+		Denote the set of these Archimedean automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\).
 
 	\end{Definition}
 
@@ -52,12 +52,12 @@ Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(
     It is important that \(M(F)\) is treated as a subgroup of \(M(\A)\) via the diagonal embedding.
 \end{remark}
 
-For \(v\notin \infty\) a non-archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\).
+For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\).
 	
-	For the non-archimedian places we define smooth functions on the ``finite adeles'' \(\A_f\) as 
+	For the non-Archimedean places we define smooth functions on the ``finite adeles'' \(\A_f\) as 
 	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)) \]
 	
-	And for the archimedian places we define
+	And for the Archimedean places we define
 	\[C^\infty(G(F_\infty)) \defeq C^\infty\left(\prod_{\nu|\infty} G(F_\nu)\right)\]
 	
 	For the full Adele we define 
@@ -65,9 +65,9 @@ For \(v\notin \infty\) a non-archimedean place then we say that a function \(f: 
 	
 	A function on the adeles is smooth if it is in this set. Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
 
-    We still consider \(Z(\mathfrak{g})\) to be the center of the universal envelpoing algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
+    We still consider \(Z(\mathfrak{g})\) to be the center of the universal enveloping algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
     \[z.(f\tensor g) = f\tensor (z.g)\]
-    i.e. it acts on the archimedean places as in the setting of archimedean automorphic forms. 
+    i.e. it acts on the archimedean places as in the setting of Archimedean automorphic forms. 
 	
 	The definition of moderate growth carries over verbatim, however we change the set of places multiplied over to be all of them now.
     
@@ -76,7 +76,7 @@ For \(v\notin \infty\) a non-archimedean place then we say that a function \(f: 
     \end{remark}
 
 \section{Modular Forms}
-One might ask if there is a special case in which automorphic forms yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necessary to present the details here. To be clear we explain modular forms as archimedean automorphic forms as we think it is where the connection is clearest. 
+One might ask if there is a special case in which automorphic forms yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necessary to present the details here. To be clear we explain modular forms as Archimedean automorphic forms as we think it is where the connection is clearest. 
 
 	Recall the definition of a modular form 
 	\begin{Definition}[\cite{diamondFirstCourseModular2005} 1.1.2]
@@ -241,4 +241,4 @@ One might ask if there is a special case in which automorphic forms yield modula
 	}
     this example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
 
-	There is a nice explination of how to lift this to the adelic setting in several places, however it is stated quite clearly in \cite[2.1]{cogdellLecturesLfunctionsConverse}
+	There is a nice explanation of how to lift this to the adelic setting in several places, however it is stated quite clearly in \cite[2.1]{cogdellLecturesLfunctionsConverse}

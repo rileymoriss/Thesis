@@ -9,7 +9,7 @@ Thus we can define
 \[X_M \defeq \Hom_{\textrm{TopGroup}}(M(\A)/M^1, \C^*) .\]
 i.e. characters of \(M(\A)\) that are trivial on \(M^1\).
 \begin{remark}
-    To make it seem less misterious this group has some importance in the more general theory, in particular it is one of the peices in the ``Langlands decomposition'' of the archimedean points of a parabolic and it has the property that \(M(\Q)\backslash M(\A)^1\) has finite measure.\cite[4.9]{getzIntroductionAutomorphicRepresentations2024} 
+    To make it seem less mysterious this group has some importance in the more general theory, in particular it is one of the pieces in the ``Langlands decomposition'' of the Archimedean points of a parabolic and it has the property that \(M(\Q)\backslash M(\A)^1\) has finite measure.\cite[4.9]{getzIntroductionAutomorphicRepresentations2024} 
 \end{remark}
 If we have consider the set of complex characters of \(M\),
 \[\mathfrak{a}_M^* \defeq \Hom_{\mathrm{LAG}}(M, \mathbb{G}_m )\tensor_\Z \C,\]
@@ -22,7 +22,7 @@ which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G
 
     First of all we have that \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}
          \[ X_{M_r}^{\Sp_{2n}} \subseteq X_{M_r} \cong \mathfrak{a}_{M_r}^*\defeq Rat(M_r) \tensor_\Z \C\]
-        thus it is clearly sufficent to bound the dimension of \(\mathfrak{a}_{M_r}^*\) as a \C vector space, moreover this dimension agrees with the dimension of \(Rat(M_r)\) as a free \Z module. 
+        thus it is clearly sufficient to bound the dimension of \(\mathfrak{a}_{M_r}^*\) as a \C vector space, moreover this dimension agrees with the dimension of \(Rat(M_r)\) as a free \Z module. 
 
         Thus we compute \(\dim_\Z(Rat(M_r))\):
         \begin{equation*}
@@ -45,31 +45,31 @@ which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G
 \end{remark}
 There is the natural map \(m_P: G(\A) \to M^1 \backslash M(\A)\) sending \(umk \mapsto M^1 m\), where \(g = umk\) using the Langlands-Iwasawa decomposition \ref{iwasawa_decomposition}.
 
-Now if we take the collection of irreducible automorphic representatinos of \(M\), call it \(\hat{\mathcal{A}}\), then there is an action of \(X_M^G\) on \(\hat{\mathcal{A}}\) given by tensoring. Then \(\hat{\mathcal{A}}\) decomposes as a disjoint union of its orbits. Consider the orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\), then by definition \(X_M^G\) acts transitively but it also acts freely \cite[II.1]{moeglinSpectralDecompositionEisenstein1995}. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the comoplex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
+Now if we take the collection of irreducible automorphic representations of \(M\), call it \(\hat{\mathcal{A}}\), then there is an action of \(X_M^G\) on \(\hat{\mathcal{A}}\) given by tensoring. Then \(\hat{\mathcal{A}}\) decomposes as a disjoint union of its orbits. Consider the orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\), then by definition \(X_M^G\) acts transitively but it also acts freely \cite[II.1]{moeglinSpectralDecompositionEisenstein1995}. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the complex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
 
 Now we will define an Eisenstein series: Let \(\mathfrak{P}\) be as above, let \(\pi\in \mathfrak{P}\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\), then \(\lambda\in X_M^G\) acts on \(\phi_\pi\) by 
 \[\lambda.\phi_\pi(g) = (\lambda \comp m_P)(g) \phi_\pi(g)\]
 which is then an element of \(\mathcal{A}(U(\A)M(k)\backslash G(\A))_{\pi\tensor \lambda}\). Finally we have the \textbf{Eisenstein series} which is defined by the following sum
 \[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi_\pi(\gamma g)\]
-whenever it is convergent. The fisrt thing to note is that for a fixed \(\phi\) there is an open set in \(X_M^G\) and a compact subset of \(G(k)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
+whenever it is convergent. The first thing to note is that for a fixed \(\phi\) there is an open set in \(X_M^G\) and a compact subset of \(G(k)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
 \todo[inline]{They say its an automorphic form here but the compact set isnt all of G(\A) so i dont know how to interpret that...>}
 
 If \(P = MU, P' = M'U'\) are two standard parabolics of \(G\) that are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\)
-Then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representaitons of \(M'\).
+Then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representations of \(M'\).
 
 Then the Eisenstein series is closely related (through its constant terms \ref{constant_conjugate_levi}) to the operator
 \[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(k)\cap wU(k)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du\]
 where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\).
 
-The key properties of both the Eisenstien series and this operator can be found in \cite[IV.1.8, IV.1.9, IV.1.10, IV.1.11]{moeglinSpectralDecompositionEisenstein1995}. Most importantly as a function of \(\mathfrak{P}\) it can be shown that in the sense of Frechet spaces they both have a meromorphic continuation to all of \(\mathfrak{P}\). This was also given a second ``soft proof'' more recently in \cite{bernsteinMeromorphicContinuationEisenstein2022}, with the spectral decomposition that follows from it also being worked out in \cite{delormeSpectralTheoremLanglands2021}. Moreover for the Eisenstein series at a point in \(p\in \mathfrak{P}\) at which it is holomorphic then \(E(\phi,p, g)\) is an automorphic form. 
+The key properties of both the Eisenstein series and this operator can be found in \cite[IV.1.8, IV.1.9, IV.1.10, IV.1.11]{moeglinSpectralDecompositionEisenstein1995}. Most importantly as a function of \(\mathfrak{P}\) it can be shown that in the sense of Frechet spaces they both have a meromorphic continuation to all of \(\mathfrak{P}\). This was also given a second ``soft proof'' more recently in \cite{bernsteinMeromorphicContinuationEisenstein2022}, with the spectral decomposition that follows from it also being worked out in \cite{delormeSpectralTheoremLanglands2021}. Moreover for the Eisenstein series at a point in \(p\in \mathfrak{P}\) at which it is holomorphic then \(E(\phi,p, g)\) is an automorphic form. 
 
-We are not really in a position to convey the true importance of these objects in the theory of automorphic forms, however we will make some comments. First some surveys are \cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}, \cite{kimEISENSTEINSERIESTHEIR}, \cite{jiangResiduesEisensteinSeries2008a}. To see the relation to the classical Eisenstein series there is \cite{garrettTransitionEisensteinSeries2016}. One thing that Eisenstein series do, as in the theory of modular forms, is that they furnish us with quasi-concrete examples. If we have an automorphic form then the Eisenstein series is on occassion also an automorphic form and so we can multiply our examples. Another reason that these functions are important is through their normalisation and constant terms, in which products of L functions appear. This has been a fruitful method for proving theorems about L-functions as in \cite{shahidiEisensteinSeriesAutomorphic2010}\cite{pollackRANKINSELBERGMETHODUSER}\cite{arthurEisensteinSeriesTrace1979}.
+We are not really in a position to convey the true importance of these objects in the theory of automorphic forms, however we will make some comments. First some surveys are \cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}, \cite{kimEISENSTEINSERIESTHEIR}, \cite{jiangResiduesEisensteinSeries2008a}. To see the relation to the classical Eisenstein series there is \cite{garrettTransitionEisensteinSeries2016}. One thing that Eisenstein series do, as in the theory of modular forms, is that they furnish us with quasi-concrete examples. If we have an automorphic form then the Eisenstein series is on occasion also an automorphic form and so we can multiply our examples. Another reason that these functions are important is through their normalisation and constant terms, in which products of L functions appear. This has been a fruitful method for proving theorems about L-functions as in \cite{shahidiEisensteinSeriesAutomorphic2010}\cite{pollackRANKINSELBERGMETHODUSER}\cite{arthurEisensteinSeriesTrace1979}.
 
 \section{Spectral Decomposition}\label{spectral_decomposition}
-This is a short explination of some terms that frequently appear as well as some motivation for the later results. The results contained here-in are proved using the Eisenstein series as an essential component. 
+This is a short explanation of some terms that frequently appear as well as some motivation for the later results. The results contained here-in are proved using the Eisenstein series as an essential component. 
 
 \subsection{The Decomposition of the Spectrum}
-It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears. This still holds for compact groups \cite[5.1]{follandCourseAbstractHarmonic2016} and has a more general incarnation in the Plancherel theorem for type I, second countable and unimodular topological groups \cite[7.44]{follandCourseAbstractHarmonic2016}, which exibits the regular representation as a direct integral of the irreducible unitary representations. 
+It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears. This still holds for compact groups \cite[5.1]{follandCourseAbstractHarmonic2016} and has a more general incarnation in the Plancherel theorem for type I, second countable and unimodular topological groups \cite[7.44]{follandCourseAbstractHarmonic2016}, which exhibits the regular representation as a direct integral of the irreducible unitary representations. 
 
 \todo[inline]{does this apply to \(G(\A)\)}
 \todo[inline]{Example of direct integral}
@@ -85,15 +85,15 @@ The key result in this theory is the following decomposition,
 \end{Theorem}
 These direct integrals are in fact constructed out of subspaces generated by Eisenstein series. 
 
-The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``peices'' to such a decomposition. The piece that decomposes into a direct sum of irreducibles is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum.
+The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``pieces'' to such a decomposition. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum.
 
 \subsection{Residual Spectrum}
 Moeglin and Waldspurger also acheived a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. 
-First consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then Moeglin and Waldspurger construct a represntation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' and denote it 
+First consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then Moeglin and Waldspurger construct a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' and denote it 
 \[\Delta(\tau, b).\]
 They go on to prove that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}.
 
-This represnentation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
+This representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
 
 
 
@@ -118,7 +118,7 @@ The first thing is to recall the classification of connected reductive groups de
         \end{table}
 \end{example}
 
-Then, using the Satake isomorphism \cite[2.2]{shahidiEisensteinSeriesAutomorphic2010}, to each unramified representation of \(G(F_\nu)\) we can associate a conjugacy class of \(^LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: ^LG \to \GL_n(\C)\) to representations of \(G(F_\nu)\). Thus the automorphic L-functions are defined as follows: Let \(\rho\) be a representaion of \(G(\A)\), let \(r\) be a complex representation of \(^LG\) and \(s\in \C\) then 
+Then, using the Satake isomorphism \cite[2.2]{shahidiEisensteinSeriesAutomorphic2010}, to each unramified representation of \(G(F_\nu)\) we can associate a conjugacy class of \(^LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: ^LG \to \GL_n(\C)\) to representations of \(G(F_\nu)\). Thus the automorphic L-functions are defined as follows: Let \(\rho\) be a representation of \(G(\A)\), let \(r\) be a complex representation of \(^LG\) and \(s\in \C\) then 
 \[L(s, \rho, r) \defeq \prod_\nu L_\nu(s, \rho_\nu, r ) = \prod_\nu \frac{1}{\det\bigl( I - r(c(\rho_\nu))q^{-s} \bigr)}  ,\]
 where \(\nu\) runs over the unramified places. It is a part of the grand Langlands philosophy that there should be suitable L-functions for the ramified places satisfying very nice properties.
 
