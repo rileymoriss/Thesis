@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  3 SEP 2024 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  2 SEP 2024 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -953,26 +953,22 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 [26]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 74.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 72.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 75.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 73.
 
 [27]
 
-LaTeX Warning: Citation `arthurLfunctionsAutomorphicRepresenta' on page 28 undefined on input line 102.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 88.
 
 [28]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 140.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 127.
 
-[29]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 144.
-
-) [30]
+) [29]
 Chapter 5.
-(Chapters/constantTerms.tex [31
+(Chapters/constantTerms.tex [30
 
 ]
 
@@ -983,7 +979,7 @@ Overfull \hbox (7.9179pt too wide) in paragraph at lines 47--48
 \OT1/cmr/m/n/10 This com-pu-ta-tion forms the heart of a well known the-o-rem, [[], Prop 10.4.2][[], II.1.7][[],
  []
 
-[32] [33]
+[31] [32]
 Overfull \hbox (90.28589pt too wide) detected at line 95
 [][]
  []
@@ -999,9 +995,9 @@ Overfull \hbox (113.73308pt too wide) detected at line 123
 
 Underfull \vbox (badness 1769) has occurred while \output is active []
 
- [34]
+ [33]
 
-LaTeX Warning: Reference `intertwining_operator' on page 35 undefined on input line 133.
+LaTeX Warning: Reference `intertwining_operator' on page 34 undefined on input line 133.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 144.
@@ -1009,14 +1005,14 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 149.
 
-[35]
+[34]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 153.
 
-[36] [37]
+[35] [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [37]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 250.
 
@@ -1028,14 +1024,14 @@ Overfull \hbox (74.5519pt too wide) detected at line 310
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [38]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 319.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [39]
 Overfull \hbox (37.10341pt too wide) detected at line 330
 []
  []
@@ -1064,12 +1060,12 @@ Overfull \hbox (81.13239pt too wide) detected at line 350
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
+ [40]
 Underfull \hbox (badness 10000) in paragraph at lines 373--374
  []$\U/msa/m/n/10 ^^C$
  []
 
-) [42]
+) [41]
 Chapter 6.
 (Chapters/polesOfEisensteinSeries.tex
 
@@ -1084,7 +1080,7 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 8.
 
-[43
+[42
 
 ]
 
@@ -1109,20 +1105,20 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 53.
 
-[44]
+[43]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 71.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 76.
 
-[45]) [46] (main.tdo [47
+[44]) [45] (main.tdo [46
 
 ])
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [48] (main.bbl
+ [47] (main.bbl
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 59.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -1134,19 +1130,19 @@ Overfull \hbox (37.88727pt too wide) in paragraph at lines 76--79
 []\OT1/cmr/m/n/10 Clifford Al-ge-bras and the Clas-si-cal Groups.  https://www.cambridge.org/core/books/clifford-
  []
 
-[49
+[48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 113--115
 []\OT1/cmr/m/n/10 Essays in the His-tory of Lie Groups and Al-ge-braic Groups.
  []
 
-[50]
+[49]
 Overfull \hbox (502.91623pt too wide) in paragraph at lines 237--240
 []\OT1/cmr/m/n/10 Notes for class on al-ge-braic groups.pdf.  https://users.math.msu.edu/users/ruiterj2/Math/Documents/Summer%202019/Algebraic%20Groups/Notes%20for%20class%20on%20algebraic%20groups.pdf. 
  []
 
-[51]) [52] (main.aux)
+[50]) [51] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1156,20 +1152,20 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D551B45AAFBD6BE3AF6663688F57C521;4136.
+(rerunfilecheck)             Checksum: 62CA84A3BA2CFC755DD2437A31008977;4342.
  ) 
 Here is how much of TeX's memory you used:
- 29192 strings out of 475551
- 557655 string characters out of 5762554
+ 29146 strings out of 475551
+ 556722 string characters out of 5762554
  1945238 words of memory out of 5000000
- 49609 multiletter control sequences out of 15000+600000
+ 49566 multiletter control sequences out of 15000+600000
  567713 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,21n,103p,1209b,1131s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (55 pages, 570512 bytes).
+ 98i,21n,103p,1209b,1067s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs7.pfb>
+Output written on main.pdf (54 pages, 570091 bytes).
 PDF statistics:
- 872 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 869 PDF objects out of 1000 (max. 8388607)
+ 217 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

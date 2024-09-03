@@ -5,6 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
+Warning--I didn't find a database entry for "arthurLfunctionsAutomorphicRepresenta"
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
 Warning--to sort, need author or key in CliffordAlgebrasClassical
@@ -45,7 +46,7 @@ Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
 You've used 53 entries,
             2543 wiz_defined-function locations,
-            850 strings with 13885 characters,
+            852 strings with 13959 characters,
 and the built_in function-call counts, 16105 in all, are:
 = -- 1502
 > -- 610
@@ -84,4 +85,4 @@ warning$ -- 38
 while$ -- 128
 width$ -- 57
 write$ -- 607
-(There were 38 warnings)
+(There were 39 warnings)
