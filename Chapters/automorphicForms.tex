@@ -1,15 +1,14 @@
-There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms. Although this has been done in several places, none suit my taste to a tee, and so we briefly present our own take on this. We intend to be terse as this material is somewhat standard.
+There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms. We intend to be terse as this material is somewhat standard.
 
 \section{Definition and Role}
 The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maas form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
-\todo[inline]{reference or more detail for the history}
 
 We still do not have a good answer as to why the definition below is ``the right'' definition, from a mathematical perspective, as there are many places in which it could be extended or restricted and we are unable to motivate why one shouldn't consider such things. Indeed there are varying notions of automorphic form that appear for this reason and I think it is important to stress that this is ``the right definition'' only in so far as people have been able to prove nice theorems about them, and that when functions appear ``in nature'' this concept has sufficed to encompass and explain their behavior. It is the representation theoretic properties more than anything that suggest the current definition as is mentioned in \cite[1.II.3]{borelAutomorphicFormsRepresentations1979}.
 
 We will present two notions of automorphic form here. In the literature they are both called ``automorphic forms'' however here we will distinguish those that are defined only on the Archimedean points as ``Archimedean automorphic forms'' for clarity.
 
 \subsection{Archimedean Automorphic Form}
-Fix a global (number) field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textit{smooth}  if it is smooth in the sense of manifolds.
+Fix a number field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textbf{smooth}  if it is smooth in the sense of manifolds.
 
 
 Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to SL_{2n}\) via
@@ -18,55 +17,36 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 		 & (\i (g))^{-t}
 	\end{pmatrix}.\]
 
-	A function \(\phi : G(F_\infty) = G(\prod_{v|\infty} F_\nu) \to \C \) is of \textit{moderate growth} if there are constants \((c,r)\in \R_{>0}\times \R\) such that 
-	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v|\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r.\]
+	A function \(\phi : G(F_\infty) = G(\prod_{v\in\infty} F_\nu)\cong \prod_{v\in \infty}G(F_\nu) \to \C \) is of \textbf{moderate growth} if there are constants \((c,r)\in \R_{>0}\times \R\) such that 
+	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v\in\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r.\]
 	This is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
 
     Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
-    A vector in a \(Z(\mathfrak{g})\) module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textit{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
+    A vector in a \(Z(\mathfrak{g})\)-module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textbf{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
 
-	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\) module is \(K_\infty\) finite if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\) modules).
+	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\)-module is \(K_\infty\) \textbf{finite} if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\)-modules).
 
-	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action.  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
+	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action, i.e. \(g.f(x) = f(xg)\).  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
 	\[z.F(g) = \Dif{}{t}F(ge^{tz}).\] 
 
 	\begin{Definition}
-		Let \(\Gamma\leq G(F_\infty)\) some arithmetic subgroup, an automorphic form for \(\Gamma\) is a smooth function of moderate growth 
+		Let \(\Gamma\leq G(F_\infty)\) some (arithmetic) subgroup, an \textbf{automorphic form for \(\Gamma\)} is a smooth function of moderate growth 
 		\[\phi: G(F_\infty) \to \C,\]
-		that is \(K_\infty\) and \(Z(\mathfrak{g})\) finite with a (left) \(\Gamma\) invariance. 
-
-		Denote the set of these Archimedean automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\).
-
+		that is \(K_\infty\) and \(Z(\mathfrak{g})\) finite with a (left) \(\Gamma\) invariance. We denote the set of these ``Archimedean'' automorphic forms by \(\mathcal{A}(\Gamma \backslash G(F_\infty))\).
 	\end{Definition}
 
 
 \subsection{Adelic Automorphic Form}
-Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out earlier \ref{max_compact_subgroup}.
-\begin{definition}
-    A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an automorphic form if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. 
+Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out in the previous section \ref{max_compact_subgroup}.
 
-	We will denote the set of these automorphic forms by \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\)
-\end{definition}
+For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\). This suggests the definition of smooth functions on the ``finite adeles'' \(\A_f\) as 
+	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)). \]
+	Thus for the full adeles we have the notion of smooth as an element of the following,
+	\[C^\infty(\mathbb{A}_F) \defeq   C^\infty(G(\mathbb{A}_f))   \otimes   C^\infty(G(F_\infty)).\]
+	Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
 
-\begin{remark}
-    It is important that \(M(F)\) is treated as a subgroup of \(M(\A)\) via the diagonal embedding.
-\end{remark}
-
-For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\).
-	
-	For the non-Archimedean places we define smooth functions on the ``finite adeles'' \(\A_f\) as 
-	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)) \]
-	
-	And for the Archimedean places we define
-	\[C^\infty(G(F_\infty)) \defeq C^\infty\left(\prod_{\nu|\infty} G(F_\nu)\right)\]
-	
-	For the full Adele we define 
-	\[C^\infty(\mathbb{A}_F) \defeq   C^\infty(G(\mathbb{A}_f))   \otimes   C^\infty(G(F_\infty))\]
-	
-	A function on the adeles is smooth if it is in this set. Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
-
-    We still consider \(Z(\mathfrak{g})\) to be the center of the universal enveloping algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
-    \[z.(f\tensor g) = f\tensor (z.g)\]
+	We still consider \(Z(\mathfrak{g})\) to be the center of the universal enveloping algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
+    \[z.(f\tensor g) = f\tensor (z.g),\]
     i.e. it acts on the archimedean places as in the setting of Archimedean automorphic forms. 
 	
 	The definition of moderate growth carries over verbatim, however we change the set of places multiplied over to be all of them now.
@@ -74,6 +54,16 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
     \begin{remark}[\cite{borelAutomorphicFormsRepresentations1979}, 1.II.3]
         The collection of moderate growth functions is independent of the choices of embedding. 
     \end{remark}
+
+\begin{definition}
+    A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an \textbf{automorphic form} if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. We will denote the set of these automorphic forms by \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\)
+\end{definition}
+
+\begin{remark}
+    It is important that \(M(F)\) is treated as a subgroup of \(M(\A)\) via the diagonal embedding.
+\end{remark}
+	
+    
 
 \section{Modular Forms}
 One might ask if there is a special case in which automorphic forms yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necessary to present the details here. To be clear we explain modular forms as Archimedean automorphic forms as we think it is where the connection is clearest. 
@@ -86,18 +76,17 @@ One might ask if there is a special case in which automorphic forms yield modula
 		\[\phi(\gamma.z) = (cz+d)^k\phi(z), \quad \gamma = \begin{pmatrix}
 			a &b \\
 			c &d
-		\end{pmatrix}\in \SL_2(\Z)\]
+		\end{pmatrix}\in \SL_2(\Z),\]
 		and extends holomorphically to \(\infty\) is called a modular form of weight k.
 	\end{Definition}
 	These are modular forms with trivial character and full level.
 
-
 	Now give a function on a set \(X\) and an action of a group \(G\) on X, there is a general way of associating to \(\Hom(X, Y)\) a family of maps \(\Hom(G, Y)\) indexed by \(X\). This is a manifestation of the tensor-hom adjunction. Effectively if \(f: X\to Y\) the we get a map for each \(x\in X\) defined on \(f_x : G \to Y\) given by \(g\mapsto f(g.x)\).
 
-	So for our purposes we are trying to take some subset of functions \(\mathcal{H} \to \C\) and shift their domain to the \(\Q_\infty = \R\) points of some reductive group. In particular it would be sufficient to find a reductive group with a well defined action on the upper half plane and in particular we would want to quotient to be transitive.
+	So for our purposes we are trying to take some subset of functions \(\mathcal{H} \to \C\) and shift their domain to the \(\Q_\infty = \R\) points of some reductive group. In particular it would be sufficient to find a reductive group with a well defined action on the upper half plane and in particular we would want the action to be transitive.
 
 	\begin{Theorem}
-		\[\mathcal{H} \cong  \SL_2(\R) / SO_2(\R) \]
+		\[\mathcal{H} \cong  \SL_2(\R) / SO_2(\R) ,\]
 		as topological spaces.
 	\end{Theorem}
 	\proofbar{
@@ -105,54 +94,43 @@ One might ask if there is a special case in which automorphic forms yield modula
 		\[\SL_2(\R) \curvearrowright \mathcal{H}: \;\; \begin{pmatrix}
 			a & b\\
 			c & d
-		\end{pmatrix}.z = \frac{az + b}{cz + d}\]
+		\end{pmatrix}.z = \frac{az + b}{cz + d}.\]
 		Then look at the orbit of \(i\), namely 
 		\[\begin{pmatrix}
 			a & b\\
 			 & d
-		\end{pmatrix}.i = \frac{ai + b}{d} = a^2i + ab\]
+		\end{pmatrix}.i = \frac{ai + b}{d} = a^2i + ab,\]
 		which letting \(a, b\in \R\) vary is clearly surjective onto the whole upper half plane. So there is one orbit, and hence by the orbit stabiliser we know that 
-		\[\mathcal{H} \cong \SL_2(\R) /stab(i) \]
+		\[\mathcal{H} \cong \SL_2(\R) /stab(i) ,\]
 		so we want to find
 		\[stab(i) = \left\{ g = \begin{pmatrix}
 			a & b\\
 			c & d
-		\end{pmatrix}\in \SL_2(\R) : g.i = i   \right\}\]
+		\end{pmatrix}\in \SL_2(\R) : g.i = i   \right\},\]
 		in particular we solve 
 		\begin{equation*}
 			\begin{aligned}
-				i &= g.i \\
-				  &= \frac{ai + b}{ci + d} \\
-				  &= (c^2 + d^2)\inv (ai+b)(d-ci) \\
-				  &= (c^2 + d^2)\inv (ac + bd  + i\det(g)) \\
+				i &= g.i = \frac{ai + b}{ci + d} = (c^2 + d^2)\inv (ac + bd  + i\det g) .\\
 			\end{aligned}
 		\end{equation*}
 		So equating coefficients we have 
-		\[\det g (c^2 + d^2)\inv  = 1 \implies c^2 +  d^2 = \det g = 1\] 
+		\[\det g (c^2 + d^2)\inv  = 1 \implies c^2 +  d^2 = \det g = 1,\] 
 		on the other hand 
-		\[ac + bd = 0\]
-		Now the pairs \(c^2 + d^2 = \det g\) are parameterized by \(\theta\in [0, 2\pi)\) using \(c = \sin \theta, d =  \cos\theta\) hence subbing this into the above equation
-		\[\frac{-b}{a} = \tan\theta\]
+		\[ac + bd = 0.\]
+		Now the pairs \(c^2 + d^2 = \det g = 1\) are parameterized by \(\theta\in [0, 2\pi)\) using \(c = \sin \theta, d =  \cos\theta\) hence subbing this into the above equation
+		\[\frac{-b}{a} = \tan\theta,\]
 		and so \(b = -k\sin\theta, a = k\cos\theta\) for some  \(k\in \R\) but the determinant must be \(1\) so \(k = 1\).
 		Hence 
 		\[stab(i) = \left\{ \begin{pmatrix}
 			\cos\theta & -\sin\theta \\
 			\sin\theta & \cos\theta
-		\end{pmatrix} : \theta \in [0, 2\pi)\right\} = SO_2(\R)\]
+		\end{pmatrix} : \theta \in [0, 2\pi)\right\} = SO_2(\R).\]
 		One then has to check that this is all continuous. 
 	}
     \begin{remark}
-        Sometimes for \todo[inline]{what reasons...} this is exhibited as 
-        \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R)\]
-        this obscures the connection with the reductive group setting however because it is not obvious that 
-
-        \begin{Lemma}
-            \(\GL_2^+\) is a reductive group over \Q. 
-        \end{Lemma}
-        \proofbar{
-            It is the connected component of the identity and therefore a closed subgroup.
-            Therefore by Matsushima's criterion  \cite{arzhantsevInvariantIdealsMatsushima2005} we have that \(\GL_2/\GL_2^+ \) is affine iff \(\GL_2^+ \) is reductive. But the thing on the left is the constant group scheme \(\Z/2\Z\) which is affine. 
-        }
+        Sometimes for to make the action of certian (Hecke) operators more apparent this is exhibited as 
+        \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R).\]
+        This obscures the connection with the reductive group setting however so we avoid it here. 
     \end{remark}
 
 
@@ -162,34 +140,29 @@ One might ask if there is a special case in which automorphic forms yield modula
     
 		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGJlZ2lue3BtYXRyaXh9eV57MS8yfSAmIHggeV57LTEvMn1cXFxcICYgeV57LTEvMn1cXGVuZHtwbWF0cml4fVNPXzIoXFxSKT1cXFNsXzIoXFxSKSJdLFsyLDAsIlxcU2xfMihcXFIpL1NPXzIoXFxSKSJdLFsyLDIsIlxcU2xfMihcXFopXFxzZXRtaW51c1xcU2xfMihcXFIpIl0sWzQsMCwiXFxtYXRoY2Fse0h9Il0sWzEsMywiXFxzaW0iXSxbMCwxLCJwcm9qIl0sWzEsMywieFxcbWFwc3RvIHguaSIsMl0sWzAsMiwiXFx0ZXh0e2Rlc2NlbmQ/Pz99IiwyXV0=
 	\[\begin{tikzcd}[cramped]
-		{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}SO_2(\R)=\SL_2(\R)} && {\SL_2(\R)/SO_2(\R)} && {\mathcal{H}} \\
+		{\left\{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix} : x,y\in \R, y\neq 0 \right\} SO_2(\R)=\SL_2(\R)} && {\SL_2(\R)/SO_2(\R)} && {\mathcal{H}} \\
 		\\
 		&& {\SL_2(\Z)\setminus\SL_2(\R)}
 		\arrow["\sim", from=1-3, to=1-5]
 		\arrow["\mathrm{project}", from=1-1, to=1-3]
-		\arrow["{x\mapsto x.i}"', from=1-3, to=1-5]
-		\arrow["{\text{descend}}"', from=1-1, to=3-3]
+		\arrow["{g\mapsto g.i}"', from=1-3, to=1-5]
+		\arrow["{\text{project}}"', from=1-1, to=3-3]
 	\end{tikzcd}\]
 
-    Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.
-
-
-	Finally for \(f\) be a modular form of weight k then we associate the following function on \(\SL_2(\R)\)
-	\[F(g) \defeq  (ci + d)^{-k}f(g.i)\]
-	We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition.
-
-	It remains to show the three other properties:
+    Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.Thus for \(f\) a modular form of weight k the following function on \(\SL_2(\R)\)
+	\[F(g) \defeq  (ci + d)^{-k}f(g.i),\]
+	we claim is an automorphic form for \(\SL_2(\Z)\). We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition. It remains to show the three other properties:
 
 	\begin{Lemma}
 		\(F(g)\) is of moderate growth.
 	\end{Lemma}
 	\proofbar{
 		Unraveling the definitions we require two constants such that 
-		\[|F(g)| = |ci+ d|^{-k}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r\]
+		\[|F(g)| = |ci+ d|^{-k}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r,\]
 		A direct computation shows that 
-		\[Im(g.i) = |ci+ d|^{-2}\]
+		\[Im(g.i) = |ci+ d|^{-2},\]
 		hence we require to show
-		\[ \mathrm{Im}(g.i)^{k/2}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r\]
+		\[ \mathrm{Im}(g.i)^{k/2}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r.\]
 		\textcolor{red}{Somehow invoke polynomial growth...?}
         but the modularity condition has the growth condition that \(\lim_{x\to \infty}f(xi)\) be bounded. 
 	}
@@ -198,27 +171,13 @@ One might ask if there is a special case in which automorphic forms yield modula
 		\(SO_2(\R)\) is a maximal compact subgroup inside \(\SL_2(\R)\). \(F\) is an \(SO_2(\R)\) finite function.
 	\end{Lemma}
 	\proofbar{
-		First take \(\kappa = \begin{pmatrix}
-			\cos\theta & -\sin\theta \\
-			\sin\theta & \cos\theta
-		\end{pmatrix} \in K = SO_2(\R)\) then 
-		\[\kappa.i = \frac{i\cos\theta - \sin\theta}{i\sin\theta + \cos\theta} = \frac{-i(-\cos\theta - i\sin\theta)}{e^{i\theta}} = i\]
-		hence for \(g = \begin{pmatrix}
-			a & b \\
-			c & d
-		\end{pmatrix} \in \SL_2(\R)\) we have that 
+		Using that \(\kappa \in K = SO_2(\R)\) acts trivially on \(i\), an elementary computation shows that for \(g  \in \SL_2(\R)\),
 		\begin{equation*}
 			\begin{aligned}
-				F(g\kappa) &= ((c\cos\theta + d\sin\theta)i - c\sin\theta + d\cos\theta)^{-k}f(g.\kappa.i) \\
-						   &= ((c\cos\theta + d\sin\theta)i - c\sin\theta + d\cos\theta)^{-k}f(gi) \\
-						   &= (ci\cos\theta - c\sin\theta + d\cos\theta + di\sin\theta)^{-k}f(gi) \\
-						   &= (-i^2(ci\cos\theta - c\sin\theta) + de^{i\theta})^{-k}f(gi) \\
-						   &= (ice^{i\theta} + de^{i\theta})^{-k}f(gi) \\
-						   &= (ic + d)^{-k}e^{-ik\theta}f(gi) \\
-						   &= e^{-ik\theta}F(g) \\
+				F(g\kappa) = e^{-ik\theta}F(g). \\
 			\end{aligned}
 		\end{equation*}
-		Now this shows that \(F(g)\) is acted on by \(K\) via a one dimensional irreducible representation. In particular it is finite dimensional.
+		Hence \(F(g)\) is acted on by \(K\) via a one dimensional irreducible representation. In particular it is finite dimensional.
 		}
 
 	\begin{Lemma}
@@ -227,18 +186,17 @@ One might ask if there is a special case in which automorphic forms yield modula
 	\proofbar{ Only a sketch. 
 
 		The center of the universal enveloping algebra of the complexified Lie algebra is generated by the Casimir operators. From \cite{garrettInvariantDifferentialOperators2010} we know that the casimir is 
-		\[\Omega = \frac{1}{2}H^2 + XY + YX\]
-		we have the coordinates on \(\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}SO_2(\R)=\SL_2(\R)\) from \cite{bumpAutomorphicFormsRepresentations1997}[1.19 pg 139] in which 
+		\[\Omega = \frac{1}{2}H^2 + XY + YX.\]
+		We have the coordinates on \(\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}SO_2(\R)=\SL_2(\R)\) from \cite{bumpAutomorphicFormsRepresentations1997}[1.19 pg 139] in which 
 		 the casimir acts as the differential operator
-		\[\Delta = y^2\left(\left(\Dif{}{x}\right)^2 +\left(\Dif{}{y}\right)^2\right) - y\Dif{^2}{x\partial \theta}\] 
+		\[\Delta = y^2\left(\left(\Dif{}{x}\right)^2 +\left(\Dif{}{y}\right)^2\right) - y\Dif{^2}{x\partial \theta},\] 
 		\cite{bumpAutomorphicFormsRepresentations1997}[1.29 pg 143 ,Prop 2.2.5 pg 155]. Now we claim that F is an eigenfunction for this operator. 
 		An element \((x,y,\theta) \defeq \begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}\kappa_\theta \in \SL_2(\R)\) acts on \(i\) by sending it to \(x+ iy\) (elementary computation). The bottom row of the product is \(y^{-1/2}\sin\theta ;y^{-1/2}\cos\theta \) which results in 
-		\[F(x,y,\theta) = y^{k/2}e^{-ik\theta}f(x + iy)\]
+		\[F(x,y,\theta) = y^{k/2}e^{-ik\theta}f(x + iy).\]
 		It is then a calculus exercise to apply \(\Delta\) to this, using the holomorphicity we also get that \(f_{xx} - f_{yy} = 0\) and \(f_y = if_x\) which cancels away terms and we get that 
-		\[\Delta F(x,y,\theta) = \frac{k}{2}\left(\frac{k}{2} - 1\right) F(x,y,\theta)\]
+		\[\Delta F(x,y,\theta) = \frac{k}{2}\left(\frac{k}{2} - 1\right) F(x,y,\theta).\]
 		
 		Therefore the dimension of \(Z(\mathfrak{g})F\) is simply one.
 	}
-    this example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
-
+    This example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
 	There is a nice explanation of how to lift this to the adelic setting in several places, however it is stated quite clearly in \cite[2.1]{cogdellLecturesLfunctionsConverse}

@@ -8,7 +8,6 @@ Database file #1: ./NumberTheory.bib
 Warning--I didn't find a database entry for "arthurLfunctionsAutomorphicRepresenta"
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
-Warning--to sort, need author or key in CliffordAlgebrasClassical
 Warning--to sort, need author or key in EssaysHistoryLie
 Warning--can't use both author and editor fields in bumpIntroductionLanglandsProgram2004
 Warning--empty publisher in bernsteinREPRESENTATIONSPADICGROUPS1992
@@ -44,45 +43,45 @@ Warning--empty journal in pollackRANKINSELBERGMETHODUSER
 Warning--empty year in pollackRANKINSELBERGMETHODUSER
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 53 entries,
+You've used 51 entries,
             2543 wiz_defined-function locations,
-            852 strings with 13959 characters,
-and the built_in function-call counts, 16105 in all, are:
-= -- 1502
-> -- 610
-< -- 48
-+ -- 188
-- -- 179
-* -- 1049
-:= -- 2620
-add.period$ -- 142
-call.type$ -- 53
-change.case$ -- 267
-chr.to.int$ -- 51
-cite$ -- 95
-duplicate$ -- 767
-empty$ -- 1315
-format.name$ -- 263
-if$ -- 3264
+            843 strings with 13577 characters,
+and the built_in function-call counts, 15638 in all, are:
+= -- 1458
+> -- 601
+< -- 47
++ -- 186
+- -- 177
+* -- 1026
+:= -- 2559
+add.period$ -- 138
+call.type$ -- 51
+change.case$ -- 258
+chr.to.int$ -- 49
+cite$ -- 91
+duplicate$ -- 746
+empty$ -- 1263
+format.name$ -- 259
+if$ -- 3160
 int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 59
-newline$ -- 244
-num.names$ -- 152
-pop$ -- 448
+newline$ -- 236
+num.names$ -- 149
+pop$ -- 428
 preamble$ -- 1
-purify$ -- 336
+purify$ -- 325
 quote$ -- 0
-skip$ -- 563
+skip$ -- 541
 stack$ -- 0
-substring$ -- 549
-swap$ -- 71
-text.length$ -- 48
-text.prefix$ -- 36
+substring$ -- 534
+swap$ -- 69
+text.length$ -- 47
+text.prefix$ -- 35
 top$ -- 0
-type$ -- 352
-warning$ -- 38
-while$ -- 128
-width$ -- 57
-write$ -- 607
-(There were 39 warnings)
+type$ -- 336
+warning$ -- 37
+while$ -- 126
+width$ -- 55
+write$ -- 588
+(There were 38 warnings)

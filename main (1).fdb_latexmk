@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1725436260 "main.aux" "main.bbl" "main" 1725436265 0
+["bibtex main"] 1725432742 "main.aux" "main.bbl" "main" 1725432799 0
   "./NumberTheory.bib" 1725188696 569998 c13559f5d9bee2cf169f0306d2201976 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291861136 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1725436263 25195 4136339d93d79c1d3ff2bcf057aa7dff "pdflatex"
+  "main.aux" 1725432798 25459 a2f45c9ea070ecb824fec9ae4b5e755c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1725436261 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1725436265 0
+["pdflatex"] 1725432795 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1725432799 0
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1692676729 11548 78bef0057cba8f6fe11199e7e5d8f077 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk" 1711930929 14064 2b636b917c6dd2a843da53de5aeddea9 ""
@@ -243,19 +243,19 @@
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "Chapters/Eis.tex" 1725341775 16442 c034d98129c059986ec73d52a0992c79 ""
   "Chapters/acknowledgements.tex" 1725342255 385 2dcca822269d14a44e80511dae6980e2 ""
-  "Chapters/automorphicForms.tex" 1725436146 15722 b2580fec20250a8b583ffec311a3d06e ""
-  "Chapters/automorphicReps.tex" 1725436252 11341 d49aaa93b079b1fbd29f1ed71479f4fe ""
-  "Chapters/classicalGroups.tex" 1725433788 19926 6dc5a4ceff69e7fc5933e3d42e59d9d7 ""
+  "Chapters/automorphicForms.tex" 1725342242 17108 fd064cf558d98bff94bab6521abd0db6 ""
+  "Chapters/automorphicReps.tex" 1725342120 11334 49026eaa4a9a8851a6c8be0602e5ad34 ""
+  "Chapters/classicalGroups.tex" 1725432795 21603 51e25f2a2b6e797ec7741fd8c9ce0c5c ""
   "Chapters/constantTerms.tex" 1725431563 29529 754f69a873c10eb212613f71eda71667 ""
   "Chapters/intro.tex" 1725429320 3484 313aab66dc5f1b990abebca81273f6d7 ""
   "Chapters/polesOfEisensteinSeries.tex" 1725062889 9353 2f69d8af2201fb46f27b553e020d2d36 ""
-  "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1725434260 3993 e3f19a546fc03008994d4289f91afe15 ""
-  "main.aux" 1725436263 25195 4136339d93d79c1d3ff2bcf057aa7dff "pdflatex"
-  "main.bbl" 1725436261 10795 fa57dbfbf1701e4f16965c40eed0588a "bibtex main"
-  "main.out" 1725436263 4136 d551b45aafbd6be3af6663688f57c521 "pdflatex"
-  "main.tdo" 1725436263 5194 189eba2164129344f0d4eb91b2896133 "pdflatex"
-  "main.tex" 1725434260 3993 e3f19a546fc03008994d4289f91afe15 ""
-  "main.toc" 1725436263 4089 aca796beac883c62f76912d39b86c135 "pdflatex"
+  "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1725429555 3879 5e763326910d49d462ed1999d1ead71a ""
+  "main.aux" 1725432798 25459 a2f45c9ea070ecb824fec9ae4b5e755c "pdflatex"
+  "main.bbl" 1725432742 10955 746651b7c8887bba13f8f9d57347f92c "bibtex main"
+  "main.out" 1725432798 4136 d551b45aafbd6be3af6663688f57c521 "pdflatex"
+  "main.tdo" 1725432798 5260 344da5cff22ea621ac45f63edd8cfbc2 "pdflatex"
+  "main.tex" 1725429555 3879 5e763326910d49d462ed1999d1ead71a ""
+  "main.toc" 1725432798 4090 893a41dc71299a7698e84c8c29c23cdf "pdflatex"
   "minipreamble.tex" 1725430536 3228 f67d63c663779a99606ac5ebe1b359e7 ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)

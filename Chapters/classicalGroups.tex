@@ -1,17 +1,23 @@
 We will recall a small amount of the theory of linear algebraic groups to fix conventions, for a more detailed treatment one should consult the litany of sources on this matter: For a full treatment see \cite{milneAlgebraicGroupsTheory2017}\cite{milneLieAlgebrasAlgebraic}\cite{milneBasicTheoryAffine}\cite{springerLinearAlgebraicGroups1998}. Excellent example computations can also be found in \cite{BuildingsClassicalGroups}\cite{makisumiStructureTheoryReductive}\cite{malleLinearAlgebraicGroups}\cite{NotesClassAlgebraic}. Or for a brief brush up on the main facts consult \cite[I.I.1]{borelAutomorphicFormsRepresentations1979}. The purpose of this section is to treat the classical groups and more specifically \(\Sp_{2n}\) as an example and work out some of the details of the general theory, in order to ``get our hands dirty'' and have some familiarity with this object, to become fundamental in what follows. Because this theory is made up of simple ideas that can often be obscured by the generality we will make several restrictive assumptions for ease of exposition. 
 
 \section{Definition}
-An algebraic group is for us a group scheme that is reduced, of finite type and defined over a field. A linear algebraic group (LAG) is an affine algebraic group.
-By \cite[2.3.7(i)]{springerLinearAlgebraicGroups1998} then every LAG is (isomorphic to) a (Zariski) closed subgroup of \(\GL_n\). A group scheme is called linear if it is (isomorphic to) a closed subgroup for \(\GL_n\). Hence every linear algebraic group is a \textit{linear} algebraic group. Moreover it is a basic fact that a Zariski closed sub-scheme of an affine scheme is affine \cite[II.5.T3]{mumfordRedBookVarieties1999}.
+An \textbf{algebraic group} is for us a group scheme that is reduced, of finite type and defined over a field. \textbf{A linear algebraic group} (LAG) is simply an affine algebraic group.
 
-As Milne points out \cite[Abstract]{milneAlgebraicGroupsTheory2017} these are supposed to be matrix groups defined by polynomials, which are somehow the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the powerful but cumbersome (for the beginner) technology of algebraic geometry. In particular one must be adept at moving between the following equivalences
+\begin{proposition}
+    An algebraic group is affine if and only if it is isomorphic to a Zariski closed subgroup of \(\GL_n\).
+\end{proposition}
+\proofbar{
+    The forward implication is \cite[2.3.7(i)]{springerLinearAlgebraicGroups1998}. The converse is the basic fact that closed sub-schemes of affine schemes are affine \cite[II.5.T3]{mumfordRedBookVarieties1999}.
+}
+
+As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix groups defined by polynomials, which happen to be the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the powerful but cumbersome (for the beginner) technology of algebraic geometry. In particular one must be adept at moving between the following equivalences:
 \begin{Theorem}[\cite{milneBasicTheoryAffine}, II.6, III.4]
-    For k a field then the following categories are equivalent
+    For \(F\) a field then the following categories are equivalent
     \begin{itemize}
-        \item Group objects in \(\mathrm{Alg}_k^{op}\)
-        \item Representable (in the category of groups) functors \(\mathrm{Alg}_k \to \mathrm{Group}\)
-        \item Group object in the category of affine schemes over \(k\)
-        \item Commutative Hopf algebras.
+        \item Group objects in \(\mathrm{Alg}_F^{op}\)
+        \item Representable (in the category of groups) functors \(\mathrm{Alg}_F \to \mathrm{Group}\)
+        \item Group object in the category of affine schemes over \(F\)
+        \item Commutative \(F\)-Hopf algebras.
     \end{itemize}
 \end{Theorem}
 
@@ -21,9 +27,10 @@ As Milne points out \cite[Abstract]{milneAlgebraicGroupsTheory2017} these are su
 
     As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
 \end{example}
-The exact groups that an author might mean by classical may vary. Here we will follow \cite[\S 13]{CliffordAlgebrasClassical} or indeed many other places as defining them as the automorphisms of a vector space with a bilinear form. First let V be a finite dimensional F vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
+
+The other most important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional F vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}.\]
-Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form will define our classical groups. 
+Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form, will define our classical groups. 
 
 If the form is trivial, by which we mean, \(\forall x,y \;\; \inner{x, y} = 0\) then we define 
 \[\GL(V) \defeq \Aut(V, \inner{,}) = \Aut(V).\]
@@ -31,34 +38,35 @@ If the form is non-degenerate and symmetric \(\forall x,y \;\; \inner{x, y} = \i
 \[\mathrm{O}(V) \defeq \Aut(V, \inner{,}).\]
 Finally if the form is non-degenerate and skew symmetric \(\forall x,y \;\; \inner{x, y} = -\inner{y,x}\) then 
 \[\Sp(V) \defeq \Aut(V, \inner{,}).\]
-There are the further classical groups given by the determinant one subgroups, \(\SL(V), \mathrm{SO}(V)\) respectively (\(\Sp(V)\) one can show already implies that the determinant is one). Moreover every \(F\) algebra is an \(F\) vector space and so we have defined a functor from \(F\)-algebras to groups. This is what we will refer to as ``classical groups'' although we should note the omission of what the unitary groups that  would usually be included.
+There are the further classical groups given by the determinant one subgroups, \(\SL(V), \mathrm{SO}(V)\) respectively (\(\Sp(V)\) one can show already implies that the determinant is one). We can make this into a functor from \(F\)-algebras to groups, by sending an \(F\)-algebra \(R\) to \(G(V)\tensor_F R\). Thus these define LAG's. 
 
-Another way of motivating the importance of these groups is to consider the classification theory of the split reductive groups. Reductive is a representation theoretic condition that means, worse than semi-simple but still manageable, for more detail see \cite[22.138]{milneAlgebraicGroupsTheory2017} or hold your breath until \ref{unipotent_radical_definition}. (Split) Reductive groups over fields have a classification in terms of root datum \cite[22.48]{milneAlgebraicGroupsTheory2017} which is a strong parallel of the classification of semi-simple Lie algebras, and in fact is proved largely by bootstrapping from that theory to a more general setting. These correspond to Dynkin diagrams that are listed in \cite[Appendix A,B]{shahidiEisensteinSeriesAutomorphic2010}\todo[inline]{is this right} and of which there are four infinite families, which correspond to the classical groups (plus the unitary groups). This is in the way of motivating the notion of classical groups as ``almost all'' reductive groups.
-
+\begin{remark}
+    Often the unitary groups are considered classical, however we don't want to deal with field extensions and so omit them here. 
+\end{remark}
 
 \section{Subgroups}
-From now on we restrict to split reductive LAG because these are the natural adjectives for our classical groups over a number field (in particular characteristic 0).
+From now on let \(G\) be a (split reductive) LAG defined over a number field \(F\).
+\begin{remark}[For the experts]
+    We restrict to split reductive LAG in what follows. This is justified by the fact that the classical groups are all split reductive over number fields.  
+\end{remark}
 
-Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups, with a particular eye on those of \(\Sp\). The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we will come to understand the following decomposition's (not direct) \label{iwasawa_decomposition}
-\[G(\A) = M(\A)U(\A) K = T(\A)U(\A)K.\]
+Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups. The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we need to understand all the pieces of the so called \textbf{Langlands-Iwasawa decomposition},
+\begin{equation}\label{eq:iwasawa_decomposition}
+    G(\A) = M(\A)U(\A) K = T(\A)U(\A)K.
+\end{equation}
 
 \subsection{Parabolics, Levis and Unipotents}
 Parabolic subgroups have two equivalent formulations, both useful.
 \begin{definition}
-    A subgroup \(P\subseteq G\) is called \textbf{parabolic} if the following equivalent conditions hold
-    \begin{itemize}
-        \item \(G/P\) is a complete variety
-        \item \(P\) contains a Borel (see \ref{borel_torus}).
-    \end{itemize}
+    A subgroup \(P\subseteq G\) is called \textbf{parabolic} if \(G/P\) is a complete variety. Eqquivilently we can ask for \(P\) to contain a Borel (see \ref{borel_torus}).
 \end{definition}
 
-Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms, as we will want to compare the values along some parabolics.
+Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms of Eisenstein series which we will discuss in the later section \ref{constant_terms}.
 
 Parabolics also have the nice property that they split into a semi-direct product 
 where one of the factors is a reductive group \(M\). For this recall the definition
 \begin{definition}\label{unipotent_radical_definition}
-    A subgroup is \textbf{unipotent} if all its elements are unipotent.
-    The maximal closed, connected, unipotent subgroup \(U\subseteq G\) is the \textbf{unipotent radical} of \(G\). A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial.
+    A matrix \(m\) is \textbf{unipotent} if for some \(n\geq 0\) we have that \((m-1)^n = 0\). A subgroup is \textbf{unipotent} if all its elements are unipotent. The \textbf{unipotent radical} of \(G\)is the maximal closed, connected, unipotent subgroup. A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial.
 \end{definition}
 Then we have the following fact / definition:
 
@@ -104,222 +112,33 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
 
     The take away is that perhaps the folklore of the name being for ``para-Borelic'', as in kind of a Borel, is probably a better way of thinking of them.
 \end{Remark}
-\subsubsection{The Example of \(GL_n\)}
-    The parabolic subgroups of \(\GL\) are given by stabilisers of flags, \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}\cite{conradStandardParabolicSubgroups}.
-    A flag for \(F^n\) is a sequence of subspaces
-    \[0\subset W_1 \subset \cdots \subset W_r = F^n,\]
-    note the strict inclusion. When \(n = r\) it is a complete flag. \(\GL_n(F)\) acts on a flag component wise i.e.,
-    \[g.(W_1, ..., W_r) \defeq (g.W_1, ..., g.W_r).\]
-    If \(F^n\) is given the standard basis of \(e_i = (\delta_i^j)_j\) then the standard (complete) flag is 
-    \[0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset \cdots \subset \oplus_i Fe_i = F^n.\]
-    Because the stabiliser of a flag is always conjugate to a stabiliser of a sub-flag of the standard flag we allow ourselves from now on to only consider sub-flags of the standard flag. 
-    
-    \begin{Remark}
-        It is worth noting that what we do here by fixing a basis of \(F\) is the same as fixing a Borel and then considering only standard parabolics. Thus when we are talking about standard parabolics we are really working up ``up to conjugacy''.
-    \end{Remark}
-    
-    Stabilisers of such sub-flags are (possibly upside down) ``staircases'':
-    \[\begin{pmatrix}
-        A_{11} && \ast\\
-         & \ddots & \\
-         && A_{rr} 
-    \end{pmatrix}   \;\;\;\;\; \uparrow \text{ gravity }\uparrow .\]
-
-    \begin{example}
-        Consider the flag
-        \[0 \subset Fe_1 \subset Fe_1\oplus Fe_2 \oplus Fe_3 \subset F^4.\]
-        Let's find the stabiliser under the action of \(\GL_4(F)\). We need to send \(Fe_1\) to itself,
-        \[\forall x\in F, \;\; \begin{pmatrix}
-            a & b&c &d\\
-            e&f&g &h \\
-            i&j&k&l \\
-            m&n&o&p
-        \end{pmatrix}\begin{pmatrix}
-            x \\
-            \\
-            \\
-            \\
-        \end{pmatrix} = \begin{pmatrix}
-            ax\\
-            ex\\
-            ix\\
-            mx 
-        \end{pmatrix} \in F\begin{pmatrix}
-            1 \\
-            \\
-            \\
-            \\
-        \end{pmatrix}, \]
-        and so \(e = i = m = 0\). Next we need to send \(Fe_1\oplus Fe_2 \oplus Fe_3\) to itself (as a subspace),
-        \[\forall x,y,z\in F, \;\;\begin{pmatrix}
-            a & b&c &d\\
-            e&f&g &h \\
-            i&j&k&l \\
-            m&n&o&p
-        \end{pmatrix}\begin{pmatrix}
-            x \\
-            y\\
-            z\\
-            \\
-        \end{pmatrix} = \begin{pmatrix}
-            ax+by+cz\\
-            ex+fy+gz\\
-            iz+jy+kz\\
-            mx+ny+oz
-        \end{pmatrix} \in Span_F\left\{\begin{pmatrix}
-            1 \\
-            \\
-            \\
-            \\
-        \end{pmatrix}, \begin{pmatrix}
-             \\
-            1\\
-            \\
-            \\
-        \end{pmatrix}, \begin{pmatrix}
-             \\
-            \\
-            1\\
-            \\
-        \end{pmatrix}\right\} =\begin{pmatrix}
-            *\\
-            *\\
-            *\\
-            \\
-        \end{pmatrix}. \]
-        So we conclude that \(m = n = o = 0\). Thus we are left with elements in \(\GL_4(F)\) that look like
-        \[\begin{pmatrix}
-            * & *&*&*\\
-            & *&*&*\\
-            &*&*&*\\
-            &&&*
-        \end{pmatrix}.\]
-
-    \end{example}
-
-
-    So what is happening here, for each piece of the flag you complete the diagonal that the basis vectors are in into the box that they span and you say that everything \textit{directly} below that box must be zero.
-    \vspace*{5mm}
-
-
-    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-    %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-    
-    %Straight Lines [id:da514748463323927] 
-    \draw    (172.15,169.8) -- (257.15,169.8) ;
-    \draw [shift={(259.15,169.8)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-    %Shape: Rectangle [id:dp7553422026549674] 
-    \draw   (281,127) -- (352.15,127) -- (352.15,188.8) -- (281,188.8) -- cycle ;
-    %Straight Lines [id:da9263382380660232] 
-    \draw    (403.15,173.8) -- (488.15,173.8) ;
-    \draw [shift={(490.15,173.8)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-    %Shape: Rectangle [id:dp7811323439998978] 
-    \draw   (509,127) -- (580.15,127) -- (580.15,188.8) -- (509,188.8) -- cycle ;
-    %Shape: Rectangle [id:dp26317671145628463] 
-    \draw  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ] (510,195) -- (580,195) -- (580,222.8) -- (510,222.8) -- cycle ;
-    %Straight Lines [id:da61956528286507] 
-    \draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ]   (510,195) -- (580,222.8) ;
-    %Straight Lines [id:da8927414476865059] 
-    \draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ]   (510,222.8) -- (580,195) ;
-    
-    % Text Node
-    \draw (39,126.4) node [anchor=north west][inner sep=0.75pt]    {$\begin{pmatrix}
-    1 &  &  &  & \\
-     & \ddots  &  &  & \\
-     &  & 1 &  & \\
-     &  &  &  & \\
-     &  &  &  & 
-    \end{pmatrix}$};
-    % Text Node
-    \draw (272,126.4) node [anchor=north west][inner sep=0.75pt]    {$\begin{pmatrix}
-    * &  & * &  & \\
-     & \ddots  &  &  & \\
-    * &  & * &  & \\
-     &  &  &  & \\
-     &  &  &  & 
-    \end{pmatrix}$};
-    % Text Node
-    \draw (196,149.4) node [anchor=north west][inner sep=0.75pt]    {$span$};
-    % Text Node
-    \draw (427,153.4) node [anchor=north west][inner sep=0.75pt]    {$delete$};
-    % Text Node
-    \draw (500,125.4) node [anchor=north west][inner sep=0.75pt]    {$\begin{pmatrix}
-    * &  & * &  & \\
-     & \ddots  &  &  & \\
-    * &  & * &  & \\
-     &  &  &  & \\
-     &  &  &  & 
-    \end{pmatrix}.$};
-    \end{tikzpicture}
-    \[\text{Figure 1.}\]
-    %\vspace*{3mm}
-
-    We can also ask what is the unipotent radical and Levi of these parabolics and we have that in general the staircase 
-   \[\begin{pmatrix}
-       A_{11} && \ast\\
-        & \ddots & \\
-        && A_{rr}
-   \end{pmatrix},\]
-   has unipotent \(N\) and Levi \(M\) given by 
-   \[N = \begin{pmatrix}
-       I_{11} && \ast\\
-        & \ddots & \\
-        && I_{rr}
-   \end{pmatrix}, \quad M = \begin{pmatrix}
-       A_{11} && 0\\
-        & \ddots & \\
-        && A_{rr}
-   \end{pmatrix}.\]
-   Then 
-   \[P = M\ltimes U.\]
 
 \subsubsection{The Example of \(\Sp_{2n}\)}
-The case of \(\Sp_{2n}\) is very similar to that of \(\GL_n\), but we will use this later and so we present the details here. Following \cite{conradStandardParabolicSubgroups} and the very explicit calculations in  \cite[\S 8]{BuildingsClassicalGroups}. We let \((V, \inner{,})\) be a symplectic space as above and \(Sp(V)\) is the automorphisms preserving the form.
-\begin{example}
-    \[\Sp_{2n} = \{M\in \GL_{2n} :\forall a,b \;\; \inner{Ma, Mb} = \inner{a,b}\},\]
-    then fixing a basis of the vector space \(V\), \(e_i\) allows us to create a matrix from this form, by setting the entries to be \(A_{ij} = \inner{e_i, e_j}\). Then we get 
-        \[\forall a,b \;\; \inner{Ma, Mb} = (Ma)^T A (Mb) = a^T M^T A M b= a^TAb, \]
-        and because this is so for all \(a,b\) we get that 
-        \[M^T A M = A.\]
+We collect the following facts as they will be useful in what is to come. Good references are the notes \cite{conradStandardParabolicSubgroups} and the book \cite[\S 8]{BuildingsClassicalGroups}. 
 
-        So if we fix a basis of V, where \(e_i = (\delta_i^j)_j\), such that the form is given by the matrix
+Let \((V, \inner{,})\) be a symplectic space as above and \(Sp(V)\) is the automorphisms preserving the form. A \textbf{flag} of \(V\) is a sequence of strict inclusions of vector subspaces 
+\[\{0\}\subset V_1 \subset \cdots \subset V_{n-1} \subset V. \]
+A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly zero on it (in both variables). A flag is \textbf{isotropic} if the proper subspaces in it are isotropic subspaces. A \textbf{maximal isotropic} flag is one with exactly \(n\) components. \(\Sp_{2n}\) acts on a flag by acting on each of the subspaces. This action preserves isotropic flags i.e. it sends an isotropic flag to an isotropic flag. Stabilisers of isotropic flags give parabolics of \(\Sp\) and moreover all parabolics arise in this way \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}.
+
+\begin{example}
+        Consider a four dimensional vector space \(V\) with a form given by the matrix
         \[\begin{pmatrix}
-             & I_n \\
-            -I_n & \\
-        \end{pmatrix}.\]
-\end{example}
-
-A subspace is said to be \textbf{isotropic} if the form is constantly zero on it (in both variables). A flag is \textbf{isotropic} if the proper subspaces in it are isotropic subspaces. A \textbf{maximal isotropic} flag is one with exactly \(n\) components (we deal with this in more detail below).
-
-\begin{example}
-    Continuing the previous example we can see what the form does on the standard basis vectors as above \(e_i = (\delta_i^j)_{j}\)
-        \[(e_{n+1})^T\begin{pmatrix}
-            0 & I_n \\
-            -I_n & 0\\
-        \end{pmatrix}e_{n+1} = 0.\] 
-        So the first \(n\) standard basis vectors give a basis for an \(n\) dimensional isotropic subspace, this is called the standard isotropic subspace. An \(n\) dimensional isotropic subspace is maximal and any flag of isotropic subspaces can be considered as a sub-flag of a complete flag of a maximal isotropic subspace (by inspecting the matrix of the form, if your space has a dimension of greater than n then it cannot be isotropic) \cite[\S 8]{BuildingsClassicalGroups}.
-\end{example}
-
-The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag to an isotropic flag. Stabilisers of isotropic flags give parabolics of \(\Sp\) and moreover all parabolics arise in this way (see the above exercises in Springer).
-
-\begin{example}
-        Now we have a maximal isotropic flag we can consider sub-flags and find their stabilisers. Let's look at \(\Sp_4\) and the following flag
-        \[0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset F^4.\]
-
-        Re-use our \(\GL\) computations to see that the stabiliser contains exactly matrices in \(\Sp\) of the form
+            & I_2 \\
+            -I_2 & 
+        \end{pmatrix},\]
+        then a maximal isotropic flag is 
+        \[0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset F^4,\]
+        where \(e_i = (\delta_i^j)_j\). This has stabiliser consisting of matrices in \(\Sp\) of the form
         \[\begin{pmatrix}
             *&*&*&* \\
              &*&*&* \\
-             && *&x \\
+             && *& \\
              && *& *
         \end{pmatrix}.\]
-        Because these are in \(\Sp\) we can find more relations among the entries than in the \(\GL\) case, we will pursue this further in the maximal case below, but to placate some we remark that \(x = 0\) and this emphasizes the duality between the upper left block and bottom right block.
     \end{example}
 
     \label{maximal_parabolic}
-    In particular maximal parabolics of \(\Sp\) are stabilizers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces.
+    In particular maximal parabolics of \(\Sp\) are stabilizers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces,
     \[0 \subset V_\ell \subset V,\]
     where \(V_\ell = span_F(e_1, ..., e_\ell)\). Then the stabilizer is 
     \[\begin{pmatrix}
@@ -335,7 +154,7 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
         0 &*&\ell&* \\
         0 &*&*&n-\ell \\
     \end{pmatrix}.\]
-    These sizes clearly determine the sizes of the rest of the matrix. This has Levi
+    This has Levi
     \[\begin{pmatrix}
         A &&& \\
          &a&&b \\
@@ -355,7 +174,10 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
     with relations among the entries.
 
     \subsection{Borel and Torus}\label{borel_torus}
-    One may find it helpful to understand these subgroups to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}, however it is not necessary. 
+    \begin{remark}
+        It can be very enlightening to to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}.
+    \end{remark}
+    
 
     \begin{definition}
         A \textbf{split torus} is an algebraic group that is isomorphic to \(\GL_1^b\) for some \(b\in\N\).
@@ -398,64 +220,33 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
             a & b \\
             & c
         \end{pmatrix},\]
-        be arbitrary in \(\GL_2\), there commutator is then 
-        \[g\inv h\inv gh = (hg)\inv gh = \begin{pmatrix}
-        ax & ay + cz \\ & cz
-        \end{pmatrix}\inv \begin{pmatrix}
-            ax & bx + cz\\ & cz
-        \end{pmatrix} = \begin{pmatrix}
+        be arbitrary in \(\GL_2\), their commutator is then 
+        \[g\inv h\inv gh =  \begin{pmatrix}
             1 & \frac{bx - ay}{ax} \\ & 1
         \end{pmatrix} .\]
         Hence
         \[[B, B] = \begin{pmatrix}
             1 & \ast \\ & 1
         \end{pmatrix}.\]
-        Commutate two arbitrary elements again 
-        \[\begin{pmatrix}
-            1 & a \\ & 1
-        \end{pmatrix}\inv\begin{pmatrix}
-            1 & x \\ & 1
-        \end{pmatrix}\inv \begin{pmatrix}
-            1 & a \\ & 1
-        \end{pmatrix}\begin{pmatrix}
-            1 & x \\ & 1
-        \end{pmatrix} = \begin{pmatrix}
-            1 & a + x \\ & 1
-        \end{pmatrix}\inv \begin{pmatrix}
-            1 & x+a \\ & 1
-        \end{pmatrix} = 1.\]
-        Hence 
-    \[[[B, B], [B, B]] = 1.\]
-    For the other conditions, it is clear that this is a closed subgroup because it is itself a linear algebraic group, moreover for LAG we have the algebraic criterion of connectedness given by having the only idempotents in the representing algebra being \(0, 1\) \cite[1.5]{getzIntroductionAutomorphicRepresentations2024}. Because \(B = \Spec \Z[x_{i,j}: 1\leq i,j\leq 2][y] / (\det(x_{ij})y - 1, x_{2,1})\) we can look for idempotents in \(\Z[x_{i,j}: 1\leq i,j\leq 2][y] / (\det(x_{ij})y - 1, x_{2,1})\), clearly \(0\) is idempotent, so assume that \(\begin{pmatrix}
-        a & b \\ & c
-    \end{pmatrix}\neq 0\) then we have that  
-    \[\begin{pmatrix}
-        a & b \\ & c
-    \end{pmatrix}^2 = \begin{pmatrix}
-        a^2 & ab + bc \\ & c^2
-    \end{pmatrix} = \begin{pmatrix}
-        a & b \\ & c
-    \end{pmatrix}\in B(\Z),\]
-    so \(a^2 = a, c^2 = c\) implies that \(a = c = 1\) and \(ab + bc = 2b = b\) implies that \(b=0\), hence \(\begin{pmatrix}
-        a & b \\ & c
-    \end{pmatrix} = 1\). Thus this group is connected. 
-    
-    Finally it is clear that if a subgroup contains this one then it is in fact all of \(\GL_2\) and hence this is maximal. Therefore this is a Borel.
+        Commutate two arbitrary elements again shows that  
+        \[[[B, B], [B, B]] = 1.\]
+    It is clear that this is a closed subgroup because it is itself a linear algebraic group, moreover for LAG's we have the algebraic criterion of connectedness given by having the only idempotents in the representing algebra being \(0, 1\) \cite[1.5]{getzIntroductionAutomorphicRepresentations2024}. Because \(B = \Spec \Z[x_{i,j}: 1\leq i,j\leq 2][y] / (\det(x_{ij})y - 1, x_{2,1})\) it is clear that this group is connected.     
+    Finally it is clear that if a subgroup strictly contains this one then it is in fact all of \(\GL_2\) and hence this is maximal. Therefore this is a Borel.
     \end{example}
         
     A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
-    \[B = TU\]
+    \[B = TU,\]
     for a maximal torus \(T\) and unipotent \(U\).
 
-    We saw that fixing a minimal parabolic is like fixing a basis in the case of classifying parabolics of classical groups. If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the \textbf{standard Levi}.
+    If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the \textbf{standard Levi}.
 
     \subsection{Maximal Compact Subgroups}\label{max_compact_subgroup}
-    Let our group be defined over the number field \(k\). We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\), note that the topology is not the Zariski topology but the one specified in \cite{conradWeilGrothendieckApproaches2012}, this is sometimes known as the ``Hausdorff'' topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
+    We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\), note that the topology is not the Zariski topology but the one specified in \cite{conradWeilGrothendieckApproaches2012}, this is sometimes known as the ``Hausdorff'' topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
     \begin{itemize}
         \item First require that 
         \[K = \prod_\nu K_\nu,\]
-        where the product is over all places of \(k\) and \(K_\nu\subseteq k_\nu\) is maximal compact. \todo[inline]{But is the converse true?}
-        \item For almost all places \(\nu\) of \(k\) \(G(\mathcal{O}_{k_\nu})\) is defined and is maximal compact in \(G(k_\nu)\) hence we can require \(K_\nu = G(\mathcal{O}_{k_\nu})\) at these places. 
+        where the product is over all places of \(F\) and \(K_\nu\subseteq F_\nu\) is maximal compact.
+        \item For almost all places \(\nu\), \(G(\mathcal{O}_{F_\nu})\) is defined and is maximal compact in \(G(F_\nu)\) hence we can require \(K_\nu = G(\mathcal{O}_{F_\nu})\) at these places. 
         \item We require 
         \[G(\A) = B(\A)K.\]
         \item For every standard parabolic \(P = MU\) we have that 
@@ -466,6 +257,7 @@ The action of \(\Sp\) preserves isotropic flags i.e. it sends an isotropic flag 
     
 
     \section{Metaplectic Covers}
+    \todo[inline]{METAPLECTIC}
     We are also be interested in certain covering groups of these LAG's. In particular \cite[I.1.1]{moeglinSpectralDecompositionEisenstein1995} we will be intereseted in \(\mathbf{G}\) some topological group given as a finite central cover of \(G(\A)\). If \(\mathrm{pr}: \mathbf{G} \to G(\A)\) is the projection then to the subgroups listed above we can associate their ``lifts'' (preimages under \(\mathrm{pr}\)). 
 
 \begin{example}[Metaplectic Group]
