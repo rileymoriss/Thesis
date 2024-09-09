@@ -68,6 +68,15 @@ Jan~Hendrik Bruinier, Gerard Van Der~Geer, G{\"u}nter Harder, and Don Zagier.
 \newblock {\em The 1-2-3 of {{Modular Forms}}}.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
 
+\bibitem[CFK24]{caiDoublingConstructionsGlobal2024}
+Yuanqing Cai, Solomon Friedberg, and Eyal Kaplan.
+\newblock Doubling constructions: {{Global}} functoriality for non-generic
+  cuspidal representations, May 2024.
+
+\bibitem[CKPS]{cogdellFUNCTORIALITYCLASSICALGROUPS}
+J~W Cogdell, H~H Kim, I~I {Piatetski-Shapiro}, and F~Shahidi.
+\newblock {{FUNCTORIALITY FOR THE CLASSICAL GROUPS}}.
+
 \bibitem[Coga]{cogdellLecturesLfunctionsConverse}
 J~W Cogdell.
 \newblock Lectures on {{L-functions}}, {{Converse Theorems}}, and
@@ -177,6 +186,16 @@ Dihua Jiang, Baiying Liu, and Lei Zhang.
 \newblock Poles of certain residual {{Eisenstein}} series of classical groups.
 \newblock {\em Pacific Journal of Mathematics}, 264(1):83--123, July 2013.
 
+\bibitem[Kap20]{kaplanDoublingConstructionsTensor2020}
+Eyal Kaplan.
+\newblock Doubling {{Constructions}} and {{Tensor Product}}
+  \${{L}}\$-{{Functions}}: Coverings of the symplectic group, July 2020.
+
+\bibitem[Kap21]{kaplanDoublingConstructionsComplete2021a}
+Eyal Kaplan.
+\newblock Doubling {{Constructions}}: The complete {{L-function}} for coverings
+  of the symplectic group, July 2021.
+
 \bibitem[Kim]{kimEISENSTEINSERIESTHEIR}
 Henry~H Kim.
 \newblock {{EISENSTEIN SERIES AND THEIR APPLICATIONS}}.
@@ -188,6 +207,10 @@ Stephen~S Kudla.
 \bibitem[Lap22]{lapidPerspectivesEisensteinSeries2022}
 Erez Lapid.
 \newblock Some perspectives on {{Eisenstein}} series, April 2022.
+
+\bibitem[Lin]{LinearRepresentationsFinite}
+Linear {{Representations}} of {{Finite Groups}} {\textbar} {{SpringerLink}}.
+\newblock https://link.springer.com/book/10.1007/978-1-4684-9458-7.
 
 \bibitem[Mak]{makisumiStructureTheoryReductive}
 Shotaro Makisumi.
@@ -236,6 +259,12 @@ Aaron Pollack.
 \bibitem[RS]{renardREPRESENTATIONSGROUPESREDUCTIFS}
 David Renard and Laurent Schwartz.
 \newblock {REPR{\'E}SENTATIONS DES GROUPES R{\'E}DUCTIFS p-ADIQUES}.
+
+\bibitem[Sha90]{shahidiProofLanglandsConjecture1990}
+Freydoon Shahidi.
+\newblock A {{Proof}} of {{Langlands}}' {{Conjecture}} on {{Plancherel
+  Measures}}; {{Complementary Series}} of p-adic groups.
+\newblock {\em Annals of Mathematics}, 132(2):273--330, 1990.
 
 \bibitem[Sha10]{shahidiEisensteinSeriesAutomorphic2010}
 Freydoon Shahidi.

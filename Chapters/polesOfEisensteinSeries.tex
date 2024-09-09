@@ -1,16 +1,15 @@
 Our goal here is to exposit and survey the work in papers such as \cite{brennerNotesAnalyticProperties2009}\cite{jiangPolesCertainResidual2013}\cite{ginzburgTopFourierCoefficients2021} and perhaps give a trivial extension of them.
 
-\section{The Statements}
+\section{Residual Eisenstein Series}
 \cite{brennerNotesAnalyticProperties2009} gave an analysis of the residual poles of Eisenstein series attached to \(\Sp_{2n}\), there were some minor errors that were corrected in \cite{jiangPolesCertainResidual2013} where they give esssentially the same proof; theirs however works for the other classical groups. For our purposes, the case of \(\Sp_{2n}\), as a group defined over \(F\) a number field, is most relevant, and we shall therefore focus exclusively on this case, however it should be noted that this limitation in the non-covering case is artificial, although it does simplify things a little by removing some casework, and we hope also in the covering case to be able to remove it in future work. 
 
 We fix an \(n\in \N\) and the Borel of upper triangular matricies in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \todo[inline]{what are the ranges of these}. Then as we saw in \ref{maximal_parabolic} there corresponds a maximal standard parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rN_r\), such that the Levi component is 
 \[\GL_r\times \Sp_{2m} \]
-As we saw in \todo[inline]{explain this in the Eisenstein series section}---- the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). If we look at the divisors of \(r = ab\) \todo[inline]{check the exact ranges, will depend on the range of r} and fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_a\), then from \todo[inline]{link to the residual representation section} ---- we know that \(\Delta(\tau, b)\) is a residual representation of \(\GL_{ab} = \GL_r\). Now we take an irreducible generic cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), and so their tensor product \(\Delta(\tau, b) \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
+As we saw in \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). If we look at the divisors of \(r = ab\) \todo[inline]{check the exact ranges, will depend on the range of r} and fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_a\), then from \ref{residual_spec} we know that \(\Delta(\tau, b)\) is a residual representation of \(\GL_{ab} = \GL_r\). Now we take an irreducible generic cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), and so their tensor product \(\Delta(\tau, b) \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
 \[\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Sp_{2n}(\A) )_{\Delta(\tau, b)\tensor \sigma}\] 
 then we have the Eisenstein series
 \[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g)\]
-\todo[inline]{explain the s action in Eisenstein series section.}
-for \(g\in \Sp_{2n}(F) \setminus \Sp_{2n}(\A)\). Becuase it is induced from the residual representation \(\Delta(\tau, b)\) we call these residual Eisenstein series. The main theorem is then a statement that after some normalisation the poles of this Eisenstein series are limited to a particular set and that they are simple. Details will be given later.
+for \(g\in \Sp_{2n}(F) \setminus \Sp_{2n}(\A)\). Becuase it is induced from the residual representation \(\Delta(\tau, b)\) we call these residual Eisenstein series.
 
 \todo[inline]{state theorem 4.1 and 4.2}
 \begin{Theorem}[]
@@ -50,7 +49,7 @@ We here consider the case that \(b=1\), hence \(n = a + m\). Then fixing a stand
 \[\Delta(\tau, 1)(\phi)(g) = E(\phi,s)(g) = s.\phi(g)\]
 where the Eisenstein series is defined via the parabolic induction from the Levi \((\GL_a)^{\times b} \) to \(\GL_{ab}\). Thus we have \(\Delta(\tau, 1) = \tau\). So for the appropriate \(\sigma \) a rep of \(\Sp_{2m}\) we get a rep of the Levi of \(\Sp_{2n}\), \(M_r = M_a = \GL_a\times \Sp_{2m}\) given by \(\tau\tensor \sigma\). To this we associate the Eisenstein series for \(\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Mp_{2n}(\A))_{\tau\tensor \sigma}\) \(E(\phi,s)\) as usual. Now we proceed to calculate the constant term of this Eisenstein series along the parabolic \(P_a = MN\). \todo[inline]{M+W II.1.7, all others are zero..?}
 
-By our calculations\todo[inline]{red}, the cuspidality of the tensor\todo[inline]{ref} and \cite{jiangPolesCertainResidual2013} we know that 
+By our earlier calculations \ref{const_eisenstein} and the cuspidality of the tensor \ref{cuspidality_tensor} and \cite{jiangPolesCertainResidual2013} we know that 
      \[E(\phi, s)_{P} = \sum_{ w} \sum_{m'} \int_{(w\inv N(\A)w \cap M(\A)) \setminus A} \int_{w\inv N(F) w \cap M(F) \setminus w\inv N(\A)w \cap M(\A)} \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2\] 
      and the inner integral vanishes for all \(w\neq id, \omega\) (\(\omega\) as in \cite{jiangPolesCertainResidual2013}). Hence the first sum becomes over two elements and we have 
 
@@ -73,7 +72,7 @@ First the identity term simplifies
      Considering now the \(\omega\) term 
      \[E(\phi, s)_{P, \omega} =  \sum_{m'\in M(F)\cap \omega P(F)\omega\inv\setminus M(F)} \int_{N(F)\cap \omega P(F)\omega\inv \setminus N(\A)} \phi( \omega\inv nm' x)  dn\]
 
-     by \cite[2C]{jiangPolesCertainResidual2013} \(M(F)\cap \omega P(F)\omega\inv \setminus M(F)\) is isomorphic to\todo[inline]{this is not clear in their paper im just guessing this is what they mean} \(P_0 \setminus \Sp_{2(n-a)}\) where \(P_0 \setminus \Sp_{2(n-a)}\) by defintion, but \(P_0\) has Levi \(M_0 = \Sp_{2(n-a)}\) by definition and hence is itself \(\Sp_{2(n-a)}\). Thus the sum is over \(\Sp_{2(n-a)}(F) \setminus \Sp_{2(n-a)}(F)\) and hence is over a point. Therefore we get by definintion of the intertwining operator
+     by \cite[2C]{jiangPolesCertainResidual2013} \(M(F)\cap \omega P(F)\omega\inv \setminus M(F)\) is isomorphic to \(P_0 \setminus \Sp_{2(n-a)}\), but \(P_0\) has Levi \(M_0 = \Sp_{2(n-a)}\) by definition and hence is itself \(\Sp_{2(n-a)}\). Thus the sum is over \(\Sp_{2(n-a)}(F) \setminus \Sp_{2(n-a)}(F)\) and hence is over a point. Therefore we get by definintion of the intertwining operator
      \[E(\phi, s)_{P, \omega} = \int_{N(F)\cap \omega P(F)\omega\inv \setminus N(\A)} \phi( \omega\inv n x)  dn = M(\omega, -)(\phi)(x)\]
      becuase we took the constant term along the same parabolic as the definition of the Eisenstein series we know that the Levis are (the same) conjugate.
     Thus we have shown that 
@@ -82,11 +81,44 @@ First the identity term simplifies
     Notice that the computation takes place completely at the level of the terminals which are indupendent of the fact that we have taken a covering group, hence we have really only reused work from \cite{jiangPolesCertainResidual2013}.
 
     \section{Analysing the Intertwining Operator}
-    For classical groups it has been known for a while that the intertwining operator has a normalization in terms of ratios of L-functions. The point is then that the normalised operator is holomorphic and so the poles of the constant term depend entirely on the poles of the L-functions. 
+    For classical groups it has been known for a while that the intertwining operator has a normalization in terms of ratios of L-functions. The point is then that the normalised operator is holomorphic and so the poles of the constant term depend entirely on the poles of the L-functions. In particular we will look at incarnations of the following statement: There is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
+    \[M(s, w) = r(s, w)N(s,w),\]
+    and \(r(s, w)\) is a ratio of L-functions.
 
-    In detail the results are due to Langlands-Shahidi-Ginzberg et al 
+    Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}.
 
-    Thus the result follows
+
+    It has been known for a long time that there was some normalisation \(M = rN\) where \(r\) is a ratio of L-functions, for instance Shahidi gives the following \cite{shahidiRamanujanConjectureFiniteness1988}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
+     \[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu, w)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
+
+    For example for a group over \Q we have the following from \cite{langlandsEulerProductsa} 
+    \[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
+     However it was not shown until recently, and only for classical groups that this \(N\) indeed has the required properties. In particular the following theorem is sufficient for the cases dealt with in \cite{jiangPolesCertainResidual2013}:
+     \begin{Theorem}[\cite{cogdellFUNCTORIALITYCLASSICALGROUPS}, 11.1]
+        Suppose that \(\pi_\nu\) is a local component of a globally generic cuspidal representation \(\pi\) of \(G_n(\A)\). Then for any irreducible admissible unitary generic representation \(\pi'_\nu\) of \(\GL_m(k_\nu)\) the normalized intertwining operator \(N'(S, \pi'_\nu\times \pi_\nu, w)\) is holomorphic and non-zero for \(Re(s)\geq 0\)
+     \end{Theorem}
+
+     In the case we are considering the normalising factor \(r\) is given by the equation \cite[4A]{jiangPolesCertainResidual2013}
+     \[r(w, s) = \frac{L(s, \tau\times \sigma)L(2s, \tau, \rho)}{L(s+1, \tau\times \sigma)L(2s+1, \tau, \rho)}\]
+     and this proves that 
+
+     \begin{Lemma}
+        The Eisenstein series above has pole at \(s\) if and only if \(r(w,s)\) has a pole. The Eisenstein series has a zero at \(s\) if and only if \(r(w, s)\) has a zero.
+     \end{Lemma}
+     The final step is then to use the known properties of \(L\)-functions to conclude when our \(r\)-factor will have poles and zeroes. 
+
 
     \section{The Metaplectic Generalisation}
-    In \cite[]{ginzburgTopFourierCoefficients2021} this setup is also carried out for the Siegel parabolic induced up to the metaplectic group. Here we investigate the literature to hopefully conclude the same result for all maximal parabolics. 
+    In \cite[]{ginzburgTopFourierCoefficients2021} this setup is also carried out for the Siegel parabolic induced up to the metaplectic group. Here we investigate the literature to hopefully conclude the same result for all maximal parabolics. The steps will be the same we simply need for the Langlands conjectures to be proven in certain cases. 
+
+    Thankfully Kaplan in a series of recent works with collaborators \cite{kaplanDoublingConstructionsComplete2021a}\cite{kaplanDoublingConstructionsTensor2020}\cite{caiDoublingConstructionsGlobal2024} has supplied some of the key peices. 
+
+    First we have that 
+    \[M(s, w)f = \frac{}{} f\]
+    note that these are metaplectic L-functions as defined in that paper.
+
+    Thus we get 
+    \begin{Lemma}
+        The Eisenstein series above has pole at \(s\) if and only if \(r(w,s)\) has a pole. The Eisenstein series has a zero at \(s\) if and only if \(r(w, s)\) has a zero.
+     \end{Lemma}
+     Finally we need to once again see what properties of these L-fuctions have been proven. 

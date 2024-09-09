@@ -146,7 +146,38 @@
 \input{Chapters/polesOfEisensteinSeries}
 
 \appendix
+\chapter{Direct Integrals}\label{app:direct_int}
+\subsection{Of Spaces}
+    Consider a countable collection of Hilbert spaces \((\mathcal{H}_\alpha)_{\alpha\in A}\) then their direct sum is defined to be 
+    \[\bigoplus_{\alpha} \mathcal{H}_\alpha \defeq \left\{(h_\alpha)\in \prod_\alpha \mathcal{H}_\alpha : \sum_\alpha \norm{h_\alpha}_\alpha^2 < \infty\right\}\]
+    i.e. square summable sequences from the product. This is to ensure that the resulting space is still complete. If we recall that summing over a countable set is the same as \textit{integrating} over that countable set when we equip it with the counting measure and discrete sigma algebra then this can be re-written as 
+    \[\bigoplus_{\alpha} \mathcal{H}_\alpha = \left\{(h_\alpha)\in \prod_\alpha \mathcal{H}_\alpha : \int_A \norm{h_\alpha}^2_\alpha d\alpha < \infty\right\}\]
 
+    This definition can be obviously generalised to an indexing set that is now an arbitrary measure space, \((A, \mathcal{M}, \mu)\). We need to make some technical arrangment to accompany this change, namely ensureing everything agrees with the measure structure, if we're to integrate we better only integrate \textit{measurable} things. So now a collection \((\mathcal{H}_\alpha)_{\alpha\in A}\) along with a countable set of elements \(e_j \in \prod_\alpha \mathcal{H}_\alpha, j\geq 1\) is called a measurable field over A if 
+    \[\forall j,k\geq 1 \;\; \alpha \mapsto \inner{e_j(\alpha), e_k(\alpha)}\]
+    is measurable and for each \(\alpha \in A\) 
+    \[span\{e_j(\alpha)\}_{j=1}^\infty \subseteq \mathcal{H}_\alpha\]
+    is dense; fixing an \(\alpha\) and varying the j form a basis of each of the hilbert spaces, fixing the indecies and variying the \(\alpha\) is measurable. An element \(f \in \prod_\alpha \mathcal{H}_\alpha\) is called a measurable vector field if 
+    \[\forall j \;\; \alpha \mapsto \inner{f(\alpha), e_j(\alpha)}_\alpha\]
+    is a measurable function. Note that we consider elements of the potentially uncountable product as functions from the indexing set into the relevant space (functions into the union of the hilbert spaces satisfying the property that \(f(\alpha)\in \mathcal{H}_\alpha\)). Now we define 
+    \[\int^\oplus \mathcal{H}_\alpha d\mu(\alpha) \defeq \left\{f\in \prod_\alpha \mathcal{H}_\alpha : f \text{ is measurable and } \int_A \norm{f(\alpha)}_\alpha^2 < \infty \right\}\] 
+    Indeed this forms a Hilbert space. Note that a priori this construction depended on the basis \((e_j)\) that we picked but up to isomorphism the basis doesnt matter. 
+
+    \subsection{Of Operators}
+    We want to decompose representations and so we should look at how operators fit into this picture. We call an element 
+    \[T\in \prod_\alpha \mathcal{L(H_\alpha)}\]
+    a field of operators on A. It defines a linear map from \(\prod_\alpha \mathcal{H}_\alpha\) to itself via 
+    \[ \left(\int^\oplus T\right)(f)(\alpha) \defeq T(\alpha)(f(\alpha)) \]
+    We say that it is measurable if for all measurable vector fields \(f\) the function 
+    \[\alpha \mapsto \left(\int^\oplus T\right)(f)(\alpha)\]
+    is measurable. If moreover \(\mathrm{ess}\sup_\alpha \norm{T(\alpha)} <\infty\) then \(\int^\oplus T\) defines a bounded operator on \(\int^\oplus \mathcal{H}_\alpha\).
+
+    \subsection{Of Representations}
+    Now we consider a group G and a collection of unitary represntations \(\pi_\alpha\) on \(\mathcal{H}_\alpha\) such that for every \(\alpha\)  and every \(x\in G\)
+    \[\alpha \mapsto \pi_\alpha(x)\]
+    is a measurable field of operators. We call such a collection a measurable field of representations; a G indexed collection of measurable fields of operators. From a measurable field of representations we get a unitary representation 
+    \[\pi(x) \defeq \int^\oplus \pi_\alpha(x)\]
+    of \(G\) on \(\int^\oplus \mathcal{H}_\alpha\) which we call the direct integral of representations. 
 
 
 
