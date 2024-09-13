@@ -164,10 +164,22 @@ where \(\nu\) runs over the unramified places. It is a part of the grand Langlan
     The reason is that there is a standard representation of the dual groups of classical groups. Namely the standard representation of a matrix group inside \(\GL_n\) is the one that sends \(g\mapsto g\). It is this representation that is to be taken for the dual group in this setting.
 \end{example}
 
-\begin{example}[Rankin-Selberg]
+\begin{example}[Rankin-Selberg, \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}, 1.2, \cite{arthurLecturesAutomorphicFunctions1991a}, Ch. 2 Example. 2]
     \todo[inline]{fill}
-\end{example}
+    Let \(\nu\) be a finite place of \(\Q\) and \(\pi, \pi'\) be two unramified generic representations of \(\GL_n(\Q_\nu)\) and \(\GL_m(\Q_\nu)\) respectively. Let \(B_n\) be the standard Borel of upper triangular matricies in \(\GL_n\). Such representations have been classified \todo[inline]{reference}
+    in terms of characters of \(\Q^\times_\nu\), in particular for \(\pi\) there are \(\mu_1, ..., \mu_n\) unramified characters such that 
+    \[\pi \cong \Ind_{B(\Q_\nu)}^{\GL_n(\Q_\nu)} \big(\mu_1 \tensor \cdots \tensor \mu_n\big).\]
+    If we fix a uniformizer \(\varpi\) of \(\Q_\nu\) then we have the so called ``Satake parameters'' \(\mu_i(\varpi)\) which determines \(\pi\) uniquely. Of course the same is true for \(\pi'\), with say characters \(\mu'_1, ..., \mu'_m\). We then define
+    \[L(s, \pi\times \pi') \defeq \prod_{i,j} \frac{1}{1-\mu_i(\varpi)\mu'_j(\varpi)q^{-s}}.\]
 
+    Consider the group \(G = \GL_n\times \GL_m\) which has dual \(\GL_n(\C) \times \GL_m(\C)\), then there is a cannonical representation 
+    \[r:\GL_n(\C) \times \GL_m(\C) \to \GL_{nm}(\C). \]
+    Moreover any automorphic representation \(\pi\) of \(G\) will be a tensor product of a representation of \(\GL_n\) and of \(\GL_m\)
+    \[\pi \cong \pi \tensor \pi'.\]
+    Then 
+    \[L(s, \pi, r) = L(s, \pi\tensor \pi', r) = L(s, \pi \times \tilde{\pi}'),\]
+    where the tilde denotes the contragradient.
+\end{example}
 
 \begin{example}[Dirichlet L-functions]
     Recall that a Dirichlet character \(\chi\) is a character of the group \((\Z/N\Z)^*\). Through the series of maps 
@@ -178,3 +190,20 @@ where \(\nu\) runs over the unramified places. It is a part of the grand Langlan
 Although this might seem unrelated to the current section on spectral decomposition and Eisenstein series we will see later that the two are inextricably linked
 \todo[inline]{ref}
 
+\section{L-Functions and Intertwining}\label{L_inter}
+For classical groups it has been known for a while that the intertwining operator has a normalization in terms of ratios of L-functions. The point is then that the normalised operator is holomorphic and so the poles of the constant term depend entirely on the poles of the L-functions. In particular we will look at incarnations of the following statement: There is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
+    \[M(s, w) = r(s, w)N(s,w),\]
+    and \(r(s, w)\) is a ratio of L-functions.
+
+    Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}.
+
+
+    It has been known for a long time that there was some normalisation \(M = rN\) where \(r\) is a ratio of L-functions, for instance Shahidi gives the following \cite{shahidiRamanujanConjectureFiniteness1988}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
+     \[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu, w)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
+
+    For example for a group over \Q we have the following from \cite{langlandsEulerProductsa} 
+    \[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
+     However it was not shown until recently, and only for classical groups that this \(N\) indeed has the required properties. In particular the following theorem is sufficient for the cases dealt with in \cite{jiangPolesCertainResidual2013}:
+     \begin{Theorem}[\cite{cogdellFUNCTORIALITYCLASSICALGROUPS}, 11.1]
+        Suppose that \(\pi_\nu\) is a local component of a globally generic cuspidal representation \(\pi\) of \(G_n(\A)\). Then for any irreducible admissible unitary generic representation \(\pi'_\nu\) of \(\GL_m(k_\nu)\) the normalized intertwining operator \(N'(S, \pi'_\nu\times \pi_\nu, w)\) is holomorphic and non-zero for \(Re(s)\geq 0\)
+     \end{Theorem}

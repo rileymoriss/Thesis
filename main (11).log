@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  12 SEP 2024 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  11 SEP 2024 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,7 +695,6 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@example=\count346
 \c@cor=\count347
 \c@Prop=\count348
-\c@Conj=\count349
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip77
@@ -704,14 +703,14 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen313
 \FrameSep=\dimen314
 ))
-\c@theorem=\count350
+\c@theorem=\count349
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count351
+\l__color_backend_stack_int=\count350
 \l__pdf_internal_box=\box71
 ) (main.aux)
 \openout1 = `main.aux'.
@@ -771,16 +770,16 @@ LaTeX Font Info:    ... okay on input line 87.
 
 (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count352
+\scratchcounter=\count351
 \scratchdimen=\dimen315
 \scratchbox=\box72
-\nofMPsegments=\count353
-\nofMParguments=\count354
+\nofMPsegments=\count352
+\nofMParguments=\count353
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count355
+\MPscratchCnt=\count354
 \MPscratchDim=\dimen316
-\MPnumerator=\count356
-\makeMPintoPDFobject=\count357
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
 \everyMPtoPDFconversion=\toks60
 ) (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -788,7 +787,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count358
+\c@lstlisting=\count357
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
@@ -905,47 +904,15 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 101.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 103.
-
-[3]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 110.
+LaTeX Warning: Citation `kaplanDoublingConstructionsComplete2021a' on page iii undefined on input line 104.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 110.
+LaTeX Warning: Citation `kaplanDoublingConstructionsTensor2020' on page iii undefined on input line 104.
 
 
-LaTeX Warning: Marginpar on page iv moved.
+LaTeX Warning: Citation `caiDoublingConstructionsGlobal2024' on page iii undefined on input line 104.
 
-
-LaTeX Warning: Citation `wuThetaCorrespondenceSimple2024wuThetaCorrespondenceSimple2024' on page iv undefined on input line 122.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 122.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 123.
-
-
-LaTeX Warning: Citation `kaplanDoublingConstructionsComplete2021a' on page iv undefined on input line 141.
-
-
-LaTeX Warning: Citation `kaplanDoublingConstructionsTensor2020' on page iv undefined on input line 141.
-
-
-LaTeX Warning: Citation `caiDoublingConstructionsGlobal2024' on page iv undefined on input line 141.
-
-[4]
-
-LaTeX Warning: Citation `kaplanDoublingConstructionsComplete2021a' on page v undefined on input line 143.
-
-
-LaTeX Warning: Citation `ginzburgTopFourierCoefficients2021' on page v undefined on input line 148.
-
-
-LaTeX Warning: Citation `ginzburgTopFourierCoefficients2021' on page v undefined on input line 159.
-
-) Excluding 'comment' comment. [5] (main.aux)
+[3]) Excluding 'comment' comment. [4] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -958,17 +925,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C94519C314620BCACFBDD1B99CA7AC07;1013.
  ) 
 Here is how much of TeX's memory you used:
- 28710 strings out of 475551
- 546000 string characters out of 5762554
- 1942238 words of memory out of 5000000
- 49354 multiletter control sequences out of 15000+600000
- 564937 words of font info for 63 fonts, out of 8000000 for 9000
+ 28643 strings out of 475551
+ 544750 string characters out of 5762554
+ 1938238 words of memory out of 5000000
+ 49301 multiletter control sequences out of 15000+600000
+ 564332 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,11n,103p,892b,1021s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (5 pages, 231562 bytes).
+Output written on main.pdf (4 pages, 215746 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

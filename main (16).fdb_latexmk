@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726102517 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1726102518 0
+["pdflatex"] 1726043334 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1726043336 0
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1690973535 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1690973558 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -216,10 +216,10 @@
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388486852 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Chapters/polesOfEisensteinSeries.tex" 1726102515 13761 1f648f9ab292a7960c8d66937504b780 ""
+  "Chapters/polesOfEisensteinSeries.tex" 1726043334 12919 0b97a32766286e0f2e342c71674f1d41 ""
   "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1726030178 7966 d42f9ea985d0b8caf87a4dd0f7604885 ""
-  "main.aux" 1726102518 5992 b37624ae500ea47f9022c26717bc5c7f "pdflatex"
-  "main.out" 1726102518 1013 c94519c314620bcacfbdd1b99ca7ac07 "pdflatex"
+  "main.aux" 1726043336 5927 b24bf495f7d3b0a57487d66eb340dc8e "pdflatex"
+  "main.out" 1726043336 1013 c94519c314620bcacfbdd1b99ca7ac07 "pdflatex"
   "main.tex" 1726030178 7966 d42f9ea985d0b8caf87a4dd0f7604885 ""
   "minipreamble.tex" 1726042317 3261 931778e2e10ab970e8c8e5d0b0fa972f ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
