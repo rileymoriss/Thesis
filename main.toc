@@ -1,0 +1,52 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Classical Groups}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Definition}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Subgroups}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{6}{section*.9}%
+\contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Maximal Compact Subgroups}{9}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Metaplectic Covers}{10}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Automorphic Forms}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definition and Role}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Archimedean Automorphic Form}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Adelic Automorphic Form}{12}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Modular Forms}{13}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Automorphic Representations}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Local Representation Theory}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}At the Archimedean Places}{17}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}At the Non-Archimedean Places}{19}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Automorphic Representations}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Cuspidal Representations}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Isotypic Components}{20}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Spectral Decomposition and Eisenstein Series}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Eisenstein Series}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Spectral Decomposition}{23}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}The Decomposition of the Spectrum In General}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Langlands Decomposition of the Spectrum }{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Residual Spectrum}{25}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Automorphic L-Functions}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}L-Functions and Intertwining}{27}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Constant Terms}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition and Role}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Integration Lemmas}{30}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Constant Terms of Eisenstein Series}{31}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}In General}{31}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constant Terms of Cuspidal Eisenstein Series}{32}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Constant Term Of Eisenstein Series for Conjugate Levis}{33}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Siegel Phi Operator}{34}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Siegel Modular Forms}{34}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Automorphising}{35}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Base Case}{36}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Simplifying the Constant Term}{36}{subsection.5.4.4}%
+\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{41}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Residual Eisenstein Series}{41}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The Constant Term}{42}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Analysing the Intertwining Operator}{43}{section.6.3}%
+\contentsline {section}{\numberline {6.4}The Metaplectic Generalisation}{43}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Conditional Result}{44}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Siegel Parabolic}{45}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {A}Direct Integrals}{46}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Of Spaces}{46}{subsection.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Of Operators}{47}{subsection.A.0.2}%
+\contentsline {subsection}{\numberline {A.0.3}Of Representations}{47}{subsection.A.0.3}%

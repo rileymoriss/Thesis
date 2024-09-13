@@ -1,0 +1,95 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: alpha.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Database file #1: ./NumberTheory.bib
+Warning--I didn't find a database entry for "arthurLfunctionsAutomorphicRepresenta"
+Warning--I didn't find a database entry for "cogdellLECTURESINTEGRALREPRESENTATIONS"
+Warning--I didn't find a database entry for "arthurLecturesAutomorphicFunctions1991a"
+Warning--I didn't find a database entry for "shahidiRamanujanConjectureFiniteness1988"
+Warning--I didn't find a database entry for "langlandsEulerProductsa"
+Warning--I didn't find a database entry for "wuThetaCorrespondenceSimple2024wuThetaCorrespondenceSimple2024"
+Warning--to sort, need author or key in BuildingsClassicalGroups
+Warning--to sort, need author or key in NotesClassAlgebraic
+Warning--to sort, need author or key in EssaysHistoryLie
+Warning--to sort, need author or key in LinearRepresentationsFinite
+Warning--can't use both author and editor fields in bumpIntroductionLanglandsProgram2004
+Warning--empty publisher in bernsteinREPRESENTATIONSPADICGROUPS1992
+Warning--empty journal in booherVIEWINGMODULARFORMS
+Warning--empty year in booherVIEWINGMODULARFORMS
+Warning--can't use both author and editor fields in bruinier123ModularForms2008
+Warning--empty journal in cogdellFUNCTORIALITYCLASSICALGROUPS
+Warning--empty year in cogdellFUNCTORIALITYCLASSICALGROUPS
+Warning--empty journal in cogdellLecturesLfunctionsConverse
+Warning--empty year in cogdellLecturesLfunctionsConverse
+Warning--empty journal in cogdellLFUNCTIONSFUNCTORIALITY
+Warning--empty year in cogdellLFUNCTIONSFUNCTORIALITY
+Warning--empty journal in emertonCLASSICALMODULARFORMS
+Warning--empty year in emertonCLASSICALMODULARFORMS
+Warning--empty journal in garrettModernAnalysisAutomorphic
+Warning--empty year in garrettModernAnalysisAutomorphic
+Warning--empty journal in garrettInvariantDifferentialOperators2010
+Warning--empty journal in garrettTransitionEisensteinSeries2016
+Warning--empty journal in godementGroupesLineairesAlgebriques
+Warning--empty year in godementGroupesLineairesAlgebriques
+Warning--empty journal in grenierANALOGUESIEGELXOPERATOR2024
+Warning--empty journal in kimEISENSTEINSERIESTHEIR
+Warning--empty year in kimEISENSTEINSERIESTHEIR
+Warning--empty journal in kudlaNOTESLOCALTHETA
+Warning--empty year in kudlaNOTESLOCALTHETA
+Warning--empty journal in makisumiStructureTheoryReductive
+Warning--empty year in makisumiStructureTheoryReductive
+Warning--empty journal in milneBasicTheoryAffine
+Warning--empty year in milneBasicTheoryAffine
+Warning--empty journal in milneLieAlgebrasAlgebraic
+Warning--empty year in milneLieAlgebrasAlgebraic
+Warning--empty journal in malleLinearAlgebraicGroups
+Warning--empty year in malleLinearAlgebraicGroups
+Warning--empty journal in pollackRANKINSELBERGMETHODUSER
+Warning--empty year in pollackRANKINSELBERGMETHODUSER
+Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
+Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
+You've used 57 entries,
+            2543 wiz_defined-function locations,
+            883 strings with 15196 characters,
+and the built_in function-call counts, 17473 in all, are:
+= -- 1630
+> -- 682
+< -- 50
++ -- 214
+- -- 204
+* -- 1147
+:= -- 2845
+add.period$ -- 151
+call.type$ -- 57
+change.case$ -- 292
+chr.to.int$ -- 55
+cite$ -- 101
+duplicate$ -- 816
+empty$ -- 1415
+format.name$ -- 294
+if$ -- 3533
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 61
+newline$ -- 261
+num.names$ -- 164
+pop$ -- 485
+preamble$ -- 1
+purify$ -- 365
+quote$ -- 0
+skip$ -- 608
+stack$ -- 0
+substring$ -- 603
+swap$ -- 74
+text.length$ -- 50
+text.prefix$ -- 38
+top$ -- 0
+type$ -- 384
+warning$ -- 40
+while$ -- 140
+width$ -- 61
+write$ -- 649
+(There were 46 warnings)
