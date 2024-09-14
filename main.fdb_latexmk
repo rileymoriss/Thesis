@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1726187734 "main.aux" "main.bbl" "main" 1726187738 0
+["bibtex main"] 1726290620 "main.aux" "main.bbl" "main" 1726290623 0
   "./NumberTheory.bib" 1725188696 569998 c13559f5d9bee2cf169f0306d2201976 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291861136 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1726187737 27780 91baeb1ceda9283e735684408aeb1f14 "pdflatex"
+  "main.aux" 1726290622 27958 3e7a5ffdd6698c015584f5bec4f931b5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1726187734 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1726187738 0
+["pdflatex"] 1726290620 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1726290623 0
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1692676729 11548 78bef0057cba8f6fe11199e7e5d8f077 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk" 1711930929 14064 2b636b917c6dd2a843da53de5aeddea9 ""
@@ -249,14 +249,14 @@
   "Chapters/classicalGroups.tex" 1725433788 19926 6dc5a4ceff69e7fc5933e3d42e59d9d7 ""
   "Chapters/constantTerms.tex" 1725508888 29553 819bfa64daa7aa09f621c43ff07b476b ""
   "Chapters/intro.tex" 1725429320 3484 313aab66dc5f1b990abebca81273f6d7 ""
-  "Chapters/polesOfEisensteinSeries.tex" 1726102515 13761 1f648f9ab292a7960c8d66937504b780 ""
-  "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1726187721 7970 53d7350d8b604cea48e6dbc5972802be ""
-  "main.aux" 1726187737 27780 91baeb1ceda9283e735684408aeb1f14 "pdflatex"
-  "main.bbl" 1726187734 12052 cced29e1f1807ada61c579fedb7351fb "bibtex main"
-  "main.out" 1726187737 4379 f1af992403d3c803c70e43f101679f68 "pdflatex"
-  "main.tdo" 1726187737 4596 bd70a200fabb4e6b4808609ed675226b "pdflatex"
-  "main.tex" 1726187721 7970 53d7350d8b604cea48e6dbc5972802be ""
-  "main.toc" 1726187737 4518 c700d28e146764f87ebc50f148db53e8 "pdflatex"
+  "Chapters/polesOfEisensteinSeries.tex" 1726289005 14172 68cf28634f783d852ce2d46343282e97 ""
+  "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1726290610 7970 53d7350d8b604cea48e6dbc5972802be ""
+  "main.aux" 1726290622 27958 3e7a5ffdd6698c015584f5bec4f931b5 "pdflatex"
+  "main.bbl" 1726290620 12301 779dc74150d6df7ea7dadb7a496317ba "bibtex main"
+  "main.out" 1726290622 4379 f1af992403d3c803c70e43f101679f68 "pdflatex"
+  "main.tdo" 1726290622 4596 bd70a200fabb4e6b4808609ed675226b "pdflatex"
+  "main.tex" 1726290610 7970 53d7350d8b604cea48e6dbc5972802be ""
+  "main.toc" 1726290622 4518 c700d28e146764f87ebc50f148db53e8 "pdflatex"
   "minipreamble.tex" 1726042317 3261 931778e2e10ab970e8c8e5d0b0fa972f ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)
