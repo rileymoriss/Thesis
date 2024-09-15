@@ -1,14 +1,14 @@
 Here we will explain the role of the constant term in our calculation of poles.\label{constant_terms}
 
 \section{Definition and Role} \label{cuspidal_form_definition}
-The constant term is an operation defined on a large class of functions and is supposed to generalise the constant term of a Fourier expansion, we will see this later, although one may consult \cite[1.6]{bumpAutomorphicFormsRepresentations1997} for some examples as well. In particular \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995} give the definition as follows: We consider \(P=MU\) a standard parabolic of \(G\) and \(\phi: U(k)\setminus \mathbf{G} \to \C\) a measurable and locally \(L^1\) function then its constant term along \(P\) is 
+The constant term is an operation defined on a large class of functions and is supposed to generalise the constant term of a Fourier expansion, we will see this later, although one may consult \cite[1.6]{bumpAutomorphicFormsRepresentations1997} for some examples as well. In particular \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995} give the definition as follows: We consider \(P=MU\) a standard parabolic of \(G\) and \(\phi: U(k)\setminus \mathbf{G} \to \C\) a measurable and locally \(L^1\) function then its \textbf{constant term} along \(P\) is 
 \[\phi_P :  U(\A)\setminus \mathbf{G} \to \C\]
 \[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u\]
-which inherits many of the properties of \(\phi\) such as smoothness and moderate growth. For instance if \(\phi\) is an automorphic form on \(\mathbf{G}\) then its constant term is an automorphic form on \(M\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
+which inherits many of the properties of \(\phi\) such as smoothness and moderate growth. Moreover if \(\phi\) is an automorphic form on \(\mathbf{G}\) then its constant term is an automorphic form on \(M\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
 
-This allows us to recall the definition of cuspidal automorphic forms or ``cusp forms''. Let \(\phi\) be a an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that 
+This allows us to recall the definition of cuspidal automorphic forms or ``cusp forms''. Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that 
 \[\phi_{P'} = 0\]
-Cusp forms have a central role in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible, they just make formulas easier to work with as things will become zero and they form the ``base case'' for the proof of the spectral decomposition \ref{spectral_decomposition}.
+Cusp forms have a central role in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible, they just make formulas easier to work with as things will become zero (as we see in section \todo{}) and they form the ``base case'' for the proof of the spectral decomposition \ref{spectral_decomposition}.
 
 The constant term itself is of central importance. One reason for this is that it controls the growth of the automorphic forms. More precisely we have the following theorem \cite[I.4.10]{moeglinSpectralDecompositionEisenstein1995}
 
@@ -35,21 +35,21 @@ The constant term itself is of central importance. One reason for this is that i
 	The equation above then follows from
 	\[ \intof{G}{\chi(g)}{\mu(g)} = \intof{G}{\chi(hg)}{\mu(g)} = \intof{G}{\chi(h)\chi(g)}{\mu(g)} = \chi(h) \intof{G}{\chi(g)}{\mu(g)}. \square\]
 }
-    Integrating trivial characters gives the volume of the measure space which we typically normalize to be one.
+    Integrating trivial characters gives the volume of the measure space which we typically normalise to be one.
 
 \begin{Theorem}[\cite{garrettModernAnalysisAutomorphic} 5.2, \cite{follandCourseAbstractHarmonic2016} Thm 2.49]
-        Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H)then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
+        Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H) then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
         \[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg\]
     \end{Theorem}
     Note that this quotient may not be a group, because H is not required to be normal.
 
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
-This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. I give more detail here then I could find anywhere else. 
+This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations.
 
 Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
 
 \subsection{In General}
-We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MN\) and \(P' = M'N'\) two standard parabolics of suitable group G over F, with \(E(x, \phi, \lambda)\) defined via  parabolic induction from P.
+We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MN\) and \(P' = M'N'\) two standard parabolics of a suitable group G over F, with \(E(x, \phi, \lambda)\) defined via  parabolic induction from P.
 
     \begin{Lemma}\label{lem:1}
         \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)\]
@@ -57,11 +57,11 @@ We will use the following Lemmas to give a simplified expression of the constant
     \proofbar{
         Consider the Bruhat decomposition:
         \[G(F) =\coprod_{w\in W_{M'}\setminus W_G / W_{M}} P(F)w\inv P'(F) \]
-        then becuase the action of \(P(F)\) keeps the disjoint sets disjoint we can move the quotient through and get
+        then because the action of \(P(F)\) keeps the disjoint sets disjoint we can move the quotient through and get
         \[P(F)\setminus G(F) = \coprod_w  P(F) \setminus P(F)w\inv P'(F)\]
         so we analyse the summands, by the second isomorphism theorem we have a bijection
         \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap P'(F) \setminus w\inv P'(F) \]
-        now if \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its \(pw\inv p'\) for some \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
+        now if \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its represented by some \(pw\inv p'\) where \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
         \[w(P(F)\cap P'(F) \setminus w\inv P'(F)) \cong wP(F)w\inv \cap P'(F) \setminus P'(F)\]
     }
 
@@ -81,7 +81,7 @@ We will use the following Lemmas to give a simplified expression of the constant
         \end{equation*}
     }
     Taking the contrapositive of this lemma will be used below. This is because our sums will be over quotients like \(A\setminus B\) and therefore summing over the ``elements'' in B that are not in A; by our lemma would be the same as summing over two different such quotients.
-    Now consider the computation:
+Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series
     \begin{equation*}
         \begin{aligned}
             E_{P'}( \phi, \lambda, x) &= \int_{N'(F)\setminus N'(\A)} E( \phi, \lambda, nx) dn\\
@@ -93,6 +93,7 @@ We will use the following Lemmas to give a simplified expression of the constant
                                     (\text{Unfold}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn.\\
         \end{aligned}
     \end{equation*}
+    \todo[inline]{I need to fix all the lemma labeling }
     The change of variables is \((m', n') \mapsto ((m')\inv n' m', (m')\inv n' m')\).
     Again we assume that our $x$ is sufficiently large so all the integrals converge.\todo[inline]{Maybe appologise for doing integrals naivelly lol.. clarify this.... is it even the x that I need to worry about here?}
 
@@ -142,15 +143,15 @@ We will use the following Lemmas to give a simplified expression of the constant
              &= \sum_{ w} \sum_{m'} M(w, \pi)(\lambda.\phi)(x)
         \end{aligned}
     \end{equation*}\todo[inline]{I have mixed up my N's and U's too much...}
-    In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series. 
+    In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series, we will go through a detailed example in the final section \todo{}.
 
     
 \section{Siegel Phi Operator}
-Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. \todo[inline]{give references for the other interpretations of the constant term, there must be some} We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
+Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
 
-Because we are trying to connect this to the classical picture it is most convenient to think of thinks in the Archimedean places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the Archimedean places, and the constant term will be taken only on the Archimedean part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
+Because we are trying to connect this to the classical picture it is most convenient to think of things in the Archimedean places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the Archimedean places, and the constant term will be taken only on the Archimedean part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
 \[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
-We assume here for simplicity (and because it will apply to the examples below) that our groups are unimodular.\todo[inline]{is that true....}
+
 
 \subsection{Siegel Modular Forms}
 We collect some definitions from \cite{bruinier123ModularForms2008} to fix notation. Let the Siegal upper half plane be defined as 
@@ -246,7 +247,7 @@ which can be given the explicit matrix representations
     \end{pmatrix} \in \Sp_{2(g-r)}(F) \]
 
     and unipotent 
-    \[ n(s;h,k) \defeq \begin{pmatrix} 1 & 0 & 0 & h\\ -k^t & 1 & h^t & s+h^t k\\ 0 & 0 & 1 & k\\ 0 & 0 & 0 & 1 \end{pmatrix}, \;\;\; h, k\in\mathrm{Mat}_{(g-r)\times r}(\R)\; s\in\mathrm{Sym}_{r}(\R)\]
+    \[ n(s;h,k) \defeq \begin{pmatrix} 1 & 0 & 0 & h\\ -k^t & 1 & h^t & s+h^t k\\ 0 & 0 & 1 & k\\ 0 & 0 & 0 & 1 \end{pmatrix}, \;\;\; h, k\in\mathrm{Mat}_{(g-r)\times r}(\R),\; s\in\mathrm{Sym}_{r}(\R)\]
 We have the following short exact sequence \todo[inline]{prove it}
 \[ 1\to \mathrm{Sym}_{r}(\R)\to N_r(\R)\to \mathrm{Mat}_{(g-r)\times r}(\R)\times\mathrm{Mat}_{(g-r)\times r}(\R) \to 1. \]
 which we will use to unfold our integral below, for compactness we define \(H_r \defeq \mathrm{Mat}_{(g-r)\times r}\). We will now denote \([G] \defeq G(\Z)\backslash G(\R)\) and compute the constant term
@@ -336,7 +337,7 @@ putting this into our Fourier expansion
 
 If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo[inline]{my Tm differs from Chengjing}
 \[T_{m} \defeq \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) = \mathrm{Tr}(-mk^t\tau - m^t\tau k) + \mathrm{Tr}(mh^t + m^th) \defeq T_{m,k} + T_{m,h}\]
-we can sub this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
+we can substitute this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
 \begin{align*}
     \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
      &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{ \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  T_m + T_l) \right)
