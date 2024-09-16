@@ -3,16 +3,16 @@ Our goal here is to exposit and survey the work in papers such as \cite{brennerN
 \cite{brennerNotesAnalyticProperties2009} gave an analysis of the residual poles of Eisenstein series attached to \(\Sp_{2n}\), there were some minor errors that were corrected in \cite{jiangPolesCertainResidual2013} where they give esssentially the same proof; theirs however works for the other classical groups. For our purposes, the case of \(\Sp_{2n}\), as a group defined over \(F\) a number field, is most relevant, and we shall therefore focus exclusively on this case, however it should be noted that this limitation in the non-covering case is artificial, although it does simplify things a little by removing some casework, and we hope also in the covering case to be able to remove it in future work. 
 
 \section{Residual Eisenstein Series}
-So for the rest of the chapter we will fix an \(n\in \N\), \(G_n = \Sp_{2n}\) and the Borel of upper triangular matrices in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \todo{what are the ranges of these}. Then as we saw in \ref{maximal_parabolic} there corresponds a maximal standard parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rN_r\), such that the Levi component is 
+So for the rest of the chapter we will fix an \(n\in \N\), \(G_n = \Sp_{2n}\) and the Borel of upper triangular matrices in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \(1\leq r,m \leq n\) and \(r,m\in \Z\). Then as we saw in \ref{maximal_parabolic} there corresponds a maximal standard (proper) parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rN_r\), such that the Levi component is 
 \[\GL_r\times \Sp_{2m} \]
-As we saw in \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). If we look at the divisors of \(r = ab\) \todo{check the exact ranges, will depend on the range of r}
+As we saw in \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). If we look at the divisors of \(r = ab\)
  and fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_a\), then from \ref{residual_spec} we know that \(\Delta(\tau, b)\) is a residual representation of \(\GL_{ab} = \GL_r\). Now we take an irreducible generic cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), and so their tensor product \(\Delta(\tau, b) \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
 \[\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Sp_{2n}(\A) )_{\Delta(\tau, b)\tensor \sigma}\] 
 then we have the Eisenstein series
 \[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g)\]
 for \(g\in \Sp_{2n}(F) \setminus \Sp_{2n}(\A)\). Becuase it is induced from the residual representation \(\Delta(\tau, b)\) we call these residual Eisenstein series.
 
-This is the setup in \cite{jiangPolesCertainResidual2013}, where they prove their results by a sort of induction on \(b\). Here we will focus exclusively on the base case of this induction, leaving the inductive step for future work. So from now on we will fix \(b = 1\). Hence \(n = a + m\). Then fixing a standard parabolic of \(\Sp_{2n}\) we have the maximal standard parabolic \(P_a = M_aN_a\) where \(M_a = \GL_a \times \Sp_{2m}\).  Now if \(\tau\) is irreducible unitary cuspidal automorphic representation of \(\GL_a\) then by definition \todo{reference Brenner or explain in the previous section...}
+This is the setup in \cite{jiangPolesCertainResidual2013}, where they prove their results by a sort of induction on \(b\). Here we will focus exclusively on the base case of this induction, leaving the inductive step for future work. So from now on we will fix \(b = 1\). Hence \(n = a + m\). Then fixing a standard parabolic of \(\Sp_{2n}\) we have the maximal standard parabolic \(P_a = M_aN_a\) where \(M_a = \GL_a \times \Sp_{2m}\).  Now if \(\tau\) is irreducible unitary cuspidal automorphic representation of \(\GL_a\) then by definition \ref{residual_spec}
 \[\Delta(\tau, 1)(\phi)(g) = E(\phi,s)(g) = s.\phi(g)\]
 where the Eisenstein series is defined via the parabolic induction from the Levi \((\GL_a)^{\times b} \) to \(\GL_{ab}\). Thus we have \(\Delta(\tau, 1) = \tau\).
 
@@ -38,11 +38,11 @@ When \(b = 1\) we have the constant term
 
 
 \section{The Constant Term}
-So far we only know how to do one thing with such Eisenstein series and that is compute their constant term. \todo{M+W II.1.7, all others are zero..?} We will compute the constant term along the maximal parabolic \(P_a = MN\). 
+So far we only know how to do one thing with such Eisenstein series and that is compute their constant term. We will compute the constant term along the maximal parabolic \(P_a = MN\) becuase by \cite[II.1.7 (ii)]{moeglinSpectralDecompositionEisenstein1995} the others are zero.
 
-By our earlier calculations \ref{const_eisenstein} and the cuspidality of the tensor \ref{cuspidality_tensor} and \cite{jiangPolesCertainResidual2013} we know that 
+By our earlier calculations \ref{const_eisenstein}, the fact that the tensor of cuspidal representations is cuspidal and \cite{jiangPolesCertainResidual2013} we know that 
      \[E(\phi, s)_{P} = \sum_{ w} \sum_{m'} \int_{(w\inv N(\A)w \cap M(\A)) \setminus A} \int_{w\inv N(F) w \cap M(F) \setminus w\inv N(\A)w \cap M(\A)} s.\phi( n_1 n_2 w\inv m' x)  dn_1 dn_2,\] 
-     and the inner integral vanishes for all \(w\neq id, \omega\) (\(\omega\) as in \cite{jiangPolesCertainResidual2013}). Hence the first sum becomes over two elements and we have 
+     and the inner integral vanishes for all \(w\neq id, \omega\) (\(\omega\) as in \cite{jiangPolesCertainResidual2013})\todo[color=orange]{I would like to expand on this if there is time}. Hence the first sum becomes over two elements and we have 
 
      \[E(\phi, s)_{P} = E(\phi, s)_{P, id} + E(\phi, s)_{P, \omega}.\]
      where 
@@ -67,15 +67,15 @@ First the identity term simplifies
      because we took the constant term along the same parabolic as the definition of the Eisenstein series we know that the Levis are (the same) conjugate.
     Thus we have shown that 
     \[E(\phi, s)_P = s.\phi_P + M(\omega, s )(\phi)\]
-    \todo{cite the relevant parts of jiang and brenner..}
     \begin{remark}
         This work was entirely at the level of the terminals and hence generalises verbatim to covering groups.
     \end{remark}
     
     Because \(\phi\) is an automorphic form it has no poles and so we have shown the following:
-    \begin{Lemma}
+    \begin{Lemma}[Base case of \cite{jiangPolesCertainResidual2013}, 2.1]
         The poles of \(E(\phi, s)\) are exactly the poles of \(E(\phi,s)_{P_a}\) which are exactly the poles of \(M(\omega, s)\).
     \end{Lemma}
+    
 
     \section{Analysing the Intertwining Operator}
     Recall from \ref{L_inter} that we know in this case that there is some ratio of \(L\)-functions \(r(s, \omega)\) such that \(M(s,\omega) = r(s, \omega)N(s, \omega)\) where \(N(s, \omega)\) is both holomorphic and non-zero. 
@@ -98,7 +98,7 @@ First the identity term simplifies
 
 
     \section{The Metaplectic Generalisation}
-    We need to restate the setup now in the metaplectic case\todo{ref}. Using the same notation as above, we now also denote \(\mathbf{M}_a\) the pre-image of \(M_a\) in \(\Mp_{2n}\), in particular if \(\mathrm{pr}: \Mp_{2n} \to \Sp_{2n}\) is the defining projection we have that \(\mathbf{M}_a \defeq \mathrm{pr}\inv(M_a)\). As we remarked \todo{ref} we still have that \(X_{\mathbf{M}_r}^{\Mp_{2n}}\) is one dimensional. Now we want to consider representations of 
+    We need to restate the setup now in the metaplectic case. Using the same notation as above, we now also denote \(\mathbf{M}_a\) the pre-image of \(M_a\) in \(\Mp_{2n}\), in particular if \(\mathrm{pr}: \Mp_{2n} \to \Sp_{2n}\) is the defining projection we have that \(\mathbf{M}_a \defeq \mathrm{pr}\inv(M_a)\). As we remarked \ref{Metaplectic_characters} we still have that \(X_{\mathbf{M}_r}^{\Mp_{2n}}\) is one dimensional. Now we want to consider representations of 
     \[\mathbf{M}_a = \mathrm{pr}\inv(\GL_a \times \Sp_{2m}) \cong \big(\mathrm{pr}\inv(\GL_a)\times \mathrm{pr}\inv(\Sp_{2m})\big)/\Delta \mu_2,\]
     where \(\mu_2 = \{\pm 1\}\) acts on the product via the diagonal embedding \todo{This is not clear to me....}.
     So now we let \(\tilde{\tau}\) be a generic, cuspidal, irreducible representation of \(\mathrm{pr}\inv(\GL_a)\) and \(\tilde{\sigma}\) a generic, cuspidal, irreducible representation of \(\mathrm{pr}\inv(\Sp_{2m})\). 
@@ -119,7 +119,7 @@ First the identity term simplifies
     This is where the general story ends for the metaplectic groups. The results that we used in the classical group setting have not yet been proven (and are far beyond my scope). 
 
     \subsection{Conditional Result}
-     We follow \cite[Assumption 6.1]{wuThetaCorrespondenceSimple2024wuThetaCorrespondenceSimple2024} for the specific form of this conjecture, although as we mentioned earlier \todo{ref earlier} this has many incarnations. 
+     We follow \cite[Assumption 6.1]{wuThetaCorrespondenceSimple2024wuThetaCorrespondenceSimple2024} for the specific form of this conjecture, although as we mentioned earlier \ref{L_inter} this has many incarnations. 
      \todo[inline]{need to say where N is holomorphic, right half plane, geq 1/2 or 0...}
      \begin{Conj}\label{conjecture_1}
         There exists a holomorphic and non-zero \(N(s,w)\) such that 

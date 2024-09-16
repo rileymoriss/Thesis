@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  15 SEP 2024 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.19)  15 SEP 2024 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,7 +829,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 11.
  (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [2
 
-]) [3] (main.toc [4
+]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 14.
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 14.
+) [3] (main.toc [4
 
 ])
 \tf@toc=\write6
@@ -839,7 +844,6 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 11
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 127.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 127.
 [2
 
 ]
@@ -859,11 +863,21 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the loads
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 260.
 
 
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 264.
+
+
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 269.
 
 ) [12]
 Chapter 2.
-(Chapters/automorphicForms.tex [13
+(Chapters/automorphicForms.tex
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 12.
+
+
+Underfull \vbox (badness 4084) has occurred while \output is active []
+
+ [13
 
 ]
 
@@ -875,19 +889,22 @@ LaTeX Warning: Command \i invalid in math mode on input line 17.
 
 LaTeX Warning: Command \i invalid in math mode on input line 21.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 24.
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 23.
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 25.
 (C:\Users\riley\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [14] [15] [16]
-Underfull \vbox (badness 10000) detected at line 129
+Underfull \vbox (badness 10000) detected at line 130
  []
 
 
-Underfull \vbox (badness 10000) detected at line 129
+Underfull \vbox (badness 10000) detected at line 130
  []
 
 [17]
-Overfull \hbox (82.47311pt too wide) detected at line 150
+Overfull \hbox (82.47311pt too wide) detected at line 151
 []
  []
 
@@ -1097,44 +1114,20 @@ Overfull \hbox (6.29863pt too wide) in paragraph at lines 1--2
 \OT1/cmr/m/n/12 Our goal here is to ex-posit and sur-vey the work in pa-pers such as [[]][[]][[]]
  []
 
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 6.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 8.
-
 [51
 
-]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 15.
-
-Excluding 'comment' comment.
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 41.
-
-
-LaTeX Warning: Reference `cuspidality_tensor' on page 52 undefined on input line 43.
-
-
+] Excluding 'comment' comment.
 Overfull \hbox (50.06859pt too wide) detected at line 44
 \OML/cmm/m/it/12 E\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '; s\OT1/cmr/m/n/12 )[] = [] [] [][] [][] \OML/cmm/m/it/12 s:'\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n[]n[]w[]m[]x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dn[]dn[];
  []
 
-[52]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 70.
+Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 45.
 
-[53]
+[52] [53]
 Overfull \hbox (1.92363pt too wide) in paragraph at lines 83--85
 \OT1/cmr/m/n/12 where $\OMS/cmsy/m/n/12 ^[]$ \OT1/cmr/m/n/12 de-notes the ex-te-rior sec-ond power of the stan-dard rep-re-sen-ta-tion of $[][](\U/msb/m/n/12 C[]\OT1/cmr/m/n/12 )$.
  []
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 101.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 101.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 103.
@@ -1151,9 +1144,6 @@ LaTeX Warning: Marginpar on page 55 moved.
 
 
 LaTeX Warning: Citation `wuThetaCorrespondenceSimple2024wuThetaCorrespondenceSimple2024' on page 55 undefined on input line 122.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 122.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 123.
@@ -1217,17 +1207,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F1AF992403D3C803C70E43F101679F68;4379.
  ) 
 Here is how much of TeX's memory you used:
- 29426 strings out of 475551
- 561267 string characters out of 5762554
- 1946238 words of memory out of 5000000
- 49756 multiletter control sequences out of 15000+600000
+ 29396 strings out of 475551
+ 560605 string characters out of 5762554
+ 1943238 words of memory out of 5000000
+ 49729 multiletter control sequences out of 15000+600000
  570059 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,22n,103p,1365b,1173s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,22n,103p,1365b,1167s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\riley\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (71 pages, 607660 bytes).
+Output written on main.pdf (71 pages, 607785 bytes).
 PDF statistics:
- 1035 PDF objects out of 1200 (max. 8388607)
- 303 named destinations out of 1000 (max. 500000)
+ 1034 PDF objects out of 1200 (max. 8388607)
+ 300 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

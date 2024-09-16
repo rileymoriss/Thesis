@@ -1,4 +1,4 @@
-There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms. We intend to be terse as this material is somewhat standard.
+There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms.
 
 \section{Definition and Role}
 The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maas form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
@@ -9,7 +9,7 @@ We will present two notions of automorphic form here. In the literature they are
 
 \subsection{Archimedean Automorphic Form}
 Fix a number field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textbf{smooth}  if it is smooth in the sense of manifolds.
-
+\todo[color=orange]{First of all is the analytification the same as the Hausdorff topology? Secondly what is the reference for these facts..}
 
 Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to SL_{2n}\) via
 	\[g\mapsto \begin{pmatrix}
@@ -20,6 +20,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 	A function \(\phi : G(F_\infty) = G(\prod_{v\in\infty} F_\nu)\cong \prod_{v\in \infty}G(F_\nu) \to \C \) is of \textbf{moderate growth} if there are constants \((c,r)\in \R_{>0}\times \R\) such that 
 	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v\in\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r.\]
 	This is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
+	\todo[color=orange]{Look at the equivilent condition frmo Borel}
 
     Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\)-module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textbf{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
@@ -37,7 +38,7 @@ Now we fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to 
 
 
 \subsection{Adelic Automorphic Form}
-Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) satisfying the conditions laid out in the previous section \ref{max_compact_subgroup}.
+Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) that is in good position (\ref{max_compact_subgroup}).
 
 For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\). This suggests the definition of smooth functions on the ``finite adeles'' \(\A_f\) as 
 	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)). \]
@@ -56,7 +57,7 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
     \end{remark}
 
 \begin{definition}
-    A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an \textbf{automorphic form} if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. We will denote the set of these automorphic forms by \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\)
+    A function \(\phi: U(\A)M(F)\backslash G(\A) \to \C\) is an \textbf{automorphic form} if it is smooth, moderate growth, \(Z(\mathfrak{g})\) and \(K\) finite. We will denote the set of these automorphic forms by \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\).
 \end{definition}
 
 \begin{remark}
