@@ -25,10 +25,10 @@ As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix gr
     The first example that we will see again and again is the ``multiplicative group'' or \(\GL_1\) defined over the field \(K\). This is 
     \[\mathbb{G}_m \defeq \Spec\Bigl( K[x,y]/(xy - 1)\Bigr).\]
 
-    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
+    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
 \end{example}
 
-The other most important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional F vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
+The other most important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional F-vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}.\]
 Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form, will define our classical groups. 
 
@@ -184,11 +184,23 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     \end{definition}
 
     \begin{example}[Bad Etymology]
-        \(\GL^2_1\) is a split torus. Notice that 
-        \[\GL^2_1(\C) = \C^\ast\times \C^\ast,\]
-        is isomorphic as abstract groups to \(U(1)\times U(1)\) which when \(U(1)\) is realised as \(\{z\in \C : |z| = 1\}\) is topologically equivalent to the torus \(\mathbb{T}^2 = \mathbb{S}^1\times \mathbb{S}^1 \). Note that it is clear that 
-        \[\GL^2_1(\C) \not\cong \mathbb{T}^2, \]
+        \(\GL_1\) is a split torus. Notice that 
+        \[\GL_1(\C) = \C^\ast,\]
+        is isomorphic as abstract groups to \(U(1)\) which when \(U(1)\) is realised as \(\{z\in \C : |z| = 1\}\) is topologically equivalent to the torus \(\mathbb{T}^1 = \mathbb{S}^1\). Note that it is clear that 
+        \[\GL_1(\C) \not\cong \mathbb{T}^2, \]
         as topological groups, as the right hand side is compact whilst the left is not.
+
+        Consider the field extension \(\C/\R\). Then \C has the inner product given by 
+        \[\inner{z, z'} \defeq \bar{z}z'.\]
+        We can look at the elements of \(\C\) that preserve this inner product, 
+        \begin{align*}
+            U(1)&\defeq \{c\in \GL_1(\C) : \forall z,z'\in \C , \quad \inner{cz, cz'} = \overline{cz}cz' = \bar{z}z'\} \\
+             &= \{c\in \GL_1(\C) : |c| = 1\}.
+        \end{align*}
+        Note that this is a (real) line topologically so we dont expect it to be a complex varity. Indeed this defines a \textbf{real} algebraic group given by the zero locus in \(\R^2\) of the two variable polynomial \(x^2 + y^2 - 1\). In other words
+        \[ U(1) \cong \mathrm{MaxSpec}\big(\R[x,y]/(x^2 + y^2 - 1)\big) .\]
+        Now if we complexify we have 
+        \[\R[x,y]/(x^2 + y^2 - 1) \tensor_\R \C \cong \]
 
         It was pointed out to me that as algebraic groups over \(\C\) we have the following isomorphism
         \[\GL_1 \cong U(1)\tensor_\R \C.\]

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1726544614 "main.aux" "main.bbl" "main" 1726545297 0
+["bibtex main"] 1726542764 "main.aux" "main.bbl" "main" 1726542986 0
   "./NumberTheory.bib" 1725188696 569998 c13559f5d9bee2cf169f0306d2201976 ""
   "C:/Users/riley/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291861136 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1726545295 27863 41145ad96246a8f51bdda46395e27842 "pdflatex"
+  "main.aux" 1726542985 27863 020baa64174d72231f1a67483322d71e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1726545293 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1726545297 0
+["pdflatex"] 1726542983 "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" "main.pdf" "main" 1726542986 0
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723463834 171978 da5965bbb565a00c48726258f47515f5 ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1715317160 14064 e0aefd7b4fc8c8d3c4d5ed0e19d474ac ""
   "C:/Users/riley/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1726364950 17172 ed537b9a0ea7fe533ed50fae508be924 ""
@@ -250,17 +250,17 @@
   "Chapters/acknowledgements.tex" 1726530027 456 a140211c19f300c55bc34c4c523097d8 ""
   "Chapters/automorphicForms.tex" 1726379372 15838 a74f919c9238318f62378d70448a742c ""
   "Chapters/automorphicReps.tex" 1726530798 11940 34f8c40278d4e7191a5a87c22d43430c ""
-  "Chapters/classicalGroups.tex" 1726545292 20836 5701dc35506771629c2cbebed6633a5e ""
+  "Chapters/classicalGroups.tex" 1726542980 20257 dfeeb56651c4e3348d8bf9347d44d8f6 ""
   "Chapters/constantTerms.tex" 1726368529 29579 5b2dab450c3b5594d25e98078b716e97 ""
   "Chapters/intro.tex" 1726378153 3529 ad90af03b8ba2a3c3a56be8f70b7787b ""
   "Chapters/polesOfEisensteinSeries.tex" 1726374411 14218 7ed3c10a57730f57ea2ccae3b3454cc4 ""
   "c:/Users/riley/OneDrive/Documents/Git/Thesis/main.tex" 1726364946 7972 66c763ca0e8897313b47fe2370a5d8f3 ""
-  "main.aux" 1726545295 27863 41145ad96246a8f51bdda46395e27842 "pdflatex"
-  "main.bbl" 1726544615 12301 779dc74150d6df7ea7dadb7a496317ba "bibtex main"
-  "main.out" 1726545295 4379 f1af992403d3c803c70e43f101679f68 "pdflatex"
-  "main.tdo" 1726545295 4509 109934db90f32e49dcdc7a1af4b9208a "pdflatex"
+  "main.aux" 1726542985 27863 020baa64174d72231f1a67483322d71e "pdflatex"
+  "main.bbl" 1726542765 12301 779dc74150d6df7ea7dadb7a496317ba "bibtex main"
+  "main.out" 1726542985 4379 f1af992403d3c803c70e43f101679f68 "pdflatex"
+  "main.tdo" 1726542985 4509 2ffcc29c74275be1537875e5bcdcedd7 "pdflatex"
   "main.tex" 1726364946 7972 66c763ca0e8897313b47fe2370a5d8f3 ""
-  "main.toc" 1726545295 4520 67686dfadfb443c474ca483704d5ab4a "pdflatex"
+  "main.toc" 1726542985 4520 e0195613b4ab2c9a7b3fe50e8b4570aa "pdflatex"
   "minipreamble.tex" 1726042317 3261 931778e2e10ab970e8c8e5d0b0fa972f ""
   "quiver.sty" 1724165152 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)

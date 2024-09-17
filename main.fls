@@ -360,6 +360,7 @@ INPUT .\Chapters\acknowledgements.tex
 INPUT .\Chapters\acknowledgements.tex
 INPUT Chapters\acknowledgements.tex
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT .\Chapters\intro.tex
 INPUT .\Chapters\intro.tex
 INPUT .\Chapters\intro.tex
@@ -367,7 +368,6 @@ INPUT .\Chapters\intro.tex
 INPUT Chapters\intro.tex
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\riley\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
