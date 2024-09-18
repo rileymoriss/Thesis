@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  18 SEP 2024 20:39
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  18 SEP 2024 22:38
  restricted system commands enabled.
 **Lfunctions.tex
 (./Lfunctions.tex
@@ -1421,15 +1421,6 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-l.59 \todo
-        [inline]{ref}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 )
 ! Emergency stop.
 <*> Lfunctions.tex
@@ -1440,11 +1431,11 @@ and I'll forget about whatever was undefined.
 
 Here is how much of LuaTeX's memory you used:
  35 strings out of 477545
- 100000,1977958 words of node,token memory allocated 38216 words of node memory still in use:
-   351 hlist, 32 vlist, 8 rule, 12 disc, 14 local_par, 1 dir, 91 math, 1024 glue
-, 88 kern, 55 penalty, 3565 glyph, 212 attribute, 39 glue_spec, 212 attribute_li
-st, 1 temp nodes
-   avail lists: 2:16,3:33,4:79,5:2,8:44,9:1,10:78
+ 100000,1977958 words of node,token memory allocated 37001 words of node memory still in use:
+   351 hlist, 32 vlist, 8 rule, 12 disc, 14 local_par, 1 dir, 91 math, 998 glue,
+ 88 kern, 55 penalty, 3418 glyph, 211 attribute, 39 glue_spec, 211 attribute_lis
+t, 1 temp nodes
+   avail lists: 2:18,3:33,4:79,5:2,8:44,9:1,10:78
  21151 multiletter control sequences out of 65536+600000
  26 fonts using 1476743 bytes
  19i,8n,30p,885b,128s stack positions out of 10000i,1000n,20000p,200000b,200000s

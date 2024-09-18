@@ -11,7 +11,7 @@ This allows us to recall the definition of cuspidal automorphic forms or ``cusp 
 Cusp forms have a central role in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible, they just make formulas easier to work with as things will become zero (as we see in section \todo{}) and they form the ``base case'' for the proof of the spectral decomposition \ref{spectral_decomposition}.
 
 The constant term itself is of central importance. One reason for this is that it controls the growth of the automorphic forms. More precisely we have the following theorem \cite[I.4.10]{moeglinSpectralDecompositionEisenstein1995}
-
+\todo[color=blue]{M+W}
 \begin{Theorem}
         Let \(P = MU\) be a standard parabolic of \(G\), \(V_P\subseteq \mathcal{A}_0(U(\A)M(k)\setminus G)\) a finite dimensional subspace, \(\Gamma_P\subseteq X_M\) a compact subset and \(N_P\) an integer. Let \(n\in \Z\), \(D\subseteq \C^n\) open and connected, \(f: D\to \C\) holomorphic and not identically zero. Let \(D' = \{x\in D : f(x)\neq 0\}\).
 
@@ -24,6 +24,8 @@ The constant term itself is of central importance. One reason for this is that i
     \end{Theorem}
     
     Unpacking this a bit we see that an Eisenstein series satisfies the hypothesis on \(\phi\) by \cite[IV.1.9]{moeglinSpectralDecompositionEisenstein1995} \todo[inline]{make this more precise}, we think of \(D'\) as the positive open cone on which the Eisenstein series converges, and then \(D = \C^n \setminus S \) as the rest of the cuspidal datum \(\mathfrak{P}\) on which the Eisenstein series is holomorphic (\(S\) is its set of singularities). Therefore the domain on which the Eisenstein series is holomorphic is the same as the domain on which (roughly) its constant term is holomorphic.
+    
+        \todo[color=blue]{Constant terms vanish along other parabolics for E-series}
 
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
 This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations.
@@ -126,5 +128,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
         \end{aligned}
     \end{equation*}\todo[inline]{I have mixed up my N's and U's too much...}
     In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series, we will go through a detailed example in the final section \todo{}.
+    
+
 
     

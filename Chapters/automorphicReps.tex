@@ -2,14 +2,16 @@ The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRe
 \section{Local Representation Theory}
 Recall that in the representation theory of finite groups over \C there is really only one important representation, that is the regular representation i.e. the \(\C[G]\) module \(\C[G]\). This is important for two reasons, the first is that it is always a priori defined uniformly for all groups, the second is that it decomposes into a direct sum over all irreducible modules, we will have more to say in section \ref{direct_integral}.
 
-\subsection{At the Archimedean Places}
-
 \begin{remark}
     What we have called automorphic forms are sometimes referred to as ``smooth K-finite automorphic forms'' \cite[2.2]{cogdellLecturesLfunctionsConverse}.
 \end{remark}
+
 As in the finite group case we want to consider the right regular action of the group \(G(\A)\) on a space of functions, namely the representation 
 \[g.f(x) = f(xg).\]
-One can ask if this representation sends an automorphic form to an automorphic form. The answer is no, the problem is in the \(K\)-finiteness in the infinite places.
+One can ask if this representation sends an automorphic form to an automorphic form.
+If \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-Archimedean
+
+There is a problem with the \(K\)-finiteness in the infinite places however which prevents \( \mathcal{A}(U(\A)M(F)\backslash G(\A))\) from being a full \(G(\A)\) module.
 
 \begin{example}[\cite{cogdellLecturesLfunctionsConverse}, 2.3]
     If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite, then \(g.\phi\) is \(gK_\infty g\inv\)-finite. This is still a maximal compact subgroup, however in the infinite place it will a priori have only the identity in common with the original \(K\).
@@ -72,11 +74,7 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
     It is common to use the same symbol for both of these representations in the \((\mathfrak{g}, K)\)-module.
 \end{remark}
 Now one can check that the space of Archimedean automorphic forms is in fact an (admissible) \((\mathfrak{g}, K_\infty)\)-module, under the representations that we have already specified; namely the regular action given by \(K\) and the representation that we defined \ref{lie_algebra_action} when talking about the center of the enveloping algebra \cite[Thm. 6.2.6]{getzIntroductionAutomorphicRepresentations2024}.\todo[inline]{rewrite it here and then prove that this is a g,K module}
-
-
-\subsection{At the Non-Archimedean Places}
-As we noted above the right regular representation on the space of automorphic forms is well defined for the finite places i.e. 
-if \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-Archimedean.
+\todo[color=blue]{g,K modules proof}
 
 \section{Automorphic Representations}
 Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then a subquotient of this representation.

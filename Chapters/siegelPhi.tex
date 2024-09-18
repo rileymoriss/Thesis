@@ -1,6 +1,6 @@
 
-\section{Constant Terms}
-\subsection{Integration Lemmas}
+
+\section{Integration Lemmas}
 \begin{Theorem}\label{integrate_unitary_char}
 	If \(G\) is a locally compact Hausdorff group with a left Haar measure \(\mu\) and if \(\chi\colon G\to \mathbf C^\times\) is a non-trivial character on \(G\), then
 	\[ \intof{G}{\chi(g)}{\mu(g)} = 0. \]
@@ -19,14 +19,14 @@ Integrating trivial characters gives the volume of the measure space which we ty
 Note that this quotient may not be a group, because H is not required to be normal.
 
 
-\subsection{Siegel Phi Operator}
+\section{Siegel Phi Operator}
 Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
 
 Because we are trying to connect this to the classical picture it is most convenient to think of things in the Archimedean places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the Archimedean places, and the constant term will be taken only on the Archimedean part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
 \[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
 
 
-\subsubsection{Siegel Modular Forms}
+\subsection{Siegel Modular Forms}
 We collect some definitions from \cite{bruinier123ModularForms2008} to fix notation. Let the Siegal upper half plane be defined as 
 \begin{equation*}
 	\begin{aligned}
@@ -56,7 +56,7 @@ defined by the limit for \(\tau\in \mathcal{H}_{g-1}\)
 \end{pmatrix}\]
 in this context a cusp form is defined to be a Siegel modular form in the kernel of the Siegel \(\Phi\) operator and so it is natural to wonder if there is a constant term that is being taken here. 
 
-\subsubsection{Automorphising}
+\subsection{Automorphising}
 Given a Siegel modular form \(f\in \mathcal{M}_k(\Sp_{2g}(\Z))\) we can associate an automorphic form
 \[\tilde{f} : \Sp_{2g}(\R)\to\C, \qquad \begin{pmatrix} a & b\\ c & d\end{pmatrix}\mapsto \det(ci+d)^{-k} f\Bigl((ai+b)(ci+d)\inv\Bigr), \]
 where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatrix} a & b\\ c & d\end{smallmatrix}\bigr)\in\Sp_{2g}(\R)\).Fix the Borel of upper triangular matrices. Now for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
@@ -82,7 +82,7 @@ The only other work on generalising the Siegel \(\Phi\) operator that we could f
 Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of ``automorphic forms'' in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definite real matrices \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely his \cite[Thm. 2]{grenierAnalogueSiegelFOperator1992} shows that it sends an automorphic form for \(
 GL_n(\Z)\) to an automorphic form for \(\GL_{n-1}(\Z)\). The point is that the \(\Phi\) operator can be defined in the generality of symmetric spaces and Grenier shows that at least in one other case it still preserves the relevant notion of automorphic form. This suggests two things that would be interesting to investigate; using the classification of symmetric spaces is it possible to give a uniform definition of the \(\Phi\) operator following Grenier and does this definition agree with the constant term in the way that the Siegel \(\Phi\) operator does. With my limited knowledge of symmetric spaces this seems to be very tractable.
 
-\subsubsection{Base Case}
+\subsection{Base Case}
 The base case is very instructive, it deals with modular forms. So consider \(f\) a (elliptic) modular form of full level and weight k, which has a Fourier expansion given by 
 \[f(z) = \sum_{n\geq 0} a_ne^{2\pi i nz }\]
 Then one can verify that
@@ -105,7 +105,7 @@ along which we can now compute the constant term
 We have chosen normalisation to remove the usual factor of \(1/2\pi\) in the constant term of the Fourier series. Moreover we see that
 \[\Phi(f)= \lim_{t\to \infty} f(it) =\lim_{t\to \infty} \sum_{n\geq 0} a_ne^{-2\pi nt }  =  a_0\]
 
-\subsubsection{Simplifying the Constant Term}
+\subsection{Simplifying the Constant Term}
 As we saw in \ref{maximal_parabolic} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
 \[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
 which can be given the explicit matrix representations 
