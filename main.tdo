@@ -2,24 +2,23 @@
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ check, I think most of the sums are finite actually?}{iii}{section*.5}%
 \contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Delete this section later perhaps: Use for reference while writing.}{2}{section*.9}%
 \contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ this is probably known by now.}{6}{section*.10}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ First of all is the analytification the same as the Hausdorff topology? Secondly what is the reference for these facts..}{14}{section*.12}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Look at the equivilent condition frmo Borel}{14}{section*.13}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{25}{section*.14}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{27}{section*.15}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ my Tm differs from Chengjing}{28}{section*.16}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}{28}{section*.17}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ rewrite it here?}{32}{section*.18}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ AHHHHHHHHH BUT DO I TAKE THE CUSPIDAL PART OF INSIDE HERE OR NOT AHHHHHH DEFINE YOU TERMSSSSSS AHHHH }{34}{section*.19}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ ref later}{39}{section*.20}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ fill}{41}{section*.21}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference}{41}{section*.22}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference? More details?}{41}{section*.23}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ ref}{42}{section*.24}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{44}{section*.25}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ make this more precise}{44}{section*.26}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ I need to fix all the lemma labeling }{46}{section*.27}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Maybe appologise for doing integrals naivelly lol.. clarify this.... is it even the x that I need to worry about here?}{46}{section*.28}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ I have mixed up my N's and U's too much...}{48}{section*.29}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{48}{section*.30}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ I would like to expand on this if there is time}{50}{section*.31}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Disambiguate all teh L2 automorphic form stuff. What isi teh action of the Lie algebra then....?}{55}{section*.33}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ What is the reference for these facts..}{14}{section*.12}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{27}{section*.17}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{29}{section*.18}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ my Tm differs from Chengjing}{29}{section*.19}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}{29}{section*.20}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ rewrite it here and then prove that this is a g,K module}{34}{section*.21}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ AHHHHHHHHH BUT DO I TAKE THE CUSPIDAL PART OF INSIDE HERE OR NOT AHHHHHH DEFINE YOU TERMSSSSSS AHHHH }{36}{section*.22}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ ref later}{41}{section*.23}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{43}{section*.24}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ make this more precise}{43}{section*.25}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ I need to fix all the lemma labeling }{45}{section*.26}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Maybe appologise for doing integrals naivelly lol.. clarify this.... is it even the x that I need to worry about here?}{45}{section*.27}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ I have mixed up my N's and U's too much...}{47}{section*.28}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{47}{section*.29}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ fill}{49}{section*.30}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference}{49}{section*.31}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference? More details?}{50}{section*.32}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ ref}{50}{section*.33}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ I would like to expand on this if there is time}{52}{section*.34}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Disambiguate all teh L2 automorphic form stuff. What isi teh action of the Lie algebra then....?}{57}{section*.36}%

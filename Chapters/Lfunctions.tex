@@ -1,0 +1,59 @@
+
+
+\section{Automorphic L-Functions}
+We don't intent to define in great detail automorphic L-functions, as there are many other better sources to learn from \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresenta}, we will recall the idea and then discuss some of the properties and relations with Eisenstein series and interwining operators that we will need later.
+
+The first thing is to recall the classification of connected reductive groups defined over an algebraically closed field via root datum. A root datum is a tuple \((X, \Phi, \check{X} , \check{\Phi})\) where \(X\) and \(\check{X}\) are two free abelian groups of finite type, \(\Phi, \check{\Phi}\) are subgroups that are in duality via a perfect pairing on \(X, \check{X}\). Then each reductive group \(G\) over a number field \(F\) has associated the root datum that is associated to its base change to \(\C\). Thus to a connected reductive group over a number field we associate a connected reductive group over \C, given by the dual root datum. We call this the \textbf{dual group} of \(G\) and denote it \(\hat{G}\). The \textbf{Langlands dual group} is then the dual group producted with the \(\mathrm{Gal}(\bar{k}/k)\)
+\[^L G \defeq \hat{G} \rtimes \mathrm{Gal}(\bar{k}/k).\]
+
+\begin{example}[Classical Groups, \cite{bumpIntroductionLanglandsProgram2004}, 11.1]
+	We have the following table
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{ll}
+			\(G\)         & \(\hat{G}\)   \\ \hline
+			\(\GL_n\)     & \(\GL_n\)     \\
+			\(SO_{2n+1}\) & \(\Sp_{2n}\)  \\
+			\(SO_{2n}\)   & \(SO_{2n}\)   \\
+			\(\Sp_{2n}\)  & \(SO_{2n+1}\)
+		\end{tabular}
+	\end{table}
+\end{example}
+
+Then, using the Satake isomorphism \cite[2.2]{shahidiEisensteinSeriesAutomorphic2010}, to each unramified representation of \(G(F_\nu)\) we can associate a conjugacy class of \(^LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: ^LG \to \GL_n(\C)\) to representations of \(G(F_\nu)\). Thus the automorphic L-functions are defined as follows: Let \(\rho\) be a representation of \(G(\A)\), let \(r\) be a complex representation of \(^LG\) and \(s\in \C\) then 
+\[L(s, \rho, r) \defeq \prod_\nu L_\nu(s, \rho_\nu, r ) = \prod_\nu \frac{1}{\det\bigl( I - r(c(\rho_\nu))q^{-s} \bigr)}  ,\]
+where \(\nu\) runs over the unramified places. It is a part of the grand Langlands philosophy that there should be suitable L-functions for the ramified places satisfying very nice properties.
+
+\begin{remark}
+	The global L-functions have been defined for many groups at this point and indeed \cite{jiangPolesCertainResidual2013} uses known properties to prove their results. One should note that the questions that we are interested in are still tractable even though the L-functions might not be defined (for instance for the metaplectic group). This is because only finitely many places will ramify, and so as long as those places are neither zero or poles we can transfer questions about zeros and poles from the full global L-functions to L-functions at almost all places. 
+\end{remark}
+
+\begin{example}[Standard Representations / Classical Groups]
+	In the case of classical groups it is common to see L-functions with only two entries e.g. if \(\rho\) is a representation of \(G = \Sp{2n}\) then you may see 
+	\(L(s, \rho).\)
+	The reason is that there is a standard representation of the dual groups of classical groups. Namely the standard representation of a matrix group inside \(\GL_n\) is the one that sends \(g\mapsto g\). It is this representation that is to be taken for the dual group in this setting.
+\end{example}
+
+\begin{example}[Rankin-Selberg, \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}, 1.2, \cite{arthurLecturesAutomorphicFunctions1991a}, Ch. 2 Example. 2]
+	\todo[inline]{fill}
+	Let \(\nu\) be a finite place of \(\Q\) and \(\pi, \pi'\) be two unramified generic representations of \(\GL_n(\Q_\nu)\) and \(\GL_m(\Q_\nu)\) respectively. Let \(B_n\) be the standard Borel of upper triangular matricies in \(\GL_n\). Such representations have been classified \todo[inline]{reference}
+	in terms of characters of \(\Q^\times_\nu\), in particular for \(\pi\) there are \(\mu_1, ..., \mu_n\) unramified characters such that 
+	\[\pi \cong \Ind_{B(\Q_\nu)}^{\GL_n(\Q_\nu)} \big(\mu_1 \tensor \cdots \tensor \mu_n\big).\]
+	If we fix a uniformizer \(\varpi\) of \(\Q_\nu\) then we have the so called ``Satake parameters'' \(\mu_i(\varpi)\) which determines \(\pi\) uniquely. Of course the same is true for \(\pi'\), with say characters \(\mu'_1, ..., \mu'_m\). We then define
+	\[L(s, \pi\times \pi') \defeq \prod_{i,j} \frac{1}{1-\mu_i(\varpi)\mu'_j(\varpi)q^{-s}}.\]
+	
+	Consider the group \(G = \GL_n\times \GL_m\) which has dual \(\GL_n(\C) \times \GL_m(\C)\), then there is a cannonical representation 
+	\[r:\GL_n(\C) \times \GL_m(\C) \to \GL_{nm}(\C). \]
+	Then 
+	\[L(s, \pi\tensor \pi', r) = L(s, \pi \times \tilde{\pi}'),\]
+	where the tilde denotes the contragradient.
+\end{example}
+
+\begin{example}[Dirichlet L-functions]
+	Recall that a Dirichlet character \(\chi\) is a character of the group \((\Z/N\Z)^*\). Through the series of maps 
+	\[A^\times \cong \Q^\times \times \R_{>0}^\times \times \hat{\Z}^\times \to (\lim \Z/N\Z)^\times \to (\Z/N\Z)^\times \to \C,\]
+	one get a bijection between Dirichlet characters and finite-order Grossencharacters, i.e. characters of \(\A_F^\times/F^\times\).
+	Grossencharacters have the associated L-function as they are just automorphic forms of \(\GL_1\), which generate automorphic representations. These give us the classical Dirichlet L-functions.\todo{reference? More details?}
+\end{example}
+Although this might seem unrelated to the current section on spectral decomposition and Eisenstein series we will see later that the two are inextricably linked
+\todo[inline]{ref}

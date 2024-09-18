@@ -7,35 +7,36 @@
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{9}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Maximal Compact Subgroups}{11}{subsection.1.2.3}%
 \contentsline {chapter}{\numberline {2}Automorphic Forms}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Definition and Role}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Archimedean Automorphic Form}{14}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Adelic Automorphic Form}{15}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Modular Forms}{16}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Constant Terms}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Integration Lemmas}{20}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Siegel Phi Operator}{21}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Siegel Modular Forms}{22}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Automorphising}{23}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Base Case}{24}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Simplifying the Constant Term}{25}{subsection.2.4.4}%
-\contentsline {chapter}{\numberline {3}Automorphic Representations}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Local Representation Theory}{30}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}At the Archimedean Places}{30}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}At the Non-Archimedean Places}{32}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Automorphic Representations}{33}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Cuspidal Representations}{33}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Isotypic Components}{34}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Eisenstein Series and L-Functions}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Eisenstein Series}{36}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Automorphic L-Functions}{39}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Constant Terms of Eisenstein Series}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Definition and Role}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Constant Terms of Eisenstein Series}{44}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}In General}{45}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Constant Terms of Cuspidal Eisenstein Series}{47}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{48}{subsection.5.2.3}%
-\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Residual Eisenstein Series}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The Constant Term}{50}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Analysing the Intertwining Operator}{52}{section.6.3}%
-\contentsline {chapter}{\numberline {A}Test}{53}{appendix.A}%
+\contentsline {section}{\numberline {2.1}Archimedean Automorphic Form}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Adelic Automorphic Form}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Modular Forms}{16}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Siegel Phi Function}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Constant Terms}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Integration Lemmas}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Siegel Phi Operator}{23}{subsection.3.1.2}%
+\contentsline {subsubsection}{Siegel Modular Forms}{23}{section*.13}%
+\contentsline {subsubsection}{Automorphising}{24}{section*.14}%
+\contentsline {subsubsection}{Base Case}{25}{section*.15}%
+\contentsline {subsubsection}{Simplifying the Constant Term}{26}{section*.16}%
+\contentsline {chapter}{\numberline {4}Automorphic Representations}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Local Representation Theory}{32}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}At the Archimedean Places}{32}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}At the Non-Archimedean Places}{34}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Automorphic Representations}{35}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Cuspidal Representations}{35}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Isotypic Components}{36}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Eisenstein Series}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Eisenstein Series}{38}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Constant Terms of Eisenstein Series}{42}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Definition and Role}{42}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Constant Terms of Eisenstein Series}{43}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}In General}{44}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constant Terms of Cuspidal Eisenstein Series}{46}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{47}{subsection.6.2.3}%
+\contentsline {chapter}{\numberline {7}L-Functions}{48}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Automorphic L-Functions}{48}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{51}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{51}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Constant Term}{52}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{54}{section.8.3}%
+\contentsline {chapter}{\numberline {A}Test}{55}{appendix.A}%

@@ -43,45 +43,45 @@ Warning--empty journal in pollackRANKINSELBERGMETHODUSER
 Warning--empty year in pollackRANKINSELBERGMETHODUSER
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 49 entries,
+You've used 50 entries,
             2543 wiz_defined-function locations,
-            838 strings with 13421 characters,
-and the built_in function-call counts, 15022 in all, are:
-= -- 1403
-> -- 568
-< -- 46
-+ -- 175
-- -- 166
-* -- 985
-:= -- 2455
-add.period$ -- 134
-call.type$ -- 49
-change.case$ -- 246
+            840 strings with 13487 characters,
+and the built_in function-call counts, 15581 in all, are:
+= -- 1461
+> -- 587
+< -- 49
++ -- 181
+- -- 171
+* -- 1023
+:= -- 2536
+add.period$ -- 138
+call.type$ -- 50
+change.case$ -- 251
 chr.to.int$ -- 47
-cite$ -- 87
-duplicate$ -- 722
-empty$ -- 1218
-format.name$ -- 245
-if$ -- 3040
-int.to.chr$ -- 3
+cite$ -- 88
+duplicate$ -- 750
+empty$ -- 1263
+format.name$ -- 252
+if$ -- 3167
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 58
-newline$ -- 228
-num.names$ -- 143
-pop$ -- 406
+missing$ -- 59
+newline$ -- 233
+num.names$ -- 148
+pop$ -- 412
 preamble$ -- 1
-purify$ -- 311
+purify$ -- 317
 quote$ -- 0
-skip$ -- 521
+skip$ -- 543
 stack$ -- 0
-substring$ -- 520
-swap$ -- 68
-text.length$ -- 46
-text.prefix$ -- 34
+substring$ -- 559
+swap$ -- 79
+text.length$ -- 49
+text.prefix$ -- 35
 top$ -- 0
-type$ -- 320
+type$ -- 328
 warning$ -- 35
-while$ -- 121
-width$ -- 52
-write$ -- 569
+while$ -- 127
+width$ -- 53
+write$ -- 585
 (There were 38 warnings)

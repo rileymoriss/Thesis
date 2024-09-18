@@ -1,0 +1,1451 @@
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  18 SEP 2024 20:39
+ restricted system commands enabled.
+**Lfunctions.tex
+(./Lfunctions.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-30>
+Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
+Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/riley/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-res
+olved path "C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/f
+ontloader-2022-10-03.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.120
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/riley/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+! Undefined control sequence.
+l.3 \section
+          {Automorphic L-Functions}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \section{A
+            utomorphic L-Functions}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{borelAutomorphicFormsRepresentations1979}
+luaotfload | db : Font names database loaded from C:/Users/riley/AppData/Local/M
+iKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ....2]{borelAutomorphicFormsRepresentations1979}
+                                                  \cite{shahidiEisensteinSer...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `borelAutomorphicFormsRepresentations1979' on page  und
+efined on input line 4.
+
+\citation{shahidiEisensteinSeriesAutomorphic2010}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...\cite{shahidiEisensteinSeriesAutomorphic2010}
+                                                  \cite{cogdellLFUNCTIONSFUN...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `shahidiEisensteinSeriesAutomorphic2010' on page  undef
+ined on input line 4.
+
+\citation{cogdellLFUNCTIONSFUNCTORIALITY}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...hic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}
+                                                  \cite[9, 10, 11]{bumpIntro...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `cogdellLFUNCTIONSFUNCTORIALITY' on page  undefined on 
+input line 4.
+
+\citation{bumpIntroductionLanglandsProgram2004}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...10, 11]{bumpIntroductionLanglandsProgram2004}
+                                                  \cite{arthurLfunctionsAuto...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `bumpIntroductionLanglandsProgram2004' on page  undefin
+ed on input line 4.
+
+\citation{arthurLfunctionsAutomorphicRepresenta}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...}\cite{arthurLfunctionsAutomorphicRepresenta}
+                                                  , we will recall the idea ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `arthurLfunctionsAutomorphicRepresenta' on page  undefi
+ned on input line 4.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--5
+[]Automorphic
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 3--5
+[[],
+ []
+
+
+Overfull \hbox (16.28998pt too wide) in paragraph at lines 3--5
+2.III.2][[]][[]][[],
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 3--5
+11][[]],
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 T
+   he first thing is to recall the classification of connected reductive gro...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+! Undefined control sequence.
+l.6 ...that is associated to its base change to \(\C
+                                                  \). Thus to a connected re...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 ...associate a connected reductive group over \C
+                                                  , given by the dual root d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
+[]The
+ []
+
+
+Overfull \hbox (53.1388pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; \OT1/cmr/m/n/10 \OML/cmm/m/it/10 ; []; []
+\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 X$
+ []
+
+
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 6--7
+[]$
+ []
+
+
+Overfull \hbox (18.88887pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/10 \OML/cmm/m/it/10 ; []$
+ []
+
+
+Overfull \hbox (22.02771pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 X; []$\nullfont .
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 G$
+ []
+
+
+Overfull \hbox (7.81946pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 F$
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 dual
+ []
+
+
+Overfull \hbox (29.02pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 group
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 G$
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 6--7
+[]$.
+ []
+
+
+Overfull \hbox (28.48pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 Lang-
+ []
+
+
+Overfull \hbox (26.09999pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 lands
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 dual
+ []
+
+
+Overfull \hbox (29.02pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 group
+ []
+
+
+Overfull \hbox (39.44453pt too wide) in paragraph at lines 6--7
+[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 =k\OT1/cmr/m/n/10 )$ 
+ []
+
+! Undefined control sequence.
+l.7 \[^L G \defeq
+                \hat{G} \rtimes \mathrm{Gal}(\bar{k}/k).\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7 \[^L G \defeq \hat{G} \rtimes
+                                \mathrm{Gal}(\bar{k}/k).\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (63.93344pt too wide) detected at line 7
+[][]\OML/cmm/m/it/10 G[][]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 =k\OT1/cmr/m/n/10
+ )\OML/cmm/m/it/10 :
+ []
+
+
+! LaTeX Error: Environment example undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{example}
+                 [Classical Groups, \cite{bumpIntroductionLanglandsProgram20...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{example}[
+                  Classical Groups, \cite{bumpIntroductionLanglandsProgram20...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{bumpIntroductionLanglandsProgram2004}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.9 ..., \cite{bumpIntroductionLanglandsProgram2004}
+                                                  , 11.1]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `bumpIntroductionLanglandsProgram2004' on page  undefin
+ed on input line 9.
+
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 	\begin{table}
+                 [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.15 			\(\GL
+           _n\)     & \(\GL_n\)     \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.15 			\(\GL_n\)     & \(\GL
+                           _n\)     \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.16 			\(SO_{2n+1}\) & \(\Sp
+                           _{2n}\)  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.18 			\(\Sp
+           _{2n}\)  & \(SO_{2n+1}\)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 	\end{table}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{example}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 9--22
+[][Classical
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 9--22
+[[]],
+ []
+
+
+Overfull \hbox (67.78119pt too wide) in paragraph at lines 9--22
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 T
+    hen, using the Satake isomorphism \cite[2.2]{shahidiEisensteinSeriesAuto...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{shahidiEisensteinSeriesAutomorphic2010}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.23 ...2.2]{shahidiEisensteinSeriesAutomorphic2010}
+                                                  , to each unramified repre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `shahidiEisensteinSeriesAutomorphic2010' on page  undef
+ined on input line 23.
+
+! Undefined control sequence.
+l.23 ...ly a complex representation \(r: ^LG \to \GL
+                                                  _n(\C)\) to representation...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 ...complex representation \(r: ^LG \to \GL_n(\C
+                                                  )\) to representations of ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 ...: Let \(\rho\) be a representation of \(G(\A
+                                                  )\), let \(r\) be a comple...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 ...plex representation of \(^LG\) and \(s\in \C
+                                                  \) then
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
+[]Then,
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 23--24
+[[],
+ []
+
+
+Overfull \hbox (27.04657pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (13.84863pt too wide) in paragraph at lines 23--24
+[][]\OML/cmm/m/it/10 G$\nullfont ,
+ []
+
+
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 c$\nullfont ,
+ []
+
+
+Overfull \hbox (16.33101pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 :[]
+ []
+
+
+Overfull \hbox (26.08354pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 G \OMS/cmsy/m/n/10 ![]
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/n/10 ()$
+ []
+
+
+Overfull \hbox (27.04657pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 )$\nullf
+ont .
+ []
+
+
+Overfull \hbox (5.17015pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (15.64029pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 ()$\nullfont ,
+ []
+
+
+Overfull \hbox (4.78937pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 r$
+ []
+
+
+Overfull \hbox (13.84863pt too wide) in paragraph at lines 23--24
+[][]\OML/cmm/m/it/10 G$
+ []
+
+
+Overfull \hbox (14.1319pt too wide) in paragraph at lines 23--24
+\OML/cmm/m/it/10 s \OMS/cmsy/m/n/10 2$
+ []
+
+! Undefined control sequence.
+l.24 \[L(s, \rho, r) \defeq
+                          \prod_\nu L_\nu(s, \rho_\nu, r ) = \prod_\nu \frac...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (225.88033pt too wide) detected at line 24
+\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; ; r\OT1/cmr/m/n/10 ) []
+ \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; []; r\OT1/cmr/m/n/10
+ ) = [] []\OML/cmm/m/it/10 ;
+ []
+
+
+Overfull \hbox (5.57639pt too wide) in paragraph at lines 24--26
+\OML/cmm/m/it/10 $
+ []
+
+
+! LaTeX Error: Environment remark undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \begin{remark}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 	T
+     he global L-functions have been defined for many groups at this point a...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{jiangPolesCertainResidual2013}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.28 ... indeed \cite{jiangPolesCertainResidual2013}
+                                                   uses known properties to ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `jiangPolesCertainResidual2013' on page  undefined on i
+nput line 28.
+
+
+! LaTeX Error: \begin{document} ended by \end{remark}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{remark}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--30
+[]The
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 28--30
+[[]]
+ []
+
+
+! LaTeX Error: Environment example undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \begin{example}
+                  [Standard Representations / Classical Groups]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \begin{example}[
+                   Standard Representations / Classical Groups]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.32 ...if \(\rho\) is a representation of \(G = \Sp
+                                                  {2n}\) then you may see
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 ...epresentation of a matrix group inside \(\GL
+                                                  _n\) is the one that sends...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \end{example}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--36
+[][Standard
+ []
+
+
+Overfull \hbox (5.17015pt too wide) in paragraph at lines 31--36
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 31--36
+\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (11.00237pt too wide) in paragraph at lines 31--36
+[]$
+ []
+
+
+Overfull \hbox (31.66322pt too wide) in paragraph at lines 31--36
+\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; \OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 :$
+ []
+
+
+Overfull \hbox (5.44333pt too wide) in paragraph at lines 31--36
+[][]$
+ []
+
+
+Overfull \hbox (17.90619pt too wide) in paragraph at lines 31--36
+\OML/cmm/m/it/10 g \OMS/cmsy/m/n/10 7!
+ []
+
+
+Overfull \hbox (5.12846pt too wide) in paragraph at lines 31--36
+\OML/cmm/m/it/10 g$\nullfont .
+ []
+
+
+! LaTeX Error: Environment example undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \begin{example}
+                  [Rankin-Selberg, \cite{cogdellLECTURESINTEGRALREPRESENTATI...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \begin{example}[
+                   Rankin-Selberg, \cite{cogdellLECTURESINTEGRALREPRESENTATI...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{cogdellLECTURESINTEGRALREPRESENTATIONS}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.37 ...cite{cogdellLECTURESINTEGRALREPRESENTATIONS}
+                                                  , 1.2, \cite{arthurLecture...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page  undef
+ined on input line 37.
+
+\citation{arthurLecturesAutomorphicFunctions1991a}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.37 ...ite{arthurLecturesAutomorphicFunctions1991a}
+                                                  , Ch. 2 Example. 2]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `arthurLecturesAutomorphicFunctions1991a' on page  unde
+fined on input line 37.
+
+! Undefined control sequence.
+l.38 	\todo
+         [inline]{fill}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 	Let \(\nu\) be a finite place of \(\Q
+                                         \) and \(\pi, \pi'\) be two unramif...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ... unramified generic representations of \(\GL
+                                                  _n(\Q_\nu)\) and \(\GL_m(\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ...mified generic representations of \(\GL_n(\Q
+                                                  _\nu)\) and \(\GL_m(\Q_\nu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ...presentations of \(\GL_n(\Q_\nu)\) and \(\GL
+                                                  _m(\Q_\nu)\) respectively....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ...ntations of \(\GL_n(\Q_\nu)\) and \(\GL_m(\Q
+                                                  _\nu)\) respectively. Let ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ...Borel of upper triangular matricies in \(\GL
+                                                  _n\). Such representations...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ...h representations have been classified \todo
+                                                  [inline]{reference}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 	in terms of characters of \(\Q
+                                  ^\times_\nu\), in particular for \(\pi\) t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--41
+[][Rankin-
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 37--41
+[[]],
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 37--41
+[[]],
+ []
+
+
+Overfull \hbox (5.57639pt too wide) in paragraph at lines 37--41
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (19.36807pt too wide) in paragraph at lines 37--41
+\OML/cmm/m/it/10 ; []$
+ []
+
+
+Overfull \hbox (18.19685pt too wide) in paragraph at lines 37--41
+[][]\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (20.34964pt too wide) in paragraph at lines 37--41
+[][]\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (13.02841pt too wide) in paragraph at lines 37--41
+\OML/cmm/m/it/10 B[]$
+ []
+
+
+Overfull \hbox (5.44333pt too wide) in paragraph at lines 37--41
+[][]$.
+ []
+
+
+Overfull \hbox (6.75002pt too wide) in paragraph at lines 37--41
+[][]$,
+ []
+
+
+Overfull \hbox (6.05905pt too wide) in paragraph at lines 37--41
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (39.2026pt too wide) in paragraph at lines 37--41
+\OML/cmm/m/it/10 []; :::; []$
+ []
+
+! Undefined control sequence.
+l.41 	\[\pi \cong \Ind
+                    _{B(\Q_\nu)}^{\GL_n(\Q_\nu)} \big(\mu_1 \tensor \cdots \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 	\[\pi \cong \Ind_{B(\Q
+                          _\nu)}^{\GL_n(\Q_\nu)} \big(\mu_1 \tensor \cdots \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 	\[\pi \cong \Ind_{B(\Q_\nu)}^{\GL
+                                     _n(\Q_\nu)} \big(\mu_1 \tensor \cdots \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 	\[\pi \cong \Ind_{B(\Q_\nu)}^{\GL_n(\Q
+                                          _\nu)} \big(\mu_1 \tensor \cdots \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 ...(\Q_\nu)}^{\GL_n(\Q_\nu)} \big(\mu_1 \tensor
+                                                   \cdots \tensor \mu_n\big).\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 ...n(\Q_\nu)} \big(\mu_1 \tensor \cdots \tensor
+                                                   \mu_n\big).\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (85.86333pt too wide) detected at line 41
+\OML/cmm/m/it/10  [][] [][] [] [][]:
+ []
+
+! Undefined control sequence.
+l.42 	If we fix a uniformizer \(\varpi\) of \(\Q
+                                              _\nu\) then we have the so cal...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (8.55908pt too wide) in paragraph at lines 41--43
+\OML/cmm/m/it/10 $$
+ []
+
+
+Overfull \hbox (4.97572pt too wide) in paragraph at lines 41--43
+[][]$
+ []
+
+
+Overfull \hbox (25.69165pt too wide) in paragraph at lines 41--43
+\OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 $\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (6.05905pt too wide) in paragraph at lines 41--43
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (8.86461pt too wide) in paragraph at lines 41--43
+\OML/cmm/m/it/10 []$\nullfont ,
+ []
+
+
+Overfull \hbox (41.3554pt too wide) in paragraph at lines 41--43
+\OML/cmm/m/it/10 []; :::; []$\nullfont .
+ []
+
+! Undefined control sequence.
+l.43 	\[L(s, \pi\times \pi') \defeq
+                                  \prod_{i,j} \frac{1}{1-\mu_i(\varpi)\mu'_j...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (152.54256pt too wide) detected at line 43
+\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s;  \OMS/cmsy/m/n/10  \OM
+L/cmm/m/it/10 []\OT1/cmr/m/n/10 ) [] []\OML/cmm/m/it/10 :
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 	C
+     onsider the group \(G = \GL_n\times \GL_m\) which has dual \(\GL_n(\C) ...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.45 	Consider the group \(G = \GL
+                                _n\times \GL_m\) which has dual \(\GL_n(\C) ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 	Consider the group \(G = \GL_n\times \GL
+                                            _m\) which has dual \(\GL_n(\C) ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...G = \GL_n\times \GL_m\) which has dual \(\GL
+                                                  _n(\C) \times \GL_m(\C)\),...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...GL_n\times \GL_m\) which has dual \(\GL_n(\C
+                                                  ) \times \GL_m(\C)\), then...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...GL_m\) which has dual \(\GL_n(\C) \times \GL
+                                                  _m(\C)\), then there is a ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...) which has dual \(\GL_n(\C) \times \GL_m(\C
+                                                  )\), then there is a canno...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
+[]Consider
+ []
+
+
+Overfull \hbox (23.86133pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (15.37392pt too wide) in paragraph at lines 45--46
+\OMS/cmsy/m/n/10 []$
+ []
+
+
+Overfull \hbox (28.59505pt too wide) in paragraph at lines 45--46
+[][]\OT1/cmr/m/n/10 () \OMS/cmsy/m/n/10 []
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/n/10 ()$\nullfont ,
+ []
+
+! Undefined control sequence.
+l.46 	\[r:\GL
+           _n(\C) \times \GL_m(\C) \to \GL_{nm}(\C). \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\[r:\GL_n(\C
+                ) \times \GL_m(\C) \to \GL_{nm}(\C). \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\[r:\GL_n(\C) \times \GL
+                            _m(\C) \to \GL_{nm}(\C). \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\[r:\GL_n(\C) \times \GL_m(\C
+                                 ) \to \GL_{nm}(\C). \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\[r:\GL_n(\C) \times \GL_m(\C) \to \GL
+                                          _{nm}(\C). \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 	\[r:\GL_n(\C) \times \GL_m(\C) \to \GL_{nm}(\C
+                                                  ). \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (88.14589pt too wide) detected at line 46
+\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 :[] () \OMS/cmsy/m/n/10 [] \OT1/cmr/m/n/10 
+() \OMS/cmsy/m/n/10 ![] \OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 :
+ []
+
+! Undefined control sequence.
+l.48 	\[L(s, \pi\tensor
+                      \pi', r) = L(s, \pi \times \tilde{\pi}'),\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (110.40048pt too wide) detected at line 48
+\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; []; r\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 L\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s;  \OMS/cmsy/m/n/10  []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{example}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment example undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \begin{example}
+                  [Dirichlet L-functions]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \begin{example}[
+                   Dirichlet L-functions]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.53 ...r \(\chi\) is a character of the group \((\Z
+                                                  /N\Z)^*\). Through the ser...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 ...\chi\) is a character of the group \((\Z/N\Z
+                                                  )^*\). Through the series ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--54
+[][Dirichlet
+ []
+
+
+Overfull \hbox (6.25691pt too wide) in paragraph at lines 52--54
+\OML/cmm/m/it/10 $
+ []
+
+
+Overfull \hbox (25.94446pt too wide) in paragraph at lines 52--54
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 =N\OT1/cmr/m/n/10 )[]$\nullfont .
+ []
+
+! Undefined control sequence.
+l.54 	\[A^\times \cong \Q
+                       ^\times \times \R_{>0}^\times \times \hat{\Z}^\times ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 	\[A^\times \cong \Q^\times \times \R
+                                        _{>0}^\times \times \hat{\Z}^\times ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 ...^\times \times \R_{>0}^\times \times \hat{\Z
+                                                  }^\times \to (\lim \Z/N\Z)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 ...}^\times \times \hat{\Z}^\times \to (\lim \Z
+                                                  /N\Z)^\times \to (\Z/N\Z)^...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 ...imes \times \hat{\Z}^\times \to (\lim \Z/N\Z
+                                                  )^\times \to (\Z/N\Z)^\tim...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 ...{\Z}^\times \to (\lim \Z/N\Z)^\times \to (\Z
+                                                  /N\Z)^\times \to \C,\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 ...^\times \to (\lim \Z/N\Z)^\times \to (\Z/N\Z
+                                                  )^\times \to \C,\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 ...im \Z/N\Z)^\times \to (\Z/N\Z)^\times \to \C
+                                                  ,\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (185.79146pt too wide) detected at line 54
+\OML/cmm/m/it/10 A[] [][] \OMS/cmsy/m/n/10 []  [][] ! \OT1/cmr/m/n/10 ([] \OM
+L/cmm/m/it/10 =N\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 =N\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 !\OML/cmm/m/it/10 ;
+ []
+
+! Undefined control sequence.
+l.55 ...r Grossencharacters, i.e. characters of \(\A
+                                                  _F^\times/F^\times\).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56 ... as they are just automorphic forms of \(\GL
+                                                  _1\), which generate autom...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56 ...us the classical Dirichlet L-functions.\todo
+                                                  {reference? More details?}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \end{example}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.59 \todo
+        [inline]{ref}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> Lfunctions.tex
+               
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 35 strings out of 477545
+ 100000,1977958 words of node,token memory allocated 38216 words of node memory still in use:
+   351 hlist, 32 vlist, 8 rule, 12 disc, 14 local_par, 1 dir, 91 math, 1024 glue
+, 88 kern, 55 penalty, 3565 glyph, 212 attribute, 39 glue_spec, 212 attribute_li
+st, 1 temp nodes
+   avail lists: 2:16,3:33,4:79,5:2,8:44,9:1,10:78
+ 21151 multiletter control sequences out of 65536+600000
+ 26 fonts using 1476743 bytes
+ 19i,8n,30p,885b,128s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -10,7 +10,7 @@ An \textbf{algebraic group} is for us a group scheme that is reduced, of finite 
     The forward implication is \cite[2.3.7(i)]{springerLinearAlgebraicGroups1998}. The converse is the basic fact that closed sub-schemes of affine schemes are affine \cite[II.5.T3]{mumfordRedBookVarieties1999}.
 }
 
-As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix groups defined by polynomials, which happen to be the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the powerful but cumbersome (for the beginner) technology of algebraic geometry. In particular one must be adept at moving between the following equivalences:
+As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix groups defined by polynomials, which happen to be the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the technology of algebraic geometry. In particular one must be adept at moving between the following equivalences:
 \begin{Theorem}[\cite{milneBasicTheoryAffine}, II.6, III.4]
     For \(F\) a field then the following categories are equivalent
     \begin{itemize}
@@ -22,7 +22,7 @@ As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix gr
 \end{Theorem}
 
 \begin{example}[\(\mathbb{G}_m\)]
-    The first example that we will see again and again is the ``multiplicative group'' or \(\GL_1\) defined over the field \(K\). This is 
+    The first example is the ``multiplicative group'' denoted \(\mathbb{G}_m\) or \(\GL_1\) defined over the field \(K\). This is 
     \[\mathbb{G}_m \defeq \Spec\Bigl( K[x,y]/(xy - 1)\Bigr).\]
 
     As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
@@ -41,7 +41,7 @@ Finally if the form is non-degenerate and skew symmetric \(\forall x,y \;\; \inn
 There are the further classical groups given by the determinant one subgroups, \(\SL(V), \mathrm{SO}(V)\) respectively (\(\Sp(V)\) one can show already implies that the determinant is one). We can make this into a functor from \(F\)-algebras to groups, by sending an \(F\)-algebra \(R\) to \(G(V)\tensor_F R\). Thus these define LAG's. 
 
 \begin{remark}
-    Often the unitary groups are considered classical, however we don't want to deal with field extensions and so omit them here. 
+    Often the unitary groups are considered classical, as is the case in \cite{jiangResiduesEisensteinSeries2008}.
 \end{remark}
 
 \section{Subgroups}
@@ -58,7 +58,7 @@ Subgroups with special properties allow us to reduce and break up problems into 
 \subsection{Parabolics, Levis and Unipotents}
 Parabolic subgroups have two equivalent formulations, both useful.
 \begin{definition}
-    A subgroup \(P\subseteq G\) is called \textbf{parabolic} if \(G/P\) is a complete variety. Eqquivilently we can ask for \(P\) to contain a Borel (see \ref{borel_torus}).
+    A subgroup \(P\subseteq G\) is called \textbf{parabolic} if \(G/P\) is a complete variety. Equivalently we can ask for \(P\) to contain a Borel (see \ref{borel_torus}).
 \end{definition}
 
 Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms of Eisenstein series which we will discuss in the later section \ref{constant_terms}.
