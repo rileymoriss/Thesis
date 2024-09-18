@@ -1,0 +1,213 @@
+\chapter{Direct Integrals}\label{app:direct_int}
+\subsection{Of Spaces}
+    Consider a countable collection of Hilbert spaces \((\mathcal{H}_\alpha)_{\alpha\in A}\) then their direct sum is defined to be 
+    \[\bigoplus_{\alpha} \mathcal{H}_\alpha \defeq \left\{(h_\alpha)\in \prod_\alpha \mathcal{H}_\alpha : \sum_\alpha \norm{h_\alpha}_\alpha^2 < \infty\right\}\]
+    i.e. square summable sequences from the product. This is to ensure that the resulting space is still complete. If we recall that summing over a countable set is the same as \textit{integrating} over that countable set when we equip it with the counting measure and discrete sigma algebra then this can be re-written as 
+    \[\bigoplus_{\alpha} \mathcal{H}_\alpha = \left\{(h_\alpha)\in \prod_\alpha \mathcal{H}_\alpha : \int_A \norm{h_\alpha}^2_\alpha d\alpha < \infty\right\}\]
+
+    This definition can be obviously generalised to an indexing set that is now an arbitrary measure space, \((A, \mathcal{M}, \mu)\). We need to make some technical arrangment to accompany this change, namely ensureing everything agrees with the measure structure, if we're to integrate we better only integrate \textit{measurable} things. So now a collection \((\mathcal{H}_\alpha)_{\alpha\in A}\) along with a countable set of elements \(e_j \in \prod_\alpha \mathcal{H}_\alpha, j\geq 1\) is called a measurable field over A if 
+    \[\forall j,k\geq 1 \;\; \alpha \mapsto \inner{e_j(\alpha), e_k(\alpha)}\]
+    is measurable and for each \(\alpha \in A\) 
+    \[span\{e_j(\alpha)\}_{j=1}^\infty \subseteq \mathcal{H}_\alpha\]
+    is dense; fixing an \(\alpha\) and varying the j form a basis of each of the hilbert spaces, fixing the indecies and variying the \(\alpha\) is measurable. An element \(f \in \prod_\alpha \mathcal{H}_\alpha\) is called a measurable vector field if 
+    \[\forall j \;\; \alpha \mapsto \inner{f(\alpha), e_j(\alpha)}_\alpha\]
+    is a measurable function. Note that we consider elements of the potentially uncountable product as functions from the indexing set into the relevant space (functions into the union of the hilbert spaces satisfying the property that \(f(\alpha)\in \mathcal{H}_\alpha\)). Now we define 
+    \[\int^\oplus \mathcal{H}_\alpha d\mu(\alpha) \defeq \left\{f\in \prod_\alpha \mathcal{H}_\alpha : f \text{ is measurable and } \int_A \norm{f(\alpha)}_\alpha^2 < \infty \right\}\] 
+    Indeed this forms a Hilbert space. Note that a priori this construction depended on the basis \((e_j)\) that we picked but up to isomorphism the basis doesnt matter. 
+
+    \subsection{Of Operators}
+    We want to decompose representations and so we should look at how operators fit into this picture. We call an element 
+    \[T\in \prod_\alpha \mathcal{L(H_\alpha)}\]
+    a field of operators on A. It defines a linear map from \(\prod_\alpha \mathcal{H}_\alpha\) to itself via 
+    \[ \left(\int^\oplus T\right)(f)(\alpha) \defeq T(\alpha)(f(\alpha)) \]
+    We say that it is measurable if for all measurable vector fields \(f\) the function 
+    \[\alpha \mapsto \left(\int^\oplus T\right)(f)(\alpha)\]
+    is measurable. If moreover \(\mathrm{ess}\sup_\alpha \norm{T(\alpha)} <\infty\) then \(\int^\oplus T\) defines a bounded operator on \(\int^\oplus \mathcal{H}_\alpha\).
+
+    \subsection{Of Representations}
+    Now we consider a group G and a collection of unitary represntations \(\pi_\alpha\) on \(\mathcal{H}_\alpha\) such that for every \(\alpha\)  and every \(x\in G\)
+    \[\alpha \mapsto \pi_\alpha(x)\]
+    is a measurable field of operators. We call such a collection a measurable field of representations; a G indexed collection of measurable fields of operators. From a measurable field of representations we get a unitary representation 
+    \[\pi(x) \defeq \int^\oplus \pi_\alpha(x)\]
+    of \(G\) on \(\int^\oplus \mathcal{H}_\alpha\) which we call the direct integral of representations. 
+
+
+
+
+
+    
+    \section{Metaplectic Covers}
+    \todo[inline]{METAPLECTIC}
+    We are also be interested in certain covering groups of these LAG's. In particular \cite[I.1.1]{moeglinSpectralDecompositionEisenstein1995} we will be intereseted in \(\mathbf{G}\) some topological group given as a finite central cover of \(G(\A)\). If \(\mathrm{pr}: \mathbf{G} \to G(\A)\) is the projection then to the subgroups listed above we can associate their ``lifts'' (preimages under \(\mathrm{pr}\)). 
+
+\begin{example}[Metaplectic Group]
+    \todo[inline]{Fill}
+    
+    There is a rich history and representation theory of this group, which we make no pretense of understanding, however some hints can be found in \cite{kudlaNOTESLOCALTHETA} and the references therein.
+\end{example}
+
+There is an analogue of the Langlands program being developed for such groups a nice introduction to which can be found in \cite{ganLgroupsLanglandsProgram2017}. \todo[inline]{perhaps a first natural question is whether or not these things can be given the structure of LAG's. That paper mentions representability. Look into it. }
+
+
+
+
+
+
+
+
+\section{Spectral Decomposition}\label{spectral_decomposition}
+This is a short explanation of some terms that frequently appear as well as some motivation for the later results. The results contained here-in are proved using the Eisenstein series as an essential component. 
+
+\subsection{The Decomposition of the Spectrum In General}\label{direct_integral}
+For this section let \(H\) be a locally compact topological group.
+It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears \cite[Ch. 2.4 Cor. 2 ]{LinearRepresentationsFinite}. This still holds for compact topological groups, when one considers continuous unitary representations \cite[5.1]{follandCourseAbstractHarmonic2016}.
+\begin{remark}
+    This is a strict generalisation of the finite groups case, when we give the finite group the discrete topology then all its linear representations are continuous and unitary.
+\end{remark}
+There is one final more general incarnation of this line of investigation in the Plancherel theorem. A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the center of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial we have a decomposition as a  direct sum of irreducible representations. 
+
+\begin{example}
+    Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a type one group. This is outside the scope of this thesis but can be found in \cite[Thm. 1.7 + Thm. 2.3]{deitmarTraceClassGroups2017}.
+\end{example}
+
+\begin{example}
+    Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a second countable group. First consider the adele ring \(\A_F\) of F . This has the restricted product topology, where if \(\mathcal{O}_\nu\) is the ring of integers of \(F_\nu\), then an arbitrary open subset looks like a union of sets of the form 
+    \[U_S \times \prod_{s\notin S} \mathcal{O}_s,\]
+    where \(U_S\subseteq \prod_{s\in S}F_s\) is open in the product topology. 
+    Because for any place \(F_\nu\) is second countable and the product of second countable spaces is second countable it is clear that \(\prod_{s\in S} F_s\) is second countable. Moreover there is a countable number of finite subsets of \Z, hence there is a bijection between a basis of the restricted product topology and \(\aleph_0\times \aleph_0 \) which is countable hence this topology is second countable.
+    
+    If \(G \defeq \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) is an affine scheme then the topology on \(G(\A)\) is the subspace topology of \(\A^n\) on which all the \(f_1, ..., f_m\) vanish \cite{conradWeilGrothendieckApproaches2012}. In particular the finite product of second countable spaces is second countable and subspaces of second countable spaces are second countable, hence \(G(\A)\) is second countable. 
+\end{example}
+
+\begin{example}
+    Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a unimodular group. The proof is outside the scope of this thesis but is stated in \cite[Lem. 2]{conradStanfordNumberTheory}.
+\end{example}
+
+The idea of a direct integral is review in \ref{app:direct_int} to get a quick idea consider the following example:
+\begin{example}[Direct Sums]
+    Let \(I\) be a countable set with the discrete sigma algebra and counting measure \(\mu\). Let \((\mathcal{H}_i)_{i\in I}\) be a collection of Hilbert spaces then
+    \[\bigoplus_{i\in I} \mathcal{H}_i = \left\{ (h_i)_{i\in I}\in \prod_{i\in I} \mathcal{H}_i : \int_I \norm{h_i}_i^2 d\mu <\infty \right\}.\]
+    I.e. the Hilbert space direct sum is by definition square summable sequences, but sums are just discrete integrals.
+\end{example}
+
+\begin{Theorem}[Plancherel, \cite{follandCourseAbstractHarmonic2016}, 7.44]
+    The regular represntation of a type I, second countable and unimodular topological group is a direct integral of the irreducible unitary representations. 
+\end{Theorem}
+\begin{remark}
+    The Plancherel theorem says much more in fact. Like the Peter-Weyl theorem for compact groups it doesnt just give you that some direct integral decomposition exists, it contains many more details about the topology and measure on the set of unitary irreducible representations, and which representations are associated to them in the direct integral. We are being breif as this is motivational.
+\end{remark}
+
+Thus what one wants to do is find a decomposition of the regular representation \(G(\A) \curvearrowright \mathrm{L}^2(G(\A))\).
+We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. So once accomplished this is another one of the tools that can be used to compartmentalise problems in automorphic forms, by dealing with representations that appear in different parts of the spectrum. 
+
+\subsection{Langlands Decomposition of the Spectrum }
+We have the Plancherel theorem but Langlands also provides a fine analysis of the spectrum using automorphic forms. The key result in this theory is the following decomposition,
+\begin{Theorem}[\cite{arthurEisensteinSeriesTrace1979}, MAIN THEOREM (b)]
+    There is an orthogonal decomposition of the representation of \(G(\A)\) on \(L^2(G(\Q) \backslash G(\A))\) into 
+    \[L^2(G(\Q) \backslash G(\A)) = \bigoplus_{\mathscr{P}}L^2_\mathscr{P}(G(\Q) \backslash G(\A)),\]
+    where \(\mathscr{P}\) runs over certain ``associate classes'' of parabolics of \(G\) and the summands are the direct integrals of spaces of \(L^2\) automorphic forms.
+\end{Theorem}
+These direct integrals are in fact constructed out of subspaces generated by Eisenstein series. 
+
+The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``pieces'' to such a decomposition. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum.
+
+\subsection{Residual Spectrum}\label{residual_spec}
+Moeglin and Waldspurger also acheived a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. 
+First consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then Moeglin and Waldspurger construct a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' and denote it 
+\[\Delta(\tau, b).\]
+They go on to prove that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}.
+
+This representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
+
+
+\section{L-Functions and Intertwining}\label{L_inter}
+For classical groups it has been known for a while that the intertwining operator has a normalization in terms of ratios of L-functions. The point is then that the normalised operator is holomorphic and so the poles of the constant term depend entirely on the poles of the L-functions. In particular we will look at incarnations of the following statement: There is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
+    \[M(s, w) = r(s, w)N(s,w),\]
+    and \(r(s, w)\) is a ratio of L-functions.
+
+    Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}.
+
+
+    It has been known for a long time that there was some normalisation \(M = rN\) where \(r\) is a ratio of L-functions, for instance Shahidi gives the following \cite{shahidiRamanujanConjectureFiniteness1988}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
+     \[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu, w)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
+
+    For example for a group over \Q we have the following from \cite{langlandsEulerProductsa} 
+    \[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
+     However it was not shown until recently, and only for classical groups that this \(N\) indeed has the required properties. In particular the following theorem is sufficient for the cases dealt with in \cite{jiangPolesCertainResidual2013}:
+     \begin{Theorem}[\cite{cogdellFUNCTORIALITYCLASSICALGROUPS}, 11.1]
+        Suppose that \(\pi_\nu\) is a local component of a globally generic cuspidal representation \(\pi\) of \(G_n(\A)\). Then for any irreducible admissible unitary generic representation \(\pi'_\nu\) of \(\GL_m(k_\nu)\) the normalized intertwining operator \(N'(S, \pi'_\nu\times \pi_\nu, w)\) is holomorphic and non-zero for \(Re(s)\geq 0\)
+     \end{Theorem}
+
+
+
+
+
+
+
+     
+
+    \section{The Metaplectic Generalisation}
+    We need to restate the setup now in the metaplectic case. Using the same notation as above, we now also denote \(\mathbf{M}_a\) the pre-image of \(M_a\) in \(\Mp_{2n}\), in particular if \(\mathrm{pr}: \Mp_{2n} \to \Sp_{2n}\) is the defining projection we have that \(\mathbf{M}_a \defeq \mathrm{pr}\inv(M_a)\). As we remarked \ref{Metaplectic_characters} we still have that \(X_{\mathbf{M}_r}^{\Mp_{2n}}\) is one dimensional. Now we want to consider representations of 
+    \[\mathbf{M}_a = \mathrm{pr}\inv(\GL_a \times \Sp_{2m}) \cong \big(\mathrm{pr}\inv(\GL_a)\times \mathrm{pr}\inv(\Sp_{2m})\big)/\Delta \mu_2,\]
+    where \(\mu_2 = \{\pm 1\}\) acts on the product via the diagonal embedding \todo{This is not clear to me....}.
+    So now we let \(\tilde{\tau}\) be a generic, cuspidal, irreducible representation of \(\mathrm{pr}\inv(\GL_a)\) and \(\tilde{\sigma}\) a generic, cuspidal, irreducible representation of \(\mathrm{pr}\inv(\Sp_{2m})\). 
+
+    \begin{remark}
+        If neither are \textit{genuine} representations of the covers then they both factor through a representation of the Levi of \(\Sp_{2n}\) and hence we can reduce to the case of the classical group itself (instead of its cover).
+    \end{remark}
+
+    Because we may, \todo{reference, Gan-Ichino Formal degrees....} we assume that \(\tilde{\tau} \cong \chi\tensor \mathrm{pr}^*(\tau)\) and \(\tilde{\sigma} \cong \chi'\tensor \mathrm{pr}^*(\sigma)\), for some characters \(\chi\) \todo{characters of what??}, where \(\sigma, \tau\) are as in the setup above, irreducible generric cuspidal representations of \(\Sp_{2n}, \GL_{2m}\) respectively.
+    Finally we can form the Eisenstein series associate to an automorphic form \(\phi\in \mathcal{A}(N_a(\A)M_a(F)\setminus \Mp_{2n}(\A) )_{\tilde{\tau}\tensor \tilde\sigma}\) defined in the same way as before,
+    \[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g),\]
+    for \(g\in \Sp_{2n}(F) \setminus \Mp_{2n}(\A)\) and \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\).
+
+    As we remarked earlier the constant term computation applies immediately to this case as well hence we still have:
+    \begin{Lemma}
+            The poles of \(E(\phi, s)\) are exactly the poles of \(E(\phi,s)_{P_a}\) which are exactly the poles of \(M(\omega, s)\).
+    \end{Lemma}
+    This is where the general story ends for the metaplectic groups. The results that we used in the classical group setting have not yet been proven (and are far beyond my scope). 
+
+    \subsection{Conditional Result}
+     We follow \cite[Assumption 6.1]{wuThetaCorrespondenceSimple2024wuThetaCorrespondenceSimple2024} for the specific form of this conjecture, although as we mentioned earlier \ref{L_inter} this has many incarnations. 
+     \todo[inline]{need to say where N is holomorphic, right half plane, geq 1/2 or 0...}
+     \begin{Conj}\label{conjecture_1}
+        There exists a holomorphic and non-zero \(N(s,w)\) such that 
+     \[M(s, w) = \frac{L(s, \pi\times \tau^{\vee}) L(2s, \tau, \mathrm{Sym}^2)}{L(s+1, \pi\times \tau^\vee)L(2s+1, \tau, \mathrm{Sym}^2)}N(s,w),\]
+     where \(\mathrm{Sym}^2\) is the symmetric second power of the standard representation of \(\GL_a(\C)\).
+     \end{Conj}
+     \textcolor{red}{This is proven for an intertwining operator associated to maximal parabolics (our case) in \cite[Thm. 7.10]{gaoLanglandsShahidiFunctionsBrylinskiDeligne2018} however their operator is not quite the same, I feel maybe their notation is just off?}
+
+     under the hypothesis of this conjecture we again have the following
+     \begin{Lemma}
+        Given \ref{conjecture_1} then the Eisenstein series above has pole at \(s\) if and only if 
+        \[\frac{L(s, \pi\times \tau^{\vee}) L(2s, \tau, \mathrm{Sym}^2)}{L(s+1, \pi\times \tau^\vee)L(2s+1, \tau, \mathrm{Sym}^2)},\]
+        has a pole.
+     \end{Lemma}
+     by \cite[Thm. 35]{kaplanDoublingConstructionsComplete2021a} for \(Re(s)>0, \quad L(s, \pi\times \tau^{\vee})\) is abosolutely convergent. 
+
+
+    \subsection{Siegel Parabolic}
+
+
+    Kaplan in a series of recent works with collaborators \cite{kaplanDoublingConstructionsComplete2021a}\cite{kaplanDoublingConstructionsTensor2020}\cite{caiDoublingConstructionsGlobal2024} has supplied some of the key peices for the normalisation of the metaplectic intertwining operators in the case of the Siegel parabolic. Namely if \(n = r+ m\) and we require \(m=0\), then the parabolic associated to the stadard Levi \(M_n = \GL_n\) is called the Siegel parabolic. In this case we have
+
+    \begin{Theorem}[\cite{kaplanDoublingConstructionsComplete2021a}, 4.2]
+    \[M(s, w) = r(s,w)N(s,w),\]
+    Where N is a non-zero and holomorphic function and \(r\) is a ratio of L-functions.
+    \end{Theorem} 
+
+    In this case the relvant normalisation is \cite[Eq. 1.5]{ginzburgTopFourierCoefficients2021}
+    \[r(s,\omega) = \frac{ L(2s, \tau, \mathrm{Sym}^2)}{L(2s+1, \tau, \mathrm{Sym}^2)} .\]
+
+    and so we have
+    \begin{Lemma}
+        The Eisenstein series,  above has pole at \(s\) if and only if \(r(w,s)\) has a pole.
+     \end{Lemma}
+     Finally we need to once again see what properties of these L-fuctions have been proven. 
+
+    --------------
+
+     \begin{Theorem}[\cite{ginzburgTopFourierCoefficients2021}, ]
+        
+     \end{Theorem}
+

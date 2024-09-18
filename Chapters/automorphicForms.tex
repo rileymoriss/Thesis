@@ -201,3 +201,251 @@ One might ask if there is a special case in which automorphic forms yield modula
 	}
     This example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
 	There is a nice explanation of how to lift this to the adelic setting in several places, however it is stated quite clearly in \cite[2.1]{cogdellLecturesLfunctionsConverse}
+
+	\section{Constant Terms}
+\subsection{Integration Lemmas}
+\begin{Theorem}\label{integrate_unitary_char}
+	If \(G\) is a locally compact Hausdorff group with a left Haar measure \(\mu\) and if \(\chi\colon G\to \mathbf C^\times\) is a non-trivial character on \(G\), then
+	\[ \intof{G}{\chi(g)}{\mu(g)} = 0. \]
+\end{Theorem}
+\proofbar{
+	Pick an element \(h\) of \(G\) such that \(\chi(h)\neq 1\).
+	The equation above then follows from
+	\[ \intof{G}{\chi(g)}{\mu(g)} = \intof{G}{\chi(hg)}{\mu(g)} = \intof{G}{\chi(h)\chi(g)}{\mu(g)} = \chi(h) \intof{G}{\chi(g)}{\mu(g)}. \square\]
+}
+    Integrating trivial characters gives the volume of the measure space which we typically normalise to be one.
+
+\begin{Theorem}[\cite{garrettModernAnalysisAutomorphic} 5.2, \cite{follandCourseAbstractHarmonic2016} Thm 2.49]
+        Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H) then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
+        \[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg\]
+    \end{Theorem}
+    Note that this quotient may not be a group, because H is not required to be normal.
+	
+	
+\section{Siegel Phi Operator}
+Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
+
+Because we are trying to connect this to the classical picture it is most convenient to think of things in the Archimedean places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the Archimedean places, and the constant term will be taken only on the Archimedean part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
+\[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
+
+
+\subsection{Siegel Modular Forms}
+We collect some definitions from \cite{bruinier123ModularForms2008} to fix notation. Let the Siegal upper half plane be defined as 
+\begin{equation*}
+    \begin{aligned}
+        \mathcal{H}_g &\defeq \{\tau \in \mathrm{M}_{g\times g}(\C) : \tau \text{ is symmetric and has positive definite imaginary part}\} \\
+        & \cong \Sp_{2g}(\R) / U(g)
+    \end{aligned}
+\end{equation*}
+where the isomorphism is as analytic manifolds  and 
+\[U(g) \defeq \left\{\begin{pmatrix}
+    A & B\\
+    -B & D
+\end{pmatrix}\in \Sp_{2g}(\R) : AA^t + BB^t = 1\right\}\]
+
+For every \(\gamma= (A \; B; \; C\; D) \in \Sp_{2g}(\Z)\) and \(\tau \in \mathcal{H}_g\) we have the action
+\[\gamma.\tau = (A\tau + B)(C\tau + D)\inv \]
+
+We say that a holomorphic function \(f: \mathcal{H}_g \to \C\) is a (classical) Siegel modular form of weight \(k\) if 
+\[f(\gamma.\tau) = \det(C\tau + D)^kf(\tau)\]
+with the extra condition that if \(g = 1\) it must be holomorphic at \(\infty\). Because \(\Sp_2 = \SL_2\) this is a strict generalisation of an (elliptic) modular form.
+
+The space of Siegel modular forms of weight \(k\) and genus g is denoted \(\mathcal{M}_k(\Sp_{2g}(\Z))\). There is a useful operator know as the Siegel Phi Operator which allows you to lift known modular forms from lower genus to higher genus \cite[5]{bruinier123ModularForms2008}
+\[\mathcal{M}_k(\Sp_{2g}(\Z)) \xrightarrow{\Phi} \mathcal{M}_{k}(\Sp_{2(g-1)}(\Z))\]
+defined by the limit for \(\tau\in \mathcal{H}_{g-1}\)
+\[\Phi(f)(\tau) \defeq \lim_{t\to \infty} f\begin{pmatrix}
+    \tau & \\
+    & it 
+\end{pmatrix}\]
+in this context a cusp form is defined to be a Siegel modular form in the kernel of the Siegel \(\Phi\) operator and so it is natural to wonder if there is a constant term that is being taken here. 
+
+\subsection{Automorphising}
+Given a Siegel modular form \(f\in \mathcal{M}_k(\Sp_{2g}(\Z))\) we can associate an automorphic form
+\[\tilde{f} : \Sp_{2g}(\R)\to\C, \qquad \begin{pmatrix} a & b\\ c & d\end{pmatrix}\mapsto \det(ci+d)^{-k} f\Bigl((ai+b)(ci+d)\inv\Bigr), \]
+where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatrix} a & b\\ c & d\end{smallmatrix}\bigr)\in\Sp_{2g}(\R)\).Fix the Borel of upper triangular matrices. Now for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+\[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
+
+\begin{Theorem}[Zhang]
+	If \(f\) is a classical Siegel modular form of weight \(k\) and degree \(g\), then
+	\begin{equation} 
+		\tilde f_{P_r}(u\gamma) = \det u^k\cdot (\Phi^{r} f)^\sim(\gamma)
+	\end{equation}
+	for every element \(\gamma\) of \(\Sp_{2(g-r)}(\R)\) and every element \(u\) of \(\GL_{r}(\R)\).
+
+ In particular 
+ \[\tilde{f}_{P_{g-1}}\begin{pmatrix} a & 0 & b & 0\\ 0 & 1 & 0 & 0\\ c & 0 & d & 0\\ 0 & 0 & 0 & 1\end{pmatrix} = (\Phi f)^\sim\begin{pmatrix}
+     a & b\\
+     c& d
+ \end{pmatrix}\]
+\end{Theorem}
+
+This shows that perhaps the correct generalisation of the Siegel Phi function is just the constant term that we all know and love. We could also attempt to expand this to Siegel modular forms that are vector valued or not of full level. 
+
+The only other work on generalising the Siegel \(\Phi\) operator that we could find appears in \cite{grenierANALOGUESIEGELXOPERATOR2024}. 
+Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of ``automorphic forms'' in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definite real matrices \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely his \cite[Thm. 2]{grenierAnalogueSiegelFOperator1992} shows that it sends an automorphic form for \(
+GL_n(\Z)\) to an automorphic form for \(\GL_{n-1}(\Z)\). The point is that the \(\Phi\) operator can be defined in the generality of symmetric spaces and Grenier shows that at least in one other case it still preserves the relevant notion of automorphic form. This suggests two things that would be interesting to investigate; using the classification of symmetric spaces is it possible to give a uniform definition of the \(\Phi\) operator following Grenier and does this definition agree with the constant term in the way that the Siegel \(\Phi\) operator does. With my limited knowledge of symmetric spaces this seems to be very tractable.
+
+\subsection{Base Case}
+The base case is very instructive, it deals with modular forms. So consider \(f\) a (elliptic) modular form of full level and weight k, which has a Fourier expansion given by 
+\[f(z) = \sum_{n\geq 0} a_ne^{2\pi i nz }\]
+Then one can verify that
+\[\tilde f \begin{pmatrix}
+    a & b\\
+    c & d
+\end{pmatrix} = (ci+d)^{-k} f\Bigl(\frac{ai+b}{ci+d}\Bigr)\]
+is an automorphic form on \(\Sp_2\). The only non-trivial parabolic P is the one of upper triangular matricies, with Levi and unipotant given respectively 
+\[M = \begin{pmatrix} m & 0\\ 0 & m^{-1}\end{pmatrix}\cong \GL_1 , \;\;\; N = \begin{pmatrix} 1 & b\\ 0 & 1\end{pmatrix} \cong \mathbb{G}_a\]
+along which we can now compute the constant term 
+\begin{equation*}
+    \begin{aligned}
+		\tilde f_P(m)
+		& = \int_{N(\Z)\backslash N(\R)}\tilde f (mb) \mathrm{d}b\\
+		& =  \int_{\Z\backslash\R}\tilde f \begin{pmatrix} m & mb\\ 0 & m^{-1}\end{pmatrix}\mathrm{d}b\\
+		& = \int_{\Z\backslash\R} m^k f(m^2i+m^2b) \mathrm{d}b\\
+            & = m^k a_0 \\
+	\end{aligned}
+\end{equation*}
+We have chosen normalisation to remove the usual factor of \(1/2\pi\) in the constant term of the Fourier series. Moreover we see that
+\[\Phi(f)= \lim_{t\to \infty} f(it) =\lim_{t\to \infty} \sum_{n\geq 0} a_ne^{-2\pi nt }  =  a_0\]
+
+\subsection{Simplifying the Constant Term}
+As we saw in \ref{maximal_parabolic} for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+\[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
+which can be given the explicit matrix representations 
+    \[m(\gamma, A) \defeq \begin{pmatrix}
+        A &&& \\
+         &a&&b \\
+         &&(A^t)\inv& \\
+         &c&&d \\
+    \end{pmatrix}, \;\;\; A\in \GL_r(F), \; \gamma = \begin{pmatrix}
+        a & b\\
+        c & d \\
+    \end{pmatrix} \in \Sp_{2(g-r)}(F) \]
+
+    and unipotent 
+    \[ n(s;h,k) \defeq \begin{pmatrix} 1 & 0 & 0 & h\\ -k^t & 1 & h^t & s+h^t k\\ 0 & 0 & 1 & k\\ 0 & 0 & 0 & 1 \end{pmatrix}, \;\;\; h, k\in\mathrm{Mat}_{(g-r)\times r}(\R),\; s\in\mathrm{Sym}_{r}(\R)\]
+We have the following short exact sequence \todo[inline]{prove it}
+\[ 1\to \mathrm{Sym}_{r}(\R)\to N_r(\R)\to \mathrm{Mat}_{(g-r)\times r}(\R)\times\mathrm{Mat}_{(g-r)\times r}(\R) \to 1. \]
+which we will use to unfold our integral below, for compactness we define \(H_r \defeq \mathrm{Mat}_{(g-r)\times r}\). We will now denote \([G] \defeq G(\Z)\backslash G(\R)\) and compute the constant term
+\begin{align}
+		\tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+		& = \intof{[N_r]}{\tilde f\bigl(n m(\gamma, A)\bigr)}{n} \notag\\
+		& = \intof{[H_r\times H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{\tilde f\bigl(n(s; h, k) m(\gamma, A)\bigr)}{s}}{(h,k)} \notag\\
+		& = \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{\tilde f\bigl(n(s; h, k) m(\gamma, A)\bigr)}{s}}{h}}{k}.
+\end{align} 
+
+Now we focus on simplifying the integrand. We want an explicit form of the matrix so we can relate it back to the value of the un-lifted Siegel modular form \(f\); simply multiply the matrices gives, where (all rings are commutative) \(A^{-t} \defeq (A^t)\inv\)
+\[
+		n(s; h, k) m(\gamma, A) =
+		\begin{pmatrix}
+			a & 0 & b & h A^{-t}\\
+			-k^t a + h^t c & A & -k^t b + h^t d & s A^{-t} + h^t k A^{-t}\\
+			c & 0 & d & k A^{-t}\\
+			0 & 0 & 0 & A^{-t}
+		\end{pmatrix}.
+	\]
+because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\times r}\) we see that the \(g\times g\) blocks that we now need to take the determinant of are the \(4\times 4\) corners of this picture, hence the matrices below should all be in \(\mathcal{H}_g\subseteq \mathrm{Mat}_{g\times g}\)
+
+\begin{align*}
+    \tilde{f}(n(s; h, k) m(\gamma, A) ) &= \det\left(\begin{pmatrix}
+    c & 0 \\
+    0 & 0
+\end{pmatrix}i+ \begin{pmatrix}
+    d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix} \right)^{-k} \cdot \\
+&f\left(         \left(\begin{pmatrix}
+    a & 0\\
+    -k^ta + h^tc & A
+\end{pmatrix}i+\begin{pmatrix}
+    b & hA^{-t} \\
+    -k^tb + h^td & sA^{-t} + h^tkA^{-t}
+\end{pmatrix}\right)   \left(\begin{pmatrix}
+    c & 0 \\
+    0 & 0
+\end{pmatrix}i+ \begin{pmatrix}
+    d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix} \right)\inv      \right) \\
+&= \det\left( \begin{pmatrix}
+    ic + d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix}\right)^{-k} \cdot \\
+&f\left( \begin{pmatrix}
+    ia + b &  hA^{-t}\\
+    -k^t(ia +b) + h^t(d + ic) & iA + sA^{-t} + h^tkA^{-t}
+\end{pmatrix}  \begin{pmatrix}
+    ic + d & kA^{-t} \\
+    0 & A^{-t}
+\end{pmatrix}\inv      \right) \\
+&=\left(\frac{\det(ic + d)}{\det(A)}\right)^{-k} \cdot \\ &f\left( \begin{pmatrix}
+    ia + b &  hA^{-t}\\
+    -k^t(ia +b) + h^t(d + ic) & iA + sA^{-t} + h^tkA^{-t}
+\end{pmatrix}   \begin{pmatrix}(ci+d)^{-1} & -(ci+d)^{-1} k\\ 0 & A^t \end{pmatrix} \right) \\
+&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}, \;\;\; \tau \defeq (ai+b)(ci + d)\inv \\
+%&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\bigl(n(s; h, k) m(\gamma,A )(i 1_g)\bigr) I think g here should be 2g but then the multiplication seems wrong IDK what he meant by this..
+\end{align*} 
+So we have shown that 
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr) &= \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
+\end{align*}
+
+Again lets focus on this integrand \(f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}\) and compute its Fourier expansion, see \cite[3.4]{bruinier123ModularForms2008}. Recall that a symmetric matrix \(n\in \GL_g(\Q)\) is called half integral if \(2n\) is integral with even diagonal entries, then a Siegel modular form has a Fourier expansion of the form
+\[f(z) = \sum_{n \text{ half integral}}a(n) e^{2\pi i \mathrm{Tr}(nz)} \]
+First the space of half integral \(g\times g\) matrices, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism \todo[inline]{prove it}
+\[ \mathrm{HI}_{g-r} \oplus \tfrac{ 1}{ 2} \mathrm{Mat}_{ r\times (g-r)}(\Z) \oplus \mathrm{HI}_{r}\to\mathrm{HI}_g, \qquad (n, m, l)\mapsto \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}, \]
+thus unfolding the (discrete) integral we get 
+\begin{align*}
+    f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &=   \sum_{n\in\mathrm{HI}_{g-r}} \sum_{m\in\frac{1}{2} \mathrm{Mat}_{ r\times (g-r)}(\Z)} \sum_{l\in\mathrm{HI}_{r}} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \\
+    &\exp \left(2\pi i \mathrm{Tr} \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} \right)  \\
+\end{align*}
+because all the block sizes are compatible we can ``block multiply'' the inner matrices and because we are taking the trace we can forget about off diagonal entries
+\begin{align*}
+    \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= 
+    \begin{pmatrix} n\tau + m(-k^t \tau + h^t ) & \ast\\ \ast & m^t(-\tau k + h) + l( k^t \tau k + A A^t i + s) \end{pmatrix}
+\end{align*}
+putting this into our Fourier expansion
+\begin{align*}
+    f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \\
+    &\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))) \right)  \\
+\end{align*}
+
+If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo[inline]{my Tm differs from Chengjing}
+\[T_{m} \defeq \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) = \mathrm{Tr}(-mk^t\tau - m^t\tau k) + \mathrm{Tr}(mh^t + m^th) \defeq T_{m,k} + T_{m,h}\]
+we can substitute this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{ \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  T_m + T_l) \right)
+     }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+     \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi i(T_m + T_l)}  }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+     \intof{[H_r]}{\intof{[H_r]}{e^{2\pi iT_m} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
+     &= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+     \intof{[H_r]}{e^{2\pi iT_{m,k}}\intof{[H_r]}{e^{2\pi i T_{m,h}} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
+\end{align*}
+Now we use that the integration of unitary characters is very simple \ref{integrate_unitary_char} and the fact that 
+\[s\mapsto  e^{2\pi iT_l} \]
+is a non-trivial unitary character of \(\mathrm{Sym}_{g-r}\) whenever \(l\neq 0\) to get that 
+\[\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s} = \begin{cases}
+    1, & l=0 \\
+    0, & l\neq 0
+\end{cases}\]
+we repeat this trick with the second integral, which enforces that \(m = 0\) and end up with 
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+     &=\left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n\in\mathrm{HI}_{g-r}} a\begin{pmatrix} n & 0\\ 0 & 0 \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}\\
+\end{align*}
+but by \cite[3.5]{bruinier123ModularForms2008} we know that the Fourier expansion of the Siegel Phi operator is 
+\[(\Phi^{r} f)(\tau) = \sum_{n\in\mathrm{HI}_{g-r}} a\begin{pmatrix} n & 0\\ 0 & 0 \end{pmatrix} e^{2\pi i\mathrm{Tr}(n \tau)}.\]
+hence 
+\begin{align*}
+    \tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
+     &=\left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \Phi^r(f)(\tau)\\
+     &= \det(A)^k (\Phi^r(f))^{\sim}(\gamma)
+\end{align*}
+which concludes the proof.
+\begin{FlushRight}
+     \(\square\)
+\end{FlushRight}

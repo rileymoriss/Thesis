@@ -28,7 +28,7 @@ As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix gr
     As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
 \end{example}
 
-The other most important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional F-vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
+The other important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional F-vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}.\]
 Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form, will define our classical groups. 
 
@@ -173,24 +173,11 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     \end{pmatrix},\]
     with relations among the entries.
 
-    \subsection{Borel and Torus}\label{borel_torus}
-    \begin{remark}
-        It can be very enlightening to to understand the analogous story for Lie groups and their classification \cite{hallLieGroupsLie2015}.
-    \end{remark}
-    
-
-    \begin{definition}
-        A \textbf{split torus} is an algebraic group that is isomorphic to \(\GL_1^b\) for some \(b\in\N\).
-    \end{definition}
+    \subsection{Borel and Torus}\label{borel_torus}    
+    A \textbf{split torus} is an algebraic group that is isomorphic to \(\GL_1^b\) for some \(b\in\N\).
 
     \begin{example}[Bad Etymology]
-        \(\GL_1\) is a split torus. Notice that 
-        \[\GL_1(\C) = \C^\ast,\]
-        is isomorphic as abstract groups to \(U(1)\) which when \(U(1)\) is realised as \(\{z\in \C : |z| = 1\}\) is topologically equivalent to the torus \(\mathbb{T}^1 = \mathbb{S}^1\). Note that it is clear that 
-        \[\GL_1(\C) \not\cong \mathbb{T}^2, \]
-        as topological groups, as the right hand side is compact whilst the left is not.
-
-        Consider the field extension \(\C/\R\). Then \C has the inner product given by 
+        \(\GL_1 /\C\) is a split torus. Consider the field extension \(\C/\R\). Then \C has the inner product given by 
         \[\inner{z, z'} \defeq \bar{z}z'.\]
         We can look at the elements of \(\C\) that preserve this inner product, 
         \begin{align*}
@@ -199,22 +186,25 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
         \end{align*}
         Note that this is a (real) line topologically so we dont expect it to be a complex varity. Indeed this defines a \textbf{real} algebraic group given by the zero locus in \(\R^2\) of the two variable polynomial \(x^2 + y^2 - 1\). In other words
         \[ U(1) \cong \mathrm{MaxSpec}\big(\R[x,y]/(x^2 + y^2 - 1)\big) .\]
-        Now if we complexify we have 
-        \[\R[x,y]/(x^2 + y^2 - 1) \tensor_\R \C \cong \]
-
-        It was pointed out to me that as algebraic groups over \(\C\) we have the following isomorphism
-        \[\GL_1 \cong U(1)\tensor_\R \C.\]
-        \todo[inline]{Proof}
+        Now if we base change to \C we have 
+        \begin{align*}
+            \R[x,y]/(x^2 + y^2 - 1) \tensor_\R \C &\cong \C[x,y]/\big((x+iy)(x-iy) -1 \big)\\
+             &\cong \C[s,t]/(st -1) \\
+             &\cong \C^\ast.
+        \end{align*}
+        Thus \(\GL_1 / \C\) is the complexification of the torus \(U(1)\).
     \end{example}
     
-     Perhaps a more compelling reason to call these Tori is that they play the same role in the classification as the genuine tori, \(\mathbb{T}^2\), in the theory of Lie groups. A subgroup that is isomorphic to a split torus and is maximal in this respect is called a maximal split torus. 
+    \begin{remark}
+        These tori also play the same role in the classification of reductive LAG as the real Lie groups called tori play in the classification of Lie groups \cite{hallLieGroupsLie2015}.
+    \end{remark}
+    
+    A subgroup that is isomorphic to a split torus and is maximal in this respect is called a maximal split torus. 
      \begin{example}
         The classic example of a maximal split torus is the group of diagonal matrices in \(\GL_n\).
      \end{example}
 
-    \begin{definition}
-        A \textbf{Borel} is a maximal closed solvable connected subgroup of \(G\).
-    \end{definition}
+    A \textbf{Borel} is a maximal closed solvable connected subgroup of \(G\).
 
     \begin{example}
         The standard Borel of \(\GL_n\) is the group of upper triangular matrices. If \(n\) is even and one intersects this Borel with \(\Sp_{2(\frac{1}{2}n)}\) then we get the standard Borel of \(\Sp_{2(\frac{1}{2}n)}\).
@@ -267,15 +257,3 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     \end{itemize}
      It is in terms of the third property that we like to think of the maximal compact subgroup, it is the complimentary piece of the Borel. Moreover the fourth property should be thought of as a condition that the maximal compact subgroups are well behaved with the way that we are moving between the bigger and smaller reductive groups.
     Maximal compact groups with all these properties are said to be in \textbf{good position}.
-
-    \section{Metaplectic Covers}
-    \todo[inline]{METAPLECTIC}
-    We are also be interested in certain covering groups of these LAG's. In particular \cite[I.1.1]{moeglinSpectralDecompositionEisenstein1995} we will be intereseted in \(\mathbf{G}\) some topological group given as a finite central cover of \(G(\A)\). If \(\mathrm{pr}: \mathbf{G} \to G(\A)\) is the projection then to the subgroups listed above we can associate their ``lifts'' (preimages under \(\mathrm{pr}\)). 
-
-\begin{example}[Metaplectic Group]
-    \todo[inline]{Fill}
-    
-    There is a rich history and representation theory of this group, which we make no pretense of understanding, however some hints can be found in \cite{kudlaNOTESLOCALTHETA} and the references therein.
-\end{example}
-
-There is an analogue of the Langlands program being developed for such groups a nice introduction to which can be found in \cite{ganLgroupsLanglandsProgram2017}. \todo[inline]{perhaps a first natural question is whether or not these things can be given the structure of LAG's. That paper mentions representability. Look into it. }
