@@ -24,12 +24,13 @@
 \contentsline {subsection}{\numberline {4.2.2}Isotypic Components}{36}{subsection.4.2.2}%
 \contentsline {chapter}{\numberline {5}Eisenstein Series}{37}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Eisenstein Series}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Classical Eisenstein Series}{40}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Constant Terms of Eisenstein Series}{41}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Definition and Role}{41}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Constant Terms of Eisenstein Series}{42}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}In General}{43}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Constant Terms of Cuspidal Eisenstein Series}{45}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{46}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.1}In General}{42}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constant Terms of Cuspidal Eisenstein Series}{44}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{45}{subsection.6.2.3}%
 \contentsline {chapter}{\numberline {7}L-Functions}{47}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Automorphic L-Functions}{47}{section.7.1}%
 \contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{50}{chapter.8}%

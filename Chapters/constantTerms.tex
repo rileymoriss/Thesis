@@ -1,31 +1,32 @@
 Here we will explain the role of the constant term in our calculation of poles.\label{constant_terms}
 
-\section{Definition and Role} \label{cuspidal_form_definition}
+\section{Definition and Role} \label{cuspidal_form_definition}\label{sec:L-functions}
 The constant term is an operation defined on a large class of functions and is supposed to generalise the constant term of a Fourier expansion, we will see this later, although one may consult \cite[1.6]{bumpAutomorphicFormsRepresentations1997} for some examples as well. In particular \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995} give the definition as follows: We consider \(P=MU\) a standard parabolic of \(G\) and \(\phi: U(k)\setminus \mathbf{G} \to \C\) a measurable and locally \(L^1\) function then its \textbf{constant term} along \(P\) is 
 \[\phi_P :  U(\A)\setminus \mathbf{G} \to \C\]
 \[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u\]
 which inherits many of the properties of \(\phi\) such as smoothness and moderate growth. Moreover if \(\phi\) is an automorphic form on \(\mathbf{G}\) then its constant term is an automorphic form on \(M\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
 
-This allows us to recall the definition of cuspidal automorphic forms or ``cusp forms''. Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that 
-\[\phi_{P'} = 0\]
-Cusp forms have a central role in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible, they just make formulas easier to work with as things will become zero (as we see in section \todo{}) and they form the ``base case'' for the proof of the spectral decomposition \ref{spectral_decomposition}.
+\todo{change this from }
+Recall the definition of \textbf{cuspidal automorphic forms} or ``cusp forms''. Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that \(\phi_{P'}\) is identically zero. 
 
-The constant term itself is of central importance. One reason for this is that it controls the growth of the automorphic forms. More precisely we have the following theorem \cite[I.4.10]{moeglinSpectralDecompositionEisenstein1995}
-\todo[color=blue]{M+W}
-\begin{Theorem}
-        Let \(P = MU\) be a standard parabolic of \(G\), \(V_P\subseteq \mathcal{A}_0(U(\A)M(k)\setminus G)\) a finite dimensional subspace, \(\Gamma_P\subseteq X_M\) a compact subset and \(N_P\) an integer. Let \(n\in \Z\), \(D\subseteq \C^n\) open and connected, \(f: D\to \C\) holomorphic and not identically zero. Let \(D' = \{x\in D : f(x)\neq 0\}\).
-
-        If \(\phi: D' \to L^2_{loc}(G)\) is a function such that for all \(z\in D', \phi(z)\in \mathcal{A}((V_P, \Gamma_P, N_P)_{P_0\subset P \subset G})\) and for all P 
-        \[\psi_P: D' \to L^2_{loc}(G)\]
-        \[z \mapsto \psi_P(z) = \phi_P^{cusp}(z)\]
-        is a holomorphic function. 
-
-        Then \(\phi\) can be analytically continued to a holomorphic function on \(D\) iff \(\psi_P\) can be continued to a holomorphic function on \(D\).
+\begin{Theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, I.4.10]\todo{fix}
+		Let \(P = MU\) be a standard parabolic of \(G\). If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G)\) given by 
+		\[E(p)(g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi(\gamma g), \;\;\; p\in \mathfrak{P},\; g\in G(\A),\]
+		where it converges. 
+		If \(D\subseteq \mathfrak{P}\), is an open subset minus a finite number of points on which \(E\) is holomorphic then E has a holomorphic continuation to the finite number of points if and only if the constant term of \(E_Q\) has a holomorphic continuation to these finite number of points for all standard parabolics \(Q\).
     \end{Theorem}
     
-    Unpacking this a bit we see that an Eisenstein series satisfies the hypothesis on \(\phi\) by \cite[IV.1.9]{moeglinSpectralDecompositionEisenstein1995} \todo[inline]{make this more precise}, we think of \(D'\) as the positive open cone on which the Eisenstein series converges, and then \(D = \C^n \setminus S \) as the rest of the cuspidal datum \(\mathfrak{P}\) on which the Eisenstein series is holomorphic (\(S\) is its set of singularities). Therefore the domain on which the Eisenstein series is holomorphic is the same as the domain on which (roughly) its constant term is holomorphic.
+    \begin{remark}
+    	The theorem in Moeglin and Waldspurger is proved in much more generality, however after sufficient symbol pushing this is the essence. 
+    \end{remark}
+    So one can say that the poles of an Eisenstein series are controlled by its constant terms. We can say more:
     
-        \todo[color=blue]{Constant terms vanish along other parabolics for E-series}
+        
+        \begin{theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, II.1.7]
+        	The constant term of an Eisenstein series induced from a standard maximal parabolic \(P\) is zero along any other standard parabolic \(P'\) unless \(P = P'\).
+        \end{theorem}
+      
+      Finally we remark on the central importance of cusp forms in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and they form the ``base case'' for the proof of the spectral decomposition in \cite{moeglinSpectralDecompositionEisenstein1995}.
 
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
 This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations.
