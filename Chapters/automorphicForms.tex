@@ -19,7 +19,7 @@ Fix a number field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\)
 	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\)-module is \(K_\infty\) \textbf{finite} if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\)-modules).
 
 	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action, i.e. \(g.f(x) = f(xg)\).  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
-	\[z.F(g) = \Dif{}{t}F(ge^{tz}).\] 
+	\[z.F(g) = \Dif{}{t}F(ge^{tz})|_{t=0}.\] 
 	
 	Finally we want a growth condition. Fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to SL_{2n}\) via
 	\[g\mapsto \begin{pmatrix}
@@ -149,7 +149,10 @@ One might ask if there is a special case in which automorphic forms yield modula
 	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upper half plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\). Indeed if we were to push our modular forms along this isomorphism it would, with the construction that we outlined earlier in terms of a group action on a set, exhibit this invariance. This is merely \textit{evidence} that if we were to change our modular forms to functions on the reductive group \(\SL_2\) they may preserve \textit{some} of that invariance and indeed be K-finite.
     
 		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGJlZ2lue3BtYXRyaXh9eV57MS8yfSAmIHggeV57LTEvMn1cXFxcICYgeV57LTEvMn1cXGVuZHtwbWF0cml4fVNPXzIoXFxSKT1cXFNsXzIoXFxSKSJdLFsyLDAsIlxcU2xfMihcXFIpL1NPXzIoXFxSKSJdLFsyLDIsIlxcU2xfMihcXFopXFxzZXRtaW51c1xcU2xfMihcXFIpIl0sWzQsMCwiXFxtYXRoY2Fse0h9Il0sWzEsMywiXFxzaW0iXSxbMCwxLCJwcm9qIl0sWzEsMywieFxcbWFwc3RvIHguaSIsMl0sWzAsMiwiXFx0ZXh0e2Rlc2NlbmQ/Pz99IiwyXV0=
-	\[\begin{tikzcd}[cramped]
+		
+		\vspace{6mm}
+		
+	\[\begin{tikzcd}[cramped, transform canvas={scale=0.8}]
 		{\left\{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix} : x,y\in \R, y\neq 0 \right\} SO_2(\R)=\SL_2(\R)} && {\SL_2(\R)/SO_2(\R)} && {\mathcal{H}} \\
 		\\
 		&& {\SL_2(\Z)\setminus\SL_2(\R)}
@@ -158,7 +161,9 @@ One might ask if there is a special case in which automorphic forms yield modula
 		\arrow["{g\mapsto g.i}"', from=1-3, to=1-5]
 		\arrow["{\text{project}}"', from=1-1, to=3-3]
 	\end{tikzcd}\]
-
+	
+		\vspace{6mm}
+		
     Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.Thus for \(f\) a modular form of weight k the following function on \(\SL_2(\R)\)
 	\[F(g) \defeq  (ci + d)^{-k}f(g.i),\]
 	we claim is an automorphic form for \(\SL_2(\Z)\). We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition. It remains to show the three other properties:

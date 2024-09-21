@@ -60,24 +60,39 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
     A \textbf{\((\mathfrak{g}, K)\)-module} is a complex vector space \(V\) with two representations 
     \[\tilde{\pi}: \mathfrak{g} \to End(V), \quad \pi: K\to \GL(V),\]
     satisfying the following axioms
-    \begin{itemize}
+    \begin{enumerate}
         \item \(V\) decomposes into a countable direct sum of finite dimensional \(K\) representations.
         \item The representations should be compatible: For all \(X \in \mathfrak{k}\) and \(v\in V\)
         \[\tilde{\pi}(X)(v) = \frac{\mathrm{d}}{\mathrm{d}t}\pi(e^{tX})(v)|_{t=0} = \lim_{t\to 0}\frac{\pi(e^{tX})(v) - v}{t}.\]
         In particular the right hand limit exists
         \item And compatible with the adjoint representation: For \(k\in K\) and \(X\in \mathfrak{g}\) 
          \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(Ad(k)(X))(v).\]
-    \end{itemize}
+    \end{enumerate}
 \end{definition}
 
 \begin{remark}
-    It is common to use the same symbol for both of these representations in the \((\mathfrak{g}, K)\)-module.
+    It is common to use the same symbol for both of these representations in the \((\mathfrak{g}, K)\)-module. It is also important to note that these are purely algebraic representations, there is no condition of continuity etc. 
 \end{remark}
 
+Now we define a \((\mathfrak{g}, K_\infty)\)-module structure on the space of automorphic forms. Recall that by definition we have that 
+\[\mathcal{A}(U(\A)M(F)\backslash G(\A)) \subseteq C^\infty(G(\A_f)) \tensor C^\infty(G(F_\infty)).\]
+If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) then \(K_\infty\subseteq G(F_\infty)\) a maximal compact subgroup in good position acts by 
+\[k.(\phi_f\tensor \phi_\infty)(g) \defeq \phi_f(g) \tensor \phi_\infty(gk),\]
+i.e. via the right regular representation on the archimedian component. The lie algebra of \(G(F_\infty)\) acts as we have previously defined in section \ref{lie_algebra_action} via
+\[z.(\phi_f\tensor \phi_\infty)(g) = \phi_f(g)\tensor \Dif{}{t}\phi_\infty(ge^{tz})|_{t=0}.\] 
 
+Lets check the three conditions. (2.) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. 
+\begin{Lemma}
+	\(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) decomposes into a countable direct sum of finite dimensional \(K_\infty\) representations. 
+\end{Lemma}
 
-Now one can check that the space of Archimedean automorphic forms is in fact an (admissible) \((\mathfrak{g}, K_\infty)\)-module, under the representations that we have already specified; namely the regular action given by \(K\) and the representation that we defined \ref{lie_algebra_action} when talking about the center of the enveloping algebra \cite[Thm. 6.2.6]{getzIntroductionAutomorphicRepresentations2024}.\todo[inline]{rewrite it here and then prove that this is a g,K module}
-\todo[color=blue]{g,K modules proof}
+\begin{Lemma}
+	For all \(k\in K_\infty\) and \(X\in \mathfrak{g}\) we have that 
+	\[\phi_f(g)\tensor \Dif{}{t}\phi_\infty(gk\inv e^{tX}k)|_{t=0} = \phi_f(g)\tensor \Dif{}{t}\phi_\infty(g\inv e^{tkXk\inv})|_{t=0} .\]
+\end{Lemma}
+
+\todo[inline, color=blue]{Is this right...}
+
 
 \section{Automorphic Representations}
 Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then a subquotient of this representation.

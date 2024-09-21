@@ -144,7 +144,8 @@ n(s; h, k) m(\gamma, A) =
 because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\times r}\) we see that the \(g\times g\) blocks that we now need to take the determinant of are the \(4\times 4\) corners of this picture, hence the matrices below should all be in \(\mathcal{H}_g\subseteq \mathrm{Mat}_{g\times g}\)
 
 \begin{align*}
-	\tilde{f}(n(s; h, k) m(\gamma, A) ) &= \det\left(\begin{pmatrix}
+	&\tilde{f}(n(s; h, k) m(\gamma, A) ) \\
+	 &= \det\left(\begin{pmatrix}
 		c & 0 \\
 		0 & 0
 	\end{pmatrix}i+ \begin{pmatrix}
@@ -184,7 +185,8 @@ because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\ti
 \end{align*} 
 So we have shown that 
 \begin{align*}
-	\tilde f_{P_r}\bigl(m(\gamma, A)\bigr) &= \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
+	&\tilde f_{P_r}\bigl(m(\gamma, A)\bigr) \\
+	 &= \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
 	&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}\\
 \end{align*}
 
@@ -199,29 +201,32 @@ thus unfolding the (discrete) integral we get
 \end{align*}
 because all the block sizes are compatible we can ``block multiply'' the inner matrices and because we are taking the trace we can forget about off diagonal entries
 \begin{align*}
-	\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= 
+	&\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}\\ &= 
 	\begin{pmatrix} n\tau + m(-k^t \tau + h^t ) & \ast\\ \ast & m^t(-\tau k + h) + l( k^t \tau k + A A^t i + s) \end{pmatrix}
 \end{align*}
 putting this into our Fourier expansion
 \begin{align*}
-	f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} &= \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \\
-	&\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))) \right)  \\
+	&f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix} \\
+	&= \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \exp \Big(2\pi i \big( &\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) \\ & &  +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\big)\Big)  \\
 \end{align*}
 
-If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo[inline]{my Tm differs from Chengjing}
+If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo{my Tm differs from Chengjing}
 \[T_{m} \defeq \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) = \mathrm{Tr}(-mk^t\tau - m^t\tau k) + \mathrm{Tr}(mh^t + m^th) \defeq T_{m,k} + T_{m,h}\]
 we can substitute this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
-\begin{align*}
-	\tilde f_{P_r}\bigl(m(\gamma, A)\bigr)
-	&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{ \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  T_m + T_l) \right)
-			}{s}}{h}}{k}\\
-	&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
-	\intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi i(T_m + T_l)}  }{s}}{h}}{k}\\
-	&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
-	\intof{[H_r]}{\intof{[H_r]}{e^{2\pi iT_m} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
-	&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
-	\intof{[H_r]}{e^{2\pi iT_{m,k}}\intof{[H_r]}{e^{2\pi i T_{m,h}} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
-\end{align*}
+\resizebox{\linewidth}{!}{
+	\begin{minipage}{\linewidth}
+		\begin{align*}
+			&\tilde f_{P_r}\bigl(m(\gamma, A)\bigr)\\
+			&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{ \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}\exp \left(2\pi i (\mathrm{Tr} (n\tau) +  T_m + T_l) \right)
+					}{s}}{h}}{k}\\
+			&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+			\intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi i(T_m + T_l)}  }{s}}{h}}{k}\\
+			&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix}e^{2\pi i \mathrm{Tr} (n\tau)}
+			\intof{[H_r]}{e^{2\pi iT_{m,k}}\intof{[H_r]}{e^{2\pi i T_{m,h}} \intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s}}{h}}{k}\\
+		\end{align*}
+	\end{minipage}
+}
+
 Now we use that the integration of unitary characters is very simple \ref{integrate_unitary_char} and the fact that 
 \[s\mapsto  e^{2\pi iT_l} \]
 is a non-trivial unitary character of \(\mathrm{Sym}_{g-r}\) whenever \(l\neq 0\) to get that 
