@@ -66,18 +66,21 @@ We will use the following Lemmas to give a simplified expression of the constant
         \end{equation*}
     }
     Taking the contrapositive of this lemma will be used below. This is because our sums will be over quotients like \(A\setminus B\) and therefore summing over the ``elements'' in B that are not in A; by our lemma would be the same as summing over two different such quotients.
-Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series
+Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series. Denote \(([N']\defeq N'(F)\setminus N'(\A))\)
     \begin{equation*}
         \begin{aligned}
             E_{P'}( \phi, \lambda, x) &= \int_{N'(F)\setminus N'(\A)} E( \phi, \lambda, nx) dn\\
-                                    ([N']\defeq N'(F)\setminus N'(\A)) \;\;\; &= \int_{[N']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  dn\\
+                                     &= \int_{[N']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  dn\\
                                     (\text{Lemma 1}) \;\;\; &= \int_{[N']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta nx)  dn\\
                                      &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[N']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'nx)  dn\\
-                                    (\text{Lemma 2}) \;\;\; &= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[N']} \sum_{n'\in N'(F)\cap (m')\inv wP(F)w\inv m' \setminus N'(F)} \lambda.\phi( w\inv m'n'nx)  dn\\
-                                    (\text{Change Var}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{[N']} \sum_{n'\in N'(F)\cap wP(F)w\inv\setminus N'(F) } \lambda.\phi( w\inv n'nm'x)  dn\\
-                                    (\text{Unfold}) \;\;\; &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn.\\
         \end{aligned}
     \end{equation*}
+    Now apply lemma 2 to the above sum and we get the equality 
+    \begin{align*}
+    	&= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[N']} \sum_{n'\in N'(F)\cap (m')\inv wP(F)w\inv m' \setminus N'(F)} \lambda.\phi( w\inv m'n'nx)  dn\\
+    	&(\text{Change Var}) \;\;\; = \sum_{ w} \sum_{m'} \int_{[N']} \sum_{n'\in N'(F)\cap wP(F)w\inv\setminus N'(F) } \lambda.\phi( w\inv n'nm'x)  dn\\
+    	&(\text{Unfold}) \;\;\; = \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn.\\
+    \end{align*}
     \todo[inline]{I need to fix all the lemma labeling }
     The change of variables is \((m', n') \mapsto ((m')\inv n' m', (m')\inv n' m')\).
     Again we assume that our $x$ is sufficiently large so all the integrals converge.\todo[inline]{Maybe appologise for doing integrals naivelly lol.. clarify this.... is it even the x that I need to worry about here?}
@@ -102,12 +105,13 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     Continuing the computation of the constant term above, we will focus purely on the inner integral now
     \begin{equation*}
         \begin{aligned}
-            \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn &= \int_{w\inv N'(F)w \cap P(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn \\
-            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn \\
-            (\text{Unfold + Lemma 6})  &= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( n_1 n_2 w\inv m' x)  dn_1 dn_2. \\
+            \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)}& \lambda.\phi( w\inv nm' x)  dn \\&= \int_{w\inv N'(F)w \cap P(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn \\
+            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn . \\
         \end{aligned}
     \end{equation*}
-    the first equality is the change of variables \(w\inv n w\mapsto n \) and \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv N'(\A)w \). Now look at the inner integral here more closely 
+    where the first equality is the change of variables \(w\inv n w\mapsto n \). Denote \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv N'(\A)w \). If we apply lemma 6 and unfold we get the equality
+    \[= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( n_1 n_2 w\inv m' x)  dn_1 dn_2.\]
+     Now look at the inner integral here more closely 
     \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2,\]
     applying Lemma (6) we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m n_2 w\inv m' x)\). 
     \begin{Lemma}
