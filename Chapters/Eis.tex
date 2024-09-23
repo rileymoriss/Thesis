@@ -70,4 +70,52 @@ Then it makes sense to talk about the holomorphicity of \(E(\phi)\) in this sens
 We are not really in a position to convey the true importance of these objects in the theory of automorphic forms, however we will make some comments. First some surveys are \cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}, \cite{kimEISENSTEINSERIESTHEIR}, \cite{jiangResiduesEisensteinSeries2008a}. To see the relation to the classical Eisenstein series there is \cite{garrettTransitionEisensteinSeries2016}. One thing that Eisenstein series do, as in the theory of modular forms, is that they furnish us with quasi-concrete examples. A we mentioned above \cite[IV.1.9.(b).i]{moeglinSpectralDecompositionEisenstein1995} tells us that at the holomorphic points the Eisenstein series takes an automorphic form and returns an automorphic form, thus we can use them to multiply our examples. Another reason that these functions are important is through their normalisation and constant terms, in which products of L functions appear, we discuss this more in section \ref{sec:L-functions}. This has been a fruitful method for proving theorems about L-functions as in \cite{shahidiEisensteinSeriesAutomorphic2010}\cite{pollackRANKINSELBERGMETHODUSER}\cite{arthurEisensteinSeriesTrace1979}.
 
 \section{Classical Eisenstein Series}
-\todo[color=blue]{Write down how they generalise classical things}
+The typical example of a classical Eisenstein series is that introduced by Maas in 1949 given by the sum \cite{lapidPerspectivesEisensteinSeries2022} 
+\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{m,n\in \Z, \text{ coprime }} \frac{\mathrm{Im}(z)^{s+\frac{1}{2}}}{|mz+n|^{2s+1}}, \quad z\in \mathcal{H},\;\; \mathrm{Re}(s)>\frac{1}{2},\]
+which converges absolutely. Consider the algebraic group \(\SL_2\) with the parabolic of upper triangular matrices \(P\).
+
+\begin{Lemma}
+	\[P(\Z) \backslash \SL_2(\Z) \cong \{(m,n)\in \Z^2 : m,n \text{ are co-prime}\}\]
+\end{Lemma}
+
+\begin{Lemma}
+	Recall that \(\SL_2(\Z)\) acts via Mobius transformations on the upper half plane. If \(z= x+ iy \in \mathcal{H}\), \(s\in \C\) and \(\gamma = \begin{pmatrix}
+	a & b\\ c& d \end{pmatrix}\in \SL_2(\Z)\) then we have,
+	\[\mathrm{Im}(\gamma.z)^s = \frac{y^s}{2|cz + d|^{2s}}\]
+\end{Lemma}
+
+\begin{Lemma}[\cite{garrettTransitionEisensteinSeries2016}, 3.5]
+	\[P(\Z) \backslash \SL_2(\Z) \cong P(\Q) \backslash \SL_2(\Q). \]
+\end{Lemma}\todo{Its stated for GL}
+
+Hence the classical Eisenstein series is 
+\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{m,n\in \Z, \text{ coprime }} \frac{\mathrm{Im}(z)^{s+\frac{1}{2}}}{|mz+n|^{2s+1}} = \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \mathrm{Im}(\gamma.z)^{s+\frac{1}{2}}.\]
+
+We want to realize this as the Eisenstein series associated to an automorphic form so first we must design a function on \(\SL_2(\A)\). For any place \(\nu\) of \Q we have the local Iwasawa decomposition \(\SL_2(\Q_\nu) = P(\Q_\nu) K_\nu\) where 
+\[K_\nu \defeq \begin{cases}
+	\SL_2(\Z_\nu), & \nu \text{ non-Archimedean}\\
+	SO_2(\R), & \nu \text{ Archimedean}
+\end{cases}\]
+ are the local maximal compact subgroups. We define a function on the adeles by defining it on the local pieces,
+ \[\phi_{\nu, s}\left(\begin{pmatrix}
+ 	a & b\\ & d
+ \end{pmatrix}k\right) \defeq \left| \frac{a}{d} \right|_\nu^s .\]
+ Finally we define \(\phi_s\) as the map 
+ \[(g_\nu)_{\nu} \mapsto \prod_\nu \phi_{\nu,s}(g_\nu.)\]
+ 
+ \begin{Lemma}
+ 	\(\phi_s\) is an automorphic form on \(\SL_2(\A)\).
+ \end{Lemma}
+ 
+ To this we have an Eisenstein series associate as in the adelic setting by 
+ \[E(\phi, g) \defeq \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \phi_s(\gamma g) \]
+
+\begin{Lemma}
+	Let \(g\in \SL_2(\R)\) then \(\iota(g)\) we consider as an element of \(\SL_2(\A)\) by setting all other entries to 1. 
+	\[E(\phi_s, \iota(g)) = \mathbf{E}(g.i,s)\]
+\end{Lemma}
+
+
+
+
+

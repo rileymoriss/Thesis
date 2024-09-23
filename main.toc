@@ -24,17 +24,17 @@
 \contentsline {subsection}{\numberline {4.2.2}Isotypic Components}{36}{subsection.4.2.2}%
 \contentsline {chapter}{\numberline {5}Eisenstein Series}{38}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Eisenstein Series}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Classical Eisenstein Series}{41}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Constant Terms of Eisenstein Series}{42}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Definition and Role}{42}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Constant Terms of Eisenstein Series}{43}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}In General}{43}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Constant Terms of Cuspidal Eisenstein Series}{45}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{47}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {7}L-Functions}{48}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Automorphic L-Functions}{48}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{51}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{51}{section.8.1}%
-\contentsline {section}{\numberline {8.2}The Constant Term}{52}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{54}{section.8.3}%
-\contentsline {chapter}{\numberline {A}Test}{55}{appendix.A}%
+\contentsline {section}{\numberline {5.2}Classical Eisenstein Series}{42}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Constant Terms of Eisenstein Series}{44}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Definition and Role}{44}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Constant Terms of Eisenstein Series}{45}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}In General}{45}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constant Terms of Cuspidal Eisenstein Series}{47}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{49}{subsection.6.2.3}%
+\contentsline {chapter}{\numberline {7}L-Functions}{50}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Automorphic L-Functions}{50}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{53}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{53}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Constant Term}{54}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{56}{section.8.3}%
+\contentsline {chapter}{\numberline {A}Test}{57}{appendix.A}%
