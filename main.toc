@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.1}Definition}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{6}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{7}{section*.11}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{7}{section*.10}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{9}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{11}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{12}{subsection.1.2.4}%

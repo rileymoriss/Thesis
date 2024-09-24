@@ -1,35 +1,23 @@
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ I think this is funny, can I be funny?}{i}{section*.2}%
 \contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Delete this section later perhaps: Use for reference while writing.}{2}{section*.8}%
 \contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ this is probably known by now.}{6}{section*.9}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{7}{section*.10}%
-\contentsline {todo}{\fcolorbox {black}{green}{\textcolor {green}{o}}\ Fill}{9}{section*.12}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ chapter}{10}{section*.13}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ more detail?}{10}{section*.14}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{13}{section*.15}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ What is the reference for these facts..}{14}{section*.16}%
-\contentsline {todo}{\fcolorbox {black}{green}{\textcolor {green}{o}}\ Clarify what this restricted tensor product is}{15}{section*.17}%
-\contentsline {todo}{\fcolorbox {black}{green}{\textcolor {green}{o}}\ does it? Am I trivialising a line bundle...?}{18}{section*.18}%
-\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ Fill}{19}{section*.19}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{20}{section*.20}%
-\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ fill}{20}{section*.21}%
-\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ Is this right...}{24}{section*.22}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{27}{section*.23}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Its stated for GL}{31}{section*.24}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{33}{section*.25}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{35}{section*.26}%
-\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ define the Weyl group defined here}{35}{section*.27}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ fix the lemma referencing....}{36}{section*.28}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ I need to fix all the lemma labeling }{36}{section*.29}%
-\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ Ok I need to expliain how this analysis is working. The eisenstein series is only defined bby the meromorphic continuation of this sum. So if we calculate the constant term and then meromorphiccally continue its the same I guess is the claim?}{36}{section*.30}%
-\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ need to fill in these lemmas}{37}{section*.31}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{38}{section*.32}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ }{41}{section*.33}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{44}{section*.34}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{46}{section*.35}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ my Tm differs from Chengjing}{46}{section*.36}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}{47}{section*.37}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ fill}{50}{section*.38}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference}{50}{section*.39}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference? More details?}{51}{section*.40}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ I would like to expand on this if there is time}{53}{section*.41}%
-\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Fix bibliography}{58}{section*.43}%
+\contentsline {todo}{\fcolorbox {black}{green}{\textcolor {green}{o}}\ Fill}{9}{section*.11}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ more detail?}{10}{section*.12}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ What is the reference for these facts..}{14}{section*.13}%
+\contentsline {todo}{\fcolorbox {black}{green}{\textcolor {green}{o}}\ Clarify what this restricted tensor product is}{15}{section*.14}%
+\contentsline {todo}{\fcolorbox {black}{green}{\textcolor {green}{o}}\ does it? Am I trivialising a line bundle...?}{18}{section*.15}%
+\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ Fill}{19}{section*.16}%
+\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ Is this right...}{24}{section*.17}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Its stated for GL}{31}{section*.18}%
+\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ define the Weyl group defined here}{35}{section*.19}%
+\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ Ok I need to expliain how this analysis is working. The eisenstein series is only defined bby the meromorphic continuation of this sum. So if we calculate the constant term and then meromorphiccally continue its the same I guess is the claim?}{36}{section*.20}%
+\contentsline {todo}{\fcolorbox {black}{blue}{\textcolor {blue}{o}}\ need to fill in these lemmas}{37}{section*.21}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{44}{section*.22}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ prove it}{46}{section*.23}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ my Tm differs from Chengjing}{46}{section*.24}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}{47}{section*.25}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ fill}{50}{section*.26}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference}{50}{section*.27}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ reference? More details?}{51}{section*.28}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ I would like to expand on this if there is time}{53}{section*.29}%
+\contentsline {todo}{\fcolorbox {black}{red!20}{\textcolor {red!20}{o}}\ Fix bibliography}{57}{section*.31}%
