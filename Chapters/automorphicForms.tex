@@ -1,39 +1,38 @@
-There are different definitions of the words automorphic forms floating around, here we fix a nice one and then explain how they generalize the classical modular forms.
+There are different definitions of the words automorphic forms floating around, here we fix one and then explain how they generalize the classical modular forms.
 
 The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maas form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
 
-We still do not have a good answer as to why the definition below is ``the right'' definition, from a mathematical perspective, as there are many places in which it could be extended or restricted and we are unable to motivate why one shouldn't consider such things. Indeed there are varying notions of automorphic form that appear for this reason and I think it is important to stress that this is ``the right definition'' only in so far as people have been able to prove nice theorems about them, and that when functions appear ``in nature'' this concept has sufficed to encompass and explain their behavior. It is the representation theoretic properties more than anything that suggest the current definition as is mentioned in \cite[1.II.3]{borelAutomorphicFormsRepresentations1979}.
-
 We will present two notions of automorphic form here. In the literature they are both called ``automorphic forms'' however here we will distinguish those that are defined only on the Archimedean points as ``Archimedean automorphic forms'' for clarity.
+
+The first natural question is if there is a special case of automorphic forms which yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}. We explain modular forms as Archimedean automorphic forms as we think it is where the connection is clearest. We will give an example of modular forms as adelic automorphic forms when we come to the Eisenstein series in section \todo{}.
 
 
 
 
 \section{Archimedean Automorphic Form}
-Fix a number field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\) denote the set of Archimedean places. Then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textbf{smooth}  if it is smooth in the sense of manifolds.
+Fix a number field \(F\) and a classical group \(G\) defined over \(F\). Let \(\infty\) denote the set of Archimedean places. We denote \(\A_\infty = F_\infty \defeq \prod_{\nu\in\infty} F_\nu\) and note that \(G(F_\infty) \cong \prod_{\nu\in\infty}G(F_\nu)\). Consider \(\nu\in \infty\) one such Archimedean place, then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textbf{smooth}  if it is smooth in the sense of manifolds. The collection of such smooth functions on \(G(F_\infty)\) will be denoted \(C^\infty(G(F_\infty))\).
 \todo[color=orange]{What is the reference for these facts..}
 
     Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\)-module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textbf{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
 
-	Let \(K_\infty\leq G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\)-module is \(K_\infty\) \textbf{finite} if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\)-modules).
+	Let \(K_\infty\subseteq  G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\)-module is \(K_\infty\) \textbf{finite} if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\)-modules).
 
-	To define automorphic forms we look at the representation \(C^\infty(F_\infty)\) with the right regular action, i.e. \(g.f(x) = f(xg)\).  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
+	To define automorphic forms we look at the representation \(C^\infty(G(F_\infty))\) with the right regular action of \(K_\infty\), i.e. \(g.f(x) = f(xg)\).  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
 	\[z.F(g) = \Dif{}{t}F(ge^{tz})|_{t=0}.\] 
 	
-	Finally we want a growth condition. Fix an embedding \(\i : G\to GL_n\) which gives another embedding \(G\to SL_{2n}\) via
-	\[g\mapsto \begin{pmatrix}
-		\i (g) & \\
-		& (\i (g))^{-t}
+	Finally we want a growth condition. Fix an embedding \(\iota : G\to GL_n\) which gives another embedding \(G\to SL_{2n}\) via
+	\[\iota': g\mapsto \begin{pmatrix}
+		\iota (g) & \\
+		& (\iota (g))^{-t}
 	\end{pmatrix}.\]
-	A function \(\phi : G(F_\infty) = G(\prod_{v\in\infty} F_\nu)\cong \prod_{v\in \infty}G(F_\nu) \to \C \) is of \textbf{moderate growth} if there are constants \((c,r)\in \R_{>0}\times \R\) such that 
-	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v\in\infty} \sup_{1\leq i, j\leq 2n} |\i (g)_{i,j, \nu}|_\nu\right)^r.\]
+	We have denoted the inverse of the transpose \(-t\). A function \(\phi : G(F_\infty) \to \C \) is of \textbf{moderate growth} if there are constants \((c,r)\in \R_{>0}\times \R\) such that 
+	\[|\phi(g)| \leq c\norm{g}^r = c \left(\prod_{v\in\infty} \sup_{1\leq i, j\leq 2n} |\iota' (g)_{i,j, \nu}|_\nu\right)^r.\]
 	This is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
 
 	\begin{remark}
-		One can define \textbf{norms} on \(G(\A)\) to be functions of the form 
-		\[g\mapsto \big(\mathrm{tr }\; \sigma(g)^*\sigma(g)\big)^{\frac{1}{2}}\]
-		where \(\sigma\) is a finite dimensional complex representation on some Hilbert space with a \(K_\infty\) invariant inner product and \(\ast\) is the adjoint matrix with respect to this Hilbert space structure. 
+		One can define norms on \(G(\A)\) via the linearisation of such groups, i.e. via their representations. Concretely if \(\sigma\) is a finite dimensional complex representation on some Hilbert space with a \(K_\infty\) invariant inner product and \(\ast\) is the adjoint matrix with respect to this Hilbert space structure then a \textbf{norm} on \(G(\A)\) is a function of the form
+		\[g\mapsto \big(\mathrm{tr }\; \sigma(g)^*\sigma(g)\big)^{\frac{1}{2}}.\]
 		This moderate growth condition is then equivalent to some norm \(\norm{ - }\) existing on \(G(F_\infty)\) such that 
 		\[|\phi(x)| \leq C\norm{x}^n,\]
 		for some \(C>0, n\in \N\) and all \(x\in G(F_\infty)\). This is also equivalent to all such norms satisfying this condition \cite[1.2]{borelAutomorphicFormsRepresentations1979}.
@@ -47,15 +46,16 @@ Fix a number field \(F\). Let \(\nu\) be an Archimedean place and let \(\infty\)
 
 
 \section{Adelic Automorphic Form}
-Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Let \(G\) be a reductive group over \(F\), we fix a Borel \(B\) and a standard parabolic \(P \) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) that is in good position (\ref{max_compact_subgroup}).
+Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Fix a Borel \(B\subseteq G\) and a standard parabolic \(B\subseteq P \subseteq G\) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) that is in good position as in section \ref{max_compact_subgroup}.
 
-For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant in the induced topology on \(G(F_\nu)\), the details of this topology are spelled out in \cite{conradWeilGrothendieckApproaches2012}. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\). This suggests the definition of smooth functions on the ``finite adeles'' \(\A_f\) as 
+For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant on \(G(F_\nu)\), in the Hausdorff topology. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\). This suggests the definition of smooth functions on the ``finite adeles'' \(\A_f\) as 
+\todo[inline, color=green]{Clarify what this restricted tensor product is}
 	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)). \]
 	Thus for the full adeles we have the notion of smooth as an element of the following,
 	\[C^\infty(\mathbb{A}_F) \defeq   C^\infty(G(\mathbb{A}_f))   \otimes   C^\infty(G(F_\infty)).\]
-	Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, which is isomorphic to \C. Thus we can conflate a smooth function with its composition along this isomorphism, and think of them as functions into \C.
+	Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, this is \textit{canonically} isomorphic to \C, thus we can conflate a smooth function with its composition along this isomorphism and think of them as functions into \C.
 
-	We still consider \(Z(\mathfrak{g})\) to be the center of the universal enveloping algebra of the Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
+	We still consider \(Z(\mathfrak{g})\) to be the center of the universal enveloping algebra of the complexified Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
     \[z.(f\tensor g) = f\tensor (z.g),\]
     i.e. it acts on the archimedean places as in the setting of Archimedean automorphic forms. 
 	
@@ -72,32 +72,28 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 \begin{remark}
     It is important that \(M(F)\) is treated as a subgroup of \(M(\A)\) via the diagonal embedding.
 \end{remark}
+\begin{remark}
+	What we have called automorphic forms are sometimes referred to as ``smooth K-finite automorphic forms'' \cite[2.2]{cogdellLecturesLfunctionsConverse}.
+\end{remark}
 	
     
 
-\section{Modular Forms}
-One might ask if there is a special case in which automorphic forms yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}, but so essential to intuiting automorphic forms that we feel it is necessary to present the details here. To be clear we explain modular forms as Archimedean automorphic forms as we think it is where the connection is clearest. 
+\section{Modular Forms} 
 
-	Recall the definition of a modular form 
-	\begin{Definition}[\cite{diamondFirstCourseModular2005} 1.1.2]
-		A function
+	Recall the definition of a \textbf{modular form of weight k} (of full level and trivial character) \cite[1.1.2]{diamondFirstCourseModular2005} as a function
 		\[\phi: \mathcal{H} \to \C,\]
 		where \(\mathcal{H}\) is the upper half plane in \C, that is holomorphic, satisfies 
 		\[\phi(\gamma.z) = (cz+d)^k\phi(z), \quad \gamma = \begin{pmatrix}
 			a &b \\
 			c &d
 		\end{pmatrix}\in \SL_2(\Z),\]
-		and extends holomorphically to \(\infty\) is called a modular form of weight k.
-	\end{Definition}
-	These are modular forms with trivial character and full level.
+		and extends holomorphically to \(\infty\).
 
-	Now give a function on a set \(X\) and an action of a group \(G\) on X, there is a general way of associating to \(\Hom(X, Y)\) a family of maps \(\Hom(G, Y)\) indexed by \(X\). This is a manifestation of the tensor-hom adjunction. Effectively if \(f: X\to Y\) the we get a map for each \(x\in X\) defined on \(f_x : G \to Y\) given by \(g\mapsto f(g.x)\).
-
-	So for our purposes we are trying to take some subset of functions \(\mathcal{H} \to \C\) and shift their domain to the \(\Q_\infty = \R\) points of some reductive group. In particular it would be sufficient to find a reductive group with a well defined action on the upper half plane and in particular we would want the action to be transitive.
+	We want to think of the upper half plane as a quotient of the \(\Q_\infty = \R\) points of some reductive group. If we have a transitive action of some reductive group then by the orbit stabiliser theorem we would have a bijection of sets.
 
 	\begin{Theorem}
 		\[\mathcal{H} \cong  \SL_2(\R) / SO_2(\R) ,\]
-		as topological spaces.
+		as sets.
 	\end{Theorem}
 	\proofbar{
 		Consider the action 
@@ -138,15 +134,13 @@ One might ask if there is a special case in which automorphic forms yield modula
 		One then has to check that this is all continuous. 
 	}
     \begin{remark}
-        Sometimes for to make the action of certian (Hecke) operators more apparent this is exhibited as 
+    	This can be beefed up to an isomorphism of complex analytic spaces. 
+        Sometimes to make the action of certain (Hecke) operators more apparent this is exhibited as 
         \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R).\]
         This obscures the connection with the reductive group setting however so we avoid it here. 
     \end{remark}
 
-
-	
-	
-	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upper half plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\). Indeed if we were to push our modular forms along this isomorphism it would, with the construction that we outlined earlier in terms of a group action on a set, exhibit this invariance. This is merely \textit{evidence} that if we were to change our modular forms to functions on the reductive group \(\SL_2\) they may preserve \textit{some} of that invariance and indeed be K-finite.
+	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upper half plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\).
     
 		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGJlZ2lue3BtYXRyaXh9eV57MS8yfSAmIHggeV57LTEvMn1cXFxcICYgeV57LTEvMn1cXGVuZHtwbWF0cml4fVNPXzIoXFxSKT1cXFNsXzIoXFxSKSJdLFsyLDAsIlxcU2xfMihcXFIpL1NPXzIoXFxSKSJdLFsyLDIsIlxcU2xfMihcXFopXFxzZXRtaW51c1xcU2xfMihcXFIpIl0sWzQsMCwiXFxtYXRoY2Fse0h9Il0sWzEsMywiXFxzaW0iXSxbMCwxLCJwcm9qIl0sWzEsMywieFxcbWFwc3RvIHguaSIsMl0sWzAsMiwiXFx0ZXh0e2Rlc2NlbmQ/Pz99IiwyXV0=
 		
@@ -162,9 +156,11 @@ One might ask if there is a special case in which automorphic forms yield modula
 		\arrow["{\text{project}}"', from=1-1, to=3-3]
 	\end{tikzcd}\]
 	
-		\vspace{6mm}
+		\vspace{12mm}
 		
-    Using something like the universal property of the quotient we can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc.Thus for \(f\) a modular form of weight k the following function on \(\SL_2(\R)\)
+   	We can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) by composing with the projection, however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc. 
+   	\todo[inline,color=green]{does it? Am I trivialising a line bundle...?}
+   	Thus for \(f\) a modular form of weight k the following function on \(\SL_2(\R)\)
 	\[F(g) \defeq  (ci + d)^{-k}f(g.i),\]
 	we claim is an automorphic form for \(\SL_2(\Z)\). We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition. It remains to show the three other properties:
 
@@ -179,6 +175,7 @@ One might ask if there is a special case in which automorphic forms yield modula
 		hence we require to show
 		\[ \mathrm{Im}(g.i)^{k/2}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r.\]
 		\textcolor{red}{Somehow invoke polynomial growth...?}
+		\todo[inline,color=blue]{Fill}
         but the modularity condition has the growth condition that \(\lim_{x\to \infty}f(xi)\) be bounded. 
 	}
 
@@ -214,8 +211,8 @@ One might ask if there is a special case in which automorphic forms yield modula
 		Therefore the dimension of \(Z(\mathfrak{g})F\) is simply one.
 	}
     This example makes it clear that the two finiteness conditions for automorphic forms are in some sense functional equations that they must satisfy. 
-	There is a nice explanation of how to lift this to the adelic setting in several places, however it is stated quite clearly in \cite[2.1]{cogdellLecturesLfunctionsConverse}.
+	There is a nice explanation of how to lift this to the adelic setting in several places, the key is the isomorphism 
+	\[\SL_2(\R) \cong Z(\A)\GL_2(\Q) \backslash \GL_2(\A).\]
+	The details are quite clear in \cite[2.1]{cogdellLecturesLfunctionsConverse} or \cite{booherVIEWINGMODULARFORMS}. We will revisit this perspective through the example of the Eisenstein series in section \todo{}.
 	
-	Finally we comment that because 
-	\[\SL_2(\R) \cong Z(\A)\GL_2(\Q) \backslash \GL_2(\A),\]
-	we can perform a very similar construction to lift these functions to adelic automorphic forms, details are in \cite{booherVIEWINGMODULARFORMS}.
+	\todo[inline, color=blue]{fill}

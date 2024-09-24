@@ -54,17 +54,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{tocdepth}{1}%%%%% Stops subsections in TOC
 
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{proposition}[theorem]{Proposition}
-\numberwithin{equation}{section}
-\theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-%\newtheorem{example}[theorem]{Example}
-\newtheorem{problem}[theorem]{Problem}
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
 \numberwithin{equation}{section}
 \renewcommand{\baselinestretch}{1.25}
 \geometry{
@@ -112,8 +101,7 @@
 \pagebreak
 \end{comment}
 
-
-    \pagenumbering{roman}
+\pagenumbering{roman}
 
 \chapter*{Acknowledgements}
 \input{Chapters/acknowledgements}
@@ -138,14 +126,14 @@
 \input{Chapters/classicalGroups}
 \chapter{Automorphic Forms}
 \input{Chapters/automorphicForms}
-\chapter{Siegel Phi Function}
-\input{Chapters/siegelPhi}
 \chapter{Automorphic Representations}
 \input{Chapters/automorphicReps}
 \chapter{Eisenstein Series}
 \input{Chapters/Eis}
 \chapter{Constant Terms of Eisenstein Series}
 \input{Chapters/constantTerms}
+\chapter{Siegel Phi Function}
+\input{Chapters/siegelPhi}
 \chapter{L-Functions}
 \input{Chapters/Lfunctions}
 \chapter{Poles of Residual Eisenstein Series}
@@ -157,7 +145,7 @@
 
 
 \listoftodos
-\todo[inline]{Disambiguate all teh L2 automorphic form stuff. What isi teh action of the Lie algebra then....?}
+\todo[inline]{Fix bibliography}
 
 
 \newpage

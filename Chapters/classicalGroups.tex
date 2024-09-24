@@ -1,4 +1,7 @@
-We will recall a small amount of the theory of linear algebraic groups to fix conventions, for a more detailed treatment one should consult the litany of sources on this matter: For a full treatment see \cite{milneAlgebraicGroupsTheory2017}\cite{milneLieAlgebrasAlgebraic}\cite{milneBasicTheoryAffine}\cite{springerLinearAlgebraicGroups1998}. Excellent example computations can also be found in \cite{BuildingsClassicalGroups}\cite{makisumiStructureTheoryReductive}\cite{malleLinearAlgebraicGroups}\cite{NotesClassAlgebraic}. Or for a brief brush up on the main facts consult \cite[I.I.1]{borelAutomorphicFormsRepresentations1979}. The purpose of this section is to treat the classical groups and more specifically \(\Sp_{2n}\) as an example and work out some of the details of the general theory, in order to ``get our hands dirty'' and have some familiarity with this object, to become fundamental in what follows. Because this theory is made up of simple ideas that can often be obscured by the generality we will make several restrictive assumptions for ease of exposition. 
+We will recall a small amount of the theory of linear algebraic groups to fix conventions, for a more detailed treatment one should consult the litany of sources on this matter: For a full treatment see \cite{milneAlgebraicGroupsTheory2017}\cite{milneLieAlgebrasAlgebraic}\cite{milneBasicTheoryAffine}\cite{springerLinearAlgebraicGroups1998}. Excellent example computations can also be found in \cite{BuildingsClassicalGroups}\cite{makisumiStructureTheoryReductive}\cite{malleLinearAlgebraicGroups}\cite{NotesClassAlgebraic}. Or for a brief brush up on the main facts consult \cite[I.I.1]{borelAutomorphicFormsRepresentations1979}. 
+
+The purpose of this section is to define the key examples and properties of algebraic groups. We also define the most important subgroups, attempting to emphasize the role they play in the theory. 
+Throughout we will restrict to the case of the few classical groups that we define explicitly, however the theory of course works much more generally. 
 
 \section{Definition}
 An \textbf{algebraic group} is for us a group scheme that is reduced, of finite type and defined over a field. \textbf{A linear algebraic group} (LAG) is simply an affine algebraic group.
@@ -10,14 +13,14 @@ An \textbf{algebraic group} is for us a group scheme that is reduced, of finite 
     The forward implication is \cite[2.3.7(i)]{springerLinearAlgebraicGroups1998}. The converse is the basic fact that closed sub-schemes of affine schemes are affine \cite[II.5.T3]{mumfordRedBookVarieties1999}.
 }
 
-As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix groups defined by polynomials, which happen to be the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the technology of algebraic geometry. In particular one must be adept at moving between the following equivalences:
+The idea of LAG's is that they are matrix groups defined by polynomial equations, which are the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the technology of algebraic geometry and in particular one must be adept at moving between the following equivalences:
 \begin{Theorem}[\cite{milneBasicTheoryAffine}, II.6, III.4]
-    For \(F\) a field then the following categories are equivalent
+    For a field \(K\), then the following categories are equivalent:
     \begin{itemize}
-        \item Group objects in \(\mathrm{Alg}_F^{op}\)
-        \item Representable (in the category of groups) functors \(\mathrm{Alg}_F \to \mathrm{Group}\)
-        \item Group object in the category of affine schemes over \(F\)
-        \item Commutative \(F\)-Hopf algebras.
+        \item Group objects in \(\mathrm{Alg}_K^{op}\)
+        \item Representable (in the category of groups) functors \(\mathrm{Alg}_K \to \mathrm{Group}\)
+        \item Group object in the category of affine schemes over \(K\)
+        \item Commutative \(K\)-Hopf algebras.
     \end{itemize}
 \end{Theorem}
 
@@ -25,50 +28,43 @@ As Milne points out in \cite{milneAlgebraicGroupsTheory2017} these are matrix gr
     The first example is the ``multiplicative group'' denoted \(\mathbb{G}_m\) or \(\GL_1\) defined over the field \(K\). This is 
     \[\mathbb{G}_m \defeq \Spec\Bigl( K[x,y]/(xy - 1)\Bigr).\]
 
-    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) that allows us to induce a group structure. 
+    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) between \(\mathbb{G}_m(R) \cong R^\times\), from which we pull back a group structure.
 \end{example}
 
-The other important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional F-vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
+The other important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional K-vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}.\]
 Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form, will define our classical groups. 
 
-If the form is trivial, by which we mean, \(\forall x,y \;\; \inner{x, y} = 0\) then we define 
+If the form is trivial, by which we mean, \(\forall x,y \;\; \inner{x, y} = 0\) then we define the \textbf{general linear group},
 \[\GL(V) \defeq \Aut(V, \inner{,}) = \Aut(V).\]
-If the form is non-degenerate and symmetric \(\forall x,y \;\; \inner{x, y} = \inner{y,x}\) then we define
+If the form is non-degenerate and symmetric \(\forall x,y \;\; \inner{x, y} = \inner{y,x}\) then we define the \textbf{orthogonal group},
 \[\mathrm{O}(V) \defeq \Aut(V, \inner{,}).\]
-Finally if the form is non-degenerate and skew symmetric \(\forall x,y \;\; \inner{x, y} = -\inner{y,x}\) then 
+Finally if the form is non-degenerate and skew symmetric \(\forall x,y \;\; \inner{x, y} = -\inner{y,x}\) then the \textbf{symplectic group} is,
 \[\Sp(V) \defeq \Aut(V, \inner{,}).\]
-There are the further classical groups given by the determinant one subgroups, \(\SL(V), \mathrm{SO}(V)\) respectively (\(\Sp(V)\) one can show already implies that the determinant is one). We can make this into a functor from \(F\)-algebras to groups, by sending an \(F\)-algebra \(R\) to \(G(V)\tensor_F R\). Thus these define LAG's. 
+There are the further classical groups given by the determinant one subgroups, \(\SL(V)\) and \(\mathrm{SO}(V)\) respectively. The naming of \(\Sp(V)\) is somewhat serendipitous as one can show that it is contained in \(\SL(V)\). We can make this into a functor from \(K\)-algebras to groups, by sending a \(K\)-algebra \(R\) to \(G(V)\tensor_K R\). Thus these define LAG's. 
 
 \begin{remark}
-    Often the unitary groups are considered classical, as is the case in \cite{jiangResiduesEisensteinSeries2008}.
+    Often the unitary groups are considered classical, as is the case in \cite{jiangPolesCertainResidual2013}.
 \end{remark}
 
 \section{Subgroups}
-From now on let \(G\) be a (split reductive) LAG defined over a number field \(F\).
-\begin{remark}[For the experts]
-    We restrict to split reductive LAG in what follows. This is justified by the fact that the classical groups are all split reductive over number fields.  
+From now on let \(G\) be a one of the classical LAG defined above, defined over a number field \(F\) with adele ring \(\A\).
+\begin{remark}
+	Most everything we say will apply verbatim to so called split reductive groups, however we lose little in restricting to the classical groups.
 \end{remark}
 
-Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups. The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we need to understand all the pieces of the so called \textbf{Langlands-Iwasawa decomposition},
+Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups. The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we need to understand all the pieces of the so called \textbf{Langlands-Iwasawa decomposition} \cite[2.7]{getzIntroductionAutomorphicRepresentations2024},
 \begin{equation}\label{eq:iwasawa_decomposition}
     G(\A) = M(\A)U(\A) K = T(\A)U(\A)K.
 \end{equation}
 
 \subsection{Parabolics, Levis and Unipotents}
-Parabolic subgroups have two equivalent formulations, both useful.
-\begin{definition}
-    A subgroup \(P\subseteq G\) is called \textbf{parabolic} if \(G/P\) is a complete variety. Equivalently we can ask for \(P\) to contain a Borel (see \ref{borel_torus}).
-\end{definition}
+A subgroup \(P\subseteq G\) is called \textbf{parabolic} if \(G/P\) is a complete variety. Equivalently we can ask for \(P\) to contain a Borel (see section \ref{borel_torus}).
 
-Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms of Eisenstein series which we will discuss in the later section \ref{constant_terms}.
+Completeness is the algebro-geometric analogue of compact, which is always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms of Eisenstein series which we will discuss in the later chapter \ref{constant_terms}.
 
-Parabolics also have the nice property that they split into a semi-direct product 
-where one of the factors is a reductive group \(M\). For this recall the definition
-\begin{definition}\label{unipotent_radical_definition}
-    A matrix \(m\) is \textbf{unipotent} if for some \(n\geq 0\) we have that \((m-1)^n = 0\). A subgroup is \textbf{unipotent} if all its elements are unipotent. The \textbf{unipotent radical} of \(G\)is the maximal closed, connected, unipotent subgroup. A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial.
-\end{definition}
-Then we have the following fact / definition:
+\label{unipotent_radical_definition}
+A matrix \(m\) is \textbf{unipotent} if for some \(n\geq 0\) we have that \((m-1)^n = 0\). A subgroup is \textbf{unipotent} if all its elements are unipotent. The \textbf{unipotent radical} of \(G\) is the maximal closed, connected, unipotent subgroup. A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial. Then we have the following fact and definition,
 
 \begin{Lemma}[\cite{borelLinearAlgebraicGroups1991} 11.22]
     There is a split exact sequence (of algebraic groups)
@@ -76,16 +72,16 @@ Then we have the following fact / definition:
     where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} (unique up to conjugacy).
 \end{Lemma}
 
-Thus doing things on a parabolic allows us to induce said actions up to the whole group, whist maintaining the nice property of being reductive. This is the technique of ``parabolic induction'' \cite[Thm. 10]{bernsteinREPRESENTATIONSPADICGROUPS1992} that we wont explicitly talk about here but which is happening secretly in the background in \ref{automorphic_isotypic_subspaces}.
+Thus parabolics and their Levis allows us to induce from a reductive subgroup up to the reductive group. This is the technique of ``parabolic induction'' \cite[Thm. 10]{bernsteinREPRESENTATIONSPADICGROUPS1992} that we wont explicitly talk about here but which is happening secretly in the background in section \ref{automorphic_isotypic_subspaces}.
 
 \begin{Remark}[Bad Etymology]
-    The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo[inline]{this is probably known by now.} He says that 
+    The origin of the name parabolic is a mystery. Borel in his history \cite[VI.\S 2]{EssaysHistoryLie} attributes it to R. Godement in \cite{godementGroupesLineairesAlgebriques}. Godement conjectures that the quotient \(G(\A) / G(\Q)\) is compact if and only if every element of \(G(\Q)\) is semi-simple, as is the case in classical groups. \todo{this is probably known by now.} He says that 
     \begin{quote}
         Lorsque n'est pas compact, il est non moins facile de conjecturer qu’on doit pouvoir définir quelque chose d’analogue aux classiques ``pointes paraboliques'', lesquelles doivent correspondre à des  sous-groupes unipotents non triviaux de \(G_\Q\)
     \end{quote}
     which roughly (google) translates to that one can also conjecture that non-trivial unipotent elements should correspond to ``parabolic points'' in a fundamental domain.
 
-    In the case of modular forms the fundamental domain is \(\mathcal{H} = \SL_2(\R)/SO_2(\R)\) (using orbit stabiliser theorem). We have the classification of elements of  \(\SL_2(\R) -\{\pm 1\}\) as in \cite[3.5]{borelAutomorphicFormsSL21997} via their trace
+    In the case of modular forms the fundamental domain is \(\mathcal{H} = \SL_2(\R)/SO_2(\R)\) (for the details see section\todo{}). We have the classification of elements of  \(\SL_2(\R) -\{\pm 1\}\) as in \cite[3.5]{borelAutomorphicFormsSL21997} via their trace
     \[g\text{ is of type } \;\;\; 
     \begin{cases}
         \text{Elliptic if} & \frac{1}{2}|tr(g)| < 1 \\
@@ -93,7 +89,7 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
         \text{Hyperbolic if} & \frac{1}{2}|tr(g)| > 1 \\
     \end{cases}
     .\]
-    Being parabolic is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
+    This classification, it seems, relies entirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity. Being parabolic is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
     \[\begin{pmatrix}
         1 & 1\\
         0 & 1
@@ -106,7 +102,7 @@ Thus doing things on a parabolic allows us to induce said actions up to the whol
         a & b \\
          & a\inv
     \end{pmatrix} \subseteq \SL_2(\R),\]
-    contains these matrices, and moreover all parabolics are \textit{conjugate} to this parabolic. Hence all parabolic elements are contained in a parabolic subgroup. This classification, it seems, relies entirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity.
+    contains these matrices, and moreover all parabolics are \textit{conjugate} to this parabolic. Hence all parabolic elements are contained in a parabolic subgroup. 
 
     To connect this to Godement's concept we have two facts from classical geometry. Proper parabolic subgroups of \(\SL_2(\R)\) can be realised as the stabilisers of lines in \(\R^2\) under the standard action of \(\SL_2\) on \(\R^2\) \cite[2.6]{borelAutomorphicFormsSL21997} and moreover some an element of \(\SL_2(\R)\) is parabolic if and only if it has one fixed point on \(\partial\bar{\mathcal{H}}\) and none on \(\mathcal{H}\) \cite[3.5]{borelAutomorphicFormsSL21997}. 
 
@@ -137,6 +133,7 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
         \end{pmatrix}.\]
     \end{example}
 
+\vspace{5mm}
     \label{maximal_parabolic}
     In particular maximal parabolics of \(\Sp\) are stabilizers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces,
     \[0 \subset V_\ell \subset V,\]
@@ -172,6 +169,7 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
         &&*&1
     \end{pmatrix},\]
     with relations among the entries.
+    \todo[inline, color=green]{Fill}
 
     \subsection{Borel and Torus}\label{borel_torus}    
     A \textbf{split torus} is an algebraic group that is isomorphic to \(\GL_1^b\) for some \(b\in\N\).
@@ -196,15 +194,17 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     \end{example}
     
     \begin{remark}
-        These tori also play the same role in the classification of reductive LAG as the real Lie groups called tori play in the classification of Lie groups \cite{hallLieGroupsLie2015}.
+        These tori also play the same role in the classification of reductive LAG as the real Lie groups called tori play in the classification of Lie groups \cite{hallLieGroupsLie2015}.\todo{chapter}
     \end{remark}
     
-    A subgroup that is isomorphic to a split torus and is maximal in this respect is called a maximal split torus. 
+    A subgroup that is isomorphic to a split torus and is maximal in this respect is called a \textbf{maximal split torus}. 
      \begin{example}
         The classic example of a maximal split torus is the group of diagonal matrices in \(\GL_n\).
-     \end{example}
+     \end{example}\todo{more detail?}
 
-    A \textbf{Borel} is a maximal closed solvable connected subgroup of \(G\).
+    A \textbf{Borel} is a maximal, closed, solvable and connected subgroup of \(G\). A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
+    \[B = TU,\]
+    for a maximal torus \(T\) and unipotent \(U\).
 
     \begin{example}
         The standard Borel of \(\GL_n\) is the group of upper triangular matrices. If \(n\) is even and one intersects this Borel with \(\Sp_{2(\frac{1}{2}n)}\) then we get the standard Borel of \(\Sp_{2(\frac{1}{2}n)}\).
@@ -233,22 +233,28 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
         Commutate two arbitrary elements again shows that  
         \[[[B, B], [B, B]] = 1.\]
     It is clear that this is a closed subgroup because it is itself a linear algebraic group, moreover for LAG's we have the algebraic criterion of connectedness given by having the only idempotents in the representing algebra being \(0, 1\) \cite[1.5]{getzIntroductionAutomorphicRepresentations2024}. Because \(B = \Spec \Z[x_{i,j}: 1\leq i,j\leq 2][y] / (\det(x_{ij})y - 1, x_{2,1})\) it is clear that this group is connected.     
-    Finally it is clear that if a subgroup strictly contains this one then it is in fact all of \(\GL_2\) and hence this is maximal. Therefore this is a Borel.
+    Finally it is clear that if a subgroup strictly contains the group of upper triangular matrices then it is in fact all of \(\GL_2\) and hence this is maximal. Therefore this is a Borel.
     \end{example}
-        
-    A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
-    \[B = TU,\]
-    for a maximal torus \(T\) and unipotent \(U\).
 
-    If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, the unique Levi of a standard parabolic containing this Borel is called the \textbf{standard Levi}.
+    If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, there is a unique Levi of a standard parabolic containing this Borel called the \textbf{standard Levi}.
+    
+    \subsection{The Topology on Points}
+	Let F be a number field and \(G = \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) be an LAG over F. As a locally ringed space this scheme has the Zariski topology, in the theory of automorphic forms however we wish to topologise the local and adelic points in a way which accommodates analysis. In particular the topology should be locally compact and Hausdorff so that we have Haar measures on the groups. 
+	
+	Following \cite{conradWeilGrothendieckApproaches2012} then we think of \(G(\A)\) as the subset of \(\A^n\) on which the functions \(f_i: \A^n \to \A\) all vanish. We give it the subspace topology which inherits the local compact and Hausdorff properties from \(\A^n\). If \(\nu\) is a place of \(F\) then we have the same definition, \(G(F_\nu)\) is the subspace of \(F_\nu^n\) on which \(f_i:F_\nu^n \to F_\nu\) all vanish and it is endowed with the subspace topology.
+	These topologies are refered to as the \textbf{Hausdorff topology}.
+	
+	\begin{remark}
+		When \(F_\nu = \C\) then the Hausdorff topology on \(G(\C)\) agrees with the topology of the analytification of \(G\), often denoted \(G^{\mathrm{an}}\).
+	\end{remark}
 
     \subsection{Maximal Compact Subgroups}\label{max_compact_subgroup}
-    We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\), note that the topology is not the Zariski topology but the one specified in \cite{conradWeilGrothendieckApproaches2012}, this is sometimes known as the ``Hausdorff'' topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many nice properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
+    We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\) of the Hausdorff topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many convenient properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
     \begin{itemize}
         \item First require that 
         \[K = \prod_\nu K_\nu,\]
         where the product is over all places of \(F\) and \(K_\nu\subseteq F_\nu\) is maximal compact.
-        \item For almost all places \(\nu\), \(G(\mathcal{O}_{F_\nu})\) is defined and is maximal compact in \(G(F_\nu)\) hence we can require \(K_\nu = G(\mathcal{O}_{F_\nu})\) at these places. 
+        \item If \(\mathcal{O})\nu\) is the ring of integers of \(F_\nu\), then for almost all places, \(G(\mathcal{O}_{\nu})\) is defined and is maximal compact in \(G(F_\nu)\) hence we can require \(K_\nu = G(\mathcal{O}_{\nu})\) at these places. 
         \item We require 
         \[G(\A) = B(\A)K.\]
         \item For every standard parabolic \(P = MU\) we have that 

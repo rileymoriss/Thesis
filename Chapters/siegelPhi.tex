@@ -1,6 +1,14 @@
+In the last chapter we saw some general computations around constant terms of automorphic forms. This chapter we continue with more computations, however we attempt to relate the constant term to the classical setting. This should be understood as a continuation of the example of modular forms as archimedean automorphic forms, as here we investigate the constant term in this setting in order to gain similar intuition. Specifically we will relate the constant term to the Fourier series constant term and the Siegel Phi operator. 
+
+We thank Chengjing Zhang for showing us this example, and present it here in detail because we cannot find it in the literature.
 
 
-\section{Integration Lemmas}
+
+\section{Constant Terms}
+Let \(G\) be a classical group over a number field \(\Q\). For an archimedean automorphic form \(f: G(\R) \to \C\) its \textbf{constant term } along a parabolic of G, \(P=MN\subseteq G\), is defined to be \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
+\[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
+To effectively compute constant terms we will routinely use the following two lemmas.
+
 \begin{Theorem}\label{integrate_unitary_char}
 	If \(G\) is a locally compact Hausdorff group with a left Haar measure \(\mu\) and if \(\chi\colon G\to \mathbf C^\times\) is a non-trivial character on \(G\), then
 	\[ \intof{G}{\chi(g)}{\mu(g)} = 0. \]
@@ -12,54 +20,46 @@
 }
 Integrating trivial characters gives the volume of the measure space which we typically normalise to be one.
 
-\begin{Theorem}[\cite{garrettModernAnalysisAutomorphic} 5.2, \cite{follandCourseAbstractHarmonic2016} Thm 2.49]
+\begin{Theorem}[Unfolding, \cite{garrettModernAnalysisAutomorphic} 5.2, \cite{follandCourseAbstractHarmonic2016} Thm 2.49]
 	Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H) then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
-	\[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg\]
+	\[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg.\]
 \end{Theorem}
-Note that this quotient may not be a group, because H is not required to be normal.
+Note that this quotient may not be a group, because H is not required to be normal. The use of this lemma is called \textbf{unfolding} the integral.
 
-
-\section{Siegel Phi Operator}
-Here we give an example of the constant term which connects it to the classical picture. We thank Chengjing Zhang for showing us this example, and present it here because we cannot find it in the literature. We deal only with the classical Siegel modular forms of full level and moreover are less explicit with the steps as they should be clear after exposure to the previous arguments. 
-
-Because we are trying to connect this to the classical picture it is most convenient to think of things in the Archimedean places, recall the way that modular forms are automorphic forms most naturally in the archimedian sense (\cite[6.2]{getzIntroductionAutomorphicRepresentations2024}) \cite{emertonCLASSICALMODULARFORMS}\cite{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}. So for this section alone, by automorphic form we will mean automorphic forms on the Archimedean places, and the constant term will be taken only on the Archimedean part: i.e. for \(f: G(\R) \to \C\) and automorphic its constant term along a parabolic of G, call it \(P=MN\), is \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
-\[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
-
-
-\subsection{Siegel Modular Forms}
-We collect some definitions from \cite{bruinier123ModularForms2008} to fix notation. Let the Siegal upper half plane be defined as 
+\section{Siegel Modular Forms}
+Following \cite{bruinier123ModularForms2008}. Recall the \textbf{Siegal upper half plane} of ``genus" \(g\in \N\) is
 \begin{equation*}
 	\begin{aligned}
 		\mathcal{H}_g &\defeq \{\tau \in \mathrm{M}_{g\times g}(\C) : \tau \text{ is symmetric and has positive definite imaginary part}\} \\
-		& \cong \Sp_{2g}(\R) / U(g)
+		&\;\; \cong \Sp_{2g}(\R) / U(g).
 	\end{aligned}
 \end{equation*}
 where the isomorphism is as analytic manifolds  and 
 \[U(g) \defeq \left\{\begin{pmatrix}
 	A & B\\
 	-B & D
-\end{pmatrix}\in \Sp_{2g}(\R) : AA^t + BB^t = 1\right\}\]
+\end{pmatrix}\in \Sp_{2g}(\R) : AA^t + BB^t = 1\right\}.\]
 
 For every \(\gamma= (A \; B; \; C\; D) \in \Sp_{2g}(\Z)\) and \(\tau \in \mathcal{H}_g\) we have the action
-\[\gamma.\tau = (A\tau + B)(C\tau + D)\inv \]
+\[\gamma.\tau = (A\tau + B)(C\tau + D)\inv .\]
 
-We say that a holomorphic function \(f: \mathcal{H}_g \to \C\) is a (classical) Siegel modular form of weight \(k\) if 
-\[f(\gamma.\tau) = \det(C\tau + D)^kf(\tau)\]
+We say that a holomorphic function \(f: \mathcal{H}_g \to \C\) is a (classical)\textbf{ Siegel modular form} of weight \(k\) if 
+\[f(\gamma.\tau) = \det(C\tau + D)^kf(\tau),\]
 with the extra condition that if \(g = 1\) it must be holomorphic at \(\infty\). Because \(\Sp_2 = \SL_2\) this is a strict generalisation of an (elliptic) modular form.
 
-The space of Siegel modular forms of weight \(k\) and genus g is denoted \(\mathcal{M}_k(\Sp_{2g}(\Z))\). There is a useful operator know as the Siegel Phi Operator which allows you to lift known modular forms from lower genus to higher genus \cite[5]{bruinier123ModularForms2008}
-\[\mathcal{M}_k(\Sp_{2g}(\Z)) \xrightarrow{\Phi} \mathcal{M}_{k}(\Sp_{2(g-1)}(\Z))\]
+The space of Siegel modular forms of weight \(k\) and genus g is denoted \(\mathcal{M}_k(\Sp_{2g}(\Z))\). There is a useful operator know as the \textbf{Siegel Phi Operator} which allows you to lift known modular forms from lower genus to higher genus \cite[5]{bruinier123ModularForms2008}
+\[\mathcal{M}_k(\Sp_{2g}(\Z)) \xrightarrow{\Phi} \mathcal{M}_{k}(\Sp_{2(g-1)}(\Z)),\]
 defined by the limit for \(\tau\in \mathcal{H}_{g-1}\)
 \[\Phi(f)(\tau) \defeq \lim_{t\to \infty} f\begin{pmatrix}
 	\tau & \\
 	& it 
-\end{pmatrix}\]
-in this context a cusp form is defined to be a Siegel modular form in the kernel of the Siegel \(\Phi\) operator and so it is natural to wonder if there is a constant term that is being taken here. 
+\end{pmatrix}.\]
+In this context a cusp form is defined to be a Siegel modular form in the kernel of the Siegel \(\Phi\) operator and so for those familiar with the definition of cusp form we will give in section \todo{} it is natural to wonder if there is a constant term that is being taken here. 
 
 \subsection{Automorphising}
-Given a Siegel modular form \(f\in \mathcal{M}_k(\Sp_{2g}(\Z))\) we can associate an automorphic form
+Just as in the case of modular forms, given a Siegel modular form \(f\in \mathcal{M}_k(\Sp_{2g}(\Z))\) we can associate an automorphic form
 \[\tilde{f} : \Sp_{2g}(\R)\to\C, \qquad \begin{pmatrix} a & b\\ c & d\end{pmatrix}\mapsto \det(ci+d)^{-k} f\Bigl((ai+b)(ci+d)\inv\Bigr), \]
-where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatrix} a & b\\ c & d\end{smallmatrix}\bigr)\in\Sp_{2g}(\R)\).Fix the Borel of upper triangular matrices. Now for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
+where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatrix} a & b\\ c & d\end{smallmatrix}\bigr)\in\Sp_{2g}(\R)\). Fix the Borel of upper triangular matrices. Now for \(1\leq r\leq g-1\) an integer we have the standard maximal parabolic of \(\Sp_{2g}\), \(P_r = M_rN_r\) such that 
 \[M_r \cong \GL_r\times \Sp_{2(g-r)}\]
 
 \begin{Theorem}[Zhang]
@@ -82,7 +82,7 @@ The only other work on generalising the Siegel \(\Phi\) operator that we could f
 Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of ``automorphic forms'' in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definite real matrices \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely his \cite[Thm. 2]{grenierAnalogueSiegelFOperator1992} shows that it sends an automorphic form for \(
 GL_n(\Z)\) to an automorphic form for \(\GL_{n-1}(\Z)\). The point is that the \(\Phi\) operator can be defined in the generality of symmetric spaces and Grenier shows that at least in one other case it still preserves the relevant notion of automorphic form. This suggests two things that would be interesting to investigate; using the classification of symmetric spaces is it possible to give a uniform definition of the \(\Phi\) operator following Grenier and does this definition agree with the constant term in the way that the Siegel \(\Phi\) operator does. With my limited knowledge of symmetric spaces this seems to be very tractable.
 
-\subsection{Base Case}
+\subsection{Modular Form Case}
 The base case is very instructive, it deals with modular forms. So consider \(f\) a (elliptic) modular form of full level and weight k, which has a Fourier expansion given by 
 \[f(z) = \sum_{n\geq 0} a_ne^{2\pi i nz }\]
 Then one can verify that
@@ -210,9 +210,9 @@ putting this into our Fourier expansion
 	&= \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \exp \Big(2\pi i \big( &\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) \\ & &  +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\big)\Big)  \\
 \end{align*}
 
-If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\) and \todo{my Tm differs from Chengjing}
-\[T_{m} \defeq \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) = \mathrm{Tr}(-mk^t\tau - m^t\tau k) + \mathrm{Tr}(mh^t + m^th) \defeq T_{m,k} + T_{m,h}\]
-we can substitute this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
+If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\), \todo{my Tm differs from Chengjing}
+\[T_{m,h}\defeq \mathrm{Tr}(mh^t + m^th), \;\; T_{m,k} \defeq \mathrm{Tr}(-mk^t\tau - m^t\tau k) , \]
+and \(T_m \defeq T_{m,h} + T_{m,k}\) then we can substitute this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
 \resizebox{\linewidth}{!}{
 	\begin{minipage}{\linewidth}
 		\begin{align*}

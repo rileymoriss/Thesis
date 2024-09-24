@@ -11,6 +11,7 @@ Warning--I didn't find a database entry for "arthurLecturesAutomorphicFunctions1
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
 Warning--to sort, need author or key in EssaysHistoryLie
+Warning--to sort, need author or key in LinearRepresentationsFinite
 Warning--can't use both author and editor fields in bumpIntroductionLanglandsProgram2004
 Warning--empty publisher in bernsteinREPRESENTATIONSPADICGROUPS1992
 Warning--empty journal in booherVIEWINGMODULARFORMS
@@ -45,43 +46,43 @@ Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
 You've used 50 entries,
             2543 wiz_defined-function locations,
-            840 strings with 13487 characters,
-and the built_in function-call counts, 15581 in all, are:
-= -- 1461
-> -- 587
-< -- 49
-+ -- 181
-- -- 171
-* -- 1023
-:= -- 2536
-add.period$ -- 138
+            842 strings with 13606 characters,
+and the built_in function-call counts, 15231 in all, are:
+= -- 1424
+> -- 569
+< -- 46
++ -- 175
+- -- 166
+* -- 995
+:= -- 2477
+add.period$ -- 136
 call.type$ -- 50
-change.case$ -- 251
-chr.to.int$ -- 47
-cite$ -- 88
-duplicate$ -- 750
-empty$ -- 1263
-format.name$ -- 252
-if$ -- 3167
-int.to.chr$ -- 4
+change.case$ -- 250
+chr.to.int$ -- 48
+cite$ -- 90
+duplicate$ -- 732
+empty$ -- 1245
+format.name$ -- 245
+if$ -- 3090
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 59
-newline$ -- 233
-num.names$ -- 148
-pop$ -- 412
+missing$ -- 58
+newline$ -- 232
+num.names$ -- 143
+pop$ -- 416
 preamble$ -- 1
-purify$ -- 317
+purify$ -- 316
 quote$ -- 0
-skip$ -- 543
+skip$ -- 531
 stack$ -- 0
-substring$ -- 559
-swap$ -- 79
-text.length$ -- 49
-text.prefix$ -- 35
+substring$ -- 528
+swap$ -- 69
+text.length$ -- 46
+text.prefix$ -- 34
 top$ -- 0
 type$ -- 328
-warning$ -- 35
-while$ -- 127
+warning$ -- 36
+while$ -- 121
 width$ -- 53
-write$ -- 585
-(There were 38 warnings)
+write$ -- 578
+(There were 39 warnings)

@@ -160,14 +160,7 @@ Brian~C. Hall.
   {{Mathematics}}}.
 \newblock Springer International Publishing, Cham, 2015.
 
-\bibitem[Jia08a]{jiangResiduesEisensteinSeries2008}
-Dihua Jiang.
-\newblock Residues of {{Eisenstein Series}} and {{Related Problems}}.
-\newblock In Wee~Teck Gan, Stephen~S. Kudla, and Yuri Tschinkel, editors, {\em
-  Eisenstein {{Series}} and {{Applications}}}, volume 258, pages 187--204.
-  Birkh{\"a}user Boston, Boston, MA, 2008.
-
-\bibitem[Jia08b]{jiangResiduesEisensteinSeries2008a}
+\bibitem[Jia08]{jiangResiduesEisensteinSeries2008a}
 Dihua Jiang.
 \newblock Residues of {{Eisenstein Series}} and {{Related Problems}}.
 \newblock In Wee~Teck Gan, Stephen~S. Kudla, and Yuri Tschinkel, editors, {\em
@@ -186,6 +179,10 @@ Henry~H Kim.
 \bibitem[Lap22]{lapidPerspectivesEisensteinSeries2022}
 Erez Lapid.
 \newblock Some perspectives on {{Eisenstein}} series, April 2022.
+
+\bibitem[Lin]{LinearRepresentationsFinite}
+Linear {{Representations}} of {{Finite Groups}} {\textbar} {{SpringerLink}}.
+\newblock https://link.springer.com/book/10.1007/978-1-4684-9458-7.
 
 \bibitem[Mak]{makisumiStructureTheoryReductive}
 Shotaro Makisumi.

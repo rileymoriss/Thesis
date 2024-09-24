@@ -79,16 +79,30 @@
 		
 		%Environments
 		\usepackage{amsthm} %No numbering
-		\newtheorem{Lemma}{Lemma}
-		\newtheorem{Theorem}{Theorem}
-		\newtheorem{Remark}{Remark}
-		\newtheorem{Exercise}{Exercise}
-		\newtheorem{Notation}{Notation}
-		\newtheorem{Definition}{Definition}
-		\newtheorem{example}{Example}	
-		\newtheorem{cor}{Corollary}
-		\newtheorem{Prop}{Proposition}
-		\newtheorem{Conj}{Conjecture}
+		
+		\newtheorem{theorem}{Theorem}[chapter]
+		\newtheorem{lemma}[theorem]{Lemma}
+		\newtheorem{corollary}[theorem]{Corollary}
+		\newtheorem{proposition}[theorem]{Proposition}
+
+		%\newtheorem{example}[theorem]{Example}
+		\newtheorem{problem}[theorem]{Problem}
+
+		\newtheorem{Lemma}[theorem]{Lemma}
+		\newtheorem{Theorem}[theorem]{Theorem}
+		\newtheorem{Remark}[theorem]{Remark}
+		\newtheorem{Exercise}[theorem]{Exercise}
+		\newtheorem{Notation}[theorem]{Notation}
+		\newtheorem{Definition}[theorem]{Definition}
+		\newtheorem{example}[theorem]{Example}	
+		\newtheorem{cor}[theorem]{Corollary}
+		\newtheorem{Prop}[theorem]{Proposition}
+		\newtheorem{Conj}[theorem]{Conjecture}
+		
+		\theoremstyle{remark}
+		\newtheorem{remark}[theorem]{Remark}
+		\theoremstyle{definition}
+		\newtheorem{definition}[theorem]{Definition}
 
 
 		\usepackage{framed}

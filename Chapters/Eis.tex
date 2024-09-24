@@ -1,5 +1,7 @@
+The Eisenstein series is from our perspective the most important tool in the theory of automorphic forms. Some surveys on its role, properties and open problems are \cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}, \cite{kimEISENSTEINSERIESTHEIR} and \cite{jiangResiduesEisensteinSeries2008a}. To see the relation to the classical Eisenstein series there is \cite{garrettTransitionEisensteinSeries2016} which we will also go through in section \todo{}. One thing that Eisenstein series do, as in the theory of modular forms, is that they furnish us with quasi-concrete examples of automorphic forms. Another reason that these functions are important is through their normalisation and constant terms, in which products of L functions appear, we discuss this more in section \ref{sec:L-functions}. This has been a fruitful method for proving theorems about L-functions as in \cite{shahidiEisensteinSeriesAutomorphic2010}\cite{pollackRANKINSELBERGMETHODUSER}\cite{arthurEisensteinSeriesTrace1979}, or conversely proving theorems about Eisenstein series \cite{jiangPolesCertainResidual2013}.
+
 \section{Eisenstein Series}
-As usual we fix a connected reductive group G defined over a number field F, with a Borel B, a standard parabolic with Levi decomposition \(P = MU\). 
+As usual we fix a classical group G defined over a number field F, with a Borel B and a standard parabolic with Levi decomposition \(P = MU\). 
 
 Following the setup in \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995} we consider a \textbf{character} \(\chi\in \mathrm{Rat}(M) \defeq \Hom_{\mathrm{LAG}}(M, \mathbb{G}_m)\), thinking of it below as a natural transformation, and then define 
 \[|\chi|: M(\A)\to \C , \;\;\; (m_\nu)\mapsto \prod_\nu|\chi(F_\nu)(m_\nu)|_\nu.\]
@@ -9,7 +11,10 @@ Thus we can define
 \[X_M \defeq \Hom_{\textrm{TopGroup}}(M(\A)/M^1, \C^*) .\]
 i.e. the collection of characters of \(M(\A)\) that are trivial on \(M^1\).
 \begin{remark}
-    To make it seem less mysterious this group has some importance in the more general theory, in particular it is one of the pieces in the ``Langlands decomposition'' (\ref{eq:iwasawa_decomposition}) of the Archimedean points of a parabolic and it has the property that \(M(\Q)\backslash M(\A)^1\) has finite measure \cite[4.9]{getzIntroductionAutomorphicRepresentations2024}.
+    To make it seem less mysterious we comment that this group has some importance in the more general theory. It is one of the pieces in the ``Langlands decomposition'' of the Archimedean points of a parabolic \(P = MU\), if \(\nu\) is an archimedean place then,
+    \[P(F_\nu) = A_M M(F_\nu)U(F_\nu).\]
+    We will not define \(A_M\).
+    It also has the property that \(M(\Q)\backslash M(\A)^1\) has finite measure \cite[4.9]{getzIntroductionAutomorphicRepresentations2024}.
 \end{remark}
 The set of \textbf{complex characters} of \(M\),
 \[\mathfrak{a}_M^* \defeq \mathrm{Rat}(M)\tensor_\Z \C,\]
@@ -29,35 +34,35 @@ which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G
             \begin{aligned}
                 Rat(M_r) &= Rat(\GL_r \times \Sp_{2m}) \\
                          &= \Hom(\GL_r \times \Sp_{2m}, \mathbb{G}_m) \\
-                         (2)&\cong \Hom(\mathrm{Ab}(\GL_r \times \Sp_{2m}), \mathbb{G}_m) \\
-                         (1)&\cong \Hom(\mathrm{Ab}(\GL_r) \times \mathrm{Ab}(\Sp_{2m}), \mathbb{G}_m) \\
+                         (1)&\cong \Hom(\mathrm{Ab}(\GL_r \times \Sp_{2m}), \mathbb{G}_m) \\
+                         (2)&\cong \Hom(\mathrm{Ab}(\GL_r) \times \mathrm{Ab}(\Sp_{2m}), \mathbb{G}_m) \\
                          (3)&\cong \Hom(\mathbb{G}_m \times 1, \mathbb{G}_m) \\
                          &\cong \Z.
             \end{aligned}
         \end{equation*}
-        In (2) we have used the universal property of the abelianization \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is abelian. (1) is that the abelianization commutes with direct products. (3) is because \(\Sp\) is a perfect group.
+        In (1) we have used the universal property of the abelianization \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is abelian. (2) is that the abelianization commutes with direct products. (3) is because \(\Sp\) is a perfect group.
         %https://groupprops.subwiki.org/wiki/Symplectic_group_is_perfect
         %https://mathoverflow.net/questions/35713/abelianization-of-a-semidirect-product
 \end{example}
 
 
-There is the natural map \(m_P: G(\A) \to M^1 \backslash M(\A)\) sending \(umk \mapsto M^1 m\), where \(g = umk\) using the Langlands-Iwasawa decomposition \ref{eq:iwasawa_decomposition}.
+There is the natural map \(m_P: G(\A) \to M^1 \backslash M(\A)\) sending \(umk \mapsto M^1 m\), where \(g = umk\) using the Langlands-Iwasawa decomposition of equation \ref{eq:iwasawa_decomposition}.
 
 Now if we take the collection of irreducible automorphic representations of \(M\),
- \[\hat{\mathcal{A}} \defeq \{(\pi, V) : \pi \text{ is an irreducible automorphic representation of }M\}\]
-then we can think of \(X_M^G\) as being one dimensional automorphic representations (with some extra invariance) and so there is a natural action on \(\hat{\mathcal{A}}\) given by tensoring, i.e. if \(\lambda\in X_M^G\) and \((\pi, V)\in \hat{\mathcal{A}}\) then 
+ \[\hat{\mathcal{M}} \defeq \{(\pi, V) : \pi \text{ is an irreducible automorphic representation of }M\}\]
+then we can think of \(X_M^G\) as being one dimensional automorphic representations (with some extra invariance) and so there is a natural action on \(\hat{\mathcal{M}}\) given by tensoring, i.e. if \(\lambda\in X_M^G\) and \((\pi, V)\in \hat{\mathcal{M}}\) then 
 \[\lambda.\pi \defeq \lambda\tensor \pi\]
-Then \(\hat{\mathcal{A}}\) decomposes as a disjoint union of its orbits. The orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\) is called a \textbf{cuspidal datum}. By definition \(X_M^G\) acts transitively on any cuspidal datum \(\mathfrak{P}\) but by \cite[II.1]{moeglinSpectralDecompositionEisenstein1995} it also acts freely. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the complex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
+Then \(\hat{\mathcal{M}}\) decomposes as a disjoint union of its orbits. The orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\) is called a \textbf{cuspidal datum}. By definition \(X_M^G\) acts transitively on any cuspidal datum \(\mathfrak{P}\) but by \cite[II.1]{moeglinSpectralDecompositionEisenstein1995} it also acts freely. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the complex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
 
-Now we will define an Eisenstein series: Let \(\mathfrak{P}\) be as above, the orbit of a cuspidal automorphic representation endowed with a complex structure. Let \(\pi\in \mathfrak{P}\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\), then \(\lambda\in X_M^G\) acts on \(\phi_\pi\) by 
+Let \(\mathfrak{P}\) be a cuspidal datum with a complex structure as above. Let \(\pi\in \mathfrak{P}\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\), then \(\lambda\in X_M^G\) acts on \(\phi_\pi\) by 
 \[\lambda.\phi_\pi(g) = (\lambda \comp m_P)(g) \phi_\pi(g).\]
 which is then an element of \(\mathcal{A}(U(\A)M(k)\backslash G(\A))_{\pi\tensor \lambda}\). Finally we have the \textbf{Eisenstein series} which is defined by the following sum
 \[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi_\pi(\gamma g)\]
 whenever it is convergent. The first thing to note is that for a fixed \(\phi\) there is an open set in \(X_M^G\) and a compact subset of \(G(k)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
 
-If \(P = MU, P' = M'U'\) are two standard parabolics of \(G\) that are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\)
+If \(P = MU, P' = M'U'\) are two standard parabolics of \(G\) that are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\).
 Then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representations of \(M'\).
-The Eisenstein series is closely related (through its constant terms as discussed in \ref{constant_conjugate_levi}) to the operator
+The Eisenstein series is closely related through its constant terms (as discussed in section \ref{constant_conjugate_levi}) to the operator
 \[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(k)\cap wU(k)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du\]
 where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\).
 
@@ -65,9 +70,7 @@ The Eisenstein series has three inputs and can be considered as a function in di
 \[E(\phi)(\lambda)(g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi(\gamma g), \;\;\; \lambda\in \mathfrak{P},\; g\in G(\A),\]
 where it converges. The space \(L^2_{\mathrm{loc}}(G(\A))\) can be endowed with a Frechet space structure coming from the semi-norms associated to compact sets \(C\subseteq G(\A)\) given by 
 \[\phi \mapsto \norm{\phi|_C}_{L^2} = \int_C |\phi(x)|^2 \mathrm{d}x.\] 
-Then it makes sense to talk about the holomorphicity of \(E(\phi)\) in this sense \cite[I.4.9]{moeglinSpectralDecompositionEisenstein1995}. The key properties of both the Eisenstein series and this operator can be found in \cite[IV.1.8, IV.1.9, IV.1.10, IV.1.11]{moeglinSpectralDecompositionEisenstein1995}. Most importantly as a function of \(\mathfrak{P}\) it can be shown that they both have a meromorphic continuation to all of \(\mathfrak{P}\). This was also given a second ``soft proof'' more recently in \cite{bernsteinMeromorphicContinuationEisenstein2022}, with the spectral decomposition that follows from it also being worked out in \cite{delormeSpectralTheoremLanglands2021}. Moreover for the Eisenstein series at a point in \(p\in \mathfrak{P}\) at which it is holomorphic then \(E(\phi,p, g)\) is an automorphic form. 
-
-We are not really in a position to convey the true importance of these objects in the theory of automorphic forms, however we will make some comments. First some surveys are \cite{lapidPerspectivesEisensteinSeries2022}, \cite{arthurEisensteinSeriesTrace1979}, \cite{kimEISENSTEINSERIESTHEIR}, \cite{jiangResiduesEisensteinSeries2008a}. To see the relation to the classical Eisenstein series there is \cite{garrettTransitionEisensteinSeries2016}. One thing that Eisenstein series do, as in the theory of modular forms, is that they furnish us with quasi-concrete examples. A we mentioned above \cite[IV.1.9.(b).i]{moeglinSpectralDecompositionEisenstein1995} tells us that at the holomorphic points the Eisenstein series takes an automorphic form and returns an automorphic form, thus we can use them to multiply our examples. Another reason that these functions are important is through their normalisation and constant terms, in which products of L functions appear, we discuss this more in section \ref{sec:L-functions}. This has been a fruitful method for proving theorems about L-functions as in \cite{shahidiEisensteinSeriesAutomorphic2010}\cite{pollackRANKINSELBERGMETHODUSER}\cite{arthurEisensteinSeriesTrace1979}.
+Then it makes sense to talk about the holomorphicity of \(E(\phi)\) in this sense \cite[I.4.9]{moeglinSpectralDecompositionEisenstein1995}. The key properties of both the Eisenstein series and this operator can be found in \cite[IV.1.8, IV.1.9, IV.1.10, IV.1.11]{moeglinSpectralDecompositionEisenstein1995}. Most importantly as a function of \(\mathfrak{P}\) it can be shown that they both have a meromorphic continuation to all of \(\mathfrak{P}\). This was also given a second ``soft proof'' more recently in \cite{bernsteinMeromorphicContinuationEisenstein2022}, with the spectral decomposition that follows from it also being worked out in \cite{delormeSpectralTheoremLanglands2021}. Moreover an Eisenstein series attached to an automorphic form, at a point \(p\in \mathfrak{P}\) at which it is holomorphic, is also an automorphic form. 
 
 \section{Classical Eisenstein Series}
 The typical example of a classical Eisenstein series is that introduced by Maas in 1949 given by the sum \cite{lapidPerspectivesEisensteinSeries2022} 
@@ -111,7 +114,7 @@ We want to realize this as the Eisenstein series associated to an automorphic fo
  \[E(\phi, g) \defeq \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \phi_s(\gamma g) \]
 
 \begin{Lemma}
-	Let \(g\in \SL_2(\R)\) then \(\iota(g)\) we consider as an element of \(\SL_2(\A)\) by setting all other entries to 1. 
+	Let \(g\in \SL_2(\R)\) then we consider it as an element of \(\SL_2(\A)\), denoted by \(\iota(g)\), by setting all other entries to 1. Then 
 	\[E(\phi_s, \iota(g)) = \mathbf{E}(g.i,s)\]
 \end{Lemma}
 

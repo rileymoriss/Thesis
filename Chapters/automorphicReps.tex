@@ -1,12 +1,10 @@
-The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and essential for the setup in \cite{jiangPolesCertainResidual2013}. In particular we want to draw attention to the failure of this theory to be ``categorical'' or ``algebraic'' in any nice sense. 
+The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and essential for the setup in \cite{jiangPolesCertainResidual2013}. In particular we want to draw attention some of the quirks of the category of automorphic representations. 
+
 \section{Local Representation Theory}
-Recall that in the representation theory of finite groups over \C there is really only one important representation, that is the regular representation i.e. the \(\C[G]\) module \(\C[G]\). This is important for two reasons, the first is that it is always a priori defined uniformly for all groups, the second is that it decomposes into a direct sum over all irreducible modules, we will have more to say in section \ref{direct_integral}.
+Recall that in the representation theory of finite groups over \C there is really only one important representation, that is the regular representation i.e. the \(\C[G]\) module \(\C[G]\). This is important for two reasons, the first is that it is always a priori defined uniformly for all groups, the second is that it decomposes into a direct sum over all irreducible modules \cite[Ch. 2.4 Cor. 2 ]{LinearRepresentationsFinite}.
 
-\begin{remark}
-    What we have called automorphic forms are sometimes referred to as ``smooth K-finite automorphic forms'' \cite[2.2]{cogdellLecturesLfunctionsConverse}.
-\end{remark}
-
-As in the finite group case we want to consider the right regular action of the group \(G(\A)\) on a space of functions, namely the representation 
+Let \(G\) be a classical group defined over a number field \(F\). 
+As in the finite group case we want to consider the right regular action of the adelic points, \(G(\A)\), on a space of functions \(G(\A) \to \C\), namely
 \[g.f(x) = f(xg).\]
 One can ask if this representation sends an automorphic form to an automorphic form.
 If \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-Archimedean
@@ -49,7 +47,7 @@ There is a problem with the \(K\)-finiteness in the infinite places however whic
     \[\cos\theta' = \cos\theta - (b d  + ac)\sin\theta = \cos\theta + (db  + ca)\sin\theta,\]
     hence \(2(bd+ac)\sin\theta = 0\) and because \(\sin\theta\) was assumed to be non-zero this is the same as \(bd+ac = 0\). Thus for instance the element \(\begin{pmatrix} 1 & 1\\ & 1  \end{pmatrix}\) conjugates \(SO_2\) to another subgroup that has only trivial intersection. 
 
-    Finally it is worth noting that this is not an issue at the finite places, namely if \(K = K_fK_\infty\) is our maximal compact subgroup of \(G(\A)\) then \(K_f\) is also open and hence \(K_f \cap gK_f g\inv\) is of finnite index in both \(K_f\) and \(gK_f g\inv\) and so their notions of \(K\)-finiteness will agree. 
+    Finally it is worth noting that this is not an issue at the finite places, namely if \(K = K_fK_\infty\) is our maximal compact subgroup of \(G(\A)\) then \(K_f\) is also open and hence \(K_f \cap gK_f g\inv\) is of finite index in both \(K_f\) and \(gK_f g\inv\) and so their notions of \(K\)-finiteness will agree. 
 \end{example}
 
 For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
@@ -74,14 +72,14 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
     It is common to use the same symbol for both of these representations in the \((\mathfrak{g}, K)\)-module. It is also important to note that these are purely algebraic representations, there is no condition of continuity etc. 
 \end{remark}
 
-Now we define a \((\mathfrak{g}, K_\infty)\)-module structure on the space of automorphic forms. Recall that by definition we have that 
+If \(\mathfrak{g}\) is the Lie algebra of \(G(F_\infty)\) and \(K_\infty\subseteq G(F_\infty)\) is a maximal compact subgroup in good position we can define a \((\mathfrak{g}, K_\infty)\)-module structure on the space of automorphic forms as follows. Recall that by definition we have that 
 \[\mathcal{A}(U(\A)M(F)\backslash G(\A)) \subseteq C^\infty(G(\A_f)) \tensor C^\infty(G(F_\infty)).\]
-If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) then \(K_\infty\subseteq G(F_\infty)\) a maximal compact subgroup in good position acts by 
+If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) then \(K_\infty\) acts by 
 \[k.(\phi_f\tensor \phi_\infty)(g) \defeq \phi_f(g) \tensor \phi_\infty(gk),\]
 i.e. via the right regular representation on the archimedian component. The lie algebra of \(G(F_\infty)\) acts as we have previously defined in section \ref{lie_algebra_action} via
 \[z.(\phi_f\tensor \phi_\infty)(g) = \phi_f(g)\tensor \Dif{}{t}\phi_\infty(ge^{tz})|_{t=0}.\] 
 
-Lets check the three conditions. (2.) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. 
+Lets check the three conditions. (2) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. 
 \begin{Lemma}
 	\(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) decomposes into a countable direct sum of finite dimensional \(K_\infty\) representations. 
 \end{Lemma}
@@ -104,7 +102,7 @@ Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \
 \end{remark}
 
 \begin{remark}
-    Automorphic representations can also be defined as representations of an algebra \(\mathcal{H}\), the global Hecke algebra. This is the approach in \cite[I.II(4.6)]{borelAutomorphicFormsRepresentations1979}, and can be a helpful perspective to simplify definitions. This is also the motivation behind why Harish-Chandras \((\mathfrak{g}, K)\)-modules are the ``right'' replacement for the regular representation. 
+    Automorphic representations can also be defined as representations of an algebra \(\mathcal{H}\), the global Hecke algebra. This is the approach in \cite[I.II(4.6)]{borelAutomorphicFormsRepresentations1979}, and can be a helpful perspective to simplify definitions. This is also a motivation behind why Harish-Chandras \((\mathfrak{g}, K)\)-modules are the ``right'' replacement for the regular representation. 
 \end{remark}
 
 \begin{example}
@@ -133,14 +131,14 @@ where \(\phi_k: M(\A) \to \C\) is given by \(\phi_k(x) = \phi(xk)\).
 Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\) to be the isotypic component of \(\pi\) in \(\mathcal{A}_0(M(k) \backslash M(\A))\) and similarly we have 
 \begin{align*}
 	&\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \\
-&\defeq \{\phi \in \mathcal{A}_0(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}(M(k) \backslash M(\A))_{\textcolor{red}{\pi}} \}
+&\defeq \{\phi \in \mathcal{A}_0(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}_0(M(k) \backslash M(\A))_{\pi} \}
 \end{align*}
-\todo[inline]{AHHHHHHHHH BUT DO I TAKE THE CUSPIDAL PART OF INSIDE HERE OR NOT AHHHHHH DEFINE YOU TERMSSSSSS AHHHH }
+
 \begin{remark}
     We cannot simply take the isotypic components as \((\mathfrak{g}, K)\)-modules we need to take the isotypic components after explicitly restricting the spaces. This is to say again that the category of automorphic reps is very explicit. 
 \end{remark}
 
 The point is that we want the isotypic component corresponding to a cuspidal representation to be cuspidal, however this just might not be the case. 
-Yamana in \cite[Rm. 7.12]{yamanaSiegelWeilFormulaQuaternionic2013} has a counter example when one allows unitary groups over division algebras (non-commutative fields). It could be interesting to investigate this example more closely to see if the example can be pulled back to a unitary group over a field. In \cite{yamanaSiegelWeilFormulaQuaternionic2013} there is an automorphic representation of the quarternionic unitary group constructed, \(\Pi(V)\), that appears in both the cuspidal and residual spectrum (see \ref{spectral_decomposition} for more detail). By that Yamana means that up to isomorphism the representation can been seen in both residual and cuspidal spectrum. In particular if one were to take the component that is in the cuspidal spectrum and look at its isotypic component then the versions in the residual spectrum would also occur and hence by definition of residual spectrum would not be cuspidal.
+Yamana in \cite[Rm. 7.12]{yamanaSiegelWeilFormulaQuaternionic2013} has a counter example when one allows unitary groups over division algebras (non-commutative fields). It could be interesting to investigate this example more closely to see if the example can be pulled back to a unitary group over a field. In \cite{yamanaSiegelWeilFormulaQuaternionic2013} there is an automorphic representation of the quarternionic unitary group constructed, \(\Pi(V)\), that appears in both the cuspidal and residual spectrum. By that Yamana means that up to isomorphism the representation can been seen in both residual and cuspidal spectrum. In particular if one were to take the component that is in the cuspidal spectrum and look at its isotypic component then the versions in the residual spectrum would also occur and hence by definition of residual spectrum would not be cuspidal.
 
 If we restrict to the cases dealt with in for instance \cite{moeglinSpectralDecompositionEisenstein1995}, namely not dealing with quarternions, then we have been told that this is an open problem whether or not this restriction is superfluous. 

@@ -1,16 +1,21 @@
-Here we will explain the role of the constant term in our calculation of poles.\label{constant_terms}
+This section is a discussion of the adelic constant term, especially its application to the Eisenstein series. 
+
+Through constant terms we can define cusp forms which play a central role in the theory of automorphic forms. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and they form the ``base case'' for the proof of the spectral decomposition in \cite{moeglinSpectralDecompositionEisenstein1995}.
+
+Constant terms preserve analytic properties whilst sometimes reducing the functions to more tractable forms. This is how they will be used in our calculation of poles of Eisenstein series.\label{constant_terms}
+
 
 \section{Definition and Role} \label{cuspidal_form_definition}\label{sec:L-functions}
-The constant term is an operation defined on a large class of functions and is supposed to generalise the constant term of a Fourier expansion, we will see this later, although one may consult \cite[1.6]{bumpAutomorphicFormsRepresentations1997} for some examples as well. In particular \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995} give the definition as follows: We consider \(P=MU\) a standard parabolic of \(G\) and \(\phi: U(k)\setminus \mathbf{G} \to \C\) a measurable and locally \(L^1\) function then its \textbf{constant term} along \(P\) is 
-\[\phi_P :  U(\A)\setminus \mathbf{G} \to \C\]
-\[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u\]
-which inherits many of the properties of \(\phi\) such as smoothness and moderate growth. Moreover if \(\phi\) is an automorphic form on \(\mathbf{G}\) then its constant term is an automorphic form on \(M\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
+Consider \(P=MU\) a standard parabolic of a classical group \(G\) and \(\phi: U(k)\setminus G(\A) \to \C\) a measurable and locally \(L^1\) function then its \textbf{constant term} along \(P\) is defined to be \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995},
+\[\phi_P :  U(\A)\setminus G(\A) \to \C,\]
+\[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u.\]
 
-\todo{change this from }
-Recall the definition of \textbf{cuspidal automorphic forms} or ``cusp forms''. Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus \mathbf{G}\) for \(P = MU\) a standard parabolic. Then \(\phi\) is cuspidal if for all standard parabolics \(P'\subset P\) we have that \(\phi_{P'}\) is identically zero. 
+We have dedicated the next chapter \todo{} to showing how this is related to classical notions of constant terms. If \(\phi\) is smooth or moderate growth then so is its constant term. Moreover if \(\phi\) is an automorphic form on \(G(\A)\) then its constant term is an automorphic form on \(M(\A)\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
 
-\begin{Theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, I.4.10]\todo{fix}
-		Let \(P = MU\) be a standard parabolic of \(G\). If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G)\) given by 
+Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus G(\A)\) for \(P = MU\) a standard parabolic. Then \(\phi\) is \textbf{cuspidal} if for all standard parabolics \(P'\subset P\) we have that \(\phi_{P'}\) is identically zero. 
+
+\begin{Theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, I.4.10]
+		Let \(P = MU\) be a standard parabolic of \(G\). If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G(\A))\) given by 
 		\[E(p)(g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi(\gamma g), \;\;\; p\in \mathfrak{P},\; g\in G(\A),\]
 		where it converges. 
 		If \(D\subseteq \mathfrak{P}\), is an open subset minus a finite number of points on which \(E\) is holomorphic then E has a holomorphic continuation to the finite number of points if and only if the constant term of \(E_Q\) has a holomorphic continuation to these finite number of points for all standard parabolics \(Q\).
@@ -25,17 +30,17 @@ Recall the definition of \textbf{cuspidal automorphic forms} or ``cusp forms''. 
         \begin{theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, II.1.7]
         	The constant term of an Eisenstein series induced from a standard maximal parabolic \(P\) is zero along any other standard parabolic \(P'\) unless \(P = P'\).
         \end{theorem}
+        
+        Putting these two theorems together we see that for an Eisenstein series induced from a maximal parabolic \(P\), has a holomorphic continuation to a point if and only if its constant term along \(P\) has a holomorphic continuation. 
       
-      Finally we remark on the central importance of cusp forms in the theory of automorphic forms, this is for several reasons. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and they form the ``base case'' for the proof of the spectral decomposition in \cite{moeglinSpectralDecompositionEisenstein1995}.
+      
 
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
-This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations.
-
-Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
+This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations. Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
 
 \subsection{In General}
-We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MN\) and \(P' = M'N'\) two standard parabolics of a suitable group G over F, with \(E(x, \phi, \lambda)\) defined via  parabolic induction from P.
-
+We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MU\) and \(P' = M'U'\) two standard parabolics of a suitable group G over a number field F, with \(E(x, \phi, \lambda)\) defined from P as in section \todo{}.
+\todo[inline, color=blue]{define the Weyl group defined here}
     \begin{Lemma}\label{lem:1}
         \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)\]
     \end{Lemma}
@@ -51,43 +56,44 @@ We will use the following Lemmas to give a simplified expression of the constant
     }
 
     \begin{Lemma}\label{lem:2}
-        Let \(m', n'\in M'(F)\times N'(F)\) then 
-        \[m'n' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; n'\in (m')\inv wP(F)w\inv m'\]
+        Let \(m'\in M'(F),  u'\in U'(F)\) then 
+        \[m'u' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; u'\in (m')\inv wP(F)w\inv m'\]
     \end{Lemma}
     \proofbar{
         The forward implication is stated in \cite{getzIntroductionAutomorphicRepresentations2024}, the converse follows from some algebra:
-        First let \(m' = wp_1w\inv\) and \(n' = (m')\inv wp_2w\inv m'\) then 
+        First let \(m' = wp_1w\inv\) and \(u' = (m')\inv wp_2w\inv m'\) then 
         \begin{equation*}
             \begin{aligned}
-                m'n' &= (wp_1w\inv)\inv wp_2w\inv wp_1w\inv\\
+                m'u' &= (wp_1w\inv)\inv wp_2w\inv wp_1w\inv\\
                      &= wp_1\inv w\inv wp_2w\inv wp_1w\inv\\
                      &= wp_1\inv p_2p_1w\inv \in wP(F)w\inv\\
             \end{aligned}
         \end{equation*}
     }
     Taking the contrapositive of this lemma will be used below. This is because our sums will be over quotients like \(A\setminus B\) and therefore summing over the ``elements'' in B that are not in A; by our lemma would be the same as summing over two different such quotients.
-Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series. Denote \(([N']\defeq N'(F)\setminus N'(\A))\)
+Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series. Denote \([U']\defeq U'(F)\setminus U'(\A)\)
     \begin{equation*}
         \begin{aligned}
-            E_{P'}( \phi, \lambda, x) &= \int_{N'(F)\setminus N'(\A)} E( \phi, \lambda, nx) dn\\
-                                     &= \int_{[N']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  dn\\
-                                    (\text{Lemma 1}) \;\;\; &= \int_{[N']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta nx)  dn\\
-                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[N']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'nx)  dn\\
+            E_{P'}( \phi, \lambda, x) &= \int_{U'(F)\setminus U'(\A)} E( \phi, \lambda, nx) du\\
+                                     &= \int_{[U']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  du\\
+                                    (\text{Lemma 1}) \;\;\; &= \int_{[U']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta ux)  du\\
+                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[U']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'ux)  du\\
         \end{aligned}
     \end{equation*}
-    Now apply lemma 2 to the above sum and we get the equality 
+    Now apply lemma 2 to the above sum and we get the equality \todo{fix the lemma referencing....}
     \begin{align*}
-    	&= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[N']} \sum_{n'\in N'(F)\cap (m')\inv wP(F)w\inv m' \setminus N'(F)} \lambda.\phi( w\inv m'n'nx)  dn\\
-    	&(\text{Change Var}) \;\;\; = \sum_{ w} \sum_{m'} \int_{[N']} \sum_{n'\in N'(F)\cap wP(F)w\inv\setminus N'(F) } \lambda.\phi( w\inv n'nm'x)  dn\\
-    	&(\text{Unfold}) \;\;\; = \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn.\\
+    	&= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[U']} \sum_{u'\in U'(F)\cap (m')\inv wP(F)w\inv m' \setminus U'(F)} \lambda.\phi( w\inv m'u'ux)  du\\
+    	&(\text{Change Var}) \;\;\; = \sum_{ w} \sum_{m'} \int_{[U']} \sum_{n'\in U'(F)\cap wP(F)w\inv\setminus U'(F) } \lambda.\phi( w\inv u'um'x)  du\\
+    	&(\text{Unfold}) \;\;\;\;\;\;\;\;\;\;\; = \sum_{ w} \sum_{m'} \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du.\\
     \end{align*}
     \todo[inline]{I need to fix all the lemma labeling }
-    The change of variables is \((m', n') \mapsto ((m')\inv n' m', (m')\inv n' m')\).
-    Again we assume that our $x$ is sufficiently large so all the integrals converge.\todo[inline]{Maybe appologise for doing integrals naivelly lol.. clarify this.... is it even the x that I need to worry about here?}
+    The change of variables is \((m', u') \mapsto ((m')\inv u' m', (m')\inv u' m')\).
+    Again we assume that our $x$ is sufficiently large so all the integrals converge.
+    \todo[inline, color=blue]{Ok I need to expliain how this analysis is working. The eisenstein series is only defined bby the meromorphic continuation of this sum. So if we calculate the constant term and then meromorphiccally continue its the same I guess is the claim?}
 
 \subsection{Constant Terms of Cuspidal Eisenstein Series}
 \begin{Lemma}[4]
-        For \(w\in W_{M'}\setminus W_G / W_{M} \) we have that \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv N'w\cap M\).
+        For \(w\in W_{M'}\setminus W_G / W_{M} \) we have that \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
     \end{Lemma}
     \proofbar{
         This is \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} stated without proof. They give the reference \cite[V.4.6]{renardREPRESENTATIONSGROUPESREDUCTIFS} which is in French..
@@ -101,21 +107,21 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     \begin{Lemma}[6]
         \[c\setminus (b\setminus a )= (bc)\setminus a\]
     \end{Lemma}
-
+	\todo[inline,color=blue]{need to fill in these lemmas}
     Continuing the computation of the constant term above, we will focus purely on the inner integral now
     \begin{equation*}
         \begin{aligned}
-            \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)}& \lambda.\phi( w\inv nm' x)  dn \\&= \int_{w\inv N'(F)w \cap P(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn \\
-            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv N'(\A)w} \lambda.\phi( nw\inv m' x)  dn . \\
+            \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)}& \lambda.\phi( w\inv um' x)  du \\&= \int_{w\inv U'(F)w \cap P(F) \setminus w\inv U'(\A)w} \lambda.\phi( uw\inv m' x)  du \\
+            (\text{Lemma 5})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv U'(\A)w} \lambda.\phi( uw\inv m' x)  du . \\
         \end{aligned}
     \end{equation*}
-    where the first equality is the change of variables \(w\inv n w\mapsto n \). Denote \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv N'(\A)w \). If we apply lemma 6 and unfold we get the equality
-    \[= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( n_1 n_2 w\inv m' x)  dn_1 dn_2.\]
+    where the first equality is the change of variables \(w\inv u w\mapsto u \). Denote \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv U'(\A)w \). If we apply lemma 6 and unfold we get the equality
+    \[= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( u_1 u_2 w\inv m' x)  du_1 du_2.\]
      Now look at the inner integral here more closely 
-    \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( n_1 n_2 w\inv m' x)  dn_1 dn_2,\]
-    applying Lemma (6) we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m n_2 w\inv m' x)\). 
+    \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( u_1 u_2 w\inv m' x)  du_1 du_2,\]
+    applying Lemma (6) we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m u_2 w\inv m' x)\). 
     \begin{Lemma}
-        \(n_2 w\inv m' x \in K\) with variables as above.
+        \(u_2 w\inv m' x \in K\) with variables as above.
     \end{Lemma}
     This was all in complete generality as well. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesn't exist (its over a point).
 
@@ -127,11 +133,11 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     to see that 
     \begin{equation*}
         \begin{aligned}
-             E_{P'}( \phi, \lambda, x) &= \sum_{ w} \sum_{m'} \int_{N'(F)\cap wP(F)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn \\
-             &=  \sum_{ w} \sum_{m'} \int_{N'(k) \cap wN(k)w\inv \setminus N'(\A)} \lambda.\phi( w\inv nm' x)  dn \\
+             E_{P'}( \phi, \lambda, x) &= \sum_{ w} \sum_{m'} \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du \\
+             &=  \sum_{ w} \sum_{m'} \int_{U'(k) \cap wU(k)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du \\
              &= \sum_{ w} \sum_{m'} M(w, \pi)(\lambda.\phi)(x)
         \end{aligned}
-    \end{equation*}\todo[inline]{I have mixed up my N's and U's too much...}
+    \end{equation*}
     In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series, we will go through a detailed example in the final section \todo{}.
     
 
