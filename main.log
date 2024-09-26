@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  26 SEP 2024 19:48
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  26 SEP 2024 23:22
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1401,19 +1401,21 @@ Overfull \hbox (13.45853pt too wide) in paragraph at lines 39--40
  []
 
 [35]
+Underfull \vbox (badness 2384) detected at line 62
+ []
+
+
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ [36]
+[37]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 50.
-
-[36] [37]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 115.
+ine 114.
 
 [38]
-Overfull \hbox (6.46118pt too wide) in paragraph at lines 133--133
+Overfull \hbox (6.46118pt too wide) in paragraph at lines 132--132
 []\TU/lmr/bx/n/14.4 Con-stant Term Of Eisen-stein Se-ries for Con-ju-gate Levis 
  []
 
@@ -1591,15 +1593,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30129 strings out of 477545
+ 30126 strings out of 477545
  125126,1977958 words of node,token memory allocated
  3935 words of node memory still in use:
    37 hlist, 5 vlist, 2 rule, 2 local_par, 49 glue, 8 kern, 3 penalty, 31 glyph,
  749 attribute, 75 glue_spec, 376 attribute_list, 4 write, 2 save_pos, 67 pdf_li
 teral, 2 pdf_colorstack nodes
-   avail lists: 1:2,2:1572,3:485,4:432,5:718,6:70,7:5904,8:91,9:1247,10:24,11:42
+   avail lists: 1:2,2:1572,3:485,4:408,5:680,6:70,7:5904,8:91,9:1247,10:24,11:42
 6
- 49909 multiletter control sequences out of 65536+600000
+ 49907 multiletter control sequences out of 65536+600000
  60 fonts using 4446511 bytes
  98i,22n,98p,1305b,1195s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
@@ -1629,9 +1631,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/U
 sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rs
 fs10.pfb>
-Output written on main.pdf (75 pages, 589350 bytes).
+Output written on main.pdf (75 pages, 589017 bytes).
 
-PDF statistics: 1012 PDF objects out of 1200 (max. 8388607)
- 290 named destinations out of 1000 (max. 131072)
+PDF statistics: 1010 PDF objects out of 1200 (max. 8388607)
+ 289 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 

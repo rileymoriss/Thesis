@@ -43,12 +43,11 @@ Also note that we assume the computations are taking place in the domain of \(\m
 \subsection{In General}
 We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. Let G be a classical group over a number field F, fix a Borel \(B = TU_0\) and fix \(P = MU\) and \(P' = M'U'\) two standard parabolics. Let \(E(x, \phi, \lambda)\) be defined from P as in section \ref{sec:eisenstein-series}.
 
-First we denote \(W\) the \textbf{Weyl group} of \(G\). This is the group defined by 
-\[W\defeq \mathrm{Norm}_{G(F)}  /M(F).\] 
+The \textbf{Weyl group} of \(G\) is 
+\[W_G\defeq \mathrm{Norm}_{G(F)} T(F) /\mathrm{Cent}_{G(F)}T(F),\] 
+where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Borel and Levi.
 
-
-\todo[inline, color=blue]{define the Weyl group defined here}
-    \begin{Lemma}\label{lem:1}
+	\begin{Lemma}\label{lem:1}
         \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)\]
     \end{Lemma}
     \proofbar{
