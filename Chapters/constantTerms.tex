@@ -41,7 +41,12 @@ This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{get
 Also note that we assume the computations are taking place in the domain of \(\mathfrak{P}\) on which the Eisenstein series is given by the sum formula. By the uniqueness of meromorphic continuation taking constant terms commutes with meromorphic continuation.
 
 \subsection{In General}
-We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MU\) and \(P' = M'U'\) two standard parabolics of a suitable group G over a number field F, with \(E(x, \phi, \lambda)\) defined from P as in section \ref{sec:eisenstein-series}.
+We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. Let G be a classical group over a number field F, fix a Borel \(B = TU_0\) and fix \(P = MU\) and \(P' = M'U'\) two standard parabolics. Let \(E(x, \phi, \lambda)\) be defined from P as in section \ref{sec:eisenstein-series}.
+
+First we denote \(W\) the \textbf{Weyl group} of \(G\). This is the group defined by 
+\[W\defeq \mathrm{Norm}_{G(F)}  /M(F).\] 
+
+
 \todo[inline, color=blue]{define the Weyl group defined here}
     \begin{Lemma}\label{lem:1}
         \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)\]
@@ -126,7 +131,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     This was in complete generality. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesn't exist (its over a point).
 
     \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}\label{constant_conjugate_levi}
-    If we now assume that \(M' = wMw\inv\) and recall the definition of our intertwining operator from section \ref{sec:eisenstein-series} we can use the following 
+    If we now assume that \(M' = wMw\inv\) for \(w\in W\) and recall the definition of our intertwining operator from section \ref{sec:eisenstein-series} we can use the following 
     \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
         \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv,\]
     \end{Lemma}

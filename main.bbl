@@ -68,6 +68,10 @@ Jan~Hendrik Bruinier, Gerard Van Der~Geer, G{\"u}nter Harder, and Don Zagier.
 \newblock {\em The 1-2-3 of {{Modular Forms}}}.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
 
+\bibitem[CKPS]{cogdellFUNCTORIALITYCLASSICALGROUPS}
+J~W Cogdell, H~H Kim, I~I {Piatetski-Shapiro}, and F~Shahidi.
+\newblock {{FUNCTORIALITY FOR THE CLASSICAL GROUPS}}.
+
 \bibitem[Coga]{cogdellLecturesLfunctionsConverse}
 J~W Cogdell.
 \newblock Lectures on {{L-functions}}, {{Converse Theorems}}, and
@@ -185,6 +189,12 @@ Robert~P Langlands.
 \newblock {{REPRESENTATION THEORY ITS RISE AND ITS ROLE IN NUMBER THEORY}}.
 \newblock {\em REPRESENTATION THEORY}.
 
+\bibitem[Lan76]{langlandsFunctionalEquationsSatisfied1976}
+Robert~P. Langlands.
+\newblock {\em On the {{Functional Equations Satisfied}} by {{Eisenstein
+  Series}}}, volume 544 of {\em Lecture {{Notes}} in {{Mathematics}}}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1976.
+
 \bibitem[Lan94]{langAlgebraicNumberTheory1994}
 Serge Lang.
 \newblock {\em Algebraic {{Number Theory}}}, volume 110 of {\em Graduate
@@ -253,6 +263,12 @@ Aaron Pollack.
 \bibitem[RS]{renardREPRESENTATIONSGROUPESREDUCTIFS}
 David Renard and Laurent Schwartz.
 \newblock {REPR{\'E}SENTATIONS DES GROUPES R{\'E}DUCTIFS p-ADIQUES}.
+
+\bibitem[Sha90]{shahidiProofLanglandsConjecture1990}
+Freydoon Shahidi.
+\newblock A {{Proof}} of {{Langlands}}' {{Conjecture}} on {{Plancherel
+  Measures}}; {{Complementary Series}} of p-adic groups.
+\newblock {\em Annals of Mathematics}, 132(2):273--330, 1990.
 
 \bibitem[Sha10]{shahidiEisensteinSeriesAutomorphic2010}
 Freydoon Shahidi.

@@ -1,13 +1,13 @@
 \babel@toc {english}{}\relax 
 \contentsline {subsection}{\numberline {0.0.1}From Ancient to Modern}{ii}{subsection.0.0.1}%
 \contentsline {subsection}{\numberline {0.0.2}Harmonic Analysis}{vi}{subsection.0.0.2}%
-\contentsline {subsection}{\numberline {0.0.3}The Work of Langlands}{vii}{subsection.0.0.3}%
-\contentsline {subsection}{\numberline {0.0.4}Poles of Residual Eisenstein Series}{vii}{subsection.0.0.4}%
+\contentsline {subsection}{\numberline {0.0.3}The Work of Langlands}{viii}{subsection.0.0.3}%
+\contentsline {subsection}{\numberline {0.0.4}Poles of Residual Eisenstein Series}{x}{subsection.0.0.4}%
 \contentsline {chapter}{\numberline {1}Classical Groups}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Definition}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{7}{section*.8}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{7}{section*.9}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{8}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{10}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{11}{subsection.1.2.4}%

@@ -99,18 +99,95 @@ This suggests the generalisation to
 \[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } \GL_n\}   .\]
 But according to Langlands \cite{langlandsREPRESENTATIONTHEORYITS}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, and so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
 \[\{\text{Certain reps of }G(\A)/G(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } G\} .\]
+These two sides of the coorespondence are refered to as the ``automorphic'' side and the ``Galois side'' respectively. The content that follows will be almost entirely on the automorphic side. 
 
 
 \subsection{Harmonic Analysis}
-As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect. 
+As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect, following \cite{follandCourseAbstractHarmonic2016}.
 
 The story starts with the two Fourier transforms, the one for functions on the circle and functions on the real line. Both appearing in the work of Fourier himself around 1822. 
 
 The circle is a compact topological group and for this we have the generalisation of the Fourier transform given by the Peter-Weyl theorem in 1927.
 
+In 1940 Weil worked out the theory for locally compact \textit{abelian} groups, which of course is a strict generalisation of the case for both \R and \(U(1)\).
+
+In the 1950's Segal and Mautner proved the Plancherel Theorem which is the generalisation of this to type I, second countable and unimodular topological groups. The key is that like the Peter-Weyl theorem we are given more than that \textit{some} decomposition exists, we are given explicit details on how to construct the decomposition, its structure and relation to other parts of the representation.
+
+For this section let \(H\) be a locally compact topological group.
+It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears \cite[Ch. 2.4 Cor. 2 ]{LinearRepresentationsFinite}. This still holds for compact topological groups, when one considers continuous unitary representations \cite[5.1]{follandCourseAbstractHarmonic2016}.
+\begin{remark}
+	This is a strict generalisation of the finite groups case, when we give the finite group the discrete topology then all its linear representations are continuous and unitary.
+\end{remark}
+There is one final more general incarnation of this line of investigation in the Plancherel theorem. A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the center of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial we have a decomposition as a  direct sum of irreducible representations. 
+
+\begin{example}
+	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a type one group. This is outside the scope of this thesis but can be found in \cite[Thm. 1.7 + Thm. 2.3]{deitmarTraceClassGroups2017}.
+\end{example}
+
+\begin{example}
+	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a second countable group. First consider the adele ring \(\A_F\) of F . This has the restricted product topology, where if \(\mathcal{O}_\nu\) is the ring of integers of \(F_\nu\), then an arbitrary open subset looks like a union of sets of the form 
+	\[U_S \times \prod_{s\notin S} \mathcal{O}_s,\]
+	where \(U_S\subseteq \prod_{s\in S}F_s\) is open in the product topology. 
+	Because for any place \(F_\nu\) is second countable and the product of second countable spaces is second countable it is clear that \(\prod_{s\in S} F_s\) is second countable. Moreover there is a countable number of finite subsets of \Z, hence there is a bijection between a basis of the restricted product topology and \(\aleph_0\times \aleph_0 \) which is countable hence this topology is second countable.
+	
+	If \(G \defeq \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) is an affine scheme then the topology on \(G(\A)\) is the subspace topology of \(\A^n\) on which all the \(f_1, ..., f_m\) vanish \cite{conradWeilGrothendieckApproaches2012}. In particular the finite product of second countable spaces is second countable and subspaces of second countable spaces are second countable, hence \(G(\A)\) is second countable. 
+\end{example}
+
+\begin{example}
+	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a unimodular group. The proof is outside the scope of this thesis but is stated in \cite[Lem. 2]{conradStanfordNumberTheory}.
+\end{example}
+
+The idea of a direct integral is review in \ref{app:direct_int} to get a quick idea consider the following example:
+\begin{example}[Direct Sums]
+	Let \(I\) be a countable set with the discrete sigma algebra and counting measure \(\mu\). Let \((\mathcal{H}_i)_{i\in I}\) be a collection of Hilbert spaces then
+	\[\bigoplus_{i\in I} \mathcal{H}_i = \left\{ (h_i)_{i\in I}\in \prod_{i\in I} \mathcal{H}_i : \int_I \norm{h_i}_i^2 d\mu <\infty \right\}.\]
+	I.e. the Hilbert space direct sum is by definition square summable sequences, but sums are just discrete integrals.
+\end{example}
+
+\begin{Theorem}[Plancherel, \cite{follandCourseAbstractHarmonic2016}, 7.44]
+	The regular represntation of a type I, second countable and unimodular topological group is a direct integral of the irreducible unitary representations. 
+\end{Theorem}
+\begin{remark}
+	The Plancherel theorem says much more in fact. Like the Peter-Weyl theorem for compact groups it doesnt just give you that some direct integral decomposition exists, it contains many more details about the topology and measure on the set of unitary irreducible representations, and which representations are associated to them in the direct integral. We are being breif as this is motivational.
+\end{remark}
+
+
+
 \subsection{The Work of Langlands}
+It is as a continuation or variation of this tradition that we see the work of Langlands in \cite{langlandsFunctionalEquationsSatisfied1976}, in which he provides some decomposition of the spectrum of the adelic points of a connected reductive algebraic group over a number field \(G(\A)\).
+
+\begin{Theorem}[\cite{arthurEisensteinSeriesTrace1979}, MAIN THEOREM (b)]
+	There is an orthogonal decomposition of the representation of \(G(\A)\) on \(L^2(G(\Q) \backslash G(\A))\) into 
+	\[L^2(G(\Q) \backslash G(\A)) = \bigoplus_{\mathscr{P}}L^2_\mathscr{P}(G(\Q) \backslash G(\A)),\]
+	where \(\mathscr{P}\) runs over certain ``associate classes'' of parabolics of \(G\) and the summands are the direct integrals of spaces of \(L^2\) automorphic forms.
+\end{Theorem}
+These direct integrals are in fact constructed out of subspaces generated by Eisenstein series. 
+
+The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``pieces'' to such a decomposition. We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum. Thus what one wants to do is find a decomposition of the regular representation \(G(\A) \curvearrowright \mathrm{L}^2(G(\A))\).
+
+It is during this analysis that the ideas expressed in his famous letter \cite{langlandsLetterweil196701_rpl_0} would begin to form, as he noticed that certain Euler products of analytic functions were appearing in the constant terms of the Eisenstein series. In particular we will see how the intertwining operator \(M(s, w)\) appears in the constant term of Eisenstein series and Langlands observed that \cite{langlandsEulerProductsa} 
+\[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
+leading to a general conjecture that there is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
+\[M(s, w) = r(s, w)N(s,w),\]
+and \(r(s, w)\) is a ratio of L-functions, as defined by Langlands in for instance \cite{langlandsEulerProductsa}.
+
+Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}. Shahidi showed some cases of this conjecture in \cite{shahidiRamanujanConjectureFiniteness1988}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
+\[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu, w)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
+
+Recently it was shown for classical groups that this \(N\) indeed has the required properties. In particular the following theorem is sufficient for the cases dealt with in \cite{jiangPolesCertainResidual2013}:
+\begin{Theorem}[\cite{cogdellFUNCTORIALITYCLASSICALGROUPS}, 11.1]
+	Suppose that \(\pi_\nu\) is a local component of a globally generic cuspidal representation \(\pi\) of \(G_n(\A)\). Then for any irreducible admissible unitary generic representation \(\pi'_\nu\) of \(\GL_m(k_\nu)\) the normalized intertwining operator \(N'(S, \pi'_\nu\times \pi_\nu, w)\) is holomorphic and non-zero for \(Re(s)\geq 0\)
+\end{Theorem}
 
 \subsection{Poles of Residual Eisenstein Series}
+Moeglin and Waldspurger also acheived a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. 
+First consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then Moeglin and Waldspurger construct a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' and denote it 
+\[\Delta(\tau, b).\]
+They go on to prove that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}.
+
+This representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
+
+\todo{final part connect to the new stuff}
 
 \section*{Outline of Content}
 Chapter one deals with the generalities of linear algebraic groups, the objects whose representation theory is the subject of discussion. First we define them and then look at the important subgroups that are used in the study of automorphic forms arising on the adelic points of these groups. We focus on the classical groups.
