@@ -77,9 +77,13 @@ J~W Cogdell.
 James~W Cogdell.
 \newblock L-{{FUNCTIONS AND FUNCTORIALITY}}.
 
-\bibitem[Con]{conradStandardParabolicSubgroups}
+\bibitem[Cona]{conradStandardParabolicSubgroups}
 Brian Conrad.
 \newblock Standard parabolic subgroups: Theory and examples.
+
+\bibitem[Conb]{conradHISTORYCLASSFIELD}
+Keith Conrad.
+\newblock {{HISTORY OF CLASS FIELD THEORY}}.
 
 \bibitem[Con12]{conradWeilGrothendieckApproaches2012}
 Brian Conrad.
@@ -176,6 +180,17 @@ Dihua Jiang, Baiying Liu, and Lei Zhang.
 Henry~H Kim.
 \newblock {{EISENSTEIN SERIES AND THEIR APPLICATIONS}}.
 
+\bibitem[Lan]{langlandsREPRESENTATIONTHEORYITS}
+Robert~P Langlands.
+\newblock {{REPRESENTATION THEORY ITS RISE AND ITS ROLE IN NUMBER THEORY}}.
+\newblock {\em REPRESENTATION THEORY}.
+
+\bibitem[Lan94]{langAlgebraicNumberTheory1994}
+Serge Lang.
+\newblock {\em Algebraic {{Number Theory}}}, volume 110 of {\em Graduate
+  {{Texts}} in {{Mathematics}}}.
+\newblock Springer, New York, NY, 1994.
+
 \bibitem[Lap22]{lapidPerspectivesEisensteinSeries2022}
 Erez Lapid.
 \newblock Some perspectives on {{Eisenstein}} series, April 2022.
@@ -219,6 +234,13 @@ C.~Moeglin and J.~L. Waldspurger.
 \newblock Cambridge {{Tracts}} in {{Mathematics}}. Cambridge University Press,
   Cambridge, 1995.
 
+\bibitem[Neu99]{neukirchGlobalClassField1999}
+J{\"u}rgen Neukirch.
+\newblock Global {{Class Field Theory}}.
+\newblock In J{\"u}rgen Neukirch, editor, {\em Algebraic {{Number Theory}}},
+  Grundlehren Der Mathematischen {{Wissenschaften}}, pages 357--417. Springer,
+  Berlin, Heidelberg, 1999.
+
 \bibitem[Not]{NotesClassAlgebraic}
 Notes for class on algebraic groups.pdf.
 \newblock
@@ -257,6 +279,13 @@ Audrey Terras.
 \newblock {\em Harmonic {{Analysis}} on {{Symmetric Spaces}}---{{Higher Rank
   Spaces}}, {{Positive Definite Matrix Space}} and {{Generalizations}}}.
 \newblock Springer, New York, NY, 2016.
+
+\bibitem[Wei15]{weinsteinReciprocityLawsGalois2015}
+Jared Weinstein.
+\newblock Reciprocity laws and {{Galois}} representations: Recent
+  breakthroughs.
+\newblock {\em Bulletin of the American Mathematical Society}, 53(1):1--39,
+  August 2015.
 
 \bibitem[Yam13]{yamanaSiegelWeilFormulaQuaternionic2013}
 Shunsuke Yamana.

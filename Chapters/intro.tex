@@ -2,6 +2,116 @@
 The goal of this thesis is to exposit some of the results in \cite{jiangPolesCertainResidual2013}. We aim our exposition at the other masters students in our cohort.
 To explain the results on poles of Eisenstein series to students in other disciplines there is a fair amount of background to be covered.
 
+Here we attempt to put down what we understand of the ``big picture''. It could be argued that we spent too much time trying to understand the motivation for the results in \cite{jiangPolesCertainResidual2013} and not enough time on the results themselves and so this section is to ensure that time was not (very) wasted. 
+
+We should point out that there are many surveys on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are ----------.
+
+\subsection{From Ancient to Modern}
+We follow the wonderful exposition in \cite{weinsteinReciprocityLawsGalois2015}. A problem that Euclid could have understood is ``which positive integers are the sum of two squares''. In 1640 Fermat answered this question, he first reduces the question to when is a prime the sum of two squares. Thus the problem is immediately reformulated as a problem about congruences mod a prime \(p\), ``when does there exist a solution to \(a^2  +b^2 \equiv 0 \;\;(\text{mod }p) \)'', or whats the same, by dividing out \(b^2\), ``when is there a solution to \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\)''. The famously has the solution 
+\begin{Theorem}
+	Let \(p\) be an odd prime. Then \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\) has a solution if and only if \(p\equiv 1 \;\;(\text{mod }4) \).
+\end{Theorem}
+
+Recall the Legendre symbol, for \(p, q\) odd and non-equal primes we have 
+\[\left(\frac{q}{p}\right) \defeq \begin{cases}
+	1 , & \text{there is a solution to }x^2 - q \equiv 0 \;\;(\text{mod }p)\\
+	-1 , & \text{else.}
+\end{cases}.\]
+Then the theorem of Fermat was ``upgraded'' by Gauss to his famous reciprocity law.
+
+\begin{Theorem}
+	For \(p, q\) odd and non-equal primes,
+	\[\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{(p-1)(q-1)}{2}}.\]
+\end{Theorem}
+
+Having a solution mod a prime is the same as asking whether the polynomial splits mod that prime. The natural question is then: \textbf{Q1.} Given a monic irreducible polynomial with integral coefficients can we determine by congruences whether it splits mod a prime. Gausses reciprocity is a complete solution to this problem for polynomials of the form \(f(x) = x^2 - q\) for \(q\) odd prime. 
+\begin{remark}
+	The odd limitation is for brevity here and of course can be lifted. Moreover the solution for primes can be leveraged for a solution for other integers. 
+\end{remark}
+Recall that if \(f(x)\in \Z[x]\) is monic and irreducible then there is a unique minimal field \(F\) in which it factors as linear polynomials, called the splitting field. The Galois group of \(f(x)\) is then defined to be \(\mathrm{Gal}(F/\Q)\). Class field theory is a solution to problem \textbf{Q1.} when this Galois group is \textit{Abelian}. To explain we need to introduce the standard algebraic number theory setup.
+
+Let \(\Q \subseteq K\) be an extension of number fields, with respective rings of integers \(\Z \subseteq \mathcal{O}_K\) and let \(p\) be a prime in \(\Z\) hence \((p)\) is a prime ideal of \(\Z\) and let 
+\[\mathcal{O}_K(p) = \prod_i \mathfrak{P}_i^{e_i},\]
+be the prime decomposition in \(\mathcal{O}_K\). Then \((p)\) \textbf{splits} in \(\mathcal{O}_K\) if for every \(i\) we  have \(e_i = 1\) (this is being unramified) and \(\mathcal{O}_K/\mathfrak{P}_i \cong \Z/(p)\). The splitting of primes is related to the splitting of polynomials by the following theorem
+\begin{Theorem}[\cite{langAlgebraicNumberTheory1994}, Prop. 26]
+	If \(f\in \Z[x]\) monic and irreducible and \(f(\alpha) = 0\) then for \(K = \Q(\alpha)\) we have with finitely many exceptions that \(f\) is split mod \(p\) if and only if \((p)\) splits in \(\mathcal{O}_K\).
+\end{Theorem}
+\begin{example}
+	
+\end{example}
+So to answer \textbf{Q1.} we now want to solve by congruences when prime ideals split. Every field extension \(K/L\) has a Galois closure, that is an extension \(L'/K\) of minimal degree such that \(L\subseteq L'\) and \(L'\) is Galois over \(K\). 
+\begin{Lemma}
+	A prime ideal of \(\mathcal{O}_K\) is split in \(\mathcal{O}_L\) if and only if it is split in \(\mathcal{O}_{L'}\).
+\end{Lemma}
+Thus we lose nothing by considering only Galois extensions of fields. Thus we have ``the main theorem'' of class field theory:
+\begin{Theorem}[\cite{weinsteinReciprocityLawsGalois2015}, Thm. 3.2.1]\label{thm:reciprocity}
+	Let \(K/\Q\) be an abelian and Galois extension. There is an ideal \(\mathfrak{f} = (m)\subseteq \mathcal{O}_\Q = \Z\) such that for a prime \(p\in \Z\) the ideal \((p)\) is split in \(\mathcal{O}_K\) if \(p\equiv 1 \;\; (\text{mod }m)\)
+\end{Theorem} 
+Thus we have a solution to the splitting of primes via congruence relations. 
+
+\begin{example}
+	
+\end{example}
+
+This we hope motivates class field theory, now we will follow \cite{conradHISTORYCLASSFIELD} for some more detail on class field theory. Class field theory is over a hundred years old with a storied past and many incarnations of the main theorem above. To see the Langlands program as a generalisation of this theory we want to trace the development to where Langlands picked up. 
+
+Class field theory begins with Kronecker in 1853, who constructed an extension of number fields \(K'/K\) whose Galois group is isomorphic to the ideal class group of \(K\), a so called (by Weber) ``class field'' for \(K\). Kronecker would go on to make several conjectures that would form the heart of class field theory, for instance he conjectured that a Galois extension of \Q is determined by the primes of \Z that split over that extension. In fact this was solved by Bauer in 1916
+\begin{Theorem}(Bauer)
+	Let \(L_1, L_2\) be finite extensions of a number field \(K\), then \(L_1 = L_2\) if and only if the primes of \(\mathcal{O}_K\) that split in \(\mathcal{O}_{L_1}\) is equal to the set of primes that split in \(\mathcal{O}_{L_2}\).
+\end{Theorem}
+However there was no systematic way of finding \textit{which} primes split over the extension. Takagi was to supply something very close to theorem \ref{thm:reciprocity} in 1920 and it was to be made even more explicit finally by Artin in 1927. Thus \textit{global} class field theory was ``solved'', immediately the natural question was raised, what happens in the \textit{non-abelian} extensions of number fields. The (global) Langlands conjectures (amongst other things) can be viewed as an attempt to answer this question. 
+
+Another direction that people were interested in was extensions of local fields, as opposed to number fields. It was Hilbert who introduced in 1897 the use of the p-adic numbers, in spirit if not in name, he wrote congruences of arbitrary powers of primes. Let \(\nu\) be a place of \(\Q\), then define the \(\nu\)-adic Hilbert symbol for \(a,b\in \Q^\times\)
+\[(a,b)_\nu \defeq \begin{cases}
+	1, & a= x^2-by^2 \text{ has a solution in }\Q_\nu\\
+	-1, &\text{else}
+\end{cases} .\]
+\begin{Theorem}[Hilbert's Quadratic Reciprocity]
+	For all \(	a,b\in \Q^\times\) 
+	\[\prod_\nu (a,b)_\nu = 1.\]
+\end{Theorem}
+This is equivalent to Gauss's reciprocity law, however much more uniform to state, treating odd and even primes in the same way, and not requiring any co-prime conditions. This moreover treats finite and infinite places uniformly. Building on this work and using Artin reciprocity Hasse, after introducing the p-adic numbers in 1927, proved the first versions of \textit{local} class field theory in 1930, that is reciprocity for extensions of the local fields \(\Q_\nu\). The statements here are too technical for a motivational introduction however replacing all the global fields in the above statements with local fields is not far off. 
+
+Note that the definition and proof of local class field theory \textit{depends logically } on global class field theory. Hasse was able to prove later in 1933 the main results again but without recourse to global class field theory. It lacked the explicit construction of the class fields however which was finally supplied in 1965 by Lubin and Tate.
+
+What remained to do was supply a proof of \textit{global} class field theory from local class field theory. In persuit of this task the machinery of the ideles and adeles was introduced. In this language (part of) \textit{global} class field theory can be restated as 
+\begin{Theorem}[\cite{neukirchGlobalClassField1999}, Prop. 1.3]
+	Let the ideal class group of a number field \(K\) be denoted \(\mathrm{Cl}_K\). Then there is a surjection
+	\[ \A^*/ K^* \xrightarrow{A} \mathrm{Cl}_K \cong \mathrm{Gal}(K'/K).\]
+	Where \(K'\) is the class field of \(K\).
+\end{Theorem}
+If we think about representations of these groups then this surjection gives a relation between characters \(\chi\) of \(\A^*/K^*\) and characters \(\chi'\) of \(\mathrm{Gal}(K'/K)\) by pulling back along \(A\).
+
+% https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXEFeKi9LXioiXSxbMiwwLCJcXG1hdGhybXtDbH1fSyJdLFsxLDIsIlxcQ14qIl0sWzAsMiwiXFxjaGkiLDFdLFsxLDIsIlxcY2hpJyIsMV0sWzAsMSwiQSIsMV1d
+\[\begin{tikzcd}[cramped]
+	{\A^*/K^*} && {\mathrm{Gal}(K'/K)} \\
+	\\
+	& {\C^*}
+	\arrow["A"{description}, from=1-1, to=1-3]
+	\arrow["\chi"{description}, from=1-1, to=3-2]
+	\arrow["{\chi'}"{description}, from=1-3, to=3-2]
+\end{tikzcd}\]
+Thus \(A\) can be thought of as generating a correspondence
+\[\{\text{Maps }\A^*/K^*\to \C^*\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \C^*\}. \]
+One then observes that this can be rewritten as 
+\[\{\text{Maps }\GL(\A)/\GL_1(K)\to \GL_1(\C)\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \GL_1(\C)\} .\]
+This suggests the generalisation to 
+\[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } \GL_n\}   .\]
+But according to Langlands \cite{langlandsREPRESENTATIONTHEORYITS}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, and so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
+\[\{\text{Certain reps of }G(\A)/G(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } G\} .\]
+
+
+\subsection{Harmonic Analysis}
+As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect. 
+
+The story starts with the two Fourier transforms, the one for functions on the circle and functions on the real line. Both appearing in the work of Fourier himself around 1822. 
+
+The circle is a compact topological group and for this we have the generalisation of the Fourier transform given by the Peter-Weyl theorem in 1927.
+
+\subsection{The Work of Langlands}
+
+\subsection{Poles of Residual Eisenstein Series}
+
 \section*{Outline of Content}
 Chapter one deals with the generalities of linear algebraic groups, the objects whose representation theory is the subject of discussion. First we define them and then look at the important subgroups that are used in the study of automorphic forms arising on the adelic points of these groups. We focus on the classical groups.
 

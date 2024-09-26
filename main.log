@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  25 SEP 2024 09:53
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  26 SEP 2024 18:43
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1190,78 +1190,89 @@ ine 9.
 
 {C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (./Chapters/intro.tex
-Overfull \hbox (12.23686pt too wide) in paragraph at lines 10--11
-[]\TU/lmr/m/n/12 Chap-ter three is a dis-cus-sion of the con-cept of the con-sta
-nt term in the Archimedean
- []
-
-[2
-
-]) [3] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
-
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+.
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+0.
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/stmaryrd/ustmry.fd)
-[4
+Underfull \vbox (badness 1354) has occurred while \output is active []
+
+ [2
+
+]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 34.
+
+
+(C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[3] [4] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (12.23686pt too wide) in paragraph at lines 120--121
+[]\TU/lmr/m/n/12 Chap-ter three is a dis-cus-sion of the con-cept of the con-sta
+nt term in the Archimedean
+ []
+
+) [7] (./main.toc [8
 
 ])
 \tf@toc=\write6
 
 \openout6 = main.toc
  [1]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 115.
-
-[2
-
-]
 Chapter 1.
-(./Chapters/classicalGroups.tex [3
+(./Chapters/classicalGroups.tex [2
 
-] [4]
+] [3]
 Underfull \vbox (badness 7221) has occurred while \output is active []
 
- [5]
+ [4]
+
+LaTeX Warning: Citation `mostowCompactnessArithmeticallyDefined1962' on page 5 
+undefined on input line 78.
+
+[5]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 78.
+ine 111.
 
-[6]
-Underfull \vbox (badness 2368) has occurred while \output is active []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 172.
+ine 173.
 
-[9]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 203.
+Underfull \vbox (badness 1043) has occurred while \output is active []
 
-[10] [11]) [12]
+ [8]
+[9] [10]) [11] [12]
 Chapter 2.
 (./Chapters/automorphicForms.tex
 
@@ -1272,11 +1283,6 @@ ine 14.
 [13
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 16.
-
- (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
 Underfull \vbox (badness 1596) has occurred while \output is active []
 
  [14]
@@ -1317,7 +1323,7 @@ Overfull \hbox (28.90265pt too wide) detected at line 34
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 92.
+ine 89.
 
 [24] [25]) [26]
 Chapter 4.
@@ -1333,87 +1339,82 @@ Underfull \vbox (badness 2401) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
+[31]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 92.
+ine 102.
 
 
-Underfull \vbox (badness 1173) has occurred while \output is active []
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 103.
 
- [31])
-[32]
+
+LaTeX Warning: Marginpar on page 32 moved.
+
+
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+ [32])
+[33]
 Chapter 5.
-(./Chapters/constantTerms.tex [33
+(./Chapters/constantTerms.tex [34
 
 ]
 Overfull \hbox (13.45853pt too wide) in paragraph at lines 39--40
 \TU/lmr/m/n/12 This com-pu-ta-tion forms the heart of a well known the-o-rem, [[], Prop 10.4.2][[],
  []
 
+[35]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 43.
+ine 45.
 
-[34] [35]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 92.
-
-
+[36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [37]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 110.
 
-[37]
+[38]
 Overfull \hbox (6.46118pt too wide) in paragraph at lines 128--128
 []\TU/lmr/bx/n/14.4 Con-stant Term Of Eisen-stein Se-ries for Con-ju-gate Levis 
  []
 
-) [38]
+) [39]
 Chapter 6.
-(./Chapters/siegelPhi.tex [39
+(./Chapters/siegelPhi.tex [40
 
-] [40]
+] [41]
 Overfull \hbox (7.67148pt too wide) in paragraph at lines 51--52
 []\TU/lmr/m/n/12 The space of Siegel mod-u-lar forms of weight $\OML/cmm/m/it/1
 2 k$ \TU/lmr/m/n/12 and genus g is de-noted $\OMS/cmsy/m/n/12 M[]\OT1/cmr/m/n/1
 2 ([][](\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 ))$\TU/lmr/m/n/12 .
  []
 
-[41]
+[42]
 Underfull \vbox (badness 3108) has occurred while \output is active []
 
- [42]
+ [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 125.
-
-
+ [44]
 Overfull \hbox (49.37234pt too wide) detected at line 186
 []
  []
-
-[44]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 196.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
 Overfull \hbox (34.16978pt too wide) detected at line 202
 []
  []
@@ -1424,49 +1425,35 @@ Overfull \hbox (12.54347pt too wide) detected at line 212
  []
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 214.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 216.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
 Overfull \hbox (78.94653pt too wide) detected at line 229
 []
  []
 
 
-Overfull \hbox (18.02232pt too wide) in paragraph at lines 217--230
-[][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+ [47]
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
  []$\U/msa/m/n/12 $
  []
 
-[47]) [48]
+) [49]
 Chapter 7.
 (./Chapters/Lfunctions.tex
 
-LaTeX Warning: Citation `arthurLfunctionsAutomorphicRepresenta' on page 49 unde
+LaTeX Warning: Citation `arthurLfunctionsAutomorphicRepresenta' on page 50 unde
 fined on input line 4.
 
-[49
+[50
 
 ]
 
-LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 50 und
+LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 51 und
 efined on input line 37.
 
 
-LaTeX Warning: Citation `arthurLecturesAutomorphicFunctions1991a' on page 50 un
+LaTeX Warning: Citation `arthurLecturesAutomorphicFunctions1991a' on page 51 un
 defined on input line 37.
 
 
@@ -1474,18 +1461,13 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 38.
 
+[51]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 39.
+ine 55.
 
-[50]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 56.
-
-) [51]
+) [52]
 Chapter 8.
 (./Chapters/polesOfEisensteinSeries.tex
 Overfull \hbox (6.33286pt too wide) in paragraph at lines 2--3
@@ -1494,14 +1476,14 @@ Overfull \hbox (6.33286pt too wide) in paragraph at lines 2--3
  []
 
 
-LaTeX Warning: Reference `residual_spec' on page 52 undefined on input line 10.
+LaTeX Warning: Reference `residual_spec' on page 53 undefined on input line 10.
 
 
-[52
+[53
 
 ]
 
-LaTeX Warning: Reference `residual_spec' on page 53 undefined on input line 16.
+LaTeX Warning: Reference `residual_spec' on page 54 undefined on input line 16.
 
 
 Excluding 'comment' comment.
@@ -1515,9 +1497,9 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 46.
 
-[53] [54]
+[54] [55]
 
-LaTeX Warning: Reference `L_inter' on page 55 undefined on input line 82.
+LaTeX Warning: Reference `L_inter' on page 56 undefined on input line 82.
 
 
 Overfull \hbox (1.93622pt too wide) in paragraph at lines 84--86
@@ -1526,9 +1508,9 @@ or sec-ond power of the stan-dard rep-re-sen-ta-tion of $[][]\OT1/cmr/m/n/12 (\
 U/msb/m/n/12 C[]\OT1/cmr/m/n/12 )$\TU/lmr/m/n/12 .
  []
 
-) [55]
+) [56]
 Appendix A.
-[56
+[57
 
 ] (./main.tdo)
 \tf@tdo=\write7
@@ -1538,29 +1520,29 @@ Appendix A.
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 148.
+ine 137.
 
-[57
+[58
 
-] [58] (./main.bbl [59
+] (./main.bbl [59
 
-] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+] [60] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 []\TU/lmr/m/n/12 Lin-ear Rep-re-sen-ta-tions of Fi-nite Groups | Springer-Link.
  []
 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 []\TU/lmr/m/n/12 Notes for class on al-ge-braic groups.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 \TU/lmr/m/n/12 https://users.math.msu.edu/user-s/ruiterj2/Math-/-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 \TU/lmr/m/n/12 Doc-u-ments/-Sum-mer%202019/Al-ge-braic%20Group-
  []
 
@@ -1578,22 +1560,22 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30066 strings out of 477545
+ 30100 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 8881 words of node memory still in use:
-   123 hlist, 14 vlist, 2 rule, 4 disc, 8 local_par, 178 glue, 10 kern, 11 penal
-ty, 108 glyph, 1369 attribute, 75 glue_spec, 686 attribute_list, 10 write, 8 sav
-e_pos, 268 pdf_literal, 2 pdf_action, 8 pdf_colorstack nodes
-   avail lists: 1:2,2:1852,3:295,4:574,5:966,6:71,7:5158,8:91,9:1203,10:24,11:37
-1
- 49878 multiletter control sequences out of 65536+600000
+ 3887 words of node memory still in use:
+   37 hlist, 5 vlist, 2 rule, 2 local_par, 49 glue, 8 kern, 3 penalty, 31 glyph,
+ 733 attribute, 75 glue_spec, 368 attribute_list, 4 write, 2 save_pos, 67 pdf_li
+teral, 2 pdf_colorstack nodes
+   avail lists: 1:2,2:1572,3:485,4:408,5:682,6:70,7:5392,8:91,9:1247,10:24,11:40
+9
+ 49897 multiletter control sequences out of 65536+600000
  60 fonts using 4446511 bytes
- 98i,22n,98p,1217b,1207s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,22n,98p,1217b,1195s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an8-italic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/
 public/lm/lmroman10-bolditalic.otf><//?/c:/users/riley/appdata/local/programs/mi
-ktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:/users/riley/appdata/l
-ocal/programs/miktex/fonts/opentype/public/lm/lmromanslant12-regular.otf><//?/c:
+ktex/fonts/opentype/public/lm/lmromanslant12-regular.otf><//?/c:/users/riley/app
+data/local/programs/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:
 /users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman8-reg
 ular.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public
 /lm/lmroman12-regular.otf><//?/c:/users/riley/appdata/local/programs/miktex/font
@@ -1616,9 +1598,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/U
 sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rs
 fs10.pfb>
-Output written on main.pdf (67 pages, 539612 bytes).
+Output written on main.pdf (71 pages, 562074 bytes).
 
-PDF statistics: 929 PDF objects out of 1000 (max. 8388607)
- 258 named destinations out of 1000 (max. 131072)
+PDF statistics: 962 PDF objects out of 1000 (max. 8388607)
+ 273 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 

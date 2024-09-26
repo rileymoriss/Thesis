@@ -122,7 +122,7 @@ which can be given the explicit matrix representations
 
 and unipotent 
 \[ n(s;h,k) \defeq \begin{pmatrix} 1 & 0 & 0 & h\\ -k^t & 1 & h^t & s+h^t k\\ 0 & 0 & 1 & k\\ 0 & 0 & 0 & 1 \end{pmatrix}, \;\;\; h, k\in\mathrm{Mat}_{(g-r)\times r}(\R),\; s\in\mathrm{Sym}_{r}(\R)\]
-We have the following short exact sequence \todo[inline]{prove it}
+We have the following short exact sequence 
 \[ 1\to \mathrm{Sym}_{r}(\R)\to N_r(\R)\to \mathrm{Mat}_{(g-r)\times r}(\R)\times\mathrm{Mat}_{(g-r)\times r}(\R) \to 1. \]
 which we will use to unfold our integral below, for compactness we define \(H_r \defeq \mathrm{Mat}_{(g-r)\times r}\). We will now denote \([G] \defeq G(\Z)\backslash G(\R)\) and compute the constant term
 \begin{align}
@@ -193,7 +193,7 @@ So we have shown that
 
 Again lets focus on this integrand \(f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}\) and compute its Fourier expansion, see \cite[3.4]{bruinier123ModularForms2008}. Recall that a symmetric matrix \(n\in \GL_g(\Q)\) is called half integral if \(2n\) is integral with even diagonal entries, then a Siegel modular form has a Fourier expansion of the form
 \[f(z) = \sum_{n \text{ half integral}}a(n) e^{2\pi i \mathrm{Tr}(nz)} \]
-First the space of half integral \(g\times g\) matrices, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism \todo[inline]{prove it}
+First the space of half integral \(g\times g\) matrices, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism
 \[ \mathrm{HI}_{g-r} \oplus \tfrac{ 1}{ 2} \mathrm{Mat}_{ r\times (g-r)}(\Z) \oplus \mathrm{HI}_{r}\to\mathrm{HI}_g, \qquad (n, m, l)\mapsto \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}, \]
 thus unfolding the (discrete) integral we get 
 \begin{align*}
@@ -211,9 +211,9 @@ putting this into our Fourier expansion
 	&= \sum_{n} \sum_{m} \sum_{l} a\begin{pmatrix} n & m\\ m^t & l \end{pmatrix} \exp \Big(2\pi i \big( &\mathrm{Tr} (n\tau) +  \mathrm{Tr} (m(-k^t \tau + h^t )) +  \mathrm{Tr} (m^t(-\tau k + h)) \\ & &  +  \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\big)\Big)  \\
 \end{align*}
 
-If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\), \todo{my Tm differs from Chengjing}
+If we denote \(T_l \defeq \mathrm{Tr} (l( k^t \tau k + A A^t i + s))\),
 \[T_{m,h}\defeq \mathrm{Tr}(mh^t + m^th), \;\; T_{m,k} \defeq \mathrm{Tr}(-mk^t\tau - m^t\tau k) , \]
-and \(T_m \defeq T_{m,h} + T_{m,k}\) then we can substitute this back into our constant term\todo[inline]{Converges uniformly a priori on compact sets, well I don't know if I can swap all these sums haha}
+and \(T_m \defeq T_{m,h} + T_{m,k}\) then we can substitute this back into our constant term
 \resizebox{\linewidth}{!}{
 	\begin{minipage}{\linewidth}
 		\begin{align*}
@@ -227,8 +227,11 @@ and \(T_m \defeq T_{m,h} + T_{m,k}\) then we can substitute this back into our c
 		\end{align*}
 	\end{minipage}
 }
+\begin{remark}
+	We have a priori uniform convergence on compact subsets of these integrals, however we leave it for future work to check the details of interchanging these sums and integrals.
+\end{remark}
 
-Now we use that the integration of unitary characters is very simple \ref{integrate_unitary_char} and the fact that 
+Now we use lemma \ref{integrate_unitary_char} and the fact that 
 \[s\mapsto  e^{2\pi iT_l} \]
 is a non-trivial unitary character of \(\mathrm{Sym}_{g-r}\) whenever \(l\neq 0\) to get that 
 \[\intof{[\mathrm{Sym}_{g-r}]}{  e^{2\pi iT_l}  }{s} = \begin{cases}

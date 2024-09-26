@@ -74,22 +74,21 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
 
 If \(\mathfrak{g}\) is the Lie algebra of \(G(F_\infty)\) and \(K_\infty\subseteq G(F_\infty)\) is a maximal compact subgroup in good position we can define a \((\mathfrak{g}, K_\infty)\)-module structure on the space of automorphic forms as follows. Recall that by definition we have that 
 \[\mathcal{A}(U(\A)M(F)\backslash G(\A)) \subseteq C^\infty(G(\A_f)) \tensor C^\infty(G(F_\infty)).\]
-If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) then \(K_\infty\) acts by 
+If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) and \((g_f, g_\infty)\in G(\A)\) then \(K_\infty\) acts by 
 \[k.(\phi_f\tensor \phi_\infty)(g) \defeq \phi_f(g) \tensor \phi_\infty(gk),\]
-i.e. via the right regular representation on the archimedian component. The lie algebra of \(G(F_\infty)\) acts as we have previously defined in section \ref{lie_algebra_action} via
-\[z.(\phi_f\tensor \phi_\infty)(g) = \phi_f(g)\tensor \Dif{}{t}\phi_\infty(ge^{tz})|_{t=0}.\] 
+i.e. via the right regular representation on the Archimedean component. We extend this linearly from pure tensors to all tensors. The lie algebra of \(G(F_\infty)\) acts by linearly extending the action we have previously defined in section \ref{lie_algebra_action}, via
+\[z.(\phi_f\tensor \phi_\infty)(g_f, g_\infty) = \phi_f(g_f)\tensor \Dif{}{t}\phi_\infty(g_\infty e^{tz})|_{t=0}.\] 
 
-Lets check the three conditions. (2) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. 
-\begin{Lemma}
-	\(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) decomposes into a countable direct sum of finite dimensional \(K_\infty\) representations. 
-\end{Lemma}
+To see that we have really fixed the \(K_\infty\) problem we should check that this really defines an action. 
 
 \begin{Lemma}
-	For all \(k\in K_\infty\) and \(X\in \mathfrak{g}\) we have that 
-	\[\phi_f(g)\tensor \Dif{}{t}\phi_\infty(gk\inv e^{tX}k)|_{t=0} = \phi_f(g)\tensor \Dif{}{t}\phi_\infty(g\inv e^{tkXk\inv})|_{t=0} .\]
+	If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite and \(X\in \mathfrak{g}\) then \(X.\phi\) is \(K_\infty\)-finite.
 \end{Lemma}
+\proofbar{
+	\todo[inline, color=blue]{fill}
+}
 
-\todo[inline, color=blue]{Is this right...}
+Finally the conditions for these representations to be a \((\mathfrak{g}, K_\infty)\) module can be checked. (1) is \cite[Thm. 6.3.4]{getzIntroductionAutomorphicRepresentations2024}. (2) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. (3) is immediate from the definition of the adjoint action.
 
 
 \section{Automorphic Representations}

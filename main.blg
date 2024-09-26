@@ -5,6 +5,7 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
+Warning--I didn't find a database entry for "mostowCompactnessArithmeticallyDefined1962"
 Warning--I didn't find a database entry for "arthurLfunctionsAutomorphicRepresenta"
 Warning--I didn't find a database entry for "cogdellLECTURESINTEGRALREPRESENTATIONS"
 Warning--I didn't find a database entry for "arthurLecturesAutomorphicFunctions1991a"
@@ -21,6 +22,8 @@ Warning--empty journal in cogdellLecturesLfunctionsConverse
 Warning--empty year in cogdellLecturesLfunctionsConverse
 Warning--empty journal in cogdellLFUNCTIONSFUNCTORIALITY
 Warning--empty year in cogdellLFUNCTIONSFUNCTORIALITY
+Warning--empty journal in conradHISTORYCLASSFIELD
+Warning--empty year in conradHISTORYCLASSFIELD
 Warning--empty journal in emertonCLASSICALMODULARFORMS
 Warning--empty year in emertonCLASSICALMODULARFORMS
 Warning--empty journal in garrettModernAnalysisAutomorphic
@@ -32,6 +35,7 @@ Warning--empty year in godementGroupesLineairesAlgebriques
 Warning--empty journal in grenierANALOGUESIEGELXOPERATOR2024
 Warning--empty journal in kimEISENSTEINSERIESTHEIR
 Warning--empty year in kimEISENSTEINSERIESTHEIR
+Warning--empty year in langlandsREPRESENTATIONTHEORYITS
 Warning--empty journal in makisumiStructureTheoryReductive
 Warning--empty year in makisumiStructureTheoryReductive
 Warning--empty journal in milneBasicTheoryAffine
@@ -44,45 +48,45 @@ Warning--empty journal in pollackRANKINSELBERGMETHODUSER
 Warning--empty year in pollackRANKINSELBERGMETHODUSER
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 50 entries,
+You've used 55 entries,
             2543 wiz_defined-function locations,
-            842 strings with 13606 characters,
-and the built_in function-call counts, 15231 in all, are:
-= -- 1424
-> -- 569
-< -- 46
-+ -- 175
-- -- 166
-* -- 995
-:= -- 2477
-add.period$ -- 136
-call.type$ -- 50
-change.case$ -- 250
-chr.to.int$ -- 48
-cite$ -- 90
-duplicate$ -- 732
-empty$ -- 1245
-format.name$ -- 245
-if$ -- 3090
-int.to.chr$ -- 3
+            872 strings with 14420 characters,
+and the built_in function-call counts, 16895 in all, are:
+= -- 1589
+> -- 613
+< -- 53
++ -- 187
+- -- 177
+* -- 1104
+:= -- 2740
+add.period$ -- 151
+call.type$ -- 55
+change.case$ -- 274
+chr.to.int$ -- 52
+cite$ -- 98
+duplicate$ -- 820
+empty$ -- 1383
+format.name$ -- 266
+if$ -- 3435
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 58
-newline$ -- 232
-num.names$ -- 143
-pop$ -- 416
+missing$ -- 64
+newline$ -- 256
+num.names$ -- 160
+pop$ -- 451
 preamble$ -- 1
-purify$ -- 316
+purify$ -- 346
 quote$ -- 0
-skip$ -- 531
+skip$ -- 590
 stack$ -- 0
-substring$ -- 528
-swap$ -- 69
-text.length$ -- 46
-text.prefix$ -- 34
+substring$ -- 611
+swap$ -- 84
+text.length$ -- 53
+text.prefix$ -- 39
 top$ -- 0
-type$ -- 328
-warning$ -- 36
-while$ -- 121
-width$ -- 53
-write$ -- 578
-(There were 39 warnings)
+type$ -- 364
+warning$ -- 39
+while$ -- 137
+width$ -- 58
+write$ -- 641
+(There were 43 warnings)

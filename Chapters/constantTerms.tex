@@ -38,6 +38,8 @@ Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus G(\A)\) for \(P = MU
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
 This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations. Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
 
+Also note that we assume the computations are taking place in the domain of \(\mathfrak{P}\) on which the Eisenstein series is given by the sum formula. By the uniqueness of meromorphic continuation taking constant terms commutes with meromorphic continuation.
+
 \subsection{In General}
 We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. First fix \(P = MU\) and \(P' = M'U'\) two standard parabolics of a suitable group G over a number field F, with \(E(x, \phi, \lambda)\) defined from P as in section \ref{sec:eisenstein-series}.
 \todo[inline, color=blue]{define the Weyl group defined here}
@@ -88,8 +90,6 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     \end{align*}
 
     The change of variables is \((m', u') \mapsto ((m')\inv u' m', (m')\inv u' m')\).
-    Again we assume that our $x$ is sufficiently large so all the integrals converge.
-    \todo[inline, color=blue]{Ok I need to expliain how this analysis is working. The eisenstein series is only defined bby the meromorphic continuation of this sum. So if we calculate the constant term and then meromorphiccally continue its the same I guess is the claim?}
 
 \subsection{Constant Terms of Cuspidal Eisenstein Series}
 \begin{Lemma}\label{lem:4}
