@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  27 SEP 2024 20:48
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  27 SEP 2024 22:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1480,44 +1480,21 @@ ine 38.
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 55.
+ine 68.
 
 ) [51]
 Chapter 8.
-(./Chapters/polesOfEisensteinSeries.tex
-Overfull \hbox (6.33286pt too wide) in paragraph at lines 2--3
-\TU/lmr/m/n/12 Our goal here is to ex-posit and sur-vey the work in pa-pers such
- as [[]][[]][[]]
- []
+(./Chapters/polesOfEisensteinSeries.tex [52
 
-
-LaTeX Warning: Reference `residual_spec' on page 52 undefined on input line 10.
-
-
-[52
-
-]
-
-LaTeX Warning: Reference `residual_spec' on page 53 undefined on input line 16.
-
-
-Excluding 'comment' comment.
-Overfull \hbox (50.06859pt too wide) detected at line 45
-\OML/cmm/m/it/12 E\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '; s\OT1/cmr/m/n/12 )[] = [
-] [] [][] [][] \OML/cmm/m/it/12 s:'\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n[]n[]w[]m[]x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dn[]dn[];
- []
-
+] Excluding 'comment' comment.
+[53] [54]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 46.
-
-[53] [54]
-
-LaTeX Warning: Reference `L_inter' on page 55 undefined on input line 82.
+ine 85.
 
 
-Overfull \hbox (1.93622pt too wide) in paragraph at lines 84--86
+Overfull \hbox (1.49315pt too wide) in paragraph at lines 88--90
 \TU/lmr/m/n/12 where $\OMS/cmsy/m/n/12 ^[]$ \TU/lmr/m/n/12 de-notes the ex-te-ri
 or sec-ond power of the stan-dard rep-re-sen-ta-tion of $[][]\OT1/cmr/m/n/12 (\
 U/msb/m/n/12 C[]\OT1/cmr/m/n/12 )$\TU/lmr/m/n/12 .
@@ -1542,22 +1519,22 @@ ine 137.
 ] (./main.bbl [58
 
 ] [59] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 []\TU/lmr/m/n/12 Lin-ear Rep-re-sen-ta-tions of Fi-nite Groups | Springer-Link.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--258
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 []\TU/lmr/m/n/12 Notes for class on al-ge-braic groups.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--258
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 \TU/lmr/m/n/12 https://users.math.msu.edu/user-s/ruiterj2/Math-/-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--258
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 \TU/lmr/m/n/12 Doc-u-ments/-Sum-mer%202019/Al-ge-braic%20Group-
  []
 
@@ -1575,17 +1552,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30113 strings out of 477545
+ 30170 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 11406 words of node memory still in use:
-   155 hlist, 17 vlist, 2 rule, 12 disc, 10 local_par, 239 glue, 17 kern, 16 pen
-alty, 200 glyph, 1629 attribute, 75 glue_spec, 816 attribute_list, 12 write, 10 
-save_pos, 335 pdf_literal, 10 pdf_colorstack nodes
-   avail lists: 1:2,2:1237,3:337,4:360,5:606,6:62,7:5545,8:91,9:1183,10:24,11:41
-4
- 49897 multiletter control sequences out of 65536+600000
+ 9623 words of node memory still in use:
+   126 hlist, 14 vlist, 2 rule, 11 disc, 8 local_par, 191 glue, 15 kern, 13 pena
+lty, 162 glyph, 1417 attribute, 75 glue_spec, 710 attribute_list, 10 write, 8 sa
+ve_pos, 268 pdf_literal, 1 pdf_action, 8 pdf_colorstack nodes
+   avail lists: 1:2,2:1994,3:595,4:360,5:608,6:63,7:5631,8:91,9:1215,10:24,11:41
+5
+ 49953 multiletter control sequences out of 65536+600000
  60 fonts using 4446511 bytes
- 98i,22n,98p,1305b,1195s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,28n,98p,1305b,1199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/open
 type/public/lm/lmromanslant12-regular.otf><//?/c:/users/riley/appdata/local/prog
@@ -1613,9 +1590,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/U
 sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rs
 fs10.pfb>
-Output written on main.pdf (74 pages, 586777 bytes).
+Output written on main.pdf (74 pages, 588273 bytes).
 
-PDF statistics: 1001 PDF objects out of 1200 (max. 8388607)
- 286 named destinations out of 1000 (max. 131072)
+PDF statistics: 1004 PDF objects out of 1200 (max. 8388607)
+ 287 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 

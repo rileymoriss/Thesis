@@ -72,6 +72,12 @@ Jan~Hendrik Bruinier, Gerard Van Der~Geer, G{\"u}nter Harder, and Don Zagier.
 J~W Cogdell, H~H Kim, I~I {Piatetski-Shapiro}, and F~Shahidi.
 \newblock {{FUNCTORIALITY FOR THE CLASSICAL GROUPS}}.
 
+\bibitem[CKPS04]{cogdellFunctorialityClassicalGroups2004}
+J.~W. Cogdell, H.~H. Kim, I.~I. {Piatetski-Shapiro}, and F.~Shahidi.
+\newblock Functoriality for the classical groups.
+\newblock {\em Publications math{\'e}matiques de l'IH{\'E}S}, 99(1):163--233,
+  June 2004.
+
 \bibitem[Coga]{cogdellLecturesLfunctionsConverse}
 J~W Cogdell.
 \newblock Lectures on {{L-functions}}, {{Converse Theorems}}, and
@@ -155,11 +161,11 @@ Douglas Grenier.
   GLn}}({{Z}}).
 \newblock 2024.
 
-\bibitem[GS21]{ginzburgTopFourierCoefficients2021}
-David Ginzburg and David Soudry.
-\newblock Top {{Fourier}} coefficients of residual {{Eisenstein}} series on
-  symplectic or metaplectic groups, induced from {{Speh}} representations.
-\newblock {\em Research in Number Theory}, 8(1):10, December 2021.
+\bibitem[GRS11]{ginzburgDescentMapAutomorphic2011}
+D.~Ginzburg, Stephen Rallis, and David Soudry.
+\newblock {\em The Descent Map from Automorphic Representations of {{GL}}(n) to
+  Classical Groups}.
+\newblock World Scientific Pub, New Jersey, 2011.
 
 \bibitem[Hal15]{hallLieGroupsLie2015}
 Brian~C. Hall.
