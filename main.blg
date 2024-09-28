@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+White space in argument---line 252 of file main.aux
+ : \citation{remarks
+ :                   on rankin selberg convolutions Cogdel and PT-shapiro}
+I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
@@ -11,8 +15,8 @@ Warning--I didn't find a database entry for "langlandsLetterweil196701_rpl_0"
 Warning--I didn't find a database entry for "langlandsEulerProductsa"
 Warning--I didn't find a database entry for "shahidiRamanujanConjectureFiniteness1988"
 Warning--I didn't find a database entry for "mostowCompactnessArithmeticallyDefined1962"
-Warning--I didn't find a database entry for "arthurLfunctionsAutomorphicRepresenta"
 Warning--I didn't find a database entry for "cogdellLECTURESINTEGRALREPRESENTATIONS"
+Warning--I didn't find a database entry for "arthurLfunctionsAutomorphicRepresenta"
 Warning--I didn't find a database entry for "arthurLecturesAutomorphicFunctions1991a"
 Warning--to sort, need author or key in LinearRepresentationsFinite
 Warning--to sort, need author or key in BuildingsClassicalGroups
@@ -55,45 +59,45 @@ Warning--empty journal in pollackRANKINSELBERGMETHODUSER
 Warning--empty year in pollackRANKINSELBERGMETHODUSER
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-You've used 59 entries,
+You've used 60 entries,
             2543 wiz_defined-function locations,
-            906 strings with 15501 characters,
-and the built_in function-call counts, 18451 in all, are:
-= -- 1735
-> -- 697
-< -- 56
-+ -- 220
-- -- 208
-* -- 1228
-:= -- 3004
-add.period$ -- 162
-call.type$ -- 59
-change.case$ -- 299
-chr.to.int$ -- 56
-cite$ -- 104
-duplicate$ -- 880
-empty$ -- 1489
-format.name$ -- 303
-if$ -- 3735
+            913 strings with 15719 characters,
+and the built_in function-call counts, 18809 in all, are:
+= -- 1773
+> -- 705
+< -- 57
++ -- 222
+- -- 210
+* -- 1257
+:= -- 3060
+add.period$ -- 165
+call.type$ -- 60
+change.case$ -- 304
+chr.to.int$ -- 57
+cite$ -- 105
+duplicate$ -- 895
+empty$ -- 1519
+format.name$ -- 307
+if$ -- 3807
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 70
-newline$ -- 275
-num.names$ -- 172
-pop$ -- 485
+missing$ -- 71
+newline$ -- 280
+num.names$ -- 175
+pop$ -- 488
 preamble$ -- 1
-purify$ -- 377
+purify$ -- 383
 quote$ -- 0
-skip$ -- 629
+skip$ -- 640
 stack$ -- 0
-substring$ -- 685
-swap$ -- 89
-text.length$ -- 56
-text.prefix$ -- 41
+substring$ -- 717
+swap$ -- 90
+text.length$ -- 57
+text.prefix$ -- 42
 top$ -- 0
-type$ -- 388
+type$ -- 396
 warning$ -- 41
-while$ -- 150
-width$ -- 63
-write$ -- 690
-(There were 50 warnings)
+while$ -- 154
+width$ -- 64
+write$ -- 703
+(There was 1 error message)

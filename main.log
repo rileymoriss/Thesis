@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  27 SEP 2024 22:15
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  28 SEP 2024 04:56
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1457,37 +1457,199 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--257
 Chapter 7.
 (./Chapters/Lfunctions.tex
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathop' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcharnumdef' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\std@minus' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcodenum' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\-' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\-' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.66638pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathgroup' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symoperators' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathop' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcharnumdef' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\std@minus' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcodenum' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\-' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\-' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.66638pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathgroup' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symoperators' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2.
+
+
+LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 49 und
+efined on input line 4.
+
+
+LaTeX Warning: Citation `remarks on rankin selberg convolutions Cogdel and PT-s
+hapiro' on page 49 undefined on input line 12.
+
+
 LaTeX Warning: Citation `arthurLfunctionsAutomorphicRepresenta' on page 49 unde
-fined on input line 4.
+fined on input line 18.
 
 [49
 
-]
+] [50]
 
-LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 50 und
-efined on input line 37.
-
-
-LaTeX Warning: Citation `arthurLecturesAutomorphicFunctions1991a' on page 50 un
-defined on input line 37.
+LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 51 und
+efined on input line 51.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 38.
+LaTeX Warning: Citation `arthurLecturesAutomorphicFunctions1991a' on page 51 un
+defined on input line 51.
 
-[50]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 68.
+ine 52.
 
-) [51]
+[51]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 82.
+
+) [52]
 Chapter 8.
-(./Chapters/polesOfEisensteinSeries.tex [52
+(./Chapters/polesOfEisensteinSeries.tex [53
 
 ] Excluding 'comment' comment.
-[53] [54]
+[54] [55]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
@@ -1500,9 +1662,9 @@ or sec-ond power of the stan-dard rep-re-sen-ta-tion of $[][]\OT1/cmr/m/n/12 (\
 U/msb/m/n/12 C[]\OT1/cmr/m/n/12 )$\TU/lmr/m/n/12 .
  []
 
-) [55]
+) [56]
 Appendix A.
-[56
+[57
 
 ] (./main.tdo)
 \tf@tdo=\write7
@@ -1514,31 +1676,31 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 137.
 
-[57
+[58
 
-] (./main.bbl [58
+] (./main.bbl [59
 
-] [59] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+] [60] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
 []\TU/lmr/m/n/12 Lin-ear Rep-re-sen-ta-tions of Fi-nite Groups | Springer-Link.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 []\TU/lmr/m/n/12 Notes for class on al-ge-braic groups.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 \TU/lmr/m/n/12 https://users.math.msu.edu/user-s/ruiterj2/Math-/-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 \TU/lmr/m/n/12 Doc-u-ments/-Sum-mer%202019/Al-ge-braic%20Group-
  []
 
-[61]) [62] (./main.aux)
+[63]) [64] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1548,20 +1710,20 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 455A936CD3A7FEB1A020254035491BC3;4204.
+(rerunfilecheck)             Checksum: 4130495BBF304C9FFD4BF73211E0B0A4;4881.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30170 strings out of 477545
+ 30199 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 9623 words of node memory still in use:
-   126 hlist, 14 vlist, 2 rule, 11 disc, 8 local_par, 191 glue, 15 kern, 13 pena
-lty, 162 glyph, 1417 attribute, 75 glue_spec, 710 attribute_list, 10 write, 8 sa
-ve_pos, 268 pdf_literal, 1 pdf_action, 8 pdf_colorstack nodes
-   avail lists: 1:2,2:1994,3:595,4:360,5:608,6:63,7:5631,8:91,9:1215,10:24,11:41
-5
- 49953 multiletter control sequences out of 65536+600000
- 60 fonts using 4446511 bytes
+ 7938 words of node memory still in use:
+   97 hlist, 11 vlist, 2 rule, 8 disc, 6 local_par, 150 glue, 15 kern, 10 penalt
+y, 137 glyph, 1197 attribute, 75 glue_spec, 600 attribute_list, 8 write, 6 save_
+pos, 201 pdf_literal, 1 pdf_action, 6 pdf_colorstack nodes
+   avail lists: 1:2,2:1958,3:512,4:360,5:608,6:68,7:5697,8:91,9:1247,10:24,11:41
+8
+ 49975 multiletter control sequences out of 65536+600000
+ 80 fonts using 5644255 bytes
  98i,28n,98p,1305b,1199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/open
@@ -1580,19 +1742,20 @@ Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.p
 fb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmr12.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/riley/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/riley/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/riley/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/U
-sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rs
-fs10.pfb>
-Output written on main.pdf (74 pages, 588273 bytes).
+c/amsfonts/cm/cmr17.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr6.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/riley/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/riley/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/riley/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/r
+iley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
+b><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+rsfs/rsfs10.pfb>
+Output written on main.pdf (76 pages, 602444 bytes).
 
-PDF statistics: 1004 PDF objects out of 1200 (max. 8388607)
- 287 named destinations out of 1000 (max. 131072)
- 224 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1034 PDF objects out of 1200 (max. 8388607)
+ 294 named destinations out of 1000 (max. 131072)
+ 240 words of extra memory for PDF output out of 10000 (max. 100000000)
 

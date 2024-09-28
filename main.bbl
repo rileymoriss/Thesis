@@ -148,6 +148,12 @@ Jayce~R. Getz and Heekyoung Hahn.
 Roger Godement.
 \newblock {Groupes lin{\'e}aires alg{\'e}briques sur un corps parfait}.
 
+\bibitem[Grb11]{grbacResidualSpectrumSplit2011}
+Neven Grbac.
+\newblock On the residual spectrum of split classical groups supported in the
+  {{Siegel}} maximal parabolic subgroup.
+\newblock {\em Monatshefte f{\"u}r Mathematik}, 163(3):301--314, July 2011.
+
 \bibitem[Gre92]{grenierAnalogueSiegelFOperator1992}
 Douglas Grenier.
 \newblock An {{Analogue}} of {{Siegel}}'s {$\varphi$}-{{Operator}} for

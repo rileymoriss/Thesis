@@ -36,9 +36,13 @@
 \contentsline {subsection}{\numberline {6.2.2}Modular Form Case}{42}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Simplifying the Constant Term}{43}{subsection.6.2.3}%
 \contentsline {chapter}{\numberline {7}L-Functions}{49}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Automorphic L-Functions}{49}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{52}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{52}{section.8.1}%
-\contentsline {section}{\numberline {8.2}The Constant Term}{53}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{54}{section.8.3}%
-\contentsline {chapter}{\numberline {A}Test}{56}{appendix.A}%
+\contentsline {section}{\numberline {7.1}L-Functions for \(\GL _n\times \GL _m\)}{49}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Definition}{49}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Poles and Zeroes}{49}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}L-Functions for Classical Groups}{49}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Automorphic L-Functions}{49}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{53}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{53}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Constant Term}{54}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{55}{section.8.3}%
+\contentsline {chapter}{\numberline {A}Test}{57}{appendix.A}%
