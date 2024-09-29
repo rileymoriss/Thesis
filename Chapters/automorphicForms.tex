@@ -45,12 +45,11 @@ Fix a number field \(F\) and a classical group \(G\) defined over \(F\). Let \(\
 
 
 \section{Adelic Automorphic Form}
-Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995}. Fix a Borel \(B\subseteq G\) and a standard parabolic \(B\subseteq P \subseteq G\) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) that is in good position as in section \ref{max_compact_subgroup}.
+Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995} and \cite[1.2]{borelAutomorphicFormsRepresentations1979}. Fix a Borel \(B\subseteq G\) and a standard parabolic \(B\subseteq P \subseteq G\) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) that is in good position as in section \ref{max_compact_subgroup}.
 
-For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant on \(G(F_\nu)\), in the Hausdorff topology. The set of such smooth functions is denoted \(C^\infty(G(F_\nu))\). This suggests the definition of smooth functions on the ``finite adeles'' \(\A_f\) as 
-\todo[inline, color=green]{Clarify what this restricted tensor product is}
-	\[C^\infty(\mathbb{A}_f) \defeq \bigotimes^{}_{\nu \notin \infty} \phantom{}' C^\infty(G(F_\nu)). \]
-	Thus for the full adeles we have the notion of smooth as an element of the following,
+For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant on \(G(F_\nu)\), in the Hausdorff topology. Likewise we say that \(f: G(\A_f) \to \C\) is smooth if it is locally constant and we denote the set of such smooth functions \(C^\infty(G(\A_f))\).
+
+	Thus for the full adeles we have the notion of smooth as an element of the tensor product,
 	\[C^\infty(\mathbb{A}_F) \defeq   C^\infty(G(\mathbb{A}_f))   \otimes   C^\infty(G(F_\infty)).\]
 	Notice that a priori the codomain is an infinite tensor product over \C of copies of \C, this is \textit{canonically} isomorphic to \C, thus we can conflate a smooth function with its composition along this isomorphism and think of them as functions into \C.
 
@@ -158,8 +157,8 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 		\vspace{12mm}
 		
    	We can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) by composing with the projection, however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc. 
-   	\todo[inline,color=green]{does it? Am I trivialising a line bundle...?}
-   	Thus for \(f\) a modular form of weight k the following function on \(\SL_2(\R)\)
+
+   	Thus for \(f\) a modular form of weight \(k\) the following function on \(\SL_2(\R)\)
 	\[F(g) \defeq  (ci + d)^{-k}f(g.i),\]
 	we claim is an automorphic form for \(\SL_2(\Z)\). We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition. It remains to show the three other properties:
 

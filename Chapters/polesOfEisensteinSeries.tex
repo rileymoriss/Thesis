@@ -82,7 +82,6 @@ First the identity term simplifies
     	\[\pi\tensor \pi',\]
     	where \(\pi\) is an irreducible admissible unitary generic representation of \(\GL_n(\A)\) and \(\pi'\) is a generic cuspidal automorphic representation of \(\Sp_{2m}(\A)\). This is the case that we are in however so it can be applied. 
     \end{remark}
-    \todo[inline, color=blue]{define admissible and generic. Check jiang, they dont seem to require the Gl rep to be generic?}
     
      In the case we are considering the normalising factor \(r\) is given by the equation \cite[4A]{jiangPolesCertainResidual2013}
      \[r(w, s) = \frac{L(s, \tau\times \sigma)L(2s, \tau,\wedge^2)}{L(s+1, \tau\times \sigma)L(2s+1, \tau, \wedge^2)},\]
@@ -99,8 +98,16 @@ First the identity term simplifies
 	 Moreover we know that these poles will occur only when they occur in the respective L-functions. If \(s=0\) then the simple poles on the numerator cancel with those on the denominator. This is summarised in the following:
 
     \begin{Theorem}[\cite{jiangPolesCertainResidual2013}, 4.1]
-        
+        Let \(\tau\) be an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Let \(\sigma\) be an irreducible generic cuspidal automrophic representation of \(\Sp_{2m}\). The Eisenstein series \(E(\phi, s)\) is holomorphic for all \(s\in \C\) with \(\mathrm{Re}(s)\geq 0\) except at \(s = \frac{1}{2}\) and \(s= 1\) where it has possible simple poles. Moreover 
+       	\begin{itemize}
+       		\item It has a simple pole at \(s= \frac{1}{2}\) if and only if \(L(s, \tau, \wedge^2)\) has a pole at \(s=1\) and \(L(\frac{1}{2}, \tau\times \sigma)\neq 0\)
+       		\item It has a simple pole at \(s=1\) if and only if \(L(s, \tau\time \sigma)\) has a pole at \(s=1\).
+       	\end{itemize}
     \end{Theorem}
+    
+    
+    \chapter{Conclusion}
+    
 
     
 
