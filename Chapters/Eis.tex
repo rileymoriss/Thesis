@@ -73,33 +73,37 @@ where it converges. The space \(L^2_{\mathrm{loc}}(G(\A))\) can be endowed with 
 Then it makes sense to talk about the holomorphicity of \(E(\phi)\) in this sense \cite[I.4.9]{moeglinSpectralDecompositionEisenstein1995}. The key properties of both the Eisenstein series and this operator can be found in \cite[IV.1.8, IV.1.9, IV.1.10, IV.1.11]{moeglinSpectralDecompositionEisenstein1995}. Most importantly as a function of \(\mathfrak{P}\) it can be shown that they both have a meromorphic continuation to all of \(\mathfrak{P}\). This was also given a second ``soft proof'' more recently in \cite{bernsteinMeromorphicContinuationEisenstein2022}, with the spectral decomposition that follows from it also being worked out in \cite{delormeSpectralTheoremLanglands2021}. Moreover an Eisenstein series attached to an automorphic form, at a point \(p\in \mathfrak{P}\) at which it is holomorphic, is also an automorphic form. 
 
 \section{Classical Eisenstein Series}\label{sec:classic-eisenstein}
-\todo[inline,color=blue]{Classical Eisenstein series}
-We will follow the excellent exposition in \cite{garrettTransitionEisensteinSeries2016}. The typical example of a classical Eisenstein series is that introduced by Maas in 1949 \cite{lapidPerspectivesEisensteinSeries2022}  given by the sum 
-\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{(m,n)\in \Z^2\setminus \{(0,0)\}, \text{ coprime }} \frac{\mathrm{Im}(z)^{s+\frac{1}{2}}}{|mz+n|^{2s+1}}, \quad z\in \mathcal{H},\;\; \mathrm{Re}(s)>\frac{1}{2},\]
+
+We will follow the excellent exposition in \cite{garrettTransitionEisensteinSeries2016}, the section \cite[1.2]{bruinier123ModularForms2008} on classical Eisenstein series. The typical example of a classical Eisenstein series is that introduced by Maas in 1949 \cite{lapidPerspectivesEisensteinSeries2022}  given by the sum 
+\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{(m,n)\in \Z^2\setminus \{(0,0)\}, \text{ coprime }} \frac{\mathrm{Im}(z)^{s}}{|mz+n|^{2s}}, \quad z\in \mathcal{H},\;\; \mathrm{Re}(s)>\frac{1}{2},\]
 which converges absolutely. Consider the algebraic group \(\SL_2\) with the parabolic of upper triangular matrices \(P\).
 
-\begin{Lemma}
-	\[P(\Z) \backslash \SL_2(\Z) \to  \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\}\]
-\end{Lemma}
-\proofbar{Some nice details about \(\SL_2(\Z)\) can be found in \cite{conradSL2Z}. So consider the action of \(\SL_2(\Z)\) on \(\{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\}\) by matrix multiplication
-	\[\begin{pmatrix}
-		a & b\\ c&d
+First we want to look at the index of the sum, we aim to define a map
+	\[\omega: P(\Z) \backslash \SL_2(\Z) \to  \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\}\]
+
+	The cosets of \(P(\Z) \backslash \SL_2(\Z)\) look like
+	\[P(\Z)\begin{pmatrix}
+		a & b \\ c& d
+	\end{pmatrix} = \left\{\pm\begin{pmatrix}
+		1 & n \\&1
 	\end{pmatrix}\begin{pmatrix}
-	m \\ n
-	\end{pmatrix}.\]
-	Since \(\SL_2(\Z)\) has the two generators,
-	\[S \defeq \begin{pmatrix}
-		0 & -1 \\ 1 & 0
-	\end{pmatrix}, \;\;\; T \defeq \begin{pmatrix}
-		1 & 1 \\ 0 & 1
-	\end{pmatrix},\]
-	we can see that this is a well defined action by checking that the action of both \(S\) and \(T\) preserves the gcd.
-	Moreover by suitable applications of \(S\) and \(T\) one can see that this action has a single orbit. 
+	a & b \\ c& d
+	\end{pmatrix} : n\in \Z\right\} = \left\{\pm\begin{pmatrix}
+	a+nc & b+nd \\ c & d
+	\end{pmatrix} : n\in \Z\right\}.\]
+	Moreover because \(\begin{pmatrix}
+		a & b \\ c& d
+	\end{pmatrix}\in \SL_2(\Z)\) we have by Bezout's lemma (applied to the determinant expression) that \(c\) and \(d\) are co-prime. Therefore there is a well defined map 
+	\[P(\Z) \backslash \SL_2(\Z) \to  \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\},\]
+	if we denote \(\mathrm{ind}\{c<0\} = \begin{cases}
+		0, & c\geq 0\\
+		1, & c<0
+	\end{cases}\) then it is given by 
+	\[\left\{\pm\begin{pmatrix}
+		a+nc & b+nd \\ c & d
+	\end{pmatrix} : n\in \Z\right\}\mapsto (|c|,(-1)^{\mathrm{ind}\{c<0\}}d).\]
+	The point is that \(|mz + n| = |(-m)z + (-n)|\) and so the sum in the Eisenstein series, having a prefactor of a half is really just the sum over \( \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime \textbf{and} }m\geq 0\}\), which by our argument is in bijection with \(P(\Z) \backslash \SL_2(\Z)\) via \(\omega\).
 	
-	What remains to be done is to find the stabiliser of a point. 
-}
-\todo{factor of a half is probably frmo above, i.e. its not a bijection its a 2-1 cover..}
-\todo{might be able to use orbit stabiliser}
 
 	
 
@@ -113,13 +117,13 @@ which converges absolutely. Consider the algebraic group \(\SL_2\) with the para
 	
 	Injectivity is clear because if \(g, g'\in \SL_2(\Z)\) are in the same \(P(\Q)\) orbit then we can cancel the denominators of the \(P(\Q)\) matrix and hence \(g,g'\) are in the same \(P(\Z)\) orbit.
 	
-	Surjectivity follows from a repeated application of the orbit stabilizer theorem, details are in \cite[3.5]{garrettTransitionEisensteinSeries2016}.
+	Surjectivity follows from a repeated application of the orbit stabilizer theorem, as in \cite[3.5]{garrettTransitionEisensteinSeries2016}.
 }
 Recall that \(\SL_2(\Z)\) acts via Mobius transformations on the upper half plane. If \(z= x+ iy \in \mathcal{H}\), \(s\in \C\) and \(\gamma = \begin{pmatrix}
 	a & b\\ c& d \end{pmatrix}\in \SL_2(\Z)\) then an elementary computation shows that,
 \[\mathrm{Im}(\gamma.z) = \frac{\mathrm{Im}(z)}{|cz + d|^{2}}.\]
 Hence the classical Eisenstein series is 
-\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{m,n\in \Z, \text{ coprime }} \frac{\mathrm{Im}(z)^{s+\frac{1}{2}}}{|mz+n|^{2s+1}} = \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \mathrm{Im}(\gamma.z)^{s+\frac{1}{2}}.\]
+\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{m,n\in \Z, \text{ coprime }} \frac{\mathrm{Im}(z)^{s}}{|mz+n|^{2s}} = \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \mathrm{Im}(\gamma.z)^{s}.\]
 
 We want to realize this as the Eisenstein series associated to an automorphic form so first we must design a function on \(\SL_2(\A)\). For any place \(\nu\) of \Q we have the local Iwasawa decomposition \(\SL_2(\Q_\nu) = P(\Q_\nu) K_\nu\) where 
 \[K_\nu \defeq \begin{cases}
@@ -136,6 +140,12 @@ We want to realize this as the Eisenstein series associated to an automorphic fo
  \begin{Lemma}
  	\(\phi_s\) is an automorphic form on \(\SL_2(\A)\).
  \end{Lemma}
+ \proofbar{
+ 	Smooth, moderate growth and \(K\)-finiteness are obvious from the definition.	
+ 	Using the product formula, i.e. for all \(x\in \Q^\times\) we have that \(\prod_\nu |x|_\nu = 1\), we get that \(\phi_s\) is left \(\SL_2(\Q)\) invariant.
+ 	
+ \todo[inline]{	Z(g) finite}
+ }
  
  To this we have an Eisenstein series associate as in the adelic setting by 
  \[E(\phi, g) \defeq \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \phi_s(\gamma g) \]
@@ -144,6 +154,27 @@ We want to realize this as the Eisenstein series associated to an automorphic fo
 	Let \(g\in \SL_2(\R)\) then we consider it as an element of \(\SL_2(\A)\), denoted by \(\iota(g)\), by setting all other entries to 1. Then 
 	\[E(\phi_s, \iota(g)) = \mathbf{E}(g.i,s)\]
 \end{Lemma}
+\proofbar{
+	First the left hand side,
+	\begin{align*}
+		E(\phi_s, \iota(g)) &= \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \phi_s(\gamma \iota(g)) \\
+		&= \sum_{\gamma\in P(\Z)\backslash \SL_2(\Z)} \prod_\nu\phi_{\nu,s}(\gamma g_\nu) \\
+		&= \sum_{\gamma\in P(\Z)\backslash \SL_2(\Z)} \phi_{\infty,s}(\gamma g) \prod_{\nu<\infty} \phi_{s, \nu}(\gamma)\\
+		&= \sum_{\gamma\in P(\Z)\backslash \SL_2(\Z)} \phi_{\infty,s}(\gamma g).\\
+	\end{align*}
+	Because \(\gamma\in \SL_2(\Z)\subseteq \SL_2(\Z_\nu)\) for each place \(\nu\) and so \(\phi_{s, \nu}\) is by definition trivial on these.  The final step is then to show that 
+	\[\phi_{\infty, s} (g) = |\mathrm{Im}(g.i)|^s.\]
+	
+	If \(\begin{pmatrix}
+		a& b\\ c&d
+	\end{pmatrix}\in \SL_2(\R)\) then for some \(k\in SO_2(\R)\) we have that  \cite{conradDecomposingSL2R},
+	\[\begin{pmatrix}
+		a& b\\ c&d
+	\end{pmatrix} = \begin{pmatrix}
+		(a^2 + c^2)^{\frac{1}{2}} & \ast \\ & (a^2 + c^2)^{-\frac{1}{2}}
+	\end{pmatrix} .\]
+	With this explicit Iwasawa decomposition the proof is finished with some elementary matrix manipulation, this is done very explicitly in \cite[3.3]{garrettTransitionEisensteinSeries2016}.
+}
 
 
 

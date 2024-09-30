@@ -162,6 +162,12 @@ Jayce~R. Getz and Heekyoung Hahn.
 Roger Godement.
 \newblock {Groupes lin{\'e}aires alg{\'e}briques sur un corps parfait}.
 
+\bibitem[Gra14]{grafakosClassicalFourierAnalysis2014}
+Loukas Grafakos.
+\newblock {\em Classical {{Fourier Analysis}}}, volume 249 of {\em Graduate
+  {{Texts}} in {{Mathematics}}}.
+\newblock Springer New York, New York, NY, 2014.
+
 \bibitem[Grb11]{grbacResidualSpectrumSplit2011}
 Neven Grbac.
 \newblock On the residual spectrum of split classical groups supported in the

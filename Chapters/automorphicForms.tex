@@ -166,7 +166,9 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 		\(F(g)\) is of moderate growth.
 	\end{Lemma}
 	\proofbar{
-		Unraveling the definitions we require two constants such that 
+		Unraveling the definitions we require two constants \(r,c\in \R^+\) such that for all \(g = \begin{pmatrix}
+		a & b \\ c & d
+		\end{pmatrix}\in \SL_2(\R)\)
 		\[|F(g)| = |ci+ d|^{-k}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r,\]
 		A direct computation shows that 
 		\[Im(g.i) = |ci+ d|^{-2},\]
@@ -174,7 +176,9 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 		\[ \mathrm{Im}(g.i)^{k/2}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r.\]
 		\textcolor{red}{Somehow invoke polynomial growth...?}
 		\todo[inline,color=blue]{Modular forms moderate growth}
-        but the modularity condition has the growth condition that \(\lim_{x\to \infty}f(xi)\) be bounded. 
+        but t
+        
+        The growth condition can be precisely stated as the \(\lim_{x\to \infty}f(xi)\) being bounded. Hence 
 	}
 
 	\begin{Lemma}

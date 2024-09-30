@@ -105,20 +105,35 @@ These two sides of the correspondence are referred to as the ``automorphic'' sid
 \subsection{Harmonic Analysis}
 As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect, following \cite{follandCourseAbstractHarmonic2016}.
 
-The story starts with the two Fourier transforms, the one for functions on the circle and functions on the real line. Both appearing in the work of Fourier himself around 1822. 
+The story starts with the Fourier transform for periodic funtions. These of course have ancient precursors in the ideas of the pythagoreans and were ``in the air'' of the eightenth century, Fourier, around 1822, was first to conjecture that all functions should be decomposable into elementary periodic functions. 
+The base case is the fourier transform on \(\mathbb{T}\) the circle, realised concretely as the unit length elements of \C. Then for every \(f\in L^2(\mathbb{T})\) we have that 
+\[f(x) = \sum_{n\in \Z}a_ne^{2\pi i n x}, \;\;\; a_n\in \C.\]
 
-The circle is a compact topological group and for this we have the generalisation of the Fourier transform given by the Peter-Weyl theorem in 1927.
+The important properties of the circle as a topological group are the following: first it is locally compact Hausdorff, hence has a Haar measure allowing us to talk about square integrable functions. Second it is both compact and Abelian. 
 
-In 1940 Weil worked out the theory for locally compact \textit{abelian} groups, which of course is a strict generalisation of the case for both \R and \(U(1)\).
+The first generalisation appeared in 1927 with the Peter-Weyl theorem. Start with a locally compact topological group \(G\), then a unitary representation on a Hilbert space \(\mathcal{H}\) is a continuous homomorphism 
+\[\pi: G \to U(\mathcal{H}).\]
+We denote the dual group of \(G\) by \(\hat{G}\), this is defined to be the space of (equivalence classes of) irreducible unitary representations of \(G\). 
 
-In the 1950's Segal and Mautner proved the Plancherel Theorem which is the generalisation of this to type I, second countable and unimodular topological groups. The key is that like the Peter-Weyl theorem we are given more than that \textit{some} decomposition exists, we are given explicit details on how to construct the decomposition, its structure and relation to other parts of the representation.
-
-For this section let \(H\) be a locally compact topological group.
-It is a classical theorem that for representations of finite groups over an algebraically closed field the regular representation decomposes into a direct sum, where ever irreducible representation appears \cite[Ch. 2.4 Cor. 2 ]{LinearRepresentationsFinite}. This still holds for compact topological groups, when one considers continuous unitary representations \cite[5.1]{follandCourseAbstractHarmonic2016}.
+\begin{Theorem}[\cite{follandCourseAbstractHarmonic2016}, 5.2, 5.12]
+	If \(G\) is compact then every unitary representation of \(G\) is a direct sum of irreducible representations. 
+\end{Theorem} 
 \begin{remark}
-	This is a strict generalisation of the finite groups case, when we give the finite group the discrete topology then all its linear representations are continuous and unitary.
+	For lack of time and space we will need to make this remark several times: The actual content of the Peter-Weyl theorem is not that the representations decompose but \textit{how} they decompose. That is Peter-Weyl tells us how to construct the components of the direct sum, what their dimensions are etc.
 \end{remark}
-There is one final more general incarnation of this line of investigation in the Plancherel theorem. A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the center of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial we have a decomposition as a  direct sum of irreducible representations. 
+Importantly there is no requirement for finite dimensionality. 
+
+\begin{example}
+	Consider the regular representation of \(\mathbb{T}\) on \(L^2(\mathbb{T})\) this decomposes into 
+	\[L^2(\mathbb{T}) = \bigoplus_{\chi\in \hat{G}}  \C \chi .\]
+	Because \(\mathbb{T}\) is also Abelian all its irreducible representations are one dimensional, in fact we have that all characters of \(G\) are 
+	\[e^{i\theta} \mapsto e^{ni\theta}.\]
+	Therefore the decomposition exhibits the exponentials as a basis for functions on the circle.
+\end{example}
+
+In 1940 Weil worked out the theory for locally compact Abelian groups, proving the general case of Bochners theorem \cite[Thm. 4.18]{follandCourseAbstractHarmonic2016}. The groups that we are interested in however are neither compact,  \(\A_\Q^\times\), nor Abelian, \(\GL_n\).
+
+A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the center of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial we have a decomposition as a  direct sum of irreducible representations. 
 
 \begin{example}
 	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a type one group. This is outside the scope of this thesis but can be found in \cite[Thm. 1.7 + Thm. 2.3]{deitmarTraceClassGroups2017}.
@@ -137,21 +152,19 @@ There is one final more general incarnation of this line of investigation in the
 	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a unimodular group. The proof is outside the scope of this thesis but is stated in \cite[Lem. 2]{conradStanfordNumberTheory}.
 \end{example}
 
-The idea of a direct integral is review in \ref{app:direct_int} to get a quick idea consider the following example:
+In the 1950's Segal and Mautner proved the (or more acurately, one of the many) Plancherel Theorem which is the Peter-Weyl and Bochner type result for type I, second countable and uni-modular topological groups. To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016}, but some of the idea in the basic example of direct sums.
 \begin{example}[Direct Sums]
 	Let \(I\) be a countable set with the discrete sigma algebra and counting measure \(\mu\). Let \((\mathcal{H}_i)_{i\in I}\) be a collection of Hilbert spaces then
 	\[\bigoplus_{i\in I} \mathcal{H}_i = \left\{ (h_i)_{i\in I}\in \prod_{i\in I} \mathcal{H}_i : \int_I \norm{h_i}_i^2 d\mu <\infty \right\}.\]
 	I.e. the Hilbert space direct sum is by definition square summable sequences, but sums are just discrete integrals.
 \end{example}
-
+Then (part of ) the Plancherel theorem is
 \begin{Theorem}[Plancherel, \cite{follandCourseAbstractHarmonic2016}, 7.44]
 	The regular represntation of a type I, second countable and unimodular topological group is a direct integral of the irreducible unitary representations. 
 \end{Theorem}
 \begin{remark}
-	The Plancherel theorem says much more in fact. Like the Peter-Weyl theorem for compact groups it doesn't just give you that some direct integral decomposition exists, it contains many more details about the topology and measure on the set of unitary irreducible representations, and which representations are associated to them in the direct integral. We are being brief as this is motivational.
+	Again the Plancherel theorem says much more; it contains details about the topology and measure on the set of unitary irreducible representations, and which representations are associated to them in the direct integral.
 \end{remark}
-
-
 
 \subsection{The Work of Langlands}
 It is as a continuation or variation of this tradition that we see the work of Langlands in \cite{langlandsFunctionalEquationsSatisfied1976}, in which he provides some decomposition of the spectrum of the adelic points of a connected reductive algebraic group over a number field \(G(\A)\).
@@ -161,13 +174,15 @@ It is as a continuation or variation of this tradition that we see the work of L
 	\[L^2(G(\Q) \backslash G(\A)) = \bigoplus_{\mathscr{P}}L^2_\mathscr{P}(G(\Q) \backslash G(\A)),\]
 	where \(\mathscr{P}\) runs over certain ``associate classes'' of parabolics of \(G\) and the summands are the direct integrals of spaces of \(L^2\) automorphic forms.
 \end{Theorem}
-These direct integrals are in fact constructed out of subspaces generated by Eisenstein series. 
+Again the devil is in the details, this construction is very explicit. The spaces are constructed out of the residues of Eisenstein series and this is one reason for their importance. 
 
-The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``pieces'' to such a decomposition. We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum. Thus what one wants to do is find a decomposition of the regular representation \(G(\A) \curvearrowright \mathrm{L}^2(G(\A))\).
+The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``pieces'' to such a decomposition. We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum. 
 
 It is during this analysis that the ideas expressed in his famous letter \cite{langlandsLetterweil196701_rpl_0} would begin to form, as he noticed that certain Euler products of analytic functions were appearing in the constant terms of the Eisenstein series. In particular we will see how the intertwining operator \(M(s, w)\) appears in the constant term of Eisenstein series and Langlands observed that \cite{langlandsEulerProductsa} 
 \[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
-leading to a general conjecture that there is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
+This formula is obviously uninterpretable without further definitions, however we just want to point out some things to notice. First there is a product over the places of \Q, namely one item for the infinite place and then a product over the prime numbers. The functions in the product are gamma functions, related intrinsically to the L-function exemplar \(\zeta\), the Riemann-Zeta function, and things of the form \(1 - p^{-s}\). These facts should be born in mind when we come to defining L-functions later in \ref{L-functions}
+
+This lead to a general conjecture that there is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
 \[M(s, w) = r(s, w)N(s,w),\]
 and \(r(s, w)\) is a ratio of L-functions, as defined by Langlands in for instance \cite{langlandsEulerProductsa}.
 
