@@ -1,6 +1,10 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{BVDGHZ08}
 
+\bibitem[Art]{arthurAUTOMORPHICREPRESENTATIONSNUMBER}
+James Arthur.
+\newblock {{AUTOMORPHIC REPRESENTATIONS AND NUMBER THEORY}}.
+
 \bibitem[Art79]{arthurEisensteinSeriesTrace1979}
 James Arthur.
 \newblock Eisenstein series and the trace formula.
@@ -118,6 +122,10 @@ Matthew Emerton.
 Essays in the {{History}} of {{Lie Groups}} and {{Algebraic Groups}}.
 \newblock https://bookstore.ams.org/view?ProductCode=HMATH/21.
 
+\bibitem[FGKP16]{fleigEisensteinSeriesAutomorphic2016}
+Philipp Fleig, Henrik P.~A. Gustafsson, Axel Kleinschmidt, and Daniel Persson.
+\newblock Eisenstein series and automorphic representations, July 2016.
+
 \bibitem[Fol16]{follandCourseAbstractHarmonic2016}
 Gerald~B. Folland.
 \newblock {\em A {{Course}} in {{Abstract Harmonic Analysis}}}.
@@ -136,6 +144,12 @@ Paul Garrett.
 Paul Garrett.
 \newblock Transition: {{Eisenstein}} series on adele groups.
 \newblock 2016.
+
+\bibitem[Gel84]{gelbartElementaryIntroductionLanglands1984}
+Stephen Gelbart.
+\newblock An elementary introduction to the {{Langlands}} program.
+\newblock {\em Bulletin of the American Mathematical Society}, 10(2):177--219,
+  1984.
 
 \bibitem[GH24]{getzIntroductionAutomorphicRepresentations2024}
 Jayce~R. Getz and Heekyoung Hahn.
@@ -192,11 +206,19 @@ Dihua Jiang, Baiying Liu, and Lei Zhang.
 \newblock Poles of certain residual {{Eisenstein}} series of classical groups.
 \newblock {\em Pacific Journal of Mathematics}, 264(1):83--123, July 2013.
 
-\bibitem[Kim]{kimEISENSTEINSERIESTHEIR}
+\bibitem[Kima]{kimEISENSTEINSERIESTHEIR}
 Henry~H Kim.
 \newblock {{EISENSTEIN SERIES AND THEIR APPLICATIONS}}.
 
-\bibitem[Lan]{langlandsREPRESENTATIONTHEORYITS}
+\bibitem[Kimb]{kimSuperficialIntroductionLanglands}
+Minhyong Kim.
+\newblock A superficial introduction to {{Langlands}} functoriality.
+
+\bibitem[Lana]{langlandsFunctorialityTheoryAutomorphic}
+Robert~P Langlands.
+\newblock Functoriality in the theory of automorphic forms.
+
+\bibitem[Lanb]{langlandsREPRESENTATIONTHEORYITS}
 Robert~P Langlands.
 \newblock {{REPRESENTATION THEORY ITS RISE AND ITS ROLE IN NUMBER THEORY}}.
 \newblock {\em REPRESENTATION THEORY}.

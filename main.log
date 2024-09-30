@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  29 SEP 2024 15:16
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  30 SEP 2024 11:56
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1054,17 +1054,10 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen312
 \FrameSep=\dimen313
 ))
-(C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty
-\UL@box=\box71
-\UL@hyphenbox=\box72
-\UL@skip=\skip78
-\UL@hook=\toks60
-\UL@height=\dimen314
-\UL@pe=\count338
-\UL@pixel=\dimen315
-\ULC@box=\box73
-Package: ulem 2019/11/18
-\ULdepth=\dimen316
+(C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1074,38 +1067,38 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lua
 tex.def
 File: l3backend-luatex.def 2023-04-19 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count339
+\l__color_backend_stack_int=\count338
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box74
+\l__pdf_internal_box=\box71
 ) (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
-1.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
+7.
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1145,17 +1138,17 @@ LaTeX Font Info:    ... okay on input line 91.
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
-\scratchdimen=\dimen317
-\scratchbox=\box75
-\nofMPsegments=\count341
-\nofMParguments=\count342
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count343
-\MPscratchDim=\dimen318
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
-\everyMPtoPDFconversion=\toks62
+\scratchcounter=\count339
+\scratchdimen=\dimen314
+\scratchbox=\box72
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen315
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks61
 )
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
 ase.sty
@@ -1167,7 +1160,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count346
+\c@lstlisting=\count345
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1182,7 +1175,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 77.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -1192,41 +1185,44 @@ Package hyperref Info: Link coloring OFF on input line 91.
 
 
 {C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 113.
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 113.
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
 [1] (./Chapters/acknowledgements.tex) [2
 
 ] (./Chapters/intro.tex
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
+
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
-0.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
+.
 
 (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/stmaryrd/ustmry.fd)
-Underfull \vbox (badness 1354) has occurred while \output is active []
-
- [3
+[3
 
 ]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 34.
 
-
-(C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
+ (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [4] [5] [6] [7]
@@ -1266,8 +1262,6 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 190.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 190.
 [11]
 Overfull \hbox (12.23686pt too wide) in paragraph at lines 197--198
 []\TU/lmr/m/n/12 Chap-ter three is a dis-cus-sion of the con-cept of the con-sta
@@ -1359,30 +1353,31 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 76.
 
+
+LaTeX Warning: Citation `conradSL2Z' on page 30 undefined on input line 100.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 101.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 102.
+
+
+LaTeX Warning: Marginpar on page 30 moved.
+
 [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 103.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 104.
-
-
-LaTeX Warning: Marginpar on page 31 moved.
-
-[31]) [32]
+ [31])
+[32]
 Chapter 5.
 (./Chapters/constantTerms.tex [33
 
-]
-Overfull \hbox (13.45853pt too wide) in paragraph at lines 39--40
-\TU/lmr/m/n/12 This com-pu-ta-tion forms the heart of a well known the-o-rem, [[], Prop 10.4.2][[],
- []
-
-[34]
+] [34]
 Underfull \vbox (badness 2384) detected at line 62
  []
 
@@ -1611,6 +1606,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 2.
 
 
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 4.
+
+
 LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 49 und
 efined on input line 6.
 
@@ -1638,7 +1638,10 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 54.
 
-[51]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
@@ -1656,13 +1659,14 @@ or sec-ond power of the stan-dard rep-re-sen-ta-tion of $[][]\OT1/cmr/m/n/12 (\
 U/msb/m/n/12 C[]\OT1/cmr/m/n/12 )$\TU/lmr/m/n/12 .
  []
 
-[56]
-Chapter 9.
-) [57
 
-]
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 110.
+
+) [56]
 Appendix A.
-[58
+[57
 
 ] (./main.tdo)
 \tf@tdo=\write7
@@ -1672,88 +1676,38 @@ Appendix A.
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 159.
+ine 146.
+
+[58
+
+] (./main.bbl
+Underfull \hbox (badness 1259) in paragraph at lines 5--7
+[]\TU/lmr/m/n/12 James Arthur.  AU-TO-MOR-PHIC REP-RE-SEN-TA-TIONS AND
+ []
 
 [59
 
-] (./main.bbl
-Underfull \hbox (badness 1189) in paragraph at lines 5--10
-[]\TU/lmr/m/n/12 James Arthur.  Eisen-stein se-ries and the trace for-mula.  In
- []
-
-
-Underfull \hbox (badness 6493) in paragraph at lines 12--16
-[]\TU/lmr/m/n/12 Ar-mand Borel and W. Cas-sel-man.  |   []   |   []
- []
-
-[60
-
-] [61]
-Underfull \hbox (badness 2582) in paragraph at lines 141--146
-[]\TU/lmr/m/n/12 Jayce R. Getz and Heeky-oung Hahn.  |   []   |   []   |   []
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 177--182
-|   []\TU/lmr/m/n/12 , vol-ume 222 of |   []   |   []   |   []
- []
-
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
+] [60] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
 []\TU/lmr/m/n/12 Lin-ear Rep-re-sen-ta-tions of Fi-nite Groups | Springer-Link.
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 []\TU/lmr/m/n/12 Notes for class on al-ge-braic groups.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 \TU/lmr/m/n/12 https://users.math.msu.edu/user-s/ruiterj2/Math-/-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 \TU/lmr/m/n/12 Doc-u-ments/-Sum-mer%202019/Al-ge-braic%20Group-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
-[]\TU/lmr/m/n/12 Jean-Pierre Serre, Don Za-gier, and Son-der-forschungs-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
-\TU/lmr/m/n/12 bere-ich The-o-retis-che Math-e-matik, ed-i-tors.  |   []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
-|   []   |   []   |   []   |   []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--304
-|   []   |   []   |   []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--310
-[]\TU/lmr/m/n/12 Au-drey Ter-ras.  |   []   |   []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--310
-|   []   |   []
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 306--310
-|   []   |   []   |   []\TU/lmr/m/n/12 .  Springer,
- []
-
-[64]) [65] (./main.aux)
+[63]) [64] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1763,27 +1717,26 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FB420ED058E30DAE99B779AA6E0C35AE;4975.
+(rerunfilecheck)             Checksum: B1F85A44C7C39172D0A0346370375634;5029.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30280 strings out of 477545
+ 30308 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 7934 words of node memory still in use:
-   97 hlist, 11 vlist, 2 rule, 10 disc, 6 local_par, 148 glue, 11 kern, 10 penal
-ty, 140 glyph, 1193 attribute, 76 glue_spec, 598 attribute_list, 8 write, 6 save
-_pos, 201 pdf_literal, 6 pdf_colorstack nodes
-   avail lists: 2:1961,3:512,4:264,5:527,6:69,7:5622,8:91,9:1247,10:24,11:416
- 50051 multiletter control sequences out of 65536+600000
- 81 fonts using 5688863 bytes
- 98i,28n,98p,1305b,1199s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 2199 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 531 attribute, 75 glue_spe
+c, 267 attribute_list, 2 write nodes
+   avail lists: 2:2042,3:591,4:336,5:568,6:73,7:5969,8:91,9:1247,10:24,11:430
+ 50072 multiletter control sequences out of 65536+600000
+ 80 fonts using 5644255 bytes
+ 98i,28n,98p,1285b,1199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
-an10-bolditalic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/open
-type/public/lm/lmromanslant12-regular.otf><//?/c:/users/riley/appdata/local/prog
-rams/miktex/fonts/opentype/public/lm/lmroman8-italic.otf><//?/c:/users/riley/app
-data/local/programs/miktex/fonts/opentype/public/lm/lmroman8-regular.otf><//?/c:
-/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-it
-alic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public
+anslant12-regular.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/op
+entype/public/lm/lmroman8-italic.otf><//?/c:/users/riley/appdata/local/programs/
+miktex/fonts/opentype/public/lm/lmroman10-bolditalic.otf><//?/c:/users/riley/app
+data/local/programs/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:
+/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman8-reg
+ular.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public
 /lm/lmroman12-regular.otf><//?/c:/users/riley/appdata/local/programs/miktex/font
 s/opentype/public/lm/lmroman17-regular.otf><//?/c:/users/riley/appdata/local/pro
 grams/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><C:/Users/riley/AppData
@@ -1803,13 +1756,12 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ri
 ley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/U
 sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm1
 0.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-latxfont/lasy6.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (79 pages, 615072 bytes).
+symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (78 pages, 613376 bytes).
 
-PDF statistics: 1054 PDF objects out of 1200 (max. 8388607)
- 294 named destinations out of 1000 (max. 131072)
+PDF statistics: 1065 PDF objects out of 1200 (max. 8388607)
+ 301 named destinations out of 1000 (max. 131072)
  248 words of extra memory for PDF output out of 10000 (max. 100000000)
 

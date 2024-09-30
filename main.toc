@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {1.1}Definition}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{6}{section*.7}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{6}{section*.8}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{8}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{10}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{11}{subsection.1.2.4}%
@@ -46,5 +46,5 @@
 \contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{53}{section.8.1}%
 \contentsline {section}{\numberline {8.2}The Constant Term}{54}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{55}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Conclusion}{57}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Test}{58}{appendix.A}%
+\contentsline {section}{\numberline {8.4}Concluding Remarks}{56}{section.8.4}%
+\contentsline {chapter}{\numberline {A}Test}{57}{appendix.A}%

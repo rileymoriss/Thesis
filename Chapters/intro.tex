@@ -4,7 +4,7 @@ To explain the results on poles of Eisenstein series to students in other discip
 
 Here we attempt to put down what we understand of the ``big picture''. It could be argued that we spent too much time trying to understand the motivation for the results in \cite{jiangPolesCertainResidual2013} and not enough time on the results themselves and so this section is to ensure that time was not (very) wasted. 
 
-We should point out that there are many surveys on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are ----------.
+We should point out that there are many surveys and books on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are \cite{fleigEisensteinSeriesAutomorphic2016, bumpIntroductionLanglandsProgram2004} for longer treatments, in particular the statements of the conjectures are most clearly stated in Cogdell's chapters in \cite{bumpIntroductionLanglandsProgram2004}. Shorter surveys are \cite{gelbartElementaryIntroductionLanglands1984, kimSuperficialIntroductionLanglands, langlandsFunctorialityTheoryAutomorphic, langlandsREPRESENTATIONTHEORYITS, arthurAUTOMORPHICREPRESENTATIONSNUMBER}.
 
 \subsection{From Ancient to Modern}
 We follow the wonderful exposition in \cite{weinsteinReciprocityLawsGalois2015}. A problem that Euclid could have understood is ``which positive integers are the sum of two squares''. In 1640 Fermat answered this question, he first reduces the question to when is a prime the sum of two squares. Thus the problem is immediately reformulated as a problem about congruences mod a prime \(p\), ``when does there exist a solution to \(a^2  +b^2 \equiv 0 \;\;(\text{mod }p) \)'', or whats the same, by dividing out \(b^2\), ``when is there a solution to \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\)''. The famously has the solution 
@@ -45,7 +45,7 @@ So to answer \textbf{Q1.} we now want to solve by congruences when prime ideals 
 \end{Lemma}
 Thus we lose nothing by considering only Galois extensions of fields. Thus we have ``the main theorem'' of class field theory:
 \begin{Theorem}[\cite{weinsteinReciprocityLawsGalois2015}, Thm. 3.2.1]\label{thm:reciprocity}
-	Let \(K/\Q\) be an abelian and Galois extension. There is an ideal \(\mathfrak{f} = (m)\subseteq \mathcal{O}_\Q = \Z\) such that for a prime \(p\in \Z\) the ideal \((p)\) is split in \(\mathcal{O}_K\) if \(p\equiv 1 \;\; (\text{mod }m)\)
+	Let \(K/\Q\) be an Abelian and Galois extension. There is an ideal \(\mathfrak{f} = (m)\subseteq \mathcal{O}_\Q = \Z\) such that for a prime \(p\in \Z\) the ideal \((p)\) is split in \(\mathcal{O}_K\) if \(p\equiv 1 \;\; (\text{mod }m)\)
 \end{Theorem} 
 Thus we have a solution to the splitting of primes via congruence relations. 
 
@@ -59,7 +59,7 @@ Class field theory begins with Kronecker in 1853, who constructed an extension o
 \begin{Theorem}(Bauer)
 	Let \(L_1, L_2\) be finite extensions of a number field \(K\), then \(L_1 = L_2\) if and only if the primes of \(\mathcal{O}_K\) that split in \(\mathcal{O}_{L_1}\) is equal to the set of primes that split in \(\mathcal{O}_{L_2}\).
 \end{Theorem}
-However there was no systematic way of finding \textit{which} primes split over the extension. Takagi was to supply something very close to theorem \ref{thm:reciprocity} in 1920 and it was to be made even more explicit finally by Artin in 1927. Thus \textit{global} class field theory was ``solved'', immediately the natural question was raised, what happens in the \textit{non-abelian} extensions of number fields. The (global) Langlands conjectures (amongst other things) can be viewed as an attempt to answer this question. 
+However there was no systematic way of finding \textit{which} primes split over the extension. Takagi was to supply something very close to theorem \ref{thm:reciprocity} in 1920 and it was to be made even more explicit finally by Artin in 1927. Thus \textit{global} class field theory was ``solved'', immediately the natural question was raised, what happens in the \textit{non-Abelian} extensions of number fields. The (global) Langlands conjectures (amongst other things) can be viewed as an attempt to answer this question. 
 
 Another direction that people were interested in was extensions of local fields, as opposed to number fields. It was Hilbert who introduced in 1897 the use of the p-adic numbers, in spirit if not in name, he wrote congruences of arbitrary powers of primes. Let \(\nu\) be a place of \(\Q\), then define the \(\nu\)-adic Hilbert symbol for \(a,b\in \Q^\times\)
 \[(a,b)_\nu \defeq \begin{cases}
@@ -74,7 +74,7 @@ This is equivalent to Gauss's reciprocity law, however much more uniform to stat
 
 Note that the definition and proof of local class field theory \textit{depends logically } on global class field theory. Hasse was able to prove later in 1933 the main results again but without recourse to global class field theory. It lacked the explicit construction of the class fields however which was finally supplied in 1965 by Lubin and Tate.
 
-What remained to do was supply a proof of \textit{global} class field theory from local class field theory. In persuit of this task the machinery of the ideles and adeles was introduced. In this language (part of) \textit{global} class field theory can be restated as 
+What remained to do was supply a proof of \textit{global} class field theory from local class field theory. In pursuit of this task the machinery of the ideles and adeles was introduced. In this language (part of) \textit{global} class field theory can be restated as 
 \begin{Theorem}[\cite{neukirchGlobalClassField1999}, Prop. 1.3]
 	Let the ideal class group of a number field \(K\) be denoted \(\mathrm{Cl}_K\). Then there is a surjection
 	\[ \A^*/ K^* \xrightarrow{A} \mathrm{Cl}_K \cong \mathrm{Gal}(K'/K).\]
@@ -99,7 +99,7 @@ This suggests the generalisation to
 \[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } \GL_n\}   .\]
 But according to Langlands \cite{langlandsREPRESENTATIONTHEORYITS}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, and so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
 \[\{\text{Certain reps of }G(\A)/G(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } G\} .\]
-These two sides of the coorespondence are refered to as the ``automorphic'' side and the ``Galois side'' respectively. The content that follows will be almost entirely on the automorphic side. 
+These two sides of the correspondence are referred to as the ``automorphic'' side and the ``Galois side'' respectively. The content that follows will be almost entirely on the automorphic side. 
 
 
 \subsection{Harmonic Analysis}
@@ -148,7 +148,7 @@ The idea of a direct integral is review in \ref{app:direct_int} to get a quick i
 	The regular represntation of a type I, second countable and unimodular topological group is a direct integral of the irreducible unitary representations. 
 \end{Theorem}
 \begin{remark}
-	The Plancherel theorem says much more in fact. Like the Peter-Weyl theorem for compact groups it doesnt just give you that some direct integral decomposition exists, it contains many more details about the topology and measure on the set of unitary irreducible representations, and which representations are associated to them in the direct integral. We are being breif as this is motivational.
+	The Plancherel theorem says much more in fact. Like the Peter-Weyl theorem for compact groups it doesn't just give you that some direct integral decomposition exists, it contains many more details about the topology and measure on the set of unitary irreducible representations, and which representations are associated to them in the direct integral. We are being brief as this is motivational.
 \end{remark}
 
 
@@ -180,14 +180,14 @@ Recently it was shown for classical groups that this \(N\) indeed has the requir
 \end{Theorem}
 
 \subsection{Poles of Residual Eisenstein Series}
-Moeglin and Waldspurger also acheived a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. 
+Moeglin and Waldspurger also achieved a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. 
 First consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then Moeglin and Waldspurger construct a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' and denote it 
 \[\Delta(\tau, b).\]
 They go on to prove that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}.
 
 This representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
 
-\todo{final part connect to the new stuff}
+\todo[inline, color=blue]{Introduction}
 
 \section*{Outline of Content}
 Chapter one deals with the generalities of linear algebraic groups, the objects whose representation theory is the subject of discussion. First we define them and then look at the important subgroups that are used in the study of automorphic forms arising on the adelic points of these groups. We focus on the classical groups.

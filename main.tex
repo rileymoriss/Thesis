@@ -65,21 +65,7 @@
 }
 \allowdisplaybreaks
 \geometry{ margin=3cm}
-
-\usepackage{ulem}
-
-\makeatletter
-
-\newcommand{\coloruwave}[2]{%
-	\UL@protected\def\temp@uwave{\leavevmode \bgroup 
-		\ifdim \ULdepth=\maxdimen \ULdepth 3.5\p@
-		\else \advance\ULdepth2\p@ 
-		\fi \markoverwith{\textcolor{#1}{\lower\ULdepth\hbox{\sixly \char58}}}\ULon}
-	\font\sixly=lasy6 % does not re-load if already loaded, so no memory drain.
-	\temp@uwave{#2}%
-}
-
-\makeatother
+\usepackage{cite}
 
 %%%%%%%%%%%%%% 
 %Type Writer Font
@@ -124,6 +110,7 @@
 \begin{center}
 	\textbf{Abstract}
 \end{center}
+\todo[inline, color=blue]{Abstract}
 
 \chapter*{Acknowledgements}
 \input{Chapters/acknowledgements}
@@ -156,7 +143,7 @@
 
 
 \listoftodos
-\todo[inline]{Fix bibliography}
+\todo[inline, color=blue]{Fix bibliography}
 
 
 \newpage
