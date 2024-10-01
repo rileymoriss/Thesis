@@ -195,27 +195,33 @@ Recently it was shown for classical groups that this \(N\) indeed has the requir
 \end{Theorem}
 
 \subsection{Poles of Residual Eisenstein Series}
-Moeglin and Waldspurger also achieved a more fine analysis of the spectrum of \(\GL_n\) in terms of residues of Eisenstein series. 
-First consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then Moeglin and Waldspurger construct a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' and denote it 
+Consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then there is a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' denoted 
 \[\Delta(\tau, b).\]
-They go on to prove that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}.
+Moeglin and Waldspurger also achieved a more fine analysis of the spectrum of \(\GL_n\) by proving that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}. The Speh representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}, some more concrete explanation can be found in \cite[2.4]{brennerNotesAnalyticProperties2009}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
 
-This representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
+The classical groups \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times \G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, who locate the poles of Eisenstein series induced in this manner. 
 
-\todo[inline, color=blue]{Introduction}
+We do not yet understand how but these considerations are supposed to help prove cases of Langlands functorial transfers, that is proving cases of Langlands functoriality for groups by ``transfering'' the known cases of functoriality from other groups. We quote from the introduction of \cite{jiangPolesCertainResidual2013}:
+
+\begin{quote}
+	``The key ingredient in these constructions is to use certain Fourier coefficients of special types of residues of certain residual Eisenstein series as kernel functions in the corresponding integral transforms''
+\end{quote}
+\cite{bumpRankinSelbergMethodIntroduction2011} gives some more detail on how the analytic properties of Eisenstein series and their L-functions imply that the automorphic representations can be lifted to other groups. 
+
+Finally we remark that we spent a good amount of time trying to understand the analogous story for the so called ``almost algebraic groups'', topological coverings of \(G(\A)\). In this setting the work of \cite{jiangPolesCertainResidual2013} has also been applied to get similar results on poles of metaplectic Eisenstein series, as in \cite{kaplanDoublingConstructionsComplete2021a}. It was also used to prove certain functoriality results as in \cite{caiDoublingConstructionsGlobal2024a}. We leave it for future work to understand the full significance of these calculations, but hope we have motivated why the \textit{might} be interesting.
 
 \section*{Outline of Content}
 Chapter one deals with the generalities of linear algebraic groups, the objects whose representation theory is the subject of discussion. First we define them and then look at the important subgroups that are used in the study of automorphic forms arising on the adelic points of these groups. We focus on the classical groups.
 
 Chapter two deals with automorphic forms. We define automorphic forms in both the Archimedean and adelic places. Finally we give the details of how to view modular forms as automorphic forms. 
 
-Chapter three is a discussion of the concept of the constant term in the Archimedean place. First we define the constant term of an automorphic form (Archimedean) and then we show how it is related to the constant term of the Fourier series of a modular form. Finally we show how the classical Siegel Phi operator can be realised as a constant term.
+Chapter three is dedicated to automorphic representations. We define them and specify some important constructions that are needed in the final section.
 
-Chapter four is dedicated to automorphic representations. We define them and specify some important constructions that are needed in the final section.
+In chapter four we define adelic Eisenstein series and show how they generalise the classical modular forms also known as Eisenstein series.
 
-In chapter five we define adelic Eisenstein series and show how they generalise the classical modular forms also known as Eisenstein series.
+Chapter five is dedicated to the constant term in the adelic setting. We first define them and then go through the process of computing them in great detail for Eisenstein series. 
 
-Chapter six is dedicated to the constant term in the adelic setting. We first define them and then go through the process of computing them in great detail for Eisenstein series. 
+Chapter six is a discussion of the concept of the constant term in the Archimedean place. First we define the constant term of an automorphic form (Archimedean) and then we show how it is related to the constant term of the Fourier series of a modular form. Finally we show how the classical Siegel Phi operator can be realised as a constant term.
 
 Chapter seven is for defining L-functions, the analytic invariants that are central to the Langlands program. We will give several of the special cases that appear through out history and the literature. 
 

@@ -1,3 +1,13 @@
+The theory of L-functions is not yet systematic; Langlands has provided a conjectural framework in which one hopes all L-functions will live, however as far as we can see this is very much still under construction.  
+In the mean time there are two major ``paradigms'' for constructing and proving theorems about L-functions, those are the Langlands-Shahidi type constructions and the Rankin-Selberg type constructions.
+
+We have neither the time, space or knowledge to survey all of these things in any meaningful way, however we should say something, as these are key to the final section. 
+
+The Rankin-Selberg type functions are surveyed in \cite{bumpRankinSelbergMethodIntroduction2011}. The \(\GL_n \times \GL_m\) case is dealt with in \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}. For Rankin-Selberg L-functions of form \(\Sp_{2n}\times \GL_m \) the theory (for generic cuspidal representations) is worked out in \cite{ginzburg$L$functionsSymplecticGroups1998}.
+
+The Langlands-Shahidi paradigm is explained in \cite{shahidiProofLanglandsConjecture1990, shahidiEisensteinSeriesAutomorphic2010}.
+
+We have the langlands general framework. We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquenly determininng L functions for tempered things. By \cite{shahidiArthurPacketsRamanujan2011} all generic things are tempered so we can apply the theory of RS and GR to explicitly construct global things and prove theorems. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the controversial work of Arthur \cite{EndoscopicClassificationRepresentations} (apparently his proof refers to unfinished pre-prints).
 
 \label{L-functions}
 \section{L-Functions for \(\GL_n\times \GL_m\)}
@@ -16,6 +26,11 @@
 
 \(L(s, \tau, \sigma)\)
 \cite{grbacResidualSpectrumSplit2011}
+
+\begin{example}[]
+	The so called ``Rankin-Selberg'' L-function associated to -------, is given by 
+	\[L(s, \tau\times \tau) = L(s, \tau, \rho)L(s, \tau, \rho^-)\]	
+\end{example}
 
 \section{Automorphic L-Functions}
 We don't intent to define in great detail automorphic L-functions, as there are many other better sources to learn from \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresenta}, we will recall the idea and then discuss some of the properties and relations with Eisenstein series and interwining operators that we will need later.

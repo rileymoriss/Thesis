@@ -1,9 +1,20 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{BVDGHZ08}
 
-\bibitem[Art]{arthurAUTOMORPHICREPRESENTATIONSNUMBER}
+\bibitem[AG91]{arthurLecturesAutomorphicFunctions1991a}
+James Arthur and Stephen Gelbart.
+\newblock Lectures on automorphic {{{\emph{L}}}} -functions.
+\newblock In J.~Coates and M.~J. Taylor, editors, {\em L-{{Functions}} and
+  {{Arithmetic}}}, pages 1--60. Cambridge University Press, 1 edition, February
+  1991.
+
+\bibitem[Arta]{arthurAUTOMORPHICREPRESENTATIONSNUMBER}
 James Arthur.
 \newblock {{AUTOMORPHIC REPRESENTATIONS AND NUMBER THEORY}}.
+
+\bibitem[Artb]{arthurLfunctionsAutomorphicRepresenta}
+James Arthur.
+\newblock L-functions and {{Automorphic Representa-}} tions.
 
 \bibitem[Art79]{arthurEisensteinSeriesTrace1979}
 James Arthur.
@@ -67,10 +78,22 @@ Daniel Bump.
 \newblock Cambridge {{Studies}} in {{Advanced Mathematics}}. Cambridge
   University Press, Cambridge, 1997.
 
+\bibitem[Bum11]{bumpRankinSelbergMethodIntroduction2011}
+Daniel Bump.
+\newblock The {{Rankin-Selberg}} method: An introduction and survey.
+\newblock In {\em Automorphic {{Representations}}, {{L-Functions}} and
+  {{Applications}}: {{Progress}} and {{Prospects}}}, pages 41--74. De Gruyter,
+  June 2011.
+
 \bibitem[BVDGHZ08]{bruinier123ModularForms2008}
 Jan~Hendrik Bruinier, Gerard Van Der~Geer, G{\"u}nter Harder, and Don Zagier.
 \newblock {\em The 1-2-3 of {{Modular Forms}}}.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+
+\bibitem[CFK24]{caiDoublingConstructionsGlobal2024a}
+Yuanqing Cai, Solomon Friedberg, and Eyal Kaplan.
+\newblock Doubling constructions: {{Global}} functoriality for non-generic
+  cuspidal representations, May 2024.
 
 \bibitem[CKPS]{cogdellFUNCTORIALITYCLASSICALGROUPS}
 J~W Cogdell, H~H Kim, I~I {Piatetski-Shapiro}, and F~Shahidi.
@@ -82,12 +105,16 @@ J.~W. Cogdell, H.~H. Kim, I.~I. {Piatetski-Shapiro}, and F.~Shahidi.
 \newblock {\em Publications math{\'e}matiques de l'IH{\'E}S}, 99(1):163--233,
   June 2004.
 
-\bibitem[Coga]{cogdellLecturesLfunctionsConverse}
+\bibitem[Coga]{cogdellLECTURESINTEGRALREPRESENTATIONS}
+J~W Cogdell.
+\newblock {{LECTURES ON INTEGRAL REPRESENTATIONS OF L-FUNCTIONS}}.
+
+\bibitem[Cogb]{cogdellLecturesLfunctionsConverse}
 J~W Cogdell.
 \newblock Lectures on {{L-functions}}, {{Converse Theorems}}, and
   {{Functoriality}} for {{GLn}}.
 
-\bibitem[Cogb]{cogdellLFUNCTIONSFUNCTORIALITY}
+\bibitem[Cogc]{cogdellLFUNCTIONSFUNCTORIALITY}
 James~W Cogdell.
 \newblock L-{{FUNCTIONS AND FUNCTORIALITY}}.
 
@@ -95,7 +122,18 @@ James~W Cogdell.
 Brian Conrad.
 \newblock Standard parabolic subgroups: Theory and examples.
 
-\bibitem[Conb]{conradHISTORYCLASSFIELD}
+\bibitem[Conb]{conradStanfordNumberTheory}
+Brian Conrad.
+\newblock Stanford {{Number Theory Seminar}}.
+\newblock
+  https://math.stanford.edu/{\textasciitilde}conrad/conversesem/Notes/L2.pdf.
+
+\bibitem[Conc]{conradDecomposingSL2R}
+Keith Conrad.
+\newblock Decomposing {{SL2}}({{R}}).
+\newblock https://kconrad.math.uconn.edu/blurbs/grouptheory/SL(2,R).pdf.
+
+\bibitem[Cond]{conradHISTORYCLASSFIELD}
 Keith Conrad.
 \newblock {{HISTORY OF CLASS FIELD THEORY}}.
 
@@ -113,6 +151,10 @@ Fred Diamond and Jerry~Michael Shurman.
 \newblock {\em A First Course in Modular Forms}.
 \newblock Number 228 in Graduate Texts in Mathematics. Springer, New York,
   2005.
+
+\bibitem[Dv17]{deitmarTraceClassGroups2017}
+Anton Deitmar and Gerrit {van Dijk}.
+\newblock Trace class groups, September 2017.
 
 \bibitem[Eme]{emertonCLASSICALMODULARFORMS}
 Matthew Emerton.
@@ -162,12 +204,6 @@ Jayce~R. Getz and Heekyoung Hahn.
 Roger Godement.
 \newblock {Groupes lin{\'e}aires alg{\'e}briques sur un corps parfait}.
 
-\bibitem[Gra14]{grafakosClassicalFourierAnalysis2014}
-Loukas Grafakos.
-\newblock {\em Classical {{Fourier Analysis}}}, volume 249 of {\em Graduate
-  {{Texts}} in {{Mathematics}}}.
-\newblock Springer New York, New York, NY, 2014.
-
 \bibitem[Grb11]{grbacResidualSpectrumSplit2011}
 Neven Grbac.
 \newblock On the residual spectrum of split classical groups supported in the
@@ -186,6 +222,12 @@ Douglas Grenier.
 \newblock {{AN ANALOGUE OF SIEGEL}}'{{S X-OPERATOR FOR AUTOMORPHIC FORMS FOR
   GLn}}({{Z}}).
 \newblock 2024.
+
+\bibitem[GRS98]{ginzburg$L$functionsSymplecticGroups1998}
+David Ginzburg, Stephen Rallis, and David Soudry.
+\newblock \${{L}}\$-functions for symplectic groups.
+\newblock {\em Bulletin de la Soci{\'e}t{\'e} Math{\'e}matique de France},
+  126(2):181--244, 1998.
 
 \bibitem[GRS11]{ginzburgDescentMapAutomorphic2011}
 D.~Ginzburg, Stephen Rallis, and David Soudry.
@@ -212,6 +254,11 @@ Dihua Jiang, Baiying Liu, and Lei Zhang.
 \newblock Poles of certain residual {{Eisenstein}} series of classical groups.
 \newblock {\em Pacific Journal of Mathematics}, 264(1):83--123, July 2013.
 
+\bibitem[Kap21]{kaplanDoublingConstructionsComplete2021a}
+Eyal Kaplan.
+\newblock Doubling {{Constructions}}: The complete {{L-function}} for coverings
+  of the symplectic group, July 2021.
+
 \bibitem[Kima]{kimEISENSTEINSERIESTHEIR}
 Henry~H Kim.
 \newblock {{EISENSTEIN SERIES AND THEIR APPLICATIONS}}.
@@ -224,10 +271,20 @@ Minhyong Kim.
 Robert~P Langlands.
 \newblock Functoriality in the theory of automorphic forms.
 
-\bibitem[Lanb]{langlandsREPRESENTATIONTHEORYITS}
+\bibitem[Lanb]{langlandsLetterweil196701_rpl_0}
+Robert~P Langlands.
+\newblock Letter-to-weil-1967-01\_rpl\_0.
+\newblock
+  https://publications.ias.edu/sites/default/files/letter-to-weil-1967-01\_rpl\_0.pdf.
+
+\bibitem[Lanc]{langlandsREPRESENTATIONTHEORYITS}
 Robert~P Langlands.
 \newblock {{REPRESENTATION THEORY ITS RISE AND ITS ROLE IN NUMBER THEORY}}.
 \newblock {\em REPRESENTATION THEORY}.
+
+\bibitem[Land]{langlandsEulerProductsa}
+R.P. Langlands.
+\newblock {\em Euler {{Products}}}.
 
 \bibitem[Lan76]{langlandsFunctionalEquationsSatisfied1976}
 Robert~P. Langlands.
@@ -271,6 +328,12 @@ J.~S. Milne.
 Gunter Malle and Donna Testerman.
 \newblock Linear {{Algebraic Groups}} and {{Finite Groups}} of {{Lie Type}}.
 
+\bibitem[MT62]{mostowCompactnessArithmeticallyDefined1962}
+G.~D. Mostow and T.~Tamagawa.
+\newblock On the {{Compactness}} of {{Arithmetically Defined Homogeneous
+  Spaces}}.
+\newblock {\em Annals of Mathematics}, 76(3):446--463, 1962.
+
 \bibitem[Mum99]{mumfordRedBookVarieties1999}
 David Mumford.
 \newblock {\em The {{Red Book}} of {{Varieties}} and {{Schemes}}}, volume 1358
@@ -303,6 +366,12 @@ Aaron Pollack.
 \bibitem[RS]{renardREPRESENTATIONSGROUPESREDUCTIFS}
 David Renard and Laurent Schwartz.
 \newblock {REPR{\'E}SENTATIONS DES GROUPES R{\'E}DUCTIFS p-ADIQUES}.
+
+\bibitem[Sha88]{shahidiRamanujanConjectureFiniteness1988}
+Freydoon Shahidi.
+\newblock {\em On the {{Ramanujan}} Conjecture and Finiteness of Poles for
+  Certain {{L-functions}}}.
+\newblock 1988.
 
 \bibitem[Sha90]{shahidiProofLanglandsConjecture1990}
 Freydoon Shahidi.

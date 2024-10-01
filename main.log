@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  1 OCT 2024 00:54
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  1 OCT 2024 20:53
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1225,48 +1225,17 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 34.
  (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-[4] [5] [6] [7] [8]
-
-LaTeX Warning: Citation `deitmarTraceClassGroups2017' on page ix undefined on i
-nput line 139.
-
-
-LaTeX Warning: Citation `conradStanfordNumberTheory' on page ix undefined on in
-put line 152.
-
-[9] [10]
-
-LaTeX Warning: Citation `langlandsLetterweil196701_rpl_0' on page xi undefined 
-on input line 181.
-
-
-LaTeX Warning: Citation `langlandsEulerProductsa' on page xi undefined on input
- line 181.
-
-
-LaTeX Warning: Citation `langlandsEulerProductsa' on page xi undefined on input
- line 187.
-
-
-LaTeX Warning: Citation `shahidiRamanujanConjectureFiniteness1988' on page xi u
-ndefined on input line 189.
-
-
+[4] [5] [6] [7] [8] [9] [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 205.
-
 [12]
-Overfull \hbox (12.23686pt too wide) in paragraph at lines 212--213
-[]\TU/lmr/m/n/12 Chap-ter three is a dis-cus-sion of the con-cept of the con-sta
-nt term in the Archimedean
+Overfull \hbox (0.22485pt too wide) in paragraph at lines 224--225
+[]\TU/lmr/m/n/12 Chap-ter six is a dis-cus-sion of the con-cept of the con-stant
+ term in the Archimedean
  []
 
-) [13] (./main.toc [14
+[13]) [14] (./main.toc [15
 
 ])
 \tf@toc=\write6
@@ -1280,10 +1249,6 @@ Chapter 1.
 Underfull \vbox (badness 7221) has occurred while \output is active []
 
  [4]
-
-LaTeX Warning: Citation `mostowCompactnessArithmeticallyDefined1962' on page 5 
-undefined on input line 78.
-
 [5]
 Underfull \vbox (badness 1831) has occurred while \output is active []
 
@@ -1354,10 +1319,6 @@ Underfull \vbox (badness 2512) has occurred while \output is active []
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 148.
-
-
-LaTeX Warning: Citation `conradDecomposingSL2R' on page 32 undefined on input l
-ine 177.
 
 [32]) [33]
 Chapter 5.
@@ -1438,200 +1399,197 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--257
 Chapter 7.
 (./Chapters/Lfunctions.tex
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3.
+LaTeX Warning: Citation `shahidiArthurPacketsRamanujan2011' on page 50 undefine
+d on input line 10.
+
+
+LaTeX Warning: Citation `cogdellRemarksRankinSelbergConvolutions' on page 50 un
+defined on input line 10.
+
+
+LaTeX Warning: Citation `EndoscopicClassificationRepresentations' on page 50 un
+defined on input line 10.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathop' on input line 3.
+(hyperref)                removing `math shift' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
+(hyperref)                removing `\mathop' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
+(hyperref)                removing `\mathcode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
+(hyperref)                removing `\mathcode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Umathcharnumdef' on input line 3.
+(hyperref)                removing `\mathcode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 3.
+(hyperref)                removing `\Umathcharnumdef' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Umathcodenum' on input line 3.
+(hyperref)                removing `\std@minus' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\-' on input line 3.
+(hyperref)                removing `\Umathcodenum' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
+(hyperref)                removing `\-' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\-' on input line 3.
+(hyperref)                removing `\mathcode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
+(hyperref)                removing `\-' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
+(hyperref)                removing `\mathcode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 3.
+(hyperref)                removing `\mathcode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 2.66638pt
-(hyperref)                removed on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathgroup' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symoperators' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathop' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Umathcharnumdef' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Umathcodenum' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\-' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\-' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 3.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.66638pt
-(hyperref)                removed on input line 3.
+(hyperref)                removed on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathgroup' on input line 3.
+(hyperref)                removing `\mathgroup' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symoperators' on input line 3.
+(hyperref)                removing `\symoperators' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 3.
+(hyperref)                removing `\@ifnextchar' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3.
+(hyperref)                removing `subscript' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathop' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcharnumdef' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\std@minus' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcodenum' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\-' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\-' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.66638pt
+(hyperref)                removed on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathgroup' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symoperators' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 13.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 5.
-
-
-LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 50 und
-efined on input line 7.
-
-
-LaTeX Warning: Citation `remarks on rankin selberg convolutions Cogdel and PT-s
-hapiro' on page 50 undefined on input line 15.
-
-
-LaTeX Warning: Citation `arthurLfunctionsAutomorphicRepresenta' on page 50 unde
-fined on input line 21.
+ine 15.
 
 [50
 
-] [51]
+]
 
-LaTeX Warning: Citation `cogdellLECTURESINTEGRALREPRESENTATIONS' on page 52 und
-efined on input line 54.
-
-
-LaTeX Warning: Citation `arthurLecturesAutomorphicFunctions1991a' on page 52 un
-defined on input line 54.
+LaTeX Warning: Citation `remarks on rankin selberg convolutions Cogdel and PT-s
+hapiro' on page 51 undefined on input line 25.
 
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 55.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
+[51]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 85.
+ine 70.
+
+[52]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 100.
 
 ) [53]
 Chapter 8.
@@ -1662,38 +1620,43 @@ Appendix A.
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 146.
+ine 147.
 
 [59
 
 ] (./main.bbl
-Underfull \hbox (badness 1259) in paragraph at lines 5--7
+Underfull \hbox (badness 1259) in paragraph at lines 12--14
 []\TU/lmr/m/n/12 James Arthur.  AU-TO-MOR-PHIC REP-RE-SEN-TA-TIONS AND
  []
 
 [60
 
-] [61] [62]
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+[]\TU/lmr/m/n/12 Keith Con-rad.  De-com-pos-ing SL2(R).  https://k-con-
+ []
+
+[62] [63]
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
 []\TU/lmr/m/n/12 Lin-ear Rep-re-sen-ta-tions of Fi-nite Groups | Springer-Link.
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
 []\TU/lmr/m/n/12 Notes for class on al-ge-braic groups.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
 \TU/lmr/m/n/12 https://users.math.msu.edu/user-s/ruiterj2/Math-/-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
 \TU/lmr/m/n/12 Doc-u-ments/-Sum-mer%202019/Al-ge-braic%20Group-
  []
 
-[64]) [65] (./main.aux)
+[65]) [66] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1707,20 +1670,20 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30297 strings out of 477545
+ 30316 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 3932 words of node memory still in use:
+ 3938 words of node memory still in use:
    37 hlist, 5 vlist, 2 rule, 3 disc, 2 local_par, 44 glue, 4 kern, 3 penalty, 2
-6 glyph, 767 attribute, 75 glue_spec, 385 attribute_list, 4 write, 2 save_pos, 6
+6 glyph, 769 attribute, 75 glue_spec, 386 attribute_list, 4 write, 2 save_pos, 6
 7 pdf_literal, 2 pdf_colorstack nodes
-   avail lists: 2:1787,3:555,4:288,5:508,6:71,7:5377,8:90,9:1215,10:24,11:420
- 50059 multiletter control sequences out of 65536+600000
+   avail lists: 2:2012,3:597,4:264,5:508,6:71,7:5429,8:90,9:1215,10:24,11:420
+ 50063 multiletter control sequences out of 65536+600000
  82 fonts using 5907631 bytes
  98i,28n,98p,1197b,1205s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
-anslant12-regular.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/op
-entype/public/lm/lmroman8-italic.otf><//?/c:/users/riley/appdata/local/programs/
-miktex/fonts/opentype/public/lm/lmroman10-bolditalic.otf><//?/c:/users/riley/app
+an10-bolditalic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/open
+type/public/lm/lmromanslant12-regular.otf><//?/c:/users/riley/appdata/local/prog
+rams/miktex/fonts/opentype/public/lm/lmroman8-italic.otf><//?/c:/users/riley/app
 data/local/programs/miktex/fonts/opentype/public/lm/lmroman12-italic.otf><//?/c:
 /users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman8-reg
 ular.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public
@@ -1746,9 +1709,9 @@ sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm1
 symbols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (80 pages, 621914 bytes).
+Output written on main.pdf (82 pages, 636372 bytes).
 
-PDF statistics: 1077 PDF objects out of 1200 (max. 8388607)
- 303 named destinations out of 1000 (max. 131072)
+PDF statistics: 1127 PDF objects out of 1200 (max. 8388607)
+ 318 named destinations out of 1000 (max. 131072)
  248 words of extra memory for PDF output out of 10000 (max. 100000000)
 
