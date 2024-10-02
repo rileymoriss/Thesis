@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-White space in argument---line 252 of file main.aux
+White space in argument---line 278 of file main.aux
  : \citation{remarks
  :                   on rankin selberg convolutions Cogdel and PT-shapiro}
 I'm skipping whatever remains of this command
@@ -9,6 +9,9 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
+Warning--I didn't find a database entry for "shahidiArthurPacketsRamanujan2011"
+Warning--I didn't find a database entry for "cogdellRemarksRankinSelbergConvolutions"
+Warning--I didn't find a database entry for "EndoscopicClassificationRepresentations"
 Warning--to sort, need author or key in BuildingsClassicalGroups
 Warning--to sort, need author or key in NotesClassAlgebraic
 Warning--to sort, need author or key in EssaysHistoryLie
@@ -17,6 +20,8 @@ Warning--empty journal in arthurAUTOMORPHICREPRESENTATIONSNUMBER
 Warning--empty year in arthurAUTOMORPHICREPRESENTATIONSNUMBER
 Warning--empty journal in arthurLfunctionsAutomorphicRepresenta
 Warning--empty year in arthurLfunctionsAutomorphicRepresenta
+Warning--empty journal in borelAutomorphicFormsRepresentations
+Warning--empty year in borelAutomorphicFormsRepresentations
 Warning--can't use both author and editor fields in bumpIntroductionLanglandsProgram2004
 Warning--empty publisher in bernsteinREPRESENTATIONSPADICGROUPS1992
 Warning--empty journal in booherVIEWINGMODULARFORMS
@@ -63,45 +68,45 @@ Warning--empty year in pollackRANKINSELBERGMETHODUSER
 Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
 Warning--empty publisher in shahidiRamanujanConjectureFiniteness1988
-You've used 79 entries,
+You've used 80 entries,
             2543 wiz_defined-function locations,
-            985 strings with 18474 characters,
-and the built_in function-call counts, 24963 in all, are:
-= -- 2358
-> -- 955
+            995 strings with 18860 characters,
+and the built_in function-call counts, 25279 in all, are:
+= -- 2387
+> -- 974
 < -- 72
-+ -- 309
-- -- 286
-* -- 1650
-:= -- 4042
-add.period$ -- 214
-call.type$ -- 79
-change.case$ -- 408
-chr.to.int$ -- 68
-cite$ -- 137
-duplicate$ -- 1163
-empty$ -- 2015
-format.name$ -- 415
-if$ -- 5059
++ -- 315
+- -- 292
+* -- 1672
+:= -- 4097
+add.period$ -- 216
+call.type$ -- 80
+change.case$ -- 414
+chr.to.int$ -- 69
+cite$ -- 140
+duplicate$ -- 1176
+empty$ -- 2035
+format.name$ -- 422
+if$ -- 5119
 int.to.chr$ -- 12
 int.to.str$ -- 0
-missing$ -- 85
-newline$ -- 365
-num.names$ -- 234
-pop$ -- 668
+missing$ -- 86
+newline$ -- 369
+num.names$ -- 237
+pop$ -- 679
 preamble$ -- 1
-purify$ -- 507
+purify$ -- 514
 quote$ -- 0
-skip$ -- 850
+skip$ -- 860
 stack$ -- 0
-substring$ -- 971
+substring$ -- 978
 swap$ -- 116
 text.length$ -- 72
 text.prefix$ -- 55
 top$ -- 0
-type$ -- 540
-warning$ -- 54
-while$ -- 211
-width$ -- 83
-write$ -- 909
+type$ -- 548
+warning$ -- 56
+while$ -- 214
+width$ -- 84
+write$ -- 918
 (There was 1 error message)

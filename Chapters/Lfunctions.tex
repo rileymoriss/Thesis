@@ -1,41 +1,19 @@
-The theory of L-functions is not yet systematic; Langlands has provided a conjectural framework in which one hopes all L-functions will live, however as far as we can see this is very much still under construction.  
-In the mean time there are two major ``paradigms'' for constructing and proving theorems about L-functions, those are the Langlands-Shahidi type constructions and the Rankin-Selberg type constructions.
-
-We have neither the time, space or knowledge to survey all of these things in any meaningful way, however we should say something, as these are key to the final section. 
+The theory of L-functions is not yet systematic; Langlands has provided a conjectural framework, however it is still under construction.  
+In the mean time there are two major ``paradigms'' for constructing and proving theorems about L-functions, those are the Langlands-Shahidi type constructions and the Rankin-Selberg type constructions. General surveys can be found in \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresenta}.
 
 The Rankin-Selberg type functions are surveyed in \cite{bumpRankinSelbergMethodIntroduction2011}. The \(\GL_n \times \GL_m\) case is dealt with in \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}. For Rankin-Selberg L-functions of form \(\Sp_{2n}\times \GL_m \) the theory (for generic cuspidal representations) is worked out in \cite{ginzburg$L$functionsSymplecticGroups1998}.
 
 The Langlands-Shahidi paradigm is explained in \cite{shahidiProofLanglandsConjecture1990, shahidiEisensteinSeriesAutomorphic2010}.
 
-We have the langlands general framework. We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquenly determininng L functions for tempered things. By \cite{shahidiArthurPacketsRamanujan2011} all generic things are tempered so we can apply the theory of RS and GR to explicitly construct global things and prove theorems. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the controversial work of Arthur \cite{EndoscopicClassificationRepresentations} (apparently his proof refers to unfinished pre-prints).
+We have the langlands general framework. We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquenly determininng L functions for tempered things. By \cite{shahidiArthurPacketsRamanujan2011} all generic things are tempered so we can apply the theory of RS and GR to explicitly construct global things and prove theorems. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the unfinished work of Arthur \cite{EndoscopicClassificationRepresentations}.
 
 \label{L-functions}
-\section{L-Functions for \(\GL_n\times \GL_m\)}
-\subsection{Generic Representations}
-\todo[inline, color=blue]{L-fuunctions chapter}
-\subsection{Definition}
-\cite{cogdellLECTURESINTEGRALREPRESENTATIONS}
-
-\subsection{Poles and Zeroes}
-
-
-\section{L-Functions for Classical Groups}
-
-\(L(s, \tau\times \sigma)\)
-\cite{remarks on rankin selberg convolutions Cogdel and PT-shapiro}\cite{cogdellFunctorialityClassicalGroups2004} -----> Defined in \cite{shahidiProofLanglandsConjecture1990}
-
-\(L(s, \tau, \sigma)\)
-\cite{grbacResidualSpectrumSplit2011}
-
-\begin{example}[]
-	The so called ``Rankin-Selberg'' L-function associated to -------, is given by 
-	\[L(s, \tau\times \tau) = L(s, \tau, \rho)L(s, \tau, \rho^-)\]	
-\end{example}
 
 \section{Automorphic L-Functions}
-We don't intent to define in great detail automorphic L-functions, as there are many other better sources to learn from \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresenta}, we will recall the idea and then discuss some of the properties and relations with Eisenstein series and interwining operators that we will need later.
-
-The first thing is to recall the classification of connected reductive groups defined over an algebraically closed field via root datum. A root datum is a tuple \((X, \Phi, \check{X} , \check{\Phi})\) where \(X\) and \(\check{X}\) are two free abelian groups of finite type, \(\Phi, \check{\Phi}\) are subgroups that are in duality via a perfect pairing on \(X, \check{X}\). Then each reductive group \(G\) over a number field \(F\) has associated the root datum that is associated to its base change to \(\C\). Thus to a connected reductive group over a number field we associate a connected reductive group over \C, given by the dual root datum. We call this the \textbf{dual group} of \(G\) and denote it \(\hat{G}\). The \textbf{Langlands dual group} is then the dual group producted with the \(\mathrm{Gal}(\bar{k}/k)\)
+We follow closely Borels exposition in \cite[Part 2. III. 2. ]{borelAutomorphicFormsRepresentations} and \cite{shahidiEisensteinSeriesAutomorphic2010}.
+Given a reductive LAG \(G\) defined over \C there is an associated root datum as in \((X, \Phi, \hat{X}, \hat{\Phi})\), where for any choice of maximal torus we have \(X = \Hom(T, \mathbb{G}_m)\), \(\hat{X} = \Hom(\mathbb{G}_m, T)\), and \(\Phi, \hat\Phi\) are the roots and coroots of \(G\) with respect to \(T\) \cite[7.4.3]{springerLinearAlgebraicGroups1998}.  Then each reductive LAG \(G\) over a number field \(F\) has the root datum that is associated to the base change of \(G\) to \(\C\), \((X, \Phi, \hat{X}, \hat{\Phi})\).
+By the existence theorem \cite[10]{springerLinearAlgebraicGroups1998} to the dual root datum \(( \hat{X}, \hat{\Phi}, X, \Phi)\) there is a LAG defined over \C that corresponds, we call this the \textbf{dual group} of \(G\) and we denote it \(\hat{G}\). It is possible through the use of the root datum to specify a ``cannonical'' action of \(\mathrm{Gal}(\bar{F}/F)\) on \(\hat{G}\) as in loc. cit.
+The \textbf{Langlands dual group} is then the dual group semi-direct producted with the \(\mathrm{Gal}(\bar{k}/k)\) via this action, which we omit
 \[^L G \defeq \hat{G} \rtimes \mathrm{Gal}(\bar{k}/k).\]
 
 \begin{example}[Classical Groups, \cite{bumpIntroductionLanglandsProgram2004}, 11.1]
@@ -52,13 +30,12 @@ The first thing is to recall the classification of connected reductive groups de
 	\end{table}
 \end{example}
 
-Then, using the Satake isomorphism \cite[2.2]{shahidiEisensteinSeriesAutomorphic2010}, to each unramified representation of \(G(F_\nu)\) we can associate a conjugacy class of \(^LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: ^LG \to \GL_n(\C)\) to representations of \(G(F_\nu)\). Thus the automorphic L-functions are defined as follows: Let \(\rho\) be a representation of \(G(\A)\), let \(r\) be a complex representation of \(^LG\) and \(s\in \C\) then 
-\[L(s, \rho, r) \defeq \prod_\nu L_\nu(s, \rho_\nu, r ) = \prod_\nu \frac{1}{\det\bigl( I - r(c(\rho_\nu))q^{-s} \bigr)}  ,\]
-where \(\nu\) runs over the unramified places. It is a part of the grand Langlands philosophy that there should be suitable L-functions for the ramified places satisfying very nice properties.
+If \(\nu\) is a non-archimedean place of F, then \(\mathcal{O}_\nu\) is a local ring and we denote \(q_\nu\) the cardinality of the residue field i.e. if \(\mathfrak{p}_\nu\) is the unique maximal ideal of \(\mathcal{O}_\nu\) then \(q_\nu \defeq [\mathcal{O}_\nu: \mathfrak{p}_\nu]\). Using the Satake isomorphism, to each unramified representation of \(G(F_\nu)\) we can associate a conjugacy class of \(^LG\), via some map call it \(c\), and hence there is a way to apply a complex representation \(r: \phantom{ }^LG \to \GL_n(\C)\) to unramified representations of \(G(F_\nu)\), details in \cite[2]{shahidiEisensteinSeriesAutomorphic2010}. 
+Given such an unramified representation of \(G(F_\nu)\), call it \(\pi_\nu\), the local automorphic L-function is then 
+\[ L_\nu(s,\pi_\nu , r ) \defeq  \frac{1}{\det\bigl( I - r(c(\pi_\nu))q_\nu^{-s} \bigr)} ,\;\;\;\; s\in \C.\]
+In the global case we consider an irreducible automorphic representation \(\pi = \tensor_\nu \pi_\nu\) of \(G(\A)\), and a finite set of places of \(F\), call it \(S\), such that \(S\) contains all infinite places and for all \(\nu\notin S\) \(\pi_\nu\) is unramified. Recall that we denoted the Langlands dual of \(G\) defined over \(F\) by \(^LG\). We denote the Langlands dual of \(G\) defined over \(F_\nu\) for \(\nu\notin S\) by \(^LG_{F_\nu}\).  If \(r\) is a finite dimensional complex representation of \(^LG\) then the embedding of Galois groups \(\mathrm{Gal}(\bar{F_\nu} / F_\nu) \hookrightarrow \mathrm{Gal}(\bar{F} / F) \) induces a map \(^LG_{F_\nu} \to ^LG\) along which we can pull \(r\) back, giving a representation \(r_\nu\) of \(^LG_{F_\nu}\). Then the partial global L-functions are defined to be 
+\[L_S(s, \pi, r) \defeq \prod_{\nu\notin S} L(s, \pi_\nu, r_\nu), \;\;\;\;\; s\in \C.\]
 
-\begin{remark}
-	The global L-functions have been defined for many groups at this point and indeed \cite{jiangPolesCertainResidual2013} uses known properties to prove their results. One should note that the questions that we are interested in are still tractable even though the L-functions might not be defined (for instance for the metaplectic group). This is because only finitely many places will ramify, and so as long as those places are neither zero or poles we can transfer questions about zeros and poles from the full global L-functions to L-functions at almost all places. 
-\end{remark}
 
 \begin{example}[Standard Representations / Classical Groups]
 	In the case of classical groups it is common to see L-functions with only two entries e.g. if \(\rho\) is a representation of \(G = \Sp{2n}\) then you may see 
@@ -98,4 +75,28 @@ where \(\nu\) runs over the unramified places. It is a part of the grand Langlan
 	Grossencharacters are just automorphic forms on \(\GL_1\) and hence they generate automorphic representations by taking the span of their orbit in the space of automorphic forms. 
 	
 	The claim is then that the Langlands automorphic L-functions of this representation is, after being pushed forward along this series of maps the regular Dirichlet L-function. \todo{reference? More details?}
+\end{example}
+
+
+
+\section{L-Functions for \(\GL_n\times \GL_m\)}
+\subsection{Generic Representations}
+\todo[inline, color=blue]{L-fuunctions chapter}
+\subsection{Definition}
+\cite{cogdellLECTURESINTEGRALREPRESENTATIONS}
+
+\subsection{Poles and Zeroes}
+
+
+\section{L-Functions for Classical Groups}
+
+\(L(s, \tau\times \sigma)\)
+\cite{remarks on rankin selberg convolutions Cogdel and PT-shapiro}\cite{cogdellFunctorialityClassicalGroups2004} -----> Defined in \cite{shahidiProofLanglandsConjecture1990}
+
+\(L(s, \tau, \sigma)\)
+\cite{grbacResidualSpectrumSplit2011}
+
+\begin{example}[]
+	The so called ``Rankin-Selberg'' L-function associated to -------, is given by 
+	\[L(s, \tau\times \tau) = L(s, \tau, \rho)L(s, \tau, \rho^-)\]	
 \end{example}
