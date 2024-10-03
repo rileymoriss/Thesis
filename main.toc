@@ -35,9 +35,9 @@
 \contentsline {subsection}{\numberline {6.2.1}Automorphising}{42}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Modular Form Case}{43}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Simplifying the Constant Term}{44}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {7}Poles of Residual Eisenstein Series}{50}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Residual Eisenstein Series}{50}{section.7.1}%
-\contentsline {section}{\numberline {7.2}The Constant Term}{51}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Analysing the Intertwining Operator}{52}{section.7.3}%
+\contentsline {chapter}{\numberline {7}Poles of Residual Eisenstein Series}{49}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Residual Eisenstein Series}{49}{section.7.1}%
+\contentsline {section}{\numberline {7.2}The Constant Term}{50}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Analysing the Intertwining Operator}{51}{section.7.3}%
 \contentsline {chapter}{\numberline {A}L-Functions}{54}{appendix.A}%
 \contentsline {section}{\numberline {A.1}The Langlands Framework}{54}{section.A.1}%

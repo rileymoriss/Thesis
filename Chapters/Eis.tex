@@ -7,9 +7,9 @@ Following the setup in \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995} 
 \[|\chi|: M(\A)\to \C , \;\;\; (m_\nu)\mapsto \prod_\nu|\chi(F_\nu)(m_\nu)|_\nu.\]
 The intersection of the kernels of these characters is 
 \[M^1 \defeq \bigcap_{\chi\in \mathrm{Rat}(M)}\ker |\chi|.\]
-Thus we can define
+The collection of characters of \(M(\A)\) that are trivial on \(M^1\) is denoted
 \[X_M \defeq \Hom_{\textrm{TopGroup}}(M(\A)/M^1, \C^*) .\]
-i.e. the collection of characters of \(M(\A)\) that are trivial on \(M^1\).
+
 \begin{remark}
     To make it seem less mysterious we comment that this group has some importance in the more general theory. It is one of the pieces in the ``Langlands decomposition'' of the Archimedean points of a parabolic \(P = MU\), if \(\nu\) is an archimedean place then,
     \[P(F_\nu) = A_M M(F_\nu)U(F_\nu).\]
@@ -19,7 +19,7 @@ i.e. the collection of characters of \(M(\A)\) that are trivial on \(M^1\).
 The set of \textbf{complex characters} of \(M\),
 \[\mathfrak{a}_M^* \defeq \mathrm{Rat}(M)\tensor_\Z \C,\]
 is isomorphic as \C vector spaces to \(X_M\). If \(Z_{G(\A)}\) is the center of \(G(\A)\) then we also have the space 
-\[X_M^G \defeq \Hom_{\textrm{TopGroup}}((M(\A)/M^1)/Z_G, \C^*)\]
+\[X_M^G \defeq \Hom_{\textrm{TopGroup}}((M(\A)/M^1)/Z_G, \C^*),\]
 which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G\).
 
 \begin{example}\label{ex:characters}
@@ -49,21 +49,21 @@ which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G
 There is the natural map \(m_P: G(\A) \to M^1 \backslash M(\A)\) sending \(umk \mapsto M^1 m\), where \(g = umk\) using the Langlands-Iwasawa decomposition of equation \ref{eq:iwasawa_decomposition}.
 
 Now if we take the collection of irreducible automorphic representations of \(M\),
- \[\hat{\mathcal{M}} \defeq \{(\pi, V) : \pi \text{ is an irreducible automorphic representation of }M\}\]
+ \[\hat{\mathcal{M}} \defeq \{(\pi, V) : \pi \text{ is an irreducible automorphic representation of }M\},\]
 then we can think of \(X_M^G\) as being one dimensional automorphic representations (with some extra invariance) and so there is a natural action on \(\hat{\mathcal{M}}\) given by tensoring, i.e. if \(\lambda\in X_M^G\) and \((\pi, V)\in \hat{\mathcal{M}}\) then 
-\[\lambda.\pi \defeq \lambda\tensor \pi\]
+\[\lambda.\pi \defeq \lambda\tensor \pi.\]
 Then \(\hat{\mathcal{M}}\) decomposes as a disjoint union of its orbits. The orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\) is called a \textbf{cuspidal datum}. By definition \(X_M^G\) acts transitively on any cuspidal datum \(\mathfrak{P}\) but by \cite[II.1]{moeglinSpectralDecompositionEisenstein1995} it also acts freely. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the complex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
 
 Let \(\mathfrak{P}\) be a cuspidal datum with a complex structure as above. Let \(\pi\in \mathfrak{P}\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\), then \(\lambda\in X_M^G\) acts on \(\phi_\pi\) by 
 \[\lambda.\phi_\pi(g) = (\lambda \comp m_P)(g) \phi_\pi(g).\]
 which is then an element of \(\mathcal{A}(U(\A)M(k)\backslash G(\A))_{\pi\tensor \lambda}\). Finally we have the \textbf{Eisenstein series} which is defined by the following sum
-\[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi_\pi(\gamma g)\]
+\[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi_\pi(\gamma g),\]
 whenever it is convergent. The first thing to note is that for a fixed \(\phi\) there is an open set in \(X_M^G\) and a compact subset of \(G(k)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
 
 If \(P = MU, P' = M'U'\) are two standard parabolics of \(G\) that are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\).
 Then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representations of \(M'\).
 The Eisenstein series is closely related through its constant terms (as discussed in section \ref{constant_conjugate_levi}) to the operator
-\[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(k)\cap wU(k)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du\]
+\[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(k)\cap wU(k)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du,\]
 where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\).
 
 The Eisenstein series has three inputs and can be considered as a function in different variables, it can be a tedious task to specify the correct domain and codomains for these maps however. If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E(\phi)\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G)\), the set of locally square integrable complex valued functions on \(G(\A)\), given by 
@@ -74,12 +74,12 @@ Then it makes sense to talk about the holomorphicity of \(E(\phi)\) in this sens
 
 \section{Classical Eisenstein Series}\label{sec:classic-eisenstein}
 
-We will follow the excellent exposition in \cite{garrettTransitionEisensteinSeries2016}, the section \cite[1.2]{bruinier123ModularForms2008} on classical Eisenstein series. The typical example of a classical Eisenstein series is that introduced by Maas in 1949 \cite{lapidPerspectivesEisensteinSeries2022}  given by the sum 
-\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{(m,n)\in \Z^2\setminus \{(0,0)\}, \text{ coprime }} \frac{\mathrm{Im}(z)^{s}}{|mz+n|^{2s}}, \quad z\in \mathcal{H},\;\; \mathrm{Re}(s)>\frac{1}{2},\]
-which converges absolutely. Consider the algebraic group \(\SL_2\) with the parabolic of upper triangular matrices \(P\).
+We will follow the excellent exposition in \cite{garrettTransitionEisensteinSeries2016}, the section \cite[1.2]{bruinier123ModularForms2008} on classical Eisenstein series. The typical example of a classical Eisenstein series is that defined on \(s\in \C\) by the meromorphic continuation of the sum
+\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{(m,n)\in \Z^2\setminus \{(0,0)\}, \text{ coprime }} \frac{\mathrm{Im}(z)^{s}}{|mz+n|^{2s}}, \quad z\in \mathcal{H},\]
+which converges absolutely for \(\mathrm{Re}(s)>\frac{1}{2}\). Consider the algebraic group \(\SL_2\) with the parabolic of upper triangular matrices \(P\).
 
 First we want to look at the index of the sum, we aim to define a map
-	\[\omega: P(\Z) \backslash \SL_2(\Z) \to  \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\}\]
+	\[\omega: P(\Z) \backslash \SL_2(\Z) \to  \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\}.\]
 
 	The cosets of \(P(\Z) \backslash \SL_2(\Z)\) look like
 	\[P(\Z)\begin{pmatrix}
@@ -122,33 +122,32 @@ First we want to look at the index of the sum, we aim to define a map
 Recall that \(\SL_2(\Z)\) acts via Mobius transformations on the upper half plane. If \(z= x+ iy \in \mathcal{H}\), \(s\in \C\) and \(\gamma = \begin{pmatrix}
 	a & b\\ c& d \end{pmatrix}\in \SL_2(\Z)\) then an elementary computation shows that,
 \[\mathrm{Im}(\gamma.z) = \frac{\mathrm{Im}(z)}{|cz + d|^{2}}.\]
-Hence the classical Eisenstein series is 
-\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{m,n\in \Z, \text{ coprime }} \frac{\mathrm{Im}(z)^{s}}{|mz+n|^{2s}} = \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \mathrm{Im}(\gamma.z)^{s}.\]
+Hence the classical Eisenstein series is
+\[\mathbf{E}(z, s) \defeq \frac{1}{2} \sum_{m,n\in \Z, \text{ coprime }} \frac{\mathrm{Im}(z)^{s}}{|mz+n|^{2s}} = \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \mathrm{Im}(\gamma.z)^{s},\]
+Where these sum are notation for their meromorphic continuation to the complex plane. 
 
 We want to realize this as the Eisenstein series associated to an automorphic form so first we must design a function on \(\SL_2(\A)\). For any place \(\nu\) of \Q we have the local Iwasawa decomposition \(\SL_2(\Q_\nu) = P(\Q_\nu) K_\nu\) where 
 \[K_\nu \defeq \begin{cases}
 	\SL_2(\Z_\nu), & \nu \text{ non-Archimedean}\\
-	SO_2(\R), & \nu \text{ Archimedean}
-\end{cases}\]
+	\SO_2(\R), & \nu \text{ Archimedean}
+\end{cases}.\]
  are the local maximal compact subgroups. We define a function on the adeles by defining it on the local pieces,
  \[\phi_{\nu, s}\left(\begin{pmatrix}
  	a & b\\ & d
  \end{pmatrix}k\right) \defeq \left| \frac{a}{d} \right|_\nu^s .\]
  Finally we define \(\phi_s\) as the map 
- \[(g_\nu)_{\nu} \mapsto \prod_\nu \phi_{\nu,s}(g_\nu.)\]
+ \[(g_\nu)_{\nu} \mapsto \prod_\nu \phi_{\nu,s}(g_\nu).\]
  
  \begin{Lemma}
  	\(\phi_s\) is an automorphic form on \(\SL_2(\A)\).
  \end{Lemma}
  \proofbar{
  	Smooth, moderate growth and \(K\)-finiteness are obvious from the definition.	
- 	Using the product formula, i.e. for all \(x\in \Q^\times\) we have that \(\prod_\nu |x|_\nu = 1\), we get that \(\phi_s\) is left \(\SL_2(\Q)\) invariant.
- 	
- \todo[inline]{	Z(g) finite}
+ 	Using the product formula, i.e. for all \(x\in \Q^\times\) we have that \(\prod_\nu |x|_\nu = 1\), we get that \(\phi_s\) is left \(\SL_2(\Q)\) invariant. \(Z(\mathfrak{g})\) finiteness can be checked using the known Casimir of the Lie algebra of \(\SL_2(\R)\), which we again omit.
  }
  
  To this we have an Eisenstein series associate as in the adelic setting by 
- \[E(\phi, g) \defeq \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \phi_s(\gamma g) \]
+ \[E(\phi, g) \defeq \sum_{\gamma\in P(\Q)\backslash \SL_2(\Q)} \phi_s(\gamma g) .\]
 
 \begin{Lemma}
 	Let \(g\in \SL_2(\R)\) then we consider it as an element of \(\SL_2(\A)\), denoted by \(\iota(g)\), by setting all other entries to 1. Then 
@@ -167,7 +166,7 @@ We want to realize this as the Eisenstein series associated to an automorphic fo
 	
 	If \(\begin{pmatrix}
 		a& b\\ c&d
-	\end{pmatrix}\in \SL_2(\R)\) then for some \(k\in SO_2(\R)\) we have that  \cite{conradDecomposingSL2R},
+	\end{pmatrix}\in \SL_2(\R)\) then for some \(k\in \SO_2(\R)\) we have that  \cite{conradDecomposingSL2R},
 	\[\begin{pmatrix}
 		a& b\\ c&d
 	\end{pmatrix} = \begin{pmatrix}

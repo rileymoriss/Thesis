@@ -85,12 +85,12 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 			a &b \\
 			c &d
 		\end{pmatrix}\in \SL_2(\Z),\]
-		and extends holomorphically to \(\infty\).
+		and is of moderate growth.
 
 	We want to think of the upper half plane as a quotient of the \(\Q_\infty = \R\) points of some reductive group. If we have a transitive action of some reductive group then by the orbit stabiliser theorem we would have a bijection of sets.
 
 	\begin{Theorem}
-		\[\mathcal{H} \cong  \SL_2(\R) / SO_2(\R) ,\]
+		\[\mathcal{H} \cong  \SL_2(\R) / \SO_2(\R) ,\]
 		as sets.
 	\end{Theorem}
 	\proofbar{
@@ -105,9 +105,9 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 			 & d
 		\end{pmatrix}.i = \frac{ai + b}{d} = a^2i + ab,\]
 		which letting \(a, b\in \R\) vary is clearly surjective onto the whole upper half plane. So there is one orbit, and hence by the orbit stabiliser we know that 
-		\[\mathcal{H} \cong \SL_2(\R) /stab(i) ,\]
+		\[\mathcal{H} \cong \SL_2(\R) /\mathrm{stab}(i) ,\]
 		so we want to find
-		\[stab(i) = \left\{ g = \begin{pmatrix}
+		\[\mathrm{stab}(i) = \left\{ g = \begin{pmatrix}
 			a & b\\
 			c & d
 		\end{pmatrix}\in \SL_2(\R) : g.i = i   \right\},\]
@@ -125,27 +125,27 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 		\[\frac{-b}{a} = \tan\theta,\]
 		and so \(b = -k\sin\theta, a = k\cos\theta\) for some  \(k\in \R\) but the determinant must be \(1\) so \(k = 1\).
 		Hence 
-		\[stab(i) = \left\{ \begin{pmatrix}
+		\[\mathrm{stab}(i) = \left\{ \begin{pmatrix}
 			\cos\theta & -\sin\theta \\
 			\sin\theta & \cos\theta
-		\end{pmatrix} : \theta \in [0, 2\pi)\right\} = SO_2(\R).\]
+		\end{pmatrix} : \theta \in [0, 2\pi)\right\} = \SO_2(\R).\]
 		One then has to check that this is all continuous. 
 	}
     \begin{remark}
     	This can be beefed up to an isomorphism of complex analytic spaces. 
         Sometimes to make the action of certain (Hecke) operators more apparent this is exhibited as 
-        \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}SO_2(\R).\]
+        \[\mathcal{H} \cong \GL_2^+(\R)/ A_{\GL_2}\SO_2(\R).\]
         This obscures the connection with the reductive group setting however so we avoid it here. 
     \end{remark}
 
-	\(\SL_2\) is a reductive group and \(SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upper half plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\).
+	\(\SL_2\) is a reductive group and \(\SO_2(\R)\) is its maximal compact subgroup. This decomposition of the upper half plane suggests that function on it might have some invariance along the maximal compact subgroup of the reductive group \(\SL_2\).
     
 		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXGJlZ2lue3BtYXRyaXh9eV57MS8yfSAmIHggeV57LTEvMn1cXFxcICYgeV57LTEvMn1cXGVuZHtwbWF0cml4fVNPXzIoXFxSKT1cXFNsXzIoXFxSKSJdLFsyLDAsIlxcU2xfMihcXFIpL1NPXzIoXFxSKSJdLFsyLDIsIlxcU2xfMihcXFopXFxzZXRtaW51c1xcU2xfMihcXFIpIl0sWzQsMCwiXFxtYXRoY2Fse0h9Il0sWzEsMywiXFxzaW0iXSxbMCwxLCJwcm9qIl0sWzEsMywieFxcbWFwc3RvIHguaSIsMl0sWzAsMiwiXFx0ZXh0e2Rlc2NlbmQ/Pz99IiwyXV0=
 		
 		\vspace{6mm}
 		
 	\[\begin{tikzcd}[cramped, transform canvas={scale=0.8}]
-		{\left\{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix} : x,y\in \R, y\neq 0 \right\} SO_2(\R)=\SL_2(\R)} && {\SL_2(\R)/SO_2(\R)} && {\mathcal{H}} \\
+		{\left\{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix} : x,y\in \R, y\neq 0 \right\} \SO_2(\R)=\SL_2(\R)} && {\SL_2(\R)/\SO_2(\R)} && {\mathcal{H}} \\
 		\\
 		&& {\SL_2(\Z)\setminus\SL_2(\R)}
 		\arrow["\sim", from=1-3, to=1-5]
@@ -156,36 +156,17 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 	
 		\vspace{12mm}
 		
-   	We can lift a function on \(\SL_2(\R) / SO_2(\R)\) to \(\SL_2(\R)\) by composing with the projection, however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc. 
+   	We can lift a function on \(\SL_2(\R) / \SO_2(\R)\) to \(\SL_2(\R)\) by composing with the projection, however this is not \(\SL_2(\Z)\) invariant, thus we need to add a pre-factor to ensure this in our associated automorphic form. The algebro-geometric perspective in \cite{emertonCLASSICALMODULARFORMS} can make this seem slightly less ad hoc. 
 
    	Thus for \(f\) a modular form of weight \(k\) the following function on \(\SL_2(\R)\)
 	\[F(g) \defeq  (ci + d)^{-k}f(g.i),\]
-	we claim is an automorphic form for \(\SL_2(\Z)\). We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition. It remains to show the three other properties:
+	we claim is an automorphic form for \(\SL_2(\Z)\). We take for granted its smoothness. The \(\SL_2(\Z)\) invariance is obvious from the modularity condition and we consider the moderate growth condition to be tautological. It remains to show the last two properties:
 
 	\begin{Lemma}
-		\(F(g)\) is of moderate growth.
+		\(\SO_2(\R)\) is a maximal compact subgroup inside \(\SL_2(\R)\). \(F\) is an \(\SO_2(\R)\) finite function.
 	\end{Lemma}
 	\proofbar{
-		Unraveling the definitions we require two constants \(r,c\in \R^+\) such that for all \(g = \begin{pmatrix}
-		a & b \\ c & d
-		\end{pmatrix}\in \SL_2(\R)\)
-		\[|F(g)| = |ci+ d|^{-k}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r,\]
-		A direct computation shows that 
-		\[Im(g.i) = |ci+ d|^{-2},\]
-		hence we require to show
-		\[ \mathrm{Im}(g.i)^{k/2}|f(g.i)| \leq c(\sup_{i,j}(g, g\inv))^r.\]
-		\textcolor{red}{Somehow invoke polynomial growth...?}
-		\todo[inline,color=blue]{Modular forms moderate growth}
-        but t
-        
-        The growth condition can be precisely stated as the \(\lim_{x\to \infty}f(xi)\) being bounded. Hence 
-	}
-
-	\begin{Lemma}
-		\(SO_2(\R)\) is a maximal compact subgroup inside \(\SL_2(\R)\). \(F\) is an \(SO_2(\R)\) finite function.
-	\end{Lemma}
-	\proofbar{
-		Using that \(\kappa \in K = SO_2(\R)\) acts trivially on \(i\), an elementary computation shows that for \(g  \in \SL_2(\R)\),
+		Using that \(\kappa \in K = \SO_2(\R)\) acts trivially on \(i\), an elementary computation shows that for \(g  \in \SL_2(\R)\),
 		\begin{equation*}
 			\begin{aligned}
 				F(g\kappa) = e^{-ik\theta}F(g). \\
@@ -201,7 +182,7 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 
 		The center of the universal enveloping algebra of the complexified Lie algebra is generated by the Casimir operators. From \cite{garrettInvariantDifferentialOperators2010} we know that the casimir is 
 		\[\Omega = \frac{1}{2}H^2 + XY + YX.\]
-		We have the coordinates on \(\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}SO_2(\R)=\SL_2(\R)\) from \cite[1.19]{bumpAutomorphicFormsRepresentations1997} in which 
+		We have the coordinates on \(\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}\SO_2(\R)=\SL_2(\R)\) from \cite[1.19]{bumpAutomorphicFormsRepresentations1997} in which 
 		 the casimir acts as the differential operator
 		\[\Delta = y^2\left(\left(\Dif{}{x}\right)^2 +\left(\Dif{}{y}\right)^2\right) - y\Dif{^2}{x\partial \theta},\] 
 		\cite[1.29,Prop 2.2.5]{bumpAutomorphicFormsRepresentations1997}. Now we claim that F is an eigenfunction for this operator. 

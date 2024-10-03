@@ -7,14 +7,14 @@ Let \(G\) be a classical group defined over a number field \(F\).
 As in the finite group case we want to consider the right regular action of the adelic points, \(G(\A)\), on a space of functions \(G(\A) \to \C\), namely
 \[g.f(x) = f(xg).\]
 One can ask if this representation sends an automorphic form to an automorphic form.
-If \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-Archimedean
+If \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-Archimedean.
 
 There is a problem with the \(K\)-finiteness in the infinite places however which prevents \( \mathcal{A}(U(\A)M(F)\backslash G(\A))\) from being a full \(G(\A)\) module.
 
 \begin{example}[\cite{cogdellLecturesLfunctionsConverse}, 2.3]
     If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite, then \(g.\phi\) is \(gK_\infty g\inv\)-finite. This is still a maximal compact subgroup, however in the infinite place it will a priori have only the identity in common with the original \(K\).
 
-    For example consider \(\SL_2\) where the maximal compact is \(SO_2\), if we conjugate we get \(gSO_2g\inv\)
+    For example consider \(\SL_2\) where the maximal compact is \(\SO_2\), if we conjugate we get \(g\SO_2g\inv\)
     \begin{align*}
         \begin{pmatrix}
             a & b\\
@@ -33,7 +33,7 @@ There is a problem with the \(K\)-finiteness in the infinite places however whic
         \end{pmatrix}.\\
     \end{align*}
 
-    If we want to find the intersection of \(SO_2\) with \(gSO_2 g\inv\) we need to solve the system 
+    If we want to find the intersection of \(\SO_2\) with \(g\SO_2 g\inv\) we need to solve the system 
     \begin{align*}
         \begin{pmatrix}
             \cos\theta' & -\sin\theta' \\
@@ -45,7 +45,7 @@ There is a problem with the \(K\)-finiteness in the infinite places however whic
     \end{align*}
     Where \(\theta\) might not be \(\theta'\). If \(\theta = n\pi, n\in \Z\) then the \(\sin\) terms on the right vanish and we get the \(\pm 1\) as a point of intersection, so consider \(\theta\neq n\pi\). Then we require 
     \[\cos\theta' = \cos\theta - (b d  + ac)\sin\theta = \cos\theta + (db  + ca)\sin\theta,\]
-    hence \(2(bd+ac)\sin\theta = 0\) and because \(\sin\theta\) was assumed to be non-zero this is the same as \(bd+ac = 0\). Thus for instance the element \(\begin{pmatrix} 1 & 1\\ & 1  \end{pmatrix}\) conjugates \(SO_2\) to another subgroup that has only trivial intersection. 
+    hence \(2(bd+ac)\sin\theta = 0\) and because \(\sin\theta\) was assumed to be non-zero this is the same as \(bd+ac = 0\). Thus for instance the element \(\begin{pmatrix} 1 & 1\\ & 1  \end{pmatrix}\) conjugates \(\SO_2\) to another subgroup that has only trivial intersection. 
 
     Finally it is worth noting that this is not an issue at the finite places, namely if \(K = K_fK_\infty\) is our maximal compact subgroup of \(G(\A)\) then \(K_f\) is also open and hence \(K_f \cap gK_f g\inv\) is of finite index in both \(K_f\) and \(gK_f g\inv\) and so their notions of \(K\)-finiteness will agree. 
 \end{example}
@@ -85,7 +85,14 @@ To see that we have really fixed the \(K_\infty\) problem we should check that t
 	If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite and \(X\in \mathfrak{g}\) then \(X.\phi\) is \(K_\infty\)-finite.
 \end{Lemma}
 \proofbar{
-	\todo[inline, color=blue]{Lie algebra action preserves K-finiteness}
+	There is an action of \(K_\infty\) on \(\mathfrak{g}\tensor C^\infty(\Gamma\backslash G(F_\infty))\). If \(k\in K_\infty, \phi\in C^\infty(\Gamma\backslash G(F_\infty))\) and \(X\in \mathfrak{g}\) then the action is given by linearly extending
+	\[k.(X\tensor \phi) = \mathrm{Ad}(k)(X)\tensor k.\phi.\]
+	The map 
+	\begin{equation}\label{eq:1}
+		\mathfrak{g}\tensor C^\infty(\Gamma\backslash G(F_\infty)) \to C^\infty(\Gamma\backslash G(F_\infty)) , \;\;\;   X\tensor \phi \mapsto X\phi,
+	\end{equation}
+
+	is \(K_\infty\) equivariant by the definition of the adjoint action. Now if \(\phi \in \mathcal{A}(\Gamma \backslash G(F_\infty))\) then its span is a finite dimensional \(K_\infty\) module which we will denote \(M_\phi\). Then \(k.X\phi\) is in the image of \(\mathfrak{g}\tensor M_\phi\) under the map \ref{eq:1}. But the Lie algebra is finite dimensional and \(M_\phi\) is finite dimensional so this image is finite dimensional. Therefore the \(K_\infty\) span of \(X\phi\) is finite dimensional and so \(X\phi\) is \(K_\infty\)-finite.
 }
 
 Finally the conditions for these representations to be a \((\mathfrak{g}, K_\infty)\) module can be checked. (1) is \cite[Thm. 6.3.4]{getzIntroductionAutomorphicRepresentations2024}. (2) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. (3) is immediate from the definition of the adjoint action.
@@ -106,7 +113,7 @@ Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \
 
 \begin{example}
     It is very hard to really write down something explicit. One thing that we can do is take a modular form \(f\). Then we know how to associate a concrete automorphic form \(\tilde{f}\). To this (or any fixed automorphic form) we have an automorphic representation given by acting on this vector:
-    \[\mathrm{span}_\C \Biggl\{\big(G(\A_f)\times (\mathfrak{g}, K)\big).\tilde{f}\Biggr\} \subseteq \mathcal{A}(U(\A)M(F)\backslash G(\A))\]
+    \[\mathrm{span}_\C \Biggl\{\big(G(\A_f)\times (\mathfrak{g}, K)\big).\tilde{f}\Biggr\} \subseteq \mathcal{A}(U(\A)M(F)\backslash G(\A)).\]
 \end{example}
 
 \subsection{Cuspidal Representations}
@@ -123,14 +130,14 @@ Let \(\pi\) be an irreducible subquotient of the space \(\mathcal{A}(M(k) \backs
 
 We will also need the space 
 \begin{align*}
-	&\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \\ &\defeq \{\phi \in \mathcal{A}(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}(M(k) \backslash M(\A))_\pi \}
+	&\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \\ &\defeq \{\phi \in \mathcal{A}(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}(M(k) \backslash M(\A))_\pi \},
 \end{align*}
 where \(\phi_k: M(\A) \to \C\) is given by \(\phi_k(x) = \phi(xk)\).
 
 Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\) to be the isotypic component of \(\pi\) in \(\mathcal{A}_0(M(k) \backslash M(\A))\) and similarly we have 
 \begin{align*}
 	&\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \\
-&\defeq \{\phi \in \mathcal{A}_0(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}_0(M(k) \backslash M(\A))_{\pi} \}
+&\defeq \{\phi \in \mathcal{A}_0(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}_0(M(k) \backslash M(\A))_{\pi} \}.
 \end{align*}
 
 \begin{remark}

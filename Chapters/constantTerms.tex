@@ -48,22 +48,22 @@ The \textbf{Weyl group} of \(G\) is
 where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Borel and Levi.
 
 	\begin{Lemma}\label{lem:1}
-        \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)\]
+        \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F).\]
     \end{Lemma}
     \proofbar{
         Consider the Bruhat decomposition:
-        \[G(F) =\coprod_{w\in W_{M'}\setminus W_G / W_{M}} P(F)w\inv P'(F) \]
-        then because the action of \(P(F)\) keeps the disjoint sets disjoint we can move the quotient through and get
-        \[P(F)\setminus G(F) = \coprod_w  P(F) \setminus P(F)w\inv P'(F)\]
-        so we analyse the summands, by the second isomorphism theorem we have a bijection
-        \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap P'(F) \setminus w\inv P'(F) \]
-        now if \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its represented by some \(pw\inv p'\) where \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
-        \[w(P(F)\cap P'(F) \setminus w\inv P'(F)) \cong wP(F)w\inv \cap P'(F) \setminus P'(F)\]
+        \[G(F) =\coprod_{w\in W_{M'}\setminus W_G / W_{M}} P(F)w\inv P'(F) .\]
+        Then because the action of \(P(F)\) keeps the disjoint sets disjoint we can move the quotient through and get
+        \[P(F)\setminus G(F) = \coprod_w  P(F) \setminus P(F)w\inv P'(F).\]
+        Analysing the summands, by the second isomorphism theorem we have a bijection
+        \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap P'(F) \setminus w\inv P'(F). \]
+        If \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its represented by some \(pw\inv p'\) where \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
+        \[w(P(F)\cap P'(F) \setminus w\inv P'(F)) \cong wP(F)w\inv \cap P'(F) \setminus P'(F).\]
     }
 
     \begin{Lemma}\label{lem:2}
         Let \(m'\in M'(F),  u'\in U'(F)\) then 
-        \[m'u' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; u'\in (m')\inv wP(F)w\inv m'\]
+        \[m'u' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; u'\in (m')\inv wP(F)w\inv m'.\]
     \end{Lemma}
     \proofbar{
         The forward implication is stated in \cite{getzIntroductionAutomorphicRepresentations2024}, the converse follows from some algebra:
@@ -72,7 +72,7 @@ where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of
             \begin{aligned}
                 m'u' &= (wp_1w\inv)\inv wp_2w\inv wp_1w\inv\\
                      &= wp_1\inv w\inv wp_2w\inv wp_1w\inv\\
-                     &= wp_1\inv p_2p_1w\inv \in wP(F)w\inv\\
+                     &= wp_1\inv p_2p_1w\inv \in wP(F)w\inv.\\
             \end{aligned}
         \end{equation*}
     }
@@ -83,12 +83,12 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
             E_{P'}( \phi, \lambda, x) &= \int_{U'(F)\setminus U'(\A)} E( \phi, \lambda, nx) du\\
                                      &= \int_{[U']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  du\\
                                     (\text{Lemma }\ref{lem:1}) \;\;\; &= \int_{[U']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta ux)  du\\
-                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[U']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'ux)  du\\
+                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[U']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'ux)  du.\\
         \end{aligned}
     \end{equation*}
-    Now apply Lemma \ref{lem:2} to the above sum and we get the equality 
+    Now apply Lemma \ref{lem:2} to the above sum to see that it is equal to 
     \begin{align*}
-    	&= \sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[U']} \sum_{u'\in U'(F)\cap (m')\inv wP(F)w\inv m' \setminus U'(F)} \lambda.\phi( w\inv m'u'ux)  du\\
+    	&\sum_{ w} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{[U']} \sum_{u'\in U'(F)\cap (m')\inv wP(F)w\inv m' \setminus U'(F)} \lambda.\phi( w\inv m'u'ux)  du\\
     	&(\text{Change Var}) \;\;\; = \sum_{ w} \sum_{m'} \int_{[U']} \sum_{n'\in U'(F)\cap wP(F)w\inv\setminus U'(F) } \lambda.\phi( w\inv u'um'x)  du\\
     	&(\text{Unfold}) \;\;\;\;\;\;\;\;\;\;\; = \sum_{ w} \sum_{m'} \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du.\\
     \end{align*}
@@ -99,16 +99,10 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
 \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:4}
         For \(w\in W_{M'}\setminus W_G / W_{M} \) we have that \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
     \end{Lemma}
-    \begin{Lemma}\label{lem:5}
+    \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:5}
         \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]
     \end{Lemma}
-    \proofbar{
-        \cite[10.4.1]{getzIntroductionAutomorphicRepresentations2024} has some decompositions, as well as the standard decomposition of \(P=MU\) I think I could prove this...
-    }
-    \begin{Lemma}\label{lem:6}
-        \[c\setminus (b\setminus a )= (bc)\setminus a\]
-    \end{Lemma}
-	\todo[inline,color=blue]{need to fill in these lemmas}
+    
     Continuing the computation of the constant term above, we will focus purely on the inner integral now
     \begin{equation*}
         \begin{aligned}
@@ -116,7 +110,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
             (\text{Lemma \ref{lem:5}})&= \int_{(w\inv U' w \cap M)(w\inv U' w \cap U)(F) \setminus w\inv U'(\A)w} \lambda.\phi( uw\inv m' x)  du . \\
         \end{aligned}
     \end{equation*}
-    where the first equality is the change of variables \(w\inv u w\mapsto u \). Denote \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv U'(\A)w \). If we apply Lemma \ref{lem:6} and unfold we get the equality
+    where the first equality is the change of variables \(w\inv u w\mapsto u \). Denote \(A = (w\inv U'(F) w \cap U(F) ) \setminus w\inv U'(\A)w \). Unfolding we get the equality
     \[= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( u_1 u_2 w\inv m' x)  du_1 du_2.\]
      Now look at the inner integral here more closely 
     \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( u_1 u_2 w\inv m' x)  du_1 du_2,\]
@@ -136,7 +130,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
         \begin{aligned}
              E_{P'}( \phi, \lambda, x) &= \sum_{ w} \sum_{m'} \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du \\
              &=  \sum_{ w} \sum_{m'} \int_{U'(k) \cap wU(k)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du \\
-             &= \sum_{ w} \sum_{m'} M(w, \pi)(\lambda.\phi)(x)
+             &= \sum_{ w} \sum_{m'} M(w, \pi)(\lambda.\phi)(x).
         \end{aligned}
     \end{equation*}
     In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series, we will go through a detailed example in the final chapter \ref{ch:jiang}.

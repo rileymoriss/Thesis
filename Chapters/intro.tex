@@ -15,7 +15,7 @@ We follow the wonderful exposition in \cite{weinsteinReciprocityLawsGalois2015}.
 Recall the Legendre symbol, for \(p, q\) odd and non-equal primes we have 
 \[\left(\frac{q}{p}\right) \defeq \begin{cases}
 	1 , & \text{there is a solution to }x^2 - q \equiv 0 \;\;(\text{mod }p)\\
-	-1 , & \text{else.}
+	-1 , & \text{else}
 \end{cases}.\]
 Then the theorem of Fermat was ``upgraded'' by Gauss to his famous reciprocity law.
 
@@ -36,22 +36,16 @@ be the prime decomposition in \(\mathcal{O}_K\). Then \((p)\) \textbf{splits} in
 \begin{Theorem}[\cite{langAlgebraicNumberTheory1994}, Prop. 26]
 	If \(f\in \Z[x]\) monic and irreducible and \(f(\alpha) = 0\) then for \(K = \Q(\alpha)\) we have with finitely many exceptions that \(f\) is split mod \(p\) if and only if \((p)\) splits in \(\mathcal{O}_K\).
 \end{Theorem}
-\begin{example}
-	
-\end{example}
 So to answer \textbf{Q1.} we now want to solve by congruences when prime ideals split. Every field extension \(K/L\) has a Galois closure, that is an extension \(L'/K\) of minimal degree such that \(L\subseteq L'\) and \(L'\) is Galois over \(K\). 
 \begin{Lemma}
 	A prime ideal of \(\mathcal{O}_K\) is split in \(\mathcal{O}_L\) if and only if it is split in \(\mathcal{O}_{L'}\).
 \end{Lemma}
 Thus we lose nothing by considering only Galois extensions of fields. Thus we have ``the main theorem'' of class field theory:
 \begin{Theorem}[\cite{weinsteinReciprocityLawsGalois2015}, Thm. 3.2.1]\label{thm:reciprocity}
-	Let \(K/\Q\) be an Abelian and Galois extension. There is an ideal \(\mathfrak{f} = (m)\subseteq \mathcal{O}_\Q = \Z\) such that for a prime \(p\in \Z\) the ideal \((p)\) is split in \(\mathcal{O}_K\) if \(p\equiv 1 \;\; (\text{mod }m)\)
+	Let \(K/\Q\) be an Abelian and Galois extension. There is an ideal \(\mathfrak{f} = (m)\subseteq \mathcal{O}_\Q = \Z\) such that for a prime \(p\in \Z\) the ideal \((p)\) is split in \(\mathcal{O}_K\) if \(p\equiv 1 \;\; (\text{mod }m)\).
 \end{Theorem} 
 Thus we have a solution to the splitting of primes via congruence relations. 
 
-\begin{example}
-	
-\end{example}
 
 This we hope motivates class field theory, now we will follow \cite{conradHISTORYCLASSFIELD} for some more detail on class field theory. Class field theory is over a hundred years old with a storied past and many incarnations of the main theorem above. To see the Langlands program as a generalisation of this theory we want to trace the development to where Langlands picked up. 
 
@@ -199,7 +193,7 @@ Consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b
 \[\Delta(\tau, b).\]
 Moeglin and Waldspurger also achieved a more fine analysis of the spectrum of \(\GL_n\) by proving that as \(\tau\) and \(b\) vary these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}. The Speh representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}, some more concrete explanation can be found in \cite[2.4]{brennerNotesAnalyticProperties2009}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
 
-The classical groups \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times \G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, who locate the poles of Eisenstein series induced in this manner. 
+The classical groups \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, who locate the poles of Eisenstein series induced in this manner. 
 
 We do not yet understand how but these considerations are supposed to help prove cases of Langlands functorial transfers, that is proving cases of Langlands functoriality for groups by ``transfering'' the known cases of functoriality from other groups. We quote from the introduction of \cite{jiangPolesCertainResidual2013}:
 

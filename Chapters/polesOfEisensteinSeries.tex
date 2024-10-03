@@ -9,9 +9,13 @@ So for the rest of the chapter we will fix an \(n\in \N\), \(G_n = \Sp_{2n}\) an
 As we saw in \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). We fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Now we take an irreducible \textit{generic} cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), then the tensor product \(\tau \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
 \[\phi\in \mathcal{A}(U_r(\A)M_r(F)\setminus \Sp_{2n}(\A) )_{\tau\tensor \sigma},\] 
 then we have the Eisenstein series
-\[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g)\]
+\[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g),\]
 for \(g\in \Sp_{2n}(F) \setminus \Sp_{2n}(\A)\). 
 This is the base case of the setup in \cite{jiangPolesCertainResidual2013}.
+
+\begin{remark}
+	We will not define the condition of being generic. It is not relevant to the computation that we do of the constant terms. In this context it can be interpreted as saying that the L-functions are well defined and have the required properties.
+\end{remark}
 
 
 \begin{comment}
@@ -41,7 +45,7 @@ By our earlier calculations \ref{const_eisenstein}, the fact that the tensor of 
      \[E(\phi, s)_{P_r} = \sum_{ w} \sum_{m'} \int_{U_r(F)\cap wP_r(F)w\inv \setminus U_r(\A)} \lambda.\phi( w\inv um' x)  du.\] 
      By \cite{jiangPolesCertainResidual2013} the inner integral vanishes for all \(w\neq id, \omega\) where \(\omega\in W_{\Sp_{2n}}\), this element is computed explicitly in \cite{ginzburgDescentMapAutomorphic2011} however it is not needed here. Hence the first sum becomes over two elements and we have 
 
-     \[E(\phi, s)_{P_r} = E(\phi, s)_{P_r, id} + E(\phi, s)_{P_r, \omega}.\]
+     \[E(\phi, s)_{P_r} = E(\phi, s)_{P_r, id} + E(\phi, s)_{P_r, \omega},\]
      where 
      \[E(\phi, s)_{P_r, w}(x) =  \sum_{m'\in M_r(F)\cap wP_r(F)w\inv\setminus M_r(F)} \int_{U_r(F)\cap wP_r(F)w\inv \setminus U_r(\A)} s.\phi( w\inv um' x)  du.\]
 
@@ -75,7 +79,7 @@ First the identity term simplifies
     It is at this point that our understanding becomes quite superficial. We can only quote the recent results, as they are completely out of the scope of this thesis. We have summarised what we know in this direction in Appendix \ref{L-functions}
     
     First in \cite[11.1]{cogdellFUNCTORIALITYCLASSICALGROUPS} it is shown that 
-    \[M(w, s) = r(w, s)N(w,s)\]
+    \[M(w, s) = r(w, s)N(w,s),\]
     where \(N(w,s)\) is an intertwining operator that is holomorphic and non-zero for \(\mathrm{Re}(s)\geq 0\) and \(r(w, s)\) is a ratio of L-functions.
     \begin{remark}
     	It is not shown in complete generality but only for intertwining operators associated to tensor products
