@@ -8,13 +8,9 @@ James Arthur and Stephen Gelbart.
   {{Arithmetic}}}, pages 1--60. Cambridge University Press, 1 edition, February
   1991.
 
-\bibitem[Arta]{arthurAUTOMORPHICREPRESENTATIONSNUMBER}
+\bibitem[Art]{arthurLfunctionsAutomorphicRepresentations}
 James Arthur.
-\newblock {{AUTOMORPHIC REPRESENTATIONS AND NUMBER THEORY}}.
-
-\bibitem[Artb]{arthurLfunctionsAutomorphicRepresenta}
-James Arthur.
-\newblock L-functions and {{Automorphic Representa-}} tions.
+\newblock L-functions and {{Automorphic Representations}}.
 
 \bibitem[Art79]{arthurEisensteinSeriesTrace1979}
 James Arthur.
@@ -23,9 +19,17 @@ James Arthur.
   {{Symposia}} in {{Pure Mathematics}}}, volume 33.1, pages 253--274. American
   Mathematical Society, Providence, Rhode Island, 1979.
 
-\bibitem[BC]{borelAutomorphicFormsRepresentations}
-A~Borel and W~Casselman.
-\newblock Automorphic {{Forms}}, {{Representations}}, and \${{L}}\$-functions.
+\bibitem[Art81]{arthurAUTOMORPHICREPRESENTATIONSNUMBER1981}
+James Arthur.
+\newblock {{AUTOMORPHIC REPRESENTATIONS AND NUMBER THEORY}}.
+\newblock 1981.
+
+\bibitem[Art13]{arthurEndoscopicClassificationRepresentations2013b}
+James Arthur.
+\newblock {\em The Endoscopic Classification of Representations Orthogonal and
+  Symplectic Groups}.
+\newblock Number volume 61 in American {{Mathematical Society}} Colloquium
+  Publications. American Mathematical Society, Providence, Rhode Island, 2013.
 
 \bibitem[BC79]{borelAutomorphicFormsRepresentations1979}
 Armand Borel and W.~Casselman.
@@ -44,10 +48,11 @@ Joseph Bernstein.
 \newblock {\em {{REPRESENTATIONS OF}} P-{{ADIC GROUPS}}}.
 \newblock 1992.
 
-\bibitem[BL22]{bernsteinMeromorphicContinuationEisenstein2022}
+\bibitem[BL23]{bernsteinMeromorphicContinuationEisenstein2023}
 Joseph Bernstein and Erez Lapid.
-\newblock On the meromorphic continuation of {{Eisenstein}} series, February
-  2022.
+\newblock On the meromorphic continuation of {{Eisenstein}} series.
+\newblock {\em Journal of the American Mathematical Society}, 37(1):187--234,
+  April 2023.
 
 \bibitem[Boo]{booherVIEWINGMODULARFORMS}
 Jeremy Booher.
@@ -65,16 +70,16 @@ Armand Borel.
 \newblock Cambridge {{Tracts}} in {{Mathematics}}. Cambridge University Press,
   Cambridge, 1997.
 
+\bibitem[Bor01]{borelEssaysHistoryLie2001}
+Armand Borel.
+\newblock {\em Essays in the History of {{Lie}} Groups and Algebraic Groups}.
+\newblock Number v. 21 in History of Mathematics. American Mathematical Society
+  ; London Mathematical Society, Providence, R.I. : [London], 2001.
+
 \bibitem[Bre09]{brennerNotesAnalyticProperties2009}
 Eliot Brenner.
 \newblock Notes on {{Analytic Properties}} of {{Residual Eisenstein Series}},
   {{I}}, August 2009.
-
-\bibitem[Bui]{BuildingsClassicalGroups}
-Buildings and {{Classical Groups}} - {{Garrett}}, {{Paul B}}. {\textbar}
-  9780412063312 {\textbar} {{Amazon}}.com.au {\textbar} {{Books}}.
-\newblock
-  https://www.amazon.com.au/Buildings-Classical-Groups-Paul-Garrett/dp/041206331X.
 
 \bibitem[Bum97]{bumpAutomorphicFormsRepresentations1997}
 Daniel Bump.
@@ -94,7 +99,7 @@ Jan~Hendrik Bruinier, Gerard Van Der~Geer, G{\"u}nter Harder, and Don Zagier.
 \newblock {\em The 1-2-3 of {{Modular Forms}}}.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
 
-\bibitem[CFK24]{caiDoublingConstructionsGlobal2024a}
+\bibitem[CFK24]{caiDoublingConstructionsGlobal2024}
 Yuanqing Cai, Solomon Friedberg, and Eyal Kaplan.
 \newblock Doubling constructions: {{Global}} functoriality for non-generic
   cuspidal representations, May 2024.
@@ -103,34 +108,33 @@ Yuanqing Cai, Solomon Friedberg, and Eyal Kaplan.
 J~W Cogdell, H~H Kim, I~I {Piatetski-Shapiro}, and F~Shahidi.
 \newblock {{FUNCTORIALITY FOR THE CLASSICAL GROUPS}}.
 
-\bibitem[CKPS04]{cogdellFunctorialityClassicalGroups2004}
-J.~W. Cogdell, H.~H. Kim, I.~I. {Piatetski-Shapiro}, and F.~Shahidi.
-\newblock Functoriality for the classical groups.
-\newblock {\em Publications math{\'e}matiques de l'IH{\'E}S}, 99(1):163--233,
-  June 2004.
+\bibitem[Coga]{cogdellRemarksRankinSelbergConvolutions}
+Cogdell.
+\newblock Remarks on {{Rankin-Selberg Convolutions}}.
+\newblock https://people.math.osu.edu/cogdell.1/rorsc-www.pdf.
 
-\bibitem[Coga]{cogdellLECTURESINTEGRALREPRESENTATIONS}
+\bibitem[Cogb]{cogdellLECTURESINTEGRALREPRESENTATIONS}
 J~W Cogdell.
 \newblock {{LECTURES ON INTEGRAL REPRESENTATIONS OF L-FUNCTIONS}}.
 
-\bibitem[Cogb]{cogdellLecturesLfunctionsConverse}
+\bibitem[Cogc]{cogdellLecturesLfunctionsConverse}
 J~W Cogdell.
 \newblock Lectures on {{L-functions}}, {{Converse Theorems}}, and
   {{Functoriality}} for {{GLn}}.
 
-\bibitem[Cogc]{cogdellLFUNCTIONSFUNCTORIALITY}
+\bibitem[Cogd]{cogdellLFUNCTIONSFUNCTORIALITY}
 James~W Cogdell.
 \newblock L-{{FUNCTIONS AND FUNCTORIALITY}}.
 
-\bibitem[Cona]{conradStandardParabolicSubgroups}
+\bibitem[Cona]{conradCOMPACTNESSVOLUMEADELIC}
 Brian Conrad.
-\newblock Standard parabolic subgroups: Theory and examples.
-
-\bibitem[Conb]{conradStanfordNumberTheory}
-Brian Conrad.
-\newblock Stanford {{Number Theory Seminar}}.
+\newblock {{COMPACTNESS AND VOLUME FOR ADELIC COSET SPACES}}.
 \newblock
   https://math.stanford.edu/{\textasciitilde}conrad/conversesem/Notes/L2.pdf.
+
+\bibitem[Conb]{conradStandardParabolicSubgroups}
+Brian Conrad.
+\newblock Standard parabolic subgroups: Theory and examples.
 
 \bibitem[Conc]{conradDecomposingSL2R}
 Keith Conrad.
@@ -164,22 +168,20 @@ Anton Deitmar and Gerrit {van Dijk}.
 Matthew Emerton.
 \newblock {{CLASSICAL MODULAR FORMS AS AUTOMORPHIC FORMS}}.
 
-\bibitem[Ess]{EssaysHistoryLie}
-Essays in the {{History}} of {{Lie Groups}} and {{Algebraic Groups}}.
-\newblock https://bookstore.ams.org/view?ProductCode=HMATH/21.
-
 \bibitem[FGKP16]{fleigEisensteinSeriesAutomorphic2016}
 Philipp Fleig, Henrik P.~A. Gustafsson, Axel Kleinschmidt, and Daniel Persson.
 \newblock Eisenstein series and automorphic representations, July 2016.
 
-\bibitem[Fol16]{follandCourseAbstractHarmonic2016}
-Gerald~B. Folland.
-\newblock {\em A {{Course}} in {{Abstract Harmonic Analysis}}}.
-\newblock {Chapman and Hall/CRC}, 0 edition, February 2016.
+\bibitem[Fol16]{follandCourseAbstractHarmonic2016a}
+G.~B. Folland.
+\newblock {\em A Course in Abstract Harmonic Analysis}.
+\newblock Number~29 in Textbooks in Mathematics Series. CRC Press/Taylor \&
+  Francis, Boca Raton, second edition edition, 2016.
 
-\bibitem[Gar]{garrettModernAnalysisAutomorphic}
-Paul Garrett.
-\newblock Modern analysis of automorphic forms by examples.
+\bibitem[Gar97]{garrettBuildingsClassicalGroups1997}
+Paul~B. Garrett.
+\newblock {\em Buildings and Classical Groups}.
+\newblock Chapman \& Hall, London, 1. ed edition, 1997.
 
 \bibitem[Gar10]{garrettInvariantDifferentialOperators2010}
 Paul Garrett.
@@ -190,6 +192,11 @@ Paul Garrett.
 Paul Garrett.
 \newblock Transition: {{Eisenstein}} series on adele groups.
 \newblock 2016.
+
+\bibitem[Gar18]{garrettModernAnalysisAutomorphic2018}
+Paul Garrett.
+\newblock {\em Modern {{Analysis}} of {{Automorphic Forms By Example}}:}.
+\newblock Cambridge University Press, 1 edition, September 2018.
 
 \bibitem[Gel84]{gelbartElementaryIntroductionLanglands1984}
 Stephen Gelbart.
@@ -204,9 +211,12 @@ Jayce~R. Getz and Heekyoung Hahn.
   {{Mathematics}}}.
 \newblock Springer International Publishing, Cham, 2024.
 
-\bibitem[God]{godementGroupesLineairesAlgebriques}
+\bibitem[God61]{SB_1960-1961__6__11_0}
 Roger Godement.
-\newblock {Groupes lin{\'e}aires alg{\'e}briques sur un corps parfait}.
+\newblock {Algebraic linear groups over a perfect field}.
+\newblock In {\em {S{\'e}minaire Bourbaki : ann{\'e}es 1960/61, expos{\'e}s
+  205-222}}, number~6 in {S{\'e}minaire bourbaki}, pages 11--32.
+  Soci{\'e}t{\'e} math{\'e}matique de France, 1961.
 
 \bibitem[Grb11]{grbacResidualSpectrumSplit2011}
 Neven Grbac.
@@ -214,18 +224,12 @@ Neven Grbac.
   {{Siegel}} maximal parabolic subgroup.
 \newblock {\em Monatshefte f{\"u}r Mathematik}, 163(3):301--314, July 2011.
 
-\bibitem[Gre92]{grenierAnalogueSiegelFOperator1992}
+\bibitem[Gre92]{grenierAnalogueSiegelsFOperator1992}
 Douglas Grenier.
 \newblock An {{Analogue}} of {{Siegel}}'s {$\varphi$}-{{Operator}} for
   {{Automorphic Forms}} for {{GLn}}( {{Z}}).
 \newblock {\em Transactions of the American Mathematical Society},
   333(1):463--477, 1992.
-
-\bibitem[Gre24]{grenierANALOGUESIEGELXOPERATOR2024}
-Douglas Grenier.
-\newblock {{AN ANALOGUE OF SIEGEL}}'{{S X-OPERATOR FOR AUTOMORPHIC FORMS FOR
-  GLn}}({{Z}}).
-\newblock 2024.
 
 \bibitem[GRS98]{ginzburg$L$functionsSymplecticGroups1998}
 David Ginzburg, Stephen Rallis, and David Soudry.
@@ -258,43 +262,42 @@ Dihua Jiang, Baiying Liu, and Lei Zhang.
 \newblock Poles of certain residual {{Eisenstein}} series of classical groups.
 \newblock {\em Pacific Journal of Mathematics}, 264(1):83--123, July 2013.
 
-\bibitem[Kap21]{kaplanDoublingConstructionsComplete2021a}
+\bibitem[Kap21]{kaplanDoublingConstructionsComplete2021}
 Eyal Kaplan.
 \newblock Doubling {{Constructions}}: The complete {{L-function}} for coverings
   of the symplectic group, July 2021.
 
-\bibitem[Kima]{kimEISENSTEINSERIESTHEIR}
+\bibitem[Kim]{kimEISENSTEINSERIESTHEIR}
 Henry~H Kim.
 \newblock {{EISENSTEIN SERIES AND THEIR APPLICATIONS}}.
 
-\bibitem[Kimb]{kimSuperficialIntroductionLanglands}
-Minhyong Kim.
-\newblock A superficial introduction to {{Langlands}} functoriality.
-
-\bibitem[Lana]{langlandsFunctorialityTheoryAutomorphic}
+\bibitem[Lan]{langlandsFunctorialityTheoryAutomorphic}
 Robert~P Langlands.
 \newblock Functoriality in the theory of automorphic forms.
 
-\bibitem[Lanb]{langlandsLetterweil196701_rpl_0}
+\bibitem[Lan67]{langlandsLetterAndreWeil1967}
 Robert~P Langlands.
-\newblock Letter-to-weil-1967-01\_rpl\_0.
+\newblock Letter to {{Andr{\'e} Weil}}.
 \newblock
-  https://publications.ias.edu/sites/default/files/letter-to-weil-1967-01\_rpl\_0.pdf.
+  https://publications.ias.edu/sites/default/files/letter-to-weil-1967-01\_rpl\_0.pdf,
+  1967.
 
-\bibitem[Lanc]{langlandsREPRESENTATIONTHEORYITS}
-Robert~P Langlands.
-\newblock {{REPRESENTATION THEORY ITS RISE AND ITS ROLE IN NUMBER THEORY}}.
-\newblock {\em REPRESENTATION THEORY}.
-
-\bibitem[Land]{langlandsEulerProductsa}
-R.P. Langlands.
-\newblock {\em Euler {{Products}}}.
+\bibitem[Lan71]{langlandsEulerProducts1971}
+Robert~P. Langlands.
+\newblock {\em Euler Products}.
+\newblock Number~1 in James {{K}}. {{Whittemore}} Lectures in Mathematics given
+  at {{Yale University}}. Yale University Press, New Haven, 1971.
 
 \bibitem[Lan76]{langlandsFunctionalEquationsSatisfied1976}
 Robert~P. Langlands.
 \newblock {\em On the {{Functional Equations Satisfied}} by {{Eisenstein
   Series}}}, volume 544 of {\em Lecture {{Notes}} in {{Mathematics}}}.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1976.
+
+\bibitem[Lan89]{langlandsRepresentationTheoryIts1989}
+Robert~P Langlands.
+\newblock Representation theory - its rise and its role in number theory.
+\newblock {\em Proceedings of the Gibbs symposium}, 1989.
 
 \bibitem[Lan94]{langAlgebraicNumberTheory1994}
 Serge Lang.
@@ -306,21 +309,18 @@ Serge Lang.
 Erez Lapid.
 \newblock Some perspectives on {{Eisenstein}} series, April 2022.
 
-\bibitem[Lin]{LinearRepresentationsFinite}
-Linear {{Representations}} of {{Finite Groups}} {\textbar} {{SpringerLink}}.
-\newblock https://link.springer.com/book/10.1007/978-1-4684-9458-7.
-
 \bibitem[Mak]{makisumiStructureTheoryReductive}
 Shotaro Makisumi.
 \newblock Structure {{Theory}} of {{Reductive Groups}} through {{Examples}}.
 
-\bibitem[Mila]{milneBasicTheoryAffine}
-J~S Milne.
-\newblock Basic {{Theory}} of {{Affine Group Schemes}}.
-
-\bibitem[Milb]{milneLieAlgebrasAlgebraic}
+\bibitem[Mil]{milneLieAlgebrasAlgebraic}
 J~S Milne.
 \newblock Lie {{Algebras}}, {{Algebraic Groups}}, and {{Lie Groups}}.
+
+\bibitem[Mil12]{milneBasicTheoryAffine2012}
+J~S Milne.
+\newblock Basic {{Theory}} of {{Affine Group Schemes}}.
+\newblock 2012.
 
 \bibitem[Mil17]{milneAlgebraicGroupsTheory2017}
 J.~S. Milne.
@@ -328,15 +328,17 @@ J.~S. Milne.
   {{Finite Type}} over a {{Field}}}.
 \newblock Cambridge University Press, 1 edition, September 2017.
 
-\bibitem[MT]{malleLinearAlgebraicGroups}
-Gunter Malle and Donna Testerman.
-\newblock Linear {{Algebraic Groups}} and {{Finite Groups}} of {{Lie Type}}.
-
 \bibitem[MT62]{mostowCompactnessArithmeticallyDefined1962}
 G.~D. Mostow and T.~Tamagawa.
 \newblock On the {{Compactness}} of {{Arithmetically Defined Homogeneous
   Spaces}}.
 \newblock {\em Annals of Mathematics}, 76(3):446--463, 1962.
+
+\bibitem[MT11]{malleLinearAlgebraicGroups2011}
+Gunter Malle and Donna Testerman.
+\newblock {\em Linear {{Algebraic Groups}} and {{Finite Groups}} of {{Lie
+  Type}}}.
+\newblock Cambridge University Press, 1 edition, September 2011.
 
 \bibitem[Mum99]{mumfordRedBookVarieties1999}
 David Mumford.
@@ -358,24 +360,21 @@ J{\"u}rgen Neukirch.
   Grundlehren Der Mathematischen {{Wissenschaften}}, pages 357--417. Springer,
   Berlin, Heidelberg, 1999.
 
-\bibitem[Not]{NotesClassAlgebraic}
-Notes for class on algebraic groups.pdf.
-\newblock
-  https://users.math.msu.edu/users/ruiterj2/Math/Documents/Summer\%202019/Algebraic\%20Groups/Notes\%20for\%20class\%20on\%20algebraic\%20groups.pdf.
-
-\bibitem[Pol]{pollackRANKINSELBERGMETHODUSER}
+\bibitem[Pol]{pollackRANKINSELBERGMETHODUSERS}
 Aaron Pollack.
 \newblock {{THE RANKIN-SELBERG METHOD}}: {{A USER}}'{{S GUIDE}}.
 
-\bibitem[RS]{renardREPRESENTATIONSGROUPESREDUCTIFS}
-David Renard and Laurent Schwartz.
-\newblock {REPR{\'E}SENTATIONS DES GROUPES R{\'E}DUCTIFS p-ADIQUES}.
+\bibitem[Ser96]{serreLinearRepresentationsFinite1996}
+Jean-Pierre Serre.
+\newblock {\em Linear Representations of Finite Groups}.
+\newblock Number~42 in Graduate Texts in Mathematics. Springer-Verlag, New
+  York, corr. 5th print edition, 1996.
 
-\bibitem[Sha88]{shahidiRamanujanConjectureFiniteness1988}
+\bibitem[Sha88]{shahidiRamanujanConjectureFiniteness1988a}
 Freydoon Shahidi.
-\newblock {\em On the {{Ramanujan}} Conjecture and Finiteness of Poles for
-  Certain {{L-functions}}}.
-\newblock 1988.
+\newblock On the {{Ramanujan Conjecture}} and {{Finiteness}} of {{Poles}} for
+  {{Certain L- Functions}}.
+\newblock {\em The Annals of Mathematics}, 127(3):547, May 1988.
 
 \bibitem[Sha90]{shahidiProofLanglandsConjecture1990}
 Freydoon Shahidi.
@@ -389,6 +388,11 @@ Freydoon Shahidi.
   volume~58 of {\em Colloquium {{Publications}}}.
 \newblock American Mathematical Society, Providence, Rhode Island, September
   2010.
+
+\bibitem[Sha11]{shahidiArthurPacketsRamanujan2011}
+Freydoon Shahidi.
+\newblock Arthur {{Packets}} and the {{Ramanujan Conjecture}}.
+\newblock {\em Kyoto Journal of Mathematics}, 51(1), January 2011.
 
 \bibitem[Spr98]{springerLinearAlgebraicGroups1998}
 T.~A. Springer.

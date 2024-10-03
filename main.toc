@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {1.1}Definition}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{5}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{6}{section*.7}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{6}{section*.6}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{8}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{10}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{11}{subsection.1.2.4}%
@@ -35,16 +35,9 @@
 \contentsline {subsection}{\numberline {6.2.1}Automorphising}{42}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Modular Form Case}{43}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Simplifying the Constant Term}{44}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {7}L-Functions}{50}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Automorphic L-Functions}{50}{section.7.1}%
-\contentsline {section}{\numberline {7.2}L-Functions for \(\GL _n\times \GL _m\)}{53}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Generic Representations}{53}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Definition}{53}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Poles and Zeroes}{53}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}L-Functions for Classical Groups}{53}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Poles of Residual Eisenstein Series}{54}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Residual Eisenstein Series}{54}{section.8.1}%
-\contentsline {section}{\numberline {8.2}The Constant Term}{55}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Analysing the Intertwining Operator}{56}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Concluding Remarks}{57}{section.8.4}%
-\contentsline {chapter}{\numberline {A}Test}{58}{appendix.A}%
+\contentsline {chapter}{\numberline {7}Poles of Residual Eisenstein Series}{50}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Residual Eisenstein Series}{50}{section.7.1}%
+\contentsline {section}{\numberline {7.2}The Constant Term}{51}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Analysing the Intertwining Operator}{52}{section.7.3}%
+\contentsline {chapter}{\numberline {A}L-Functions}{54}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The Langlands Framework}{54}{section.A.1}%

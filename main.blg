@@ -1,27 +1,15 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-White space in argument---line 278 of file main.aux
- : \citation{remarks
- :                   on rankin selberg convolutions Cogdel and PT-shapiro}
-I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
-Warning--I didn't find a database entry for "shahidiArthurPacketsRamanujan2011"
-Warning--I didn't find a database entry for "cogdellRemarksRankinSelbergConvolutions"
-Warning--I didn't find a database entry for "EndoscopicClassificationRepresentations"
-Warning--to sort, need author or key in BuildingsClassicalGroups
-Warning--to sort, need author or key in NotesClassAlgebraic
-Warning--to sort, need author or key in EssaysHistoryLie
-Warning--to sort, need author or key in LinearRepresentationsFinite
-Warning--empty journal in arthurAUTOMORPHICREPRESENTATIONSNUMBER
-Warning--empty year in arthurAUTOMORPHICREPRESENTATIONSNUMBER
-Warning--empty journal in arthurLfunctionsAutomorphicRepresenta
-Warning--empty year in arthurLfunctionsAutomorphicRepresenta
-Warning--empty journal in borelAutomorphicFormsRepresentations
-Warning--empty year in borelAutomorphicFormsRepresentations
+Warning--I didn't find a database entry for "grenierAnalogueSiegelFOperator1992"
+Warning--I didn't find a database entry for "cogdellFunctorialityClassicalGroups2004"
+Warning--empty journal in arthurLfunctionsAutomorphicRepresentations
+Warning--empty year in arthurLfunctionsAutomorphicRepresentations
+Warning--empty journal in arthurAUTOMORPHICREPRESENTATIONSNUMBER1981
 Warning--can't use both author and editor fields in bumpIntroductionLanglandsProgram2004
 Warning--empty publisher in bernsteinREPRESENTATIONSPADICGROUPS1992
 Warning--empty journal in booherVIEWINGMODULARFORMS
@@ -39,74 +27,58 @@ Warning--empty journal in conradHISTORYCLASSFIELD
 Warning--empty year in conradHISTORYCLASSFIELD
 Warning--empty journal in emertonCLASSICALMODULARFORMS
 Warning--empty year in emertonCLASSICALMODULARFORMS
-Warning--empty journal in garrettModernAnalysisAutomorphic
-Warning--empty year in garrettModernAnalysisAutomorphic
 Warning--empty journal in garrettInvariantDifferentialOperators2010
 Warning--empty journal in garrettTransitionEisensteinSeries2016
-Warning--empty journal in godementGroupesLineairesAlgebriques
-Warning--empty year in godementGroupesLineairesAlgebriques
-Warning--empty journal in grenierANALOGUESIEGELXOPERATOR2024
 Warning--empty journal in kimEISENSTEINSERIESTHEIR
 Warning--empty year in kimEISENSTEINSERIESTHEIR
-Warning--empty journal in kimSuperficialIntroductionLanglands
-Warning--empty year in kimSuperficialIntroductionLanglands
 Warning--empty journal in langlandsFunctorialityTheoryAutomorphic
 Warning--empty year in langlandsFunctorialityTheoryAutomorphic
-Warning--empty year in langlandsREPRESENTATIONTHEORYITS
-Warning--empty publisher in langlandsEulerProductsa
-Warning--empty year in langlandsEulerProductsa
 Warning--empty journal in makisumiStructureTheoryReductive
 Warning--empty year in makisumiStructureTheoryReductive
-Warning--empty journal in milneBasicTheoryAffine
-Warning--empty year in milneBasicTheoryAffine
 Warning--empty journal in milneLieAlgebrasAlgebraic
 Warning--empty year in milneLieAlgebrasAlgebraic
-Warning--empty journal in malleLinearAlgebraicGroups
-Warning--empty year in malleLinearAlgebraicGroups
-Warning--empty journal in pollackRANKINSELBERGMETHODUSER
-Warning--empty year in pollackRANKINSELBERGMETHODUSER
-Warning--empty journal in renardREPRESENTATIONSGROUPESREDUCTIFS
-Warning--empty year in renardREPRESENTATIONSGROUPESREDUCTIFS
-Warning--empty publisher in shahidiRamanujanConjectureFiniteness1988
-You've used 80 entries,
+Warning--empty journal in milneBasicTheoryAffine2012
+Warning--empty journal in pollackRANKINSELBERGMETHODUSERS
+Warning--empty year in pollackRANKINSELBERGMETHODUSERS
+You've used 77 entries,
             2543 wiz_defined-function locations,
-            995 strings with 18860 characters,
-and the built_in function-call counts, 25279 in all, are:
-= -- 2387
-> -- 974
-< -- 72
-+ -- 315
-- -- 292
-* -- 1672
-:= -- 4097
-add.period$ -- 216
-call.type$ -- 80
-change.case$ -- 414
-chr.to.int$ -- 69
-cite$ -- 140
+            1016 strings with 18640 characters,
+and the built_in function-call counts, 24947 in all, are:
+= -- 2391
+> -- 933
+< -- 83
++ -- 294
+- -- 276
+* -- 1655
+:= -- 4079
+add.period$ -- 227
+call.type$ -- 77
+change.case$ -- 397
+chr.to.int$ -- 71
+cite$ -- 110
 duplicate$ -- 1176
-empty$ -- 2035
-format.name$ -- 422
-if$ -- 5119
-int.to.chr$ -- 12
+empty$ -- 2000
+format.name$ -- 411
+if$ -- 5084
+int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 86
-newline$ -- 369
-num.names$ -- 237
-pop$ -- 679
+missing$ -- 92
+newline$ -- 368
+num.names$ -- 240
+pop$ -- 582
 preamble$ -- 1
-purify$ -- 514
+purify$ -- 495
 quote$ -- 0
-skip$ -- 860
+skip$ -- 858
 stack$ -- 0
-substring$ -- 978
-swap$ -- 116
-text.length$ -- 72
-text.prefix$ -- 55
+substring$ -- 986
+swap$ -- 133
+text.length$ -- 83
+text.prefix$ -- 59
 top$ -- 0
-type$ -- 548
-warning$ -- 56
-while$ -- 214
-width$ -- 84
-write$ -- 918
-(There was 1 error message)
+type$ -- 504
+warning$ -- 33
+while$ -- 217
+width$ -- 81
+write$ -- 944
+(There were 35 warnings)

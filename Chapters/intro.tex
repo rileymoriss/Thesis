@@ -4,7 +4,7 @@ To explain the results on poles of Eisenstein series to students in other discip
 
 Here we attempt to put down what we understand of the ``big picture''. It could be argued that we spent too much time trying to understand the motivation for the results in \cite{jiangPolesCertainResidual2013} and not enough time on the results themselves and so this section is to ensure that time was not (very) wasted. 
 
-We should point out that there are many surveys and books on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are \cite{fleigEisensteinSeriesAutomorphic2016, bumpIntroductionLanglandsProgram2004} for longer treatments, in particular the statements of the conjectures are most clearly stated in Cogdell's chapters in \cite{bumpIntroductionLanglandsProgram2004}. Shorter surveys are \cite{gelbartElementaryIntroductionLanglands1984, kimSuperficialIntroductionLanglands, langlandsFunctorialityTheoryAutomorphic, langlandsREPRESENTATIONTHEORYITS, arthurAUTOMORPHICREPRESENTATIONSNUMBER}.
+We should point out that there are many surveys and books on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are \cite{fleigEisensteinSeriesAutomorphic2016, bumpIntroductionLanglandsProgram2004} for longer treatments, in particular the statements of the conjectures are most clearly stated in Cogdell's chapters in \cite{bumpIntroductionLanglandsProgram2004}. Shorter surveys are \cite{gelbartElementaryIntroductionLanglands1984, langlandsFunctorialityTheoryAutomorphic, langlandsRepresentationTheoryIts1989, arthurAUTOMORPHICREPRESENTATIONSNUMBER1981}.
 
 \subsection{From Ancient to Modern}
 We follow the wonderful exposition in \cite{weinsteinReciprocityLawsGalois2015}. A problem that Euclid could have understood is ``which positive integers are the sum of two squares''. In 1640 Fermat answered this question, he first reduces the question to when is a prime the sum of two squares. Thus the problem is immediately reformulated as a problem about congruences mod a prime \(p\), ``when does there exist a solution to \(a^2  +b^2 \equiv 0 \;\;(\text{mod }p) \)'', or whats the same, by dividing out \(b^2\), ``when is there a solution to \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\)''. The famously has the solution 
@@ -97,13 +97,13 @@ One then observes that this can be rewritten as
 \[\{\text{Maps }\GL(\A)/\GL_1(K)\to \GL_1(\C)\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \GL_1(\C)\} .\]
 This suggests the generalisation to 
 \[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } \GL_n\}   .\]
-But according to Langlands \cite{langlandsREPRESENTATIONTHEORYITS}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, and so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
+But according to Langlands \cite{langlandsRepresentationTheoryIts1989}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, and so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
 \[\{\text{Certain reps of }G(\A)/G(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } G\} .\]
 These two sides of the correspondence are referred to as the ``automorphic'' side and the ``Galois side'' respectively. The content that follows will be almost entirely on the automorphic side. 
 
 
 \subsection{Harmonic Analysis}
-As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect, following \cite{follandCourseAbstractHarmonic2016}.
+As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect, following \cite{follandCourseAbstractHarmonic2016a}.
 
 The story starts with the Fourier transform for periodic funtions. These of course have ancient precursors in the ideas of the pythagoreans and were ``in the air'' of the eightenth century, Fourier, around 1822, was first to conjecture that all functions should be decomposable into elementary periodic functions. 
 The base case is the fourier transform on \(\mathbb{T}\) the circle, realised concretely as the unit length elements of \C. Then for every \(f\in L^2(\mathbb{T})\) we have that 
@@ -115,7 +115,7 @@ The first generalisation appeared in 1927 with the Peter-Weyl theorem. Start wit
 \[\pi: G \to U(\mathcal{H}).\]
 We denote the dual group of \(G\) by \(\hat{G}\), this is defined to be the space of (equivalence classes of) irreducible unitary representations of \(G\). 
 
-\begin{Theorem}[\cite{follandCourseAbstractHarmonic2016}, 5.2, 5.12]
+\begin{Theorem}[\cite{follandCourseAbstractHarmonic2016a}, 5.2, 5.12]
 	If \(G\) is compact then every unitary representation of \(G\) is a direct sum of irreducible representations. 
 \end{Theorem} 
 \begin{remark}
@@ -131,7 +131,7 @@ Importantly there is no requirement for finite dimensionality.
 	Therefore the decomposition exhibits the exponentials as a basis for functions on the circle.
 \end{example}
 
-In 1940 Weil worked out the theory for locally compact Abelian groups, proving the general case of Bochners theorem \cite[Thm. 4.18]{follandCourseAbstractHarmonic2016}. The groups that we are interested in however are neither compact,  \(\A_\Q^\times\), nor Abelian, \(\GL_n\).
+In 1940 Weil worked out the theory for locally compact Abelian groups, proving the general case of Bochners theorem \cite[Thm. 4.18]{follandCourseAbstractHarmonic2016a}. The groups that we are interested in however are neither compact,  \(\A_\Q^\times\), nor Abelian, \(\GL_n\).
 
 A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the center of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial we have a decomposition as a  direct sum of irreducible representations. 
 
@@ -149,17 +149,17 @@ A group is \textbf{type I} if for every (continuous unitary) representation \(\p
 \end{example}
 
 \begin{example}
-	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a unimodular group. The proof is outside the scope of this thesis but is stated in \cite[Lem. 2]{conradStanfordNumberTheory}.
+	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a unimodular group. The proof is outside the scope of this thesis but is stated in \cite[Lem. 2]{conradCOMPACTNESSVOLUMEADELIC}.
 \end{example}
 
-In the 1950's Segal and Mautner proved the (or more acurately, one of the many) Plancherel Theorem which is the Peter-Weyl and Bochner type result for type I, second countable and uni-modular topological groups. To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016}, but some of the idea in the basic example of direct sums.
+In the 1950's Segal and Mautner proved the (or more acurately, one of the many) Plancherel Theorem which is the Peter-Weyl and Bochner type result for type I, second countable and uni-modular topological groups. To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016a}, but some of the idea in the basic example of direct sums.
 \begin{example}[Direct Sums]
 	Let \(I\) be a countable set with the discrete sigma algebra and counting measure \(\mu\). Let \((\mathcal{H}_i)_{i\in I}\) be a collection of Hilbert spaces then
 	\[\bigoplus_{i\in I} \mathcal{H}_i = \left\{ (h_i)_{i\in I}\in \prod_{i\in I} \mathcal{H}_i : \int_I \norm{h_i}_i^2 d\mu <\infty \right\}.\]
 	I.e. the Hilbert space direct sum is by definition square summable sequences, but sums are just discrete integrals.
 \end{example}
 Then (part of ) the Plancherel theorem is
-\begin{Theorem}[Plancherel, \cite{follandCourseAbstractHarmonic2016}, 7.44]
+\begin{Theorem}[Plancherel, \cite{follandCourseAbstractHarmonic2016a}, 7.44]
 	The regular represntation of a type I, second countable and unimodular topological group is a direct integral of the irreducible unitary representations. 
 \end{Theorem}
 \begin{remark}
@@ -178,15 +178,15 @@ Again the devil is in the details, this construction is very explicit. The space
 
 The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular we have some important ``pieces'' to such a decomposition. We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover these decompositions are largely proved in terms of the more general spectral theorems. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms \ref{cuspidal_form_definition} and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum. 
 
-It is during this analysis that the ideas expressed in his famous letter \cite{langlandsLetterweil196701_rpl_0} would begin to form, as he noticed that certain Euler products of analytic functions were appearing in the constant terms of the Eisenstein series. In particular we will see how the intertwining operator \(M(s, w)\) appears in the constant term of Eisenstein series and Langlands observed that \cite{langlandsEulerProductsa} 
+It is during this analysis that the ideas expressed in his famous letter \cite{langlandsLetterAndreWeil1967} would begin to form, as he noticed that certain Euler products of analytic functions were appearing in the constant terms of the Eisenstein series. In particular we will see how the intertwining operator \(M(s, w)\) appears in the constant term of Eisenstein series and Langlands observed that \cite{langlandsEulerProducts1971} 
 \[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
 This formula is obviously uninterpretable without further definitions, however we just want to point out some things to notice. First there is a product over the places of \Q, namely one item for the infinite place and then a product over the prime numbers. The functions in the product are gamma functions, related intrinsically to the L-function exemplar \(\zeta\), the Riemann-Zeta function, and things of the form \(1 - p^{-s}\). These facts should be born in mind when we come to defining L-functions later in \ref{L-functions}
 
 This lead to a general conjecture that there is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
 \[M(s, w) = r(s, w)N(s,w),\]
-and \(r(s, w)\) is a ratio of L-functions, as defined by Langlands in for instance \cite{langlandsEulerProductsa}.
+and \(r(s, w)\) is a ratio of L-functions, as defined by Langlands in for instance \cite{langlandsEulerProducts1971}.
 
-Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}. Shahidi showed some cases of this conjecture in \cite{shahidiRamanujanConjectureFiniteness1988}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
+Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}. Shahidi showed some cases of this conjecture in \cite{shahidiRamanujanConjectureFiniteness1988a}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
 \[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu, w)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
 
 Recently it was shown for classical groups that this \(N\) indeed has the required properties. In particular the following theorem is sufficient for the cases dealt with in \cite{jiangPolesCertainResidual2013}:
@@ -208,7 +208,7 @@ We do not yet understand how but these considerations are supposed to help prove
 \end{quote}
 \cite{bumpRankinSelbergMethodIntroduction2011} gives some more detail on how the analytic properties of Eisenstein series and their L-functions imply that the automorphic representations can be lifted to other groups. 
 
-Finally we remark that we spent a good amount of time trying to understand the analogous story for the so called ``almost algebraic groups'', topological coverings of \(G(\A)\). In this setting the work of \cite{jiangPolesCertainResidual2013} has also been applied to get similar results on poles of metaplectic Eisenstein series, as in \cite{kaplanDoublingConstructionsComplete2021a}. It was also used to prove certain functoriality results as in \cite{caiDoublingConstructionsGlobal2024a}. We leave it for future work to understand the full significance of these calculations, but hope we have motivated why the \textit{might} be interesting.
+Finally we remark that we spent a good amount of time trying to understand the analogous story for the so called ``almost algebraic groups'', topological coverings of \(G(\A)\). In this setting the work of \cite{jiangPolesCertainResidual2013} has also been applied to get similar results on poles of metaplectic Eisenstein series, as in \cite{kaplanDoublingConstructionsComplete2021}. It was also used to prove certain functoriality results as in \cite{caiDoublingConstructionsGlobal2024}. We leave it for future work to understand the full significance of these calculations, but hope we have motivated why the \textit{might} be interesting.
 
 \section*{Outline of Content}
 Chapter one deals with the generalities of linear algebraic groups, the objects whose representation theory is the subject of discussion. First we define them and then look at the important subgroups that are used in the study of automorphic forms arising on the adelic points of these groups. We focus on the classical groups.

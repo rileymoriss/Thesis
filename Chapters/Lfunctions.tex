@@ -1,16 +1,16 @@
 The theory of L-functions is not yet systematic; Langlands has provided a conjectural framework, however it is still under construction.  
-In the mean time there are two major ``paradigms'' for constructing and proving theorems about L-functions, those are the Langlands-Shahidi type constructions and the Rankin-Selberg type constructions. General surveys can be found in \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresenta}.
+In the mean time there are two major ``paradigms'' for constructing and proving theorems about L-functions, those are the Langlands-Shahidi type constructions and the Rankin-Selberg type constructions. General surveys can be found in \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresentations}.
 
 The Rankin-Selberg type functions are surveyed in \cite{bumpRankinSelbergMethodIntroduction2011}. The \(\GL_n \times \GL_m\) case is dealt with in \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}. For Rankin-Selberg L-functions of form \(\Sp_{2n}\times \GL_m \) the theory (for generic cuspidal representations) is worked out in \cite{ginzburg$L$functionsSymplecticGroups1998}.
 
 The Langlands-Shahidi paradigm is explained in \cite{shahidiProofLanglandsConjecture1990, shahidiEisensteinSeriesAutomorphic2010}.
 
-We have the langlands general framework. We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquenly determininng L functions for tempered things. By \cite{shahidiArthurPacketsRamanujan2011} all generic things are tempered so we can apply the theory of RS and GR to explicitly construct global things and prove theorems. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the unfinished work of Arthur \cite{EndoscopicClassificationRepresentations}.
+We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquely determining L-functions for \textit{tempered} representations. By \cite{shahidiArthurPacketsRamanujan2011} all generic representations are tempered so we can apply the theory of Rankin-Selberg and Ginzburg-Ralis to explicitly construct global L-functions and prove theorems about them. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the unfinished work of Arthur \cite{arthurEndoscopicClassificationRepresentations2013b}.
 
 \label{L-functions}
 
-\section{Automorphic L-Functions}
-We follow closely Borels exposition in \cite[Part 2. III. 2. ]{borelAutomorphicFormsRepresentations} and \cite{shahidiEisensteinSeriesAutomorphic2010}.
+\section{The Langlands Framework}
+We follow closely Borels exposition in \cite[Part 2. III. 2. ]{borelAutomorphicFormsRepresentations1979} and \cite{shahidiEisensteinSeriesAutomorphic2010}.
 Given a reductive LAG \(G\) defined over \C there is an associated root datum as in \((X, \Phi, \hat{X}, \hat{\Phi})\), where for any choice of maximal torus we have \(X = \Hom(T, \mathbb{G}_m)\), \(\hat{X} = \Hom(\mathbb{G}_m, T)\), and \(\Phi, \hat\Phi\) are the roots and coroots of \(G\) with respect to \(T\) \cite[7.4.3]{springerLinearAlgebraicGroups1998}.  Then each reductive LAG \(G\) over a number field \(F\) has the root datum that is associated to the base change of \(G\) to \(\C\), \((X, \Phi, \hat{X}, \hat{\Phi})\).
 By the existence theorem \cite[10]{springerLinearAlgebraicGroups1998} to the dual root datum \(( \hat{X}, \hat{\Phi}, X, \Phi)\) there is a LAG defined over \C that corresponds, we call this the \textbf{dual group} of \(G\) and we denote it \(\hat{G}\). It is possible through the use of the root datum to specify a ``cannonical'' action of \(\mathrm{Gal}(\bar{F}/F)\) on \(\hat{G}\) as in loc. cit.
 The \textbf{Langlands dual group} is then the dual group semi-direct producted with the \(\mathrm{Gal}(\bar{k}/k)\) via this action, which we omit
@@ -44,59 +44,16 @@ In the global case we consider an irreducible automorphic representation \(\pi =
 \end{example}
 
 \begin{example}[Rankin-Selberg, \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}, 1.2, \cite{arthurLecturesAutomorphicFunctions1991a}, Ch. 2 Example. 2]
-	Let \(\nu\) be a finite place of \(\Q\) and \(\pi, \pi'\) be two unramified generic representations of \(\GL_n(\Q_\nu)\) and \(\GL_m(\Q_\nu)\) respectively. Let \(B_n\) be the standard Borel of upper triangular matricies in \(\GL_n\). Such representations have been classified \todo[inline]{reference}
+	Let \(\nu\) be a finite place of \(\Q\) and \(\pi, \pi'\) be two unramified generic representations of \(\GL_n(\Q_\nu)\) and \(\GL_m(\Q_\nu)\) respectively. Let \(B_n\) be the standard Borel of upper triangular matricies in \(\GL_n\). Such representations have been classified
 	in terms of characters of \(\Q^\times_\nu\), in particular for \(\pi\) there are \(\mu_1, ..., \mu_n\) unramified characters such that 
 	\[\pi \cong \Ind_{B(\Q_\nu)}^{\GL_n(\Q_\nu)} \big(\mu_1 \tensor \cdots \tensor \mu_n\big).\]
 	If we fix a uniformizer \(\varpi\) of \(\Q_\nu\) then we have the so called ``Satake parameters'' \(\mu_i(\varpi)\) which determines \(\pi\) uniquely. Of course the same is true for \(\pi'\), with say characters \(\mu'_1, ..., \mu'_m\). We then define
 	\[L(s, \pi\times \pi') \defeq \prod_{i,j} \frac{1}{1-\mu_i(\varpi)\mu'_j(\varpi)q^{-s}}.\]
 	
 	Consider the group \(G = \GL_n\times \GL_m\) which has dual \(\GL_n(\C) \times \GL_m(\C)\), then there is a cannonical representation 
-	\[r:\GL_n(\C) \times \GL_m(\C) \to \GL_{nm}(\C). \]
+	\[\tensor:\GL_n(\C) \times \GL_m(\C) \to \GL_{nm}(\C). \]
 	Then 
-	\[L(s, \pi\tensor \pi', r) = L(s, \pi \times \tilde{\pi}'),\]
+	\[L(s, \pi\tensor \pi', \tensor) = L(s, \pi \times \tilde{\pi}'),\]
 	where the tilde denotes the contragradient.
 \end{example}
 
-\begin{example}[Dirichlet L-functions]
-	Recall that a Dirichlet character \(\chi\) is a character of the group \((\Z/N\Z)^*\) and a Grossencharacter (also known as Hecke characters) \(\chi'\) is a character of the group \(\A_\Q^\times/\Q^\times\). Through the series of maps 
-	% https://q.uiver.app/#q=WzAsNSxbMiwwLCJcXFJfez4wfV5cXHRpbWVzIFxcdGltZXMgXFxoYXR7XFxafV5cXHRpbWVzIl0sWzQsMCwiXFxiaWcoXFx2YXJwcm9qbGltXFxaL05cXFpcXGJpZyleXFx0aW1lcyAiXSxbNiwwLCIgKFxcWi9OXFxaKV5cXHRpbWVzIl0sWzMsMiwiXFxDIl0sWzAsMCwiXFxBXlxcdGltZXMgLyBcXFFeXFx0aW1lcyJdLFswLDEsIlxcbWF0aHJte3Byb2p9XzMiXSxbMSwyXSxbMiwzLCJcXGNoaSJdLFs0LDMsIlxcY2hpJyIsMl0sWzQsMF1d
-	\[\begin{tikzcd}[cramped]
-		{\A^\times / \Q^\times} && {\R_{>0}^\times \times \hat{\Z}^\times} && {\big(\varprojlim\Z/N\Z\big)^\times } && { (\Z/N\Z)^\times} \\
-		\\
-		&&& \C
-		\arrow["\sim",from=1-1, to=1-3]
-		\arrow["{\chi'}"', from=1-1, to=3-4]
-		\arrow["{\mathrm{proj}_3}", from=1-3, to=1-5]
-		\arrow[from=1-5, to=1-7]
-		\arrow["\chi", from=1-7, to=3-4]
-	\end{tikzcd}\]
-	we get a bijection between Dirichlet characters and finite-order Grossencharacters, i.e. Grossencharacters \(\chi'\) such that for some \(n\in \N\) we have \((\chi')^n = 1\). These are just grossencharacters trivial in the infinite place, by construction.
-	
-	Grossencharacters are just automorphic forms on \(\GL_1\) and hence they generate automorphic representations by taking the span of their orbit in the space of automorphic forms. 
-	
-	The claim is then that the Langlands automorphic L-functions of this representation is, after being pushed forward along this series of maps the regular Dirichlet L-function. \todo{reference? More details?}
-\end{example}
-
-
-
-\section{L-Functions for \(\GL_n\times \GL_m\)}
-\subsection{Generic Representations}
-\todo[inline, color=blue]{L-fuunctions chapter}
-\subsection{Definition}
-\cite{cogdellLECTURESINTEGRALREPRESENTATIONS}
-
-\subsection{Poles and Zeroes}
-
-
-\section{L-Functions for Classical Groups}
-
-\(L(s, \tau\times \sigma)\)
-\cite{remarks on rankin selberg convolutions Cogdel and PT-shapiro}\cite{cogdellFunctorialityClassicalGroups2004} -----> Defined in \cite{shahidiProofLanglandsConjecture1990}
-
-\(L(s, \tau, \sigma)\)
-\cite{grbacResidualSpectrumSplit2011}
-
-\begin{example}[]
-	The so called ``Rankin-Selberg'' L-function associated to -------, is given by 
-	\[L(s, \tau\times \tau) = L(s, \tau, \rho)L(s, \tau, \rho^-)\]	
-\end{example}
