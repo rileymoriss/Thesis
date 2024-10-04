@@ -11,14 +11,14 @@ The collection of characters of \(M(\A)\) that are trivial on \(M^1\) is denoted
 \[X_M \defeq \Hom_{\textrm{TopGroup}}(M(\A)/M^1, \C^*) .\]
 
 \begin{remark}
-    To make it seem less mysterious we comment that this group has some importance in the more general theory. It is one of the pieces in the ``Langlands decomposition'' of the Archimedean points of a parabolic \(P = MU\), if \(\nu\) is an archimedean place then,
-    \[P(F_\nu) = A_M M(F_\nu)U(F_\nu).\]
+    To make it seem less mysterious we comment that this group has some importance in the more general theory. It is one of the pieces in the ``Langlands decomposition'' of the Archimedean points of a parabolic \(P = MU\), if \(\nu\) is an Archimedean place then,
+    \[P(F_\nu) = A_M M^1(F_\nu)U(F_\nu).\]
     We will not define \(A_M\).
     It also has the property that \(M(\Q)\backslash M(\A)^1\) has finite measure \cite[4.9]{getzIntroductionAutomorphicRepresentations2024}.
 \end{remark}
 The set of \textbf{complex characters} of \(M\),
 \[\mathfrak{a}_M^* \defeq \mathrm{Rat}(M)\tensor_\Z \C,\]
-is isomorphic as \C vector spaces to \(X_M\). If \(Z_{G(\A)}\) is the center of \(G(\A)\) then we also have the space 
+is isomorphic as \C vector spaces to \(X_M\) \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. If \(Z_{G(\A)}\) is the center of \(G(\A)\) then we also have the space 
 \[X_M^G \defeq \Hom_{\textrm{TopGroup}}((M(\A)/M^1)/Z_G, \C^*),\]
 which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G\).
 
@@ -40,7 +40,7 @@ which is characters of \(M(\A)/M^1\) which are also trivial on the center of \(G
                          &\cong \Z.
             \end{aligned}
         \end{equation*}
-        In (1) we have used the universal property of the abelianization \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is abelian. (2) is that the abelianization commutes with direct products. (3) is because \(\Sp\) is a perfect group.
+        In (1) we have used the universal property of the abelianisation \(\mathrm{Ab}(G) = \mathcal{D}(G) \setminus G = [G, G] \setminus G \) because \(\mathbb{G}_m\) is Abelian. (2) is that the abelianisation commutes with direct products. (3) is because \(\Sp\) is a perfect group.
         %https://groupprops.subwiki.org/wiki/Symplectic_group_is_perfect
         %https://mathoverflow.net/questions/35713/abelianization-of-a-semidirect-product
 \end{example}
@@ -55,7 +55,7 @@ then we can think of \(X_M^G\) as being one dimensional automorphic representati
 Then \(\hat{\mathcal{M}}\) decomposes as a disjoint union of its orbits. The orbit \(\mathfrak{P}\) of a cuspidal representation \(\pi_0\) is called a \textbf{cuspidal datum}. By definition \(X_M^G\) acts transitively on any cuspidal datum \(\mathfrak{P}\) but by \cite[II.1]{moeglinSpectralDecompositionEisenstein1995} it also acts freely. Thus \(\mathfrak{P}\) is in bijection with \(X_M^G\). Through this bijection we transmit the complex structure on \(\mathfrak{a}_M^*\) to \(X_M\) then to the quotient \(X_M^G\) and finally to \(\mathfrak{P}\).
 
 Let \(\mathfrak{P}\) be a cuspidal datum with a complex structure as above. Let \(\pi\in \mathfrak{P}\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\), then \(\lambda\in X_M^G\) acts on \(\phi_\pi\) by 
-\[\lambda.\phi_\pi(g) = (\lambda \comp m_P)(g) \phi_\pi(g).\]
+\[\lambda.\phi_\pi(g) = (\lambda \comp m_P)(g) \phi_\pi(g),\]
 which is then an element of \(\mathcal{A}(U(\A)M(k)\backslash G(\A))_{\pi\tensor \lambda}\). Finally we have the \textbf{Eisenstein series} which is defined by the following sum
 \[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi_\pi(\gamma g),\]
 whenever it is convergent. The first thing to note is that for a fixed \(\phi\) there is an open set in \(X_M^G\) and a compact subset of \(G(k)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
@@ -66,7 +66,7 @@ The Eisenstein series is closely related through its constant terms (as discusse
 \[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(k)\cap wU(k)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du,\]
 where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(k)\backslash G(\A))_\pi\).
 
-The Eisenstein series has three inputs and can be considered as a function in different variables, it can be a tedious task to specify the correct domain and codomains for these maps however. If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E(\phi)\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G)\), the set of locally square integrable complex valued functions on \(G(\A)\), given by 
+The Eisenstein series has three inputs and can be considered as a function in different variables. If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E(\phi)\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G)\), the set of locally square integrable complex valued functions on \(G(\A)\), given by 
 \[E(\phi)(\lambda)(g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi(\gamma g), \;\;\; \lambda\in \mathfrak{P},\; g\in G(\A),\]
 where it converges. The space \(L^2_{\mathrm{loc}}(G(\A))\) can be endowed with a Frechet space structure coming from the semi-norms associated to compact sets \(C\subseteq G(\A)\) given by 
 \[\phi \mapsto \norm{\phi|_C}_{L^2} = \int_C |\phi(x)|^2 \mathrm{d}x.\] 
@@ -95,13 +95,10 @@ First we want to look at the index of the sum, we aim to define a map
 		a & b \\ c& d
 	\end{pmatrix}\in \SL_2(\Z)\) we have by Bezout's lemma (applied to the determinant expression) that \(c\) and \(d\) are co-prime. Therefore there is a well defined map 
 	\[P(\Z) \backslash \SL_2(\Z) \to  \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime}\},\]
-	if we denote \(\mathrm{ind}\{c<0\} = \begin{cases}
-		0, & c\geq 0\\
-		1, & c<0
-	\end{cases}\) then it is given by 
+	if we denote the indicator function \(\mathbf{1}(c<0)\) then it is given by 
 	\[\left\{\pm\begin{pmatrix}
 		a+nc & b+nd \\ c & d
-	\end{pmatrix} : n\in \Z\right\}\mapsto (|c|,(-1)^{\mathrm{ind}\{c<0\}}d).\]
+	\end{pmatrix} : n\in \Z\right\}\mapsto (|c|,(-1)^{\mathbf{1}(c<0)}d).\]
 	The point is that \(|mz + n| = |(-m)z + (-n)|\) and so the sum in the Eisenstein series, having a prefactor of a half is really just the sum over \( \{(m,n)\in \Z^2\backslash\{(0,0)\} : m,n \text{ are co-prime \textbf{and} }m\geq 0\}\), which by our argument is in bijection with \(P(\Z) \backslash \SL_2(\Z)\) via \(\omega\).
 	
 
@@ -171,7 +168,7 @@ We want to realize this as the Eisenstein series associated to an automorphic fo
 		a& b\\ c&d
 	\end{pmatrix} = \begin{pmatrix}
 		(a^2 + c^2)^{\frac{1}{2}} & \ast \\ & (a^2 + c^2)^{-\frac{1}{2}}
-	\end{pmatrix} .\]
+	\end{pmatrix}k .\]
 	With this explicit Iwasawa decomposition the proof is finished with some elementary matrix manipulation, this is done very explicitly in \cite[3.3]{garrettTransitionEisensteinSeries2016}.
 }
 

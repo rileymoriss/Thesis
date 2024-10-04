@@ -1,21 +1,20 @@
-There are different definitions of the words automorphic forms floating around, here we fix one and then explain how they generalize the classical modular forms.
 
-The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maas form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
+The story starts with the classical modular forms, or functions on the upper half plane that satisfy some invariance conditions and differential equations. This evolves into the notions of Maass form on symmetric spaces and eventually reaches its apotheosis in the concept of automorphic form that we will present here. 
 
 We will present two notions of automorphic form here. In the literature they are both called ``automorphic forms'' however here we will distinguish those that are defined only on the Archimedean points as ``Archimedean automorphic forms'' for clarity.
 
-The first natural question is if there is a special case of automorphic forms which yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however it gives the space of Maas forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}. We explain modular forms as Archimedean automorphic forms as we think it is where the connection is clearest. We will give an example of modular forms as adelic automorphic forms when we come to the Eisenstein series in section \ref{sec:classic-eisenstein}.
+The first natural question is if there is a special case of automorphic forms which yield modular forms. In fact no, the space of automorphic forms is larger than just modular forms, however, it gives the space of Maass forms (or modular and Maas forms, depending on convention). This is well covered in the literature \cite{emertonCLASSICALMODULARFORMS}\cite[3.2]{bumpAutomorphicFormsRepresentations1997}\cite{booherVIEWINGMODULARFORMS}\cite{garrettTransitionEisensteinSeries2016}. We explain modular forms as Archimedean automorphic forms as we think it is where the connection is clearest. We will give an example of modular forms as adelic automorphic forms when we come to the Eisenstein series in section \ref{sec:classic-eisenstein}.
 
 
 
 
 \section{Archimedean Automorphic Form}
-Fix a number field \(F\) and a classical group \(G\) defined over \(F\). Let \(\infty\) denote the set of Archimedean places. We denote \(\A_\infty = F_\infty \defeq \prod_{\nu\in\infty} F_\nu\) and note that \(G(F_\infty) \cong \prod_{\nu\in\infty}G(F_\nu)\). Consider \(\nu\in \infty\) one such Archimedean place, then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textbf{smooth}  if it is smooth in the sense of manifolds. The collection of such smooth functions on \(G(F_\infty)\) will be denoted \(C^\infty(G(F_\infty))\).
+Fix a number field \(F\) and a classical group \(G\) defined over \(F\). Let \(\infty\) denote the set of Archimedean places. We denote \(\A_\infty = F_\infty \defeq \prod_{\nu\in\infty} F_\nu\) and note that \(G(F_\infty) \cong \prod_{\nu\in\infty}G(F_\nu)\). We denote \(\A_f\) the finite adeles. Consider \(\nu\in \infty\) one such Archimedean place, then \(F_\nu\) is either \R or \C. In particular (the analytification of) \(G(F_\nu)\) is a Lie group and we call a function, \(\phi: G(F_\nu) \to \C\), \textbf{smooth}  if it is smooth in the sense of manifolds. The collection of such smooth functions on \(G(F_\infty)\) will be denoted \(C^\infty(G(F_\infty))\).
 
     Because \(G(F_\infty)\) is a Lie group we know how to define its Lie algebra and we now denote \(Z(\mathfrak{g})\) the center of the \textit{universal enveloping algebra} of the \textit{complexification} of \(\mathfrak{g}\), it would be more reasonable to use \(Z(\mathcal{U}(\mathfrak{g}_{\C}))\) but that is too cumbersome so we follow the tradition. 
     A vector in a \(Z(\mathfrak{g})\)-module \(\phi\in V\) is called \(Z(\mathfrak{g})\)-\textbf{finite} if the space \(Z(\mathfrak{g})\phi\) is finite dimensional. 
 
-	Let \(K_\infty\subseteq  G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\)-module is \(K_\infty\) \textbf{finite} if its orbit is a finite dimensional vector space space (we think here of \(\C[K_\infty]\)-modules).
+	Let \(K_\infty\subseteq  G(F_\infty)\) be a maximal compact subgroup. Then again an element of a \(K_\infty\)-module is \(K_\infty\) \textbf{finite} if its orbit is a finite dimensional vector space (we think here of \(\C[K_\infty]\)-modules).
 
 	To define automorphic forms we look at the representation \(C^\infty(G(F_\infty))\) with the right regular action of \(K_\infty\), i.e. \(g.f(x) = f(xg)\).  In particular the \(Z(\mathfrak{g})\) module structure is induced from the action of \(\mathfrak{g}\) on \(C^\infty(G(F_\infty))\) by \label{lie_algebra_action}
 	\[z.F(g) = \Dif{}{t}F(ge^{tz})|_{t=0}.\] 
@@ -30,7 +29,7 @@ Fix a number field \(F\) and a classical group \(G\) defined over \(F\). Let \(\
 	This is taking the maximum of the \(2n\times 2n \times |\infty| \) three dimensional matrix. 
 
 	\begin{remark}
-		One can define norms on \(G(\A)\) via the linearisation of such groups, i.e. via their representations. Concretely if \(\sigma\) is a finite dimensional complex representation on some Hilbert space with a \(K_\infty\) invariant inner product and \(\ast\) is the adjoint matrix with respect to this Hilbert space structure then a \textbf{norm} on \(G(\A)\) is a function of the form
+		One can define norms on \(G(\A)\) via the linearisation of such groups, i.e. their representations. Concretely if \(\sigma\) is a finite dimensional complex representation on some Hilbert space with a \(K_\infty\) invariant inner product and \(\ast\) is the adjoint matrix with respect to this Hilbert space structure then a \textbf{norm} on \(G(\A)\) is a function of the form
 		\[g\mapsto \big(\mathrm{tr }\; \sigma(g)^*\sigma(g)\big)^{\frac{1}{2}}.\]
 		This moderate growth condition is then equivalent to some norm \(\norm{ - }\) existing on \(G(F_\infty)\) such that 
 		\[|\phi(x)| \leq C\norm{x}^n,\]
@@ -47,7 +46,7 @@ Fix a number field \(F\) and a classical group \(G\) defined over \(F\). Let \(\
 \section{Adelic Automorphic Form}
 Here we follow \cite[I.2.17]{moeglinSpectralDecompositionEisenstein1995} and \cite[1.2]{borelAutomorphicFormsRepresentations1979}. Fix a Borel \(B\subseteq G\) and a standard parabolic \(B\subseteq P \subseteq G\) with a standard Levi decomposition \(P = MU\). We let \(K\) be a maximal compact subgroup of \(G(\A)\) that is in good position as in section \ref{max_compact_subgroup}.
 
-For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: G(F_\nu) \to \C\) is smooth if it is locally constant on \(G(F_\nu)\), in the Hausdorff topology. Likewise we say that \(f: G(\A_f) \to \C\) is smooth if it is locally constant and we denote the set of such smooth functions \(C^\infty(G(\A_f))\).
+We say that \(f: G(\A_f) \to \C\) is smooth if it is locally constant in the Hausdorff topology and we denote the set of such smooth functions \(C^\infty(G(\A_f))\).
 
 	Thus for the full adeles we have the notion of smooth as an element of the tensor product,
 	\[C^\infty(\mathbb{A}_F) \defeq   C^\infty(G(\mathbb{A}_f))   \otimes   C^\infty(G(F_\infty)).\]
@@ -55,7 +54,7 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 
 	We still consider \(Z(\mathfrak{g})\) to be the center of the universal enveloping algebra of the complexified Lie algebra at the infinite places, exactly as before. We define an action by linearly extending
     \[z.(f\tensor g) = f\tensor (z.g),\]
-    i.e. it acts on the archimedean places as in the setting of Archimedean automorphic forms. 
+    i.e. it acts on the Archimedean places as in the setting of Archimedean automorphic forms. 
 	
 	The definition of moderate growth carries over verbatim, however we change the set of places multiplied over to be all of them now.
     
@@ -129,7 +128,7 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 			\cos\theta & -\sin\theta \\
 			\sin\theta & \cos\theta
 		\end{pmatrix} : \theta \in [0, 2\pi)\right\} = \SO_2(\R).\]
-		One then has to check that this is all continuous. 
+
 	}
     \begin{remark}
     	This can be beefed up to an isomorphism of complex analytic spaces. 
@@ -180,10 +179,9 @@ For \(v\notin \infty\) a non-Archimedean place then we say that a function \(f: 
 	\end{Lemma}
 	\proofbar{ Only a sketch. 
 
-		The center of the universal enveloping algebra of the complexified Lie algebra is generated by the Casimir operators. From \cite{garrettInvariantDifferentialOperators2010} we know that the casimir is 
-		\[\Omega = \frac{1}{2}H^2 + XY + YX.\]
-		We have the coordinates on \(\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}\SO_2(\R)=\SL_2(\R)\) from \cite[1.19]{bumpAutomorphicFormsRepresentations1997} in which 
-		 the casimir acts as the differential operator
+		The center of the universal enveloping algebra of the complexified Lie algebra is generated by the Casimir operators. We have the coordinates on \(\SL_2(\R) \) from \cite[1.19]{bumpAutomorphicFormsRepresentations1997} 
+		\[\left\{\begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix} : x,y\in \R, y\neq 0\right\}\SO_2(\R),  \]  in which 
+		in which the Casimir acts as the differential operator
 		\[\Delta = y^2\left(\left(\Dif{}{x}\right)^2 +\left(\Dif{}{y}\right)^2\right) - y\Dif{^2}{x\partial \theta},\] 
 		\cite[1.29,Prop 2.2.5]{bumpAutomorphicFormsRepresentations1997}. Now we claim that F is an eigenfunction for this operator. 
 		An element \((x,y,\theta) \defeq \begin{pmatrix}y^{1/2} & x y^{-1/2}\\ & y^{-1/2}\end{pmatrix}\kappa_\theta \in \SL_2(\R)\) acts on \(i\) by sending it to \(x+ iy\) (elementary computation). The bottom row of the product is \(y^{-1/2}\sin\theta ;y^{-1/2}\cos\theta \) which results in 

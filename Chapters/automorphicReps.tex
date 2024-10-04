@@ -1,4 +1,4 @@
-The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and essential for the setup in \cite{jiangPolesCertainResidual2013}. In particular we want to draw attention some of the quirks of the category of automorphic representations. 
+The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and essential for the setup in \cite{jiangPolesCertainResidual2013}. In particular we want to draw attention to some of the quirks of the category of automorphic representations. 
 
 \section{Local Representation Theory}
 Recall that in the representation theory of finite groups over \C there is really only one important representation, that is the regular representation i.e. the \(\C[G]\) module \(\C[G]\). This is important for two reasons, the first is that it is always a priori defined uniformly for all groups, the second is that it decomposes into a direct sum over all irreducible modules \cite[Ch. 2.4 Cor. 2 ]{serreLinearRepresentationsFinite1996}.
@@ -62,9 +62,9 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
         \item \(V\) decomposes into a countable direct sum of finite dimensional \(K\) representations.
         \item The representations should be compatible: For all \(X \in \mathfrak{k}\) and \(v\in V\)
         \[\tilde{\pi}(X)(v) = \frac{\mathrm{d}}{\mathrm{d}t}\pi(e^{tX})(v)|_{t=0} = \lim_{t\to 0}\frac{\pi(e^{tX})(v) - v}{t}.\]
-        In particular the right hand limit exists
+        In particular the right hand limit exists.
         \item And compatible with the adjoint representation: For \(k\in K\) and \(X\in \mathfrak{g}\) 
-         \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(Ad(k)(X))(v).\]
+         \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(\mathrm{Ad}(k)(X))(v).\]
     \end{enumerate}
 \end{definition}
 
@@ -101,10 +101,10 @@ Finally the conditions for these representations to be a \((\mathfrak{g}, K_\inf
 \section{Automorphic Representations}
 Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then a subquotient of this representation.
 \begin{remark}
-    Some authors will require that representation is by definition an \textit{irreducible} subquotient.
+    Some authors will require that an automorphic representation is by definition an \textit{irreducible} subquotient.
 \end{remark}
 \begin{remark}
-    We really need a set theoretic definition here. The quotient of these modules cannot be considered up to isomorphism of \((\mathfrak{g}, K)\)-modules but must be the classical set theoretic realisation of this object, defined as equivalence classes of elements of the module. This is to say if one were to think of the category of automorphic representations it is \textit{much smaller} than the category of \(G(\A_f)\times (\mathfrak{g}, K)\)-modules (in particular the cardinality of the category of automorphic representations is bounded, whilst there is a proper class of \(G(\A_f)\) -modules). The reason is that we will want to talk about the automorphic forms themselves, and consider their properties.
+    We really need a set theoretic definition here. The quotient of these modules cannot be considered up to isomorphism of \((\mathfrak{g}, K)\)-modules but must be the classical set theoretic realisation of this object, defined as equivalence classes of elements of the module. This is to say if one were to think of the category of automorphic representations it is \textit{much smaller} than the category of \(G(\A_f)\times (\mathfrak{g}, K)\)-modules (in particular the cardinality of the category of automorphic representations is bounded, whilst there is a proper class of \(G(\A_f)\)-modules). The reason is that we will want to talk about the automorphic forms themselves, and consider their properties.
 \end{remark}
 
 \begin{remark}
@@ -112,7 +112,7 @@ Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \
 \end{remark}
 
 \begin{example}
-    It is very hard to really write down something explicit. One thing that we can do is take a modular form \(f\). Then we know how to associate a concrete automorphic form \(\tilde{f}\). To this (or any fixed automorphic form) we have an automorphic representation given by acting on this vector:
+    It is very hard to really write down something explicit. One thing that we can do is take a modular form \(f\). Then we know how to associate a concrete automorphic form to it \(\tilde{f}\). To any fixed automorphic form we have an automorphic representation given by taking the span of its orbit
     \[\mathrm{span}_\C \Biggl\{\big(G(\A_f)\times (\mathfrak{g}, K)\big).\tilde{f}\Biggr\} \subseteq \mathcal{A}(U(\A)M(F)\backslash G(\A)).\]
 \end{example}
 

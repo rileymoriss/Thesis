@@ -4,9 +4,9 @@ Our goal here is to exposit and survey the work in papers such as \cite{brennerN
 \cite{brennerNotesAnalyticProperties2009} gave an analysis of the residual poles of Eisenstein series attached to \(\Sp_{2n}\), there were some minor errors that were corrected in \cite{jiangPolesCertainResidual2013} where they give essentially the same proof; theirs however works for the other classical groups. To show the pattern we will focus on the case of \(\Sp_{2n}\), as a group defined over \(F\) a number field. Theirs is a proof by induction and we will try to give the details of the base case. 
 
 \section{Residual Eisenstein Series}
-So for the rest of the chapter we will fix an \(n\in \N\), \(G_n = \Sp_{2n}\) and the Borel of upper triangular matrices in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \(1\leq r,m \leq n\) and \(r,m\in \Z\). Then as we saw in \ref{maximal_parabolic} there corresponds a maximal standard (proper) parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rU_r\), such that the Levi component is 
+So for the rest of the chapter we will fix an \(n\in \N\), \(G_n = \Sp_{2n}\) and the Borel of upper triangular matrices in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \(1\leq r,m \leq n\) and \(r,m\in \Z\). Then as we saw in section \ref{maximal_parabolic} there corresponds a maximal standard (proper) parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rU_r\), such that the Levi component is 
 \[\GL_r\times \Sp_{2m}. \]
-As we saw in \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). We fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Now we take an irreducible \textit{generic} cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), then the tensor product \(\tau \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
+As we saw in section \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). We fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Now we take an irreducible \textit{generic} cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), then the tensor product \(\tau \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
 \[\phi\in \mathcal{A}(U_r(\A)M_r(F)\setminus \Sp_{2n}(\A) )_{\tau\tensor \sigma},\] 
 then we have the Eisenstein series
 \[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g),\]
@@ -18,30 +18,10 @@ This is the base case of the setup in \cite{jiangPolesCertainResidual2013}.
 \end{remark}
 
 
-\begin{comment}
-    \section{Our Results}
-We consider an almost identical setup but we deal with the metaplectic cover of \(\Sp_{2n}\), again over a number field \(F\), \(\Mp_{2n}\)\todo[inline]{reference the section I discuss this in.}. We again fix the Borel of upper triangular matricies, consider partitions of \(n = r+m\) and look at maximal standard parabolics of \(\Sp_{2n}\), \(P_r = M_rN_r\) such that 
-\[M_r = \GL_r \times \Sp_{2m}\]
-then if \(r = ab\) we still have that \(\Delta(\tau, b)\tensor \sigma\), for \(\tau\) irreducible unitary cuspidal automorphic representation of \(\GL_a\) and \(\sigma\) irreducible generic cuspidal automorphic representation of \(\Sp_{2m}\), is a representation of \(M_r\). The difference is in the parabolic induction as we now consider 
-\[\phi\in \mathcal{A}(N_r(\A)M_r(F)\setminus \Mp_{2n}(\A) )_{\Delta(\tau, b)\tensor \sigma}\] 
-and then the Eisenstein series is defined in the same way
-\[E(\phi, s)(g) = \sum_{\gamma\in P_r(F) \setminus \Sp_{2n}(F)} s.\phi(\gamma g)\]
-for \(g\in \Sp_{2n}(F) \setminus \Mp_{2n}(\A)\) and \(s\in \C \cong X^{\Mp_{2n}}_{M_r}\).
-
-\begin{Lemma}
-When \(b = 1\) we have the constant term
-    \[E(\phi,s)(g)_{P_a} = \phi(g)_{P_a} + M(\omega, \tau\tensor\sigma)(\phi)(g)\]
-\end{Lemma}
-
-\todo[inline]{fill in here as theorems or whatever anything that I end up actually checking....}
-
-\end{comment}
-
-
 \section{The Constant Term}
-So far we only know how to do one thing with such Eisenstein series and that is compute their constant term. We will compute the constant term along the maximal parabolic \(P_r = M_rU_r\) becuase by \cite[II.1.7 (ii)]{moeglinSpectralDecompositionEisenstein1995} the others are zero.
+So far we only know how to do one thing with such Eisenstein series and that is compute their constant term. We will compute the constant term along the maximal parabolic \(P_r = M_rU_r\) because by \cite[II.1.7 (ii)]{moeglinSpectralDecompositionEisenstein1995} the others are zero.
 
-By our earlier calculations \ref{const_eisenstein}, the fact that the tensor of cuspidal representations is cuspidal (elementary) and \cite{jiangPolesCertainResidual2013} we know that 
+By our earlier calculations in section \ref{const_eisenstein}, the fact that the tensor of cuspidal representations is cuspidal (elementary) and \cite{jiangPolesCertainResidual2013} we know that 
      \[E(\phi, s)_{P_r} = \sum_{ w} \sum_{m'} \int_{U_r(F)\cap wP_r(F)w\inv \setminus U_r(\A)} \lambda.\phi( w\inv um' x)  du.\] 
      By \cite{jiangPolesCertainResidual2013} the inner integral vanishes for all \(w\neq id, \omega\) where \(\omega\in W_{\Sp_{2n}}\), this element is computed explicitly in \cite{ginzburgDescentMapAutomorphic2011} however it is not needed here. Hence the first sum becomes over two elements and we have 
 
@@ -94,7 +74,7 @@ First the identity term simplifies
      \begin{Lemma}
         The Eisenstein series above has pole at \(s\) for \(\mathrm{Re}(s)\geq 0\) if and only if \(r(w,s)\) has a pole at \(s\).
      \end{Lemma}
-     The final step is then to use the known properties of \(L\)-functions to conclude when our \(r\)-factor will have poles and of what order those poles will be. \cite{jiangPolesCertainResidual2013} tells us that \(L(s, \tau\times \sigma)\) and \(L(s, \tau, \wedge^2)\) are both holomorphic except for posible simple poles at \(s=0, 1\) and non-zero for \(\mathrm{Re}(s)\geq 1\). 
+     The final step is then to use the known properties of \(L\)-functions to conclude when our \(r\)-factor will have poles and of what order those poles will be. \cite{jiangPolesCertainResidual2013} tells us that \(L(s, \tau\times \sigma)\) and \(L(s, \tau, \wedge^2)\) are both holomorphic except for possible simple poles at \(s=0, 1\) and non-zero for \(\mathrm{Re}(s)\geq 1\). 
      
      The denominator is holomorphic and non-zero for \(\mathrm{Re}(s)>0\).
 	 The numerator is holomorphic except possible poles at \(s= 1\) or \(s=1/2\). 
@@ -102,7 +82,7 @@ First the identity term simplifies
 	 Moreover we know that these poles will occur only when they occur in the respective L-functions. If \(s=0\) then the simple poles on the numerator cancel with those on the denominator. This is summarised in the following:
 
     \begin{Theorem}[\cite{jiangPolesCertainResidual2013}, 4.1]
-        Let \(\tau\) be an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Let \(\sigma\) be an irreducible generic cuspidal automrophic representation of \(\Sp_{2m}\). The Eisenstein series \(E(\phi, s)\) is holomorphic for all \(s\in \C\) with \(\mathrm{Re}(s)\geq 0\) except at \(s = \frac{1}{2}\) and \(s= 1\) where it has possible simple poles. Moreover 
+        Let \(\tau\) be an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Let \(\sigma\) be an irreducible generic cuspidal automorphic representation of \(\Sp_{2m}\). The Eisenstein series \(E(\phi, s)\) is holomorphic for all \(s\in \C\) with \(\mathrm{Re}(s)\geq 0\) except at \(s = \frac{1}{2}\) and \(s= 1\) where it has possible simple poles. Moreover 
        	\begin{itemize}
        		\item It has a simple pole at \(s= \frac{1}{2}\) if and only if \(L(s, \tau, \wedge^2)\) has a pole at \(s=1\) and \(L(\frac{1}{2}, \tau\times \sigma)\neq 0\)
        		\item It has a simple pole at \(s=1\) if and only if \(L(s, \tau\time \sigma)\) has a pole at \(s=1\).

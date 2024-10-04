@@ -1,12 +1,12 @@
 \label{ch:sigel-phi}
-In the last chapter we saw some general computations around constant terms of automorphic forms. This chapter we continue with more computations, however we attempt to relate the constant term to the classical setting. This should be understood as a continuation of the example of modular forms as archimedean automorphic forms, as here we investigate the constant term in this setting in order to gain similar intuition. Specifically we will relate the constant term to the Fourier series constant term and the Siegel Phi operator. 
+In the last chapter we saw some general computations around constant terms of automorphic forms. This chapter we continue with more computations, however we attempt to relate the constant term to the classical setting. This should be understood as a continuation of the example of modular forms as Archimedean automorphic forms, as here we investigate the constant term in this setting in order to gain similar intuition. Specifically we will relate the constant term to the Fourier series constant term and the Siegel Phi operator. 
 
 We thank Chengjing Zhang for showing us this example, and present it here in detail because we cannot find it in the literature.
 
 
 
 \section{Constant Terms}
-Let \(G\) be a classical group over a number field \(\Q\). For an archimedean automorphic form \(f: G(\R) \to \C\) its \textbf{constant term } along a parabolic of G, \(P=MN\subseteq G\), is defined to be \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
+Let \(G\) be a classical group over a number field \(\Q\). For an Archimedean automorphic form \(f: G(\R) \to \C\) its \textbf{constant term } along a parabolic of G, \(P=MN\subseteq G\), is defined to be \cite[8.6]{getzIntroductionAutomorphicRepresentations2024}
 \[f(x)_P = \int_{N(\Z)\backslash N(\R)}f(xn) \mathrm{d}n.\]
 To effectively compute constant terms we will routinely use the following two lemmas.
 
@@ -22,13 +22,13 @@ To effectively compute constant terms we will routinely use the following two le
 Integrating trivial characters gives the volume of the measure space which we typically normalise to be one.
 
 \begin{Theorem}[Unfolding, \cite{garrettModernAnalysisAutomorphic2018} 5.2, \cite{follandCourseAbstractHarmonic2016a} Thm 2.49]
-	Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure (iff their modular functions agree on H) then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
+	Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
 	\[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg.\]
 \end{Theorem}
 Note that this quotient may not be a group, because H is not required to be normal. The use of this lemma is called \textbf{unfolding} the integral.
 
 \section{Siegel Modular Forms}
-Following \cite{bruinier123ModularForms2008}. Recall the \textbf{Siegal upper half plane} of ``genus" \(g\in \N\) is
+Following \cite{bruinier123ModularForms2008}. Recall the \textbf{Siegel upper half plane} of ``genus" \(g\in \N\) is
 \begin{equation*}
 	\begin{aligned}
 		\mathcal{H}_g &\defeq \{\tau \in \mathrm{M}_{g\times g}(\C) : \tau \text{ is symmetric and has positive definite imaginary part}\} \\
@@ -48,7 +48,7 @@ We say that a holomorphic function \(f: \mathcal{H}_g \to \C\) is a (classical)\
 \[f(\gamma.\tau) = \det(C\tau + D)^kf(\tau),\]
 with the extra condition that if \(g = 1\) it must be holomorphic at \(\infty\). Because \(\Sp_2 = \SL_2\) this is a strict generalisation of an (elliptic) modular form.
 
-The space of Siegel modular forms of weight \(k\) and genus g is denoted \(\mathcal{M}_k(\Sp_{2g}(\Z))\). There is a useful operator know as the \textbf{Siegel Phi Operator} which allows you to lift known modular forms from lower genus to higher genus \cite[5]{bruinier123ModularForms2008}
+The space of Siegel modular forms of weight \(k\) and genus g is denoted \(\mathcal{M}_k(\Sp_{2g}(\Z))\). There is a useful operator know as the \textbf{Siegel Phi Operator} which allows one to lift known modular forms from lower genus to higher genus \cite[5]{bruinier123ModularForms2008}
 \[\mathcal{M}_k(\Sp_{2g}(\Z)) \xrightarrow{\Phi} \mathcal{M}_{k}(\Sp_{2(g-1)}(\Z)),\]
 defined by the limit for \(\tau\in \mathcal{H}_{g-1}\)
 \[\Phi(f)(\tau) \defeq \lim_{t\to \infty} f\begin{pmatrix}
@@ -80,8 +80,7 @@ where \(a,b,c,d\) are \(g\times g\) matrices such that \(\bigl(\begin{smallmatri
 This shows that perhaps the correct generalisation of the Siegel Phi function is just the constant term that we all know and love. We could also attempt to expand this to Siegel modular forms that are vector valued or not of full level. 
 
 The only other work on generalising the Siegel \(\Phi\) operator that we could find appears in \cite{grenierAnalogueSiegelsFOperator1992}. 
-Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of ``automorphic forms'' in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definite real matrices \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely his \cite[Thm. 2]{grenierAnalogueSiegelsFOperator1992} shows that it sends an automorphic form for \(
-GL_n(\Z)\) to an automorphic form for \(\GL_{n-1}(\Z)\). The point is that the \(\Phi\) operator can be defined in the generality of symmetric spaces and Grenier shows that at least in one other case it still preserves the relevant notion of automorphic form. This suggests two things that would be interesting to investigate; using the classification of symmetric spaces is it possible to give a uniform definition of the \(\Phi\) operator following Grenier and does this definition agree with the constant term in the way that the Siegel \(\Phi\) operator does. With my limited knowledge of symmetric spaces this seems to be very tractable.
+Grenier formulates the \(\Phi\) operator in the language of symmetric spaces \cite[Ch. 2]{terrasHarmonicAnalysisSymmetric2016} and then shows that the analogous definition in the case of ``automorphic forms'' in the sense of the symmetric space \(\mathscr{P}_n/\GL_n(\Z)\) of symmetric positive definite real matrices \cite[1.5.1]{terrasHarmonicAnalysisSymmetric2016} behaves in the same way. Namely \cite[Thm. 2]{grenierAnalogueSiegelsFOperator1992} shows that it sends an automorphic form for \(GL_n(\Z)\) to an automorphic form for \(\GL_{n-1}(\Z)\). The point is that the \(\Phi\) operator can be defined in the generality of symmetric spaces and Grenier shows that at least in one other case it still preserves the relevant notion of automorphic form. This suggests two things that would be interesting to investigate; using the classification of symmetric spaces is it possible to give a uniform definition of the \(\Phi\) operator following Grenier and does this definition agree with the constant term in the way that the Siegel \(\Phi\) operator does. With my limited knowledge of symmetric spaces this seems to be very tractable.
 
 \subsection{Modular Form Case}
 The base case is very instructive, it deals with modular forms. So consider \(f\) a (elliptic) modular form of full level and weight k, which has a Fourier expansion given by 
@@ -91,7 +90,7 @@ In section \ref{sec:modular-forms} we verified that
 	a & b\\
 	c & d
 \end{pmatrix} = (ci+d)^{-k} f\Bigl(\frac{ai+b}{ci+d}\Bigr),\]
-is an automorphic form on \(\Sp_2\). The only non-trivial parabolic P is the one of upper triangular matricies, with Levi and unipotant given respectively 
+is an automorphic form on \(\Sp_2\). The only non-trivial parabolic P is the one of upper triangular matrices, with Levi and unipotant given respectively 
 \[M = \begin{pmatrix} m & 0\\ 0 & m^{-1}\end{pmatrix}\cong \GL_1 , \;\;\; N = \begin{pmatrix} 1 & b\\ 0 & 1\end{pmatrix} \cong \mathbb{G}_a,\]
 along which we can now compute the constant term 
 \begin{equation*}
@@ -152,7 +151,7 @@ because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\ti
 	\end{pmatrix}i+ \begin{pmatrix}
 		d & kA^{-t} \\
 		0 & A^{-t}
-	\end{pmatrix} \right)^{-k} \cdot \\
+	\end{pmatrix} \right)^{-k} \times \\
 	&f\left(         \left(\begin{pmatrix}
 		a & 0\\
 		-k^ta + h^tc & A
@@ -169,7 +168,7 @@ because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\ti
 	&= \det\left( \begin{pmatrix}
 		ic + d & kA^{-t} \\
 		0 & A^{-t}
-	\end{pmatrix}\right)^{-k} \cdot \\
+	\end{pmatrix}\right)^{-k} \times \\
 	&f\left( \begin{pmatrix}
 		ia + b &  hA^{-t}\\
 		-k^t(ia +b) + h^t(d + ic) & iA + sA^{-t} + h^tkA^{-t}
@@ -177,7 +176,7 @@ because \(a,b,c,d \in \mathrm{Mat}_{(g-r)\times (g-r)}, A \in \mathrm{Mat}_{r\ti
 		ic + d & kA^{-t} \\
 		0 & A^{-t}
 	\end{pmatrix}\inv      \right) \\
-	&=\left(\frac{\det(ic + d)}{\det(A)}\right)^{-k} \cdot \\ &f\left( \begin{pmatrix}
+	&=\left(\frac{\det(ic + d)}{\det(A)}\right)^{-k} \times \\ &f\left( \begin{pmatrix}
 		ia + b &  hA^{-t}\\
 		-k^t(ia +b) + h^t(d + ic) & iA + sA^{-t} + h^tkA^{-t}
 	\end{pmatrix}   \begin{pmatrix}(ci+d)^{-1} & -(ci+d)^{-1} k\\ 0 & A^t \end{pmatrix} \right) \\
@@ -191,7 +190,7 @@ So we have shown that
 	&= \left(\frac{\det(A)}{\det(ic + d)}\right)^{k} \intof{[H_r]}{\intof{[H_r]}{\intof{[\mathrm{Sym}_{g-r}]}{  f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}   }{s}}{h}}{k}.\\
 \end{align*}
 
-Again lets focus on this integrand \(f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix}\) and compute its Fourier expansion, see \cite[3.4]{bruinier123ModularForms2008}. Recall that a symmetric matrix \(n\in \GL_g(\Q)\) is called half integral if \(2n\) is integral with even diagonal entries, then a Siegel modular form has a Fourier expansion of the form
+Again lets focus on this integrand \[f\begin{pmatrix} \tau & -\tau k + h\\ -k^t \tau + h^t & k^t \tau k + A A^t i + s \end{pmatrix},\] and compute its Fourier expansion, see \cite[3.4]{bruinier123ModularForms2008}. Recall that a symmetric matrix \(n\in \GL_g(\Q)\) is called half integral if \(2n\) is integral with even diagonal entries, then a Siegel modular form has a Fourier expansion of the form
 \[f(z) = \sum_{n \text{ half integral}}a(n) e^{2\pi i \mathrm{Tr}(nz)} .\]
 First the space of half integral \(g\times g\) matrices, \(\mathrm{HI}_g\), decomposes as a direct sum via the (additive) group isomorphism
 \[ \mathrm{HI}_{g-r} \oplus \tfrac{ 1}{ 2} \mathrm{Mat}_{ r\times (g-r)}(\Z) \oplus \mathrm{HI}_{r}\to\mathrm{HI}_g, \qquad (n, m, l)\mapsto \begin{pmatrix} n & m\\ m^t & l \end{pmatrix}, \]

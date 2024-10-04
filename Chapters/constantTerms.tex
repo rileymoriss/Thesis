@@ -1,6 +1,6 @@
 This section is a discussion of the adelic constant term, especially its application to the Eisenstein series. 
 
-Through constant terms we can define cusp forms which play a central role in the theory of automorphic forms. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and they form the ``base case'' for the proof of the spectral decomposition in \cite{moeglinSpectralDecompositionEisenstein1995}.
+Through constant terms we can define cusp forms which play a central role in the theory of automorphic forms. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and they form the ``base case'' for proofs, for example the spectral decomposition in \cite{moeglinSpectralDecompositionEisenstein1995}.
 
 Constant terms preserve analytic properties whilst sometimes reducing the functions to more tractable forms. This is how they will be used in our calculation of poles of Eisenstein series.\label{constant_terms}
 
@@ -36,7 +36,7 @@ Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus G(\A)\) for \(P = MU
       
 
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
-This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}, although for an amateur the detail is lacking in other presentations. Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
+This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
 
 Also note that we assume the computations are taking place in the domain of \(\mathfrak{P}\) on which the Eisenstein series is given by the sum formula. By the uniqueness of meromorphic continuation taking constant terms commutes with meromorphic continuation.
 
@@ -115,9 +115,11 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
      Now look at the inner integral here more closely 
     \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( u_1 u_2 w\inv m' x)  du_1 du_2,\]
     applying Lemma \ref{lem:6} we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m u_2 w\inv m' x)\). 
-    \begin{Lemma}
+\begin{comment}
+	    \begin{Lemma}
         \(u_2 w\inv m' x \in K\) with variables as above.
     \end{Lemma}
+\end{comment}
     This was in complete generality. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesn't exist (its over a point).
 
     \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}\label{constant_conjugate_levi}
