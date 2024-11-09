@@ -23,7 +23,7 @@ So far we only know how to do one thing with such Eisenstein series and that is 
 
 By our earlier calculations in section \ref{const_eisenstein}, the fact that the tensor of cuspidal representations is cuspidal (elementary) and \cite{jiangPolesCertainResidual2013} we know that 
      \[E(\phi, s)_{P_r} = \sum_{ w} \sum_{m'} \int_{U_r(F)\cap wP_r(F)w\inv \setminus U_r(\A)} \lambda.\phi( w\inv um' x)  du.\] 
-     By \cite{jiangPolesCertainResidual2013} the inner integral vanishes for all \(w\neq id, \omega\) where \(\omega\in W_{\Sp_{2n}}\), this element is computed explicitly in \cite{ginzburgDescentMapAutomorphic2011} however it is not needed here. Hence the first sum becomes over two elements and we have 
+     By \cite{jiangPolesCertainResidual2013} the inner integral vanishes for all \(w\neq id, \omega\)\todo{make this explicit.} where \(\omega\in W_{\Sp_{2n}}\), this element is computed explicitly in \cite{ginzburgDescentMapAutomorphic2011} however it is not needed here. Hence the first sum becomes over two elements and we have 
 
      \[E(\phi, s)_{P_r} = E(\phi, s)_{P_r, id} + E(\phi, s)_{P_r, \omega},\]
      where 
@@ -39,6 +39,8 @@ First the identity term simplifies
             &= s.\phi(x)_{P_r}.
         \end{aligned}
      \end{equation*}
+     Note that because \(\phi\) was an automorphic form that is \(U(\A)\) invariant we have in particular that 
+     \[s.\phi(x)_{P_r} = s.\phi(x).\]
 
      Considering now the \(\omega\) term 
      \[E(\phi, s)_{P_r, \omega}(x) =  \sum_{m'\in M_r(F)\cap \omega P_r(F)\omega\inv\setminus M_r(F)} \int_{U_r(F)\cap \omega P_r(F)\omega\inv \setminus U_r(\A)} s.\phi( \omega\inv um' x)  du.\]
@@ -47,7 +49,7 @@ First the identity term simplifies
      \[E(\phi, s)_{P_r, \omega}(x) = \int_{U_r(F)\cap \omega P_r(F)\omega\inv \setminus U_r(\A)} \phi( \omega\inv u x)  du = M(\omega, s)(\phi)(x),\]
      because we took the constant term along the same parabolic as the definition of the Eisenstein series we know that the Levis are (the same) conjugate.
     Thus we have shown that 
-    \[E(\phi, s)_{P_r} = s.\phi_{P_r} + M(\omega, s )(\phi).\]
+    \[E(\phi, s)_{P_r} = s.\phi + M(\omega, s )(\phi).\]
     
     Because \(\phi\) is an automorphic form it has no poles and so we have shown the following:
     \begin{Lemma}[Base case of \cite{jiangPolesCertainResidual2013}, 2.1]

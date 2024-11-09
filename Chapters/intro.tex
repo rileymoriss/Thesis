@@ -1,12 +1,10 @@
 \section*{Motivation}
-The goal of this thesis is to exposit some of the results in \cite{jiangPolesCertainResidual2013}. In a nut shell, the Eisenstein series is a key tool in the Langlands program and the paper \cite{jiangPolesCertainResidual2013} provides an exemplar of why. It demonstrates the connection between L-functions and the constant terms of Eisenstein series and demonstrates many of the key techniques in the analysis of Eisenstein series. 
+The goal of this thesis is to exposit some of the results in the theory of Eisenstein series and give some example computations. This introduction will attempt to motivate these computations, by contextualising them historically and elaborating on some of the conjectures that form modern work. 
 
-Here we attempt to put down what we understand of the ``big picture''. It could be argued that we spent too much time trying to understand the motivation for the results in \cite{jiangPolesCertainResidual2013} and not enough time on the results themselves and so this section is to ensure that time was not (very) wasted. 
-
-We should point out that there are many surveys and books on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are \cite{fleigEisensteinSeriesAutomorphic2016, bumpIntroductionLanglandsProgram2004} for longer treatments, in particular the statements of the conjectures are most clearly stated in Cogdell's chapters in \cite{bumpIntroductionLanglandsProgram2004}. Shorter surveys are \cite{gelbartElementaryIntroductionLanglands1984, langlandsFunctorialityTheoryAutomorphic, langlandsRepresentationTheoryIts1989, arthurAUTOMORPHICREPRESENTATIONSNUMBER1981}.
+There are many surveys and books on the Langlands program, class field theory and modern topics in number theory that this introduction is indebted to. Some exemplars are \cite{fleigEisensteinSeriesAutomorphic2016, bumpIntroductionLanglandsProgram2004} for longer treatments, in particular the statements of the conjectures are most clearly stated in Cogdell's chapters in \cite{bumpIntroductionLanglandsProgram2004}. Shorter surveys are \cite{gelbartElementaryIntroductionLanglands1984, langlandsFunctorialityTheoryAutomorphic, langlandsRepresentationTheoryIts1989, arthurAUTOMORPHICREPRESENTATIONSNUMBER1981}.
 
 \subsection{From Ancient to Modern}
-We follow the wonderful exposition in \cite{weinsteinReciprocityLawsGalois2015}. A problem that Pythagoras could have understood is ``which positive integers are the sum of two squares''. In 1640 Fermat answered this question, he first reduces the question to when is a prime the sum of two squares. Thus the problem is immediately reformulated as a problem about congruences mod a prime \(p\), ``when does there exist a solution to \(a^2  +b^2 \equiv 0 \;\;(\text{mod }p) \)'', or whats the same, by dividing out \(b^2\), ``when is there a solution to \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\)''. The famously has the solution 
+We follow the wonderful exposition in \cite{weinsteinReciprocityLawsGalois2015} and \cite{conradHISTORYCLASSFIELD}. A problem that Pythagoras could have understood is ``which positive integers are the sum of two squares''. In 1640 Fermat answered this question, he first reduces the question to when is a prime the sum of two squares. Thus the problem is immediately reformulated as a problem about congruences mod a prime \(p\), ``when does there exist a solution to \(a^2  +b^2 \equiv 0 \;\;(\text{mod }p) \)'', or what's the same, by dividing out \(b^2\), ``when is there a solution to \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\)''. Fermat proved:
 \begin{Theorem}
 	Let \(p\) be an odd prime. Then \(x^2 + 1 \equiv 0 \;\;(\text{mod }p)\) has a solution if and only if \(p\equiv 1 \;\;(\text{mod }4) \).
 \end{Theorem}
@@ -16,16 +14,16 @@ Recall the Legendre symbol, for \(p, q\) odd and non-equal primes we have
 	1 , & \text{there is a solution to }x^2 - q \equiv 0 \;\;(\text{mod }p)\\
 	-1 , & \text{else}
 \end{cases}.\]
-Then the theorem of Fermat was ``upgraded'' by Gauss to his famous reciprocity law.
+Then the theorem of Fermat was generalised by Gauss in 1801 to his reciprocity law:
 
 \begin{Theorem}
 	For \(p, q\) odd and non-equal primes,
 	\[\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{(p-1)(q-1)}{2}}.\]
 \end{Theorem}
 
-Having a solution mod a prime is the same as asking whether the polynomial splits mod that prime. The natural question is then: Given a monic irreducible polynomial with integral coefficients can we determine by congruences whether it splits mod a prime. Gauss's reciprocity is a complete solution to this problem for polynomials of the form \(f(x) = x^2 - q\) for \(q\) odd prime. 
+Having a solution mod a prime is the same as asking whether the polynomial splits mod that prime. The natural question is then: Given a monic irreducible polynomial with integral coefficients can we determine by congruences whether it splits mod a prime. Gauss's reciprocity is a solution to this problem for polynomials of the form \(f(x) = x^2 - q\) for \(q\) odd prime. 
 \begin{remark}
-	The odd limitation is for brevity here and of course can be lifted. Moreover the solution for primes can be leveraged for a solution for other integers. 
+	The odd limitation is for brevity here and of course can be lifted. 
 \end{remark}
 Recall that if \(f(x)\in \Z[x]\) is monic and irreducible then there is a unique minimal field \(F\) in which it factors as linear polynomials, called the splitting field. The Galois group of \(f(x)\) is then defined to be \(\mathrm{Gal}(F/\Q)\). Class field theory is a solution to problem above when this Galois group is \textit{Abelian}. To explain we need to introduce the standard algebraic number theory setup.
 
@@ -33,46 +31,49 @@ Let \(\Q \subseteq K\) be an extension of number fields, with respective rings o
 \[\mathcal{O}_K(p) = \prod_i \mathfrak{P}_i^{e_i},\]
 be the prime decomposition in \(\mathcal{O}_K\). Then \((p)\) \textbf{splits} in \(\mathcal{O}_K\) if for every \(i\) we  have \(e_i = 1\) (this is being unramified) and \(\mathcal{O}_K/\mathfrak{P}_i \cong \Z/(p)\). The splitting of primes is related to the splitting of polynomials by the following theorem
 \begin{Theorem}[\cite{langAlgebraicNumberTheory1994}, Prop. 26]
-	If \(f\in \Z[x]\) monic and irreducible and \(f(\alpha) = 0\) then for \(K = \Q(\alpha)\) we have with finitely many exceptions that \(f\) is split mod \(p\) if and only if \((p)\) splits in \(\mathcal{O}_K\).
+	If \(f\in \Z[x]\) monic and irreducible and for \(\alpha \in \bar{\Q}\) we have \(f(\alpha) = 0\) then for \(K = \Q(\alpha)\) with finitely many exceptions (of \(p\)) \(f\) is split mod \(p\) if and only if \((p)\) splits in \(\mathcal{O}_K\).
 \end{Theorem}
-So to answer \textbf{Q1.} we now want to solve by congruences when prime ideals split. Every field extension \(K/L\) has a Galois closure, that is an extension \(L'/K\) of minimal degree such that \(L\subseteq L'\) and \(L'\) is Galois over \(K\). 
-\begin{Lemma}
+Hence to answer when monic irreducible integral polynomials split by congruences it will be necissary to know when prime ideals split over such extensions. Every field extension \(L/K\) has a Galois closure, that is an extension \(L'/L\) of minimal degree such that \(L'\) is Galois over \(K\). 
+\begin{Lemma}[\cite{neukirchAlgebraischeZahlentheorie2002}, \S8, Ex. 4]
 	A prime ideal of \(\mathcal{O}_K\) is split in \(\mathcal{O}_L\) if and only if it is split in \(\mathcal{O}_{L'}\).
 \end{Lemma}
-Thus we lose nothing by considering only Galois extensions of fields. Thus we have ``the main theorem'' of class field theory:
+Thus we lose nothing by considering only Galois extensions of fields. 
+In 1853 Kronecker constructed an extension of number fields \(K'/K\) whose Galois group is isomorphic to the ideal class group of \(K\), \(\mathrm{Cl}(K) \cong \mathrm{Gal}(K'/K)\), a so called (by Weber) ``class field'' for \(K\).
+Kronecker would go on to make several conjectures that would form the heart of class field theory, for instance, he conjectured that a Galois extension of \Q is determined by the primes of \Z that split over that extension. This was solved by Bauer in 1916:
+\begin{Theorem}[\cite{conradHISTORYCLASSFIELD}, Thm. 2.6]
+	Let \(L_1, L_2\) be finite extensions of a number field \(K\), then \(L_1 = L_2\) if and only if the primes of \(\mathcal{O}_K\) that split in \(\mathcal{O}_{L_1}\) is equal to the set of primes that split in \(\mathcal{O}_{L_2}\).
+\end{Theorem}
+However, there was no systematic way of finding \textit{which} primes split over the extension.
+ Takagi in 1920 made huge progress on this and it was to be made even more explicit finally by Artin in 1927. Together their work proves something similar to ``the main theorem'' of class field theory:
 \begin{Theorem}[\cite{weinsteinReciprocityLawsGalois2015}, Thm. 3.2.1]\label{thm:reciprocity}
 	Let \(K/\Q\) be an Abelian and Galois extension. There is an ideal \(\mathfrak{f} = (m)\subseteq \mathcal{O}_\Q = \Z\) such that for a prime \(p\in \Z\) the ideal \((p)\) is split in \(\mathcal{O}_K\) if \(p\equiv 1 \;\; (\text{mod }m)\).
 \end{Theorem} 
-Thus we have a solution to the splitting of primes via congruence relations. 
+i.e. an explicit solution to the splitting of primes via congruence relations. Thus \textit{global} class field theory was ``solved'', immediately the natural question was raised, what happens in the \textit{non-Abelian} extensions of number fields. The (global) Langlands conjectures (amongst other things) can be viewed as an attempt to answer this question. 
 
-
-This we hope motivates class field theory, now we will follow \cite{conradHISTORYCLASSFIELD} for some more detail on class field theory. Class field theory is over a hundred years old with a storied past and many incarnations of the main theorem above. To see the Langlands program as a generalisation of this theory we want to trace the development to where Langlands picked up. 
-
-Class field theory begins with Kronecker in 1853, who constructed an extension of number fields \(K'/K\) whose Galois group is isomorphic to the ideal class group of \(K\), a so called (by Weber) ``class field'' for \(K\). Kronecker would go on to make several conjectures that would form the heart of class field theory, for instance, he conjectured that a Galois extension of \Q is determined by the primes of \Z that split over that extension. In fact this was solved by Bauer in 1916:
-\begin{Theorem}(Bauer)
-	Let \(L_1, L_2\) be finite extensions of a number field \(K\), then \(L_1 = L_2\) if and only if the primes of \(\mathcal{O}_K\) that split in \(\mathcal{O}_{L_1}\) is equal to the set of primes that split in \(\mathcal{O}_{L_2}\).
-\end{Theorem}
-However, there was no systematic way of finding \textit{which} primes split over the extension. Takagi was to supply something very close to theorem \ref{thm:reciprocity} in 1920 and it was to be made even more explicit finally by Artin in 1927. Thus \textit{global} class field theory was ``solved'', immediately the natural question was raised, what happens in the \textit{non-Abelian} extensions of number fields. The (global) Langlands conjectures (amongst other things) can be viewed as an attempt to answer this question. 
-
-Another direction that people were interested in was the extensions of local fields, as opposed to number fields. It was Hilbert who introduced in 1897 the use of the p-adic numbers, in spirit if not in name, he wrote congruences of arbitrary powers of primes. Let \(\nu\) be a place of \(\Q\), then define the \(\nu\)-adic Hilbert symbol for \(a,b\in \Q^\times\)
+Another direction that people were interested in was the extensions of local fields, as opposed to number fields. It was Hilbert who introduced in 1897 the use of the \(p\)-adic numbers, in spirit if not in name, he wrote congruences of arbitrary powers of primes. Let \(\nu\) be a place of \(\Q\), then define the \(\nu\)-adic Hilbert symbol for \(a,b\in \Q^\times\)
 \[(a,b)_\nu \defeq \begin{cases}
 	1, & a= x^2-by^2 \text{ has a solution in }\Q_\nu\\
 	-1, &\text{else}
 \end{cases} .\]
-\begin{Theorem}[Hilbert's Quadratic Reciprocity]
+\begin{Theorem}[Product Formula]
 	For all \(	a,b\in \Q^\times\) 
 	\[\prod_\nu (a,b)_\nu = 1.\]
 \end{Theorem}
-This is equivalent to Gauss's reciprocity law, however much more uniform to state, treating odd and even primes in the same way, and not requiring any co-prime conditions. This moreover treats finite and infinite places uniformly. Building on this work and using Artin reciprocity Hasse, after introducing the p-adic numbers in 1927, proved the first versions of \textit{local} class field theory in 1930, that is reciprocity for extensions of the local fields \(\Q_\nu\). The statements here are too technical for a motivational introduction however replacing all the global fields in the above statements with local fields is not far off. 
+This is equivalent to Gauss's reciprocity law\todo{\S4 Conrad tells me this, but is there a reference with a proof?}, however much more uniform to state, treating odd and even primes in the same way, and not requiring any co-prime conditions. This moreover treats finite and infinite places uniformly. Building on this work and using Artin reciprocity, Hasse, after introducing the \(p\)-adic numbers in 1927, proved the first versions of \textit{local} class field theory in 1930, that is reciprocity for extensions of the local fields \(\Q_\nu\). The statements here are technical, but a key result is
+\begin{Theorem}[\cite{conradHISTORYCLASSFIELD}, Thm. 7.6]
+	For a finite Abelian extension of local fields \(E/F\) there is a surjection 
+	\[F^\times \to \mathrm{Gal}(E/F).\]
+	In particular the Galois group is a quotient of \(F^\times\).
+\end{Theorem}
 
-Note that the definition and proof of local class field theory \textit{depends logically} on global class field theory. Hasse was able to prove later in 1933 the main results again but without recourse to global class field theory. It lacked the explicit construction of the class fields however which was finally supplied in 1965 by Lubin and Tate.
+Note that the definition and proof of local class field theory \textit{depended logically} on global class field theory. That is the construction of this surjection uses the results of Artin and Takagi. Hasse was able to prove later in 1933 the main results again but without recourse to global class field theory. It lacked the explicit construction of the class fields however which was finally supplied in 1965 by Lubin and Tate.
 
 What remained to do was supply a proof of \textit{global} class field theory from local class field theory. In pursuit of this task the machinery of the ideles and adeles was introduced. In this language (part of) \textit{global} class field theory can be restated as 
-\begin{Theorem}[\cite{neukirchGlobalClassField1999}, Prop. 1.3]
+\begin{Theorem}[\cite{neukirchAlgebraischeZahlentheorie2002}, Ch. VI, \S1 ,Prop. 1.3]
 	Let the ideal class group of a number field \(K\) be denoted \(\mathrm{Cl}_K\). Then there is a surjection
 	\[ \A^*/ K^* \xrightarrow{A} \mathrm{Cl}_K \cong \mathrm{Gal}(K'/K),\]
 	where \(K'\) is the class field of \(K\).
-\end{Theorem}
+\end{Theorem}\todo{I switch between times and ast for the units.}
 If we think about representations of these groups then this surjection gives a relation between characters \(\chi\) of \(\A^*/K^*\) and characters \(\chi'\) of \(\mathrm{Gal}(K'/K)\) by pulling back along \(A\).
 
 % https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXEFeKi9LXioiXSxbMiwwLCJcXG1hdGhybXtDbH1fSyJdLFsxLDIsIlxcQ14qIl0sWzAsMiwiXFxjaGkiLDFdLFsxLDIsIlxcY2hpJyIsMV0sWzAsMSwiQSIsMV1d
@@ -84,10 +85,10 @@ If we think about representations of these groups then this surjection gives a r
 	\arrow["\chi"{description}, from=1-1, to=3-2]
 	\arrow["{\chi'}"{description}, from=1-3, to=3-2]
 \end{tikzcd}\]
-Thus \(A\) can be thought of as generating a correspondence
+Thus \(A\) can be thought of as providing a correspondence
 \[\{\text{Maps }\A^*/K^*\to \C^*\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \C^*\}. \]
 One then observes that this can be rewritten as 
-\[\{\text{Maps }\GL(\A)/\GL_1(K)\to \GL_1(\C)\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \GL_1(\C)\} .\]
+\[\{\text{Maps }\GL_1(\A)/\GL_1(K)\to \GL_1(\C)\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \GL_1(\C)\} .\]
 This suggests the generalisation to 
 \[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } \GL_n\}   .\]
 But according to Langlands \cite{langlandsRepresentationTheoryIts1989}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
@@ -96,60 +97,61 @@ These two sides of the correspondence are referred to as the ``automorphic side'
 
 
 \subsection{Harmonic Analysis}
-As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect, following \cite{follandCourseAbstractHarmonic2016a}.
-
-The story starts with the Fourier transform for periodic functions. These of course have ancient precursors in the ideas of the Pythagoreans and were ``in the air'' of the eighteenth century, Fourier, around 1822, was first to conjecture that \textit{all} functions should be decomposable into elementary periodic functions. 
-The base case is the Fourier transform on \(\mathbb{T}\) the circle, realised concretely as the unit length elements of \C. Then for every \(f\in L^2(\mathbb{T})\) we have that 
+As we mentioned the work of Langlands was inspired by the work of Harish-Chandra in harmonic analysis of Lie groups. Here we want to say something about the precursors to Langlands work in this respect.
+The story starts with the Fourier transform for periodic functions. These of course have ancient precursors in the ideas of the Pythagoreans and were ``in the air'' of the eighteenth century. Fourier, around 1822, was first to conjecture that \textit{all} functions should be decomposable into elementary periodic functions. 
+The base case is the Fourier transform on \(\mathbb{T} = \R/\Z  \) the circle, for every \(f\in L^2(\mathbb{T})\) we have that 
 \[f(x) = \sum_{n\in \Z}a_ne^{2\pi i n x}, \;\;\; a_n\in \C.\]
 
-The important properties of the circle as a topological group are the following: firstly it is locally compact Hausdorff, hence has a Haar measure allowing us to talk about square integrable functions. Secondly it is both compact and Abelian. 
+The important properties of the circle as a topological group are that it is Hausdorff, compact and abelian. Locally compact Hausdorff ensures that Haar measures (left and right) exist, abelian ensures that they agree and that the irreducible representations are one dimensional. 
 
-The first generalisation appeared in 1927 with the Peter-Weyl theorem. Starting with a locally compact topological group \(G\), then a unitary representation on a Hilbert space \(\mathcal{H}\) is a continuous homomorphism 
+The first generalisation appeared in 1927 with the Peter--Weyl theorem. Starting with a locally compact topological group \(G\), then a unitary representation on a Hilbert space \(\mathcal{H}\) is a continuous homomorphism 
 \[\pi: G \to U(\mathcal{H}).\]
-We denote the dual group of \(G\) by \(\hat{G}\), this is defined to be the space of (equivalence classes of) irreducible unitary representations of \(G\). 
+We denote the unitary dual group of \(G\) by \(\hat{G}\), this is defined to be the space of (equivalence classes of) irreducible unitary representations of \(G\). 
 
-\begin{Theorem}[\cite{follandCourseAbstractHarmonic2016a}, 5.2, 5.12]
-	If \(G\) is compact then every unitary representation of \(G\) is a direct sum of irreducible representations. 
+\begin{Theorem}[\cite{follandCourseAbstractHarmonic2016a}, Thm. 5.2, Thm. 5.12]
+	If \(G\) is compact then every unitary representation of \(G\) is a direct sum of irreducible unitary representations. 
 \end{Theorem} 
 \begin{remark}
-	For lack of time and space we will need to make this remark several times: The actual content of the Peter-Weyl theorem is not that the representations decompose but \textit{how} they decompose. That is Peter-Weyl tells us how to construct the components of the direct sum, what their dimensions are etc.
+	For lack of time and space we will need to make this remark several times: The actual content of the Peter--Weyl theorem is not that the representations decompose but \textit{how} they decompose. That is Peter--Weyl tells us how to construct the components of the direct sum, what their dimensions are etc.
 \end{remark}
 Importantly, there is no requirement for finite dimensionality. 
 
 \begin{example}
 	Consider the regular representation of \(\mathbb{T}\) on \(L^2(\mathbb{T})\) this decomposes into 
 	\[L^2(\mathbb{T}) = \bigoplus_{\chi\in \hat{G}}  \C \chi .\]
-	Because \(\mathbb{T}\) is also Abelian all its irreducible representations are one dimensional, in fact, we have that all characters of \(G\) are 
-	\[e^{i\theta} \mapsto e^{ni\theta}.\]
+	Because \(\mathbb{T}\) is compact and Abelian all its irreducible representations are one dimensional, in fact, we have that all characters of \(G\) are maps of the form  
+	\[e^{i\theta} \mapsto e^{ni\theta}, \quad n\in \Z.\]
 	Therefore the decomposition exhibits the exponentials as a basis for functions on the circle.
 \end{example}
 
-In the 1940's, Weil worked out the theory for locally compact Abelian groups, proving the general case of Bochners theorem \cite[Thm. 4.18]{follandCourseAbstractHarmonic2016a}. The groups that we are interested in however, are neither compact,  \(\A_\Q^\times\), nor Abelian, \(\GL_n\).
+In the 1940's, Weil worked out the theory for locally compact Abelian groups, proving the general case of Bochner's theorem \cite[Thm. 4.18]{follandCourseAbstractHarmonic2016a}. The groups that we are interested in however, are neither compact,  \(\A_\Q^\times\), nor Abelian, \(\GL_n\).
 
-A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the center of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial, we have a decomposition as a  direct sum of irreducible representations. 
+A group is \textbf{type I} if for every (continuous unitary) representation \(\pi\) such that the centre of \(\Hom_\mathrm{Rep}(\pi, \pi)\) is trivial, we have a decomposition as a  direct sum of irreducible representations. 
 
 \begin{example}
 	The adelic points of a connected reductive linear algebraic group (LAG) are a type I group. The proof is outside the scope of this thesis but can be found in \cite[Thm. 1.7 + Thm. 2.3]{deitmarTraceClassGroups2017}.
 \end{example}
 
 \begin{example}
-	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a second countable group. First consider the adele ring \(\A_F\) of F . This has the restricted product topology, where if \(\mathcal{O}_\nu\) is the ring of integers of \(F_\nu\), then an arbitrary open subset looks like a union of sets of the form 
+	Consider \(G(\A)\) the adelic points of a connected reductive LAG. This is a second countable group. We don't have a reference for this so we present the argument. 
+	
+	First consider the adele ring \(\A_F\) of F . This has the restricted product topology, where if \(\mathcal{O}_\nu\) is the ring of integers of \(F_\nu\), then an arbitrary open subset looks like a union of sets of the form 
 	\[U_S \times \prod_{s\notin S} \mathcal{O}_s,\]
 	where \(U_S\subseteq \prod_{s\in S}F_s\) is open in the product topology. 
 	Because for any place \(F_\nu\) is second countable and the product of second countable spaces is second countable it is clear that \(\prod_{s\in S} F_s\) is second countable. Moreover there is a countable number of finite subsets of \Z, hence there is a bijection between a basis of the restricted product topology and \(\aleph_0\times \aleph_0 \) which is countable hence this topology is second countable.
 	
-	If \(G \defeq \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) is an affine scheme then the topology on \(G(\A)\) is the subspace topology of \(\A^n\) on which all the \(f_1, ..., f_m\) vanish \cite{conradWeilGrothendieckApproaches2012}. In particular the finite product of second countable spaces is second countable and subspaces of second countable spaces are second countable, hence \(G(\A)\) is second countable. 
+	If \(G \defeq \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) is an affine scheme then the topology on \(G(\A)\) is the subspace topology of \(\A^n\) on which all the \(f_1, ..., f_m\) vanish (see section \ref{}\todo{ref}). In particular the finite product of second countable spaces is second countable and subspaces of second countable spaces are second countable, hence \(G(\A)\) is second countable. 
 \end{example}
 
 \begin{example}
 	The adelic points of a connected reductive LAG are a unimodular group. The proof is outside the scope of this thesis but is stated in \cite[Lem. 2]{conradCOMPACTNESSVOLUMEADELIC}.
 \end{example}
 
-In the 1950's Segal and Mautner proved the Plancherel Theorem which is the Peter-Weyl and Bochner type result for type I, second countable and uni-modular topological groups.
+In the 1950s Segal and Mautner proved the Plancherel Theorem which is the Peter--Weyl and Bochner type result for type I, second countable and uni-modular topological groups.
 \begin{remark}
 	The name Plancherel theorem is overloaded in harmonic analysis. We will give exact references to the precise theorem we are referring to below.
 \end{remark}
- To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016a}, but some of the basic idea is contained in the example of direct sums.
+ To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016a} and the definitions are stated in \ref{appendix:2}\todo{paste in the text in the appendix and ref}, but some of the basic idea is contained in the example of direct sums.
 \begin{example}[Direct Sums]
 	Let \(I\) be a countable set with the discrete sigma algebra and counting measure \(\mu\). Let \((\mathcal{H}_i)_{i\in I}\) be a collection of Hilbert spaces then
 	\[\bigoplus_{i\in I} \mathcal{H}_i = \left\{ (h_i)_{i\in I}\in \prod_{i\in I} \mathcal{H}_i : \int_I \norm{h_i}_i^2 d\mu <\infty \right\}.\]
@@ -171,20 +173,22 @@ It is as a continuation or variation of this tradition that we see the work of L
 	\[L^2(G(\Q) \backslash G(\A)) = \bigoplus_{\mathscr{P}}L^2_\mathscr{P}(G(\Q) \backslash G(\A)),\]
 	where \(\mathscr{P}\) runs over certain ``associate classes'' of parabolics of \(G\) and the summands are the direct integrals of spaces of \(L^2\) automorphic forms.
 \end{Theorem}
-This construction is very explicit. The spaces are constructed out of the residues of Eisenstein series and this is one reason for their importance. 
+This construction is very explicit, and the direct integrals are constructed out of the residues of Eisenstein series.
 
-The spectrum of \(L^2(G(\A))\) refers to such a decomposition. In particular, we have some important ``pieces'' to such a decomposition. We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover, these decompositions are largely proved in terms of the more general spectral theorems. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms (see section \ref{cuspidal_form_definition}) and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum. 
+The spectrum of \(L^2(G(\Q)\backslash G(\A))\) refers to such a decomposition. In particular, we have some important ``pieces'' to such a decomposition. We call such decompositions ``spectral'', alluding to the spectral theorem which provides such a decomposition in terms of the eigenvector of certain operators. Moreover, these decompositions are largely proved in terms of the more general spectral theorems. The piece that decomposes into a direct sum of irreducible is called the \textbf{discrete spectrum}. The compliment of the discrete spectrum is called the \textbf{continuous spectrum}. One can define cuspidal \(L^2\) functions in the exact same way as cuspidal automorphic forms (see section \ref{cuspidal_form_definition}) and then it has been shown that the \textbf{cuspidal spectrum}, the subspace of \(L^2\) consisting of cusp forms, decomposes as a direct sum \cite[9]{getzIntroductionAutomorphicRepresentations2024}. Thus the cuspidal spectrum is contained in the discrete spectrum in this case. The \textbf{residual spectrum} is defined to be the compliment of the cuspidal spectrum in the discrete spectrum. 
 
-It is during this analysis that the ideas expressed in his famous letter \cite{langlandsLetterAndreWeil1967} would begin to form, as he noticed that certain Euler products of analytic functions were appearing in the constant terms of the Eisenstein series. In particular we will see how the intertwining operator \(M(s, w)\) appears in the constant term of Eisenstein series. Langlands observed that \cite{langlandsEulerProducts1971} 
-\[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)\prod_{p \text{ prime }} \left( \prod_\alpha \frac{\frac{1}{1 - p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
+It is during this analysis that the ideas expressed in his famous letter \cite{langlandsLetterAndreWeil1967} would begin to form, as he noticed that certain Euler products of analytic functions were appearing in the constant terms of the Eisenstein series. In particular we will see how the function \(M(s)\) appears in the constant term of Eisenstein series. Langlands observed that \cite{langlandsEulerProducts1971} 
+\[M(s) = \left( \prod_\alpha\frac{\pi^{1/2}\Gamma(\frac{1}{2}\mu_\infty(s)(H_\alpha))}{\Gamma(\frac{1}{2}(\mu_\infty(s)(H_\alpha) + 1))} \right)
+\prod_{p \text{ prime }} \left( \prod_\alpha 
+\frac{1 -\frac{1}{ p^{\mu_p(s)(H_\alpha) + 1}}}{1 - \frac{1}{p^{\mu_p(s)(H_\alpha) }}}\right).\]
 This formula is obviously uninterpretable without further definitions, however we just want to point out some things to notice. First there is a product over the places of \Q, namely one item for the infinite place and then a product over the prime numbers. The functions in the product are gamma functions, related intrinsically to the L-function exemplar \(\zeta\), the Riemann-Zeta function, and functions of the form \(1 - p^{-s}\). These facts should be contrasted with the general setting alluded to in appendix \ref{L-functions}
 
-This lead to a general conjecture that there is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
+This led to a general conjecture that there is a holomorphic and non-zero intertwining operator \(N(s, w)\) such that 
 \[M(s, w) = r(s, w)N(s,w),\]
 and \(r(s, w)\) is a ratio of L-functions, as defined by Langlands in for instance \cite{langlandsEulerProducts1971}.
 
-Note that this is the global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over local intertwiners. Then one wants a normalisation of the local operators \(\mathscr{A}\) satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}. Shahidi showed some cases of this conjecture in \cite{shahidiRamanujanConjectureFiniteness1988a}: Let \(\pi\) be an automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
-\[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu, w)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
+Note that this is a global statement. There is an analogous set of conjectures for the local pieces, namely \(M = \tensor_\nu A\) the tensor over some local functions. Then the conjecture calls for the existence for some normalised local operators, satisfying a long list of properties. This is extensively dealt with in \cite{shahidiProofLanglandsConjecture1990}. Shahidi showed some cases of this conjecture in \cite{shahidiRamanujanConjectureFiniteness1988a}: Let \(\pi\) be a sufficiently nice automorphic representation, let \(S\) be a finite set of places such that \(\pi_\nu\) is unramified for \(\nu\notin S\). We have that there are some finite dimensional complex representations \(r_1, ..., r_m\) of \(^LM\) such that 
+\[M(s, \pi)f = \bigotimes_{\nu\in S}A(s, \pi_\nu)f_\nu \tensor \bigotimes_{\nu\notin S} \prod_{i=1}^{m}\frac{L_S(is, \pi, \tilde{r_i})}{L_S(1+is, \pi, \tilde{r_i})} \tilde{f}_\nu.\]
 
 Recently it was shown for classical groups that this \(N\) indeed has the required properties. In particular, the following theorem is sufficient for the cases dealt with in \cite{jiangPolesCertainResidual2013}:
 \begin{Theorem}[\cite{cogdellFUNCTORIALITYCLASSICALGROUPS}, 11.1]
@@ -192,11 +196,11 @@ Recently it was shown for classical groups that this \(N\) indeed has the requir
 \end{Theorem}
 
 \subsection{Poles of Residual Eisenstein Series}
-Consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic rep of \(\GL_a\) then there is a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' denoted 
+Consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b\). If \(\tau\) is an irreducible, cuspidal automorphic representation of \(\GL_a\) then there is a representation of \(\GL_{ab} = \GL_n\) called the ``Speh representation'' denoted 
 \[\Delta(\tau, b).\]
 Moeglin and Waldspurger also achieved a more fine analysis of the spectrum of \(\GL_n\) by proving that as \(\tau\) and \(b\) vary, these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}. The Speh representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}, a more concrete explanation can be found in \cite[2.4]{brennerNotesAnalyticProperties2009}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
 
-The classical groups \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, who locate the poles of Eisenstein series induced in this manner. 
+If we denote \(G_n\)\todo{move the classical groups as automorphism of forms here?} one of the classical groups \(\GL_n, \Sp_{2n}, \mathrm{U}_n\) etc. then \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, in which the authors locate the poles of Eisenstein series induced in this manner. 
 
 These considerations are supposed to help prove cases of Langlands functorial transfers, that is proving cases of Langlands functoriality for groups by ``transferring'' the known cases of functoriality from other groups. We quote from the introduction of \cite{jiangPolesCertainResidual2013}:
 
@@ -204,6 +208,8 @@ These considerations are supposed to help prove cases of Langlands functorial tr
 	``The key ingredient in these constructions is to use certain Fourier coefficients of special types of residues of certain residual Eisenstein series as kernel functions in the corresponding integral transforms''
 \end{quote}
 \cite{bumpRankinSelbergMethodIntroduction2011} gives some more detail on how the analytic properties of Eisenstein series and their L-functions imply that the automorphic representations can be lifted to other groups. 
+
+\todo[inline]{Mention the Arthur controversy here.}
 
 Finally, we remark that we spent a good amount of time trying to understand the analogous story for the so called ``almost algebraic groups'', topological coverings of \(G(\A)\). In this setting the work of \cite{jiangPolesCertainResidual2013} has also been applied to get similar results on poles of metaplectic Eisenstein series, as in \cite{kaplanDoublingConstructionsComplete2021}. It was also used to prove certain functoriality results as in \cite{caiDoublingConstructionsGlobal2024}. We leave it for future work to understand the full significance of these calculations, but hope we have motivated why they \textit{might} be interesting.
 
@@ -220,8 +226,6 @@ Chapter five is dedicated to the constant term in the adelic setting. We first d
 
 Chapter six is a discussion of the concept of the constant term in the Archimedean place. First we define the constant term of an automorphic form (Archimedean) and then we show how it is related to the constant term of the Fourier series of a modular form. Finally we show how the classical Siegel Phi operator can be realised as a constant term.
 
-Chapter seven is for defining L-functions, the analytic invariants that are central to the Langlands program. We will give several of the special cases that appear through out history and the literature. 
-
-Finally chapter eight contains some exposition of recent work on the poles of residual Eisenstein series.
+Chapter seven is again an example computation of a constant term, this is the base case of an induction formula proven in \cite{jiangPolesCertainResidual2013}.
 
 

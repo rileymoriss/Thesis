@@ -1,43 +1,43 @@
 \babel@toc {english}{}\relax 
 \contentsline {subsection}{\numberline {0.0.1}From Ancient to Modern}{iii}{subsection.0.0.1}%
-\contentsline {subsection}{\numberline {0.0.2}Harmonic Analysis}{vii}{subsection.0.0.2}%
-\contentsline {subsection}{\numberline {0.0.3}The Work of Langlands}{x}{subsection.0.0.3}%
-\contentsline {subsection}{\numberline {0.0.4}Poles of Residual Eisenstein Series}{xii}{subsection.0.0.4}%
+\contentsline {subsection}{\numberline {0.0.2}Harmonic Analysis}{vi}{subsection.0.0.2}%
+\contentsline {subsection}{\numberline {0.0.3}The Work of Langlands}{viii}{subsection.0.0.3}%
+\contentsline {subsection}{\numberline {0.0.4}Poles of Residual Eisenstein Series}{x}{subsection.0.0.4}%
 \contentsline {chapter}{\numberline {1}Classical Groups}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Definition}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Subgroups}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Subgroups}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{4}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{6}{section*.6}%
-\contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{8}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{10}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{11}{subsection.1.2.4}%
-\contentsline {chapter}{\numberline {2}Automorphic Forms}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Archimedean Automorphic Form}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Adelic Automorphic Form}{14}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Modular Forms}{15}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Automorphic Representations}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Local Representation Theory}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Automorphic Representations}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Cuspidal Representations}{23}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Isotypic Components}{23}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Eisenstein Series}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Eisenstein Series}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Classical Eisenstein Series}{29}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Constant Terms of Eisenstein Series}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Definition and Role}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Constant Terms of Eisenstein Series}{34}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}In General}{35}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Constant Terms of Cuspidal Eisenstein Series}{37}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{38}{subsection.5.2.3}%
-\contentsline {chapter}{\numberline {6}Siegel Phi Function}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Constant Terms}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Siegel Modular Forms}{40}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Automorphising}{41}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Modular Form Case}{42}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Simplifying the Constant Term}{43}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {7}Poles of Residual Eisenstein Series}{49}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Residual Eisenstein Series}{49}{section.7.1}%
-\contentsline {section}{\numberline {7.2}The Constant Term}{50}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Analysing the Intertwining Operator}{51}{section.7.3}%
-\contentsline {chapter}{\numberline {A}L-Functions}{54}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The Langlands Framework}{54}{section.A.1}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{5}{section*.13}%
+\contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{7}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{8}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{8}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Automorphic Forms}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Archimedean Automorphic Form}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Adelic Automorphic Form}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Modular Forms}{13}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Automorphic Representations}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Local Representation Theory}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Automorphic Representations}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Cuspidal Representations}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Isotypic Components}{19}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Eisenstein Series}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Eisenstein Series}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Classical Eisenstein Series}{24}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Constant Terms of Eisenstein Series}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition and Role}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Constant Terms of Eisenstein Series}{28}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}In General}{28}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constant Terms of Cuspidal Eisenstein Series}{30}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{31}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Siegel Phi Function}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Constant Terms}{32}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Siegel Modular Forms}{33}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Automorphising}{34}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Modular Form Case}{34}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Simplifying the Constant Term}{35}{subsection.6.2.3}%
+\contentsline {chapter}{\numberline {7}Poles of Residual Eisenstein Series}{40}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Residual Eisenstein Series}{40}{section.7.1}%
+\contentsline {section}{\numberline {7.2}The Constant Term}{41}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Analysing the Intertwining Operator}{42}{section.7.3}%
+\contentsline {chapter}{\numberline {A}L-Functions}{44}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The Langlands Framework}{44}{section.A.1}%

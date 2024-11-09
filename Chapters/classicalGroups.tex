@@ -1,4 +1,4 @@
-We will recall a small amount of the theory of linear algebraic groups to fix conventions, for a more detailed treatment one should consult the litany of sources on this matter: For a full treatment see \cite{milneAlgebraicGroupsTheory2017}\cite{milneLieAlgebrasAlgebraic}\cite{milneBasicTheoryAffine2012}\cite{springerLinearAlgebraicGroups1998}. Excellent example computations can also be found in \cite{garrettBuildingsClassicalGroups1997}\cite{makisumiStructureTheoryReductive}\cite{malleLinearAlgebraicGroups2011}. Or for a brief brush up on the main facts consult Springer's article in  \cite[I.I.1]{borelAutomorphicFormsRepresentations1979}. 
+We will recall a small amount of the theory of linear algebraic groups to fix conventions, for a more detailed treatment one should consult the litany of sources on this matter: For a full treatment see \cite{milneAlgebraicGroupsTheory2017}\cite{milneLieAlgebrasAlgebraic}\cite{milneBasicTheoryAffine2012}\cite{springerLinearAlgebraicGroups1998}. Excellent example computations can also be found in \cite{garrettBuildingsClassicalGroups1997}\cite{makisumiStructureTheoryReductive}\cite{malleLinearAlgebraicGroups2011}. Or for a brief brush up on the main facts consult Springer's article in  \cite[I.I.1]{borelAutomorphicFormsRepresentations1979}. \todo{neeed to give better references to all the Borel book things}
 
 The purpose of this section is to define the key examples and properties of algebraic groups. We also define the most important subgroups, attempting to emphasize the role they play in the theory. 
 Throughout we will restrict to the case of the few classical groups that we define explicitly, however, the theory works much more generally. 
@@ -13,7 +13,7 @@ An \textbf{algebraic group} is for us a group scheme that is reduced, of finite 
     The forward implication is \cite[2.3.7(i)]{springerLinearAlgebraicGroups1998}. The converse is the basic fact that closed sub-schemes of affine schemes are affine \cite[II.5.T3]{mumfordRedBookVarieties1999}.
 }
 
-The idea of LAG's is that they are matrix groups defined by polynomial equations, which are the natural combinations of symbols that matrix multiplication will lead to. This means that they come with the technology of algebraic geometry and in particular one must be adept at moving between the following equivalences:
+The idea of LAG's is that they are matrix groups defined by polynomial equations. This means that they come with the technology of algebraic geometry and in particular one must be adept at moving between the following equivalences:
 \begin{Theorem}[\cite{milneBasicTheoryAffine2012}, II.6, III.4]
     For a field \(K\), then the following categories are equivalent:
     \begin{itemize}
@@ -28,29 +28,30 @@ The idea of LAG's is that they are matrix groups defined by polynomial equations
     The first example is the ``multiplicative group'' denoted \(\mathbb{G}_m\) or \(\GL_1\) defined over the field \(K\). This is 
     \[\mathbb{G}_m \defeq \Spec\Bigl( K[x,y]/(xy - 1)\Bigr).\]
 
-    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \mathbb{G}_m(R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(Im f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) between \(\mathbb{G}_m(R) \cong R^\times\), from which we pull back a group structure.
+    As a representable functor this sends a \(K\)-algebra R to \(\Hom_K(K[x,y]/(xy - 1), R)\). These are ring maps that are K-linear, and  because \(y = x\inv\) we know that \(f(y) = f(x\inv) = f(x)\inv\) for \(f\in \Hom_K(K[x,y]/(xy - 1), R)\). Thus the maps are determined by where they send \(x\), moreover they always send it to a unit, i.e. \(\mathrm{Im} f \subseteq R^\times\). For each element \(r\in R^\times\) we also have a map sending \(x\to r\) hence there is an isomorphism (of sets) between \(\mathbb{G}_m(R) \cong R^\times\), from which we pull back a group structure.
 \end{example}
 
 The other important examples of such groups are the ``classical groups''. The exact groups that an author might mean by classical may vary, so we define them explicitly here. First let V be a finite dimensional K-vector space with a bilinear form \(\inner{,}\). An automorphism of this form is a map \(\alpha\in \Aut(V)\) such that 
 \[\inner{\alpha(x), \alpha(y)} = \inner{x,y}.\]
-Therefore we can consider the space of automorphisms of this form \(\Aut(V, \inner{,})\). This space, depending on the properties of the bilinear form, will define our classical groups. 
+Therefore we can consider the group of automorphisms of this form \(\Aut(V, \inner{,})\). This group, depending on the properties of the bilinear form, will define our classical groups. 
 
-If the form is trivial, by which we mean, \(\forall x,y \;\; \inner{x, y} = 0\) then we define the \textbf{general linear group},
+If the form is trivial, by which we mean, \(\forall x,y\in V \;\; \inner{x, y} = 0\) then we define the \textbf{general linear group},
 \[\GL(V) \defeq \Aut(V, \inner{,}) = \Aut(V).\]
-If the form is non-degenerate and symmetric \(\forall x,y \;\; \inner{x, y} = \inner{y,x}\) then we define the \textbf{orthogonal group},
-\[\mathrm{O}(V) \defeq \Aut(V, \inner{,}).\]
-Finally if the form is non-degenerate and skew symmetric \(\forall x,y \;\; \inner{x, y} = -\inner{y,x}\) then the \textbf{symplectic group} is,
+
+If the form is non-degenerate and skew symmetric \(\forall x,y\in V \;\; \inner{x, y} = -\inner{y,x}\) then the \textbf{symplectic group} is,
 \[\Sp(V) \defeq \Aut(V, \inner{,}).\]
-There are the further classical groups given by the determinant one subgroups, \(\SL(V)\) and \(\mathrm{SO}(V)\) respectively. The naming of \(\Sp(V)\) is somewhat serendipitous as one can show that it is contained in \(\SL(V)\). We can make this into a functor from \(K\)-algebras to groups, by sending a \(K\)-algebra \(R\) to \(G(V)\tensor_K R\).
+
+There are the further classical groups given by the determinant one subgroups, \(\SL(V)\). The naming of \(\Sp(V)\) is somewhat serendipitous as one can show that it is contained in \(\SL(V)\). We can make this into a functor from \(K\)-algebras to groups, by sending a \(K\)-algebra \(R\) to \(G(V\tensor_K R)\).
 
 \begin{remark}
-    Often the unitary groups are considered classical, as is the case in \cite{jiangPolesCertainResidual2013}.
+    Often the unitary and orthogonal groups are considered classical, as is the case in \cite{jiangPolesCertainResidual2013}. These can both be defined in terms of automorphisms of different forms, for instance if the form is non-degenerate and symmetric \(\forall x,y\in V \;\; \inner{x, y} = \inner{y,x}\) then we define the \textbf{orthogonal group},
+    \[\mathrm{O}(V) \defeq \Aut(V, \inner{,}).\]
 \end{remark}
 
 \section{Subgroups}
 From now on let \(G\) be one of the classical LAG defined above, defined over a number field \(F\) with adele ring \(\A\).
 \begin{remark}
-	Most everything we say will apply verbatim to so called split reductive groups, however we lose little in restricting to the classical groups.
+	Most everything we say will apply verbatim to so called split reductive groups, however we lose little in restricting to the classical groups we have chosen.
 \end{remark}
 
 Subgroups with special properties allow us to reduce and break up problems into smaller ones. Here we will briefly review and compute some examples of special subgroups. The point of these subgroups is two fold. Some of them will help us perform ``induction'' from smaller simpler groups to larger ones. Others are there essentially as a part of the combinatorial data that classifies the groups we are working with. In particular we need to understand all the pieces of the so called \textbf{Langlands-Iwasawa decomposition} \cite[2.7]{getzIntroductionAutomorphicRepresentations2024},
@@ -64,12 +65,12 @@ A subgroup \(P\subseteq G\) is called \textbf{parabolic} if \(G/P\) is a complet
 Completeness is the algebro-geometric analogue of compact, always a desirable property. The fact that they contain a Borel gives us an algebraic ``parametrisation'' of these subgroups, in the case of the classical groups through the use of flags or roots. It is very important to have a parametrisation of the parabolic subgroups when it comes to taking constant terms of Eisenstein series which we will discuss in  chapter \ref{constant_terms}.
 
 \label{unipotent_radical_definition}
-A matrix \(m\) is \textbf{unipotent} if for some \(n\geq 0\) we have that \((m-1)^n = 0\). A subgroup is \textbf{unipotent} if all its elements are unipotent. The \textbf{unipotent radical} of \(G\) is the maximal closed, connected, unipotent subgroup. A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial. Then we have the following fact and definition,
+A matrix \(m\) is \textbf{unipotent} if for some \(n\geq 0\) we have that \((m-1)^n = 0\). A subgroup is \textbf{unipotent} if all its elements are unipotent. The \textbf{unipotent radical} of \(G\) is the maximal closed, connected, normal, unipotent subgroup. A linear algebraic group is \textbf{reductive} if its unipotent radical is trivial. Then we have the following fact and definition,
 
 \begin{Lemma}[\cite{borelLinearAlgebraicGroups1991} 11.22]
     There is a split exact sequence (of algebraic groups)
     \[0 \to U \to P \to M \to 0,\]
-    where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} (unique up to conjugacy).
+    where \(U\) is the unipotent radical of P, and \(M\) is a reductive group known as a \textbf{Levi} of \(P\) (unique up to conjugacy).
 \end{Lemma}
 
 Thus parabolics and their Levis allows us to induce from a reductive subgroup up to the reductive group. This is the technique of ``parabolic induction'' \cite[Thm. 10]{bernsteinREPRESENTATIONSPADICGROUPS1992} that we will not explicitly talk about here but which is happening secretly in the background in section \ref{automorphic_isotypic_subspaces}.
@@ -91,7 +92,7 @@ Thus parabolics and their Levis allows us to induce from a reductive subgroup up
     .\]
     This classification, it seems, relies entirely on the \textit{aesthetic} connection with the classification of the sections of conics via eccentricity. Proper parabolic subgroups of \(\SL_2(\R)\) can be realised as the stabilisers of lines in \(\R^2\) under the standard action of \(\SL_2\) on \(\R^2\) \cite[2.6]{borelAutomorphicFormsSL21997} and moreover an element of \(\SL_2(\R)\) is parabolic if and only if it has one fixed point on \(\partial\bar{\mathcal{H}}\) and none on \(\mathcal{H}\) \cite[3.5]{borelAutomorphicFormsSL21997}.
     
-    Being parabolic is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolics in \(\SL_2\) are conjugate (over \(\C\)) to 
+    Being a parabolic element is equivalent to having eigenvalue 1 hence by the Jordan decomposition we know that parabolic elements in \(\SL_2\) are conjugate (over \(\C\)) to 
     \[\begin{pmatrix}
         1 & 1\\
         0 & 1
@@ -99,7 +100,7 @@ Thus parabolics and their Levis allows us to induce from a reductive subgroup up
         1 & 0\\
         0 & 1
     \end{pmatrix}.\]
-    Clearly the standard parabolic 
+    Clearly the standard parabolic subgroup
     \[\begin{pmatrix}
         a & b \\
          & a\inv
@@ -112,9 +113,9 @@ Thus parabolics and their Levis allows us to induce from a reductive subgroup up
 \subsubsection{The Example of \(\Sp_{2n}\)}
 We collect the following facts as they will be useful in what is to come. Good references are the notes \cite{conradStandardParabolicSubgroups} and the book \cite[\S 8]{garrettBuildingsClassicalGroups1997}. 
 
-Let \((V, \inner{,})\) be a symplectic space as above and \(Sp(V)\) is the automorphisms preserving the form. A \textbf{flag} of \(V\) is a sequence of strict inclusions of vector subspaces 
+Let \((V, \inner{,})\) be a symplectic space as above and \(\Sp(V)\) is the automorphisms preserving the form, when \(V\) is fixed or clear we will simply write \(\Sp \defeq \Sp(V)\). A \textbf{flag} of \(V\) is a sequence of strict inclusions of vector subspaces 
 \[\{0\}\subset V_1 \subset \cdots \subset V_{n-1} \subset V. \]
-A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly zero on it (in both variables). A flag is \textbf{isotropic} if the proper subspaces in it are isotropic subspaces. A \textbf{maximal isotropic} flag is one with exactly \(n\) components. \(\Sp_{2n}\) acts on a flag by acting on each of the subspaces. This action preserves isotropic flags i.e. it sends an isotropic flag to an isotropic flag. Stabilisers of isotropic flags give parabolics of \(\Sp\) and moreover all parabolics arise in this way \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}.
+A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly zero on it (in both variables). A flag is \textbf{isotropic} if the proper subspaces in it are isotropic subspaces. A \textbf{maximal isotropic} flag is an isotropic flag with exactly \(n\) components. \(\Sp_{2n}\) acts on a flag by acting on each of the subspaces. This action preserves isotropic flags i.e. it sends an isotropic flag to an isotropic flag. Stabilisers of isotropic flags give parabolics of \(\Sp\) and moreover all parabolics arise in this way \cite[Exercise 3.2.16, 6.2.11]{springerLinearAlgebraicGroups1998}.
 
 \begin{example}
         Consider a four dimensional vector space \(V\) with a form given by the matrix
@@ -137,7 +138,7 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     \label{maximal_parabolic}
     In particular maximal parabolics of \(\Sp\) are stabilisers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces,
     \[0 \subset V_\ell \subset V,\]
-    where \(V_\ell = \mathrm{span}_F(e_1, ..., e_\ell)\). Then the stabiliser consists of matrices of the form
+    where \(V_\ell = \mathrm{span}(e_1, ..., e_\ell)\). Then the stabiliser consists of matrices of the form
     \[\begin{pmatrix}
         * &*&*&* \\
         0 &*&*&* \\
@@ -161,14 +162,14 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
         a & b\\
         c & d \\
     \end{pmatrix} \in \Sp_{2(n-\ell)}(F),\]
-    and unipotent consisting of matrices of form 
+    and unipotent radical consisting of matrices of form 
     \[\begin{pmatrix}
         1 &*&*&* \\
         & 1&*& \\
         && 1& \\
         &&*&1
     \end{pmatrix},\]
-    with relations among the entries.
+    with relations among the entries. These maximal parabolics are labeled by the size of the Levi's \(\GL\) block, we label \(P_r\) the unique standard maximal parabolic with standard Levi \(\GL_r \times \Sp_{2(n-r)}\).\label{max-parabolic} 
 
 
     \subsection{Borel and Torus}\label{borel_torus}    
@@ -182,9 +183,9 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
             U(1)&\defeq \{c\in \GL_1(\C) : \forall z,z'\in \C , \quad \inner{cz, cz'} = \overline{cz}cz' = \bar{z}z'\} \\
              &= \{c\in \GL_1(\C) : |c| = 1\}.
         \end{align*}
-        Note that this is a (real) line topologically so we do not expect it to be a complex variety. Indeed this defines a \textbf{real} algebraic group given by the zero locus in \(\R^2\) of the two variable polynomial \(x^2 + y^2 - 1\). In other words,
-        \[ U(1) \cong \mathrm{MaxSpec}\big(\R[x,y]/(x^2 + y^2 - 1)\big) .\]
-        Now if we base change to \C we have 
+        Note that this is (locally) a (real) line topologically so we do not expect it to be a complex variety. Indeed this defines a \textbf{real} algebraic group given by the zero locus in \(\R^2\) of the two variable polynomial \(x^2 + y^2 - 1\). In other words,
+        \[ U(1) \cong \mathrm{MaxSpec}\big(\R[x,y]/(x^2 + y^2 - 1)\big) ,\]
+        the set of maximal ideals. Now if we base change to \C we have 
         \begin{align*}
             \R[x,y]/(x^2 + y^2 - 1) \tensor_\R \C &\cong \C[x,y]/\big((x+iy)(x-iy) -1 \big)\\
              &\cong \C[s,t]/(st -1) \\
@@ -199,15 +200,15 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     
     A subgroup that is isomorphic to a split torus and is maximal in this respect is called a \textbf{maximal split torus}. 
      \begin{example}
-        The classic example of a maximal split torus is the group of diagonal matrices in \(\GL_n\).
+        The classic example of a maximal split torus is the maximal split torus of \(\GL_n\), the group of diagonal matrices in \(\GL_n\).
      \end{example}
 
-    A \textbf{Borel} is a maximal, closed, solvable and connected subgroup of \(G\). A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
+    A \textbf{Borel} is a maximal, closed, solvable and connected subgroup of \(G\). A Borel can be considered to be a parabolic that is minimal with respect to inclusion. The maximal split tori then form the Levis of these parabolics. In particular for a Borel \(B\) we have that 
     \[B = TU,\]
-    for a maximal torus \(T\) and unipotent \(U\).
+    for a maximal split torus \(T\) and unipotent radical \(U\).
 
     \begin{example}
-        The standard Borel of \(\GL_n\) is the group of upper triangular matrices. If \(n\) is even and one intersects this Borel with \(\Sp_{2(\frac{1}{2}n)}\) then we get the standard Borel of \(\Sp_{2(\frac{1}{2}n)}\).
+        The usual Borel of \(\GL_n\) is the group of upper triangular matrices. If \(n\) is even and one intersects this Borel with \(\Sp_{2(\frac{1}{2}n)}\) then we get a Borel of \(\Sp_{2(\frac{1}{2}n)}\).
 
         Lets prove this in \(\GL_2\) and then believe that the only complication to going to larger \(n\) is keeping track of indices. So let 
         \[B = \begin{pmatrix}
@@ -241,7 +242,7 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
     \subsection{The Topology on Points}
 	Let F be a number field and \(G = \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) be a LAG over F. As a locally ringed space this scheme has the Zariski topology, in the theory of automorphic forms however we wish to topologise the local and adelic points in a way which accommodates analysis. In particular the topology should be locally compact and Hausdorff so that we have Haar measures on the groups. 
 	
-	Following \cite{conradWeilGrothendieckApproaches2012} then we think of \(G(\A)\) as the subset of \(\A^n\) on which the functions \(f_i: \A^n \to \A\) all vanish. We give it the subspace topology which inherits the local compact and Hausdorff properties from \(\A^n\). If \(\nu\) is a place of \(F\) then we have the same definition, \(G(F_\nu)\) is the subspace of \(F_\nu^n\) on which \(f_i:F_\nu^n \to F_\nu\) all vanish and it is endowed with the subspace topology.
+	Following \cite{conradWeilGrothendieckApproaches2012} we think of \(G(\A)\) as the subset of \(\A^n\) on which the functions \(f_i: \A^n \to \A\) all vanish. We give it the subspace topology which inherits the local compact and Hausdorff properties from \(\A^n\). If \(\nu\) is a place of \(F\) then we have the same definition, \(G(F_\nu)\) is the subspace of \(F_\nu^n\) on which \(f_i:F_\nu^n \to F_\nu\) all vanish and it is endowed with the subspace topology.
 	These topologies are referred to as the \textbf{Hausdorff topology}.
 	
 	\begin{remark}
@@ -249,17 +250,17 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
 	\end{remark}
 
     \subsection{Maximal Compact Subgroups}\label{max_compact_subgroup}
-    We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\) of the Hausdorff topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many convenient properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a group \(G\) and a fixed Borel \(B\):
-    \begin{itemize}
+    We will often need to fix a maximal compact subgroup \(K\subseteq G(\A)\) of the Hausdorff topology. These maximal compact subgroups are not unique and as such when fixing one it can be arranged to have many convenient properties \cite[I.1.4]{moeglinSpectralDecompositionEisenstein1995}. In particular if we have a classical group \(G\) and a fixed Borel \(B\):
+    \begin{enumerate}
         \item First require that 
         \[K = \prod_\nu K_\nu,\]
-        where the product is over all places of \(F\) and \(K_\nu\subseteq F_\nu\) is maximal compact.
+        where the product is over all places of \(F\) and \(K_\nu\subseteq G(F_\nu)\) is maximal compact subgroup.
         \item If \(\mathcal{O}_\nu\) is the ring of integers of \(F_\nu\), then for almost all places, \(G(\mathcal{O}_{\nu})\) is defined and is maximal compact in \(G(F_\nu)\) hence we can require \(K_\nu = G(\mathcal{O}_{\nu})\) at these places. 
         \item We require 
         \[G(\A) = B(\A)K.\]
-        \item For every standard parabolic \(P = MU\) we have that 
+        \item For every standard parabolic \(P \) with Levi decomposition \(P=MU\) we have that 
         \[P(\A)\cap K = \Bigl( M(\A)\cap K \Bigr) \Bigl( U(\A)\cap K \Bigr),\]
         and \(M(\A)\cap K\) is a maximal compact subgroup of \(M(\A)\).
-    \end{itemize}
+    \end{enumerate}
      It is in terms of the third property that we like to think of the maximal compact subgroup, it is the complimentary piece of the Borel. Moreover the fourth property should be thought of as a condition that the maximal compact subgroups are well behaved with the way that we are moving between the bigger and smaller reductive groups.
     Maximal compact groups with all these properties are said to be in \textbf{good position} with respect to \(B\).

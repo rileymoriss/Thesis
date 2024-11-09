@@ -1,18 +1,18 @@
-The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of their representation theory because it is both subtle and essential for the setup in \cite{jiangPolesCertainResidual2013}. In particular we want to draw attention to some of the quirks of the category of automorphic representations. 
+The references that will be most helpful are \cite[I.II]{borelAutomorphicFormsRepresentations1979}\cite{getzIntroductionAutomorphicRepresentations2024} for the general theory, we will follow the notation developed in \cite{moeglinSpectralDecompositionEisenstein1995} as it is somewhat standard. We will discuss some of the details of the representation theory of reductive groups on spaces of automorphic forms. In particular we want to draw attention to some of the quirks of the category of automorphic representations. 
 
 \section{Local Representation Theory}
-Recall that in the representation theory of finite groups over \C there is really only one important representation, that is the regular representation i.e. the \(\C[G]\) module \(\C[G]\). This is important for two reasons, the first is that it is always a priori defined uniformly for all groups, the second is that it decomposes into a direct sum over all irreducible modules \cite[Ch. 2.4 Cor. 2 ]{serreLinearRepresentationsFinite1996}.
+Recall that in the theory of complex representations of finite groups there is really only one important representation, that is the regular representation i.e. for the finite group \(G\), the \(\C[G]\) module \(\C[G]\). This is important for two reasons, the first is that it is always a priori defined uniformly for all groups. The second is that it decomposes into a direct sum over all irreducible modules \cite[Ch. 2.4 Cor. 2 ]{serreLinearRepresentationsFinite1996}.
 
 Let \(G\) be a classical group defined over a number field \(F\). 
 As in the finite group case we want to consider the right regular action of the adelic points, \(G(\A)\), on a space of functions \(G(\A) \to \C\), namely
-\[g.f(x) = f(xg).\]
+\[g.f(x) = f(xg), \quad g,x\in G(\A), f\in \mathrm{Maps}(G(\A), \C).\]
 One can ask if this representation sends an automorphic form to an automorphic form.
 If \(\phi(x)\in \mathcal{A}(U(\A)M(F)\backslash G(\A))\) and \(g\in G(\A_f)\) then \(\phi(xg) \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \). Hence \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) is a \(G(\A_f)\)-module. In particular it is a module for \(G(F_\nu)\) for all \(\nu\) non-Archimedean.
 
 There is a problem with the \(K\)-finiteness in the infinite places however which prevents \( \mathcal{A}(U(\A)M(F)\backslash G(\A))\) from being a full \(G(\A)\) module.
 
 \begin{example}[\cite{cogdellLecturesLfunctionsConverse}, 2.3]
-    If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite, then \(g.\phi\) is \(gK_\infty g\inv\)-finite. This is still a maximal compact subgroup, however in the infinite place it will a priori have only the identity in common with the original \(K\).
+    If \(\phi\in \mathcal{A}(\Gamma \backslash G(F_\infty))\) is \(K_\infty\)-finite, then \(g.\phi\) is \(gK_\infty g\inv\)-finite. This is still a maximal compact subgroup, however in the infinite place it will a priori have only the identity in common with the original \(K_\infty\).
 
     For example consider \(\SL_2\) where the maximal compact is \(\SO_2\), if we conjugate we get \(g\SO_2g\inv\)
     \begin{align*}
@@ -56,14 +56,14 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
     Let \(G\) be a \textit{real} Lie group (for example the analytification of the real or complex points of our favourite reductive LAG) and \(K\) be a maximal compact subgroup of \(G\). Let \(\mathfrak{g}_\C\) be the complexification of the real Lie algebra of \(G\) and \(\mathfrak{k}\) the real Lie algebra of \(K\). 
     
     A \textbf{\((\mathfrak{g}, K)\)-module} is a complex vector space \(V\) with two representations 
-    \[\tilde{\pi}: \mathfrak{g} \to End(V), \quad \pi: K\to \GL(V),\]
+    \[\tilde{\pi}: \mathfrak{g}_\C \to End(V), \quad \pi: K\to \GL(V),\]
     satisfying the following axioms
     \begin{enumerate}
         \item \(V\) decomposes into a countable direct sum of finite dimensional \(K\) representations.
-        \item The representations should be compatible: For all \(X \in \mathfrak{k}\) and \(v\in V\)
+        \item The representations, \(\pi, \tilde{\pi}\), should be compatible: For all \(X \in \mathfrak{k}\) and \(v\in V\)
         \[\tilde{\pi}(X)(v) = \frac{\mathrm{d}}{\mathrm{d}t}\pi(e^{tX})(v)|_{t=0} = \lim_{t\to 0}\frac{\pi(e^{tX})(v) - v}{t}.\]
         In particular the right hand limit exists.
-        \item And compatible with the adjoint representation: For \(k\in K\) and \(X\in \mathfrak{g}\) 
+        \item  The representations, \(\pi, \tilde{\pi}\), should be compatible with the adjoint representation: For \(k\in K\) and \(X\in \mathfrak{g}\) 
          \[\pi(k)\tilde{\pi}(X) \pi(k\inv )(v) = \tilde{\pi}(\mathrm{Ad}(k)(X))(v).\]
     \end{enumerate}
 \end{definition}
@@ -74,10 +74,10 @@ For this reason we will need to talk about \((\mathfrak{g}, K)\)-modules:
 
 If \(\mathfrak{g}\) is the Lie algebra of \(G(F_\infty)\) and \(K_\infty\subseteq G(F_\infty)\) is a maximal compact subgroup in good position we can define a \((\mathfrak{g}, K_\infty)\)-module structure on the space of automorphic forms as follows. Recall that by definition we have that 
 \[\mathcal{A}(U(\A)M(F)\backslash G(\A)) \subseteq C^\infty(G(\A_f)) \tensor C^\infty(G(F_\infty)).\]
-If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) and \((g_f, g_\infty)\in G(\A)\) then \(K_\infty\) acts by 
+If \(\phi_f\tensor \phi_\infty \in \mathcal{A}(U(\A)M(F)\backslash G(\A)) \) and \((g_f, g_\infty)\in G(\A)\) then \(k\in K_\infty\) acts by 
 \[k.(\phi_f\tensor \phi_\infty)(g) \defeq \phi_f(g) \tensor \phi_\infty(gk),\]
-i.e. via the right regular representation on the Archimedean component. We extend this linearly from pure tensors to all tensors. The lie algebra of \(G(F_\infty)\) acts by linearly extending the action we have previously defined in section \ref{lie_algebra_action}, via
-\[z.(\phi_f\tensor \phi_\infty)(g_f, g_\infty) = \phi_f(g_f)\tensor \Dif{}{t}\phi_\infty(g_\infty e^{tz})|_{t=0}.\] 
+i.e. via the right regular representation on the Archimedean component. We extend this linearly from pure tensors to all tensors. The Lie algebra of \(G(F_\infty)\) acts by linearly extending the action we have previously defined in section \ref{lie_algebra_action}, via
+\[z.(\phi_f\tensor \phi_\infty)(g_f, g_\infty) = \phi_f(g_f)\tensor \Dif{}{t}\phi_\infty(g_\infty e^{tz})|_{t=0}, \quad z\in \mathfrak{g}.\] 
 
 To see that we have really fixed the \(K_\infty\) problem we should check that this really defines an action. 
 
@@ -92,23 +92,23 @@ To see that we have really fixed the \(K_\infty\) problem we should check that t
 		\mathfrak{g}\tensor C^\infty(\Gamma\backslash G(F_\infty)) \to C^\infty(\Gamma\backslash G(F_\infty)) , \;\;\;   X\tensor \phi \mapsto X\phi,
 	\end{equation}
 
-	is \(K_\infty\) equivariant by the definition of the adjoint action. Now if \(\phi \in \mathcal{A}(\Gamma \backslash G(F_\infty))\) then its span is a finite dimensional \(K_\infty\) module which we will denote \(M_\phi\). Then \(k.X\phi\) is in the image of \(\mathfrak{g}\tensor M_\phi\) under the map \ref{eq:1}. But the Lie algebra is finite dimensional and \(M_\phi\) is finite dimensional so this image is finite dimensional. Therefore the \(K_\infty\) span of \(X\phi\) is finite dimensional and so \(X\phi\) is \(K_\infty\)-finite.
+	is \(K_\infty\) equivariant by the definition of the adjoint action. Now if \(\phi \in \mathcal{A}(\Gamma \backslash G(F_\infty))\) then the span of \(\phi\) is a finite dimensional \(K_\infty\) module which we will denote \(M_\phi\). Then \(k.X\phi\) is in the image of \(\mathfrak{g}\tensor M_\phi\) under the map \ref{eq:1}. But the Lie algebra is finite dimensional and \(M_\phi\) is finite dimensional so this image is finite dimensional. Therefore the \(K_\infty\) span of \(X\phi\) is finite dimensional and so \(X\phi\) is \(K_\infty\)-finite.
 }
 
 Finally the conditions for these representations to be a \((\mathfrak{g}, K_\infty)\) module can be checked. (1) is \cite[Thm. 6.3.4]{getzIntroductionAutomorphicRepresentations2024}. (2) is immediate from the definitions of the two representations and the fact that automorphic forms are smooth. (3) is immediate from the definition of the adjoint action.
 
 
 \section{Automorphic Representations}
-Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An automorphic representation is then a subquotient of this representation.
+Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \(R\) modules \(C \subseteq B \subseteq A\) then we call \(B/C\) a subquotient of \(A\). We now think of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))\) as being a \(G(\A_f)\times (\mathfrak{g}, K)\) module. An \textbf{automorphic representation} is then defined to be a subquotient of this representation.
 \begin{remark}
     Some authors will require that an automorphic representation is by definition an \textit{irreducible} subquotient.
 \end{remark}
 \begin{remark}
-    We really need a set theoretic definition here. The quotient of these modules cannot be considered up to isomorphism of \((\mathfrak{g}, K)\)-modules but must be the classical set theoretic realisation of this object, defined as equivalence classes of elements of the module. This is to say if one were to think of the category of automorphic representations it is \textit{much smaller} than the category of \(G(\A_f)\times (\mathfrak{g}, K)\)-modules (in particular the cardinality of the category of automorphic representations is bounded, whilst there is a proper class of \(G(\A_f)\)-modules). The reason is that we will want to talk about the automorphic forms themselves, and consider their properties.
+    We really need a set theoretic definition here. The quotient of these modules cannot be considered up to isomorphism of \((\mathfrak{g}, K)\)-modules but must be the classical set theoretic realisation of this object, defined as equivalence classes of elements of the module. This is to say if one were to think of the category of automorphic representations it is \textit{much smaller} than the category of \(G(\A_f)\times (\mathfrak{g}, K)\)-modules (in particular the category of automorphic representations has a cardinality, whilst there is a proper class of \(G(\A_f)\)-modules). The reason is that we will want to talk about the automorphic forms themselves, and consider their properties.
 \end{remark}
 
 \begin{remark}
-    Automorphic representations can also be defined as representations of an algebra \(\mathcal{H}\), the global Hecke algebra. This is the approach in \cite[I.II(4.6)]{borelAutomorphicFormsRepresentations1979}, and can be a helpful perspective to simplify definitions. This is also a motivation behind why Harish-Chandras \((\mathfrak{g}, K)\)-modules are the ``right'' replacement for the regular representation. 
+    Automorphic representations can also be defined as representations of an algebra \(\mathcal{H}\), the global Hecke algebra. This is the approach in \cite[I.II(4.6)]{borelAutomorphicFormsRepresentations1979}, and can be a helpful perspective to simplify definitions. This is also a motivation behind why Harish-Chandra's \((\mathfrak{g}, K)\)-modules are the ``right'' replacement for the regular representation. 
 \end{remark}
 
 \begin{example}
@@ -117,7 +117,7 @@ Recall that if \(A, B, C\) are all \(R\) modules and we have the inclusions of \
 \end{example}
 
 \subsection{Cuspidal Representations}
-Recall that an automorphic form \(\phi\in \mathcal{A}(U(\A)M(F) \backslash G(\A))\) is called \textbf{cuspidal}  if all its constant terms vanish, see section \ref{cuspidal_form_definition} for more detail on constant terms.
+An automorphic form \(\phi\in \mathcal{A}(U(\A)M(F) \backslash G(\A))\) is called \textbf{cuspidal}  if all its constant terms vanish, see section \ref{cuspidal_form_definition} for more detail on constant terms.
 The space of such automorphic forms is denoted \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\). An automorphic representation is called \textbf{cuspidal} if it is an irreducible subquotient of \(\mathcal{A}_0(U(\A)M(F) \backslash G(\A))\).
 
 \begin{remark}
@@ -132,7 +132,7 @@ We will also need the space
 \begin{align*}
 	&\mathcal{A}(U(\A)M(F) \backslash G(\A))_\pi \\ &\defeq \{\phi \in \mathcal{A}(U(\A)M(F) \backslash G(\A)) : \forall k\in K, \; \phi_k\in\mathcal{A}(M(k) \backslash M(\A))_\pi \},
 \end{align*}
-where \(\phi_k: M(\A) \to \C\) is given by \(\phi_k(x) = \phi(xk)\).
+where \(\phi_k: M(\A) \to \C\) is given by \(\phi_k(x) = -\rho_P(x)\phi(xk)\).
 
 Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\) to be the isotypic component of \(\pi\) in \(\mathcal{A}_0(M(k) \backslash M(\A))\) and similarly we have 
 \begin{align*}
@@ -141,11 +141,11 @@ Now if \(\pi\) is cuspidal, we define \(\mathcal{A}(M(k) \backslash M(\A))_\pi\)
 \end{align*}
 
 \begin{remark}
-    We cannot simply take the isotypic components as \((\mathfrak{g}, K)\)-modules we need to take the isotypic components after explicitly restricting the spaces. This is to say again that the category of automorphic reps is very explicit. 
+    We cannot simply take the isotypic components as \((\mathfrak{g}, K)\)-modules we need to take the isotypic components of the cuspidal subspace directly. This is to say again that the category of automorphic representations is very explicit. 
 \end{remark}
 
 The point is that we want the isotypic component corresponding to a cuspidal representation to be cuspidal, however this just might not be the case. 
-Yamana in \cite[Rm. 7.12]{yamanaSiegelWeilFormulaQuaternionic2013} has a counter example when one allows unitary groups over division algebras (non-commutative fields). It could be interesting to investigate this example more closely to see if the example can be pulled back to a unitary group over a field. In \cite{yamanaSiegelWeilFormulaQuaternionic2013} there is an automorphic representation of the quarternionic unitary group constructed, \(\Pi(V)\), that appears in both the cuspidal and residual spectrum. By that Yamana means that up to isomorphism the representation can been seen in both residual and cuspidal spectrum. In particular if one were to take the component that is in the cuspidal spectrum and look at its isotypic component then the versions in the residual spectrum would also occur and hence by definition of residual spectrum would not be cuspidal.
+Yamana in \cite[Remark. 7.12]{yamanaSiegelWeilFormulaQuaternionic2013} has a counter example when one allows unitary groups over division algebras (non-commutative fields). It could be interesting to investigate this example more closely to see if the example can be pulled back to a unitary group over a field. In \cite{yamanaSiegelWeilFormulaQuaternionic2013} there is an automorphic representation of the quarternionic unitary group constructed, \(\Pi(V)\), that appears in both the cuspidal and residual spectrum. By that Yamana means that up to isomorphism the representation can been seen in both residual and cuspidal spectrum. In particular if one were to take the component that is in the cuspidal spectrum and look at its isotypic component then the versions in the residual spectrum would also occur and hence by definition of residual spectrum would not be cuspidal.
 
 If we restrict to the cases dealt with in for instance \cite{moeglinSpectralDecompositionEisenstein1995}, namely not dealing with quarternions, then we have been told that this is an open problem whether or not this restriction is superfluous. 
 

@@ -2,7 +2,7 @@ This section is a discussion of the adelic constant term, especially its applica
 
 Through constant terms we can define cusp forms which play a central role in the theory of automorphic forms. They appear historically as interesting examples such as the Ramanujan tau function, by a theorem of Ribet \cite[T2.3]{serreProceedingsInternationalConference1977} the Galois representation associated to a cusp form is irreducible and they form the ``base case'' for proofs, for example the spectral decomposition in \cite{moeglinSpectralDecompositionEisenstein1995}.
 
-Constant terms preserve analytic properties whilst sometimes reducing the functions to more tractable forms. This is how they will be used in our calculation of poles of Eisenstein series.\label{constant_terms}
+Constant terms preserve analytic properties whilst sometimes reducing the functions to more tractable forms..\label{constant_terms}
 
 
 \section{Definition and Role} \label{cuspidal_form_definition}\label{sec:L-functions}
@@ -59,7 +59,7 @@ where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of
         \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap P'(F) \setminus w\inv P'(F). \]
         If \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its represented by some \(pw\inv p'\) where \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
         \[w(P(F)\cap P'(F) \setminus w\inv P'(F)) \cong wP(F)w\inv \cap P'(F) \setminus P'(F).\]
-    }
+    }\todo{this proof is incorrect. Didnt pay attention to left and right cosets. Also need to know that these actions are actually well defined, do they fix the sets that im talking about? }
 
     \begin{Lemma}\label{lem:2}
         Let \(m'\in M'(F),  u'\in U'(F)\) then 
@@ -97,9 +97,10 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
 
 \subsection{Constant Terms of Cuspidal Eisenstein Series}
 \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:4}
-        For \(w\in W_{M'}\setminus W_G / W_{M} \) we have that \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
-    \end{Lemma}
+        There exists a set of representatives \(R\) for \( W_{M'}\setminus W_G / W_{M} \) such that for \(w\in R\) we have  \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
+    \end{Lemma}\todo{need to make the root datum weyl group stuff explicit and then describe these representatives (maximal length ones)}
     \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:5}
+    	For \(w\in R\) as above
         \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]
     \end{Lemma}
     
@@ -114,7 +115,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     \[= \int_{(w\inv U'(\A)w \cap M(\A)) \setminus A} \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)} \lambda.\phi( u_1 u_2 w\inv m' x)  du_1 du_2.\]
      Now look at the inner integral here more closely 
     \[ \int_{w\inv U'(F) w \cap M(F) \setminus w\inv U'(\A)w \cap M(\A)}\lambda. \phi( u_1 u_2 w\inv m' x)  du_1 du_2,\]
-    applying Lemma \ref{lem:6} we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m u_2 w\inv m' x)\). 
+    applying Lemma \ref{lem:4} we see that this is a constant term for a parabolic of \(M\), of the function \(m\mapsto \phi(m u_2 w\inv m' x)\). 
 \begin{comment}
 	    \begin{Lemma}
         \(u_2 w\inv m' x \in K\) with variables as above.

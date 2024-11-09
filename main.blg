@@ -5,8 +5,8 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: ./NumberTheory.bib
-Warning--I didn't find a database entry for "grenierAnalogueSiegelFOperator1992"
-Warning--I didn't find a database entry for "cogdellFunctorialityClassicalGroups2004"
+Warning--I didn't find a database entry for "dumbaughEmilArtinClass2015"
+Warning--I didn't find a database entry for "neukirchAlgebraischeZahlentheorie2002"
 Warning--empty journal in arthurLfunctionsAutomorphicRepresentations
 Warning--empty year in arthurLfunctionsAutomorphicRepresentations
 Warning--empty journal in arthurAUTOMORPHICREPRESENTATIONSNUMBER1981
@@ -27,7 +27,6 @@ Warning--empty journal in conradHISTORYCLASSFIELD
 Warning--empty year in conradHISTORYCLASSFIELD
 Warning--empty journal in emertonCLASSICALMODULARFORMS
 Warning--empty year in emertonCLASSICALMODULARFORMS
-Warning--empty journal in garrettInvariantDifferentialOperators2010
 Warning--empty journal in garrettTransitionEisensteinSeries2016
 Warning--empty journal in kimEISENSTEINSERIESTHEIR
 Warning--empty year in kimEISENSTEINSERIESTHEIR
@@ -40,45 +39,45 @@ Warning--empty year in milneLieAlgebrasAlgebraic
 Warning--empty journal in milneBasicTheoryAffine2012
 Warning--empty journal in pollackRANKINSELBERGMETHODUSERS
 Warning--empty year in pollackRANKINSELBERGMETHODUSERS
-You've used 77 entries,
+You've used 75 entries,
             2543 wiz_defined-function locations,
-            1016 strings with 18640 characters,
-and the built_in function-call counts, 24947 in all, are:
-= -- 2391
-> -- 933
-< -- 83
-+ -- 294
-- -- 276
-* -- 1655
-:= -- 4079
-add.period$ -- 227
-call.type$ -- 77
-change.case$ -- 397
-chr.to.int$ -- 71
-cite$ -- 110
-duplicate$ -- 1176
-empty$ -- 2000
-format.name$ -- 411
-if$ -- 5084
+            1007 strings with 18344 characters,
+and the built_in function-call counts, 24164 in all, are:
+= -- 2309
+> -- 913
+< -- 80
++ -- 289
+- -- 271
+* -- 1611
+:= -- 3959
+add.period$ -- 220
+call.type$ -- 75
+change.case$ -- 387
+chr.to.int$ -- 69
+cite$ -- 107
+duplicate$ -- 1134
+empty$ -- 1935
+format.name$ -- 402
+if$ -- 4913
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 92
-newline$ -- 368
-num.names$ -- 240
-pop$ -- 582
+missing$ -- 90
+newline$ -- 358
+num.names$ -- 232
+pop$ -- 570
 preamble$ -- 1
-purify$ -- 495
+purify$ -- 483
 quote$ -- 0
-skip$ -- 858
+skip$ -- 824
 stack$ -- 0
-substring$ -- 986
-swap$ -- 133
-text.length$ -- 83
-text.prefix$ -- 59
+substring$ -- 940
+swap$ -- 123
+text.length$ -- 80
+text.prefix$ -- 57
 top$ -- 0
-type$ -- 504
-warning$ -- 33
-while$ -- 217
-width$ -- 81
-write$ -- 944
-(There were 35 warnings)
+type$ -- 488
+warning$ -- 32
+while$ -- 209
+width$ -- 79
+write$ -- 917
+(There were 34 warnings)
