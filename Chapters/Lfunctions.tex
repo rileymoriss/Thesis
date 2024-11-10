@@ -1,20 +1,20 @@
 The theory of L-functions is not yet systematic; Langlands has provided a conjectural framework, however it is still under construction.  
 In the mean time there are two major ``paradigms'' for constructing and proving theorems about L-functions, those are the Langlands-Shahidi type constructions and the Rankin-Selberg type constructions. General surveys can be found in \cite[Part 2.III.2]{borelAutomorphicFormsRepresentations1979}\cite{shahidiEisensteinSeriesAutomorphic2010}\cite{cogdellLFUNCTIONSFUNCTORIALITY}\cite[9, 10, 11]{bumpIntroductionLanglandsProgram2004}\cite{arthurLfunctionsAutomorphicRepresentations}.
 
-The Rankin-Selberg type functions are surveyed in \cite{bumpRankinSelbergMethodIntroduction2011}. The \(\GL_n \times \GL_m\) case is dealt with in \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}. For Rankin-Selberg L-functions of form \(\Sp_{2n}\times \GL_m \) the theory (for generic cuspidal representations) is worked out in \cite{ginzburg$L$functionsSymplecticGroups1998}.
+The Rankin-Selberg type functions are surveyed in \cite{bumpRankinSelbergMethodIntroduction2011}. The \(\GL_n \times \GL_m\) case is dealt with in \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}. For Rankin-Selberg L-functions of the form \(\Sp_{2n}\times \GL_m \) the theory (for generic cuspidal representations) is worked out in \cite{ginzburg$L$functionsSymplecticGroups1998}.
 
 The Langlands-Shahidi paradigm is explained in \cite{shahidiProofLanglandsConjecture1990, shahidiEisensteinSeriesAutomorphic2010}.
 
-We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquely determining L-functions for \textit{tempered} representations. By \cite{shahidiArthurPacketsRamanujan2011} all generic representations are tempered so we can apply the theory of Rankin-Selberg and Ginzburg-Ralis to explicitly construct global L-functions and prove theorems about them. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the unfinished work of Arthur \cite{arthurEndoscopicClassificationRepresentations2013b}.
+We have by \cite{cogdellLFUNCTIONSFUNCTORIALITY} some properties uniquely determining L-functions for \textit{tempered} representations. It is a conjecture that all generic representations are tempered, some work in this direction is in \cite{shahidiArthurPacketsRamanujan2011}, under this hypothesis we can apply the theory of Rankin-Selberg and Ginzburg-Ralis to explicitly construct global L-functions and prove theorems about them. In particular their analytic properties are well understood in these cases from \cite{grbacResidualSpectrumSplit2011, cogdellRemarksRankinSelbergConvolutions}. Note that \cite{grbacResidualSpectrumSplit2011} is conditional on the unfinished work of Arthur \cite{arthurEndoscopicClassificationRepresentations2013b}.
 
 \label{L-functions}
 
 \section{The Langlands Framework}
 We follow closely Borels exposition in \cite[Part 2. III. 2. ]{borelAutomorphicFormsRepresentations1979} and \cite{shahidiEisensteinSeriesAutomorphic2010}.
-Given a reductive LAG \(G\) defined over \C there is an associated root datum as in \((X, \Phi, \hat{X}, \hat{\Phi})\), where for any choice of maximal torus we have \(X = \Hom(T, \mathbb{G}_m)\), \(\hat{X} = \Hom(\mathbb{G}_m, T)\), and \(\Phi, \hat\Phi\) are the roots and coroots of \(G\) with respect to \(T\) \cite[7.4.3]{springerLinearAlgebraicGroups1998}.  Then each reductive LAG \(G\) over a number field \(F\) has the root datum that is associated to the base change of \(G\) to \(\C\), \((X, \Phi, \hat{X}, \hat{\Phi})\).
+Given a reductive LAG \(G\) defined over \C there is an associated root datum \((X, \Phi, \hat{X}, \hat{\Phi})\), where for any choice of maximal torus we have \(X = \Hom(T, \mathbb{G}_m)\), \(\hat{X} = \Hom(\mathbb{G}_m, T)\), and \(\Phi, \hat\Phi\) are the roots and coroots of \(G\) with respect to \(T\) \cite[7.4.3]{springerLinearAlgebraicGroups1998}.  Then each reductive LAG \(G\) over a number field \(F\) has the root datum that is associated to the base change of \(G\) to \(\C\), \((X, \Phi, \hat{X}, \hat{\Phi})\).
 By the existence theorem \cite[10]{springerLinearAlgebraicGroups1998} to the dual root datum \(( \hat{X}, \hat{\Phi}, X, \Phi)\) there is a LAG defined over \C that corresponds, we call this the \textbf{dual group} of \(G\) and we denote it \(\hat{G}\). It is possible through the use of the root datum to specify a ``cannonical'' action of \(\mathrm{Gal}(\bar{F}/F)\) on \(\hat{G}\) as in loc. cit.
-The \textbf{Langlands dual group} is then the dual group semi-direct producted with the \(\mathrm{Gal}(\bar{k}/k)\) via this action, which we omit
-\[^L G \defeq \hat{G} \rtimes \mathrm{Gal}(\bar{k}/k).\]
+The \textbf{Langlands dual group} is then the dual group semi-direct producted with the \(\mathrm{Gal}(\bar{F}/F)\) via this action, which we omit
+\[^L G \defeq \hat{G} \rtimes \mathrm{Gal}(\bar{F}/F).\]
 
 \begin{example}[Classical Groups, \cite{bumpIntroductionLanglandsProgram2004}, 11.1]
 	We have the following table
@@ -38,9 +38,9 @@ In the global case we consider an irreducible automorphic representation \(\pi =
 
 
 \begin{example}[Standard Representations / Classical Groups]
-	In the case of classical groups it is common to see L-functions with only two entries e.g. if \(\rho\) is a representation of \(G = \Sp{2n}\) then you may see 
+	In the case of classical groups it is common to see L-functions with only two entries e.g. if \(\rho\) is a representation of \(G = \Sp_{2n}\) then you may see 
 	\(L(s, \rho).\)
-	The reason is that there is a standard representation of the dual groups of classical groups. Namely the standard representation of a matrix group inside \(\GL_n\) is the one that sends \(g\mapsto g\). It is this representation that is to be taken for the dual group in this setting.
+	The reason is that there is a standard representation of the dual groups of classical groups. Namely the standard representation of a matrix group inside \(\GL_m\) is the one that sends \(g\mapsto g\). It is this representation that is to be taken for the dual group in this setting.
 \end{example}
 
 \begin{example}[Rankin-Selberg, \cite{cogdellLECTURESINTEGRALREPRESENTATIONS}, 1.2, \cite{arthurLecturesAutomorphicFunctions1991a}, Ch. 2 Example. 2]

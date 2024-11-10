@@ -188,11 +188,6 @@ Paul Garrett.
 \newblock Transition: {{Eisenstein}} series on adele groups.
 \newblock 2016.
 
-\bibitem[Gar18]{garrettModernAnalysisAutomorphic2018}
-Paul Garrett.
-\newblock {\em Modern {{Analysis}} of {{Automorphic Forms By Example}}:}.
-\newblock Cambridge University Press, 1 edition, September 2018.
-
 \bibitem[Gel84]{gelbartElementaryIntroductionLanglands1984}
 Stephen Gelbart.
 \newblock An elementary introduction to the {{Langlands}} program.
@@ -218,13 +213,6 @@ Neven Grbac.
 \newblock On the residual spectrum of split classical groups supported in the
   {{Siegel}} maximal parabolic subgroup.
 \newblock {\em Monatshefte f{\"u}r Mathematik}, 163(3):301--314, July 2011.
-
-\bibitem[Gre92]{grenierAnalogueSiegelsFOperator1992}
-Douglas Grenier.
-\newblock An {{Analogue}} of {{Siegel}}'s {$\varphi$}-{{Operator}} for
-  {{Automorphic Forms}} for {{GLn}}( {{Z}}).
-\newblock {\em Transactions of the American Mathematical Society},
-  333(1):463--477, 1992.
 
 \bibitem[GRS98]{ginzburg$L$functionsSymplecticGroups1998}
 David Ginzburg, Stephen Rallis, and David Soudry.
@@ -394,12 +382,6 @@ Jean-Pierre Serre, Don Zagier, and {Sonderforschungsbereich Theoretische
   {{Bonn}}, {{Sonderforschungsbereich Theoretische Mathematik}}, {{July}} 2-14,
   1976: Ed. by {{J}}.-{{P}}. {{Serre}} and {{D}}. {{B}}. {{Zagier}}}.
 \newblock Number 601 in Lecture Notes in Mathematics. Springer, Berlin, 1977.
-
-\bibitem[Ter16]{terrasHarmonicAnalysisSymmetric2016}
-Audrey Terras.
-\newblock {\em Harmonic {{Analysis}} on {{Symmetric Spaces}}---{{Higher Rank
-  Spaces}}, {{Positive Definite Matrix Space}} and {{Generalizations}}}.
-\newblock Springer, New York, NY, 2016.
 
 \bibitem[Wei15]{weinsteinReciprocityLawsGalois2015}
 Jared Weinstein.

@@ -6,16 +6,16 @@ Constant terms preserve analytic properties whilst sometimes reducing the functi
 
 
 \section{Definition and Role} \label{cuspidal_form_definition}\label{sec:L-functions}
-Consider \(P=MU\) a standard parabolic of a classical group \(G\) and \(\phi: U(k)\setminus G(\A) \to \C\) a measurable and locally \(L^1\) function then its \textbf{constant term} along \(P\) is defined to be \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995},
+Consider \(P=MU\) a standard parabolic of a classical group \(G\) defined over a number field F and \(\phi: U(F)\setminus G(\A) \to \C\) a measurable and locally \(L^1\) function then its \textbf{constant term} along \(P\) is defined to be \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995},
 \[\phi_P :  U(\A)\setminus G(\A) \to \C,\]
 \[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u.\]
 
-We have dedicated the next chapter (\ref{ch:sigel-phi}) to showing how this is related to classical notions of constant terms. If \(\phi\) is smooth or moderate growth then so is its constant term. Moreover if \(\phi\) is an automorphic form on \(G(\A)\) then its constant term is an automorphic form on \(M(\A)\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
+\todo{maybe put the classical setting in here, like how the Fourier coefficient is a constant term..}If \(\phi\) is smooth or moderate growth then so is its constant term \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995}. Moreover if \(\phi\) is an automorphic form on \(G(\A)\) then its constant term along \(P\) is an automorphic form on \(M(\A)\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
 
 Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus G(\A)\) for \(P = MU\) a standard parabolic. Then \(\phi\) is \textbf{cuspidal} if for all standard parabolics \(P'\subset P\) we have that \(\phi_{P'}\) is identically zero. 
 
 \begin{Theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, I.4.10]
-		Let \(P = MU\) be a standard parabolic of \(G\). If \(\pi\) is a cuspidal automorphic representation induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G(\A))\) given by 
+		Let \(P = MU\) be a standard parabolic of \(G\). If \(\pi\) is a cuspidal automorphic representation induced from \(P\) (see section \ref{induced}), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(k)\setminus G(\A))_\pi \) the Eisenstein series \(E\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\), the orbit of \(\pi\) (see section \ref{orbits}), into \(L^2_{\mathrm{loc}}(G(\A))\) given by 
 		\[E(p)(g) = \sum_{\gamma \in P(k)\backslash G(k)} \lambda.\phi(\gamma g), \;\;\; p\in \mathfrak{P},\; g\in G(\A),\]
 		where it converges. 
 		If \(D\subseteq \mathfrak{P}\), is an open subset minus a finite number of points on which \(E\) is holomorphic then E has a holomorphic continuation to the finite number of points if and only if the constant term of \(E_Q\) has a holomorphic continuation to these finite number of points for all standard parabolics \(Q\).
@@ -27,24 +27,27 @@ Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus G(\A)\) for \(P = MU
     So one can say that the poles of an Eisenstein series are controlled by its constant terms. We can say more:
     
         
-        \begin{theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, II.1.7]
-        	The constant term of an Eisenstein series induced from a standard maximal parabolic \(P\) is zero along any other standard parabolic \(P'\) unless \(P = P'\).
+        \begin{theorem}[\cite{moeglinSpectralDecompositionEisenstein1995}, II.1.7]\label{thm:constant_terms}
+        	The constant term of an Eisenstein series induced from a standard maximal parabolic \(P\) is zero along any other standard parabolic \(P'\) i.e. if \(P \neq P'\) then the constant term of the Eisenstein series along \(P'\) is zero.
         \end{theorem}
         
-        Putting these two theorems together we see that for an Eisenstein series induced from a maximal parabolic \(P\), has a holomorphic continuation to a point if and only if its constant term along \(P\) has a holomorphic continuation. 
+        Putting these two theorems together we see that for an Eisenstein series induced from a maximal parabolic \(P\), it has a holomorphic continuation around a point if and only if its constant term along \(P\) has a holomorphic continuation around that point. \label{const_lemma_3}
       
       
 
 \section{Constant Terms of Eisenstein Series}\label{const_eisenstein}
-This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. Notice that the Eisenstein series has a full \(G(k)\) invariance and so we can take its constant terms along \textit{any} standard parabolic.
+This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{getzIntroductionAutomorphicRepresentations2024}\cite[II.1.7]{moeglinSpectralDecompositionEisenstein1995}\cite[6.2]{shahidiEisensteinSeriesAutomorphic2010}. Notice that the Eisenstein series has full \(G(F)\)-invariance and so we can take its constant terms along \textit{any} standard parabolic.
 
 Also note that we assume the computations are taking place in the domain of \(\mathfrak{P}\) on which the Eisenstein series is given by the sum formula. By the uniqueness of meromorphic continuation taking constant terms commutes with meromorphic continuation.
 
 \subsection{In General}
 We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. Let G be a classical group over a number field F, fix a Borel \(B = TU_0\) and fix \(P = MU\) and \(P' = M'U'\) two standard parabolics. Let \(E(x, \phi, \lambda)\) be defined from P as in section \ref{sec:eisenstein-series}.
 
+\todo[inline]{need to move teh unfolding statement here now.}
+
 The \textbf{Weyl group} of \(G\) is 
 \[W_G\defeq \mathrm{Norm}_{G(F)} T(F) /\mathrm{Cent}_{G(F)}T(F),\] 
+\todo[inline]{hmmm but below I use the Weyl group of the Levi, not necissarily a classical group, might not be split so the same definition cannot work.}
 where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Borel and Levi.
 
 	\begin{Lemma}\label{lem:1}
@@ -66,7 +69,7 @@ where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of
         \[m'u' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; u'\in (m')\inv wP(F)w\inv m'.\]
     \end{Lemma}
     \proofbar{
-        The forward implication is stated in \cite{getzIntroductionAutomorphicRepresentations2024}, the converse follows from some algebra:
+        The forward implication is stated in \cite[Lem. 10.4.1]{getzIntroductionAutomorphicRepresentations2024}, the converse follows from some algebra:
         First let \(m' = wp_1w\inv\) and \(u' = (m')\inv wp_2w\inv m'\) then 
         \begin{equation*}
             \begin{aligned}

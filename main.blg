@@ -39,45 +39,45 @@ Warning--empty year in milneLieAlgebrasAlgebraic
 Warning--empty journal in milneBasicTheoryAffine2012
 Warning--empty journal in pollackRANKINSELBERGMETHODUSERS
 Warning--empty year in pollackRANKINSELBERGMETHODUSERS
-You've used 75 entries,
+You've used 72 entries,
             2543 wiz_defined-function locations,
-            1007 strings with 18344 characters,
-and the built_in function-call counts, 24164 in all, are:
-= -- 2309
-> -- 913
-< -- 80
-+ -- 289
-- -- 271
-* -- 1611
-:= -- 3959
-add.period$ -- 220
-call.type$ -- 75
-change.case$ -- 387
-chr.to.int$ -- 69
-cite$ -- 107
-duplicate$ -- 1134
-empty$ -- 1935
-format.name$ -- 402
-if$ -- 4913
+            992 strings with 17750 characters,
+and the built_in function-call counts, 23256 in all, are:
+= -- 2222
+> -- 889
+< -- 77
++ -- 282
+- -- 265
+* -- 1553
+:= -- 3811
+add.period$ -- 211
+call.type$ -- 72
+change.case$ -- 373
+chr.to.int$ -- 66
+cite$ -- 104
+duplicate$ -- 1087
+empty$ -- 1855
+format.name$ -- 390
+if$ -- 4728
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 90
-newline$ -- 358
-num.names$ -- 232
-pop$ -- 570
+missing$ -- 85
+newline$ -- 343
+num.names$ -- 223
+pop$ -- 551
 preamble$ -- 1
-purify$ -- 483
+purify$ -- 465
 quote$ -- 0
-skip$ -- 824
+skip$ -- 793
 stack$ -- 0
-substring$ -- 940
-swap$ -- 123
-text.length$ -- 80
-text.prefix$ -- 57
+substring$ -- 893
+swap$ -- 120
+text.length$ -- 77
+text.prefix$ -- 54
 top$ -- 0
-type$ -- 488
+type$ -- 472
 warning$ -- 32
-while$ -- 209
-width$ -- 79
-write$ -- 917
+while$ -- 201
+width$ -- 76
+write$ -- 878
 (There were 34 warnings)

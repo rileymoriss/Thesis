@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  9 NOV 2024 17:24
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  10 NOV 2024 20:08
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1366,7 +1366,7 @@ cmm/m/it/10 K$\TU/lmr/m/n/10 ,
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 64.
+ine 65.
 
 
 Underfull \vbox (badness 7777) has occurred while \output is active []
@@ -1376,85 +1376,71 @@ Underfull \vbox (badness 7777) has occurred while \output is active []
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 140.
+ine 141.
 
 [25]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 171.
+ine 172.
 
 ) [26]
 Chapter 5.
-(./Chapters/constantTerms.tex [27
-
-] [28]
+(./Chapters/constantTerms.tex
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 62.
+ine 13.
+
+[27
+
+]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 46.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 50.
+
+[28]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 65.
+
+
+Underfull \vbox (badness 7685) has occurred while \output is active []
 
  [29]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 101.
+ine 104.
 
 [30] Excluding 'comment' comment.) [31]
 Chapter 6.
-(./Chapters/siegelPhi.tex [32
+(./Chapters/polesOfEisensteinSeries.tex
 
-]
-Underfull \vbox (badness 1448) has occurred while \output is active []
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 9.
 
- [33]
-[34]
-Underfull \vbox (badness 5288) has occurred while \output is active []
-
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Overfull \hbox (25.99092pt too wide) detected at line 228
-[]
- []
-
-
-Overfull \hbox (346.14748pt too wide) in paragraph at lines 214--229
-\TU/lmr/m/n/10 and $\OML/cmm/m/it/10 T[]  []\OT1/cmr/m/n/10 =  \OML/cmm/m/it/10
- T[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 T[]$ \TU/lmr/m/n/10 then we can sub-sti-
-tute this back into our con-stant term [] 
- []
-
-
-Underfull \vbox (badness 4647) has occurred while \output is active []
-
- [38])
-[39]
-Chapter 7.
-(./Chapters/polesOfEisensteinSeries.tex [40
+[32
 
 ]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 26.
+ine 29.
 
-[41] [42]) [43]
+[33]) [34]
 Appendix A.
-(./Chapters/Lfunctions.tex
+(./Chapters/Lfunctions.tex [35
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[44
-
-] [45]) [46] (./main.bbl [47
+] [36]) [37] (./main.bbl [38
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 112--115
@@ -1468,13 +1454,13 @@ Underfull \hbox (badness 1024) in paragraph at lines 117--119
 
  []
 
-[48] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 274--279
+[39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 262--267
 []\TU/lmr/m/n/10 Robert P Lang-lands.  Let-ter to An-dré Weil.  https://pub-li-
 ca-
  []
 
-[50]) [51] (./main.aux)
+[41]) [42] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1484,18 +1470,18 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 49B44B72B49058A809A851D23B8B6672;4144.
+(rerunfilecheck)             Checksum: E32BB553A6D3C84AE1414E593CA8910D;3471.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30242 strings out of 477545
+ 30218 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 14112 words of node memory still in use:
-   185 hlist, 20 vlist, 2 rule, 18 disc, 12 local_par, 300 glue, 21 kern, 19 pen
-alty, 330 glyph, 1877 attribute, 75 glue_spec, 940 attribute_list, 14 write, 12 
-save_pos, 402 pdf_literal, 12 pdf_colorstack nodes
-   avail lists: 2:1152,3:328,4:88,5:558,6:71,7:7224,8:90,9:1379,10:19,11:544
- 50024 multiletter control sequences out of 65536+600000
+ 16281 words of node memory still in use:
+   216 hlist, 23 vlist, 2 rule, 25 disc, 14 local_par, 367 glue, 31 kern, 24 pen
+alty, 449 glyph, 1939 attribute, 75 glue_spec, 971 attribute_list, 16 write, 14 
+save_pos, 469 pdf_literal, 14 pdf_colorstack nodes
+   avail lists: 2:1090,3:310,4:88,5:547,6:57,7:7038,8:90,9:849,10:19,11:537
+ 50030 multiletter control sequences out of 65536+600000
  64 fonts using 4973327 bytes
  98i,18n,98p,1230b,1200s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
@@ -1524,14 +1510,13 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
 s/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.p
 fb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (62 pages, 621919 bytes).
+bols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/rsfs/rsfs7.pfb>
+Output written on main.pdf (53 pages, 560397 bytes).
 
-PDF statistics: 1004 PDF objects out of 1200 (max. 8388607)
- 290 named destinations out of 1000 (max. 131072)
- 216 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 909 PDF objects out of 1000 (max. 8388607)
+ 266 named destinations out of 1000 (max. 131072)
+ 184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
