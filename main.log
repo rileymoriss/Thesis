@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  10 NOV 2024 20:08
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  14 NOV 2024 11:38
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1398,7 +1398,12 @@ ine 13.
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 46.
+ine 49.
+
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 50.
 
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
@@ -1407,20 +1412,29 @@ ine 50.
 
 [28]
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 65.
+LaTeX Warning: Marginpar on page 29 moved.
 
-
-Underfull \vbox (badness 7685) has occurred while \output is active []
-
- [29]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 104.
+ine 52.
 
-[30] Excluding 'comment' comment.) [31]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 67.
+
+[29]
+
+Package todonotes Warning: Trying to put a shadow below a todonote,but the load
+shadowlibrary option was not given when loadingthe todonotes package on input l
+ine 106.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Excluding 'comment' comment.) [31]
 Chapter 6.
 (./Chapters/polesOfEisensteinSeries.tex
 
@@ -1474,14 +1488,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30218 strings out of 477545
+ 30236 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 16281 words of node memory still in use:
-   216 hlist, 23 vlist, 2 rule, 25 disc, 14 local_par, 367 glue, 31 kern, 24 pen
-alty, 449 glyph, 1939 attribute, 75 glue_spec, 971 attribute_list, 16 write, 14 
-save_pos, 469 pdf_literal, 14 pdf_colorstack nodes
-   avail lists: 2:1090,3:310,4:88,5:547,6:57,7:7038,8:90,9:849,10:19,11:537
- 50030 multiletter control sequences out of 65536+600000
+ 19203 words of node memory still in use:
+   272 hlist, 29 vlist, 2 rule, 25 disc, 18 local_par, 441 glue, 31 kern, 28 pen
+alty, 455 glyph, 2381 attribute, 75 glue_spec, 1192 attribute_list, 20 write, 18
+ save_pos, 603 pdf_literal, 18 pdf_colorstack nodes
+   avail lists: 2:1850,3:727,4:88,5:579,6:53,7:6958,8:90,9:842,10:19,11:537
+ 50046 multiletter control sequences out of 65536+600000
  64 fonts using 4973327 bytes
  98i,18n,98p,1230b,1200s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
@@ -1514,9 +1528,9 @@ bols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (53 pages, 560397 bytes).
+Output written on main.pdf (53 pages, 563216 bytes).
 
-PDF statistics: 909 PDF objects out of 1000 (max. 8388607)
- 266 named destinations out of 1000 (max. 131072)
+PDF statistics: 912 PDF objects out of 1000 (max. 8388607)
+ 268 named destinations out of 1000 (max. 131072)
  184 words of extra memory for PDF output out of 10000 (max. 100000000)
 

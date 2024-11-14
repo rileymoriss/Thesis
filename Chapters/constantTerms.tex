@@ -41,14 +41,16 @@ This computation forms the heart of a well known theorem, \cite[Prop 10.4.2]{get
 Also note that we assume the computations are taking place in the domain of \(\mathfrak{P}\) on which the Eisenstein series is given by the sum formula. By the uniqueness of meromorphic continuation taking constant terms commutes with meromorphic continuation.
 
 \subsection{In General}
-We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. Let G be a classical group over a number field F, fix a Borel \(B = TU_0\) and fix \(P = MU\) and \(P' = M'U'\) two standard parabolics. Let \(E(x, \phi, \lambda)\) be defined from P as in section \ref{sec:eisenstein-series}.
+We will use the following Lemmas to give a simplified expression of the constant term of an Eisenstein series. Let G be a classical group over a number field F, fix a Borel \(B\) and fix \(P = MU\) and \(P' = M'U'\) two standard \textit{maximal} parabolics. Let \(E(x, \phi, \lambda)\) be defined from P as in section \ref{sec:eisenstein-series}.
+
+
+If \(H\) is an algebraic group of the form \(H= G_1\times G_2\) where both \(G_1\) and \(G_2\) are classical in our sense then \(H\) is also split. Thus we can take any maximal split torus \(T\subseteq H\) and defined the \textbf{Weyl group} of \(H\)
+\[W_H\defeq \mathrm{Norm}_{H(F)} T(F) /\mathrm{Cent}_{H(F)}T(F),\] 
+\todo[inline]{hmmm but below I use the Weyl group of the Levi, not necissarily a classical group, might not be split so the same definition cannot work.}
+where \(H(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Torus by \todo{ref}. Now as we have seen in section \todo{ref} the Levi subgroups of maximal parabolics of classical groups are of the form \(G_1\times G_2\) for \(G_i\) classical groups. Thus we know how to talk about the Weyl groups of Levis of maximal parabolics of classical groups.
 
 \todo[inline]{need to move teh unfolding statement here now.}
 
-The \textbf{Weyl group} of \(G\) is 
-\[W_G\defeq \mathrm{Norm}_{G(F)} T(F) /\mathrm{Cent}_{G(F)}T(F),\] 
-\todo[inline]{hmmm but below I use the Weyl group of the Levi, not necissarily a classical group, might not be split so the same definition cannot work.}
-where \(G(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Borel and Levi.
 
 	\begin{Lemma}\label{lem:1}
         \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F).\]
@@ -107,6 +109,8 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
         \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]
     \end{Lemma}
     
+    So if \(R\) is a set of representatives for \(W_{M'}\setminus W_G / W_{M}\) as given by lemma \ref{lem:4} we have seen so far that 
+    \[ E_{P'}( \phi, \lambda, x) =\sum_{ w\in R} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du. \]
     Continuing the computation of the constant term above, we will focus purely on the inner integral now
     \begin{equation*}
         \begin{aligned}
