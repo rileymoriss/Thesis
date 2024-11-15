@@ -10,7 +10,30 @@ Consider \(P=MU\) a standard parabolic of a classical group \(G\) defined over a
 \[\phi_P :  U(\A)\setminus G(\A) \to \C,\]
 \[\phi_P(g) \defeq \int_{U(k)\setminus U(\A)}\phi(ug) \mathrm{d}u.\]
 
-\todo{maybe put the classical setting in here, like how the Fourier coefficient is a constant term..}If \(\phi\) is smooth or moderate growth then so is its constant term \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995}. Moreover if \(\phi\) is an automorphic form on \(G(\A)\) then its constant term along \(P\) is an automorphic form on \(M(\A)\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
+\begin{example}
+	Consider \(f\) a modular form of full level and weight k, which has a Fourier expansion given by 
+	\[f(z) = \sum_{n\geq 0} a_ne^{2\pi i nz }.\]
+	In section \ref{sec:modular-forms} we verified that 
+	\[\tilde f \begin{pmatrix}
+		a & b\\
+		c & d
+	\end{pmatrix} = (ci+d)^{-k} f\Bigl(\frac{ai+b}{ci+d}\Bigr),\]
+	is an Archimedean automorphic form on \(\Sp_2\). The only non-trivial standard parabolic P is the one of upper triangular matrices, with Levi and unipotant given respectively 
+	\[M = \begin{pmatrix} m & 0\\ 0 & m^{-1}\end{pmatrix}\cong \GL_1 , \;\;\; N = \begin{pmatrix} 1 & b\\ 0 & 1\end{pmatrix} \cong \mathbb{G}_a,\]
+	along which we can then compute the constant term, defined analogously in the Archimedean setting
+	\begin{equation*}
+		\begin{aligned}
+			\tilde f_P(m)
+			& = \int_{N(\Z)\backslash N(\R)}\tilde f (mb) \mathrm{d}b\\
+			& =  \int_{\Z\backslash\R}\tilde f \begin{pmatrix} m & mb\\ 0 & m^{-1}\end{pmatrix}\mathrm{d}b\\
+			& = \int_{\Z\backslash\R} m^k f(m^2i+m^2b) \mathrm{d}b\\
+			& = m^k a_0. \\
+		\end{aligned}
+	\end{equation*}
+	We have chosen normalisation to remove the usual factor of \(1/2\pi\) in the constant term of the Fourier series.
+\end{example}
+
+If \(\phi\) is smooth or moderate growth then so is its constant term \cite[I.2.6]{moeglinSpectralDecompositionEisenstein1995}. Moreover if \(\phi\) is an automorphic form on \(G(\A)\) then its constant term along \(P\) is an automorphic form on \(M(\A)\) \cite[6.5]{getzIntroductionAutomorphicRepresentations2024}.
 
 Let \(\phi\) be an automorphic form on \(U(\A)M(k)\setminus G(\A)\) for \(P = MU\) a standard parabolic. Then \(\phi\) is \textbf{cuspidal} if for all standard parabolics \(P'\subset P\) we have that \(\phi_{P'}\) is identically zero. 
 
@@ -46,10 +69,14 @@ We will use the following Lemmas to give a simplified expression of the constant
 
 If \(H\) is an algebraic group of the form \(H= G_1\times G_2\) where both \(G_1\) and \(G_2\) are classical in our sense then \(H\) is also split. Thus we can take any maximal split torus \(T\subseteq H\) and defined the \textbf{Weyl group} of \(H\)
 \[W_H\defeq \mathrm{Norm}_{H(F)} T(F) /\mathrm{Cent}_{H(F)}T(F),\] 
-\todo[inline]{hmmm but below I use the Weyl group of the Levi, not necissarily a classical group, might not be split so the same definition cannot work.}
-where \(H(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Torus by \todo{ref}. Now as we have seen in section \todo{ref} the Levi subgroups of maximal parabolics of classical groups are of the form \(G_1\times G_2\) for \(G_i\) classical groups. Thus we know how to talk about the Weyl groups of Levis of maximal parabolics of classical groups.
+where \(H(F)\) acts on \(T(F)\) by conjugation. Note that this is independent of the choice of Torus. Now as we have seen in section \ref{maximal_parabolic} the Levi subgroups of maximal parabolics of classical groups are of the form \(G_1\times G_2\) for \(G_i\) classical groups. Thus we know how to talk about the Weyl groups of Levis of maximal parabolics of classical groups.
 
-\todo[inline]{need to move teh unfolding statement here now.}
+Finally we will use the common technique of unfolding
+\begin{Theorem}[Unfolding, \cite{garrettModernAnalysisAutomorphic2018} 5.2, \cite{follandCourseAbstractHarmonic2016a} Thm 2.49]
+	Let \(H\leq G\) be a closed subgroup. If \(H\setminus G\) has a right G invariant measure then the integral is unique up to scalar, namely for a given Haar measures dh on H and dg on G there is a unique invariant measure dq on \(H\setminus G\) such that for all \(f\in C_c^0(G)\)
+	\[\int_{H\setminus G}\int_H f(hq)dhdq = \int_G f(g) dg.\]
+\end{Theorem}
+Note that this quotient may not be a group, because H is not required to be normal. The use of this lemma is called \textbf{unfolding} the integral.
 
 
 	\begin{Lemma}\label{lem:1}
@@ -103,7 +130,9 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
 \subsection{Constant Terms of Cuspidal Eisenstein Series}
 \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:4}
         There exists a set of representatives \(R\) for \( W_{M'}\setminus W_G / W_{M} \) such that for \(w\in R\) we have  \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
-    \end{Lemma}\todo{need to make the root datum weyl group stuff explicit and then describe these representatives (maximal length ones)}
+    \end{Lemma}
+    %\todo{need to make the root datum weyl group stuff explicit and then describe these representatives (minimaal length ones)}
+    
     \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:5}
     	For \(w\in R\) as above
         \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]

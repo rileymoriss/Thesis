@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {1.1}Definition}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{4}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{5}{section*.13}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{5}{section*.12}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{7}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{8}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{8}{subsection.1.2.4}%
@@ -25,12 +25,12 @@
 \contentsline {section}{\numberline {4.2}Classical Eisenstein Series}{24}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Constant Terms of Eisenstein Series}{27}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Definition and Role}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Constant Terms of Eisenstein Series}{28}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}In General}{28}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Constant Terms of Cuspidal Eisenstein Series}{30}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{31}{subsection.5.2.3}%
-\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{32}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Residual Eisenstein Series}{32}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The Constant Term}{33}{section.6.2}%
-\contentsline {chapter}{\numberline {A}L-Functions}{35}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The Langlands Framework}{35}{section.A.1}%
+\contentsline {section}{\numberline {5.2}Constant Terms of Eisenstein Series}{29}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}In General}{29}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constant Terms of Cuspidal Eisenstein Series}{31}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Constant Term Of Eisenstein Series for Conjugate Levis}{32}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {6}Poles of Residual Eisenstein Series}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Residual Eisenstein Series}{33}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The Constant Term}{34}{section.6.2}%
+\contentsline {chapter}{\numberline {A}L-Functions}{36}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The Langlands Framework}{36}{section.A.1}%

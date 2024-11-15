@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  14 NOV 2024 11:38
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  14 NOV 2024 22:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1289,13 +1289,7 @@ mor-phic forms in both the Archimedean
 
 ]
 Chapter 1.
-(./Chapters/classicalGroups.tex
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 1.
-
-[2
+(./Chapters/classicalGroups.tex [2
 
 ] [3] [4] [5] [6] [7] [8]) [9]
 Chapter 2.
@@ -1372,13 +1366,7 @@ ine 65.
 Underfull \vbox (badness 7777) has occurred while \output is active []
 
  [23]
-[24]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 141.
-
-[25]
+[24] [25]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
@@ -1386,55 +1374,15 @@ ine 172.
 
 ) [26]
 Chapter 5.
-(./Chapters/constantTerms.tex
+(./Chapters/constantTerms.tex [27
+
+] [28] [29]
 
 Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 13.
+ine 94.
 
-[27
-
-]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 49.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 50.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 50.
-
-[28]
-
-LaTeX Warning: Marginpar on page 29 moved.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 52.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 67.
-
-[29]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 106.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Excluding 'comment' comment.) [31]
+[30] Excluding 'comment' comment. [31]) [32]
 Chapter 6.
 (./Chapters/polesOfEisensteinSeries.tex
 
@@ -1442,7 +1390,7 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 9.
 
-[32
+[33
 
 ]
 
@@ -1450,11 +1398,15 @@ Package todonotes Warning: Trying to put a shadow below a todonote,but the load
 shadowlibrary option was not given when loadingthe todonotes package on input l
 ine 29.
 
-[33]) [34]
+[34]) [35]
 Appendix A.
-(./Chapters/Lfunctions.tex [35
+(./Chapters/Lfunctions.tex
 
-] [36]) [37] (./main.bbl [38
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36
+
+] [37]) [38] (./main.bbl [39
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 112--115
@@ -1468,13 +1420,13 @@ Underfull \hbox (badness 1024) in paragraph at lines 117--119
 
  []
 
-[39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 262--267
+[40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 267--272
 []\TU/lmr/m/n/10 Robert P Lang-lands.  Let-ter to An-dré Weil.  https://pub-li-
 ca-
  []
 
-[41]) [42] (./main.aux)
+[42]) [43] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1488,14 +1440,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30236 strings out of 477545
+ 30187 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 19203 words of node memory still in use:
-   272 hlist, 29 vlist, 2 rule, 25 disc, 18 local_par, 441 glue, 31 kern, 28 pen
-alty, 455 glyph, 2381 attribute, 75 glue_spec, 1192 attribute_list, 20 write, 18
- save_pos, 603 pdf_literal, 18 pdf_colorstack nodes
-   avail lists: 2:1850,3:727,4:88,5:579,6:53,7:6958,8:90,9:842,10:19,11:537
- 50046 multiletter control sequences out of 65536+600000
+ 11990 words of node memory still in use:
+   157 hlist, 17 vlist, 2 rule, 16 disc, 10 local_par, 259 glue, 19 kern, 16 pen
+alty, 302 glyph, 1515 attribute, 75 glue_spec, 759 attribute_list, 12 write, 10 
+save_pos, 335 pdf_literal, 10 pdf_colorstack nodes
+   avail lists: 2:1083,3:368,4:88,5:584,6:61,7:7293,8:90,9:844,10:19,11:546
+ 50001 multiletter control sequences out of 65536+600000
  64 fonts using 4973327 bytes
  98i,18n,98p,1230b,1200s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
@@ -1528,9 +1480,9 @@ bols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (53 pages, 563216 bytes).
+Output written on main.pdf (54 pages, 565686 bytes).
 
-PDF statistics: 912 PDF objects out of 1000 (max. 8388607)
- 268 named destinations out of 1000 (max. 131072)
+PDF statistics: 916 PDF objects out of 1000 (max. 8388607)
+ 264 named destinations out of 1000 (max. 131072)
  184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
