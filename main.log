@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  16 NOV 2024 14:33
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  16 NOV 2024 14:46
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1181,11 +1181,12 @@ Package hyperref Info: Link coloring OFF on input line 77.
 \@outlinefile=\write5
 
 \openout5 = main.out
- Excluding 'comment' comment. [1{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/p
-dftex/pdftex.map}
+ [1
 
-] (./Chapters/acknowledgements.tex)
-[2
+
+{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
+[1] (./Chapters/acknowledgements.tex) [2
 
 ] (./Chapters/intro.tex
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
@@ -1383,13 +1384,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30045 strings out of 477545
+ 30047 strings out of 477545
  125126,1977958 words of node,token memory allocated
  1929 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 441 attribute, 75 glue_spe
 c, 222 attribute_list, 2 write nodes
    avail lists: 2:1338,3:410,4:86,5:566,6:77,7:7646,8:90,9:818,10:19,11:558
- 49859 multiletter control sequences out of 65536+600000
+ 49861 multiletter control sequences out of 65536+600000
  64 fonts using 4973327 bytes
  98i,18n,98p,1230b,1040s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
@@ -1399,32 +1400,33 @@ rams/miktex/fonts/opentype/public/lm/lmroman7-italic.otf><//?/c:/users/riley/app
 data/local/programs/miktex/fonts/opentype/public/lm/lmroman7-regular.otf><//?/c:
 /users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-it
 alic.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public
-/lm/lmroman12-bold.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/o
-pentype/public/lm/lmroman10-bold.otf><//?/c:/users/riley/appdata/local/programs/
-miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:/Users/riley/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/riley/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/r
-iley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/c
-mex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/riley/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/riley/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/riley
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
-s/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.p
-fb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (57 pages, 571397 bytes).
+/lm/lmroman10-bold.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/o
+pentype/public/lm/lmroman10-regular.otf><//?/c:/users/riley/appdata/local/progra
+ms/miktex/fonts/opentype/public/lm/lmroman12-regular.otf><//?/c:/users/riley/app
+data/local/programs/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><C:/Users
+/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmex10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cmextra/cmex7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/riley/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/riley/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/riley/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/riley/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ril
+ey/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
+sers/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pf
+b><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/euler/eufm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/rsfs/rsfs7.pfb>
+Output written on main.pdf (58 pages, 578485 bytes).
 
-PDF statistics: 949 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 959 PDF objects out of 1000 (max. 8388607)
  264 named destinations out of 1000 (max. 131072)
  216 words of extra memory for PDF output out of 10000 (max. 100000000)
 
