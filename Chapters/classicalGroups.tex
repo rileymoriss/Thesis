@@ -136,9 +136,14 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
 
 \vspace{5mm}
     \label{maximal_parabolic}
-    In particular maximal parabolics of \(\Sp\) are stabilisers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces,
+    In particular maximal standard parabolics of \(\Sp\) are stabilisers of \textit{minimal} (non-trivial flags), i.e. stabilisers of non-zero isotropic subspaces,
     \[0 \subset V_\ell \subset V,\]
-    where \(V_\ell = \mathrm{span}(e_1, ..., e_\ell)\). Then the stabiliser consists of matrices of the form
+    where \(V_\ell = \mathrm{span}(e_1, ..., e_\ell)\). 
+    \begin{remark}
+    	The fixing of this basis corresponds to fixing a Borel, as in the following section. Hence the name standard.
+    \end{remark}
+    
+    Then the stabiliser consists of matrices of the form
     \[\begin{pmatrix}
         * &*&*&* \\
         0 &*&*&* \\
@@ -239,7 +244,7 @@ A subspace of \(V\) is said to be \textbf{isotropic} if the form is constantly z
 
     If a Borel \(B\) is fixed, then a parabolic containing this Borel \(B\subseteq P\) is called standard, there is a unique Levi of a standard parabolic containing this Borel called the \textbf{standard Levi}.
     
-    \subsection{The Topology on Points}
+    \subsection{The Topology on Points}\label{topology}
 	Let F be a number field and \(G = \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) be a LAG over F. As a locally ringed space this scheme has the Zariski topology, in the theory of automorphic forms however we wish to topologise the local and adelic points in a way which accommodates analysis. In particular the topology should be locally compact and Hausdorff so that we have Haar measures on the groups. 
 	
 	Following \cite{conradWeilGrothendieckApproaches2012} we think of \(G(\A)\) as the subset of \(\A^n\) on which the functions \(f_i: \A^n \to \A\) all vanish. We give it the subspace topology which inherits the local compact and Hausdorff properties from \(\A^n\). If \(\nu\) is a place of \(F\) then we have the same definition, \(G(F_\nu)\) is the subspace of \(F_\nu^n\) on which \(f_i:F_\nu^n \to F_\nu\) all vanish and it is endowed with the subspace topology.

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  14 NOV 2024 22:15
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.9.24)  16 NOV 2024 14:33
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1181,15 +1181,11 @@ Package hyperref Info: Link coloring OFF on input line 77.
 \@outlinefile=\write5
 
 \openout5 = main.out
- Excluding 'comment' comment.
+ Excluding 'comment' comment. [1{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/p
+dftex/pdftex.map}
 
-LaTeX Warning: Citation `dumbaughEmilArtinClass2015' on page i undefined on inp
-ut line 111.
-
-[1{C:/Users/riley/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-]
-(./Chapters/acknowledgements.tex) [2
+] (./Chapters/acknowledgements.tex)
+[2
 
 ] (./Chapters/intro.tex
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
@@ -1220,63 +1216,19 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 31.
  (C:/Users/riley/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-
-LaTeX Warning: Citation `neukirchAlgebraischeZahlentheorie2002' on page iv unde
-fined on input line 37.
-
 [4]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 62.
-
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 62.
-
-LaTeX Warning: Citation `neukirchAlgebraischeZahlentheorie2002' on page v undef
-ined on input line 72.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 76.
-
-
 Underfull \vbox (badness 3919) has occurred while \output is active []
 
  [5]
-[6]
+Overfull \hbox (12.22742pt too wide) detected at line 96
+\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\U/msb/m/n/10 A[]\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 =G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 K\OT1/cmr/m/n/10
+ )\OMS/cmsy/m/n/10 g ! f[][]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 =K\OT1/cmr/m/n/
+10 )[]\OML/cmm/m/it/10 G\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 :
+ []
 
-LaTeX Warning: Reference `' on page vii undefined on input line 143.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 143.
-
-[7]
-
-LaTeX Warning: Reference `appendix:2' on page viii undefined on input line 154.
-
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 154.
-
-[8] [9]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 203.
-
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 212.
-
-
-Overfull \hbox (11.80864pt too wide) in paragraph at lines 219--220
+[6] [7] [8] [9]
+Overfull \hbox (11.80864pt too wide) in paragraph at lines 218--219
 []\TU/lmr/m/n/10 Chap-ter two deals with au-to-mor-phic forms. We de-fine au-to-
 mor-phic forms in both the Archimedean
  []
@@ -1291,7 +1243,11 @@ mor-phic forms in both the Archimedean
 Chapter 1.
 (./Chapters/classicalGroups.tex [2
 
-] [3] [4] [5] [6] [7] [8]) [9]
+] [3] [4] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+[7] [8]) [9]
 Chapter 2.
 (./Chapters/automorphicForms.tex [10
 
@@ -1357,48 +1313,22 @@ cmm/m/it/10 K$\TU/lmr/m/n/10 ,
  []
 
 [22]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 65.
-
-
 Underfull \vbox (badness 7777) has occurred while \output is active []
 
  [23]
-[24] [25]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 172.
-
-) [26]
+[24] [25]) [26]
 Chapter 5.
 (./Chapters/constantTerms.tex [27
 
 ] [28] [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 94.
-
-[30] Excluding 'comment' comment. [31]) [32]
+ [30]
+[31] Excluding 'comment' comment.) [32]
 Chapter 6.
-(./Chapters/polesOfEisensteinSeries.tex
+(./Chapters/polesOfEisensteinSeries.tex [33
 
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 9.
-
-[33
-
-]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the load
-shadowlibrary option was not given when loadingthe todonotes package on input l
-ine 29.
-
-[34]) [35]
+] [34]) [35]
 Appendix A.
 (./Chapters/Lfunctions.tex
 
@@ -1406,7 +1336,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36
 
-] [37]) [38] (./main.bbl [39
+] [37]) [38]
+Appendix B.
+
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [39
+
+]
+[40]
+
+LaTeX Warning: Reference `thm:spectral' on page 41 undefined on input line 180.
+
+
+[41] (./main.bbl [42
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 112--115
@@ -1420,13 +1363,13 @@ Underfull \hbox (badness 1024) in paragraph at lines 117--119
 
  []
 
-[40] [41]
-Underfull \hbox (badness 10000) in paragraph at lines 267--272
+[43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 274--279
 []\TU/lmr/m/n/10 Robert P Lang-lands.  Let-ter to An-dré Weil.  https://pub-li-
 ca-
  []
 
-[42]) [43] (./main.aux)
+[45]) [46] (./main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1436,20 +1379,19 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E32BB553A6D3C84AE1414E593CA8910D;3471.
+(rerunfilecheck)             Checksum: 55861D633157F6F300A035A3FDA3C754;3971.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30187 strings out of 477545
+ 30045 strings out of 477545
  125126,1977958 words of node,token memory allocated
- 11990 words of node memory still in use:
-   157 hlist, 17 vlist, 2 rule, 16 disc, 10 local_par, 259 glue, 19 kern, 16 pen
-alty, 302 glyph, 1515 attribute, 75 glue_spec, 759 attribute_list, 12 write, 10 
-save_pos, 335 pdf_literal, 10 pdf_colorstack nodes
-   avail lists: 2:1083,3:368,4:88,5:584,6:61,7:7293,8:90,9:844,10:19,11:546
- 50001 multiletter control sequences out of 65536+600000
+ 1929 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 441 attribute, 75 glue_spe
+c, 222 attribute_list, 2 write nodes
+   avail lists: 2:1338,3:410,4:86,5:566,6:77,7:7646,8:90,9:818,10:19,11:558
+ 49859 multiletter control sequences out of 65536+600000
  64 fonts using 4973327 bytes
- 98i,18n,98p,1230b,1200s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,18n,98p,1230b,1040s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/riley/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 anslant10-regular.otf><//?/c:/users/riley/appdata/local/programs/miktex/fonts/op
 entype/public/lm/lmroman10-bolditalic.otf><//?/c:/users/riley/appdata/local/prog
@@ -1480,9 +1422,9 @@ bols/msbm10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msbm7.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/rsfs/rsfs10.pfb><C:/Users/riley/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (54 pages, 565686 bytes).
+Output written on main.pdf (57 pages, 571397 bytes).
 
-PDF statistics: 916 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 949 PDF objects out of 1000 (max. 8388607)
  264 named destinations out of 1000 (max. 131072)
- 184 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 216 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -6,7 +6,7 @@ Our goal here is to exposit a small example that forms the heart of the work in 
 Theirs is a proof by induction and we will try to give the details of the base case, which is simply an explicit computation of a constant term.
 
 \section{Residual Eisenstein Series}
-So for the rest of the chapter we will fix an \(n\in \N\), \(G_n = \Sp_{2n}\) and the Borel of upper triangular matrices in \(\Sp_{2n} \), then we look at partitions of \(n = r + m\), where \(1\leq r,m \leq n\) and \(r,m\in \Z\). Then as we saw in section\todo{there is something subtle I might have wrong in that section that makes this incorrect, what is happeinging is that I have the wrong basis or wrong Borel in that section> } \ref{maximal_parabolic} there corresponds a maximal standard (proper) parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rU_r\), such that the Levi component is 
+So for the rest of the chapter we will fix an \(n\in \N\) and \(G_n = \Sp_{2n}\), then we look at partitions of \(n = r + m\), where \(1\leq r,m \leq n\) and \(r,m\in \Z\). Then as we saw in section \ref{maximal_parabolic} there corresponds a maximal standard (proper) parabolic of \(\Sp_{2n}\), which we denote \(P_r = M_rU_r\), such that the Levi component is 
 \[\GL_r\times \Sp_{2m}. \]
 As we saw in section \ref{ex:characters} the space of characters \(X^{\Sp_{2n}}_{M_r}\) is one dimensional by the maximality of \(P_r\). We fix a \(\tau\), an irreducible unitary cuspidal automorphic representation of \(\GL_r\). Now we take an irreducible cuspidal automorphic representation \(\sigma\) of \(\Sp_{2m}\), then the tensor product \(\tau \tensor \sigma\) gives a representation of \(\GL_{r}\times \Sp_{2m}\) and hence of the Levi \(M_r\). We now consider the Eisenstein series attached to this representation, namely if 
 \[\phi\in \mathcal{A}(U_r(\A)M_r(F)\setminus \Sp_{2n}(\A) )_{\tau\tensor \sigma},\] 
@@ -26,8 +26,8 @@ By our earlier calculations in section \ref{const_eisenstein}, the fact that the
      	&& I_r\\
      	&I&\\
      	\pm I_r&&
-     \end{pmatrix},\] \todo{is it the plus or minus, just need to know which is in Sp}
-     where \(I_a\) is the \(a\times a\) identity matrix. Hence the first sum becomes over two elements and we have 
+     \end{pmatrix},\]
+     where \(I_a\) is the \(a\times a\) identity matrix. Note that the \(\pm\) is there to make sure the matrix is in \(\Sp_{2n}\) and will in general depend on \(n\) and \(r\). Hence the first sum becomes over two elements and we have 
 
      \[E(\phi, s)_{P_r} = E(\phi, s)_{P_r, id} + E(\phi, s)_{P_r, \omega},\]
      where 

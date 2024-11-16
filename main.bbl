@@ -160,6 +160,13 @@ Fred Diamond and Jerry~Michael Shurman.
 \newblock Number 228 in Graduate Texts in Mathematics. Springer, New York,
   2005.
 
+\bibitem[DS15]{dumbaughEmilArtinClass2015}
+Della Dumbaugh and Joachim Schwermer.
+\newblock {\em Emil {{Artin}} and {{Beyond}} -- {{Class Field Theory}} and
+  \${{L}}\$-{{Functions}}}.
+\newblock Heritage of {{European Mathematics}}. EMS Press, 1 edition, March
+  2015.
+
 \bibitem[Dv17]{deitmarTraceClassGroups2017}
 Anton Deitmar and Gerrit {van Dijk}.
 \newblock Trace class groups, September 2017.
@@ -340,6 +347,11 @@ C.~Moeglin and J.~L. Waldspurger.
   Paraphrase}} of the {{Scriptures}}}.
 \newblock Cambridge {{Tracts}} in {{Mathematics}}. Cambridge University Press,
   Cambridge, 1995.
+
+\bibitem[Neu02]{neukirchAlgebraischeZahlentheorie2002}
+J{\"u}rgen Neukirch.
+\newblock {\em Algebraische {{Zahlentheorie}}}.
+\newblock Springer, Berlin Heidelberg, 1. nachdr. edition, 2002.
 
 \bibitem[Pol]{pollackRANKINSELBERGMETHODUSERS}
 Aaron Pollack.

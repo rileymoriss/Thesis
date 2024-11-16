@@ -61,12 +61,10 @@ which is then an element of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))_{\pi\tensor
 \[E(\phi_\pi, \lambda, g) = \sum_{\gamma \in P(F)\backslash G(F)} \lambda.\phi_\pi(\gamma g),\]
 whenever it is absolutely convergent. The first thing to note is that for a fixed \(\phi_\pi\) there is an open set in \(X_M^G\) and a compact subset of \(G(F)\backslash G(\A)\) such that the Eisenstein series converges (normally) \cite[II.1.5]{moeglinSpectralDecompositionEisenstein1995}.
 
-If \(P = MU\) and \(P' = M'U'\) are two standard parabolics of \(G\) that are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\)\todo{does this imply that P and P
- anre conjugate? des this even matter?}.
-Then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representations of \(M'\).
-The Eisenstein series is closely related through its constant terms (as discussed in section \ref{constant_conjugate_levi}) to the endomorphism of \(\mathcal{A}(U(\A)M(F)\backslash G(\A))_\pi\) 
+If \(P = MU\) and \(P' = M'U'\) are two standard parabolics of \(G\) such that their Levi's are conjugate, i.e. such that for \(w\in G(k)\) we have \(wMw\inv = M'\), then \(w\) maps \(\mathfrak{P}\) to \(w\mathfrak{P}\), an orbit of an irreducible representations of \(M\) to an orbit of irreducible representations of \(M'\).
+The Eisenstein series is closely related through its constant terms (as discussed in section \ref{constant_conjugate_levi}) to the following
 \[M(w, \pi)(\phi_\pi)(g) = \int_{(U'(F)\cap wU(F)w\inv )\backslash U'(\A)} \phi_\pi(w\inv ug) du,\]
-where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(F)\backslash G(\A))_\pi\).
+where \(\pi\in \mathfrak{P}\), \(g\in G(\A)\) and \(\phi_\pi \in \mathcal{A}(U(\A)M(F)\backslash G(\A))_\pi\). \label{operator}
 
 The Eisenstein series has three inputs and can be considered as a function in different variables. If \(\pi\) is a cuspidal automorphic representation of \(G(\A)\) induced from \(P\), then for a fixed \(\phi \in\mathcal{A}_0(U(\A)M(F)\setminus G(\A))_\pi \) the Eisenstein series \(E(\phi)\) can be thought of as a function from some open subset of the cuspidal datum \(\mathfrak{P}\) into \(L^2_{\mathrm{loc}}(G)\), the set of locally square integrable complex valued functions on \(G(\A)\), given by 
 \[E(\phi)(\lambda)(g) = \sum_{\gamma \in P(F)\backslash G(F)} \lambda.\phi(\gamma g), \;\;\; \lambda\in \mathfrak{P},\; g\in G(\A),\]
@@ -168,8 +166,6 @@ We want to realize this as the Eisenstein series associated to an automorphic fo
 	\end{pmatrix}k .\]
 	With this explicit Iwasawa decomposition the proof is finished with some elementary matrix manipulation, this is done very explicitly in \cite[3.3]{garrettTransitionEisensteinSeries2016}.
 }
-
-\todo{E4 eisenstein series things? Chenyan wants me to add the matrix comps above, but eariler she said its too trivial?}
 
 
 

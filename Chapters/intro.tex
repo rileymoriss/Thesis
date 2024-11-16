@@ -59,7 +59,8 @@ Another direction that people were interested in was the extensions of local fie
 	For all \(	a,b\in \Q^\times\) 
 	\[\prod_\nu (a,b)_\nu = 1.\]
 \end{Theorem}
-This is equivalent to Gauss's reciprocity law\todo{\S4 Conrad tells me this, but is there a reference with a proof?}, however much more uniform to state, treating odd and even primes in the same way, and not requiring any co-prime conditions. This moreover treats finite and infinite places uniformly. Building on this work and using Artin reciprocity, Hasse, after introducing the \(p\)-adic numbers in 1927, proved the first versions of \textit{local} class field theory in 1930, that is reciprocity for extensions of the local fields \(\Q_\nu\). The statements here are technical, but a key result is
+This is equivalent to Gauss's reciprocity law%\todo{\S4 Conrad tells me this, but is there a reference with a proof?}
+, however much more uniform to state, treating odd and even primes in the same way, and not requiring any co-prime conditions. This moreover treats finite and infinite places uniformly. Building on this work and using Artin reciprocity, Hasse, after introducing the \(p\)-adic numbers in 1927, proved the first versions of \textit{local} class field theory in 1930, that is reciprocity for extensions of the local fields \(\Q_\nu\). The statements here are technical, but a key result is
 \begin{Theorem}[\cite{conradHISTORYCLASSFIELD}, Thm. 7.6]
 	For a finite Abelian extension of local fields \(E/F\) there is a surjection 
 	\[F^\times \to \mathrm{Gal}(E/F).\]
@@ -71,14 +72,14 @@ Note that the definition and proof of local class field theory \textit{depended 
 What remained to do was supply a proof of \textit{global} class field theory from local class field theory. In pursuit of this task the machinery of the ideles and adeles was introduced. In this language (part of) \textit{global} class field theory can be restated as 
 \begin{Theorem}[\cite{neukirchAlgebraischeZahlentheorie2002}, Ch. VI, \S1 ,Prop. 1.3]
 	Let the ideal class group of a number field \(K\) be denoted \(\mathrm{Cl}_K\). Then there is a surjection
-	\[ \A^*/ K^* \xrightarrow{A} \mathrm{Cl}_K \cong \mathrm{Gal}(K'/K),\]
+	\[ \A^\times/ K^\times \xrightarrow{A} \mathrm{Cl}_K \cong \mathrm{Gal}(K'/K),\]
 	where \(K'\) is the class field of \(K\).
-\end{Theorem}\todo{I switch between times and ast for the units.}
+\end{Theorem}
 If we think about representations of these groups then this surjection gives a relation between characters \(\chi\) of \(\A^*/K^*\) and characters \(\chi'\) of \(\mathrm{Gal}(K'/K)\) by pulling back along \(A\).
 
 % https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXEFeKi9LXioiXSxbMiwwLCJcXG1hdGhybXtDbH1fSyJdLFsxLDIsIlxcQ14qIl0sWzAsMiwiXFxjaGkiLDFdLFsxLDIsIlxcY2hpJyIsMV0sWzAsMSwiQSIsMV1d
 \[\begin{tikzcd}[cramped]
-	{\A^*/K^*} && {\mathrm{Gal}(K'/K)} \\
+	{\A^\times/K^\times} && {\mathrm{Gal}(K'/K)} \\
 	\\
 	& {\C^*}
 	\arrow["A"{description}, from=1-1, to=1-3]
@@ -86,13 +87,13 @@ If we think about representations of these groups then this surjection gives a r
 	\arrow["{\chi'}"{description}, from=1-3, to=3-2]
 \end{tikzcd}\]
 Thus \(A\) can be thought of as providing a correspondence
-\[\{\text{Maps }\A^*/K^*\to \C^*\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \C^*\}. \]
+\[\{\text{Maps }\A^\times/K^\times\to \C^*\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \C^*\}. \]
 One then observes that this can be rewritten as 
 \[\{\text{Maps }\GL_1(\A)/\GL_1(K)\to \GL_1(\C)\} \to\{ \text{Maps }\mathrm{Gal}(K'/K)\to \GL_1(\C)\} .\]
 This suggests the generalisation to 
-\[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } \GL_n\}   .\]
+\[\{\text{Certain reps of }\GL_n(\A)/\GL_n(K)\} \to\{ \text{Certain \(n\)-dimensional reps of  }\mathrm{Gal}(\bar{K}/K)\}   .\]
 But according to Langlands \cite{langlandsRepresentationTheoryIts1989}, who was inspired by the philosophy of Harish-Chandra, we should treat all reductive groups the same, so Langlands conjectures that for any reductive linear algebraic group \(G\) there is some correspondence
-\[\{\text{Certain reps of }G(\A)/G(K)\} \to\{ \text{Certain reps of  }\mathrm{Gal}(\bar{K}/K)\text{ on } G\} .\]
+\[\{\text{Certain reps of }G(\A)/G(K)\} \to\{ \text{Certain \(n\)-dimensional reps of }\mathrm{Gal}(\bar{K}/K) \text{ that factor through }G\}.\]
 These two sides of the correspondence are referred to as the ``automorphic side'' and the ``Galois side'' respectively. The content that follows will be almost entirely on the automorphic side. 
 
 
@@ -140,7 +141,7 @@ A group is \textbf{type I} if for every (continuous unitary) representation \(\p
 	where \(U_S\subseteq \prod_{s\in S}F_s\) is open in the product topology. 
 	Because for any place \(F_\nu\) is second countable and the product of second countable spaces is second countable it is clear that \(\prod_{s\in S} F_s\) is second countable. Moreover there is a countable number of finite subsets of \Z, hence there is a bijection between a basis of the restricted product topology and \(\aleph_0\times \aleph_0 \) which is countable hence this topology is second countable.
 	
-	If \(G \defeq \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) is an affine scheme then the topology on \(G(\A)\) is the subspace topology of \(\A^n\) on which all the \(f_1, ..., f_m\) vanish (see section \ref{}\todo{ref}). In particular the finite product of second countable spaces is second countable and subspaces of second countable spaces are second countable, hence \(G(\A)\) is second countable. 
+	If \(G \defeq \Spec F[x_1, ..., x_n]/(f_1, ..., f_m)\) is an affine scheme then the topology on \(G(\A)\) is the subspace topology of \(\A^n\) on which all the \(f_1, ..., f_m\) vanish (see section \ref{topology}). In particular the finite product of second countable spaces is second countable and subspaces of second countable spaces are second countable, hence \(G(\A)\) is second countable. 
 \end{example}
 
 \begin{example}
@@ -151,7 +152,7 @@ In the 1950s Segal and Mautner proved the Plancherel Theorem which is the Peter-
 \begin{remark}
 	The name Plancherel theorem is overloaded in harmonic analysis. We will give exact references to the precise theorem we are referring to below.
 \end{remark}
- To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016a} and the definitions are stated in \ref{appendix:2}\todo{paste in the text in the appendix and ref}, but some of the basic idea is contained in the example of direct sums.
+ To state it one must be somewhat familiar with direct integrals. The theory is explained in \cite[7.4]{follandCourseAbstractHarmonic2016a} and the definitions are stated in \ref{A:2}, but some of the basic idea is contained in the example of direct sums.
 \begin{example}[Direct Sums]
 	Let \(I\) be a countable set with the discrete sigma algebra and counting measure \(\mu\). Let \((\mathcal{H}_i)_{i\in I}\) be a collection of Hilbert spaces then
 	\[\bigoplus_{i\in I} \mathcal{H}_i = \left\{ (h_i)_{i\in I}\in \prod_{i\in I} \mathcal{H}_i : \int_I \norm{h_i}_i^2 d\mu <\infty \right\}.\]
@@ -200,7 +201,7 @@ Consider the group \(\GL_n\). We then let \(n = ab\) for positive integers \(a,b
 \[\Delta(\tau, b).\]
 Moeglin and Waldspurger also achieved a more fine analysis of the spectrum of \(\GL_n\) by proving that as \(\tau\) and \(b\) vary, these representations span the residual spectrum of \(L^2(\GL_n(F) \backslash \GL_n(\A))\) \cite[Thm. 1.1]{jiangPolesCertainResidual2013}. The Speh representation is formed by taking iterated residues of Eisenstein series in the sense of \cite[V]{moeglinSpectralDecompositionEisenstein1995}, a more concrete explanation can be found in \cite[2.4]{brennerNotesAnalyticProperties2009}. For a nice survey of problems in this area, of residues of Eisenstein series, there is \cite{jiangResiduesEisensteinSeries2008a}.
 
-If we denote \(G_n\)\todo{move the classical groups as automorphism of forms here?} one of the classical groups \(\GL_n, \Sp_{2n}, \mathrm{U}_n\) etc. then \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, in which the authors locate the poles of Eisenstein series induced in this manner. 
+If we denote \(G_n\) one of the classical groups \(\GL_n, \Sp_{2n}, \mathrm{U}_n\) etc. then \(G_{a+b}\), have maximal parabolics whose Levis decompose into products \(GL_a\times G_{b}\), and so we can use the representation theory of \(\GL_n\) on a Levi to induce up to the whole group. One step in this direction is the work of \cite{jiangPolesCertainResidual2013}, in which the authors locate the poles of Eisenstein series induced in this manner. 
 
 These considerations are supposed to help prove cases of Langlands functorial transfers, that is proving cases of Langlands functoriality for groups by ``transferring'' the known cases of functoriality from other groups. We quote from the introduction of \cite{jiangPolesCertainResidual2013}:
 
@@ -208,8 +209,6 @@ These considerations are supposed to help prove cases of Langlands functorial tr
 	``The key ingredient in these constructions is to use certain Fourier coefficients of special types of residues of certain residual Eisenstein series as kernel functions in the corresponding integral transforms''
 \end{quote}
 \cite{bumpRankinSelbergMethodIntroduction2011} gives some more detail on how the analytic properties of Eisenstein series and their L-functions imply that the automorphic representations can be lifted to other groups. 
-
-\todo[inline]{Mention the Arthur controversy here.}
 
 Finally, we remark that we spent a good amount of time trying to understand the analogous story for the so called ``almost algebraic groups'', topological coverings of \(G(\A)\). In this setting the work of \cite{jiangPolesCertainResidual2013} has also been applied to get similar results on poles of metaplectic Eisenstein series, as in \cite{kaplanDoublingConstructionsComplete2021}. It was also used to prove certain functoriality results as in \cite{caiDoublingConstructionsGlobal2024}. We leave it for future work to understand the full significance of these calculations, but hope we have motivated why they \textit{might} be interesting.
 

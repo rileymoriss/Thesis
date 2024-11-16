@@ -7,10 +7,10 @@
 \contentsline {section}{\numberline {1.1}Definition}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Subgroups}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Parabolics, Levis and Unipotents}{4}{subsection.1.2.1}%
-\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{5}{section*.12}%
+\contentsline {subsubsection}{The Example of \(\Sp _{2n}\)}{5}{section*.6}%
 \contentsline {subsection}{\numberline {1.2.2}Borel and Torus}{7}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}The Topology on Points}{8}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{8}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.4}Maximal Compact Subgroups}{9}{subsection.1.2.4}%
 \contentsline {chapter}{\numberline {2}Automorphic Forms}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Archimedean Automorphic Form}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Adelic Automorphic Form}{11}{section.2.2}%
@@ -34,3 +34,7 @@
 \contentsline {section}{\numberline {6.2}The Constant Term}{34}{section.6.2}%
 \contentsline {chapter}{\numberline {A}L-Functions}{36}{appendix.A}%
 \contentsline {section}{\numberline {A.1}The Langlands Framework}{36}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Direct Integrals}{39}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Of Spaces}{39}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Of Operators}{40}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Of Representations}{40}{section.B.3}%

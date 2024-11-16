@@ -78,7 +78,6 @@ Finally we will use the common technique of unfolding
 \end{Theorem}
 Note that this quotient may not be a group, because H is not required to be normal. The use of this lemma is called \textbf{unfolding} the integral.
 
-
 	\begin{Lemma}\label{lem:1}
         \[P(F)\setminus G(F) \cong \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F).\]
     \end{Lemma}
@@ -87,35 +86,50 @@ Note that this quotient may not be a group, because H is not required to be norm
         \[G(F) =\coprod_{w\in W_{M'}\setminus W_G / W_{M}} P(F)w\inv P'(F) .\]
         Then because the action of \(P(F)\) keeps the disjoint sets disjoint we can move the quotient through and get
         \[P(F)\setminus G(F) = \coprod_w  P(F) \setminus P(F)w\inv P'(F).\]
-        Analysing the summands, by the second isomorphism theorem we have a bijection
-        \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap P'(F) \setminus w\inv P'(F). \]
-        If \([w\inv p] \in P(F)\cap P'(F) \setminus w\inv P'(F) \) then its represented by some \(pw\inv p'\) where \(p\in P(F)\cap P'(F)\) and hence multiplying by \(w\), in particular an isomorphism, gives \(wpw\inv p'\in wP(F)w\inv \times P'(F)\) and so 
+        Analysing the summands, by the proof of the second isomorphism theorem for groups we have a bijection
+        \[P(F)\setminus P(F)w\inv P'(F) \cong P(F)\cap w\inv P'(F) \setminus w\inv P'(F). \]
+        Note that the group in the denominator still acts on \(w\inv P'(F)\) \textit{on the left}.
+        Multiplication by \(w\) is a bijection that sends for \(p'\in P'(F)\)
+        \[[w\inv p'] = \{pw\inv p' : p\in P(F)\cap w\inv P'(F) \} \in P(F)\cap w\inv P'(F) \setminus w\inv P'(F) ,\]
+        to 
+        \[\{wpw\inv p' : p\in P(F)\cap w\inv P'(F) \} \in wP(F)w\inv \cap P'(F) \backslash P'(F).\]
+        
+        Thus we have that 
         \[w(P(F)\cap P'(F) \setminus w\inv P'(F)) \cong wP(F)w\inv \cap P'(F) \setminus P'(F).\]
-    }\todo{this proof is incorrect. Didnt pay attention to left and right cosets. Also need to know that these actions are actually well defined, do they fix the sets that im talking about? }
+    }
+
+\begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:4}
+	There exists a set of representatives \(R\) for \( W_{M'}\setminus W_G / W_{M} \) such that for \(w\in R\) we have  \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
+\end{Lemma}
+%\todo{need to make the root datum weyl group stuff explicit and then describe these representatives (minimaal length ones)}
+
+\begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:5}
+	For \(w\in R\) as above
+	\[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]
+\end{Lemma}
 
     \begin{Lemma}\label{lem:2}
-        Let \(m'\in M'(F),  u'\in U'(F)\) then 
+        Let \(m'\in M'(F),  u'\in U'(F)\) then for \(w\in R\) as above,
         \[m'u' \in wP(F)w\inv \iff m'\in wP(F)w\inv \text{ and  }\;\; u'\in (m')\inv wP(F)w\inv m'.\]
     \end{Lemma}
     \proofbar{
         The forward implication is stated in \cite[Lem. 10.4.1]{getzIntroductionAutomorphicRepresentations2024}, the converse follows from some algebra:
-        First let \(m' = wp_1w\inv\) and \(u' = (m')\inv wp_2w\inv m'\) then 
+        First let \(m' = wp_1w\inv\) and \(u' = (m')\inv wp_2w\inv m'\) for \(p_1, p_2 \in P(F)\) then 
         \begin{equation*}
             \begin{aligned}
-                m'u' &= (wp_1w\inv)\inv wp_2w\inv wp_1w\inv\\
-                     &= wp_1\inv w\inv wp_2w\inv wp_1w\inv\\
-                     &= wp_1\inv p_2p_1w\inv \in wP(F)w\inv.\\
+                m'u' &= m'(m')\inv wp_2w\inv wp_1w\inv \\
+                     &= wp_2p_1w\inv \in wP(F)w\inv.\\
             \end{aligned}
         \end{equation*}
     }
     Taking the contrapositive of this lemma will be used below. This is because our sums will be over quotients like \(A\setminus B\) and therefore summing over the ``elements'' in B that are not in A; by our lemma would be the same as summing over two different such quotients.
-Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series. Denote \([U']\defeq U'(F)\setminus U'(\A)\)
+Now we will apply our lemmas to simplify and make more explicit the constant term of an Eisenstein series. Denote \([U']\defeq U'(F)\setminus U'(\A)\) and fix a set of representatives \(R\) for \( W_{M'}\setminus W_G / W_{M}\) as in lemma \ref{lem:4}
     \begin{equation*}
         \begin{aligned}
             E_{P'}( \phi, \lambda, x) &= \int_{U'(F)\setminus U'(\A)} E( \phi, \lambda, nx) du\\
                                      &= \int_{[U']} \sum_{\delta\in P(F)\setminus G(F)} \lambda.\phi(\delta nx)  du\\
-                                    (\text{Lemma }\ref{lem:1}) \;\;\; &= \int_{[U']} \sum_{\delta\in \coprod_{w\in W_{M'}\setminus W_G / W_{M}} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta ux)  du\\
-                                     &= \sum_{ w\in W_{M'}\setminus W_G / W_{M}}\int_{[U']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'ux)  du.\\
+                                    (\text{Lemma }\ref{lem:1}) \;\;\; &= \int_{[U']} \sum_{\delta\in \coprod_{w\in R} P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi(\delta ux)  du\\
+                                     &= \sum_{ w\in R}\int_{[U']} \sum_{p'\in P'(F)\cap wP(F)w\inv \setminus P'(F)} \lambda.\phi( w\inv p'ux)  du.\\
         \end{aligned}
     \end{equation*}
     Now apply Lemma \ref{lem:2} to the above sum to see that it is equal to 
@@ -127,17 +141,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
 
     The change of variables is \((m', u') \mapsto ((m')\inv u' m', (m')\inv u' m')\).
 
-\subsection{Constant Terms of Cuspidal Eisenstein Series}
-\begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:4}
-        There exists a set of representatives \(R\) for \( W_{M'}\setminus W_G / W_{M} \) such that for \(w\in R\) we have  \(w\inv P'w\cap M\) is a standard parabolic of \(M\) with Levi \(w\inv M'w\cap M\) and unipotent \(w\inv U'w\cap M\).
-    \end{Lemma}
-    %\todo{need to make the root datum weyl group stuff explicit and then describe these representatives (minimaal length ones)}
-    
-    \begin{Lemma}[\cite{getzIntroductionAutomorphicRepresentations2024}, 10.4.1]\label{lem:5}
-    	For \(w\in R\) as above
-        \[w\inv U' w \cap P = (w\inv U' w \cap M)(w\inv U' w \cap U).\]
-    \end{Lemma}
-    
+\subsection{Constant Terms of Cuspidal Eisenstein Series}    
     So if \(R\) is a set of representatives for \(W_{M'}\setminus W_G / W_{M}\) as given by lemma \ref{lem:4} we have seen so far that 
     \[ E_{P'}( \phi, \lambda, x) =\sum_{ w\in R} \sum_{m'\in M'(F)\cap wP(F)w\inv\setminus M'(F)} \int_{U'(F)\cap wP(F)w\inv \setminus U'(\A)} \lambda.\phi( w\inv um' x)  du. \]
     Continuing the computation of the constant term above, we will focus purely on the inner integral now
@@ -160,8 +164,8 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
     This was in complete generality. If we now assume further that the Eisenstein series was induced from a \textit{cuspidal} automorphic representation, then \(m\mapsto \phi(mk)\) is a cusp form and therefore this last integral will vanish whenever \(w\inv U'w \cap M \neq \{1\}\), because in that case the inner integral doesn't exist (its over a point).
 
     \subsection{Constant Term Of Eisenstein Series for Conjugate Levis}\label{constant_conjugate_levi}
-    If we now assume that \(M' = wMw\inv\) for \(w\in W\) and recall the definition of our intertwining operator from section \ref{sec:eisenstein-series} we can use the following 
-    \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)]
+    If we now assume that \(M' = wMw\inv\) for \(w\in R\) and recall the definition of our intertwining operator from section \ref{sec:eisenstein-series} we can use the following 
+    \begin{Lemma}[\cite{moeglinSpectralDecompositionEisenstein1995} II.1.7 (6)] For \(w\in R\) as above
         \[U'(k) \cap wP(k) w\inv = U'(k) \cap wU(k)w\inv,\]
     \end{Lemma}
     to see that 
@@ -172,7 +176,7 @@ Now we will apply our lemmas to simplify and make more explicit the constant ter
              &= \sum_{ w} \sum_{m'} M(w, \pi)(\lambda.\phi)(x).
         \end{aligned}
     \end{equation*}
-    In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series, we will go through a detailed example in the final chapter \ref{ch:jiang}.
+    Recall that \(M\) was defined in section \ref{operator}. In particular we can combine the conjugate and cuspidal cases to get a much simpler expression for some constant terms of some Eisenstein series, we will go through a detailed example in the final chapter \ref{ch:jiang}.
     
 
 
